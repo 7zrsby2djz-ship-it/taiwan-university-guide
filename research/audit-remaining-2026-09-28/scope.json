@@ -1,0 +1,3658 @@
+[
+  {
+    "id": "0014",
+    "name": "國立高雄師範大學",
+    "short": "高師大",
+    "abbr": "NKNU",
+    "english": "National Kaohsiung Normal University",
+    "cities": [
+      "高雄市"
+    ],
+    "cityEn": "Kaohsiung",
+    "type": "university",
+    "ownership": "public",
+    "difficulty": 3,
+    "website": "http://www.nknu.edu.tw",
+    "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPU5LTlUtMDAxNC0xMg",
+    "admission": {
+      "url": "https://sso.nknu.edu.tw/InternationalAdmissions/Default.aspx",
+      "kind": "apply"
+    },
+    "terms": {
+      "spring": {
+        "rounds": [
+          {
+            "start": {
+              "date": "2026-07-20",
+              "status": "official"
+            },
+            "end": {
+              "date": "2026-10-15",
+              "status": "official"
+            },
+            "result": {
+              "date": "2026-12-05",
+              "status": "official"
+            }
+          }
+        ],
+        "sources": [
+          "https://oia.nknu.edu.tw/news-detail.php?id=343",
+          "https://oia.nknu.edu.tw/uploads/news/attachments/attachment_20260119152512_696ddc588cf7c.pdf"
+        ],
+        "notes": [],
+        "scope": "all",
+        "scopeLabel": {
+          "zh": "學士／碩士／博士依當屆開放系所",
+          "my": "ဘွဲ့ကြို / မဟာဘွဲ့ / ပါရဂူ — လမ်းညွှန်ပါ ဘာသာရပ်အတိုင်း"
+        },
+        "brochure": {
+          "url": "https://oia.nknu.edu.tw/uploads/news/attachments/attachment_20260119152512_696ddc588cf7c.pdf#page=3",
+          "status": "official"
+        },
+        "admissionRecords": [
+          {
+            "schoolId": "0014",
+            "semester": "spring",
+            "targetYear": "115-2",
+            "sourceYear": "115-2",
+            "status": "official",
+            "confidence": "high",
+            "sourceTitle": "既有已核對時程（原版保留）",
+            "sourceUrl": "https://oia.nknu.edu.tw/news-detail.php?id=343",
+            "lastChecked": "2026-09-19",
+            "round": "1",
+            "scope": "all",
+            "applicationStart": "2026-07-20",
+            "applicationEnd": "2026-10-15",
+            "resultDate": "2026-12-05",
+            "sourceType": "retained-official",
+            "note": ""
+          }
+        ]
+      },
+      "fall": {
+        "rounds": [
+          {
+            "start": {
+              "label": {
+                "zh": "約01月下旬",
+                "my": "ခန့် 01 လကုန်ပိုင်း"
+              },
+              "sort": "2027-01-21",
+              "status": "historical",
+              "basis": "115",
+              "sourceType": "user-provided-reference",
+              "confidence": "low",
+              "sortIsReference": true
+            },
+            "end": {
+              "label": {
+                "zh": "約04月中旬",
+                "my": "ခန့် 04 လလယ်"
+              },
+              "sort": "2027-04-11",
+              "status": "historical",
+              "basis": "115",
+              "sourceType": "user-provided-reference",
+              "confidence": "low",
+              "sortIsReference": true
+            },
+            "result": {
+              "label": {
+                "zh": "約06月上旬",
+                "my": "ခန့် 06 လအစ"
+              },
+              "sort": "2027-06-01",
+              "status": "historical",
+              "basis": "115",
+              "sourceType": "user-provided-reference",
+              "confidence": "low",
+              "sortIsReference": true
+            }
+          }
+        ],
+        "sources": [
+          "https://oia.nknu.edu.tw/news-detail.php?id=343",
+          "https://oia.nknu.edu.tw/uploads/news/attachments/attachment_20260119152512_696ddc588cf7c.pdf"
+        ],
+        "notes": [
+          {
+            "zh": "依前屆 2026/01/20–04/15、06/05 放榜推估；116 正式簡章未核得。",
+            "my": "အသေးစိတ်ကို တရားဝင်ဝင်ခွင့်လမ်းညွှန်တွင် အတည်ပြုပါ။"
+          }
+        ],
+        "admissionRecords": [
+          {
+            "schoolId": "0014",
+            "semester": "fall",
+            "targetYear": "116-1",
+            "sourceYear": "115",
+            "status": "historical",
+            "confidence": "low",
+            "sourceTitle": "原始資料包歷年參考（原始年度日期待複核）",
+            "sourceUrl": "https://oia.nknu.edu.tw/news-detail.php?id=343",
+            "lastChecked": "2026-09-19",
+            "round": "1",
+            "scope": null,
+            "applicationStart": null,
+            "applicationStartText": "約01月下旬",
+            "applicationEnd": null,
+            "applicationEndText": "約04月中旬",
+            "resultDate": null,
+            "resultDateText": "約06月上旬",
+            "sourceType": "user-provided-reference",
+            "note": "原版保留；不由排序用的2027座標反推原始日期。"
+          }
+        ]
+      }
+    },
+    "checked": "2026-09-19",
+    "reviewState": "unavailable"
+  },
+  {
+    "id": "0018",
+    "name": "國立嘉義大學",
+    "short": "嘉大",
+    "abbr": "NCYU",
+    "english": "National Chiayi University",
+    "cities": [
+      "嘉義市"
+    ],
+    "cityEn": "Chiayi City",
+    "type": "university",
+    "ownership": "public",
+    "difficulty": 3,
+    "website": "http://www.ncyu.edu.tw",
+    "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPU5DWVUtMDAxOC0xNQ",
+    "admission": {
+      "url": "https://www.ncyu.edu.tw/oia_eng/ServerFile/Get/786060ff-e628-4e3e-9dc1-35afcc76b7c6?nodeId=60284&sId=237992",
+      "kind": "admission"
+    },
+    "terms": {
+      "spring": {
+        "rounds": [],
+        "sources": [],
+        "notes": [],
+        "admissionRecords": [
+          {
+            "schoolId": "0018",
+            "semester": "spring",
+            "targetYear": "115-2",
+            "sourceYear": null,
+            "applicationStart": null,
+            "applicationEnd": null,
+            "resultDate": null,
+            "status": "unknown",
+            "confidence": "unknown",
+            "sourceTitle": null,
+            "sourceUrl": null,
+            "lastChecked": "2026-09-19"
+          }
+        ]
+      },
+      "fall": {
+        "rounds": [
+          {
+            "start": {
+              "scope": "all",
+              "round": "1",
+              "status": "historical",
+              "basis": "115-1",
+              "sourceYear": "115-1",
+              "sourceUrl": "https://www.ncyu.edu.tw/oia_eng/ServerFile/Get/786060ff-e628-4e3e-9dc1-35afcc76b7c6?nodeId=60284&sId=237992",
+              "sourceTitle": "嘉義大學115學年度外國學生招生簡章",
+              "confidence": "medium",
+              "rawDate": "2026-01-01",
+              "label": {
+                "zh": "1 月上旬",
+                "my": "1 လ အစပိုင်း"
+              },
+              "sort": "2027-01-01",
+              "precision": "ten-day",
+              "sortIsReference": true
+            },
+            "end": {
+              "scope": "all",
+              "round": "1",
+              "status": "historical",
+              "basis": "115-1",
+              "sourceYear": "115-1",
+              "sourceUrl": "https://www.ncyu.edu.tw/oia_eng/ServerFile/Get/786060ff-e628-4e3e-9dc1-35afcc76b7c6?nodeId=60284&sId=237992",
+              "sourceTitle": "嘉義大學115學年度外國學生招生簡章",
+              "confidence": "medium",
+              "rawDate": "2026-03-01",
+              "label": {
+                "zh": "3 月上旬",
+                "my": "3 လ အစပိုင်း"
+              },
+              "sort": "2027-03-01",
+              "precision": "ten-day",
+              "sortIsReference": true
+            },
+            "result": {
+              "status": "conflict",
+              "label": {
+                "zh": "官方資料存在差異，待確認",
+                "my": "တရားဝင်ရင်းမြစ်များ မတူညီ၊ အတည်ပြုရန်"
+              },
+              "sourceYear": "115-1",
+              "sourceUrl": "https://www.ncyu.edu.tw/oia_eng/ServerFile/Get/786060ff-e628-4e3e-9dc1-35afcc76b7c6?nodeId=60284&sId=237992"
+            },
+            "name": {
+              "zh": "1",
+              "my": "1"
+            },
+            "sourceYear": "115-1",
+            "sourceUrl": "https://www.ncyu.edu.tw/oia_eng/ServerFile/Get/786060ff-e628-4e3e-9dc1-35afcc76b7c6?nodeId=60284&sId=237992",
+            "scope": "all",
+            "note": {
+              "zh": "簡章預定5/18放榜，國際處公告列表顯示5/20；實際公告日期待核。",
+              "my": "အသေးစိတ်ကို တရားဝင်ရင်းမြစ်တွင် စစ်ပါ။ 簡章預定5/18放榜，國際處公告列表顯示5/20；實際公告日期待核。"
+            }
+          },
+          {
+            "start": {
+              "scope": "all",
+              "round": "2",
+              "status": "historical",
+              "basis": "115-1",
+              "sourceYear": "115-1",
+              "sourceUrl": "https://www.ncyu.edu.tw/oia_eng/ServerFile/Get/786060ff-e628-4e3e-9dc1-35afcc76b7c6?nodeId=60284&sId=237992",
+              "sourceTitle": "嘉義大學115學年度外國學生招生簡章",
+              "confidence": "medium",
+              "rawDate": "2026-04-18",
+              "label": {
+                "zh": "4 月中旬",
+                "my": "4 လ အလယ်ပိုင်း"
+              },
+              "sort": "2027-04-11",
+              "precision": "ten-day",
+              "sortIsReference": true
+            },
+            "end": {
+              "scope": "all",
+              "round": "2",
+              "status": "historical",
+              "basis": "115-1",
+              "sourceYear": "115-1",
+              "sourceUrl": "https://www.ncyu.edu.tw/oia_eng/ServerFile/Get/786060ff-e628-4e3e-9dc1-35afcc76b7c6?nodeId=60284&sId=237992",
+              "sourceTitle": "嘉義大學115學年度外國學生招生簡章",
+              "confidence": "medium",
+              "rawDate": "2026-05-17",
+              "label": {
+                "zh": "5 月中旬",
+                "my": "5 လ အလယ်ပိုင်း"
+              },
+              "sort": "2027-05-11",
+              "precision": "ten-day",
+              "sortIsReference": true
+            },
+            "result": {
+              "scope": "all",
+              "round": "2",
+              "status": "historical",
+              "basis": "115-1",
+              "sourceYear": "115-1",
+              "sourceUrl": "https://www.ncyu.edu.tw/oia_eng/ServerFile/Get/786060ff-e628-4e3e-9dc1-35afcc76b7c6?nodeId=60284&sId=237992",
+              "sourceTitle": "嘉義大學115學年度外國學生招生簡章",
+              "confidence": "medium",
+              "rawDate": "2026-07-10",
+              "label": {
+                "zh": "7 月上旬",
+                "my": "7 လ အစပိုင်း"
+              },
+              "sort": "2027-07-01",
+              "precision": "ten-day",
+              "sortIsReference": true
+            },
+            "name": {
+              "zh": "2",
+              "my": "2"
+            },
+            "sourceYear": "115-1",
+            "sourceUrl": "https://www.ncyu.edu.tw/oia_eng/ServerFile/Get/786060ff-e628-4e3e-9dc1-35afcc76b7c6?nodeId=60284&sId=237992",
+            "scope": "all"
+          }
+        ],
+        "sources": [
+          "https://www.ncyu.edu.tw/oia_eng/ServerFile/Get/786060ff-e628-4e3e-9dc1-35afcc76b7c6?nodeId=60284&sId=237992"
+        ],
+        "notes": [],
+        "admissionRecords": [
+          {
+            "schoolId": "0018",
+            "semester": "fall",
+            "targetYear": "116-1",
+            "sourceYear": "115-1",
+            "applicationStart": "2026-01-01",
+            "applicationEnd": "2026-03-01",
+            "resultDate": null,
+            "status": "historical",
+            "confidence": "medium",
+            "sourceTitle": "嘉義大學115學年度外國學生招生簡章",
+            "sourceUrl": "https://www.ncyu.edu.tw/oia_eng/ServerFile/Get/786060ff-e628-4e3e-9dc1-35afcc76b7c6?nodeId=60284&sId=237992",
+            "lastChecked": "2026-09-20",
+            "sourceType": "official-primary",
+            "round": "1",
+            "scope": "all",
+            "note": "簡章預定5/18放榜，國際處公告列表顯示5/20；實際公告日期待核。",
+            "conflicts": {
+              "resultDate": [
+                "2026-05-18",
+                "2026-05-20"
+              ]
+            },
+            "sourceUrls": [
+              "https://www.ncyu.edu.tw/oia_eng/ServerFile/Get/786060ff-e628-4e3e-9dc1-35afcc76b7c6?nodeId=60284&sId=237992",
+              "https://www.ncyu.edu.tw/oia_eng/Subject?IsAll=True&ListType=1&NodeId=27&SiteBlockId=4940&SiteId=253&nodeName=All"
+            ]
+          },
+          {
+            "schoolId": "0018",
+            "semester": "fall",
+            "targetYear": "116-1",
+            "sourceYear": "115-1",
+            "applicationStart": "2026-04-18",
+            "applicationEnd": "2026-05-17",
+            "resultDate": "2026-07-10",
+            "status": "historical",
+            "confidence": "medium",
+            "sourceTitle": "嘉義大學115學年度外國學生招生簡章",
+            "sourceUrl": "https://www.ncyu.edu.tw/oia_eng/ServerFile/Get/786060ff-e628-4e3e-9dc1-35afcc76b7c6?nodeId=60284&sId=237992",
+            "lastChecked": "2026-09-20",
+            "sourceType": "official-primary",
+            "round": "2",
+            "scope": "all",
+            "note": ""
+          }
+        ],
+        "archivedRounds": [],
+        "archivedNotes": [],
+        "scope": "all"
+      }
+    },
+    "checked": "2026-09-20",
+    "reviewState": "unavailable"
+  },
+  {
+    "id": "0019",
+    "name": "國立高雄大學",
+    "short": "高大",
+    "abbr": "NUK",
+    "english": "National University of Kaohsiung",
+    "cities": [
+      "高雄市"
+    ],
+    "cityEn": "Kaohsiung",
+    "type": "university",
+    "ownership": "public",
+    "difficulty": 3,
+    "website": "http://www.nuk.edu.tw",
+    "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPU5VSy0wMDE5LTE2",
+    "admission": {
+      "url": "https://interadmission.nuk.edu.tw/p/412-1063-4996.php?Lang=zh-tw",
+      "kind": "admission"
+    },
+    "terms": {
+      "spring": {
+        "rounds": [
+          {
+            "start": {
+              "scope": "all",
+              "round": "1",
+              "status": "official",
+              "basis": "115-2",
+              "sourceYear": "115-2",
+              "sourceUrl": "https://interadmission.nuk.edu.tw/p/412-1063-4996.php?Lang=zh-tw",
+              "sourceTitle": "國立高雄大學2027外國學生申請時程",
+              "confidence": "high",
+              "rawDate": "2026-10-08",
+              "date": "2026-10-08"
+            },
+            "end": {
+              "scope": "all",
+              "round": "1",
+              "status": "official",
+              "basis": "115-2",
+              "sourceYear": "115-2",
+              "sourceUrl": "https://interadmission.nuk.edu.tw/p/412-1063-4996.php?Lang=zh-tw",
+              "sourceTitle": "國立高雄大學2027外國學生申請時程",
+              "confidence": "high",
+              "rawDate": "2026-11-02",
+              "date": "2026-11-02"
+            },
+            "result": {
+              "scope": "all",
+              "round": "1",
+              "status": "official",
+              "basis": "115-2",
+              "sourceYear": "115-2",
+              "sourceUrl": "https://interadmission.nuk.edu.tw/p/412-1063-4996.php?Lang=zh-tw",
+              "sourceTitle": "國立高雄大學2027外國學生申請時程",
+              "confidence": "high",
+              "rawDate": "2026-12-17",
+              "date": "2026-12-17"
+            },
+            "name": {
+              "zh": "1",
+              "my": "1"
+            },
+            "sourceYear": "115-2",
+            "sourceUrl": "https://interadmission.nuk.edu.tw/p/412-1063-4996.php?Lang=zh-tw",
+            "scope": "all",
+            "note": {
+              "zh": "時程頁明列2027春季；Apply Now頁同列115-2/2027.2與英文Spring，但中文誤寫秋季，季別文字差異待校方更正。",
+              "my": "အသေးစိတ်ကို တရားဝင်ရင်းမြစ်တွင် စစ်ပါ။ 時程頁明列2027春季；Apply Now頁同列115-2/2027.2與英文Spring，但中文誤寫秋季，季別文字差異待校方更正。"
+            }
+          }
+        ],
+        "sources": [
+          "https://interadmission.nuk.edu.tw/p/412-1063-4996.php?Lang=zh-tw"
+        ],
+        "notes": [],
+        "admissionRecords": [
+          {
+            "schoolId": "0019",
+            "semester": "spring",
+            "targetYear": "115-2",
+            "sourceYear": "115-2",
+            "applicationStart": "2026-10-08",
+            "applicationEnd": "2026-11-02",
+            "resultDate": "2026-12-17",
+            "status": "official",
+            "confidence": "high",
+            "sourceTitle": "國立高雄大學2027外國學生申請時程",
+            "sourceUrl": "https://interadmission.nuk.edu.tw/p/412-1063-4996.php?Lang=zh-tw",
+            "lastChecked": "2026-09-20",
+            "sourceType": "official-primary",
+            "round": "1",
+            "scope": "all",
+            "note": "時程頁明列2027春季；Apply Now頁同列115-2/2027.2與英文Spring，但中文誤寫秋季，季別文字差異待校方更正。",
+            "sourceUrls": [
+              "https://interadmission.nuk.edu.tw/p/412-1063-4996.php?Lang=zh-tw",
+              "https://interadmission.nuk.edu.tw/p/406-1063-81458,r1780.php?Lang=zh-tw"
+            ],
+            "semesterConflictNote": "Apply Now 中文秋季與115-2、2027.2、英文Spring及時程頁有差異。"
+          }
+        ],
+        "archivedRounds": [],
+        "archivedNotes": [],
+        "scope": "all"
+      },
+      "fall": {
+        "rounds": [
+          {
+            "start": {
+              "scope": "all",
+              "round": "1",
+              "status": "official",
+              "basis": "116-1",
+              "sourceYear": "116-1",
+              "sourceUrl": "https://interadmission.nuk.edu.tw/p/412-1063-4996.php?Lang=zh-tw",
+              "sourceTitle": "國立高雄大學2027外國學生申請時程",
+              "confidence": "high",
+              "rawDate": "2027-02-25",
+              "date": "2027-02-25"
+            },
+            "end": {
+              "scope": "all",
+              "round": "1",
+              "status": "official",
+              "basis": "116-1",
+              "sourceYear": "116-1",
+              "sourceUrl": "https://interadmission.nuk.edu.tw/p/412-1063-4996.php?Lang=zh-tw",
+              "sourceTitle": "國立高雄大學2027外國學生申請時程",
+              "confidence": "high",
+              "rawDate": "2027-04-23",
+              "date": "2027-04-23"
+            },
+            "result": {
+              "scope": "all",
+              "round": "1",
+              "status": "official",
+              "basis": "116-1",
+              "sourceYear": "116-1",
+              "sourceUrl": "https://interadmission.nuk.edu.tw/p/412-1063-4996.php?Lang=zh-tw",
+              "sourceTitle": "國立高雄大學2027外國學生申請時程",
+              "confidence": "high",
+              "rawDate": "2027-06-15",
+              "date": "2027-06-15"
+            },
+            "name": {
+              "zh": "1",
+              "my": "1"
+            },
+            "sourceYear": "116-1",
+            "sourceUrl": "https://interadmission.nuk.edu.tw/p/412-1063-4996.php?Lang=zh-tw",
+            "scope": "all",
+            "note": {
+              "zh": "官方已刊時程；秋季簡章另定2027/1/22公布。",
+              "my": "အသေးစိတ်ကို တရားဝင်ရင်းမြစ်တွင် စစ်ပါ။ 官方已刊時程；秋季簡章另定2027/1/22公布。"
+            }
+          }
+        ],
+        "sources": [
+          "https://interadmission.nuk.edu.tw/p/412-1063-4996.php?Lang=zh-tw"
+        ],
+        "notes": [],
+        "admissionRecords": [
+          {
+            "schoolId": "0019",
+            "semester": "fall",
+            "targetYear": "116-1",
+            "sourceYear": "116-1",
+            "applicationStart": "2027-02-25",
+            "applicationEnd": "2027-04-23",
+            "resultDate": "2027-06-15",
+            "status": "official",
+            "confidence": "high",
+            "sourceTitle": "國立高雄大學2027外國學生申請時程",
+            "sourceUrl": "https://interadmission.nuk.edu.tw/p/412-1063-4996.php?Lang=zh-tw",
+            "lastChecked": "2026-09-20",
+            "sourceType": "official-primary",
+            "round": "1",
+            "scope": "all",
+            "note": "官方已刊時程；秋季簡章另定2027/1/22公布。"
+          }
+        ],
+        "archivedRounds": [],
+        "archivedNotes": [],
+        "scope": "all"
+      }
+    },
+    "checked": "2026-09-20",
+    "reviewState": "unavailable"
+  },
+  {
+    "id": "0020",
+    "name": "國立東華大學",
+    "short": "東華",
+    "abbr": "NDHU",
+    "english": "National Dong Hwa University",
+    "cities": [
+      "花蓮縣"
+    ],
+    "cityEn": "Hualien",
+    "type": "university",
+    "ownership": "public",
+    "difficulty": 3,
+    "website": "http://www.ndhu.edu.tw",
+    "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPU5ESFUtMDAyMC0xNw",
+    "admission": {
+      "url": "https://oia.ndhu.edu.tw/p/412-1027-21529.php?Lang=en",
+      "kind": "admission"
+    },
+    "terms": {
+      "spring": {
+        "rounds": [
+          {
+            "start": {
+              "date": "2026-09-01",
+              "status": "official"
+            },
+            "end": {
+              "label": {
+                "zh": "簡章10/31；網頁年份有誤",
+                "my": "လမ်းညွှန် 10/31; ဝက်ဘ်နှစ် မတူ"
+              },
+              "status": "conflict"
+            },
+            "result": {
+              "label": {
+                "zh": "簡章12/20；網頁不一致",
+                "my": "လမ်းညွှန် 12/20; ဝက်ဘ်နှင့် မတူ"
+              },
+              "status": "conflict"
+            }
+          }
+        ],
+        "sources": [
+          "https://oia.ndhu.edu.tw/p/412-1027-21529.php?Lang=en",
+          "https://oia.ndhu.edu.tw/var/file/27/1027/img/4756/894840940.pdf"
+        ],
+        "notes": [
+          {
+            "zh": "115 簡章中英均列截止 2026/10/31、放榜 2026/12/20；官網 2027 春欄卻寫截止 2025/10/31、放榜 2025/12/15。保留衝突，向校方確認。",
+            "my": "လမ်းညွှန်တွင် 2026/10/31 နောက်ဆုံးရက်၊ 2026/12/20 ရလဒ်ဟု ရှိသော်လည်း ဝက်ဘ်စာမျက်နှာတွင် 2025 ခုနှစ် ရက်စွဲများ ဖြစ်နေသည်။ ကျောင်းနှင့် အတည်ပြုပါ။"
+          }
+        ],
+        "scope": "all",
+        "scopeLabel": {
+          "zh": "學士／碩士／博士依當屆開放系所",
+          "my": "ဘွဲ့ကြို / မဟာဘွဲ့ / ပါရဂူ — လမ်းညွှန်ပါ ဘာသာရပ်အတိုင်း"
+        },
+        "brochure": {
+          "url": "https://oia.ndhu.edu.tw/var/file/27/1027/img/4756/894840940.pdf#page=5",
+          "status": "official"
+        },
+        "admissionRecords": [
+          {
+            "schoolId": "0020",
+            "semester": "spring",
+            "targetYear": "115-2",
+            "sourceYear": "115-2",
+            "status": "official",
+            "confidence": "high",
+            "sourceTitle": "既有已核對時程（原版保留）",
+            "sourceUrl": "https://oia.ndhu.edu.tw/p/412-1027-21529.php?Lang=en",
+            "lastChecked": "2026-09-19",
+            "round": "1",
+            "scope": "all",
+            "applicationStart": "2026-09-01",
+            "applicationEnd": null,
+            "applicationEndText": "簡章10/31；網頁年份有誤",
+            "resultDate": null,
+            "resultDateText": "簡章12/20；網頁不一致",
+            "sourceType": "retained-official",
+            "note": ""
+          }
+        ]
+      },
+      "fall": {
+        "rounds": [
+          {
+            "start": {
+              "label": {
+                "zh": "約01月初",
+                "my": "ခန့် 01 လအစ"
+              },
+              "sort": "2027-01-01",
+              "status": "historical",
+              "basis": "115",
+              "sourceType": "user-provided-reference",
+              "confidence": "low",
+              "sortIsReference": true
+            },
+            "end": {
+              "label": {
+                "zh": "約03月中旬",
+                "my": "ခန့် 03 လလယ်"
+              },
+              "sort": "2027-03-11",
+              "status": "historical",
+              "basis": "115",
+              "sourceType": "user-provided-reference",
+              "confidence": "low",
+              "sortIsReference": true
+            },
+            "result": {
+              "label": {
+                "zh": "約05月上旬",
+                "my": "ခန့် 05 လအစ"
+              },
+              "sort": "2027-05-01",
+              "status": "historical",
+              "basis": "115",
+              "sourceType": "user-provided-reference",
+              "confidence": "low",
+              "sortIsReference": true
+            },
+            "name": {
+              "zh": "1",
+              "my": "1"
+            }
+          },
+          {
+            "start": {
+              "label": {
+                "zh": "約03月中旬",
+                "my": "ခန့် 03 လလယ်"
+              },
+              "sort": "2027-03-11",
+              "status": "historical",
+              "basis": "115",
+              "sourceType": "user-provided-reference",
+              "confidence": "low",
+              "sortIsReference": true
+            },
+            "end": {
+              "label": {
+                "zh": "約04月中旬",
+                "my": "ခန့် 04 လလယ်"
+              },
+              "sort": "2027-04-11",
+              "status": "historical",
+              "basis": "115",
+              "sourceType": "user-provided-reference",
+              "confidence": "low",
+              "sortIsReference": true
+            },
+            "result": {
+              "label": {
+                "zh": "約06月上旬",
+                "my": "ခန့် 06 လအစ"
+              },
+              "sort": "2027-06-01",
+              "status": "historical",
+              "basis": "115",
+              "sourceType": "user-provided-reference",
+              "confidence": "low",
+              "sortIsReference": true
+            },
+            "name": {
+              "zh": "2",
+              "my": "2"
+            }
+          }
+        ],
+        "sources": [
+          "https://oia.ndhu.edu.tw/p/412-1027-21529.php?Lang=en",
+          "https://oia.ndhu.edu.tw/var/file/27/1027/img/4756/894840940.pdf"
+        ],
+        "notes": [
+          {
+            "zh": "依 2026 秋兩梯 01/02–03/15、03/16–04/14；05/10、06/10 放榜推估。",
+            "my": "အသေးစိတ်ကို တရားဝင်ဝင်ခွင့်လမ်းညွှန်တွင် အတည်ပြုပါ။"
+          }
+        ],
+        "admissionRecords": [
+          {
+            "schoolId": "0020",
+            "semester": "fall",
+            "targetYear": "116-1",
+            "sourceYear": "115",
+            "status": "historical",
+            "confidence": "low",
+            "sourceTitle": "原始資料包歷年參考（原始年度日期待複核）",
+            "sourceUrl": "https://oia.ndhu.edu.tw/p/412-1027-21529.php?Lang=en",
+            "lastChecked": "2026-09-19",
+            "round": "1",
+            "scope": null,
+            "applicationStart": null,
+            "applicationStartText": "約01月初",
+            "applicationEnd": null,
+            "applicationEndText": "約03月中旬",
+            "resultDate": null,
+            "resultDateText": "約05月上旬",
+            "sourceType": "user-provided-reference",
+            "note": "原版保留；不由排序用的2027座標反推原始日期。"
+          },
+          {
+            "schoolId": "0020",
+            "semester": "fall",
+            "targetYear": "116-1",
+            "sourceYear": "115",
+            "status": "historical",
+            "confidence": "low",
+            "sourceTitle": "原始資料包歷年參考（原始年度日期待複核）",
+            "sourceUrl": "https://oia.ndhu.edu.tw/p/412-1027-21529.php?Lang=en",
+            "lastChecked": "2026-09-19",
+            "round": "2",
+            "scope": null,
+            "applicationStart": null,
+            "applicationStartText": "約03月中旬",
+            "applicationEnd": null,
+            "applicationEndText": "約04月中旬",
+            "resultDate": null,
+            "resultDateText": "約06月上旬",
+            "sourceType": "user-provided-reference",
+            "note": "原版保留；不由排序用的2027座標反推原始日期。"
+          }
+        ]
+      }
+    },
+    "checked": "2026-09-19",
+    "reviewState": "unavailable"
+  },
+  {
+    "id": "0024",
+    "name": "國立屏東科技大學",
+    "short": "屏科",
+    "abbr": "NPUST",
+    "english": "National Pingtung University of Science and Technology",
+    "cities": [
+      "屏東縣"
+    ],
+    "cityEn": "Pingtung",
+    "type": "technology",
+    "ownership": "public",
+    "difficulty": 3,
+    "website": "http://www.npust.edu.tw",
+    "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPU5QVVNULTAwMjQtMjE",
+    "admission": {
+      "url": "http://www.npust.edu.tw",
+      "kind": "home"
+    },
+    "terms": {
+      "spring": {
+        "rounds": [],
+        "sources": [],
+        "notes": [],
+        "admissionRecords": [
+          {
+            "schoolId": "0024",
+            "semester": "spring",
+            "targetYear": "115-2",
+            "sourceYear": null,
+            "applicationStart": null,
+            "applicationEnd": null,
+            "resultDate": null,
+            "status": "unknown",
+            "confidence": "unknown",
+            "sourceTitle": null,
+            "sourceUrl": null,
+            "lastChecked": "2026-09-19"
+          }
+        ]
+      },
+      "fall": {
+        "rounds": [],
+        "sources": [],
+        "notes": [],
+        "admissionRecords": [
+          {
+            "schoolId": "0024",
+            "semester": "fall",
+            "targetYear": "116-1",
+            "sourceYear": null,
+            "applicationStart": null,
+            "applicationEnd": null,
+            "resultDate": null,
+            "status": "unknown",
+            "confidence": "unknown",
+            "sourceTitle": null,
+            "sourceUrl": null,
+            "lastChecked": "2026-09-19"
+          }
+        ]
+      }
+    },
+    "checked": "2026-09-19",
+    "reviewState": "unavailable"
+  },
+  {
+    "id": "0028",
+    "name": "國立臺北藝術大學",
+    "short": "北藝",
+    "abbr": "TNUA",
+    "english": "Taipei National University of the Arts",
+    "cities": [
+      "臺北市"
+    ],
+    "cityEn": "Taipei",
+    "type": "university",
+    "ownership": "public",
+    "difficulty": null,
+    "website": "http://www.tnua.edu.tw",
+    "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPVROVUEtMDAyOC0yMw",
+    "admission": {
+      "url": "http://www.tnua.edu.tw",
+      "kind": "home"
+    },
+    "terms": {
+      "spring": {
+        "rounds": [],
+        "sources": [],
+        "notes": [],
+        "admissionRecords": [
+          {
+            "schoolId": "0028",
+            "semester": "spring",
+            "targetYear": "115-2",
+            "sourceYear": null,
+            "applicationStart": null,
+            "applicationEnd": null,
+            "resultDate": null,
+            "status": "unknown",
+            "confidence": "unknown",
+            "sourceTitle": null,
+            "sourceUrl": null,
+            "lastChecked": "2026-09-19"
+          }
+        ]
+      },
+      "fall": {
+        "rounds": [],
+        "sources": [],
+        "notes": [],
+        "admissionRecords": [
+          {
+            "schoolId": "0028",
+            "semester": "fall",
+            "targetYear": "116-1",
+            "sourceYear": null,
+            "applicationStart": null,
+            "applicationEnd": null,
+            "resultDate": null,
+            "status": "unknown",
+            "confidence": "unknown",
+            "sourceTitle": null,
+            "sourceUrl": null,
+            "lastChecked": "2026-09-19"
+          }
+        ]
+      }
+    },
+    "checked": "2026-09-19",
+    "reviewState": "unavailable"
+  },
+  {
+    "id": "0029",
+    "name": "國立臺灣藝術大學",
+    "short": "臺藝",
+    "abbr": "NTUA",
+    "english": "National Taiwan University of Arts",
+    "cities": [
+      "新北市"
+    ],
+    "cityEn": "New Taipei",
+    "type": "university",
+    "ownership": "public",
+    "difficulty": null,
+    "website": "http://www.ntua.edu.tw",
+    "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPU5UVUEtMDAyOS0yNA",
+    "admission": {
+      "url": "http://www.ntua.edu.tw",
+      "kind": "home"
+    },
+    "terms": {
+      "spring": {
+        "rounds": [],
+        "sources": [],
+        "notes": [],
+        "admissionRecords": [
+          {
+            "schoolId": "0029",
+            "semester": "spring",
+            "targetYear": "115-2",
+            "sourceYear": null,
+            "applicationStart": null,
+            "applicationEnd": null,
+            "resultDate": null,
+            "status": "unknown",
+            "confidence": "unknown",
+            "sourceTitle": null,
+            "sourceUrl": null,
+            "lastChecked": "2026-09-19"
+          }
+        ]
+      },
+      "fall": {
+        "rounds": [],
+        "sources": [],
+        "notes": [],
+        "admissionRecords": [
+          {
+            "schoolId": "0029",
+            "semester": "fall",
+            "targetYear": "116-1",
+            "sourceYear": null,
+            "applicationStart": null,
+            "applicationEnd": null,
+            "resultDate": null,
+            "status": "unknown",
+            "confidence": "unknown",
+            "sourceTitle": null,
+            "sourceUrl": null,
+            "lastChecked": "2026-09-19"
+          }
+        ]
+      }
+    },
+    "checked": "2026-09-19",
+    "reviewState": "unavailable"
+  },
+  {
+    "id": "0030",
+    "name": "國立臺東大學",
+    "short": "臺東",
+    "abbr": "NTTU",
+    "english": "National Taitung University",
+    "cities": [
+      "臺東縣"
+    ],
+    "cityEn": "Taitung",
+    "type": "university",
+    "ownership": "public",
+    "difficulty": 3,
+    "website": "http://www.nttu.edu.tw",
+    "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPU5UVFUtMDAzMC0yNQ",
+    "admission": {
+      "url": "https://rd.nttu.edu.tw/var/file/7/1007/img/49/701322365.pdf",
+      "kind": "admission"
+    },
+    "terms": {
+      "spring": {
+        "rounds": [
+          {
+            "start": {
+              "scope": "all",
+              "round": "1",
+              "status": "official",
+              "basis": "115-2",
+              "sourceYear": "115-2",
+              "sourceUrl": "https://rd.nttu.edu.tw/var/file/7/1007/img/49/701322365.pdf",
+              "sourceTitle": "臺東大學115學年度外國學生招生簡章 p.1",
+              "confidence": "high",
+              "rawDate": "2026-08-15",
+              "date": "2026-08-15"
+            },
+            "end": {
+              "scope": "all",
+              "round": "1",
+              "status": "official",
+              "basis": "115-2",
+              "sourceYear": "115-2",
+              "sourceUrl": "https://rd.nttu.edu.tw/var/file/7/1007/img/49/701322365.pdf",
+              "sourceTitle": "臺東大學115學年度外國學生招生簡章 p.1",
+              "confidence": "high",
+              "rawDate": "2026-09-30",
+              "date": "2026-09-30"
+            },
+            "result": {
+              "scope": "all",
+              "round": "1",
+              "status": "official",
+              "basis": "115-2",
+              "sourceYear": "115-2",
+              "sourceUrl": "https://rd.nttu.edu.tw/var/file/7/1007/img/49/701322365.pdf",
+              "sourceTitle": "臺東大學115學年度外國學生招生簡章 p.1",
+              "confidence": "high",
+              "rawDate": "2026-11-13",
+              "date": "2026-11-13"
+            },
+            "name": {
+              "zh": "1",
+              "my": "1"
+            },
+            "sourceYear": "115-2",
+            "sourceUrl": "https://rd.nttu.edu.tw/var/file/7/1007/img/49/701322365.pdf",
+            "scope": "all"
+          }
+        ],
+        "sources": [
+          "https://rd.nttu.edu.tw/var/file/7/1007/img/49/701322365.pdf"
+        ],
+        "notes": [],
+        "admissionRecords": [
+          {
+            "schoolId": "0030",
+            "semester": "spring",
+            "targetYear": "115-2",
+            "sourceYear": "115-2",
+            "applicationStart": "2026-08-15",
+            "applicationEnd": "2026-09-30",
+            "resultDate": "2026-11-13",
+            "status": "official",
+            "confidence": "high",
+            "sourceTitle": "臺東大學115學年度外國學生招生簡章 p.1",
+            "sourceUrl": "https://rd.nttu.edu.tw/var/file/7/1007/img/49/701322365.pdf",
+            "lastChecked": "2026-09-20",
+            "sourceType": "official-primary",
+            "round": "1",
+            "scope": "all",
+            "note": ""
+          }
+        ],
+        "archivedRounds": [],
+        "archivedNotes": [],
+        "scope": "all",
+        "brochure": {
+          "url": "https://rd.nttu.edu.tw/var/file/7/1007/img/49/701322365.pdf",
+          "status": "official"
+        }
+      },
+      "fall": {
+        "rounds": [
+          {
+            "start": {
+              "scope": "all",
+              "round": "1",
+              "status": "historical",
+              "basis": "115-1",
+              "sourceYear": "115-1",
+              "sourceUrl": "https://rd.nttu.edu.tw/var/file/7/1007/img/49/701322365.pdf",
+              "sourceTitle": "臺東大學115學年度外國學生招生簡章 p.1",
+              "confidence": "medium",
+              "rawDate": "2026-03-01",
+              "label": {
+                "zh": "3 月上旬",
+                "my": "3 လ အစပိုင်း"
+              },
+              "sort": "2027-03-01",
+              "precision": "ten-day",
+              "sortIsReference": true
+            },
+            "end": {
+              "scope": "all",
+              "round": "1",
+              "status": "historical",
+              "basis": "115-1",
+              "sourceYear": "115-1",
+              "sourceUrl": "https://rd.nttu.edu.tw/var/file/7/1007/img/49/701322365.pdf",
+              "sourceTitle": "臺東大學115學年度外國學生招生簡章 p.1",
+              "confidence": "medium",
+              "rawDate": "2026-04-30",
+              "label": {
+                "zh": "4 月下旬",
+                "my": "4 လ နှောင်းပိုင်း"
+              },
+              "sort": "2027-04-21",
+              "precision": "ten-day",
+              "sortIsReference": true
+            },
+            "result": {
+              "scope": "all",
+              "round": "1",
+              "status": "historical",
+              "basis": "115-1",
+              "sourceYear": "115-1",
+              "sourceUrl": "https://rd.nttu.edu.tw/var/file/7/1007/img/49/701322365.pdf",
+              "sourceTitle": "臺東大學115學年度外國學生招生簡章 p.1",
+              "confidence": "medium",
+              "rawDate": "2026-06-12",
+              "label": {
+                "zh": "6 月中旬",
+                "my": "6 လ အလယ်ပိုင်း"
+              },
+              "sort": "2027-06-11",
+              "precision": "ten-day",
+              "sortIsReference": true
+            },
+            "name": {
+              "zh": "1",
+              "my": "1"
+            },
+            "sourceYear": "115-1",
+            "sourceUrl": "https://rd.nttu.edu.tw/var/file/7/1007/img/49/701322365.pdf",
+            "scope": "all"
+          }
+        ],
+        "sources": [
+          "https://rd.nttu.edu.tw/var/file/7/1007/img/49/701322365.pdf"
+        ],
+        "notes": [],
+        "admissionRecords": [
+          {
+            "schoolId": "0030",
+            "semester": "fall",
+            "targetYear": "116-1",
+            "sourceYear": "115-1",
+            "applicationStart": "2026-03-01",
+            "applicationEnd": "2026-04-30",
+            "resultDate": "2026-06-12",
+            "status": "historical",
+            "confidence": "medium",
+            "sourceTitle": "臺東大學115學年度外國學生招生簡章 p.1",
+            "sourceUrl": "https://rd.nttu.edu.tw/var/file/7/1007/img/49/701322365.pdf",
+            "lastChecked": "2026-09-20",
+            "sourceType": "official-primary",
+            "round": "1",
+            "scope": "all",
+            "note": ""
+          }
+        ],
+        "archivedRounds": [],
+        "archivedNotes": [],
+        "scope": "all",
+        "brochure": {
+          "url": "https://rd.nttu.edu.tw/var/file/7/1007/img/49/701322365.pdf",
+          "status": "historical"
+        }
+      }
+    },
+    "checked": "2026-09-20",
+    "reviewState": "unavailable"
+  },
+  {
+    "id": "0031",
+    "name": "國立宜蘭大學",
+    "short": "宜蘭",
+    "abbr": "NIU",
+    "english": "National Ilan University",
+    "cities": [
+      "宜蘭縣"
+    ],
+    "cityEn": "Yilan",
+    "type": "university",
+    "ownership": "public",
+    "difficulty": 3,
+    "website": "http://www.niu.edu.tw",
+    "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPU5JVS0wMDMxLTI2",
+    "admission": {
+      "url": "https://isa.niu.edu.tw/",
+      "kind": "admission"
+    },
+    "terms": {
+      "spring": {
+        "rounds": [
+          {
+            "start": {
+              "scope": "graduate",
+              "round": "1",
+              "status": "official",
+              "basis": "115-2",
+              "sourceYear": "115-2",
+              "sourceUrl": "https://isa.niu.edu.tw/var/file/73/1073/img/115-regulations-for-academic.pdf",
+              "sourceTitle": "宜蘭大學115學年度外國學生招生簡章 p.4",
+              "confidence": "high",
+              "rawDate": "2026-09-14",
+              "date": "2026-09-14"
+            },
+            "end": {
+              "scope": "graduate",
+              "round": "1",
+              "status": "official",
+              "basis": "115-2",
+              "sourceYear": "115-2",
+              "sourceUrl": "https://isa.niu.edu.tw/var/file/73/1073/img/115-regulations-for-academic.pdf",
+              "sourceTitle": "宜蘭大學115學年度外國學生招生簡章 p.4",
+              "confidence": "high",
+              "rawDate": "2026-10-13",
+              "date": "2026-10-13"
+            },
+            "result": {
+              "scope": "graduate",
+              "round": "1",
+              "status": "official",
+              "basis": "115-2",
+              "sourceYear": "115-2",
+              "sourceUrl": "https://isa.niu.edu.tw/var/file/73/1073/img/115-regulations-for-academic.pdf",
+              "sourceTitle": "宜蘭大學115學年度外國學生招生簡章 p.4",
+              "confidence": "high",
+              "rawDate": "2026-12-08",
+              "date": "2026-12-08"
+            },
+            "name": {
+              "zh": "1",
+              "my": "1"
+            },
+            "sourceYear": "115-2",
+            "sourceUrl": "https://isa.niu.edu.tw/var/file/73/1073/img/115-regulations-for-academic.pdf",
+            "scope": "graduate"
+          }
+        ],
+        "sources": [
+          "https://isa.niu.edu.tw/var/file/73/1073/img/115-regulations-for-academic.pdf"
+        ],
+        "notes": [],
+        "admissionRecords": [
+          {
+            "schoolId": "0031",
+            "semester": "spring",
+            "targetYear": "115-2",
+            "sourceYear": "115-2",
+            "applicationStart": "2026-09-14",
+            "applicationEnd": "2026-10-13",
+            "resultDate": "2026-12-08",
+            "status": "official",
+            "confidence": "high",
+            "sourceTitle": "宜蘭大學115學年度外國學生招生簡章 p.4",
+            "sourceUrl": "https://isa.niu.edu.tw/var/file/73/1073/img/115-regulations-for-academic.pdf",
+            "lastChecked": "2026-09-20",
+            "sourceType": "official-primary",
+            "round": "1",
+            "scope": "graduate",
+            "note": ""
+          }
+        ],
+        "archivedRounds": [],
+        "archivedNotes": [],
+        "scope": "graduate",
+        "brochure": {
+          "url": "https://isa.niu.edu.tw/var/file/73/1073/img/115-regulations-for-academic.pdf",
+          "status": "official"
+        }
+      },
+      "fall": {
+        "rounds": [
+          {
+            "start": {
+              "scope": "all",
+              "round": "1",
+              "status": "historical",
+              "basis": "115-1",
+              "sourceYear": "115-1",
+              "sourceUrl": "https://isa.niu.edu.tw/var/file/73/1073/img/115-regulations-for-academic.pdf",
+              "sourceTitle": "宜蘭大學115學年度外國學生招生簡章 p.4、9",
+              "confidence": "medium",
+              "rawDate": "2025-12-01",
+              "label": {
+                "zh": "12 月上旬",
+                "my": "12 လ အစပိုင်း"
+              },
+              "sort": "2026-12-01",
+              "precision": "ten-day",
+              "sortIsReference": true
+            },
+            "end": {
+              "status": "conflict",
+              "label": {
+                "zh": "官方資料存在差異，待確認",
+                "my": "တရားဝင်ရင်းမြစ်များ မတူညီ၊ အတည်ပြုရန်"
+              },
+              "sourceYear": "115-1",
+              "sourceUrl": "https://isa.niu.edu.tw/var/file/73/1073/img/115-regulations-for-academic.pdf"
+            },
+            "result": {
+              "scope": "all",
+              "round": "1",
+              "status": "historical",
+              "basis": "115-1",
+              "sourceYear": "115-1",
+              "sourceUrl": "https://isa.niu.edu.tw/var/file/73/1073/img/115-regulations-for-academic.pdf",
+              "sourceTitle": "宜蘭大學115學年度外國學生招生簡章 p.4、9",
+              "confidence": "medium",
+              "rawDate": "2026-03-20",
+              "label": {
+                "zh": "3 月中旬",
+                "my": "3 လ အလယ်ပိုင်း"
+              },
+              "sort": "2027-03-11",
+              "precision": "ten-day",
+              "sortIsReference": true
+            },
+            "name": {
+              "zh": "1",
+              "my": "1"
+            },
+            "sourceYear": "115-1",
+            "sourceUrl": "https://isa.niu.edu.tw/var/file/73/1073/img/115-regulations-for-academic.pdf",
+            "scope": "all",
+            "note": {
+              "zh": "截止日期重要日程及中文為2026/1/20，英文內文p.9為2025/1/20，年份差異待確認。",
+              "my": "အသေးစိတ်ကို တရားဝင်ရင်းမြစ်တွင် စစ်ပါ။ 截止日期重要日程及中文為2026/1/20，英文內文p.9為2025/1/20，年份差異待確認。"
+            }
+          },
+          {
+            "start": {
+              "scope": "all",
+              "round": "2",
+              "status": "historical",
+              "basis": "115-1",
+              "sourceYear": "115-1",
+              "sourceUrl": "https://isa.niu.edu.tw/var/file/73/1073/img/115-regulations-for-academic.pdf",
+              "sourceTitle": "宜蘭大學115學年度外國學生招生簡章 p.4",
+              "confidence": "medium",
+              "rawDate": "2026-03-14",
+              "label": {
+                "zh": "3 月中旬",
+                "my": "3 လ အလယ်ပိုင်း"
+              },
+              "sort": "2027-03-11",
+              "precision": "ten-day",
+              "sortIsReference": true
+            },
+            "end": {
+              "scope": "all",
+              "round": "2",
+              "status": "historical",
+              "basis": "115-1",
+              "sourceYear": "115-1",
+              "sourceUrl": "https://isa.niu.edu.tw/var/file/73/1073/img/115-regulations-for-academic.pdf",
+              "sourceTitle": "宜蘭大學115學年度外國學生招生簡章 p.4",
+              "confidence": "medium",
+              "rawDate": "2026-04-28",
+              "label": {
+                "zh": "4 月下旬",
+                "my": "4 လ နှောင်းပိုင်း"
+              },
+              "sort": "2027-04-21",
+              "precision": "ten-day",
+              "sortIsReference": true
+            },
+            "result": {
+              "scope": "all",
+              "round": "2",
+              "status": "historical",
+              "basis": "115-1",
+              "sourceYear": "115-1",
+              "sourceUrl": "https://isa.niu.edu.tw/var/file/73/1073/img/115-regulations-for-academic.pdf",
+              "sourceTitle": "宜蘭大學115學年度外國學生招生簡章 p.4",
+              "confidence": "medium",
+              "rawDate": "2026-06-12",
+              "label": {
+                "zh": "6 月中旬",
+                "my": "6 လ အလယ်ပိုင်း"
+              },
+              "sort": "2027-06-11",
+              "precision": "ten-day",
+              "sortIsReference": true
+            },
+            "name": {
+              "zh": "2",
+              "my": "2"
+            },
+            "sourceYear": "115-1",
+            "sourceUrl": "https://isa.niu.edu.tw/var/file/73/1073/img/115-regulations-for-academic.pdf",
+            "scope": "all"
+          }
+        ],
+        "sources": [
+          "https://isa.niu.edu.tw/var/file/73/1073/img/115-regulations-for-academic.pdf"
+        ],
+        "notes": [],
+        "admissionRecords": [
+          {
+            "schoolId": "0031",
+            "semester": "fall",
+            "targetYear": "116-1",
+            "sourceYear": "115-1",
+            "applicationStart": "2025-12-01",
+            "applicationEnd": null,
+            "resultDate": "2026-03-20",
+            "status": "historical",
+            "confidence": "medium",
+            "sourceTitle": "宜蘭大學115學年度外國學生招生簡章 p.4、9",
+            "sourceUrl": "https://isa.niu.edu.tw/var/file/73/1073/img/115-regulations-for-academic.pdf",
+            "lastChecked": "2026-09-20",
+            "sourceType": "official-primary",
+            "round": "1",
+            "scope": "all",
+            "note": "截止日期重要日程及中文為2026/1/20，英文內文p.9為2025/1/20，年份差異待確認。",
+            "conflicts": {
+              "applicationEnd": [
+                "2026-01-20",
+                "2025-01-20"
+              ]
+            }
+          },
+          {
+            "schoolId": "0031",
+            "semester": "fall",
+            "targetYear": "116-1",
+            "sourceYear": "115-1",
+            "applicationStart": "2026-03-14",
+            "applicationEnd": "2026-04-28",
+            "resultDate": "2026-06-12",
+            "status": "historical",
+            "confidence": "medium",
+            "sourceTitle": "宜蘭大學115學年度外國學生招生簡章 p.4",
+            "sourceUrl": "https://isa.niu.edu.tw/var/file/73/1073/img/115-regulations-for-academic.pdf",
+            "lastChecked": "2026-09-20",
+            "sourceType": "official-primary",
+            "round": "2",
+            "scope": "all",
+            "note": ""
+          }
+        ],
+        "archivedRounds": [],
+        "archivedNotes": [],
+        "scope": "all",
+        "brochure": {
+          "url": "https://isa.niu.edu.tw/var/file/73/1073/img/115-regulations-for-academic.pdf",
+          "status": "historical"
+        }
+      }
+    },
+    "checked": "2026-09-20",
+    "reviewState": "page-read"
+  },
+  {
+    "id": "0033",
+    "name": "國立虎尾科技大學",
+    "short": "虎尾",
+    "abbr": "NFU",
+    "english": "National Formosa University",
+    "cities": [
+      "雲林縣"
+    ],
+    "cityEn": "Yunlin",
+    "type": "technology",
+    "ownership": "public",
+    "difficulty": 3,
+    "website": "http://www.nfu.edu.tw",
+    "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPU5GVS0wMDMzLTI4",
+    "admission": {
+      "url": "https://oia.nfu.edu.tw/",
+      "kind": "admission"
+    },
+    "terms": {
+      "spring": {
+        "rounds": [
+          {
+            "start": {
+              "label": {
+                "zh": "約09月中旬",
+                "my": "ခန့် 09 လလယ်"
+              },
+              "sort": "2026-09-11",
+              "status": "historical",
+              "basis": "原始年度待複核",
+              "sourceType": "user-provided-reference",
+              "confidence": "low",
+              "originalBasis": "115春",
+              "sortIsReference": true
+            },
+            "end": {
+              "label": {
+                "zh": "約10月底",
+                "my": "ခန့် 10 လကုန်"
+              },
+              "sort": "2026-10-21",
+              "status": "historical",
+              "basis": "原始年度待複核",
+              "sourceType": "user-provided-reference",
+              "confidence": "low",
+              "originalBasis": "115春",
+              "sortIsReference": true
+            },
+            "result": {
+              "label": {
+                "zh": "約12月初",
+                "my": "ခန့် 12 လအစ"
+              },
+              "sort": "2026-12-01",
+              "status": "historical",
+              "basis": "原始年度待複核",
+              "sourceType": "user-provided-reference",
+              "confidence": "low",
+              "originalBasis": "115春",
+              "sortIsReference": true
+            }
+          }
+        ],
+        "sources": [
+          "https://oia.nfu.edu.tw/"
+        ],
+        "notes": [
+          {
+            "zh": "日期為提供資料包的歷年參考；本次尚未完成官方附件的逐項複核，不代表本期正式公告。",
+            "my": "ရက်စွဲများသည် ပေးထားသော ယခင်နှစ်ကိုးကားစာရင်းမှ ဖြစ်သည်။ တရားဝင်ဖိုင်နှင့် အပြည့်အစုံ ထပ်မစစ်နိုင်သေးပါ။ ယခုကာလ တရားဝင်ရက် မဟုတ်ပါ။"
+          },
+          {
+            "zh": "前屆 2025/09/17–10/31 申請；實際 2025/12/04 放榜，原訂 11/27 不再當作實際榜單日。",
+            "my": "အသေးစိတ်ကို တရားဝင်ဝင်ခွင့်လမ်းညွှန်တွင် အတည်ပြုပါ။"
+          }
+        ],
+        "admissionRecords": [
+          {
+            "schoolId": "0033",
+            "semester": "spring",
+            "targetYear": "115-2",
+            "sourceYear": "原始年度待複核",
+            "status": "historical",
+            "confidence": "low",
+            "sourceTitle": "原始資料包歷年參考（原始年度日期待複核）",
+            "sourceUrl": "https://oia.nfu.edu.tw/",
+            "lastChecked": "2026-09-19",
+            "round": "1",
+            "scope": null,
+            "applicationStart": null,
+            "applicationStartText": "約09月中旬",
+            "applicationEnd": null,
+            "applicationEndText": "約10月底",
+            "resultDate": null,
+            "resultDateText": "約12月初",
+            "sourceType": "user-provided-reference",
+            "note": "原版保留；不由排序用的2027座標反推原始日期。"
+          }
+        ]
+      },
+      "fall": {
+        "rounds": [
+          {
+            "start": {
+              "label": {
+                "zh": "約04月初",
+                "my": "ခန့် 04 လအစ"
+              },
+              "sort": "2027-04-01",
+              "status": "historical",
+              "basis": "115",
+              "sourceType": "user-provided-reference",
+              "confidence": "low",
+              "sortIsReference": true
+            },
+            "end": {
+              "label": {
+                "zh": "約05月中旬",
+                "my": "ခန့် 05 လလယ်"
+              },
+              "sort": "2027-05-11",
+              "status": "historical",
+              "basis": "115",
+              "sourceType": "user-provided-reference",
+              "confidence": "low",
+              "sortIsReference": true
+            },
+            "result": {
+              "label": {
+                "zh": "約06月上旬",
+                "my": "ခန့် 06 လအစ"
+              },
+              "sort": "2027-06-01",
+              "status": "historical",
+              "basis": "115",
+              "sourceType": "user-provided-reference",
+              "confidence": "low",
+              "sortIsReference": true
+            }
+          }
+        ],
+        "sources": [
+          "https://oia.nfu.edu.tw/"
+        ],
+        "notes": [
+          {
+            "zh": "日期為提供資料包的歷年參考；本次尚未完成官方附件的逐項複核，不代表本期正式公告。",
+            "my": "ရက်စွဲများသည် ပေးထားသော ယခင်နှစ်ကိုးကားစာရင်းမှ ဖြစ်သည်။ တရားဝင်ဖိုင်နှင့် အပြည့်အစုံ ထပ်မစစ်နိုင်သေးပါ။ ယခုကာလ တရားဝင်ရက် မဟုတ်ပါ။"
+          }
+        ],
+        "admissionRecords": [
+          {
+            "schoolId": "0033",
+            "semester": "fall",
+            "targetYear": "116-1",
+            "sourceYear": "115",
+            "status": "historical",
+            "confidence": "low",
+            "sourceTitle": "原始資料包歷年參考（原始年度日期待複核）",
+            "sourceUrl": "https://oia.nfu.edu.tw/",
+            "lastChecked": "2026-09-19",
+            "round": "1",
+            "scope": null,
+            "applicationStart": null,
+            "applicationStartText": "約04月初",
+            "applicationEnd": null,
+            "applicationEndText": "約05月中旬",
+            "resultDate": null,
+            "resultDateText": "約06月上旬",
+            "sourceType": "user-provided-reference",
+            "note": "原版保留；不由排序用的2027座標反推原始日期。"
+          }
+        ]
+      }
+    },
+    "checked": "2026-09-19",
+    "reviewState": "page-read"
+  },
+  {
+    "id": "0035",
+    "name": "國立臺南藝術大學",
+    "short": "南藝",
+    "abbr": "TNNUA",
+    "english": "Tainan National University of the Arts",
+    "cities": [
+      "臺南市"
+    ],
+    "cityEn": "Tainan",
+    "type": "university",
+    "ownership": "public",
+    "difficulty": null,
+    "website": "http://www.tnnua.edu.tw",
+    "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPVROTlVBLTAwMzUtMjk",
+    "admission": {
+      "url": "http://www.tnnua.edu.tw",
+      "kind": "home"
+    },
+    "terms": {
+      "spring": {
+        "rounds": [],
+        "sources": [],
+        "notes": [],
+        "admissionRecords": [
+          {
+            "schoolId": "0035",
+            "semester": "spring",
+            "targetYear": "115-2",
+            "sourceYear": null,
+            "applicationStart": null,
+            "applicationEnd": null,
+            "resultDate": null,
+            "status": "unknown",
+            "confidence": "unknown",
+            "sourceTitle": null,
+            "sourceUrl": null,
+            "lastChecked": "2026-09-19"
+          }
+        ]
+      },
+      "fall": {
+        "rounds": [],
+        "sources": [],
+        "notes": [],
+        "admissionRecords": [
+          {
+            "schoolId": "0035",
+            "semester": "fall",
+            "targetYear": "116-1",
+            "sourceYear": null,
+            "applicationStart": null,
+            "applicationEnd": null,
+            "resultDate": null,
+            "status": "unknown",
+            "confidence": "unknown",
+            "sourceTitle": null,
+            "sourceUrl": null,
+            "lastChecked": "2026-09-19"
+          }
+        ]
+      }
+    },
+    "checked": "2026-09-19",
+    "reviewState": "unavailable"
+  },
+  {
+    "id": "0036",
+    "name": "國立臺南大學",
+    "short": "臺南",
+    "abbr": "NUTN",
+    "english": "National University of Tainan",
+    "cities": [
+      "臺南市"
+    ],
+    "cityEn": "Tainan",
+    "type": "university",
+    "ownership": "public",
+    "difficulty": 3,
+    "website": "https://web.nutn.edu.tw/",
+    "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPU5VVE4tMDAzNi0zMA",
+    "admission": {
+      "url": "https://campus.nutn.edu.tw/newsPost3/postFiles/101347_Admissions%20Guide%20for%20International%20Students%20for%20the%20115th%20Academic%20Year.pdf",
+      "kind": "admission"
+    },
+    "terms": {
+      "spring": {
+        "rounds": [
+          {
+            "start": {
+              "scope": "graduate",
+              "round": "1",
+              "status": "official",
+              "basis": "115-2",
+              "sourceYear": "115-2",
+              "sourceUrl": "https://campus.nutn.edu.tw/newsPost3/postFiles/101347_Admissions%20Guide%20for%20International%20Students%20for%20the%20115th%20Academic%20Year.pdf",
+              "sourceTitle": "臺南大學115學年度外國學生招生簡章 p.2",
+              "confidence": "high",
+              "rawDate": "2026-09-01",
+              "date": "2026-09-01"
+            },
+            "end": {
+              "scope": "graduate",
+              "round": "1",
+              "status": "official",
+              "basis": "115-2",
+              "sourceYear": "115-2",
+              "sourceUrl": "https://campus.nutn.edu.tw/newsPost3/postFiles/101347_Admissions%20Guide%20for%20International%20Students%20for%20the%20115th%20Academic%20Year.pdf",
+              "sourceTitle": "臺南大學115學年度外國學生招生簡章 p.2",
+              "confidence": "high",
+              "rawDate": "2026-10-31",
+              "date": "2026-10-31"
+            },
+            "result": {
+              "scope": "graduate",
+              "round": "1",
+              "status": "official",
+              "basis": "115-2",
+              "sourceYear": "115-2",
+              "sourceUrl": "https://campus.nutn.edu.tw/newsPost3/postFiles/101347_Admissions%20Guide%20for%20International%20Students%20for%20the%20115th%20Academic%20Year.pdf",
+              "sourceTitle": "臺南大學115學年度外國學生招生簡章 p.2",
+              "confidence": "high",
+              "rawDate": "2026-12-21",
+              "date": "2026-12-21"
+            },
+            "name": {
+              "zh": "1",
+              "my": "1"
+            },
+            "sourceYear": "115-2",
+            "sourceUrl": "https://campus.nutn.edu.tw/newsPost3/postFiles/101347_Admissions%20Guide%20for%20International%20Students%20for%20the%20115th%20Academic%20Year.pdf",
+            "scope": "graduate"
+          }
+        ],
+        "sources": [
+          "https://campus.nutn.edu.tw/newsPost3/postFiles/101347_Admissions%20Guide%20for%20International%20Students%20for%20the%20115th%20Academic%20Year.pdf"
+        ],
+        "notes": [],
+        "admissionRecords": [
+          {
+            "schoolId": "0036",
+            "semester": "spring",
+            "targetYear": "115-2",
+            "sourceYear": "115-2",
+            "applicationStart": "2026-09-01",
+            "applicationEnd": "2026-10-31",
+            "resultDate": "2026-12-21",
+            "status": "official",
+            "confidence": "high",
+            "sourceTitle": "臺南大學115學年度外國學生招生簡章 p.2",
+            "sourceUrl": "https://campus.nutn.edu.tw/newsPost3/postFiles/101347_Admissions%20Guide%20for%20International%20Students%20for%20the%20115th%20Academic%20Year.pdf",
+            "lastChecked": "2026-09-20",
+            "sourceType": "official-primary",
+            "round": "1",
+            "scope": "graduate",
+            "note": ""
+          }
+        ],
+        "archivedRounds": [],
+        "archivedNotes": [],
+        "scope": "graduate",
+        "brochure": {
+          "url": "https://campus.nutn.edu.tw/newsPost3/postFiles/101347_Admissions%20Guide%20for%20International%20Students%20for%20the%20115th%20Academic%20Year.pdf",
+          "status": "official"
+        }
+      },
+      "fall": {
+        "rounds": [
+          {
+            "start": {
+              "scope": "all",
+              "round": "1",
+              "status": "historical",
+              "basis": "115-1",
+              "sourceYear": "115-1",
+              "sourceUrl": "https://campus.nutn.edu.tw/newsPost3/postFiles/101347_Admissions%20Guide%20for%20International%20Students%20for%20the%20115th%20Academic%20Year.pdf",
+              "sourceTitle": "臺南大學115學年度外國學生招生簡章 p.2",
+              "confidence": "medium",
+              "rawDate": "2026-01-05",
+              "label": {
+                "zh": "1 月上旬",
+                "my": "1 လ အစပိုင်း"
+              },
+              "sort": "2027-01-01",
+              "precision": "ten-day",
+              "sortIsReference": true
+            },
+            "end": {
+              "scope": "all",
+              "round": "1",
+              "status": "historical",
+              "basis": "115-1",
+              "sourceYear": "115-1",
+              "sourceUrl": "https://campus.nutn.edu.tw/newsPost3/postFiles/101347_Admissions%20Guide%20for%20International%20Students%20for%20the%20115th%20Academic%20Year.pdf",
+              "sourceTitle": "臺南大學115學年度外國學生招生簡章 p.2",
+              "confidence": "medium",
+              "rawDate": "2026-04-09",
+              "label": {
+                "zh": "4 月上旬",
+                "my": "4 လ အစပိုင်း"
+              },
+              "sort": "2027-04-01",
+              "precision": "ten-day",
+              "sortIsReference": true
+            },
+            "result": {
+              "scope": "all",
+              "round": "1",
+              "status": "historical",
+              "basis": "115-1",
+              "sourceYear": "115-1",
+              "sourceUrl": "https://campus.nutn.edu.tw/newsPost3/postFiles/101347_Admissions%20Guide%20for%20International%20Students%20for%20the%20115th%20Academic%20Year.pdf",
+              "sourceTitle": "臺南大學115學年度外國學生招生簡章 p.2",
+              "confidence": "medium",
+              "rawDate": "2026-05-21",
+              "label": {
+                "zh": "5 月下旬",
+                "my": "5 လ နှောင်းပိုင်း"
+              },
+              "sort": "2027-05-21",
+              "precision": "ten-day",
+              "sortIsReference": true
+            },
+            "name": {
+              "zh": "1",
+              "my": "1"
+            },
+            "sourceYear": "115-1",
+            "sourceUrl": "https://campus.nutn.edu.tw/newsPost3/postFiles/101347_Admissions%20Guide%20for%20International%20Students%20for%20the%20115th%20Academic%20Year.pdf",
+            "scope": "all"
+          }
+        ],
+        "sources": [
+          "https://campus.nutn.edu.tw/newsPost3/postFiles/101347_Admissions%20Guide%20for%20International%20Students%20for%20the%20115th%20Academic%20Year.pdf"
+        ],
+        "notes": [],
+        "admissionRecords": [
+          {
+            "schoolId": "0036",
+            "semester": "fall",
+            "targetYear": "116-1",
+            "sourceYear": "115-1",
+            "applicationStart": "2026-01-05",
+            "applicationEnd": "2026-04-09",
+            "resultDate": "2026-05-21",
+            "status": "historical",
+            "confidence": "medium",
+            "sourceTitle": "臺南大學115學年度外國學生招生簡章 p.2",
+            "sourceUrl": "https://campus.nutn.edu.tw/newsPost3/postFiles/101347_Admissions%20Guide%20for%20International%20Students%20for%20the%20115th%20Academic%20Year.pdf",
+            "lastChecked": "2026-09-20",
+            "sourceType": "official-primary",
+            "round": "1",
+            "scope": "all",
+            "note": ""
+          }
+        ],
+        "archivedRounds": [],
+        "archivedNotes": [],
+        "scope": "all",
+        "brochure": {
+          "url": "https://campus.nutn.edu.tw/newsPost3/postFiles/101347_Admissions%20Guide%20for%20International%20Students%20for%20the%20115th%20Academic%20Year.pdf",
+          "status": "historical"
+        }
+      }
+    },
+    "checked": "2026-09-20",
+    "reviewState": "unavailable"
+  },
+  {
+    "id": "0037",
+    "name": "國立臺北教育大學",
+    "short": "北教",
+    "abbr": "NTUE",
+    "english": "National Taipei University of Education",
+    "cities": [
+      "臺北市"
+    ],
+    "cityEn": "Taipei",
+    "type": "university",
+    "ownership": "public",
+    "difficulty": 3,
+    "website": "http://www.ntue.edu.tw",
+    "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPU5UVUUtMDAzNy0zMQ",
+    "admission": {
+      "url": "https://enroll.ntue.edu.tw/foreign",
+      "kind": "admission"
+    },
+    "terms": {
+      "spring": {
+        "rounds": [],
+        "sources": [],
+        "notes": [],
+        "admissionRecords": [
+          {
+            "schoolId": "0037",
+            "semester": "spring",
+            "targetYear": "115-2",
+            "sourceYear": null,
+            "applicationStart": null,
+            "applicationEnd": null,
+            "resultDate": null,
+            "status": "unknown",
+            "confidence": "unknown",
+            "sourceTitle": null,
+            "sourceUrl": null,
+            "lastChecked": "2026-09-19"
+          }
+        ]
+      },
+      "fall": {
+        "rounds": [
+          {
+            "start": {
+              "scope": "all",
+              "round": "1",
+              "status": "historical",
+              "basis": "115-1",
+              "sourceYear": "115-1",
+              "sourceUrl": "https://enroll.ntue.edu.tw/foreign",
+              "sourceTitle": "國立臺北教育大學2026外國學生申請入學系統",
+              "confidence": "medium",
+              "rawDate": "2026-02-02",
+              "label": {
+                "zh": "2 月上旬",
+                "my": "2 လ အစပိုင်း"
+              },
+              "sort": "2027-02-01",
+              "precision": "ten-day",
+              "sortIsReference": true
+            },
+            "end": {
+              "scope": "all",
+              "round": "1",
+              "status": "historical",
+              "basis": "115-1",
+              "sourceYear": "115-1",
+              "sourceUrl": "https://enroll.ntue.edu.tw/foreign",
+              "sourceTitle": "國立臺北教育大學2026外國學生申請入學系統",
+              "confidence": "medium",
+              "rawDate": "2026-04-30",
+              "label": {
+                "zh": "4 月下旬",
+                "my": "4 လ နှောင်းပိုင်း"
+              },
+              "sort": "2027-04-21",
+              "precision": "ten-day",
+              "sortIsReference": true
+            },
+            "result": {
+              "scope": "all",
+              "round": "1",
+              "status": "historical",
+              "basis": "115-1",
+              "sourceYear": "115-1",
+              "sourceUrl": "https://enroll.ntue.edu.tw/foreign",
+              "sourceTitle": "國立臺北教育大學2026外國學生申請入學系統",
+              "confidence": "medium",
+              "rawDate": "2026-05-27",
+              "label": {
+                "zh": "5 月下旬",
+                "my": "5 လ နှောင်းပိုင်း"
+              },
+              "sort": "2027-05-21",
+              "precision": "ten-day",
+              "sortIsReference": true
+            },
+            "name": {
+              "zh": "1",
+              "my": "1"
+            },
+            "sourceYear": "115-1",
+            "sourceUrl": "https://enroll.ntue.edu.tw/foreign",
+            "scope": "all"
+          }
+        ],
+        "sources": [
+          "https://enroll.ntue.edu.tw/foreign"
+        ],
+        "notes": [],
+        "admissionRecords": [
+          {
+            "schoolId": "0037",
+            "semester": "fall",
+            "targetYear": "116-1",
+            "sourceYear": "115-1",
+            "applicationStart": "2026-02-02",
+            "applicationEnd": "2026-04-30",
+            "resultDate": "2026-05-27",
+            "status": "historical",
+            "confidence": "medium",
+            "sourceTitle": "國立臺北教育大學2026外國學生申請入學系統",
+            "sourceUrl": "https://enroll.ntue.edu.tw/foreign",
+            "lastChecked": "2026-09-20",
+            "sourceType": "official-primary",
+            "round": "1",
+            "scope": "all",
+            "note": ""
+          }
+        ],
+        "archivedRounds": [],
+        "archivedNotes": [],
+        "scope": "all"
+      }
+    },
+    "checked": "2026-09-20",
+    "reviewState": "unavailable"
+  },
+  {
+    "id": "0039",
+    "name": "國立臺中教育大學",
+    "short": "中教",
+    "abbr": "NTCU",
+    "english": "National Taichung University of Education",
+    "cities": [
+      "臺中市"
+    ],
+    "cityEn": "Taichung",
+    "type": "university",
+    "ownership": "public",
+    "difficulty": 3,
+    "website": "http://www.ntcu.edu.tw",
+    "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPU5UQ1UtMDAzOS0zMg",
+    "admission": {
+      "url": "https://insch.ntcu.edu.tw/en/",
+      "kind": "apply"
+    },
+    "terms": {
+      "spring": {
+        "rounds": [
+          {
+            "start": {
+              "scope": "all",
+              "round": "1",
+              "status": "official",
+              "basis": "115-2",
+              "sourceYear": "115-2",
+              "sourceUrl": "https://oia.ntcu.edu.tw/storage/media/W4NT9CD1uUPo9eA6KMtDqVYo5skoJ5OoHJhO2mNI.pdf",
+              "sourceTitle": "2026/2027 臺中教育大學外國學位生招生簡章 p.2",
+              "confidence": "high",
+              "rawDate": "2026-08-01",
+              "date": "2026-08-01"
+            },
+            "end": {
+              "scope": "all",
+              "round": "1",
+              "status": "official",
+              "basis": "115-2",
+              "sourceYear": "115-2",
+              "sourceUrl": "https://oia.ntcu.edu.tw/storage/media/W4NT9CD1uUPo9eA6KMtDqVYo5skoJ5OoHJhO2mNI.pdf",
+              "sourceTitle": "2026/2027 臺中教育大學外國學位生招生簡章 p.2",
+              "confidence": "high",
+              "rawDate": "2026-10-31",
+              "date": "2026-10-31"
+            },
+            "result": {
+              "scope": "all",
+              "round": "1",
+              "status": "official",
+              "basis": "115-2",
+              "sourceYear": "115-2",
+              "sourceUrl": "https://oia.ntcu.edu.tw/storage/media/W4NT9CD1uUPo9eA6KMtDqVYo5skoJ5OoHJhO2mNI.pdf",
+              "sourceTitle": "2026/2027 臺中教育大學外國學位生招生簡章 p.2",
+              "confidence": "high",
+              "rawDate": "2026-12-17",
+              "date": "2026-12-17"
+            },
+            "name": {
+              "zh": "1",
+              "my": "1"
+            },
+            "sourceYear": "115-2",
+            "sourceUrl": "https://oia.ntcu.edu.tw/storage/media/W4NT9CD1uUPo9eA6KMtDqVYo5skoJ5OoHJhO2mNI.pdf",
+            "scope": "all"
+          }
+        ],
+        "sources": [
+          "https://insch.ntcu.edu.tw/en/news_detail.php?sn=16",
+          "https://oia.ntcu.edu.tw/storage/media/W4NT9CD1uUPo9eA6KMtDqVYo5skoJ5OoHJhO2mNI.pdf"
+        ],
+        "notes": [],
+        "scope": "all",
+        "scopeLabel": {
+          "zh": "學士／碩士／博士依當屆開放系所",
+          "my": "ဘွဲ့ကြို / မဟာဘွဲ့ / ပါရဂူ — လမ်းညွှန်ပါ ဘာသာရပ်အတိုင်း"
+        },
+        "brochure": {
+          "url": "https://oia.ntcu.edu.tw/storage/media/W4NT9CD1uUPo9eA6KMtDqVYo5skoJ5OoHJhO2mNI.pdf",
+          "status": "official"
+        },
+        "admissionRecords": [
+          {
+            "schoolId": "0039",
+            "semester": "spring",
+            "targetYear": "115-2",
+            "sourceYear": "115-2",
+            "applicationStart": "2026-08-01",
+            "applicationEnd": "2026-10-31",
+            "resultDate": "2026-12-17",
+            "status": "official",
+            "confidence": "high",
+            "sourceTitle": "2026/2027 臺中教育大學外國學位生招生簡章 p.2",
+            "sourceUrl": "https://oia.ntcu.edu.tw/storage/media/W4NT9CD1uUPo9eA6KMtDqVYo5skoJ5OoHJhO2mNI.pdf",
+            "lastChecked": "2026-09-20",
+            "sourceType": "official-primary",
+            "round": "1",
+            "scope": "all",
+            "note": ""
+          },
+          {
+            "schoolId": "0039",
+            "semester": "spring",
+            "targetYear": "115-2",
+            "sourceYear": "115-2",
+            "status": "official",
+            "confidence": "high",
+            "sourceTitle": "既有已核對時程（原版保留）",
+            "sourceUrl": "https://insch.ntcu.edu.tw/en/news_detail.php?sn=16",
+            "lastChecked": "2026-09-19",
+            "round": "1",
+            "scope": "all",
+            "applicationStart": "2026-08-01",
+            "applicationEnd": "2026-10-31",
+            "resultDate": null,
+            "resultDateText": null,
+            "sourceType": "retained-official",
+            "note": "",
+            "archived": true
+          }
+        ],
+        "archivedRounds": [
+          {
+            "start": {
+              "date": "2026-08-01",
+              "status": "official"
+            },
+            "end": {
+              "date": "2026-10-31",
+              "status": "official"
+            },
+            "result": null
+          }
+        ],
+        "archivedNotes": []
+      },
+      "fall": {
+        "rounds": [
+          {
+            "start": {
+              "scope": "all",
+              "round": "1",
+              "status": "historical",
+              "basis": "115-1",
+              "sourceYear": "115-1",
+              "sourceUrl": "https://insch.ntcu.edu.tw/en/news_detail.php?sn=10",
+              "sourceTitle": "2026 Fall International Student Admission",
+              "confidence": "medium",
+              "rawDate": "2026-02-01",
+              "label": {
+                "zh": "2 月上旬",
+                "my": "2 လ အစပိုင်း"
+              },
+              "sort": "2027-02-01",
+              "precision": "ten-day",
+              "sortIsReference": true
+            },
+            "end": {
+              "scope": "all",
+              "round": "1",
+              "status": "historical",
+              "basis": "115-1",
+              "sourceYear": "115-1",
+              "sourceUrl": "https://insch.ntcu.edu.tw/en/news_detail.php?sn=10",
+              "sourceTitle": "2026 Fall International Student Admission",
+              "confidence": "medium",
+              "rawDate": "2026-04-30",
+              "label": {
+                "zh": "4 月下旬",
+                "my": "4 လ နှောင်းပိုင်း"
+              },
+              "sort": "2027-04-21",
+              "precision": "ten-day",
+              "sortIsReference": true
+            },
+            "result": {
+              "scope": "all",
+              "round": "1",
+              "status": "historical",
+              "basis": "115-1",
+              "sourceYear": "115-1",
+              "sourceUrl": "https://insch.ntcu.edu.tw/en/news_detail.php?sn=10",
+              "sourceTitle": "2026 Fall International Student Admission",
+              "confidence": "medium",
+              "rawDate": "2026-06-18",
+              "label": {
+                "zh": "6 月中旬",
+                "my": "6 လ အလယ်ပိုင်း"
+              },
+              "sort": "2027-06-11",
+              "precision": "ten-day",
+              "sortIsReference": true
+            },
+            "name": {
+              "zh": "1",
+              "my": "1"
+            },
+            "sourceYear": "115-1",
+            "sourceUrl": "https://insch.ntcu.edu.tw/en/news_detail.php?sn=10",
+            "scope": "all",
+            "note": {
+              "zh": "115簡章p.2預定6/18放榜、6/26寄發通知；實際放榜以申請系統公告為準。取代原資料包6/17參考值，原值存於備份。",
+              "my": "အသေးစိတ်ကို တရားဝင်ရင်းမြစ်တွင် စစ်ပါ။ 115簡章p.2預定6/18放榜、6/26寄發通知；實際放榜以申請系統公告為準。取代原資料包6/17參考值，原值存於備份。"
+            }
+          }
+        ],
+        "sources": [
+          "https://insch.ntcu.edu.tw/en/",
+          "https://insch.ntcu.edu.tw/en/news_detail.php?sn=10"
+        ],
+        "notes": [],
+        "admissionRecords": [
+          {
+            "schoolId": "0039",
+            "semester": "fall",
+            "targetYear": "116-1",
+            "sourceYear": "115-1",
+            "applicationStart": "2026-02-01",
+            "applicationEnd": "2026-04-30",
+            "resultDate": "2026-06-18",
+            "status": "historical",
+            "confidence": "medium",
+            "sourceTitle": "2026 Fall International Student Admission",
+            "sourceUrl": "https://insch.ntcu.edu.tw/en/news_detail.php?sn=10",
+            "lastChecked": "2026-09-20",
+            "sourceType": "official-primary",
+            "round": "1",
+            "scope": "all",
+            "note": "115簡章p.2預定6/18放榜、6/26寄發通知；實際放榜以申請系統公告為準。取代原資料包6/17參考值，原值存於備份。",
+            "admissionLetterDate": "2026-06-26",
+            "sourceUrls": [
+              "https://insch.ntcu.edu.tw/en/news_detail.php?sn=10",
+              "https://oia.ntcu.edu.tw/storage/media/W4NT9CD1uUPo9eA6KMtDqVYo5skoJ5OoHJhO2mNI.pdf"
+            ]
+          },
+          {
+            "schoolId": "0039",
+            "semester": "fall",
+            "targetYear": "116-1",
+            "sourceYear": "115",
+            "status": "historical",
+            "confidence": "low",
+            "sourceTitle": "原始資料包歷年參考（原始年度日期待複核）",
+            "sourceUrl": "https://insch.ntcu.edu.tw/en/",
+            "lastChecked": "2026-09-19",
+            "round": "1",
+            "scope": null,
+            "applicationStart": null,
+            "applicationStartText": null,
+            "applicationEnd": null,
+            "applicationEndText": "約04月底",
+            "resultDate": null,
+            "resultDateText": "約06月中旬",
+            "sourceType": "user-provided-reference",
+            "note": "原版保留；不由排序用的2027座標反推原始日期。",
+            "archived": true
+          }
+        ],
+        "archivedRounds": [
+          {
+            "start": null,
+            "end": {
+              "label": {
+                "zh": "約04月底",
+                "my": "ခန့် 04 လကုန်"
+              },
+              "sort": "2027-04-21",
+              "status": "historical",
+              "basis": "115",
+              "sourceType": "user-provided-reference",
+              "confidence": "low",
+              "sortIsReference": true
+            },
+            "result": {
+              "label": {
+                "zh": "約06月中旬",
+                "my": "ခန့် 06 လလယ်"
+              },
+              "sort": "2027-06-11",
+              "status": "historical",
+              "basis": "115",
+              "sourceType": "user-provided-reference",
+              "confidence": "low",
+              "sortIsReference": true
+            }
+          }
+        ],
+        "archivedNotes": [
+          {
+            "zh": "依校方前屆 2026/04/30 截止、2026/06/17 實際公告推估。",
+            "my": "အသေးစိတ်ကို တရားဝင်ဝင်ခွင့်လမ်းညွှန်တွင် အတည်ပြုပါ။"
+          }
+        ],
+        "scope": "all"
+      }
+    },
+    "checked": "2026-09-20",
+    "reviewState": "page-read"
+  },
+  {
+    "id": "0042",
+    "name": "國立澎湖科技大學",
+    "short": "澎科",
+    "abbr": "NPU",
+    "english": "National Penghu University of Science and Technology",
+    "cities": [
+      "澎湖縣"
+    ],
+    "cityEn": "Penghu",
+    "type": "technology",
+    "ownership": "public",
+    "difficulty": 2,
+    "website": "https://www.npu.edu.tw/",
+    "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPU5QVS0wMDQyLTMz",
+    "admission": {
+      "url": "https://www.npu.edu.tw/",
+      "kind": "home"
+    },
+    "terms": {
+      "spring": {
+        "rounds": [],
+        "sources": [],
+        "notes": [],
+        "admissionRecords": [
+          {
+            "schoolId": "0042",
+            "semester": "spring",
+            "targetYear": "115-2",
+            "sourceYear": null,
+            "applicationStart": null,
+            "applicationEnd": null,
+            "resultDate": null,
+            "status": "unknown",
+            "confidence": "unknown",
+            "sourceTitle": null,
+            "sourceUrl": null,
+            "lastChecked": "2026-09-19"
+          }
+        ]
+      },
+      "fall": {
+        "rounds": [],
+        "sources": [],
+        "notes": [],
+        "admissionRecords": [
+          {
+            "schoolId": "0042",
+            "semester": "fall",
+            "targetYear": "116-1",
+            "sourceYear": null,
+            "applicationStart": null,
+            "applicationEnd": null,
+            "resultDate": null,
+            "status": "unknown",
+            "confidence": "unknown",
+            "sourceTitle": null,
+            "sourceUrl": null,
+            "lastChecked": "2026-09-19"
+          }
+        ]
+      }
+    },
+    "checked": "2026-09-19",
+    "reviewState": "unavailable"
+  },
+  {
+    "id": "0044",
+    "name": "國立體育大學",
+    "short": "國體",
+    "abbr": "NTSU",
+    "english": "National Taiwan Sport University",
+    "cities": [
+      "桃園市"
+    ],
+    "cityEn": "Taoyuan",
+    "type": "university",
+    "ownership": "public",
+    "difficulty": null,
+    "website": "http://www.ntsu.edu.tw",
+    "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPU5UU1UtMDA0NC0zNQ",
+    "admission": {
+      "url": "https://aca.ntsu.edu.tw/p/404-1004-63564.php?Lang=zh-tw",
+      "kind": "admission"
+    },
+    "terms": {
+      "spring": {
+        "rounds": [
+          {
+            "start": null,
+            "end": {
+              "scope": "all",
+              "round": "1",
+              "status": "official",
+              "basis": "115-2",
+              "sourceYear": "115-2",
+              "sourceUrl": "https://aca.ntsu.edu.tw/p/404-1004-63564.php?Lang=zh-tw",
+              "sourceTitle": "國立體育大學115學年度外國學生招生公告",
+              "confidence": "high",
+              "rawDate": "2026-12-24",
+              "date": "2026-12-24"
+            },
+            "result": null,
+            "name": {
+              "zh": "1",
+              "my": "1"
+            },
+            "sourceYear": "115-2",
+            "sourceUrl": "https://aca.ntsu.edu.tw/p/404-1004-63564.php?Lang=zh-tw",
+            "scope": "all"
+          }
+        ],
+        "sources": [
+          "https://aca.ntsu.edu.tw/p/404-1004-63564.php?Lang=zh-tw"
+        ],
+        "notes": [],
+        "admissionRecords": [
+          {
+            "schoolId": "0044",
+            "semester": "spring",
+            "targetYear": "115-2",
+            "sourceYear": "115-2",
+            "applicationStart": null,
+            "applicationEnd": "2026-12-24",
+            "resultDate": null,
+            "status": "official",
+            "confidence": "high",
+            "sourceTitle": "國立體育大學115學年度外國學生招生公告",
+            "sourceUrl": "https://aca.ntsu.edu.tw/p/404-1004-63564.php?Lang=zh-tw",
+            "lastChecked": "2026-09-20",
+            "sourceType": "official-primary",
+            "round": "1",
+            "scope": "all",
+            "note": ""
+          }
+        ],
+        "archivedRounds": [],
+        "archivedNotes": [],
+        "scope": "all"
+      },
+      "fall": {
+        "rounds": [
+          {
+            "start": null,
+            "end": {
+              "scope": "all",
+              "round": "1",
+              "status": "historical",
+              "basis": "115-1",
+              "sourceYear": "115-1",
+              "sourceUrl": "https://aca.ntsu.edu.tw/p/404-1004-63564.php?Lang=zh-tw",
+              "sourceTitle": "國立體育大學115學年度外國學生招生公告",
+              "confidence": "medium",
+              "rawDate": "2026-06-18",
+              "label": {
+                "zh": "6 月中旬",
+                "my": "6 လ အလယ်ပိုင်း"
+              },
+              "sort": "2027-06-11",
+              "precision": "ten-day",
+              "sortIsReference": true
+            },
+            "result": null,
+            "name": {
+              "zh": "1",
+              "my": "1"
+            },
+            "sourceYear": "115-1",
+            "sourceUrl": "https://aca.ntsu.edu.tw/p/404-1004-63564.php?Lang=zh-tw",
+            "scope": "all"
+          }
+        ],
+        "sources": [
+          "https://aca.ntsu.edu.tw/p/404-1004-63564.php?Lang=zh-tw"
+        ],
+        "notes": [],
+        "admissionRecords": [
+          {
+            "schoolId": "0044",
+            "semester": "fall",
+            "targetYear": "116-1",
+            "sourceYear": "115-1",
+            "applicationStart": null,
+            "applicationEnd": "2026-06-18",
+            "resultDate": null,
+            "status": "historical",
+            "confidence": "medium",
+            "sourceTitle": "國立體育大學115學年度外國學生招生公告",
+            "sourceUrl": "https://aca.ntsu.edu.tw/p/404-1004-63564.php?Lang=zh-tw",
+            "lastChecked": "2026-09-20",
+            "sourceType": "official-primary",
+            "round": "1",
+            "scope": "all",
+            "note": ""
+          }
+        ],
+        "archivedRounds": [],
+        "archivedNotes": [],
+        "scope": "all"
+      }
+    },
+    "checked": "2026-09-20",
+    "reviewState": "unavailable"
+  },
+  {
+    "id": "0046",
+    "name": "國立臺北護理健康大學",
+    "short": "北護",
+    "abbr": "NTUNHS",
+    "english": "National Taipei University of Nursing and Health Sciences",
+    "cities": [
+      "臺北市"
+    ],
+    "cityEn": "Taipei",
+    "type": "technology",
+    "ownership": "public",
+    "difficulty": null,
+    "website": "http://www.ntunhs.edu.tw",
+    "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPU5UVU5IUy0wMDQ2LTM2",
+    "admission": {
+      "url": "https://international-rnd.ntunhs.edu.tw/p/412-1037-3799.php?Lang=en",
+      "kind": "admission"
+    },
+    "terms": {
+      "spring": {
+        "rounds": [],
+        "sources": [],
+        "notes": [],
+        "admissionRecords": [
+          {
+            "schoolId": "0046",
+            "semester": "spring",
+            "targetYear": "115-2",
+            "sourceYear": null,
+            "applicationStart": null,
+            "applicationEnd": null,
+            "resultDate": null,
+            "status": "unknown",
+            "confidence": "unknown",
+            "sourceTitle": null,
+            "sourceUrl": null,
+            "lastChecked": "2026-09-19"
+          }
+        ]
+      },
+      "fall": {
+        "rounds": [
+          {
+            "start": {
+              "scope": "all",
+              "round": "1",
+              "status": "historical",
+              "basis": "115-1",
+              "sourceYear": "115-1",
+              "sourceUrl": "https://international-rnd.ntunhs.edu.tw/p/412-1037-3799.php?Lang=en",
+              "sourceTitle": "2026 Academic Program Application Schedule",
+              "confidence": "medium",
+              "rawDate": "2026-01-01",
+              "label": {
+                "zh": "1 月上旬",
+                "my": "1 လ အစပိုင်း"
+              },
+              "sort": "2027-01-01",
+              "precision": "ten-day",
+              "sortIsReference": true
+            },
+            "end": {
+              "scope": "all",
+              "round": "1",
+              "status": "historical",
+              "basis": "115-1",
+              "sourceYear": "115-1",
+              "sourceUrl": "https://international-rnd.ntunhs.edu.tw/p/412-1037-3799.php?Lang=en",
+              "sourceTitle": "2026 Academic Program Application Schedule",
+              "confidence": "medium",
+              "rawDate": "2026-03-31",
+              "label": {
+                "zh": "3 月下旬",
+                "my": "3 လ နှောင်းပိုင်း"
+              },
+              "sort": "2027-03-21",
+              "precision": "ten-day",
+              "sortIsReference": true
+            },
+            "result": {
+              "scope": "all",
+              "round": "1",
+              "status": "historical",
+              "basis": "115-1",
+              "sourceYear": "115-1",
+              "sourceUrl": "https://international-rnd.ntunhs.edu.tw/p/412-1037-3799.php?Lang=en",
+              "sourceTitle": "2026 Academic Program Application Schedule",
+              "confidence": "medium",
+              "rawDate": "2026-04-17",
+              "label": {
+                "zh": "4 月中旬",
+                "my": "4 လ အလယ်ပိုင်း"
+              },
+              "sort": "2027-04-11",
+              "precision": "ten-day",
+              "sortIsReference": true
+            },
+            "name": {
+              "zh": "1",
+              "my": "1"
+            },
+            "sourceYear": "115-1",
+            "sourceUrl": "https://international-rnd.ntunhs.edu.tw/p/412-1037-3799.php?Lang=en",
+            "scope": "all"
+          },
+          {
+            "start": {
+              "scope": "all",
+              "round": "2",
+              "status": "historical",
+              "basis": "115-1",
+              "sourceYear": "115-1",
+              "sourceUrl": "https://international-rnd.ntunhs.edu.tw/p/412-1037-3799.php?Lang=en",
+              "sourceTitle": "2026 Academic Program Application Schedule",
+              "confidence": "medium",
+              "rawDate": "2026-04-20",
+              "label": {
+                "zh": "4 月中旬",
+                "my": "4 လ အလယ်ပိုင်း"
+              },
+              "sort": "2027-04-11",
+              "precision": "ten-day",
+              "sortIsReference": true
+            },
+            "end": {
+              "scope": "all",
+              "round": "2",
+              "status": "historical",
+              "basis": "115-1",
+              "sourceYear": "115-1",
+              "sourceUrl": "https://international-rnd.ntunhs.edu.tw/p/412-1037-3799.php?Lang=en",
+              "sourceTitle": "2026 Academic Program Application Schedule",
+              "confidence": "medium",
+              "rawDate": "2026-05-29",
+              "label": {
+                "zh": "5 月下旬",
+                "my": "5 လ နှောင်းပိုင်း"
+              },
+              "sort": "2027-05-21",
+              "precision": "ten-day",
+              "sortIsReference": true
+            },
+            "result": {
+              "status": "conflict",
+              "label": {
+                "zh": "官方資料存在差異，待確認",
+                "my": "တရားဝင်ရင်းမြစ်များ မတူညီ၊ အတည်ပြုရန်"
+              },
+              "sourceYear": "115-1",
+              "sourceUrl": "https://international-rnd.ntunhs.edu.tw/p/412-1037-3799.php?Lang=en"
+            },
+            "name": {
+              "zh": "2",
+              "my": "2"
+            },
+            "sourceYear": "115-1",
+            "sourceUrl": "https://international-rnd.ntunhs.edu.tw/p/412-1037-3799.php?Lang=en",
+            "scope": "all",
+            "note": {
+              "zh": "時程頁原列 6/12；首頁榜單新聞為 6/11，待核對公告正文後確認。",
+              "my": "အသေးစိတ်ကို တရားဝင်ရင်းမြစ်တွင် စစ်ပါ။ 時程頁原列 6/12；首頁榜單新聞為 6/11，待核對公告正文後確認。"
+            }
+          }
+        ],
+        "sources": [
+          "https://international-rnd.ntunhs.edu.tw/p/412-1037-3799.php?Lang=en"
+        ],
+        "notes": [],
+        "admissionRecords": [
+          {
+            "schoolId": "0046",
+            "semester": "fall",
+            "targetYear": "116-1",
+            "sourceYear": "115-1",
+            "applicationStart": "2026-01-01",
+            "applicationEnd": "2026-03-31",
+            "resultDate": "2026-04-17",
+            "status": "historical",
+            "confidence": "medium",
+            "sourceTitle": "2026 Academic Program Application Schedule",
+            "sourceUrl": "https://international-rnd.ntunhs.edu.tw/p/412-1037-3799.php?Lang=en",
+            "lastChecked": "2026-09-20",
+            "sourceType": "official-primary",
+            "round": "1",
+            "scope": "all",
+            "note": ""
+          },
+          {
+            "schoolId": "0046",
+            "semester": "fall",
+            "targetYear": "116-1",
+            "sourceYear": "115-1",
+            "applicationStart": "2026-04-20",
+            "applicationEnd": "2026-05-29",
+            "resultDate": null,
+            "status": "historical",
+            "confidence": "medium",
+            "sourceTitle": "2026 Academic Program Application Schedule",
+            "sourceUrl": "https://international-rnd.ntunhs.edu.tw/p/412-1037-3799.php?Lang=en",
+            "lastChecked": "2026-09-20",
+            "sourceType": "official-primary",
+            "round": "2",
+            "scope": "all",
+            "note": "時程頁原列 6/12；首頁榜單新聞為 6/11，待核對公告正文後確認。",
+            "conflicts": {
+              "resultDate": [
+                "2026-06-11",
+                "2026-06-12"
+              ]
+            }
+          }
+        ],
+        "archivedRounds": [],
+        "archivedNotes": [],
+        "scope": "all"
+      }
+    },
+    "checked": "2026-09-20",
+    "reviewState": "page-read"
+  },
+  {
+    "id": "0047",
+    "name": "國立高雄餐旅大學",
+    "short": "高餐",
+    "abbr": "NKUHT",
+    "english": "National Kaohsiung University of Hospitality and Tourism",
+    "cities": [
+      "高雄市"
+    ],
+    "cityEn": "Kaohsiung",
+    "type": "technology",
+    "ownership": "public",
+    "difficulty": 3,
+    "website": "https://www.nkuht.edu.tw/p/403-1000-18.php",
+    "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPU5LVUhULTAwNDctMzc",
+    "admission": {
+      "url": "https://international.nkuht.edu.tw/p/404-1045-34386.php?Lang=en",
+      "kind": "admission"
+    },
+    "terms": {
+      "spring": {
+        "rounds": [],
+        "sources": [],
+        "notes": [],
+        "admissionRecords": [
+          {
+            "schoolId": "0047",
+            "semester": "spring",
+            "targetYear": "115-2",
+            "sourceYear": null,
+            "applicationStart": null,
+            "applicationEnd": null,
+            "resultDate": null,
+            "status": "unknown",
+            "confidence": "unknown",
+            "sourceTitle": null,
+            "sourceUrl": null,
+            "lastChecked": "2026-09-19"
+          }
+        ]
+      },
+      "fall": {
+        "rounds": [
+          {
+            "start": {
+              "scope": "all",
+              "round": "1",
+              "status": "historical",
+              "basis": "115-1",
+              "sourceYear": "115-1",
+              "sourceUrl": "https://international.nkuht.edu.tw/p/404-1045-34386.php?Lang=en",
+              "sourceTitle": "高雄餐旅大學115學年度外國學生招生時程",
+              "confidence": "medium",
+              "rawDate": "2025-10-30",
+              "label": {
+                "zh": "10 月下旬",
+                "my": "10 လ နှောင်းပိုင်း"
+              },
+              "sort": "2026-10-21",
+              "precision": "ten-day",
+              "sortIsReference": true
+            },
+            "end": {
+              "scope": "all",
+              "round": "1",
+              "status": "historical",
+              "basis": "115-1",
+              "sourceYear": "115-1",
+              "sourceUrl": "https://international.nkuht.edu.tw/p/404-1045-34386.php?Lang=en",
+              "sourceTitle": "高雄餐旅大學115學年度外國學生招生時程",
+              "confidence": "medium",
+              "rawDate": "2025-12-15",
+              "label": {
+                "zh": "12 月中旬",
+                "my": "12 လ အလယ်ပိုင်း"
+              },
+              "sort": "2026-12-11",
+              "precision": "ten-day",
+              "sortIsReference": true
+            },
+            "result": {
+              "scope": "all",
+              "round": "1",
+              "status": "historical",
+              "basis": "115-1",
+              "sourceYear": "115-1",
+              "sourceUrl": "https://international.nkuht.edu.tw/p/404-1045-34386.php?Lang=en",
+              "sourceTitle": "高雄餐旅大學115學年度外國學生招生時程",
+              "confidence": "medium",
+              "rawDate": "2026-03-20",
+              "label": {
+                "zh": "3 月中旬",
+                "my": "3 လ အလယ်ပိုင်း"
+              },
+              "sort": "2027-03-11",
+              "precision": "ten-day",
+              "sortIsReference": true
+            },
+            "name": {
+              "zh": "1",
+              "my": "1"
+            },
+            "sourceYear": "115-1",
+            "sourceUrl": "https://international.nkuht.edu.tw/p/404-1045-34386.php?Lang=en",
+            "scope": "all"
+          },
+          {
+            "start": {
+              "scope": "all",
+              "round": "2",
+              "status": "historical",
+              "basis": "115-1",
+              "sourceYear": "115-1",
+              "sourceUrl": "https://international.nkuht.edu.tw/p/404-1045-34386.php?Lang=en",
+              "sourceTitle": "高雄餐旅大學115學年度外國學生招生時程",
+              "confidence": "medium",
+              "rawDate": "2026-01-20",
+              "label": {
+                "zh": "1 月中旬",
+                "my": "1 လ အလယ်ပိုင်း"
+              },
+              "sort": "2027-01-11",
+              "precision": "ten-day",
+              "sortIsReference": true
+            },
+            "end": {
+              "scope": "all",
+              "round": "2",
+              "status": "historical",
+              "basis": "115-1",
+              "sourceYear": "115-1",
+              "sourceUrl": "https://international.nkuht.edu.tw/p/404-1045-34386.php?Lang=en",
+              "sourceTitle": "高雄餐旅大學115學年度外國學生招生時程",
+              "confidence": "medium",
+              "rawDate": "2026-03-23",
+              "label": {
+                "zh": "3 月下旬",
+                "my": "3 လ နှောင်းပိုင်း"
+              },
+              "sort": "2027-03-21",
+              "precision": "ten-day",
+              "sortIsReference": true
+            },
+            "result": {
+              "scope": "all",
+              "round": "2",
+              "status": "historical",
+              "basis": "115-1",
+              "sourceYear": "115-1",
+              "sourceUrl": "https://international.nkuht.edu.tw/p/404-1045-34386.php?Lang=en",
+              "sourceTitle": "高雄餐旅大學115學年度外國學生招生時程",
+              "confidence": "medium",
+              "rawDate": "2026-05-29",
+              "label": {
+                "zh": "5 月下旬",
+                "my": "5 လ နှောင်းပိုင်း"
+              },
+              "sort": "2027-05-21",
+              "precision": "ten-day",
+              "sortIsReference": true
+            },
+            "name": {
+              "zh": "2",
+              "my": "2"
+            },
+            "sourceYear": "115-1",
+            "sourceUrl": "https://international.nkuht.edu.tw/p/404-1045-34386.php?Lang=en",
+            "scope": "all"
+          }
+        ],
+        "sources": [
+          "https://international.nkuht.edu.tw/p/404-1045-34386.php?Lang=en"
+        ],
+        "notes": [],
+        "admissionRecords": [
+          {
+            "schoolId": "0047",
+            "semester": "fall",
+            "targetYear": "116-1",
+            "sourceYear": "115-1",
+            "applicationStart": "2025-10-30",
+            "applicationEnd": "2025-12-15",
+            "resultDate": "2026-03-20",
+            "status": "historical",
+            "confidence": "medium",
+            "sourceTitle": "高雄餐旅大學115學年度外國學生招生時程",
+            "sourceUrl": "https://international.nkuht.edu.tw/p/404-1045-34386.php?Lang=en",
+            "lastChecked": "2026-09-20",
+            "sourceType": "official-primary",
+            "round": "1",
+            "scope": "all",
+            "note": ""
+          },
+          {
+            "schoolId": "0047",
+            "semester": "fall",
+            "targetYear": "116-1",
+            "sourceYear": "115-1",
+            "applicationStart": "2026-01-20",
+            "applicationEnd": "2026-03-23",
+            "resultDate": "2026-05-29",
+            "status": "historical",
+            "confidence": "medium",
+            "sourceTitle": "高雄餐旅大學115學年度外國學生招生時程",
+            "sourceUrl": "https://international.nkuht.edu.tw/p/404-1045-34386.php?Lang=en",
+            "lastChecked": "2026-09-20",
+            "sourceType": "official-primary",
+            "round": "2",
+            "scope": "all",
+            "note": ""
+          }
+        ],
+        "archivedRounds": [],
+        "archivedNotes": [],
+        "scope": "all"
+      }
+    },
+    "checked": "2026-09-20",
+    "reviewState": "unavailable"
+  },
+  {
+    "id": "0048",
+    "name": "國立金門大學",
+    "short": "金門",
+    "abbr": "NQU",
+    "english": "National Quemoy University",
+    "cities": [
+      "金門縣"
+    ],
+    "cityEn": "Kinmen",
+    "type": "university",
+    "ownership": "public",
+    "difficulty": 2,
+    "website": "https://www.nqu.edu.tw/app/home.php?Lang=zh-tw",
+    "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPU5RVS0wMDQ4LTM4",
+    "admission": {
+      "url": "https://lhc.nqu.edu.tw/p/404-1045-27952.php?Lang=zh-tw",
+      "kind": "admission"
+    },
+    "terms": {
+      "spring": {
+        "rounds": [],
+        "sources": [],
+        "notes": [],
+        "admissionRecords": [
+          {
+            "schoolId": "0048",
+            "semester": "spring",
+            "targetYear": "115-2",
+            "sourceYear": null,
+            "applicationStart": null,
+            "applicationEnd": null,
+            "resultDate": null,
+            "status": "unknown",
+            "confidence": "unknown",
+            "sourceTitle": null,
+            "sourceUrl": null,
+            "lastChecked": "2026-09-19"
+          }
+        ]
+      },
+      "fall": {
+        "rounds": [
+          {
+            "start": {
+              "scope": "all",
+              "round": "1",
+              "status": "historical",
+              "basis": "115-1",
+              "sourceYear": "115-1",
+              "sourceUrl": "https://lhc.nqu.edu.tw/p/404-1045-27952.php?Lang=zh-tw",
+              "sourceTitle": "金門大學115學年度外國學生招生公告",
+              "confidence": "medium",
+              "rawDate": "2026-03-01",
+              "label": {
+                "zh": "3 月上旬",
+                "my": "3 လ အစပိုင်း"
+              },
+              "sort": "2027-03-01",
+              "precision": "ten-day",
+              "sortIsReference": true
+            },
+            "end": {
+              "scope": "all",
+              "round": "1",
+              "status": "historical",
+              "basis": "115-1",
+              "sourceYear": "115-1",
+              "sourceUrl": "https://lhc.nqu.edu.tw/p/404-1045-27952.php?Lang=zh-tw",
+              "sourceTitle": "金門大學115學年度外國學生招生公告",
+              "confidence": "medium",
+              "rawDate": "2026-06-30",
+              "label": {
+                "zh": "6 月下旬",
+                "my": "6 လ နှောင်းပိုင်း"
+              },
+              "sort": "2027-06-21",
+              "precision": "ten-day",
+              "sortIsReference": true
+            },
+            "result": {
+              "scope": "all",
+              "round": "1",
+              "status": "historical",
+              "basis": "115-1",
+              "sourceYear": "115-1",
+              "sourceUrl": "https://lhc.nqu.edu.tw/p/404-1045-27952.php?Lang=zh-tw",
+              "sourceTitle": "金門大學115學年度外國學生招生公告",
+              "confidence": "medium",
+              "rawDate": "2026-07-23",
+              "label": {
+                "zh": "7 月下旬",
+                "my": "7 လ နှောင်းပိုင်း"
+              },
+              "sort": "2027-07-21",
+              "precision": "ten-day",
+              "sortIsReference": true
+            },
+            "name": {
+              "zh": "1",
+              "my": "1"
+            },
+            "sourceYear": "115-1",
+            "sourceUrl": "https://lhc.nqu.edu.tw/p/404-1045-27952.php?Lang=zh-tw",
+            "scope": "all",
+            "note": {
+              "zh": "已找到116新公告線索但無法核读完整版本，暫以115官方原始日期參考；公告內另有僑生表單，不作外國學生報名入口。",
+              "my": "အသေးစိတ်ကို တရားဝင်ရင်းမြစ်တွင် စစ်ပါ။ 已找到116新公告線索但無法核读完整版本，暫以115官方原始日期參考；公告內另有僑生表單，不作外國學生報名入口。"
+            }
+          }
+        ],
+        "sources": [
+          "https://lhc.nqu.edu.tw/p/404-1045-27952.php?Lang=zh-tw"
+        ],
+        "notes": [],
+        "admissionRecords": [
+          {
+            "schoolId": "0048",
+            "semester": "fall",
+            "targetYear": "116-1",
+            "sourceYear": "115-1",
+            "applicationStart": "2026-03-01",
+            "applicationEnd": "2026-06-30",
+            "resultDate": "2026-07-23",
+            "status": "historical",
+            "confidence": "medium",
+            "sourceTitle": "金門大學115學年度外國學生招生公告",
+            "sourceUrl": "https://lhc.nqu.edu.tw/p/404-1045-27952.php?Lang=zh-tw",
+            "lastChecked": "2026-09-20",
+            "sourceType": "official-primary",
+            "round": "1",
+            "scope": "all",
+            "note": "已找到116新公告線索但無法核读完整版本，暫以115官方原始日期參考；公告內另有僑生表單，不作外國學生報名入口。"
+          }
+        ],
+        "archivedRounds": [],
+        "archivedNotes": [],
+        "scope": "all"
+      }
+    },
+    "checked": "2026-09-20",
+    "reviewState": "unavailable"
+  },
+  {
+    "id": "0049",
+    "name": "國立臺灣體育運動大學",
+    "short": "臺體",
+    "abbr": "NTUS",
+    "english": "National Taiwan University of Sport",
+    "cities": [
+      "臺中市"
+    ],
+    "cityEn": "Taichung",
+    "type": "university",
+    "ownership": "public",
+    "difficulty": null,
+    "website": "https://www.ntus.edu.tw/cht/index.php",
+    "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPU5UVVMtMDA0OS0zOQ",
+    "admission": {
+      "url": "https://admission.ntus.edu.tw/index.php?article_id=46767&code=list&flag=detail&ids=1177",
+      "kind": "admission"
+    },
+    "terms": {
+      "spring": {
+        "rounds": [
+          {
+            "start": {
+              "scope": "all",
+              "round": "1",
+              "status": "official",
+              "basis": "115-2",
+              "sourceYear": "115-2",
+              "sourceUrl": "https://admission.ntus.edu.tw/index.php?article_id=46767&code=list&flag=detail&ids=1177",
+              "sourceTitle": "115學年度外國學生簡章公告",
+              "confidence": "high",
+              "rawDate": "2026-09-01",
+              "date": "2026-09-01"
+            },
+            "end": {
+              "scope": "all",
+              "round": "1",
+              "status": "official",
+              "basis": "115-2",
+              "sourceYear": "115-2",
+              "sourceUrl": "https://admission.ntus.edu.tw/index.php?article_id=46767&code=list&flag=detail&ids=1177",
+              "sourceTitle": "115學年度外國學生簡章公告",
+              "confidence": "high",
+              "rawDate": "2026-11-30",
+              "date": "2026-11-30"
+            },
+            "result": {
+              "scope": "all",
+              "round": "1",
+              "status": "official",
+              "basis": "115-2",
+              "sourceYear": "115-2",
+              "sourceUrl": "https://admission.ntus.edu.tw/index.php?article_id=46767&code=list&flag=detail&ids=1177",
+              "sourceTitle": "115學年度外國學生簡章公告",
+              "confidence": "high",
+              "rawDate": null,
+              "label": {
+                "zh": "2026/12/30 前",
+                "my": "2026/12/30 မတိုင်မီ"
+              },
+              "sort": "2026-12-30",
+              "precision": "by"
+            },
+            "name": {
+              "zh": "1",
+              "my": "1"
+            },
+            "sourceYear": "115-2",
+            "sourceUrl": "https://admission.ntus.edu.tw/index.php?article_id=46767&code=list&flag=detail&ids=1177",
+            "scope": "all"
+          }
+        ],
+        "sources": [
+          "https://admission.ntus.edu.tw/index.php?article_id=46767&code=list&flag=detail&ids=1177"
+        ],
+        "notes": [],
+        "admissionRecords": [
+          {
+            "schoolId": "0049",
+            "semester": "spring",
+            "targetYear": "115-2",
+            "sourceYear": "115-2",
+            "applicationStart": "2026-09-01",
+            "applicationEnd": "2026-11-30",
+            "resultDate": null,
+            "status": "official",
+            "confidence": "high",
+            "sourceTitle": "115學年度外國學生簡章公告",
+            "sourceUrl": "https://admission.ntus.edu.tw/index.php?article_id=46767&code=list&flag=detail&ids=1177",
+            "lastChecked": "2026-09-20",
+            "sourceType": "official-primary",
+            "round": "1",
+            "scope": "all",
+            "note": "",
+            "resultDateText": "2026/12/30 前",
+            "resultDateTextMy": "2026/12/30 မတိုင်မီ",
+            "resultSort": "2026-12-30",
+            "resultPrecision": "by"
+          }
+        ],
+        "archivedRounds": [],
+        "archivedNotes": [],
+        "scope": "all"
+      },
+      "fall": {
+        "rounds": [],
+        "sources": [],
+        "notes": [],
+        "admissionRecords": [
+          {
+            "schoolId": "0049",
+            "semester": "fall",
+            "targetYear": "116-1",
+            "sourceYear": null,
+            "applicationStart": null,
+            "applicationEnd": null,
+            "resultDate": null,
+            "status": "unknown",
+            "confidence": "unknown",
+            "sourceTitle": null,
+            "sourceUrl": null,
+            "lastChecked": "2026-09-19"
+          }
+        ]
+      }
+    },
+    "checked": "2026-09-20",
+    "reviewState": "unavailable"
+  },
+  {
+    "id": "0051",
+    "name": "國立臺北商業大學",
+    "short": "北商",
+    "abbr": "NTUB",
+    "english": "National Taipei University of Business",
+    "cities": [
+      "臺北市"
+    ],
+    "cityEn": "Taipei",
+    "type": "technology",
+    "ownership": "public",
+    "difficulty": 3,
+    "website": "http://www.ntub.edu.tw",
+    "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPU5UVUItMDA1MS00MQ",
+    "admission": {
+      "url": "http://www.ntub.edu.tw",
+      "kind": "home"
+    },
+    "terms": {
+      "spring": {
+        "rounds": [],
+        "sources": [],
+        "notes": [],
+        "admissionRecords": [
+          {
+            "schoolId": "0051",
+            "semester": "spring",
+            "targetYear": "115-2",
+            "sourceYear": null,
+            "applicationStart": null,
+            "applicationEnd": null,
+            "resultDate": null,
+            "status": "unknown",
+            "confidence": "unknown",
+            "sourceTitle": null,
+            "sourceUrl": null,
+            "lastChecked": "2026-09-19"
+          }
+        ]
+      },
+      "fall": {
+        "rounds": [],
+        "sources": [],
+        "notes": [],
+        "admissionRecords": [
+          {
+            "schoolId": "0051",
+            "semester": "fall",
+            "targetYear": "116-1",
+            "sourceYear": null,
+            "applicationStart": null,
+            "applicationEnd": null,
+            "resultDate": null,
+            "status": "unknown",
+            "confidence": "unknown",
+            "sourceTitle": null,
+            "sourceUrl": null,
+            "lastChecked": "2026-09-19"
+          }
+        ]
+      }
+    },
+    "checked": "2026-09-19",
+    "reviewState": "unavailable"
+  },
+  {
+    "id": "0052",
+    "name": "國立屏東大學",
+    "short": "屏大",
+    "abbr": "NPTU",
+    "english": "National Pingtung University",
+    "cities": [
+      "屏東縣"
+    ],
+    "cityEn": "Pingtung",
+    "type": "university",
+    "ownership": "public",
+    "difficulty": 3,
+    "website": "http://www.nptu.edu.tw",
+    "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPU5QVFUtMDA1Mi00Mg",
+    "admission": {
+      "url": "https://oiais.nptu.edu.tw/p/412-1090-12629.php?Lang=zh-tw",
+      "kind": "admission"
+    },
+    "terms": {
+      "spring": {
+        "rounds": [
+          {
+            "start": null,
+            "end": {
+              "date": "2026-10-15",
+              "status": "official"
+            },
+            "result": {
+              "date": "2026-11-30",
+              "status": "official"
+            }
+          }
+        ],
+        "sources": [
+          "https://oiais.nptu.edu.tw/p/412-1090-12629.php?Lang=zh-tw"
+        ],
+        "notes": [],
+        "admissionRecords": [
+          {
+            "schoolId": "0052",
+            "semester": "spring",
+            "targetYear": "115-2",
+            "sourceYear": "115-2",
+            "status": "official",
+            "confidence": "high",
+            "sourceTitle": "既有已核對時程（原版保留）",
+            "sourceUrl": "https://oiais.nptu.edu.tw/p/412-1090-12629.php?Lang=zh-tw",
+            "lastChecked": "2026-09-19",
+            "round": "1",
+            "scope": null,
+            "applicationStart": null,
+            "applicationStartText": null,
+            "applicationEnd": "2026-10-15",
+            "resultDate": "2026-11-30",
+            "sourceType": "retained-official",
+            "note": ""
+          }
+        ]
+      },
+      "fall": {
+        "rounds": [
+          {
+            "start": null,
+            "end": {
+              "label": {
+                "zh": "約04月中旬",
+                "my": "ခန့် 04 လလယ်"
+              },
+              "sort": "2027-04-11",
+              "status": "historical",
+              "basis": "115",
+              "sourceType": "user-provided-reference",
+              "confidence": "low",
+              "sortIsReference": true
+            },
+            "result": {
+              "label": {
+                "zh": "約06月中旬",
+                "my": "ခန့် 06 လလယ်"
+              },
+              "sort": "2027-06-11",
+              "status": "historical",
+              "basis": "115",
+              "sourceType": "user-provided-reference",
+              "confidence": "low",
+              "sortIsReference": true
+            }
+          }
+        ],
+        "sources": [
+          "https://oiais.nptu.edu.tw/p/412-1090-12629.php?Lang=zh-tw"
+        ],
+        "notes": [
+          {
+            "zh": "前屆 2026 秋截止 04/15、放榜 06/15；開始日未核得，不自行補入。",
+            "my": "အသေးစိတ်ကို တရားဝင်ဝင်ခွင့်လမ်းညွှန်တွင် အတည်ပြုပါ။"
+          }
+        ],
+        "admissionRecords": [
+          {
+            "schoolId": "0052",
+            "semester": "fall",
+            "targetYear": "116-1",
+            "sourceYear": "115",
+            "status": "historical",
+            "confidence": "low",
+            "sourceTitle": "原始資料包歷年參考（原始年度日期待複核）",
+            "sourceUrl": "https://oiais.nptu.edu.tw/p/412-1090-12629.php?Lang=zh-tw",
+            "lastChecked": "2026-09-19",
+            "round": "1",
+            "scope": null,
+            "applicationStart": null,
+            "applicationStartText": null,
+            "applicationEnd": null,
+            "applicationEndText": "約04月中旬",
+            "resultDate": null,
+            "resultDateText": "約06月中旬",
+            "sourceType": "user-provided-reference",
+            "note": "原版保留；不由排序用的2027座標反推原始日期。"
+          }
+        ]
+      }
+    },
+    "checked": "2026-09-19",
+    "reviewState": "page-read"
+  },
+  {
+    "id": "0053",
+    "name": "國立高雄科技大學",
+    "short": "高科",
+    "abbr": "NKUST",
+    "english": "National Kaohsiung University of Science and Technology",
+    "cities": [
+      "高雄市"
+    ],
+    "cityEn": "Kaohsiung",
+    "type": "technology",
+    "ownership": "public",
+    "difficulty": 3,
+    "website": "http://www.nkust.edu.tw",
+    "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPU5LVVNULTAwNTMtNDM",
+    "admission": {
+      "url": "https://oia.nkust.edu.tw/news_det-970.html",
+      "kind": "admission"
+    },
+    "terms": {
+      "spring": {
+        "rounds": [
+          {
+            "start": {
+              "date": "2026-09-07",
+              "status": "official"
+            },
+            "end": {
+              "date": "2026-10-07",
+              "status": "official"
+            },
+            "result": {
+              "date": "2026-11-30",
+              "status": "official"
+            }
+          }
+        ],
+        "sources": [
+          "https://oia.nkust.edu.tw/news_det-970.html",
+          "https://oia.nkust.edu.tw/images/upload/files/2027%E6%98%A5(115-2)%E5%A4%96%E5%9C%8B%E5%AD%B8%E7%94%9F%E6%8B%9B%E7%94%9F%E7%B0%A1%E7%AB%A0%202027%20Spring%20Semester%20International%20Student%20Admission%20Guidelines.pdf"
+        ],
+        "notes": [
+          {
+            "zh": "11/30 放榜；12 月上旬確認意願後才開放入學許可下載。",
+            "my": "11/30 ရလဒ်ထွက်သည်။ တက်ရောက်မည်ဟု အတည်ပြုပြီးမှ ဒီဇင်ဘာလအစတွင် ဝင်ခွင့်စာ ရယူနိုင်သည်။"
+          }
+        ],
+        "scope": "graduate",
+        "scopeLabel": {
+          "zh": "學士／碩士／博士依當屆開放系所",
+          "my": "ဘွဲ့ကြို / မဟာဘွဲ့ / ပါရဂူ — လမ်းညွှန်ပါ ဘာသာရပ်အတိုင်း"
+        },
+        "brochure": {
+          "url": "https://oia.nkust.edu.tw/images/upload/files/2027%E6%98%A5(115-2)%E5%A4%96%E5%9C%8B%E5%AD%B8%E7%94%9F%E6%8B%9B%E7%94%9F%E7%B0%A1%E7%AB%A0%202027%20Spring%20Semester%20International%20Student%20Admission%20Guidelines.pdf#page=19",
+          "status": "official"
+        },
+        "admissionRecords": [
+          {
+            "schoolId": "0053",
+            "semester": "spring",
+            "targetYear": "115-2",
+            "sourceYear": "115-2",
+            "status": "official",
+            "confidence": "high",
+            "sourceTitle": "既有已核對時程（原版保留）",
+            "sourceUrl": "https://oia.nkust.edu.tw/news_det-970.html",
+            "lastChecked": "2026-09-19",
+            "round": "1",
+            "scope": "graduate",
+            "applicationStart": "2026-09-07",
+            "applicationEnd": "2026-10-07",
+            "resultDate": "2026-11-30",
+            "sourceType": "retained-official",
+            "note": ""
+          }
+        ]
+      },
+      "fall": {
+        "rounds": [
+          {
+            "start": {
+              "scope": "all",
+              "round": "1",
+              "status": "historical",
+              "basis": "115-1",
+              "sourceYear": "115-1",
+              "sourceUrl": "https://oia.nkust.edu.tw/images/upload/files/2026%E7%A7%8B%E5%A4%96%E5%9C%8B%E5%AD%B8%E7%94%9F%E6%8B%9B%E7%94%9F%E7%B0%A1%E7%AB%A0%202026%20Fall%20International%20Degree%20Student%20Prospectus.pdf",
+              "sourceTitle": "高雄科技大學2026秋季外國學生招生簡章 p.2",
+              "confidence": "medium",
+              "rawDate": "2026-03-04",
+              "label": {
+                "zh": "3 月上旬",
+                "my": "3 လ အစပိုင်း"
+              },
+              "sort": "2027-03-01",
+              "precision": "ten-day",
+              "sortIsReference": true
+            },
+            "end": {
+              "scope": "all",
+              "round": "1",
+              "status": "historical",
+              "basis": "115-1",
+              "sourceYear": "115-1",
+              "sourceUrl": "https://oia.nkust.edu.tw/images/upload/files/2026%E7%A7%8B%E5%A4%96%E5%9C%8B%E5%AD%B8%E7%94%9F%E6%8B%9B%E7%94%9F%E7%B0%A1%E7%AB%A0%202026%20Fall%20International%20Degree%20Student%20Prospectus.pdf",
+              "sourceTitle": "高雄科技大學2026秋季外國學生招生簡章 p.2",
+              "confidence": "medium",
+              "rawDate": "2026-04-30",
+              "label": {
+                "zh": "4 月下旬",
+                "my": "4 လ နှောင်းပိုင်း"
+              },
+              "sort": "2027-04-21",
+              "precision": "ten-day",
+              "sortIsReference": true
+            },
+            "result": {
+              "scope": "all",
+              "round": "1",
+              "status": "historical",
+              "basis": "115-1",
+              "sourceYear": "115-1",
+              "sourceUrl": "https://oia.nkust.edu.tw/images/upload/files/2026%E7%A7%8B%E5%A4%96%E5%9C%8B%E5%AD%B8%E7%94%9F%E6%8B%9B%E7%94%9F%E7%B0%A1%E7%AB%A0%202026%20Fall%20International%20Degree%20Student%20Prospectus.pdf",
+              "sourceTitle": "高雄科技大學2026秋季外國學生招生簡章 p.2",
+              "confidence": "medium",
+              "rawDate": "2026-06-26",
+              "label": {
+                "zh": "6 月下旬",
+                "my": "6 လ နှောင်းပိုင်း"
+              },
+              "sort": "2027-06-21",
+              "precision": "ten-day",
+              "sortIsReference": true
+            },
+            "name": {
+              "zh": "1",
+              "my": "1"
+            },
+            "sourceYear": "115-1",
+            "sourceUrl": "https://oia.nkust.edu.tw/images/upload/files/2026%E7%A7%8B%E5%A4%96%E5%9C%8B%E5%AD%B8%E7%94%9F%E6%8B%9B%E7%94%9F%E7%B0%A1%E7%AB%A0%202026%20Fall%20International%20Degree%20Student%20Prospectus.pdf",
+            "scope": "all"
+          }
+        ],
+        "sources": [
+          "https://oia.nkust.edu.tw/images/upload/files/2026%E7%A7%8B%E5%A4%96%E5%9C%8B%E5%AD%B8%E7%94%9F%E6%8B%9B%E7%94%9F%E7%B0%A1%E7%AB%A0%202026%20Fall%20International%20Degree%20Student%20Prospectus.pdf"
+        ],
+        "notes": [],
+        "admissionRecords": [
+          {
+            "schoolId": "0053",
+            "semester": "fall",
+            "targetYear": "116-1",
+            "sourceYear": "115-1",
+            "applicationStart": "2026-03-04",
+            "applicationEnd": "2026-04-30",
+            "resultDate": "2026-06-26",
+            "status": "historical",
+            "confidence": "medium",
+            "sourceTitle": "高雄科技大學2026秋季外國學生招生簡章 p.2",
+            "sourceUrl": "https://oia.nkust.edu.tw/images/upload/files/2026%E7%A7%8B%E5%A4%96%E5%9C%8B%E5%AD%B8%E7%94%9F%E6%8B%9B%E7%94%9F%E7%B0%A1%E7%AB%A0%202026%20Fall%20International%20Degree%20Student%20Prospectus.pdf",
+            "lastChecked": "2026-09-20",
+            "sourceType": "official-primary",
+            "round": "1",
+            "scope": "all",
+            "note": ""
+          }
+        ],
+        "archivedRounds": [],
+        "archivedNotes": [],
+        "scope": "all",
+        "brochure": {
+          "url": "https://oia.nkust.edu.tw/images/upload/files/2026%E7%A7%8B%E5%A4%96%E5%9C%8B%E5%AD%B8%E7%94%9F%E6%8B%9B%E7%94%9F%E7%B0%A1%E7%AB%A0%202026%20Fall%20International%20Degree%20Student%20Prospectus.pdf",
+          "status": "historical"
+        }
+      }
+    },
+    "checked": "2026-09-20",
+    "reviewState": "page-read"
+  }
+]

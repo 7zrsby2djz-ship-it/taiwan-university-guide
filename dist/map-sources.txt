@@ -1,0 +1,15 @@
+Taiwan county selector map
+
+Boundary geometry: g0v/twgeojson, json/twCounty2010merge.topo.json
+https://github.com/g0v/twgeojson
+https://raw.githubusercontent.com/g0v/twgeojson/master/json/twCounty2010merge.topo.json
+License: CC0 1.0 Universal. Chia-liang Kao waived copyright and related rights.
+https://creativecommons.org/publicdomain/zero/1.0/
+
+Adaptations: projected and rounded coordinates; 台 normalized to 臺;
+桃園縣 displayed as 桃園市. Counties merged in the supplied 2010 topology.
+Penghu, Kinmen and Lienchiang are independently scaled inset maps, not shown
+at their geographic positions or at the main-island scale.
+This simplified selector is for finding schools, not precise boundary use.
+School counts derive exclusively from the existing school's city records.
+Prepared 2026-09-21. Rebuild: python research/map/build.py

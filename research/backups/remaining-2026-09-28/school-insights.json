@@ -1,0 +1,2064 @@
+{
+  "schemaVersion": 2,
+  "updated": "2026-09-27",
+  "countingPolicy": "榜單只連結官方原始來源，不解析內容、統計人數或推估錄取率。",
+  "schools": {
+    "0006": {
+      "schoolId": "0006",
+      "nameZh": "國立中興大學",
+      "admissionNotices": [
+        {
+          "academicYear": "115",
+          "semester": "fall",
+          "sourceTitle": "秋季外國學位生錄取榜單",
+          "sourceUrl": "https://www.oia.nchu.edu.tw/images/File/03_Apply_to_NCHU/3-1-Degree-Programs/3-1-2-International-Students/2026_Fall_Semester_NCHU.pdf",
+          "scope": "foreign_degree"
+        },
+        {
+          "academicYear": "114",
+          "semester": "fall",
+          "sourceTitle": "秋季外國學位生錄取榜單",
+          "sourceUrl": "https://www.oia.nchu.edu.tw/images/File/03_Apply_to_NCHU/3-1-Degree-Programs/3-1-2-International-Students/2025_Fall_Semester_NCHU.pdf",
+          "scope": "foreign_degree"
+        },
+        {
+          "academicYear": "114",
+          "semester": "spring",
+          "sourceTitle": "春季外國學位生錄取榜單",
+          "sourceUrl": "https://www.oia.nchu.edu.tw/images/File/03_Apply_to_NCHU/3-1-Degree-Programs/3-1-2-International-Students/2026_Spring_Semester_NCHU.pdf",
+          "scope": "foreign_degree"
+        }
+      ],
+      "applicationFee": {
+        "amount": null,
+        "currency": null,
+        "academicYear": "115",
+        "intakes": [
+          "fall",
+          "spring"
+        ],
+        "status": "brochure_no_amount",
+        "sourceTitle": "115學年度外國學生招生簡章",
+        "sourceUrl": "https://oia.nchu.edu.tw/images/File/03_Apply_to_NCHU/3-1-Degree-Programs/3-1-2-International-Students/115_Academic_Year_Application_Guidelines_re.pdf",
+        "notes": "已檢查115學年度簡章，未能確認明確申請費；目前未找到可靠申請費資料。未知不等於免費。",
+        "lastChecked": "2026-09-27",
+        "previousRecords": [
+          {
+            "amount": null,
+            "currency": null,
+            "academicYear": "114",
+            "status": "brochure_unreadable",
+            "sourceTitle": "114學年度國際學位生招生簡章",
+            "sourceUrl": "https://idpiilst.nchu.edu.tw/uploads/1745562603797-Application_Guidelines_for_International_Students_of_114_Academic_Year_2025_2026_new2.pdf",
+            "notes": "官方附件無法讀取"
+          }
+        ]
+      },
+      "tuition": [
+        {
+          "academicYear": "114",
+          "amountMin": 45691,
+          "amountMax": 53914,
+          "currency": "TWD",
+          "unit": "semester",
+          "scope": "外國學生學士班各院學雜費合計；不同院不同額，2027 不適用為正式金額",
+          "sourceUrl": "https://www.oia.nchu.edu.tw/index.php/zh/2-prospective-students-tw/2-4-fees-and-financing-tw/2-4-1-tuition-fees-tw"
+        }
+      ],
+      "scholarships": [
+        {
+          "academicYear": "115",
+          "selection": "reviewed",
+          "scope": "外國學位生新生可於入學申請系統勾選；非保證取得",
+          "award": "部分減免至本國生標準或全額學費減免；部分名額每月 NT$6,000／8,000",
+          "continuation": "在學生另行申請；學士前兩學期平均 70、研究所 80 以上，院系排序審議；最長學士 4 年、碩士 2 年、博士 4 年（部分學程例外）",
+          "sourceUrl": "https://oia.nchu.edu.tw/index.php/4-current-student-en/4-1-international-degree-and-dual-degree-students-en/4-1-2-current-students-en/4-1-2-5-scholarship-en",
+          "summaryMy": "ဝင်ခွင့်လျှောက်ထားစဉ် ပညာသင်ထောက်ပံ့ကြေးကို သီးခြားရွေးနိုင်သည်။ ကျောင်းလခ လျှော့ပေးခြင်း သို့မဟုတ် အချို့အတွက် တစ်လ NT$6,000 သို့မဟုတ် NT$8,000 ထောက်ပံ့ခြင်းကို စစ်ဆေးရွေးချယ်ပေးပြီး လူတိုင်းမရပါ။ ဆက်လက်ရယူရန် နှစ်စဉ် စာရင်းနှင့် အမှတ်များကို ပြန်လည်စစ်ဆေးသည်။",
+          "restrictions": "學費減免不含住宿、保險及電腦網路費。新生勾選申請，在校生須依每年公告另申請；生活津貼僅少數名額。",
+          "lastChecked": "2026-09-27"
+        }
+      ],
+      "requirements": [
+        {
+          "academicYear": "115",
+          "scope": "全校一般外國學位申請流程；系所門檻另核簡章",
+          "text": "最多填兩個志願；線上上傳申請文件，推薦人由系統寄送推薦邀請。春季僅開放研究所。授課語言與 TOCFL／英語門檻依各系所簡章，未設定全校統一分數。",
+          "sourceUrl": "https://www.oia.nchu.edu.tw/index.php/zh/3-apply-to-nchu-tw/3-1-degree-programs-tw/3-1-2-international-students-tw/3-1-2-2-application-procedure-tw",
+          "summaryMy": "လျှောက်လွှာတစ်စောင်တွင် ဘာသာရပ် အများဆုံး ၂ ခု ရွေးနိုင်သည်။ စာရွက်စာတမ်းများကို အွန်လိုင်းတွင် တင်ရပြီး ထောက်ခံစာတောင်းဆိုမှုကို စနစ်က ပို့သည်။ နွေဦးတွင် မဟာဘွဲ့နှင့် ဒေါက်တာဘွဲ့သာ ဖွင့်သည်။ ဘာသာစကားလိုအပ်ချက်ကို ဘာသာရပ်အလိုက် စစ်ပါ။"
+        }
+      ],
+      "lastChecked": "2026-09-27",
+      "audit": {
+        "checked": "2026-09-27",
+        "scope": "一般外國學位生；臺中核心11校",
+        "status": "部分完整",
+        "gaps": [
+          "申請費未核得；春季僅研究所，不能當學士招生"
+        ]
+      }
+    },
+    "1007": {
+      "schoolId": "1007",
+      "nameZh": "逢甲大學",
+      "admissionNotices": [
+        {
+          "academicYear": "115",
+          "semester": "fall",
+          "sourceTitle": "秋季外國學生各梯次錄取公告索引（頁面可能更新）",
+          "sourceUrl": "https://www.fcu.edu.tw/recurit_list/international-fall-semester/",
+          "scope": "foreign_degree"
+        },
+        {
+          "academicYear": "113",
+          "semester": "spring",
+          "sourceTitle": "春季外國學生第二梯次錄取公告",
+          "sourceUrl": "https://s3.ap-southeast-1.amazonaws.com/web-content.fcu.edu.tw/wp-content/uploads/2024/12/17103119/113-2-%E8%8B%B1%E5%85%AC%E5%91%8A%E7%AC%AC%E4%BA%8C%E6%A2%AF%E6%AC%A1.pdf",
+          "scope": "foreign_degree"
+        }
+      ],
+      "applicationFee": {
+        "amount": null,
+        "currency": null,
+        "academicYear": "115",
+        "intakes": [
+          "fall"
+        ],
+        "status": "brochure_unreadable",
+        "sourceTitle": "115學年度外國學生招生簡章",
+        "sourceUrl": "https://www.fcu.edu.tw/recurit_list/international-fall-semester/",
+        "notes": "115秋季公告已找到，但所連簡章導向Microsoft登入，無法核讀收費條文；不推定免費。",
+        "lastChecked": "2026-09-27",
+        "previousRecords": [
+          {
+            "amount": null,
+            "currency": null,
+            "academicYear": "114",
+            "status": "brochure_not_found",
+            "sourceTitle": null,
+            "sourceUrl": null,
+            "notes": "未找到可核對的114學年度外國學生招生簡章"
+          }
+        ]
+      },
+      "tuition": [],
+      "scholarships": [
+        {
+          "scope": "海外華裔學生暨外國學生獎助學金；一般外國學位生可申請",
+          "award": "每學年120,000／60,000／30,000／20,000元，分兩學期核發。須先繳清學雜費；依審查、預算及名額核定。",
+          "continuation": "第二年起由校方依成績評核；學士平均70或班級前50%，研究所80。學士最長4年（部分學制5年），碩博士2年。不得與臺灣獎學金併領。",
+          "sourceUrl": "https://myfcu.fcu.edu.tw/main/S6800/S680004_Out_Download.aspx?newfilename=9aa467b3c791471f8c4a137a82c41efa_2_1.pdf&originfilename=逢甲大學海外華裔學生暨外國學生獎助學金設置要點_114學年度起獲獎學生適用.pdf",
+          "academicYear": "114起適用",
+          "selection": "reviewed",
+          "lastChecked": "2026-09-27",
+          "policyDate": "2024-12-09",
+          "application": "新生須於線上入學申請時提出；續讀自動列入評核不等於自動獲獎。",
+          "summaryMy": "နိုင်ငံခြားသားဘွဲ့သင်တန်းများအတွက် တစ်နှစ် NT$120,000 / 60,000 / 30,000 / 20,000 ကို ရွေးချယ်ချီးမြှင့်သည်။ ကျောင်းဝင်ခွင့်လျှောက်စဉ် လျှောက်ရသည်။ ကျောင်းလခကို အရင်ပေးရပြီး ဆက်လက်ရရှိရန် အမှတ်နှင့် ဘတ်ဂျက်ကို စစ်ဆေးသည်။"
+        }
+      ],
+      "requirements": [
+        {
+          "academicYear": "115",
+          "scope": "外國學生秋季四梯招生入口",
+          "text": "115 學年度秋季分四梯次申請及放榜；科系、授課語言與文件細則請核對正式簡章。",
+          "sourceUrl": "https://www.fcu.edu.tw/recurit_list/international-fall-semester/",
+          "summaryMy": "ဆောင်းဦးဝင်ခွင့်အတွက် လျှောက်ထားနိုင်သည့်အကြိမ် ၄ ကြိမ် ရှိခဲ့သည်။ ဘာသာရပ်၊ ဘာသာစကားနှင့် စာရွက်စာတမ်းလိုအပ်ချက်ကို တရားဝင်လမ်းညွှန်တွင် စစ်ပါ။"
+        }
+      ],
+      "lastChecked": "2026-09-27",
+      "audit": {
+        "checked": "2026-09-27",
+        "scope": "一般外國學位生；臺中核心11校",
+        "status": "部分完整",
+        "gaps": [
+          "簡章附件導向登入，申請費未核得；116秋季待公布"
+        ]
+      }
+    },
+    "1008": {
+      "schoolId": "1008",
+      "nameZh": "靜宜大學",
+      "admissionNotices": [
+        {
+          "academicYear": "115",
+          "semester": "fall",
+          "sourceTitle": "秋季外國學生第一梯次錄取榜單",
+          "sourceUrl": "https://oia.pu.edu.tw/var/file/48/1048/img/257/728221571.pdf",
+          "scope": "foreign_degree"
+        },
+        {
+          "academicYear": "115",
+          "semester": "fall",
+          "sourceTitle": "秋季外國學生第二梯次錄取榜單",
+          "sourceUrl": "https://oia.pu.edu.tw/var/file/48/1048/img/257/519749998.pdf",
+          "scope": "foreign_degree"
+        },
+        {
+          "academicYear": "114",
+          "semester": "fall",
+          "sourceTitle": "秋季外國學生第一梯次錄取榜單",
+          "sourceUrl": "https://oia.pu.edu.tw/var/file/48/1048/img/174/317234510.pdf",
+          "scope": "foreign_degree"
+        },
+        {
+          "academicYear": "114",
+          "semester": "fall",
+          "sourceTitle": "秋季外國學生第二梯次錄取公告",
+          "sourceUrl": "https://oia.pu.edu.tw/p/406-1048-64344%2Cr13.php?Lang=en",
+          "scope": "foreign_degree"
+        },
+        {
+          "academicYear": "114",
+          "semester": "spring",
+          "sourceTitle": "春季外國學生第一梯次錄取榜單",
+          "sourceUrl": "https://oia.pu.edu.tw/var/file/48/1048/img/720225637.pdf",
+          "scope": "foreign_degree"
+        },
+        {
+          "academicYear": "114",
+          "semester": "spring",
+          "sourceTitle": "春季外國學生第二梯次錄取公告",
+          "sourceUrl": "https://oia.pu.edu.tw/p/16-1048-68428.php?Lang=zh-tw",
+          "scope": "foreign_degree"
+        }
+      ],
+      "applicationFee": {
+        "amount": null,
+        "currency": null,
+        "academicYear": "115",
+        "intakes": [
+          "fall",
+          "spring"
+        ],
+        "status": "brochure_no_amount",
+        "sourceTitle": "115學年度外國學生招生簡章",
+        "sourceUrl": "https://oia.pu.edu.tw/var/file/48/1048/img/1126/516627917.pdf",
+        "notes": "已檢查115學年度簡章，未能確認明確申請費；目前未找到可靠申請費資料。未知不等於免費。",
+        "lastChecked": "2026-09-27",
+        "previousRecords": [
+          {
+            "amount": null,
+            "currency": null,
+            "academicYear": "114",
+            "status": "brochure_no_amount",
+            "sourceTitle": "114學年度外國學生招生簡章",
+            "sourceUrl": "https://oia.pu.edu.tw/var/file/48/1048/img/174/841109358.pdf",
+            "notes": "簡章未列明申請費"
+          }
+        ]
+      },
+      "tuition": [
+        {
+          "academicYear": "114",
+          "amountMin": 44811,
+          "amountMax": 53874,
+          "currency": "TWD",
+          "unit": "semester",
+          "scope": "官方 2025–26 學年度各院所列學雜費；部分學程另計，僅作歷年參考",
+          "sourceUrl": "https://oia.pu.edu.tw/p/426-1048-11.php"
+        }
+      ],
+      "scholarships": [
+        {
+          "academicYear": "115",
+          "selection": "eligibility_and_application",
+          "scope": "非華語母語之外國新生，中文授課學程",
+          "award": "TOCFL Level 3 或等同／華語修課 450 小時：第一學年學雜費同額；Level 2 或等同／330 小時：第一學年學費同額",
+          "continuation": "第二年起依前一學期排名審核：前15% 35,000元，15.01–30% 20,000元，30.01–50% 8,000元。班級少於7人時，僅第1名可申請35,000元。不得視為保證續領。",
+          "sourceUrl": "https://oia.pu.edu.tw/var/file/48/1048/img/1126/516627917.pdf",
+          "summaryMy": "တရုတ်ဘာသာ မိခင်ဘာသာမဟုတ်သော ကျောင်းသားသစ်များအတွက် ဖြစ်သည်။ TOCFL B1 သို့မဟုတ် သတ်မှတ်သင်ချိန်ဖြင့် ကျောင်းလခနှင့် အထွေထွေကြေး၊ A2 ဖြင့် ကျောင်းလခ ထောက်ပံ့မှုကို လျှောက်နိုင်သည်။ ဒုတိယနှစ်မှ ယခင်စာသင်ကာလ အတန်းအဆင့်ကို စစ်ဆေးသည်။",
+          "lastChecked": "2026-09-26",
+          "policyDate": "2025-06-11",
+          "application": "在入學申請系統填寫並上傳助學金申請書。"
+        },
+        {
+          "academicYear": "115",
+          "selection": "eligibility_and_application",
+          "scope": "非英語母語之外國新生（全英語學程）；博士另依專款",
+          "award": "全英語學士 TOEFL ITP 500、碩士 550 或同等：第一學年學費同額助學金；博士第一學年學雜費同額",
+          "continuation": "博士續領需無懲處、前學期總平均 80 以上，最多三年；英文學程第二年依班排名",
+          "sourceUrl": "https://oia.pu.edu.tw/var/file/48/1048/img/1126/516627917.pdf",
+          "summaryMy": "အင်္ဂလိပ်ဘာသာဖြင့် အပြည့်သင်သော ဘွဲ့ကြိုသင်တန်းတွင် TOEFL ITP 500၊ မဟာဘွဲ့တွင် 550 သို့မဟုတ် ညီမျှသောအဆင့်ဖြင့် ပထမနှစ် ကျောင်းလခတန်ဖိုးအထိ ထောက်ပံ့နိုင်သည်။ ဒေါက်တာဘွဲ့အတွက် အခြားစည်းမျဉ်း ရှိသည်။ ဆက်လက်ရယူမှုကို သီးခြားစစ်ပါ။",
+          "lastChecked": "2026-09-26",
+          "application": "須隨入學申請提交助學金申請書。"
+        },
+        {
+          "academicYear": null,
+          "selection": "competitive",
+          "scope": "在學外國學位生通過正式 TOCFL；預算有限",
+          "award": "B2 NT$3,000、C1 以上 NT$5,000；超額按成績排序",
+          "continuation": "同等級限一次，證書須在本校就學期間取得",
+          "sourceUrl": "https://oia.pu.edu.tw/var/file/48/1048/img/324/857978926.pdf",
+          "summaryMy": "ကျောင်းတက်နေစဉ် TOCFL B2 အောင်လျှင် NT$3,000၊ C1 နှင့်အထက် NT$5,000 အတွက် လျှောက်နိုင်သည်။ ဘတ်ဂျက်နှင့် အရေအတွက် ကန့်သတ်ရှိပြီး လူတိုင်းမရပါ။",
+          "lastChecked": "2026-09-26",
+          "policyDate": "2025-06-11"
+        }
+      ],
+      "requirements": [
+        {
+          "academicYear": null,
+          "scope": "一般外國學位生；系所條件另核",
+          "text": "經驗證的學歷／成績單、推薦信一封、讀書計畫、三個月內財力證明（至少 USD 3,300／NT$100,000）、護照與授課語言證明。中文授課須華語證明；全英語授課學士 TOEFL ITP 500、碩博 550 或同等，系所可另加條件。",
+          "sourceUrl": "https://oia.pu.edu.tw/p/426-1048-11.php",
+          "summaryMy": "အတည်ပြုထားသော ဘွဲ့လက်မှတ်နှင့် အမှတ်စာရင်း၊ ထောက်ခံစာ ၁ စောင်၊ လေ့လာရေးအစီအစဉ်၊ မကြာသေးမီက ဘဏ်ငွေကြေးအထောက်အထား၊ ပတ်စပို့နှင့် သင်ကြားရေးဘာသာစကားအထောက်အထား လိုသည်။ အင်္ဂလိပ်သင်တန်းအတွက် ဘွဲ့ကြို TOEFL ITP 500၊ မဟာ/ဒေါက်တာ 550 သို့မဟုတ် ညီမျှသောအဆင့်ကို ဖော်ပြထားသည်။ ဘာသာရပ်အလိုက် ထပ်စစ်ပါ။",
+          "lastChecked": "2026-09-26"
+        }
+      ],
+      "lastChecked": "2026-09-27",
+      "audit": {
+        "checked": "2026-09-27",
+        "scope": "一般外國學位生；臺中核心11校",
+        "status": "部分完整",
+        "gaps": [
+          "申請費尚無明確官方金額；116秋季待公布"
+        ]
+      }
+    },
+    "1018": {
+      "schoolId": "1018",
+      "nameZh": "朝陽科技大學",
+      "lastChecked": "2026-09-27",
+      "admissionNotices": [
+        {
+          "academicYear": "115",
+          "semester": "fall",
+          "sourceTitle": "秋季外國學生錄取公告（各梯次）",
+          "sourceUrl": "https://icsc.cyut.edu.tw/p/404-1008-39949.php?Lang=en",
+          "scope": "foreign_degree"
+        },
+        {
+          "academicYear": "113",
+          "semester": "spring",
+          "sourceTitle": "春季外國學生第一梯次錄取公告",
+          "sourceUrl": "https://icsc.cyut.edu.tw/p/404-1008-51343.php?Lang=en",
+          "scope": "foreign_degree"
+        },
+        {
+          "academicYear": "113",
+          "semester": "spring",
+          "sourceTitle": "春季外國學生第二梯次錄取公告",
+          "sourceUrl": "https://icsc.cyut.edu.tw/p/404-1008-52396.php?Lang=en",
+          "scope": "foreign_degree"
+        }
+      ],
+      "applicationFee": {
+        "amount": null,
+        "currency": null,
+        "academicYear": "115",
+        "intakes": [
+          "fall",
+          "spring"
+        ],
+        "status": "brochure_no_amount",
+        "sourceTitle": "115學年度外國學生招生簡章",
+        "sourceUrl": "https://icsc.cyut.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9MelV6TDNCMFlWODBNekE1TkY4eE1qSTNNRFE1WHpnNE1EQTBMbkJrWmc9PQ==&fname=WW54RPOKIC4441MPHCLKRKZWQOTWWT14QO3435HGTX25LK40FCNKA054WW54FGOKPOPOZX10A404GDXTRKPKTSIG34B0NOYSVXVXDCTSWSB0VSOKUSKKYWFCNPPO44OOHCA0UWIGTWMODC35WSB040MKZTGDQPROWS30IGB4GGOK45USPOWSB510DGFGA0SXKO30B4ICIGRO35WWNPVX04OKYSB4JGUSPKKKICFCLOQOPPXX00ZS5430YWMONPWWEC34SSMKLPIDCCTSFCNKFDEGFG10KLTSVWPOXT15DG24NKXTMOMOA0YSIGICQLLO00JDQPTW14MK3045OOHGGHUSSS404544VSA0EGGDTWB4WSXSWSB0CGMKVXNPDDA0SW30IGA4QOOKLKFCICKKDHYX44B0TX24DCJGMK25WSEGXSXSHDYTPKA5XWROZWOPQOSSIGWXIC00YXMPLOPONK24ZSPKFHXS34UWXSGCGG05OOA5UWTS45UW00OKOK54LOCCHDHHHCEGEGWS14MOJGWSOP34PKGCJDJDLOA534A41111",
+        "notes": "已檢查115學年度簡章，未能確認明確申請費；目前未找到可靠申請費資料。未知不等於免費。",
+        "lastChecked": "2026-09-27",
+        "previousRecords": [
+          {
+            "amount": null,
+            "currency": null,
+            "academicYear": "114",
+            "status": "brochure_unreadable",
+            "sourceTitle": "114學年度外國學生招生簡章公告",
+            "sourceUrl": "https://icsc.cyut.edu.tw/p/406-1008-58742%2Cr1198.php?Lang=zh-tw",
+            "notes": "簡章附件無法讀取"
+          }
+        ]
+      },
+      "tuition": [
+        {
+          "academicYear": "115",
+          "amountMin": 48409,
+          "amountMax": 55684,
+          "currency": "TWD",
+          "unit": "semester",
+          "scope": "日間部境外學生學費＋雜費；管理、人文 48,409 元，設計、理工、資訊、航空 55,684 元（傳播藝術系比照設計）。未含其他費用。115 年度大學部新生表列總額為每學期 50,849–58,124 元；住宿另計。116 年度待公告。",
+          "summaryMy": "115 ပညာသင်နှစ် နေ့သင်တန်း နိုင်ငံခြားသားများ၏ ကျောင်းလခနှင့် အထွေထွေကြေးသာ ဖြစ်သည်။ ဘွဲ့ကြိုကျောင်းသားသစ်၏ အခြားကြေးပါ စုစုပေါင်းမှာ တစ်ဝက်နှစ် NT$50,849–58,124 ဖြစ်ပြီး အဆောင်ခ မပါပါ။ 116 ပညာသင်နှစ်အတွက် မအတည်ပြုရသေးပါ။",
+          "sourceUrl": "https://account.cyut.edu.tw/var/file/11/1011/img/226/631084264.pdf"
+        }
+      ],
+      "housing": [
+        {
+          "academicYear": "115",
+          "amountMin": 9000,
+          "amountMax": 23400,
+          "currency": "TWD",
+          "unit": "semester",
+          "depositMin": 3000,
+          "depositMax": 8000,
+          "sourceUrl": "https://account.cyut.edu.tw/var/file/11/1011/img/226/631084264.pdf"
+        }
+      ],
+      "scholarships": [
+        {
+          "academicYear": "現行官網辦法（查核2026-09-27；頁面未明列修訂年）",
+          "selection": "reviewed",
+          "scope": "一般外國學位生；不含交換生及專班",
+          "award": "獎助為每學期學雜費半額或全額，須審核，並非錄取即獲得。新生於入學申請時一併申請，依前一學制成績及操行評定。",
+          "continuation": "續讀依前一學期學業與操行重新審查。上限：學士 8、碩士 4、博士 8 學期；非保證領滿。政府獎學金或校外全額獎學金等受獎者不得申請。具體門檻及本期適用規則待確認。",
+          "summaryMy": "ပုံမှန်နိုင်ငံခြားသားဘွဲ့သင်တန်းအတွက် ကျောင်းလခနှင့် အထွေထွေကြေး တစ်ဝက် သို့မဟုတ် အပြည့် ထောက်ပံ့နိုင်သည်။ ကျောင်းဝင်ခွင့်လျှောက်စဉ် လျှောက်ရပြီး စစ်ဆေးရွေးချယ်မည်။ ဆက်လက်ရရှိရန် ယခင်စာသင်ကာလ ရလဒ်နှင့် အကျင့်စာရိတ္တကို ပြန်စစ်မည်။ ဘွဲ့ကြို အများဆုံး 8၊ မဟာဘွဲ့ 4၊ ဒေါက်တာဘွဲ့ 8 စာသင်ကာလဖြစ်ပြီး အာမခံမရပါ။ လဲလှယ်ကျောင်းသားနှင့် အထူးအစီအစဉ် မပါပါ။ ယခုနှစ် စည်းမျဉ်းနှင့် အခြားထောက်ပံ့ကြေး ပူးတွဲရယူခွင့်ကို စစ်ဆေးပါ။",
+          "sourceUrl": "https://icsc.cyut.edu.tw/p/404-1008-20583.php?Lang=zh-tw",
+          "lastChecked": "2026-09-26"
+        }
+      ],
+      "requirements": [
+        {
+          "academicYear": null,
+          "scope": "官網一般外國學位生語言要求",
+          "text": "華語成績 A2（Level 2）；華語母語者免附。英語授課學程另依駐外館處簽證門檻或校內英語測驗，官網列相當於 IELTS 學士 4.0、碩士 5.0、博士 6.0。仍須核對目標科系及本期簡章，不能視為所有科系均符合。線上申請後須在期限內交齊資料，並確認系所額外文件。",
+          "summaryMy": "တရုတ်ဘာသာ A2 (Level 2) လိုအပ်ပြီး မိခင်ဘာသာ တရုတ်ဖြစ်ပါက ကင်းလွတ်သည်။ အင်္ဂလိပ်သင်တန်းအတွက် သံရုံးဗီဇာစံ သို့မဟုတ် ကျောင်း၏ စာမေးပွဲစံကို စစ်ပါ။ ဝက်ဘ်ဆိုက်တွင် IELTS ဘွဲ့ကြို 4.0၊ မဟာဘွဲ့ 5.0၊ ဒေါက်တာဘွဲ့ 6.0 နှင့် ညီမျှသောအဆင့်ဟု ဖော်ပြထားသည်။ လျှောက်မည့်ဘာသာရပ်၏ လက်ရှိစည်းမျဉ်းနှင့် ထပ်ဆောင်းစာရွက်စာတမ်းများကို စစ်ဆေးရန် လိုသည်။",
+          "sourceUrl": "https://icsc.cyut.edu.tw/p/404-1008-20007.php?Lang=zh-tw"
+        }
+      ],
+      "audit": {
+        "checked": "2026-09-27",
+        "scope": "一般外國學位生；臺中核心11校",
+        "status": "部分完整",
+        "gaps": [
+          "申請費及部分開始／放榜日期未核得；具體續領門檻待當期公告"
+        ]
+      }
+    },
+    "0039": {
+      "schoolId": "0039",
+      "nameZh": "國立臺中教育大學",
+      "lastChecked": "2026-09-26",
+      "admissionNotices": [
+        {
+          "academicYear": "114",
+          "semester": "fall",
+          "sourceTitle": "秋季外國學生錄取公告",
+          "sourceUrl": "https://insch.ntcu.edu.tw/news_detail.php?sn=4",
+          "scope": "foreign_degree"
+        },
+        {
+          "academicYear": "114",
+          "semester": "spring",
+          "sourceTitle": "春季外國學生錄取公告",
+          "sourceUrl": "https://insch.ntcu.edu.tw/en/news_detail.php?sn=9",
+          "scope": "foreign_degree"
+        }
+      ],
+      "applicationFee": {
+        "amount": null,
+        "currency": null,
+        "academicYear": "114",
+        "status": "brochure_unreadable",
+        "sourceTitle": "114學年度春季外國學生招生簡章公告",
+        "sourceUrl": "https://insch.ntcu.edu.tw/news_detail.php?sn=6",
+        "notes": "附件無法讀取"
+      }
+    },
+    "0043": {
+      "schoolId": "0043",
+      "nameZh": "國立勤益科技大學",
+      "lastChecked": "2026-09-27",
+      "admissionNotices": [
+        {
+          "academicYear": "115",
+          "semester": "fall",
+          "sourceTitle": "115學年度外國學生錄取公告（招生系統公告入口）",
+          "sourceUrl": "https://admission.ncut.edu.tw/",
+          "scope": "foreign_degree"
+        }
+      ],
+      "applicationFee": {
+        "amount": 0,
+        "currency": "TWD",
+        "academicYear": "115",
+        "intakes": [
+          "fall"
+        ],
+        "status": "confirmed",
+        "sourceTitle": "115學年度外國學生招生簡章",
+        "sourceUrl": "https://admission.ncut.edu.tw/parts/proofReaderNews.ashx?ii=_281969417709349.pdf",
+        "notes": "115簡章明載外國學生申請入學不收取申請費用。",
+        "lastChecked": "2026-09-27",
+        "previousRecords": [
+          {
+            "amount": null,
+            "currency": null,
+            "academicYear": "114",
+            "status": "brochure_unreadable",
+            "sourceTitle": "114學年度外國學生招生簡章",
+            "sourceUrl": "https://admission.ncut.edu.tw/parts/proofReaderNews.ashx?ii=_225383338393322.pdf",
+            "notes": "附件無法讀取"
+          }
+        ]
+      },
+      "audit": {
+        "checked": "2026-09-27",
+        "scope": "一般外國學位生；臺中核心11校",
+        "status": "部分完整",
+        "gaps": [
+          "春季時程未找到；116秋季未公布"
+        ]
+      },
+      "scholarships": [
+        {
+          "scope": "115入學一般外國學位新生；特殊專班另依專案",
+          "award": "學士第一學年學雜費減半；碩士第一學期減半（原外國學生專修部升碩士者另依規定）；博士前兩學年學雜費全免。碩士另每學期5,000元，原則最多4學期，特定身分最多2學期。",
+          "continuation": "入學減免依身分與在學狀態核給，不能推定其後學年全免；不得與政府或同類校內獎助併領。",
+          "sourceUrl": "https://admission.ncut.edu.tw/parts/proofReaderNews.ashx?ii=_281969417709349.pdf",
+          "academicYear": "115入學起",
+          "selection": "reviewed",
+          "lastChecked": "2026-09-27",
+          "policyDate": "2026-01-05",
+          "application": "入學註冊後由承辦單位造冊辦理；金額及排除身分依簡章附錄。",
+          "summaryMy": "115 ဝင်ခွင့်မှစ၍ ဘွဲ့ကြို ပထမနှစ် ကျောင်းလခနှင့် အထွေထွေကြေး တစ်ဝက်၊ မဟာဘွဲ့ ပထမစာသင်ကာလ တစ်ဝက် လျှော့ပေးသည်။ ဒေါက်တာ ပထမနှစ်နှစ် အပြည့်လျှော့ပေးသည်။ အထူးအစီအစဉ်များအတွက် သီးခြားစည်းမျဉ်း ရှိသည်။"
+        },
+        {
+          "scope": "115起入學一般外國學士生，第二學年起學業優良獎學金",
+          "award": "每學期30,000元；須符合條件及審查。",
+          "continuation": "每學期至少9學分、班級前50%、無不及格或缺漏成績、無懲處；體育70分以上（免修／選修例外）、已繳學雜費。排除產學、INTENSE、僑港澳、交換及雙聯等身分，不得與政府或同類獎助併領。",
+          "sourceUrl": "https://admission.ncut.edu.tw/parts/proofReaderNews.ashx?ii=_281969417709349.pdf",
+          "academicYear": "115入學起",
+          "selection": "reviewed",
+          "lastChecked": "2026-09-27",
+          "application": "由承辦單位依成績資料造冊審查。",
+          "summaryMy": "115 မှ ဝင်ခွင့်ရသော ပုံမှန်နိုင်ငံခြားသားဘွဲ့ကြိုများသည် ဒုတိယနှစ်မှ တစ်စာသင်ကာလ NT$30,000 ကို သတ်မှတ်ချက်နှင့်အညီ ရနိုင်သည်။ အနည်းဆုံး ခရက်ဒစ် 9၊ အတန်းရှေ့ 50% နှင့် ဘာသာရပ်မကျခြင်း စသည့်လိုအပ်ချက် ရှိသည်။"
+        },
+        {
+          "scope": "一般外國博士生生活助學金",
+          "award": "每月10,000元，每學期6個月，至多4學期。",
+          "continuation": "續領前一學期學業70、操行80且無記過；論文階段得依指導教授審核規定辦理。",
+          "sourceUrl": "https://admission.ncut.edu.tw/parts/proofReaderNews.ashx?ii=_281969417709349.pdf",
+          "academicYear": "115簡章所附2022-01-05辦法",
+          "selection": "reviewed",
+          "lastChecked": "2026-09-27",
+          "application": "依在學狀態及每學期續領規定審核；不是學士或碩士普遍補助。"
+        }
+      ]
+    },
+    "0049": {
+      "schoolId": "0049",
+      "nameZh": "國立臺灣體育運動大學",
+      "lastChecked": "2026-09-26",
+      "admissionNotices": [
+        {
+          "academicYear": "114",
+          "semester": "fall",
+          "sourceTitle": "秋季外國學生申請入學錄取公告",
+          "sourceUrl": "https://ntusoaa.ntus.edu.tw/index.php?article_id=41736&code=list&flag=detail&ids=962",
+          "scope": "foreign_degree"
+        },
+        {
+          "academicYear": "114",
+          "semester": "spring",
+          "sourceTitle": "春季外國學生申請入學錄取公告",
+          "sourceUrl": "https://admission.ntus.edu.tw/index.php?article_id=43808&code=list&flag=detail&ids=1177",
+          "scope": "foreign_degree"
+        }
+      ],
+      "applicationFee": {
+        "amount": null,
+        "currency": null,
+        "academicYear": "114",
+        "status": "brochure_unreadable",
+        "sourceTitle": "114學年度外國學生招生簡章公告",
+        "sourceUrl": "https://www2.ntus.edu.tw/cht/index.php?article_id=39172&code=list&flag=detail&ids=80",
+        "notes": "官方公告附件無法讀取"
+      }
+    },
+    "0050": {
+      "schoolId": "0050",
+      "nameZh": "國立臺中科技大學",
+      "lastChecked": "2026-09-27",
+      "admissionNotices": [
+        {
+          "academicYear": "115",
+          "semester": "fall",
+          "sourceTitle": "秋季外國學生第二階段錄取公告",
+          "sourceUrl": "https://oia.nutc.edu.tw/p/404-1042-134790.php",
+          "scope": "foreign_degree"
+        }
+      ],
+      "applicationFee": {
+        "amount": null,
+        "currency": null,
+        "academicYear": "115",
+        "intakes": [
+          "fall"
+        ],
+        "status": "brochure_no_amount",
+        "sourceTitle": "115學年度外國學生招生簡章",
+        "sourceUrl": "https://oia.nutc.edu.tw/var/file/42/1042/img/1597/313422402.pdf",
+        "notes": "已檢查115學年度簡章，未能確認明確申請費；目前未找到可靠申請費資料。未知不等於免費。",
+        "lastChecked": "2026-09-27",
+        "previousRecords": [
+          {
+            "amount": null,
+            "currency": null,
+            "academicYear": "114",
+            "status": "brochure_no_amount",
+            "sourceTitle": "114學年度外國學生第二階段招生簡章",
+            "sourceUrl": "https://oia.nutc.edu.tw/var/file/42/1042/attach/14/pta_88472_5929430_86315.pdf",
+            "notes": "第二階段簡章未找到明確申請費；第一階段附件未能讀取"
+          }
+        ]
+      },
+      "audit": {
+        "checked": "2026-09-27",
+        "scope": "一般外國學位生；臺中核心11校",
+        "status": "部分完整",
+        "gaps": [
+          "申請費未核得；115簡章僅秋季"
+        ]
+      },
+      "scholarships": [
+        {
+          "scope": "外國學生獎助學金；一般外國學位生",
+          "award": "新生第一學年註冊時直接減免，每學期最高25,000元。其他受獎者中，前1/5名額每學期最高50,000元，其餘最高25,000元；依預算核給。",
+          "continuation": "續讀學士平均75、研究所80、操行80；每學期須完成60小時服務。獎助以學年核定；學士最多4年、二技及碩博士2年；不得與政府獎學金併領。",
+          "sourceUrl": "https://oia.nutc.edu.tw/var/file/42/1042/img/422285790.pdf",
+          "academicYear": "115起適用",
+          "selection": "reviewed",
+          "lastChecked": "2026-09-27",
+          "policyDate": "2026-05-19",
+          "application": "新生第一年免申請；在校生於第一學期開學兩週內提出。",
+          "restrictions": "115簡章較早版本載半額／全額；本頁採2026-05-19新辦法的金額上限，保留較早簡章作比較。",
+          "summaryMy": "115 မှစ၍ ကျောင်းသားသစ် ပထမနှစ်တွင် တစ်စာသင်ကာလ အများဆုံး NT$25,000 လျှော့ပေးသည်။ ဆက်လက်ရယူရန် အမှတ်၊ အကျင့်စာရိတ္တနှင့် တစ်ကာလ ဝန်ဆောင်မှု နာရီ 60 လိုသည်။ ဘတ်ဂျက်အရ ဆုံးဖြတ်သည်။"
+        }
+      ]
+    },
+    "1001": {
+      "schoolId": "1001",
+      "nameZh": "東海大學",
+      "lastChecked": "2026-09-27",
+      "admissionNotices": [
+        {
+          "academicYear": "114",
+          "semester": "fall",
+          "sourceTitle": "秋季班外國學生申請入學錄取名單",
+          "sourceUrl": "https://exam2.thu.edu.tw/EXAM/doc/1036711410_public_001.pdf",
+          "scope": "foreign_degree"
+        },
+        {
+          "academicYear": "114",
+          "semester": "spring",
+          "sourceTitle": "春季班外國學生錄取公告索引",
+          "sourceUrl": "https://exam2.thu.edu.tw/EXAM/board_all.jsp?DOC=26",
+          "scope": "foreign_degree"
+        }
+      ],
+      "applicationFee": {
+        "amount": 0,
+        "currency": "TWD",
+        "academicYear": "115",
+        "intakes": [
+          "fall",
+          "spring"
+        ],
+        "status": "confirmed",
+        "sourceTitle": "115學年度外國學生招生簡章",
+        "sourceUrl": "https://exam2.thu.edu.tw/EXAM/download_doc_25/23.pdf",
+        "notes": "115簡章申請費用明載「免費」。116秋季仍須核對新簡章。",
+        "lastChecked": "2026-09-27",
+        "previousRecords": [
+          {
+            "amount": 0,
+            "currency": "TWD",
+            "academicYear": "114",
+            "status": "confirmed",
+            "sourceTitle": "114學年度外國學生招生簡章",
+            "sourceUrl": "https://exam2.thu.edu.tw/EXAM/download_doc_25/114_regulations.pdf?s=20250428041657",
+            "notes": "簡章明載 Application Fee: Free"
+          }
+        ]
+      },
+      "audit": {
+        "checked": "2026-09-27",
+        "scope": "一般外國學位生；臺中核心11校",
+        "status": "部分完整",
+        "gaps": [
+          "116秋季未公布；沿用115四梯參考"
+        ]
+      },
+      "scholarships": [
+        {
+          "scope": "外國學生獎助學金；新生與在校學士、碩士、博士",
+          "award": "學士每學年100,000／60,000／20,000元；碩博士100,000／60,000元。審查型、依年度經費核定。",
+          "continuation": "在校學士GPA2.93以上或班級前25%；碩博士GPA3.38以上。新生入學後第一年採前一學期、第二年起採前兩學期成績。學士最多4年（建築5年）、碩博士2年；每年重新申請，通常每學期服務10小時。",
+          "sourceUrl": "https://oir.thu.edu.tw/files/users/%E5%A2%83%E5%A4%96%E5%AD%B8%E4%BD%8D%E7%94%9F/%E6%9D%B1%E6%B5%B7%E5%A4%A7%E5%AD%B8%E5%A4%96%E5%9C%8B%E5%AD%B8%E7%94%9F%E7%8D%8E%E5%8A%A9%E5%AD%B8%E9%87%91%E8%A8%AD%E7%BD%AE%E8%BE%A6%E6%B3%9520230607%E7%89%88(en).pdf",
+          "academicYear": "2023-06-07辦法（115招生仍引用）",
+          "selection": "reviewed",
+          "lastChecked": "2026-09-27",
+          "policyDate": "2023-06-07",
+          "application": "新生於入學申請勾選；續讀年度另申請。不得與臺灣政府獎學金或本校傑出新生獎學金併領。",
+          "summaryMy": "ဘွဲ့ကြိုအတွက် တစ်နှစ် NT$100,000 / 60,000 / 20,000၊ မဟာနှင့်ဒေါက်တာအတွက် NT$100,000 / 60,000 ကို စစ်ဆေးရွေးချယ်ပေးသည်။ နှစ်စဉ် ပြန်လျှောက်ရပြီး အမှတ်နှင့် ဝန်ဆောင်မှုသတ်မှတ်ချက်များ ရှိသည်။"
+        }
+      ]
+    },
+    "1029": {
+      "schoolId": "1029",
+      "nameZh": "中山醫學大學",
+      "lastChecked": "2026-09-26",
+      "admissionNotices": [],
+      "applicationFee": {
+        "amount": null,
+        "currency": null,
+        "academicYear": "114",
+        "status": "brochure_not_found",
+        "sourceTitle": null,
+        "sourceUrl": null,
+        "notes": "未找到可核對的114學年度外國學生招生簡章"
+      }
+    },
+    "1034": {
+      "schoolId": "1034",
+      "nameZh": "弘光科技大學",
+      "lastChecked": "2026-09-27",
+      "admissionNotices": [
+        {
+          "academicYear": "114",
+          "semester": "fall",
+          "sourceTitle": "秋季外國學生第二梯次錄取公告",
+          "sourceUrl": "https://ifp.hk.edu.tw/%E5%BC%98%E5%85%89%E7%A7%91%E6%8A%80%E5%A4%A7%E5%AD%B8114%E5%AD%B8%E5%B9%B4%E5%BA%A6%E7%A7%8B%E5%AD%A3%E7%8F%AD%EF%BC%88%E7%AC%AC%E4%BA%8C%E6%A2%AF%E6%AC%A1%EF%BC%89%E5%A4%96%E5%9C%8B%E5%AD%B8/",
+          "scope": "foreign_degree"
+        },
+        {
+          "academicYear": "114",
+          "semester": "fall",
+          "sourceTitle": "秋季外國學生第三梯次錄取公告",
+          "sourceUrl": "https://www.hk.edu.tw/remote/HKifp77141/",
+          "scope": "foreign_degree"
+        }
+      ],
+      "applicationFee": {
+        "amount": 0,
+        "currency": "TWD",
+        "academicYear": "115",
+        "intakes": [
+          "fall",
+          "spring"
+        ],
+        "status": "confirmed",
+        "sourceTitle": "115學年度外國學生招生簡章",
+        "sourceUrl": "https://ifp.hk.edu.tw/wp-content/uploads/2026/09/%E5%BC%98%E5%85%89115%E5%A4%96%E5%9C%8B%E5%AD%B8%E7%94%9F%E6%8B%9B%E7%94%9F%E7%B0%A1%E7%AB%A0_%E4%BF%AEV2-1106.pdf",
+        "notes": "115簡章明載免申請費，涵蓋2026秋季與2027春季；116秋季仍以新簡章為準。",
+        "lastChecked": "2026-09-27",
+        "previousRecords": [
+          {
+            "amount": null,
+            "currency": null,
+            "academicYear": "114",
+            "status": "brochure_no_amount",
+            "sourceTitle": "114學年度秋季外國學生招生簡章（修訂版）",
+            "sourceUrl": "https://ifp.hk.edu.tw/wp-content/uploads/2025/03/2025_%E5%A4%96%E5%9C%8B%E5%AD%B8%E7%94%9F%E6%8B%9B%E7%94%9F%E7%B0%A1%E7%AB%A0_%E7%A7%8B%E5%AD%A3%E7%8F%AD_%E4%B8%AD%E6%96%87%E7%89%88%E4%BF%AE%E8%A8%82%E7%89%88.pdf",
+            "notes": "秋季簡章未列明申請費"
+          }
+        ]
+      },
+      "audit": {
+        "checked": "2026-09-27",
+        "scope": "一般外國學位生；臺中核心11校",
+        "status": "部分完整",
+        "gaps": [
+          "116秋季第二梯中英文申請期不一致；獎學金最新續領細則未完整核讀"
+        ]
+      },
+      "scholarships": [
+        {
+          "scope": "境外學生獎學金；包括一般外國學位生",
+          "award": "115簡章列每學期A級50,000、B級30,000、C級10,000、D級5,000元；須申請及審核。",
+          "continuation": "新生與續讀依不同審核條件。最新續領細則、名額及可否併領請以校方獎學金辦法確認，尚未核得的門檻不當作已確認。",
+          "sourceUrl": "https://ifp.hk.edu.tw/wp-content/uploads/2026/09/%E5%BC%98%E5%85%89115%E5%A4%96%E5%9C%8B%E5%AD%B8%E7%94%9F%E6%8B%9B%E7%94%9F%E7%B0%A1%E7%AB%A0_%E4%BF%AEV2-1106.pdf",
+          "academicYear": "115",
+          "selection": "reviewed",
+          "lastChecked": "2026-09-27",
+          "application": "並非錄取自動取得；依國際處當期申請公告辦理。",
+          "summaryMy": "115 လမ်းညွှန်တွင် တစ်စာသင်ကာလ NT$50,000 / 30,000 / 10,000 / 5,000 ဟု ဖော်ပြသည်။ လျှောက်ထားပြီး စစ်ဆေးရွေးချယ်မည်။ ဆက်လက်ရယူရန် စည်းမျဉ်းနှင့် အခြားဆု ပူးတွဲယူခွင့်ကို ကျောင်းနှင့် အတည်ပြုပါ။"
+        }
+      ]
+    },
+    "1035": {
+      "schoolId": "1035",
+      "nameZh": "中國醫藥大學",
+      "lastChecked": "2026-09-26",
+      "admissionNotices": [
+        {
+          "academicYear": "114",
+          "semester": "fall",
+          "sourceTitle": "秋季外國學生第一梯次錄取榜單",
+          "sourceUrl": "https://cmucia.cmu.edu.tw/english/doc/cmulist_2025Fall_1st.pdf",
+          "scope": "foreign_degree"
+        },
+        {
+          "academicYear": "114",
+          "semester": "fall",
+          "sourceTitle": "秋季外國學生第二梯次錄取榜單",
+          "sourceUrl": "https://cmucia.cmu.edu.tw/english/doc/cmulist_2025Fall_2nd.pdf",
+          "scope": "foreign_degree"
+        }
+      ],
+      "applicationFee": {
+        "amount": 0,
+        "currency": "TWD",
+        "academicYear": "114",
+        "status": "confirmed",
+        "sourceTitle": "114學年度外國學生招生簡章",
+        "sourceUrl": "https://cmucia.cmu.edu.tw/doc/Application_Guidelines114.pdf",
+        "notes": "簡章明載免報名費 / No Application Fee"
+      }
+    },
+    "1045": {
+      "schoolId": "1045",
+      "nameZh": "嶺東科技大學",
+      "lastChecked": "2026-09-27",
+      "admissionNotices": [
+        {
+          "academicYear": "114",
+          "semester": "spring",
+          "sourceTitle": "春季外國學生錄取公告",
+          "sourceUrl": "https://www.ltu.edu.tw/p/406-1000-17077%2Cr11.php?Lang=zh-tw",
+          "scope": "foreign_degree"
+        }
+      ],
+      "applicationFee": {
+        "amount": 0,
+        "currency": "TWD",
+        "academicYear": "115",
+        "intakes": [
+          "fall"
+        ],
+        "status": "confirmed",
+        "sourceTitle": "115學年度外國學生招生簡章",
+        "sourceUrl": "https://ltu1470.video.ltu.edu.tw/filedownload/1128",
+        "notes": "115秋季簡章明載 Application Fee: None；不得直接套用春季。",
+        "lastChecked": "2026-09-27",
+        "previousRecords": [
+          {
+            "amount": null,
+            "currency": null,
+            "academicYear": "114",
+            "status": "brochure_unreadable",
+            "sourceTitle": "2025秋季外國學生招生簡章公告索引",
+            "sourceUrl": "https://ltu1473.video.ltu.edu.tw/p/page1",
+            "notes": "簡章附件尚未取得，不能核定金額"
+          }
+        ]
+      },
+      "audit": {
+        "checked": "2026-09-27",
+        "scope": "一般外國學位生；臺中核心11校",
+        "status": "部分完整",
+        "gaps": [
+          "春季費用／時程未核得；較早簡章與較新獎學金辦法差異已保留"
+        ]
+      },
+      "scholarships": [
+        {
+          "scope": "115起一般外國學士／碩士生；不含國際專修部、產學及其他特殊專班",
+          "award": "一般每學期15,000元；學士班級前3名可核給每學期30,000元。依審查及經費核定。",
+          "continuation": "續領前學期平均85、操行82，TOCFL B1（新生第一年免此語言條件）；須完成規定服務／講座。不得與政府獎學金併領。",
+          "sourceUrl": "https://ltu1475.video.ltu.edu.tw/filedownload/587",
+          "academicYear": "115入學起",
+          "selection": "reviewed",
+          "lastChecked": "2026-09-27",
+          "policyDate": "2026-06-22",
+          "application": "新生隨入學申請，在校生依公告申請。",
+          "restrictions": "較早115秋季簡章寫首學期最高25,000元；較新115年7月公布辦法改為15,000元。本頁採新辦法；保留兩個來源，申請前請向國際處確認適用批次。",
+          "relatedSourceUrl": "https://ltu1470.video.ltu.edu.tw/filedownload/1128",
+          "summaryMy": "115 မှ ဝင်ခွင့်ရသော ပုံမှန်နိုင်ငံခြားသားများအတွက် တစ်စာသင်ကာလ NT$15,000၊ ဘွဲ့ကြို အတန်းထိပ်ဆုံး 3 ဦးအတွက် NT$30,000 ကို စစ်ဆေးပေးသည်။ ဆက်လက်ရရှိရန် ပျမ်းမျှ 85၊ အကျင့်စာရိတ္တ 82 နှင့် TOCFL B1 လိုသည်။ ကျောင်းသားသစ် ပထမနှစ်တွင် B1 ကင်းလွတ်သည်။"
+        }
+      ]
+    },
+    "1047": {
+      "schoolId": "1047",
+      "nameZh": "中臺科技大學",
+      "lastChecked": "2026-09-26",
+      "admissionNotices": [],
+      "applicationFee": {
+        "amount": null,
+        "currency": null,
+        "academicYear": "114",
+        "status": "brochure_unreadable",
+        "sourceTitle": "114學年度外國學生招生簡章公告",
+        "sourceUrl": "https://oaic.ctust.edu.tw/p/16-1015-64167.php?Lang=en",
+        "notes": "官方公告附件無法讀取"
+      }
+    },
+    "1048": {
+      "schoolId": "1048",
+      "nameZh": "亞洲大學",
+      "lastChecked": "2026-09-27",
+      "admissionNotices": [
+        {
+          "academicYear": "114",
+          "semester": "fall",
+          "sourceTitle": "秋季外國學生錄取榜單",
+          "sourceUrl": "https://ci.asia.edu.tw/uploads/asset/data/691e6f9d063ca28fd7942d46/114-1%E7%A7%8B%E5%AD%A3%E7%8F%AD_%E9%8C%84%E5%8F%96%E6%A6%9C%E5%96%AE_Asia_University_International_Admission_List_for_Fall_Semester_2025.pdf",
+          "scope": "foreign_degree"
+        },
+        {
+          "academicYear": "114",
+          "semester": "spring",
+          "sourceTitle": "春季外籍學生申請入學錄取公告",
+          "sourceUrl": "https://ci.asia.edu.tw/zh_tw/news/hotnews/%E4%BA%9E%E6%B4%B2%E5%A4%A7%E5%AD%B8114%E5%AD%B8%E5%B9%B4%E5%BA%A6%E7%AC%AC%E4%BA%8C%E5%AD%B8%E6%9C%9F%E5%A4%96%E7%B1%8D%E5%AD%B8%E7%94%9F%E7%94%B3%E8%AB%8B%E5%85%A5%E5%AD%B8%E9%8C%84%E5%8F%96%E5%90%8D%E5%96%AE-65638122",
+          "scope": "foreign_degree"
+        }
+      ],
+      "applicationFee": {
+        "amount": null,
+        "currency": null,
+        "academicYear": "114",
+        "status": "brochure_unreadable",
+        "sourceTitle": "114學年度秋季外國學生招生簡章",
+        "sourceUrl": "https://ci.asia.edu.tw/uploads/asset/data/67d404a3063ca254c249d52e/Fall_Semester_2025_Admission_Application_Brochure_for_International_Students.pdf",
+        "notes": "114官方附件本次仍無法讀取；115官方招生簡章亦有線索，但附件無法核讀。搜尋摘要不作金額依據，暫不填0。"
+      },
+      "audit": {
+        "checked": "2026-09-27",
+        "scope": "一般外國學位生；臺中核心11校",
+        "status": "部分完整",
+        "gaps": [
+          "115簡章附件及獎學金條文無法讀取；申請費未核得；春季截止有11/29與11/30線索差異"
+        ]
+      },
+      "scholarships": [
+        {
+          "scope": "一般外國學位生校級獎學金",
+          "award": null,
+          "continuation": null,
+          "academicYear": null,
+          "sourceUrl": "https://oia.asia.edu.tw/p/412-1008-265.php?Lang=en",
+          "selection": "unverified",
+          "restrictions": "已找到官方獎學金入口，但本次附件回應錯誤；金額、期間及續領條件尚未能核讀，不將搜尋摘要當正式制度。",
+          "summaryMy": "တရားဝင် ပညာသင်ဆုစာမျက်နှာ ရှိသော်လည်း ယခုစစ်ဆေးစဉ် ဖိုင်ကို ဖတ်မရပါ။ ငွေပမာဏနှင့် သတ်မှတ်ချက်ကို မအတည်ပြုရသေးပါ။",
+          "lastChecked": "2026-09-27"
+        }
+      ]
+    },
+    "1062": {
+      "schoolId": "1062",
+      "nameZh": "僑光科技大學",
+      "lastChecked": "2026-09-27",
+      "admissionNotices": [
+        {
+          "academicYear": "114",
+          "semester": "fall",
+          "sourceTitle": "秋季外國學生錄取公告",
+          "sourceUrl": "https://admission.ocu.edu.tw/p/404-1023-69454.php?Lang=zh-tw",
+          "scope": "foreign_degree"
+        },
+        {
+          "academicYear": "114",
+          "semester": "spring",
+          "sourceTitle": "春季外國學生錄取公告",
+          "sourceUrl": "https://admission.ocu.edu.tw/p/405-1023-71761%2Cc5671.php",
+          "scope": "foreign_degree"
+        },
+        {
+          "academicYear": "113",
+          "semester": "spring",
+          "sourceTitle": "春季外國學生錄取公告",
+          "sourceUrl": "https://admission.ocu.edu.tw/p/404-1023-66548.php?Lang=zh-tw",
+          "scope": "foreign_degree"
+        }
+      ],
+      "applicationFee": {
+        "amount": null,
+        "currency": null,
+        "academicYear": "115",
+        "intakes": [
+          "fall"
+        ],
+        "status": "brochure_unreadable",
+        "sourceTitle": "115學年度外國學生招生簡章",
+        "sourceUrl": "https://admission.ocu.edu.tw/p/406-1023-72739%2Cr1364.php",
+        "notes": "找到115秋季外國學生簡章公告；官方網站回應錯誤，尚無法核讀金額。",
+        "lastChecked": "2026-09-27",
+        "previousRecords": [
+          {
+            "amount": null,
+            "currency": null,
+            "academicYear": "114",
+            "status": "brochure_unreadable",
+            "sourceTitle": "114學年度秋季外國學生招生簡章公告",
+            "sourceUrl": "https://admission.ocu.edu.tw/p/404-1023-67431.php?Lang=zh-tw",
+            "notes": "官方公告附件無法讀取"
+          }
+        ]
+      },
+      "audit": {
+        "checked": "2026-09-27",
+        "scope": "一般外國學位生；臺中核心11校",
+        "status": "部分完整",
+        "gaps": [
+          "官方網站回應錯誤；近年申請時程、申請費、獎學金條文未核得；未找到獨立線上申請入口"
+        ]
+      },
+      "scholarships": [
+        {
+          "scope": "一般外國學位生獎學金及境外生活助學金",
+          "award": null,
+          "continuation": null,
+          "academicYear": null,
+          "sourceUrl": "https://ia.ocu.edu.tw/p/412-1013-2834.php?Lang=zh-tw",
+          "selection": "unverified",
+          "restrictions": "官方法規入口有外國學生獎學金及境外生活助學金辦法，但本次網站回應錯誤，未核讀條文；不推定金額或可併領。",
+          "summaryMy": "တရားဝင် ပညာသင်ဆုနှင့် နေထိုင်မှုထောက်ပံ့ကြေး စည်းမျဉ်းစာမျက်နှာ ရှိသည်။ ဖိုင်ကို ဖတ်မရသဖြင့် ပမာဏနှင့် သတ်မှတ်ချက် မအတည်ပြုရသေးပါ။",
+          "lastChecked": "2026-09-27"
+        }
+      ]
+    },
+    "1069": {
+      "schoolId": "1069",
+      "nameZh": "修平科技大學",
+      "lastChecked": "2026-09-26",
+      "admissionNotices": [
+        {
+          "academicYear": "114",
+          "semester": "fall",
+          "sourceTitle": "秋季外國學生第二梯次錄取公告",
+          "sourceUrl": "https://ic.hust.edu.tw/?custom=22899&isEn=0&item=9&type=detail",
+          "scope": "foreign_degree"
+        },
+        {
+          "academicYear": "114",
+          "semester": "spring",
+          "sourceTitle": "春季外國學生錄取公告",
+          "sourceUrl": "https://ic.hust.edu.tw/?custom=24010&isEn=0&item=9&type=detail",
+          "scope": "foreign_degree"
+        }
+      ],
+      "applicationFee": {
+        "amount": null,
+        "currency": null,
+        "academicYear": "114",
+        "status": "brochure_no_amount",
+        "sourceTitle": "114學年度外國學生招生簡章",
+        "sourceUrl": "https://ic.hust.edu.tw/shareFile/file/69/90/6799s7y7x.pdf",
+        "notes": "簡章未列明申請費"
+      }
+    },
+    "0015": {
+      "applicationFee": {
+        "amount": 0,
+        "currency": "TWD",
+        "academicYear": "115",
+        "status": "confirmed",
+        "sourceUrl": "https://oicaweb.ncue.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9MelEwTDNCMFlWOHlORE01T1Y4M09UWTJOekF6WHpBeE9ETTVMbkJrWmc9PQ==&fname=WW54RPOKIC4441MPHCLKRKZWQOTWWT14QO3435HGTX25LK40FCNKA054WW54FGOKPOPOZX10A404GDXTRKPKTSIG34B0NOYSVXVXDCTSWSB0VSOKUSKKYWFCNPPO44OOHCA0UWIGTWMODC35WSB040MKZTGDQPROWS30IGB4GGOK45USPOWSB510DGFGA0SXKO30B4ICIGRO35WWNPVX04OKYSB4JGUSPKKKVWOKWW44FD00TSJCKPWWZSPKGDYWOPB035XSNPZTDCCCKPFGFDSW3410KLSSSSWWGDLPDG2441XTWW14MOKKDGRKQLXW00JDML50WSEC3050PKKKB5A0WWPONPZXEDNONO24ZSB4SSICSTEGGGMK44UXUTFGSW30ZS01YSCCJGROVWWWMPYXNOLKNP34DCJGMK2520FCXSXSVXVXHGB5ZWB050POYSSSUWB0YWPOOOZXIGLKNKXTZSPKWWKKOPQKXSGCGGRLWWCCROFCYWPOLO10JCOKSS00YTLPFGHGLKGDUSJG30HCECICMOHCMLXTDCA0LKA4B4ECFH10UWFC4440QLKKFGLKEGWSPKB0QLQL",
+        "sourceTitle": "115外國學生招生資料",
+        "intakes": [
+          "fall",
+          "spring"
+        ],
+        "notes": "簡章明載免繳申請費。",
+        "lastChecked": "2026-09-27"
+      },
+      "scholarships": [
+        {
+          "scope": "獎勵外國學生實施要點；一般外國學士、碩博士新生",
+          "award": "第一年免學雜費並提供校內住宿減免（寒暑假不含）。新生保障獎勵資格，無須另申請；入學審查及註冊後核定。",
+          "continuation": "學士僅第1年；碩士原則最長2年、博士3年，含新生第1年。研究所續領前學年平均80、各學期操行80且無不良紀錄，每年7/31前附推薦函申請。博士第3年免學雜費基數及住宿。不得重複領本校相關獎勵。",
+          "sourceUrl": "https://oicaweb.ncue.edu.tw/var/file/19/1019/img/164/239068053.pdf",
+          "academicYear": "111-11-23辦法／現行官網引用",
+          "selection": "reviewed",
+          "selectionType": "eligibility",
+          "summaryMy": "ပုံမှန်နိုင်ငံခြားသားကျောင်းသားသစ်များသည် ပထမနှစ် ကျောင်းလခနှင့် အဆောင်ခ လျှော့ပေးမှု ရရှိနိုင်သည်။ ဘွဲ့ကြိုအတွက် ပထမနှစ်သာ၊ ဘွဲ့လွန် ဆက်လက်ရယူရန် အမှတ်နှင့် နှစ်စဉ်လျှောက်လွှာ လိုသည်။",
+          "lastChecked": "2026-09-27"
+        }
+      ],
+      "admissionNotices": [
+        {
+          "academicYear": "113",
+          "semester": "spring",
+          "sourceTitle": "113學年度春季班外國學生錄取公告",
+          "sourceUrl": "https://oicaweb.ncue.edu.tw/p/406-1019-28807,r142.php?Lang=zh-tw",
+          "scope": "foreign_degree"
+        },
+        {
+          "academicYear": "113",
+          "semester": "fall",
+          "sourceTitle": "113學年度秋季第一階段外國學生錄取公告",
+          "sourceUrl": "https://oicaweb.ncue.edu.tw/p/406-1019-24536,r142.php?Lang=zh-tw",
+          "scope": "foreign_degree"
+        }
+      ],
+      "requirements": [
+        {
+          "academicYear": "115",
+          "text": "最多3個系所志願；學歷、歷年成績、自傳／讀書計畫、身分與聲明文件、USD2,500財力或獎學金證明；TOCFL／英語依系所，不是全校統一A2。",
+          "sourceUrl": "https://oicaweb.ncue.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9MelEwTDNCMFlWOHlORE01T1Y4M09UWTJOekF6WHpBeE9ETTVMbkJrWmc9PQ==&fname=WW54RPOKIC4441MPHCLKRKZWQOTWWT14QO3435HGTX25LK40FCNKA054WW54FGOKPOPOZX10A404GDXTRKPKTSIG34B0NOYSVXVXDCTSWSB0VSOKUSKKYWFCNPPO44OOHCA0UWIGTWMODC35WSB040MKZTGDQPROWS30IGB4GGOK45USPOWSB510DGFGA0SXKO30B4ICIGRO35WWNPVX04OKYSB4JGUSPKKKVWOKWW44FD00TSJCKPWWZSPKGDYWOPB035XSNPZTDCCCKPFGFDSW3410KLSSSSWWGDLPDG2441XTWW14MOKKDGRKQLXW00JDML50WSEC3050PKKKB5A0WWPONPZXEDNONO24ZSB4SSICSTEGGGMK44UXUTFGSW30ZS01YSCCJGROVWWWMPYXNOLKNP34DCJGMK2520FCXSXSVXVXHGB5ZWB050POYSSSUWB0YWPOOOZXIGLKNKXTZSPKWWKKOPQKXSGCGGRLWWCCROFCYWPOLO10JCOKSS00YTLPFGHGLKGDUSJG30HCECICMOHCMLXTDCA0LKA4B4ECFH10UWFC4440QLKKFGLKEGWSPKB0QLQL"
+        }
+      ],
+      "tuition": [],
+      "lastChecked": "2026-09-27",
+      "audit": {
+        "checked": "2026-09-27",
+        "scope": "一般外國學位生；彰師、暨南、聯合及跨縣市國立大學17校",
+        "status": "部分完整",
+        "gaps": [
+          "116秋季尚未公告，以115秋季參考；各系語言門檻需個別核對。"
+        ]
+      }
+    },
+    "0021": {
+      "applicationFee": {
+        "amount": 0,
+        "currency": "TWD",
+        "academicYear": "115",
+        "status": "confirmed",
+        "sourceUrl": "https://oia.ncnu.edu.tw/p/16-1017-31439.php?Lang=zh-tw",
+        "sourceTitle": "115外國學生招生資料",
+        "intakes": [
+          "fall"
+        ],
+        "notes": "115秋季官方公告明載免申請費；春季不以秋季規定直接推定。",
+        "lastChecked": "2026-09-27"
+      },
+      "scholarships": [
+        {
+          "scope": "外國學生獎勵：一般外國學位生學雜費減免及研究生生活助學金",
+          "award": "學雜費部分減免至本國生標準或全免；學士最多4年、碩士2年、博士4年。碩士每月3,000–5,000元、博士6,000–8,000元，通常每學期6個月；可與校級學雜費減免同領，依預算名額審核。",
+          "continuation": "在校前學期平均80，或系所推薦特殊理由；中文授課在校生須TOCFL A2或相當證明。4/15–30、10/15–30申請下學期；新生隨入學申請。政府或其他校級同項補助不得重複；全職工作、工作或永久居留身分排除。",
+          "sourceUrl": "https://oia.ncnu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9MekV4TDNCMFlWOHlNakUwTTE4eU1UUTJPRE14WHpnek1ETTNMbkJrWmc9PQ==&fname=WW54RPOKIC4441MPHCLKRKZWQOTWWT14QO3435HGTX25LK40FCNKA0540054JGEGNO0000HHA404ROJGYWSWTS14OPB0FHMPQPMPXWTSYSMKJGOKFHDC45FCRKXWUX25DGA0DCXTPKDGDCGCUSB004MPA1GDQPVWYSDCFCDG14SWYSUSROQO41104410IGGDIG30RLIC20ROWSWS01A104VSSSB4JGECQOKKGHSSWW4001LLEDPOWWMORKMO14GCWSJCUSHCGGGDMLEGOKB0FDUWOOKKMKTSWWTSIDHH44EG54TXMOXSMO35STRODCLKA1VXHGCCSWB4ECFGDG54GHUSPOXWCCOOA4JCEGGDZSB4HGICQOFCMOWSCC35DCA0ZW30JCSWFG54FCROYWDCYT05TSLKNO24QOJGMKYSWSEGXSWSMLMPFCB514YWKO0114DCKLGHSSLKTX1050EGTS14IGMOZTLOQOUWDC10GGA1WWSSUWYWCDUW50OK30OKKKTSZTIHHCXSLK24VWHCMOLKIGRKLOMKA1YTXWTSNKB0ECA4FHDCA0FCA4XWFDKKA4LKHGZWXSOKLOIC50NOCGIC00UXVS31YSUS14QK20KOHHHH",
+          "academicYear": "115簡章附2025-08-19辦法",
+          "selection": "reviewed",
+          "summaryMy": "ကျောင်းလခ တစ်စိတ်တစ်ပိုင်း သို့မဟုတ် အပြည့်လျှော့ပေးနိုင်သည်။ မဟာဘွဲ့ တစ်လ NT$3,000–5,000၊ ဒေါက်တာ NT$6,000–8,000 ကို စစ်ဆေးပေးသည်။ ဘွဲ့ကြိုအတွက် ဤလစဉ်ငွေ မသက်ဆိုင်ပါ။ စာသင်ကာလတိုင်း ပြန်လျှောက်ရသည်။",
+          "lastChecked": "2026-09-27"
+        },
+        {
+          "scope": "全英碩士學位學程專屬獎勵（不是全校碩士通用）",
+          "award": "每月6,000元、學雜費基數及每學期至多12學分減免，四人房住宿減免；最長2年。",
+          "continuation": "前學期平均85以上可續領，入學後須簽聲明書；依辦法適用學程審核。",
+          "sourceUrl": "https://oia.ncnu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9MekV4TDNCMFlWOHlNakUwTTE4eU1UUTJPRE14WHpnek1ETTNMbkJrWmc9PQ==&fname=WW54RPOKIC4441MPHCLKRKZWQOTWWT14QO3435HGTX25LK40FCNKA0540054JGEGNO0000HHA404ROJGYWSWTS14OPB0FHMPQPMPXWTSYSMKJGOKFHDC45FCRKXWUX25DGA0DCXTPKDGDCGCUSB004MPA1GDQPVWYSDCFCDG14SWYSUSROQO41104410IGGDIG30RLIC20ROWSWS01A104VSSSB4JGECQOKKGHSSWW4001LLEDPOWWMORKMO14GCWSJCUSHCGGGDMLEGOKB0FDUWOOKKMKTSWWTSIDHH44EG54TXMOXSMO35STRODCLKA1VXHGCCSWB4ECFGDG54GHUSPOXWCCOOA4JCEGGDZSB4HGICQOFCMOWSCC35DCA0ZW30JCSWFG54FCROYWDCYT05TSLKNO24QOJGMKYSWSEGXSWSMLMPFCB514YWKO0114DCKLGHSSLKTX1050EGTS14IGMOZTLOQOUWDC10GGA1WWSSUWYWCDUW50OK30OKKKTSZTIHHCXSLK24VWHCMOLKIGRKLOMKA1YTXWTSNKB0ECA4FHDCA0FCA4XWFDKKA4LKHGZWXSOKLOIC50NOCGIC00UXVS31YSUS14QK20KOHHHH",
+          "academicYear": "2025-08-19辦法",
+          "selection": "reviewed",
+          "lastChecked": "2026-09-27"
+        }
+      ],
+      "admissionNotices": [
+        {
+          "academicYear": "114",
+          "semester": "spring",
+          "sourceTitle": "114春季一般外國學生錄取公告",
+          "sourceUrl": "https://oia.ncnu.edu.tw/p/404-1017-31908.php?Lang=zh-tw",
+          "scope": "foreign_degree"
+        },
+        {
+          "academicYear": "115",
+          "semester": "fall",
+          "sourceTitle": "115秋季第二梯一般外國學生錄取公告",
+          "sourceUrl": "https://oia.ncnu.edu.tw/p/406-1017-35110%2Cr44.php?Lang=zh-tw",
+          "scope": "foreign_degree"
+        }
+      ],
+      "requirements": [
+        {
+          "academicYear": "115",
+          "text": "推薦、學歷與成績、身分及財力等依簡章；各系語言標準分列。一般學位生與國際專修部為不同管道，不能套用專修部2027春季8/17–10/16時程。",
+          "sourceUrl": "https://oia.ncnu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9MekV4TDNCMFlWOHlNakUwTTE4eU1UUTJPRE14WHpnek1ETTNMbkJrWmc9PQ==&fname=WW54RPOKIC4441MPHCLKRKZWQOTWWT14QO3435HGTX25LK40FCNKA0540054JGEGNO0000HHA404ROJGYWSWTS14OPB0FHMPQPMPXWTSYSMKJGOKFHDC45FCRKXWUX25DGA0DCXTPKDGDCGCUSB004MPA1GDQPVWYSDCFCDG14SWYSUSROQO41104410IGGDIG30RLIC20ROWSWS01A104VSSSB4JGECQOKKGHSSWW4001LLEDPOWWMORKMO14GCWSJCUSHCGGGDMLEGOKB0FDUWOOKKMKTSWWTSIDHH44EG54TXMOXSMO35STRODCLKA1VXHGCCSWB4ECFGDG54GHUSPOXWCCOOA4JCEGGDZSB4HGICQOFCMOWSCC35DCA0ZW30JCSWFG54FCROYWDCYT05TSLKNO24QOJGMKYSWSEGXSWSMLMPFCB514YWKO0114DCKLGHSSLKTX1050EGTS14IGMOZTLOQOUWDC10GGA1WWSSUWYWCDUW50OK30OKKKTSZTIHHCXSLK24VWHCMOLKIGRKLOMKA1YTXWTSNKB0ECA4FHDCA0FCA4XWFDKKA4LKHGZWXSOKLOIC50NOCGIC00UXVS31YSUS14QK20KOHHHH"
+        }
+      ],
+      "tuition": [],
+      "lastChecked": "2026-09-27",
+      "audit": {
+        "checked": "2026-09-27",
+        "scope": "一般外國學位生；彰師、暨南、聯合及跨縣市國立大學17校",
+        "status": "部分完整",
+        "gaps": [
+          "115-2一般外國學位生春季新時程未核得，保留114-2官方參考。秋季第二梯6/15放榜，6/22發入學許可；兩者不同。"
+        ]
+      }
+    },
+    "0032": {
+      "applicationFee": {
+        "amount": null,
+        "currency": null,
+        "academicYear": "115",
+        "status": "unconfirmed",
+        "sourceUrl": "https://enroll.nuu.edu.tw/var/file/65/1065/attach/15/pta_76237_4431663_47936.pdf",
+        "sourceTitle": "115外國學生招生資料",
+        "intakes": [
+          "fall"
+        ],
+        "notes": "115秋季一般外國學生簡章未查得明確申請費；不能視為免費。",
+        "lastChecked": "2026-09-27"
+      },
+      "scholarships": [
+        {
+          "scope": "聯合大學外國學生獎學金：一般學士／碩士／博士",
+          "award": "第1學年學費減免（非所有學雜費均免）；研究生其後學年可申請學費減免。另有生活獎學金：學士每月6,000元，碩博士8,000元，每年9個月。生活獎學金每年學士1–10、碩士1–10、博士1–3名；學費減免無名額上限。",
+          "continuation": "生活獎學金在校學士前學期65分／9學分，碩博士80分／4學分，操行80且無小過；續領須20小時志工服務。學士最多4年（建築5年）、碩士2年、博士3年。新生學費減免由行政單位彙整；生活獎學金開學3週內申請；政府同額以上獎助不得併領。",
+          "sourceUrl": "https://oia.nuu.edu.tw/var/file/68/1068/img/1183/NationalUnitedUniversityRegulationsforInternationalStudentScholarship.pdf",
+          "academicYear": "2025-02-11辦法",
+          "selection": "reviewed",
+          "summaryMy": "ပထမနှစ် ကျောင်းလခ လျှော့ပေးခြင်းနှင့် လစဉ်ပညာသင်ဆုသည် မတူပါ။ လစဉ်ငွေကို အရေအတွက်ကန့်သတ်၍ ရွေးချယ်ပေးပြီး အလိုအလျောက် မရပါ။",
+          "lastChecked": "2026-09-27"
+        }
+      ],
+      "admissionNotices": [
+        {
+          "academicYear": "114",
+          "semester": "fall",
+          "sourceTitle": "114秋季一般外國学生錄取公告",
+          "sourceUrl": "https://oia.nuu.edu.tw/p/405-1068-70323%2Cc1243.php?Lang=en",
+          "scope": "foreign_degree"
+        }
+      ],
+      "requirements": [],
+      "tuition": [],
+      "lastChecked": "2026-09-27",
+      "audit": {
+        "checked": "2026-09-27",
+        "scope": "一般外國學位生；彰師、暨南、聯合及跨縣市國立大學17校",
+        "status": "部分完整",
+        "gaps": [
+          "115-2一般外國學生春季招生未核得；新型專班不得代用。申請費尚無可靠明文金額。線上表單為115秋季簡章指定，須留意下一期是否更换。"
+        ]
+      }
+    },
+    "0003": {
+      "applicationFee": {
+        "amount": 2000,
+        "currency": "TWD",
+        "academicYear": "116-1",
+        "status": "confirmed",
+        "sourceUrl": "https://admissions.ntu.edu.tw/wp-content/uploads/116-1Admission-Guidelines-for-Intl-Degree-Students_ENG-1.pdf",
+        "sourceTitle": "116-1外國學生招生資料",
+        "intakes": [
+          "fall"
+        ],
+        "notes": "每系所NT$2,000或USD80；第3個起每系NT$1,500或USD60。曾就讀臺大者各系NT$1,500／USD60。國內以TWD、境外以USD；手續費另計、不退費。115-2春季簡章也列相同標準。",
+        "lastChecked": "2026-09-27"
+      },
+      "scholarships": [
+        {
+          "scope": "國際學位生獎學金；一般國際學士新生",
+          "award": "每學期學雜費減免上限10萬元、每月8,000元，至原定修業年限。",
+          "continuation": "於學位申請系統勾選申請，無須另附資料；依審核核給。每學年平均GPA3.38以上續領。不含代收代辦、保險、住宿、網路、學分等費用；保留入學喪失資格。臺灣獎學金不得重複申請。",
+          "sourceUrl": "https://admissions.ntu.edu.tw/zh-hant/fees-scholarships/scholarships/",
+          "academicYear": "2026官網現行制度",
+          "selection": "reviewed",
+          "summaryMy": "ရွေးချယ်ခံရသူများအတွက် စာသင်ကာလတစ်ခု ကျောင်းလခ NT$100,000 အထိနှင့် တစ်လ NT$8,000။ ဆက်လက်ရရန် GPA 3.38 လိုသည်။ အလိုအလျောက် မရပါ။",
+          "lastChecked": "2026-09-27"
+        },
+        {
+          "scope": "臺大國際優秀研究生獎學金；碩博士（不含重點科技及國際政經學院）",
+          "award": "每學期學雜費减免上限10萬元；碩士每月8,000元，博士文社法管學院每月10,000元起、理工醫農電資公衛生科15,000元起。碩士至多2年、博士4年。",
+          "continuation": "線上入學申請勾選，建議先聯絡指導教授；每年學院續領審查。不含代收代辦、論文指導、保險、住宿、網路及學分費；保留入學喪失獲獎資格。",
+          "sourceUrl": "https://admissions.ntu.edu.tw/zh-hant/fees-scholarships/scholarships/",
+          "academicYear": "2026現行招生頁",
+          "selection": "reviewed",
+          "lastChecked": "2026-09-27"
+        }
+      ],
+      "requirements": [
+        {
+          "academicYear": "116-1",
+          "text": "最多申請5個系所組，逐系繳費；語言、推薦信與其他要求依各系所規定，不設全校通用A2承諾。",
+          "sourceUrl": "https://admissions.ntu.edu.tw/wp-content/uploads/116-1Admission-Guidelines-for-Intl-Degree-Students_ENG-1.pdf"
+        }
+      ],
+      "admissionNotices": [],
+      "tuition": [],
+      "lastChecked": "2026-09-27",
+      "audit": {
+        "checked": "2026-09-27",
+        "scope": "一般外國學位生；彰師、暨南、聯合及跨縣市國立大學17校",
+        "status": "部分完整",
+        "gaps": [
+          "重點科技及國際政經學院獎學金另依學程；公開原始榜單未核得，申請結果以個人系統查詢。"
+        ]
+      }
+    },
+    "0002": {
+      "applicationFee": {
+        "amount": 2000,
+        "currency": "TWD",
+        "academicYear": "115-2",
+        "status": "confirmed",
+        "sourceUrl": "https://oga.site.nthu.edu.tw/var/file/524/1524/img/4520/140282968.pdf",
+        "sourceTitle": "115-2外國學生招生資料",
+        "intakes": [
+          "spring",
+          "fall"
+        ],
+        "notes": "1–2個系所共NT$2,000；3–4個共NT$4,000。聯合國低度開發國家（LDCs）國籍申請者免收；請按簡章名單認定，不把全校標成免費。115-1學士簡章亦列同標準。",
+        "lastChecked": "2026-09-27"
+      },
+      "scholarships": [
+        {
+          "scope": "清華國際學生獎學金；一般外國學位生",
+          "award": "學士／碩士每月5,000元；博士每月20,000–40,000元，人社院及相關跨院指導博士為10,000元；學費與學分費減免。",
+          "continuation": "隨入學申請勾選，依審查及預算；學士最長4年，碩士2年，博士5年。每年續領依校方公告成績要求，非入學保證。博士第5年須重新申請。",
+          "sourceUrl": "https://apply.nthu.edu.tw/en/article/102-nthu-scholarship",
+          "academicYear": "2025-04-18辦法／2026現行招生頁",
+          "selection": "reviewed",
+          "relatedSourceUrl": "https://apply.nthu.edu.tw/assets/upload/article/102/files/493f75f2d5ecc2188e25bdfc.pdf",
+          "lastChecked": "2026-09-27"
+        }
+      ],
+      "admissionNotices": [
+        {
+          "academicYear": "114",
+          "semester": "fall",
+          "sourceTitle": "114秋季外國學士生錄取公告",
+          "sourceUrl": "https://apply.nthu.edu.tw/en/article/151-admission-list",
+          "scope": "foreign_degree"
+        },
+        {
+          "academicYear": "114",
+          "semester": "fall",
+          "sourceTitle": "114秋季外國研究生錄取公告",
+          "sourceUrl": "https://apply.nthu.edu.tw/en/article/152-admission-list",
+          "scope": "foreign_degree"
+        }
+      ],
+      "requirements": [],
+      "tuition": [],
+      "lastChecked": "2026-09-27",
+      "audit": {
+        "checked": "2026-09-27",
+        "scope": "一般外國學位生；彰師、暨南、聯合及跨縣市國立大學17校",
+        "status": "部分完整",
+        "gaps": [
+          "秋季學士與研究所採不同申請期間，卡片補入學士115-1參考；碩博士另保留先前時程參考，請看官方入口。"
+        ]
+      }
+    },
+    "0007": {
+      "applicationFee": {
+        "amount": 2000,
+        "currency": "TWD",
+        "academicYear": "2026-07-16現行規則",
+        "status": "confirmed",
+        "sourceUrl": "https://oia.nycu.edu.tw/oia/en/app/artwebsite/view?id=788&module=artwebsite&serno=26969921-df03-4ec7-8ad1-f360e404c507",
+        "sourceTitle": "2026-07-16現行規則外國學生招生資料",
+        "intakes": [
+          "fall",
+          "spring"
+        ],
+        "notes": "通常每系NT$2,000；曾就讀／交換等符合規則者每系NT$1,500。醫學院、生命科學院、生物醫學暨工程學院、博雅書苑百川學士學位學程免收。免收只限列明單位；不接受國際電匯、現金郵寄或支票；不退費。",
+        "lastChecked": "2026-09-27"
+      },
+      "scholarships": [
+        {
+          "scope": "陽明交大優秀外國新生／在校生獎學金",
+          "award": "生活津貼及學費獎助可分別或同時核給；學費類為學雜及學分全免或比照本國生收費。普通生活津貼由委員會按預算訂定，沒有本批可通用的固定金額。",
+          "continuation": "原則核給1年；學士最多4年、碩士2年、博士5年。首次續領依導師評估，其後學士GPA3.0、研究生3.5；在校另須操行A、研究生至少1門專業課，依公告申請。須符合華語課要求，不與限制併領獎助重複。",
+          "sourceUrl": "https://drive.google.com/uc?export=download&id=1Q5NUOTV3LWmAD-2-Y3spxpH4jH_pYIZd",
+          "academicYear": "2024-05-08辦法／115續領公告引用",
+          "selection": "reviewed",
+          "lastChecked": "2026-09-27"
+        },
+        {
+          "scope": "陽明交大菁英博士新生獎學金",
+          "award": "每月33,000元並免學雜及學分費，前2年；含國際處25,000與指導教授配合8,000元。",
+          "continuation": "原則各院1名，可從缺；2個月內交教授配合款同意書，續領GPA3.76。第3年改依在校生規則審核。",
+          "sourceUrl": "https://drive.google.com/uc?export=download&id=1Q5NUOTV3LWmAD-2-Y3spxpH4jH_pYIZd",
+          "academicYear": "2024-05-08辦法",
+          "selection": "reviewed",
+          "lastChecked": "2026-09-27"
+        }
+      ],
+      "admissionNotices": [
+        {
+          "academicYear": "115",
+          "semester": "fall",
+          "sourceTitle": "115秋季一般外國學位生錄取結果（官方附件1）",
+          "sourceUrl": "https://oia.nycu.edu.tw/oia/en/app/data/doc?module=nycu0012&detailNo=1524597567847927808&type=s",
+          "scope": "foreign_degree"
+        },
+        {
+          "academicYear": "115",
+          "semester": "fall",
+          "sourceTitle": "115秋季一般外國學位生錄取結果（官方附件2）",
+          "sourceUrl": "https://oia.nycu.edu.tw/oia/en/app/data/doc?module=nycu0012&detailNo=1524597232601403392&type=s",
+          "scope": "foreign_degree"
+        }
+      ],
+      "requirements": [],
+      "tuition": [],
+      "lastChecked": "2026-09-27",
+      "audit": {
+        "checked": "2026-09-27",
+        "scope": "一般外國學位生；彰師、暨南、聯合及跨縣市國立大學17校",
+        "status": "部分完整",
+        "gaps": [
+          "普通生活津貼由委員會及學院預算決定，保留變動金額；春季只招研究所。春季原始榜單尚未核得。"
+        ]
+      }
+    },
+    "0001": {
+      "applicationFee": {
+        "amount": 1600,
+        "currency": "TWD",
+        "academicYear": "116-1／115-2提前入學",
+        "status": "confirmed",
+        "sourceUrl": "https://drive.google.com/uc?export=download&id=1RC6EOaByXy7hqe6_2ddinrZZk64UGu3k",
+        "sourceTitle": "116-1／115-2提前入學外國學生招生資料",
+        "intakes": [
+          "fall",
+          "spring"
+        ],
+        "notes": "每一申請件NT$1,600或USD60，逐件收費、不退費。春季為簡章規定可申請提前入學的研究所，非學士春季招生。",
+        "lastChecked": "2026-09-27"
+      },
+      "scholarships": [
+        {
+          "scope": "政大外國新生學雜費減免",
+          "award": "學雜費及學分費全免；學士最多4年、碩士2年、博士3年。",
+          "continuation": "各學院甄選推薦，依預算名額，不受理個人直接申請；未獲其他獎學金之外國新生適用。續領依辦法及學院審查，非錄取保證。",
+          "sourceUrl": "https://oic.nccu.edu.tw/Post/756",
+          "academicYear": "現行國合處制度（2026查核）",
+          "selection": "reviewed",
+          "lastChecked": "2026-09-27"
+        },
+        {
+          "scope": "政大外國新生獎助學金獎勵實施計畫",
+          "award": "全額：學雜費全免（不含學分费），每月1萬元，另每學年機票實報實銷最高3萬元，合計每學年最多15萬元；半額僅免學雜費（不含學分費）。",
+          "continuation": "學士4年、碩士2年、博士3年；院級推薦且未獲其他全額獎學金，不受理個人直接申請，依名額及審查。",
+          "sourceUrl": "https://oic.nccu.edu.tw/Post/756",
+          "academicYear": "現行國合處制度（2026查核）",
+          "selection": "reviewed",
+          "lastChecked": "2026-09-27"
+        },
+        {
+          "scope": "外國學生書卷獎；在校學士／碩博士",
+          "award": "名額與金額按年度預算，一次發給。",
+          "continuation": "入學滿1學期，持前學期成績單於2月／9月公告期申請；已領其他全額獎學金者不得申請。",
+          "sourceUrl": "https://oic.nccu.edu.tw/Post/756",
+          "academicYear": "現行國合處制度（2026查核）",
+          "selection": "reviewed",
+          "lastChecked": "2026-09-27"
+        }
+      ],
+      "admissionNotices": [
+        {
+          "academicYear": "115",
+          "semester": "fall",
+          "sourceTitle": "115學年度外國學生錄取公告",
+          "sourceUrl": "https://oic.nccu.edu.tw/Post/15944",
+          "scope": "foreign_degree"
+        },
+        {
+          "academicYear": "113",
+          "semester": "fall",
+          "sourceTitle": "113學年度外國學生錄取公告",
+          "sourceUrl": "https://oic.nccu.edu.tw/Post/14461",
+          "scope": "foreign_degree"
+        }
+      ],
+      "requirements": [],
+      "tuition": [],
+      "lastChecked": "2026-09-27",
+      "audit": {
+        "checked": "2026-09-27",
+        "scope": "一般外國學位生；彰師、暨南、聯合及跨縣市國立大學17校",
+        "status": "部分完整",
+        "gaps": [
+          "獎學金院級甄選及續領細則須依各院，不將資格當保證；榜單只保留官方公告連結。"
+        ]
+      }
+    },
+    "0005": {
+      "applicationFee": {
+        "amount": 2000,
+        "currency": "TWD",
+        "academicYear": "115",
+        "status": "confirmed",
+        "sourceUrl": "https://oia.ncku.edu.tw/var/file/32/1032/img/5041/NCKUAdmissionProspectusforInternationalStudentsFall2026Spring2027v5-3.pdf",
+        "sourceTitle": "115外國學生招生資料",
+        "intakes": [
+          "fall",
+          "spring"
+        ],
+        "notes": "一次NT$2,000，可申請至多3個系所；不退費。",
+        "lastChecked": "2026-09-27"
+      },
+      "scholarships": [
+        {
+          "scope": "成大優秀國際學生獎助學金",
+          "award": "115學年起：學士免學費；碩博士免學雜費含基本學分費；生活津貼金額由各學院訂定，不能沿用113／114固定數字。",
+          "continuation": "第一年隨入學文件審查，無另填獎學金申請表；第2年起依現行辦法及學院規則申請。碩博士須面試；持應聘居留證不適用，保留學籍取消原獎助。",
+          "sourceUrl": "https://oia.ncku.edu.tw/p/404-1032-229890.php?Lang=zh-tw",
+          "academicYear": "115起適用",
+          "selection": "reviewed",
+          "summaryMy": "115 ပညာသင်နှစ်မှ စနစ်ပြောင်းထားသည်။ လစဉ်ငွေကို ဌာနအလိုက် သတ်မှတ်ပြီး ယခင်နှစ်ပမာဏကို အလိုအလျောက် မသုံးပါ။",
+          "lastChecked": "2026-09-27"
+        },
+        {
+          "scope": "成大博士菁英獎學金",
+          "award": "115起新生：免學雜費（含基本學分費），每月最高25,000元。",
+          "continuation": "系院推薦、校招生委員會審查，不另填表；不是每名博士錄取即獲獎。113／114舊制之25,000＋教授8,000元不得套用115新生。",
+          "sourceUrl": "https://oia.ncku.edu.tw/p/404-1032-229890.php?Lang=zh-tw",
+          "academicYear": "115起適用",
+          "selection": "reviewed",
+          "lastChecked": "2026-09-27"
+        }
+      ],
+      "admissionNotices": [
+        {
+          "academicYear": "114",
+          "semester": "fall",
+          "sourceTitle": "114秋季外國學生錄取公告",
+          "sourceUrl": "https://oia.ncku.edu.tw/p/404-1032-283207.php?Lang=zh-tw",
+          "scope": "foreign_degree"
+        },
+        {
+          "academicYear": "114",
+          "semester": "spring",
+          "sourceTitle": "114春季外國學生錄取公告",
+          "sourceUrl": "https://oia.ncku.edu.tw/p/404-1032-290312.php?Lang=zh-tw",
+          "scope": "foreign_degree"
+        },
+        {
+          "academicYear": "114",
+          "semester": "fall",
+          "sourceTitle": "114秋季外國學生備取遞補公告",
+          "sourceUrl": "https://oia.ncku.edu.tw/p/404-1032-283712.php?Lang=en",
+          "scope": "foreign_degree"
+        },
+        {
+          "academicYear": "114",
+          "semester": "spring",
+          "sourceTitle": "114春季外國學生備取遞補公告",
+          "sourceUrl": "https://oia.ncku.edu.tw/p/404-1032-290995.php?Lang=zh-tw",
+          "scope": "foreign_degree"
+        }
+      ],
+      "requirements": [],
+      "tuition": [],
+      "lastChecked": "2026-09-27",
+      "audit": {
+        "checked": "2026-09-27",
+        "scope": "一般外國學位生；彰師、暨南、聯合及跨縣市國立大學17校",
+        "status": "部分完整",
+        "gaps": [
+          "115新制生活津貼依學院，尚無全校通用金額；各院續領分數另依院級規則。"
+        ]
+      }
+    },
+    "0009": {
+      "applicationFee": {
+        "amount": 0,
+        "currency": "TWD",
+        "academicYear": "現行FAQ（2026查核）",
+        "status": "confirmed",
+        "sourceUrl": "https://oia.nsysu.edu.tw/p/412-1308-20574.php?Lang=en",
+        "sourceTitle": "現行FAQ（2026查核）外國學生招生資料",
+        "intakes": [
+          "fall",
+          "spring"
+        ],
+        "notes": "官方一般外國學位生FAQ Q8明確表示不收申請費。",
+        "lastChecked": "2026-09-27"
+      },
+      "scholarships": [
+        {
+          "scope": "中山優秀外國學生獎學金",
+          "award": "學士每月6,000元；碩士免學雜費；博士免學費，部分名額另免校內住宿。碩士2年、博士3年；學士每次1年。",
+          "continuation": "新生隨入學申請，學士續申請需至少9學分、平均GPA2.44／70且無不良紀錄；依預算審核。工作／永久居留或全職工作排除；碩士不含住宿及保險網路。",
+          "sourceUrl": "https://oia.nsysu.edu.tw/static/file/308/1308/img/3665/%28I%29GuidelinesGoverningScholarshipApplicationsforOutstandingInternationalStudents_2023.02.24.pdf",
+          "academicYear": "2023-02-24辦法／現行FAQ引用",
+          "selection": "reviewed",
+          "lastChecked": "2026-09-27"
+        }
+      ],
+      "admissionNotices": [
+        {
+          "academicYear": "114",
+          "semester": "fall",
+          "sourceTitle": "114秋季外國學生結果查詢公告（需登入個人系統，非公開名冊）",
+          "sourceUrl": "https://oia.nsysu.edu.tw/p/406-1308-356180%2Cr4449.php?Lang=zh-tw",
+          "scope": "foreign_degree"
+        }
+      ],
+      "requirements": [],
+      "tuition": [],
+      "lastChecked": "2026-09-27",
+      "audit": {
+        "checked": "2026-09-27",
+        "scope": "一般外國學位生；彰師、暨南、聯合及跨縣市國立大學17校",
+        "status": "部分完整",
+        "gaps": [
+          "116秋季未核得正式簡章，以115參考。錄取結果採個人系統查詢，尚未找到公開名冊。獎學金保留辦法版本，最新名額依核定。"
+        ]
+      }
+    },
+    "0012": {
+      "applicationFee": {
+        "amount": null,
+        "currency": null,
+        "academicYear": "115-2",
+        "status": "unconfirmed",
+        "sourceUrl": "https://oia.ntou.edu.tw/var/file/22/1022/img/1458/2027_Spring_Admissionbrochure_Released_2026Julyedition.pdf",
+        "sourceTitle": "115-2外國學生招生資料",
+        "intakes": [
+          "spring"
+        ],
+        "notes": "最新春季簡章文字未能確認一般學位生申請費；居留證、簽證與華語中心費用不能代用。",
+        "lastChecked": "2026-09-27"
+      },
+      "scholarships": [
+        {
+          "scope": "海大外國學生獎學金；一般學位生",
+          "award": "學士全額或部分學費減免；碩士全額或部分學费減免、生活津貼每月最高8,000元；博士相應減免、生活津貼最高12,000元。",
+          "continuation": "須連同入學申請繳交獎學金申請表；一般以1學年核定，續年需再申請並依學業表現調整；不含校內住宿。不是人人領最高額。",
+          "sourceUrl": "https://oia.ntou.edu.tw/p/406-1022-94859%2Cr1559.php?Lang=en",
+          "academicYear": "現行國際處頁／115-2簡章",
+          "selection": "reviewed",
+          "lastChecked": "2026-09-27"
+        }
+      ],
+      "admissionNotices": [
+        {
+          "academicYear": "114",
+          "semester": "fall",
+          "sourceTitle": "114秋季外國學生錄取公告",
+          "sourceUrl": "https://oia.ntou.edu.tw/p/406-1022-114472%2Cr11.php?Lang=en",
+          "scope": "foreign_degree"
+        },
+        {
+          "academicYear": "114",
+          "semester": "spring",
+          "sourceTitle": "114春季外國學生錄取公告",
+          "sourceUrl": "https://oia.ntou.edu.tw/p/406-1022-120592%2Cr11.php?Lang=zh-tw",
+          "scope": "foreign_degree"
+        }
+      ],
+      "requirements": [],
+      "tuition": [],
+      "lastChecked": "2026-09-27",
+      "audit": {
+        "checked": "2026-09-27",
+        "scope": "一般外國學位生；彰師、暨南、聯合及跨縣市國立大學17校",
+        "status": "部分完整",
+        "gaps": [
+          "一般學位生申請費尚無明確數字；最新續領成績門檻及秋季最新版簡章尚待確認。"
+        ]
+      }
+    },
+    "0023": {
+      "applicationFee": {
+        "amount": 1000,
+        "currency": "TWD",
+        "academicYear": "115",
+        "status": "confirmed",
+        "sourceUrl": "https://aax.yuntech.edu.tw/images/content/%E5%9C%8B%E9%9A%9B%E5%AD%B8%E7%94%9F%E7%94%B3%E8%AB%8B%E5%85%A5%E5%AD%B8/115/2027%E5%B9%B4%E6%98%A5%E5%AD%A3%E7%8F%AD%E5%A4%96%E5%9C%8B%E5%AD%B8%E7%94%9F%E7%94%B3%E8%AB%8B%E5%85%A5%E5%AD%B8%E7%B0%A1%E7%AB%A0%202027%20Spring%20Application%20Guide.pdf",
+        "sourceTitle": "115外國學生招生資料",
+        "intakes": [
+          "fall",
+          "spring"
+        ],
+        "notes": "115春秋兩份簡章均明載NT$1,000或USD40；匯款費另計，不退費。",
+        "lastChecked": "2026-09-27"
+      },
+      "scholarships": [
+        {
+          "scope": "雲科優秀外籍學生獎學金；一般學位生",
+          "award": "學雜／學分費可減免全部、1/2或1/4。研究生全額類：碩士每月至多1萬元、博士1.5萬元；部分類碩士至多6,000、博士8,000，兩類可免全額學雜及學分費。",
+          "continuation": "新生隨入學申請，每次1年；學士最多4年、碩士2年、博士3年。續領操行80、各科不低於75；2024春起入學者升2年級須A1、升3年級須A2，另需導師推薦。依名額預算審查，不與政府／本校其他獎學金併領；住宿保險網路另付。",
+          "sourceUrl": "https://aax.yuntech.edu.tw/images/content/%E5%9C%8B%E9%9A%9B%E5%AD%B8%E7%94%9F%E7%94%B3%E8%AB%8B%E5%85%A5%E5%AD%B8/115/2027%E5%B9%B4%E6%98%A5%E5%AD%A3%E7%8F%AD%E5%A4%96%E5%9C%8B%E5%AD%B8%E7%94%9F%E7%94%B3%E8%AB%8B%E5%85%A5%E5%AD%B8%E7%B0%A1%E7%AB%A0%202027%20Spring%20Application%20Guide.pdf",
+          "academicYear": "2024-09-10辦法／115簡章",
+          "selection": "reviewed",
+          "lastChecked": "2026-09-27"
+        }
+      ],
+      "admissionNotices": [
+        {
+          "academicYear": "115",
+          "semester": "fall",
+          "sourceTitle": "115秋季一般外國學生官方原始榜單",
+          "sourceUrl": "https://aax.yuntech.edu.tw/images/content/國際學生申請入學/115/2026年秋季班外國學生錄取榜單Admission List.pdf",
+          "scope": "foreign_degree",
+          "announcementUrl": "https://aax.yuntech.edu.tw/index.php/en/ql-admission/international-student"
+        },
+        {
+          "academicYear": "114",
+          "semester": "spring",
+          "sourceTitle": "114春季一般外國學生官方原始榜單",
+          "sourceUrl": "https://aax.yuntech.edu.tw/images/content/%E5%9C%8B%E9%9A%9B%E5%AD%B8%E7%94%9F%E7%94%B3%E8%AB%8B%E5%85%A5%E5%AD%B8/114/2026%E5%B9%B4%E6%98%A5%E5%AD%A3%E7%8F%AD%E5%A4%96%E5%9C%8B%E5%AD%B8%E7%94%9F%E9%8C%84%E5%8F%96%E6%A6%9C%E5%96%AEAdmission%20List.pdf",
+          "scope": "foreign_degree",
+          "announcementUrl": "https://aax.yuntech.edu.tw/index.php/en/ql-admission/international-student"
+        },
+        {
+          "academicYear": "114",
+          "semester": "fall",
+          "sourceTitle": "114秋季一般外國學生官方原始榜單",
+          "sourceUrl": "https://aax.yuntech.edu.tw/images/content/%E5%9C%8B%E9%9A%9B%E5%AD%B8%E7%94%9F%E7%94%B3%E8%AB%8B%E5%85%A5%E5%AD%B8/114/2025%E5%B9%B4%E7%A7%8B%E5%AD%A3%E7%8F%AD%E5%A4%96%E5%9C%8B%E5%AD%B8%E7%94%9F%E9%8C%84%E5%8F%96%E6%A6%9C%E5%96%AEAdmission%20List.pdf",
+          "scope": "foreign_degree",
+          "announcementUrl": "https://aax.yuntech.edu.tw/index.php/en/ql-admission/international-student"
+        },
+        {
+          "academicYear": "113",
+          "semester": "spring",
+          "sourceTitle": "113春季一般外國學生官方原始榜單",
+          "sourceUrl": "https://aax.yuntech.edu.tw/images/content/%E5%9C%8B%E9%9A%9B%E5%AD%B8%E7%94%9F%E7%94%B3%E8%AB%8B%E5%85%A5%E5%AD%B8/113/2025%E5%B9%B4%E6%98%A5%E5%AD%A3%E7%8F%AD%E5%A4%96%E5%9C%8B%E5%AD%B8%E7%94%9F%E9%8C%84%E5%8F%96%E6%A6%9C%E5%96%AEAdmission%20List.pdf",
+          "scope": "foreign_degree",
+          "announcementUrl": "https://aax.yuntech.edu.tw/index.php/en/ql-admission/international-student"
+        },
+        {
+          "academicYear": "113",
+          "semester": "fall",
+          "sourceTitle": "113秋季一般外國學生官方原始榜單",
+          "sourceUrl": "https://aax.yuntech.edu.tw/images/content/%E5%9C%8B%E9%9A%9B%E5%AD%B8%E7%94%9F%E7%94%B3%E8%AB%8B%E5%85%A5%E5%AD%B8/113/2024%E5%B9%B4%E7%A7%8B%E5%AD%A3%E5%A4%96%E5%9C%8B%E5%AD%B8%E7%94%9F%E9%8C%84%E5%8F%96%E6%A6%9C%E5%96%AEAdmission%20List%20%28revised%29.pdf",
+          "scope": "foreign_degree",
+          "announcementUrl": "https://aax.yuntech.edu.tw/index.php/en/ql-admission/international-student"
+        },
+        {
+          "academicYear": "112",
+          "semester": "spring",
+          "sourceTitle": "112春季一般外國學生官方原始榜單",
+          "sourceUrl": "https://aax.yuntech.edu.tw/images/content/%E5%9C%8B%E9%9A%9B%E5%AD%B8%E7%94%9F%E7%94%B3%E8%AB%8B%E5%85%A5%E5%AD%B8/112/2024%E5%B9%B4%E6%98%A5%E5%AD%A3%E5%A4%96%E5%9C%8B%E5%AD%B8%E7%94%9F%E9%8C%84%E5%8F%96%E6%A6%9C%E5%96%AEAdmission%20List.pdf",
+          "scope": "foreign_degree",
+          "announcementUrl": "https://aax.yuntech.edu.tw/index.php/en/ql-admission/international-student"
+        },
+        {
+          "academicYear": "112",
+          "semester": "fall",
+          "sourceTitle": "112秋季一般外國學生官方原始榜單",
+          "sourceUrl": "https://aax.yuntech.edu.tw/images/content/%E5%9C%8B%E9%9A%9B%E5%AD%B8%E7%94%9F%E7%94%B3%E8%AB%8B%E5%85%A5%E5%AD%B8/112/2023%E5%B9%B4%E7%A7%8B%E5%AD%A3%E7%8F%AD%E5%A4%96%E5%9C%8B%E5%AD%B8%E7%94%9F%E9%8C%84%E5%8F%96%E6%A6%9C%E5%96%AEAdmission%20List.pdf",
+          "scope": "foreign_degree",
+          "announcementUrl": "https://aax.yuntech.edu.tw/index.php/en/ql-admission/international-student"
+        }
+      ],
+      "requirements": [],
+      "tuition": [],
+      "lastChecked": "2026-09-27",
+      "audit": {
+        "checked": "2026-09-27",
+        "scope": "一般外國學位生；彰師、暨南、聯合及跨縣市國立大學17校",
+        "status": "部分完整",
+        "gaps": [
+          "116秋季已見日籍半導體專案，不可當一般外國生正式秋季資料；一般秋季沿用115。"
+        ]
+      }
+    },
+    "0008": {
+      "applicationFee": {
+        "amount": 0,
+        "currency": "TWD",
+        "academicYear": "115",
+        "status": "confirmed",
+        "sourceUrl": "https://drive.google.com/uc?export=download&id=1YPMGlysvNc8ydZTcXqOA-4CMqi1xhhVM",
+        "sourceTitle": "115外國學生招生資料",
+        "intakes": [
+          "fall",
+          "spring"
+        ],
+        "notes": "115-1秋及115-2春簡章均明載無須繳申請費。",
+        "lastChecked": "2026-09-27"
+      },
+      "scholarships": [
+        {
+          "scope": "中央大學外籍生獎助學金",
+          "award": "每月上限：學士9,000、碩士15,000、博士40,000元；可申請學費／學分費減免，雜費仍須另付。上限並非保證核給。",
+          "continuation": "新生隨入學申請；在校學士累積平均60、研究生70，修過1門本校華語課或中文溝通證明。秋季新生第1年下學期免此華語条件。碩士津貼最多4學期、博士8學期（含休學）；津貼期滿可另申請學費學分費減免。",
+          "sourceUrl": "https://oia.ncu.edu.tw/p/412-1026-2205.php?Lang=en",
+          "academicYear": "2025-04-07辦法／現行頁",
+          "selection": "reviewed",
+          "lastChecked": "2026-09-27"
+        }
+      ],
+      "admissionNotices": [
+        {
+          "academicYear": "114",
+          "semester": "fall",
+          "sourceTitle": "114秋季外國學生錄取公告",
+          "sourceUrl": "https://cis.ncu.edu.tw/admissions/content/view/sn/75",
+          "scope": "foreign_degree"
+        },
+        {
+          "academicYear": "113",
+          "semester": "spring",
+          "sourceTitle": "113春季外國學生錄取公告",
+          "sourceUrl": "https://cis.ncu.edu.tw/admissions/content/view/sn/72",
+          "scope": "foreign_degree"
+        }
+      ],
+      "requirements": [],
+      "tuition": [],
+      "lastChecked": "2026-09-27",
+      "audit": {
+        "checked": "2026-09-27",
+        "scope": "一般外國學位生；彰師、暨南、聯合及跨縣市國立大學17校",
+        "status": "部分完整",
+        "gaps": [
+          "學士僅秋季；春季僅研究所。獎助金額依審查核給，學士津貼總年限未完整核得。"
+        ]
+      }
+    },
+    "0004": {
+      "applicationFee": {
+        "amount": null,
+        "currency": null,
+        "academicYear": "115資料／現行官網",
+        "status": "unconfirmed",
+        "sourceUrl": "https://bds.oia.ntnu.edu.tw/bds/en/apply",
+        "sourceTitle": "115資料／現行官網外國學生招生資料",
+        "intakes": [
+          "fall",
+          "spring"
+        ],
+        "notes": "115招生簡章下載未回傳可讀文件。國際人力資源發展所官方FAQ載NT$1,500，但僅能作該所參考，尚未以中央簡章確認全校計費及免收例外。",
+        "lastChecked": "2026-09-27"
+      },
+      "scholarships": [
+        {
+          "scope": "臺師大外國學生獎學金；一般外國學位新生",
+          "award": "學士：第1學年各學期免學雜費；碩士：第1學年免學雜費基數及基本學分費；博士第1學年同碩士，第2年經所推薦免基數及基本學分費，第3年免基數。",
+          "continuation": "須隨入學申請提出，系所審查推薦；政府獎學金不得併領。未註冊、保留學籍、休退轉學會取消，可能須按在學比例退還減免費用。",
+          "sourceUrl": "https://bds.oia.ntnu.edu.tw/bds/en/web/scholarship",
+          "academicYear": "2026現行國際處規則",
+          "selection": "reviewed",
+          "lastChecked": "2026-09-27"
+        }
+      ],
+      "admissionNotices": [],
+      "requirements": [],
+      "tuition": [],
+      "lastChecked": "2026-09-27",
+      "audit": {
+        "checked": "2026-09-27",
+        "scope": "一般外國學位生；彰師、暨南、聯合及跨縣市國立大學17校",
+        "status": "部分完整",
+        "gaps": [
+          "全校申請費未核清，保留IHRD官方1,500元線索但不泛化；115秋季第二梯截止中央舊資料3/2、IHRD頁3/16，待校方確認。"
+        ]
+      }
+    },
+    "0022": {
+      "applicationFee": {
+        "amount": 1000,
+        "currency": "TWD",
+        "academicYear": "115",
+        "status": "confirmed",
+        "sourceUrl": "https://admission-r.ntust.edu.tw/p/450-1052-148283%2Cc0.php?Lang=en",
+        "sourceTitle": "115外國學生招生資料",
+        "intakes": [
+          "spring",
+          "fall"
+        ],
+        "notes": "每系NT$1,000或USD30；115秋季學士官方頁及115-2研究所簡章分別確認同標準。",
+        "lastChecked": "2026-09-27"
+      },
+      "scholarships": [
+        {
+          "scope": "臺科大外籍研究生獎學金；限一般外國生英文學程研究所",
+          "award": "全額生活津貼碩士12,000、博士18,000元／月；部分碩士9,000、博士12,500元／月；另有僅免學雜費類。受獎者免學雜及學分費，住宿保險網路另付。",
+          "continuation": "隨線上入學申請；先核1年，碩士最長2年、博士3年；博士第4年經導師推薦可只免學費1年。續領依學業研究表現，系所／導師須提供配合款。中文學程不提供此獎學金；學士官方公告也明載不提供臺科大獎學金。",
+          "sourceUrl": "https://admission-r.ntust.edu.tw/p/450-1052-148283%2Cc0.php?Lang=en",
+          "academicYear": "115-2簡章",
+          "selection": "reviewed",
+          "summaryMy": "ဤပညာသင်ဆုသည် အင်္ဂလိပ်ဘာသာသင် ဘွဲ့လွန်များအတွက်သာ ဖြစ်သည်။ ဘွဲ့ကြိုနှင့် တရုတ်ဘာသာသင် ဘွဲ့လွန်များအတွက် မသက်ဆိုင်ပါ။",
+          "lastChecked": "2026-09-27"
+        }
+      ],
+      "admissionNotices": [],
+      "requirements": [],
+      "tuition": [],
+      "lastChecked": "2026-09-27",
+      "audit": {
+        "checked": "2026-09-27",
+        "scope": "一般外國學位生；彰師、暨南、聯合及跨縣市國立大學17校",
+        "status": "部分完整",
+        "gaps": [
+          "學士沒有春季，現有春季時程為研究所。秋季最新僅115參考。10/30預錄取、11/30最終結果須區分。"
+        ]
+      }
+    },
+    "0025": {
+      "applicationFee": {
+        "amount": null,
+        "currency": null,
+        "academicYear": "115-2",
+        "status": "unconfirmed",
+        "sourceUrl": "https://oia.ntut.edu.tw/var/file/32/1032/img/2027SpringAdmissionHandbook.pdf",
+        "sourceTitle": "115-2外國學生招生資料",
+        "intakes": [
+          "spring"
+        ],
+        "notes": "115-2簡章文字及官方招生页尚未核得申請費明確金額；115-1舊PDF已失效。不得把居留證1,000元當申請費。",
+        "lastChecked": "2026-09-27"
+      },
+      "scholarships": [
+        {
+          "scope": "北科President Award；一般外國學士秋季新生",
+          "award": "第1年學費全免，另全額類每月15,000元（6名）、半額類每月8,000元（20名）；兩類都免學費。",
+          "continuation": "高中GPA2.8／70分，無本國籍或僑生身分、不得全職工作及重複領政府／北科獎學金；隨秋季入學勾選，競爭審查。只限第1年，不可續領；與華語獎學金同獲時優先本項。",
+          "sourceUrl": "https://oia.ntut.edu.tw/p/404-1032-150265.php?Lang=zh-tw",
+          "academicYear": "113秋季起適用／2026現行頁",
+          "selection": "reviewed",
+          "lastChecked": "2026-09-27"
+        },
+        {
+          "scope": "北科優秀華語境外生獎學金；一般外國學位新生及在校生",
+          "award": "學年學雜費減免50%，不含住宿、保險與代辦費等。TOCFL B1以上可首次申請。",
+          "continuation": "2026-05-05更新：續領前學年學業70、操行80，且TOCFL須較上次提高至少1級；每年7月依公告申請，不與政府或北科其他獎學金併領；延修及僑生不適用此學費減免。",
+          "sourceUrl": "https://oia.ntut.edu.tw/p/404-1032-154188.php?Lang=en",
+          "academicYear": "2026-05-05更新",
+          "selection": "reviewed",
+          "lastChecked": "2026-09-27"
+        },
+        {
+          "scope": "北科優秀國際研究生獎學金",
+          "award": "碩士學雜費最多免2年，月津貼6,000元僅第1年；博士學雜費及每月12,000元最多4年。",
+          "continuation": "線上申請勾選獎助；碩士第2年依前1年成績申請減免，博士第2年後另看成績及期刊發表，非自動續領。",
+          "sourceUrl": "https://oia.ntut.edu.tw/var/file/32/1032/img/2027SpringAdmissionHandbook.pdf",
+          "academicYear": "115-2簡章",
+          "selection": "reviewed",
+          "lastChecked": "2026-09-27"
+        }
+      ],
+      "admissionNotices": [
+        {
+          "academicYear": "114",
+          "semester": "spring",
+          "sourceTitle": "114春季外籍生錄取及獎學金結果",
+          "sourceUrl": "https://oia.ntut.edu.tw/p/406-1032-150254%2Cr1150.php?Lang=zh-tw",
+          "scope": "foreign_degree"
+        },
+        {
+          "academicYear": "115",
+          "semester": "fall",
+          "sourceTitle": "115秋季外籍生錄取及獎學金結果",
+          "sourceUrl": "https://oia.ntut.edu.tw/p/406-1032-105591%2Cr1150.php?Lang=zh-tw",
+          "scope": "foreign_degree"
+        }
+      ],
+      "requirements": [],
+      "tuition": [],
+      "lastChecked": "2026-09-27",
+      "audit": {
+        "checked": "2026-09-27",
+        "scope": "一般外國學位生；彰師、暨南、聯合及跨縣市國立大學17校",
+        "status": "部分完整",
+        "gaps": [
+          "一般學位生申請費仍未確認。春季放榜官方招生頁寫11月中旬、系統寫11/6，保留衝突不猜；116秋季官方頁約5月初放榜。"
+        ]
+      }
+    },
+    "0013": {
+      "applicationFee": {
+        "amount": null,
+        "currency": null,
+        "academicYear": "115",
+        "status": "unconfirmed",
+        "sourceUrl": "https://oia.ccu.edu.tw/var/file/8/1008/img/814/372680683.pdf",
+        "sourceTitle": "115外國學生招生資料",
+        "intakes": [
+          "fall",
+          "spring"
+        ],
+        "notes": "找到115一般外國學生簡章，但官方大型附件多次逾時，未核讀明確申請費；保留未知，不套用居留證或中國文化大學費用。",
+        "lastChecked": "2026-09-27"
+      },
+      "scholarships": [
+        {
+          "scope": "中正大學外國學生獎學金",
+          "award": "可核給部分／全額學費及學分費、部分／全額雜費、校內住宿減免及生活津貼。校級頁未列统一津貼金額，依學院決定。",
+          "continuation": "新生隨入學申請；在校研究生前學期至少4學分、平均超過75，學士至少8學分、平均超過65且品行良好。論文階段得附導師推薦及研究成果。依審查核給，不與限制的政府獎學金併領；退宿不折現。",
+          "sourceUrl": "https://oia.ccu.edu.tw/p/405-1008-14787%2Cc1538.php?Lang=en",
+          "academicYear": "2020-10-12辦法／現行國際處引用",
+          "selection": "reviewed",
+          "lastChecked": "2026-09-27"
+        }
+      ],
+      "admissionNotices": [
+        {
+          "academicYear": "115",
+          "semester": "fall",
+          "sourceTitle": "115秋季第一梯外國學生錄取公告",
+          "sourceUrl": "https://oia.ccu.edu.tw/p/406-1008-89101,r1716.php?Lang=en",
+          "scope": "foreign_degree"
+        },
+        {
+          "academicYear": "114",
+          "semester": "spring",
+          "sourceTitle": "114春季外國學生錄取公告",
+          "sourceUrl": "https://oia.ccu.edu.tw/p/406-1008-80729,r1716.php?Lang=en",
+          "scope": "foreign_degree"
+        },
+        {
+          "academicYear": "114",
+          "semester": "fall",
+          "sourceTitle": "114秋季第一梯外國學生錄取公告",
+          "sourceUrl": "https://oia.ccu.edu.tw/p/406-1008-72653,r1716.php?Lang=en",
+          "scope": "foreign_degree"
+        },
+        {
+          "academicYear": "114",
+          "semester": "fall",
+          "sourceTitle": "114秋季第二梯外國學生錄取公告",
+          "sourceUrl": "https://oia.ccu.edu.tw/p/406-1008-73801,r1716.php?Lang=en",
+          "scope": "foreign_degree"
+        },
+        {
+          "academicYear": "114",
+          "semester": "fall",
+          "sourceTitle": "114秋季第三梯外國學生錄取公告",
+          "sourceUrl": "https://oia.ccu.edu.tw/p/406-1008-75856,r1716.php?Lang=en",
+          "scope": "foreign_degree"
+        },
+        {
+          "academicYear": "114",
+          "semester": "fall",
+          "sourceTitle": "114秋季第四梯外國學生錄取公告",
+          "sourceUrl": "https://oia.ccu.edu.tw/p/406-1008-76521,r1716.php?Lang=en",
+          "scope": "foreign_degree"
+        },
+        {
+          "academicYear": "113",
+          "semester": "spring",
+          "sourceTitle": "113春季外國學生錄取公告",
+          "sourceUrl": "https://oia.ccu.edu.tw/p/406-1008-67358,r1716.php?Lang=en",
+          "scope": "foreign_degree"
+        }
+      ],
+      "requirements": [],
+      "tuition": [],
+      "lastChecked": "2026-09-27",
+      "audit": {
+        "checked": "2026-09-27",
+        "scope": "一般外國學位生；彰師、暨南、聯合及跨縣市國立大學17校",
+        "status": "部分完整",
+        "gaps": [
+          "115簡章檔案無法完整取得，申請費、最新校級津貼與部分語言細則未知；既有已核時程保留。"
+        ]
+      }
+    },
+    "0017": {
+      "applicationFee": {
+        "amount": null,
+        "currency": null,
+        "academicYear": "115-1",
+        "status": "unconfirmed",
+        "sourceUrl": "https://cms-carrier.ntpu.edu.tw/uploads/115_1_2026_c93708c94b.pdf",
+        "sourceTitle": "115-1外國學生招生資料",
+        "intakes": [
+          "fall"
+        ],
+        "notes": "115秋季簡章未明載一般學位生申請費，不能直接視為免費；城市治理學程免收說明不泛化到全校。",
+        "lastChecked": "2026-09-27"
+      },
+      "scholarships": [
+        {
+          "scope": "臺北大學鳶飛國際優秀新生入學獎學金；一般外國學士",
+          "award": "每學期40,000元，最多4年；限非永續創新國際學院的外國學士新生，僑港澳不適用。",
+          "continuation": "須另外申請，115-1公告截止2026/5/22。每學期平均75以上並完成註冊；未達停發1個月，連續2學期未達再停發1個月並取消資格。不得全職工作或領政府獎補助，須審查，不是錄取自動給。",
+          "sourceUrl": "https://new.ntpu.edu.tw/oia/news/6a068fc5a3956c33cd27d56e/%E3%80%90%E7%8D%8E%E5%AD%B8%E9%87%91%E7%94%B3%E8%AB%8B%E3%80%91%E5%9C%8B%E7%AB%8B%E8%87%BA%E5%8C%97%E5%A4%A7%E5%AD%B8%E9%B3%B6%E9%A3%9B%E5%9C%8B%E9%9A%9B-%E5%84%AA%E7%A7%80%E6%96%B0%E7%94%9F%E5%85%A5%E5%AD%B8%E7%8D%8E%E5%AD%B8%E9%87%91%E5%8F%97%E7%90%86%E7%94%B3%E8%AB%8B%EF%BC%88%E9%99%90115-1%E5%A4%96%E5%9C%8B%E5%AD%B8%E4%BD%8D%E7%94%9F%E6%96%B0%E7%94%9F%E9%A6%96%E6%AC%A1%E7%94%B3%E8%AB%8B%EF%BC%89%E3%80%90ScholarshipApplication%E3%80%91Yuan-FeiInternationalScholarshipforOutstandingNewStudentsatNationalTaipeiUniversityFornewlyenrolledinternationaldegreestudentsinFallSemester2026only",
+          "academicYear": "115-1公告／2025-10-29辦法",
+          "selection": "reviewed",
+          "relatedSourceUrl": "https://cms-carrier.ntpu.edu.tw/uploads/Yuan_Fei_International_Scholarship_fd6c58ac2c.pdf",
+          "lastChecked": "2026-09-27"
+        }
+      ],
+      "admissionNotices": [],
+      "requirements": [],
+      "tuition": [],
+      "lastChecked": "2026-09-27",
+      "audit": {
+        "checked": "2026-09-27",
+        "scope": "一般外國學位生；彰師、暨南、聯合及跨縣市國立大學17校",
+        "status": "部分完整",
+        "gaps": [
+          "115秋季、114春季簡章均未核得全校申請費標準。簡章頁腳2014為誤植，保留封面及正文實際年度。115-2春季現行申請日期保留官網；放榜先補114-2參考，不冒充115-2正式放榜。"
+        ]
+      }
+    }
+  }
+}

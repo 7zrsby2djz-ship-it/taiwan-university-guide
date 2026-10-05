@@ -1,0 +1,8 @@
+research/raw/
+research/[0-9][0-9][0-9][0-9].json
+research/search-*.txt
+node_modules/
+*.tar.gz
+*.tar
+
+__pycache__/

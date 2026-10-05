@@ -1,0 +1,1 @@
+2026-09-29 v12 (Claude): dist data files byte-identical to v11; changed app.js (2 links) and styles.css (1 rule); added weiquan.html, wq-board.js/css/json. research/weiquan-board-2026-09-29/qa-browser.mjs PASS in Chromium (desktop 1280 + phone 390). npm test (linkedom) not run: registry 403 in Claude environment. 139 registry entries, 27 Weiquan entries.

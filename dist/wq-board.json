@@ -1,0 +1,4519 @@
+{
+ "schemaVersion": 1,
+ "updated": "2026-09-29",
+ "reference": "台中車站直線距離（公里）",
+ "arcExpiry": "2027-06-30",
+ "tocfl": {
+  "now": "A2",
+  "nextExam": "2026-11",
+  "note": "960 分，970 分可拿 B1"
+ },
+ "schools": [
+  {
+   "id": "0039",
+   "name": "國立臺中教育大學",
+   "short": "中教",
+   "abbr": "NTCU",
+   "english": "National Taichung University of Education",
+   "city": "臺中市",
+   "ownership": "public",
+   "type": "university",
+   "km": 2,
+   "commute": "local",
+   "place": "台中西區・市中心",
+   "travel": "市區公車/機車 10–15 分",
+   "tier": "A",
+   "fee": {
+    "kind": "paid",
+    "amount": 1200,
+    "text": "學士 NT$1,200（US$50）；只可報一個系",
+    "src": "https://oia.ntcu.edu.tw/storage/media/W4NT9CD1uUPo9eA6KMtDqVYo5skoJ5OoHJhO2mNI.pdf",
+    "year": "115"
+   },
+   "tuition": {
+    "min": 46030,
+    "max": 53405,
+    "year": "115",
+    "text": "依學院：文 46,030／商 47,900／理 53,405（每學期）",
+    "src": "https://oia.ntcu.edu.tw/storage/media/W4NT9CD1uUPo9eA6KMtDqVYo5skoJ5OoHJhO2mNI.pdf"
+   },
+   "firstYearKind": "full",
+   "semesterCost": {
+    "min": 0,
+    "max": 0,
+    "basis": "sure"
+   },
+   "aid": {
+    "sure": "第一年兩學期免學雜費：錄取就有，不用另外審查（轉學生除外）。",
+    "review": "第二年起每年申請分級獎學金：每月 6,000／4,000／2,000 元並搭配宿舍全免或半免。"
+   },
+   "renew": "第二年起：學士平均 80 分拿 6,000/月、75 分拿 4,000/月（有名額排序）、70 分拿 2,000/月；操行 80；每學期服務 64 小時；每年 1/31、8/31 前申請。",
+   "lang": "多數系要 TOCFL B1。A2 可報：體育系、科學教育與應用學系、臺灣語文學系、美術學系。B1 後可報數學教育、資工、數位內容、國際企業（聽讀都 B1）、區域與社會發展等。",
+   "after": "春季：12/17 放榜，12/24 寄發入學通知（郵寄，地址要寫對）。報到時要交驗證過的學歷，否則可能取消錄取。簡章沒有寫要付保證金。",
+   "verdict": "台中市中心、公立、第一年學雜費全免而且錄取就有，是這份名單裡第一年最省錢的。A2 只能報 4 個系，要報就在 10/31 前。",
+   "verdictMy": "ထိုင်ချုံးမြို့လယ်၊ အစိုးရကျောင်း။ ဝင်ခွင့်ရရင် ပထမနှစ် ကျောင်းလခ အခမဲ့ (အလိုအလျောက်)။ A2 ဖြင့် ဌာန ၄ ခုသာ လျှောက်နိုင်။ 10/31 မတိုင်ခင် လျှောက်ပါ။",
+   "readYourself": [],
+   "bizAdmits": [],
+   "links": {
+    "apply": "https://oia.ntcu.edu.tw/",
+    "website": "http://www.ntcu.edu.tw",
+    "brochureSpring": "https://oia.ntcu.edu.tw/storage/media/W4NT9CD1uUPo9eA6KMtDqVYo5skoJ5OoHJhO2mNI.pdf",
+    "brochureSpringYear": "115-2",
+    "brochureFall": "https://oia.ntcu.edu.tw/storage/media/W4NT9CD1uUPo9eA6KMtDqVYo5skoJ5OoHJhO2mNI.pdf",
+    "brochureFallYear": "115-1"
+   },
+   "lists": [
+    {
+     "year": "114",
+     "term": "fall",
+     "title": "秋季外國學生錄取公告",
+     "url": "https://insch.ntcu.edu.tw/news_detail.php?sn=4"
+    },
+    {
+     "year": "114",
+     "term": "spring",
+     "title": "春季外國學生錄取公告",
+     "url": "https://insch.ntcu.edu.tw/en/news_detail.php?sn=9"
+    }
+   ],
+   "terms": {
+    "spring": {
+     "ug": "none",
+     "rounds": []
+    },
+    "fall": {
+     "ug": "has",
+     "rounds": [
+      {
+       "start": {
+        "status": "historical",
+        "sourceYear": "115-1",
+        "label": "2 月上旬",
+        "sort": "2027-02-01",
+        "src": "https://insch.ntcu.edu.tw/en/news_detail.php?sn=10"
+       },
+       "end": {
+        "status": "historical",
+        "sourceYear": "115-1",
+        "label": "4 月下旬",
+        "sort": "2027-04-21",
+        "src": "https://insch.ntcu.edu.tw/en/news_detail.php?sn=10"
+       },
+       "result": {
+        "status": "historical",
+        "sourceYear": "115-1",
+        "label": "6 月中旬",
+        "sort": "2027-06-11",
+        "src": "https://insch.ntcu.edu.tw/en/news_detail.php?sn=10"
+       },
+       "note": "115簡章p.2預定6/18放榜、6/26寄發通知；實際放榜以申請系統公告為準。取代原資料包6/17參考值，原值存於備份。"
+      }
+     ]
+    }
+   },
+   "checked": "2026-09-29"
+  },
+  {
+   "id": "0043",
+   "name": "國立勤益科技大學",
+   "short": "勤益",
+   "abbr": "NCUT",
+   "english": "National Chin-Yi University of Technology",
+   "city": "臺中市",
+   "ownership": "public",
+   "type": "technology",
+   "km": 5,
+   "commute": "local",
+   "place": "台中太平區",
+   "travel": "市區公車約 30 分／機車 20 分",
+   "tier": "A",
+   "fee": {
+    "kind": "free",
+    "amount": 0,
+    "text": "簡章明載外國學生申請不收任何申請費",
+    "src": "https://admission.ncut.edu.tw/parts/proofReaderNews.ashx?ii=_281969417709349.pdf",
+    "year": "115"
+   },
+   "tuition": {
+    "min": 46200,
+    "max": 54058,
+    "year": "115",
+    "text": "每學期 46,200–54,058（依系）；宿舍四人房 11,500／學期",
+    "src": "https://admission.ncut.edu.tw/parts/proofReaderNews.ashx?ii=_281969417709349.pdf"
+   },
+   "firstYearKind": "half",
+   "semesterCost": {
+    "min": 23100,
+    "max": 27029,
+    "basis": "sure"
+   },
+   "aid": {
+    "sure": "115 學年起入學的學士新生，第一學年學雜費減半（依身分核給）。",
+    "review": "另有每學期 30,000 元獎學金，要符合條件並審查。"
+   },
+   "renew": "30,000/學期：每學期至少 9 學分、班級前 50%、沒有不及格、沒有懲處、體育 70 分以上。不能和政府獎學金同領。第一年之後的學雜費減免不能假設會繼續。",
+   "lang": "多數學士系要 TOCFL A2（含）以上。",
+   "after": "只收秋季。往年第 1 梯 3 月下旬–5 月初報名、5 月底放榜；第 2 梯 5–6 月報名、7 月放榜。簡章沒寫保證金。",
+   "verdict": "公立、免申請費、第一年學雜費減半、A2 多數系可報。只收秋季，所以是 2027 秋季的主力。",
+   "verdictMy": "အစိုးရကျောင်း၊ လျှောက်လွှာကြေး အခမဲ့၊ ပထမနှစ် ကျောင်းလခ တစ်ဝက်လျှော့။ A2 ဖြင့် ဌာနအများစု ရ။ ဆောင်းဦး (၂၀၂၇ စက်တင်ဘာ) သာ။",
+   "readYourself": [],
+   "bizAdmits": [],
+   "links": {
+    "apply": "https://admission.ncut.edu.tw/",
+    "website": "https://www.ncut.edu.tw/",
+    "brochureSpring": null,
+    "brochureSpringYear": null,
+    "brochureFall": "https://admission.ncut.edu.tw/parts/proofReaderNews.ashx?ii=_281969417709349.pdf",
+    "brochureFallYear": "115-1"
+   },
+   "lists": [
+    {
+     "year": "115",
+     "term": "fall",
+     "title": "115學年度外國學生錄取公告（招生系統公告入口）",
+     "url": "https://admission.ncut.edu.tw/"
+    }
+   ],
+   "terms": {
+    "spring": {
+     "ug": "none",
+     "rounds": []
+    },
+    "fall": {
+     "ug": "has",
+     "rounds": [
+      {
+       "start": {
+        "status": "historical",
+        "sourceYear": "115",
+        "sort": "2027-03-21",
+        "label": "3 月下旬"
+       },
+       "end": {
+        "status": "historical",
+        "sourceYear": "115",
+        "sort": "2027-05-01",
+        "label": "5 月上旬"
+       },
+       "result": {
+        "status": "historical",
+        "sourceYear": "115",
+        "sort": "2027-05-27",
+        "label": "往年 5/27 寄入學通知（公開榜單 7/20）"
+       },
+       "note": "第 1 梯：入學通知 5/27 就寄，趕得上 ARC"
+      },
+      {
+       "start": {
+        "status": "historical",
+        "sourceYear": "115",
+        "sort": "2027-05-11",
+        "label": "5 月中旬"
+       },
+       "end": {
+        "status": "historical",
+        "sourceYear": "115",
+        "sort": "2027-06-21",
+        "label": "6 月下旬"
+       },
+       "result": {
+        "status": "historical",
+        "sourceYear": "115",
+        "sort": "2027-07-11",
+        "label": "7 月中旬"
+       },
+       "note": "第 2 梯 7 月才放榜，ARC 來不及"
+      }
+     ]
+    }
+   },
+   "checked": "2026-09-29"
+  },
+  {
+   "id": "0050",
+   "name": "國立臺中科技大學",
+   "short": "中科",
+   "abbr": "NUTC",
+   "english": "National Taichung University of Science and Technology",
+   "city": "臺中市",
+   "ownership": "public",
+   "type": "technology",
+   "km": 1,
+   "commute": "local",
+   "place": "台中北區・市中心",
+   "travel": "市區公車/機車 10 分",
+   "tier": "A",
+   "fee": {
+    "kind": "silent",
+    "text": "115 簡章沒有寫申請費，也沒寫明免收",
+    "src": "https://oia.nutc.edu.tw/var/file/42/1042/img/1597/313422402.pdf",
+    "year": "115"
+   },
+   "tuition": {
+    "min": 47344,
+    "max": 56452,
+    "year": "115",
+    "text": "商/語言學院 47,344；工/設計學院 56,452（學費＋雜費，每學期）；宿舍 6,500–15,000",
+    "src": "https://oia.nutc.edu.tw/var/file/42/1042/img/1597/313422402.pdf"
+   },
+   "firstYearKind": "minus",
+   "semesterCost": {
+    "min": 22344,
+    "max": 31452,
+    "basis": "sure"
+   },
+   "aid": {
+    "sure": "新生第一學年註冊時直接減免，每學期最高 25,000 元（115 起適用，依預算）。",
+    "review": "第二年起依成績審查，最高可到每學期 50,000（前 1/5 名額）。"
+   },
+   "renew": "學士平均 75、操行 80；每學期服務 60 小時；最多 4 年；不能和政府獎學金同領。",
+   "lang": "依系 A2 到 B2 不等（例：企管系要 B2）。報名前逐系確認。",
+   "after": "只收秋季。入學許可原則上寄電子檔。往年早梯 11 月中開放、2 月初放榜，是秋季最早知道結果的學校之一。",
+   "verdict": "市中心、公立、第一年直接減免。只收秋季，但早梯往年 11 月開、2 月放榜，很早就能知道結果。",
+   "verdictMy": "မြို့လယ်၊ အစိုးရကျောင်း။ ပထမနှစ် တစ်စာသင်နှစ်လျှင် NT$25,000 အထိ လျှော့။ ဆောင်းဦးသာ၊ နိုဝင်ဘာတွင် စောစောလျှောက်ရင် ဖေဖော်ဝါရီမှာ ရလဒ်သိ။",
+   "readYourself": [],
+   "bizAdmits": [],
+   "links": {
+    "apply": "https://recruit.nutc.edu.tw/oia/ITNS",
+    "website": "http://www.nutc.edu.tw/bin/home.php",
+    "brochureSpring": null,
+    "brochureSpringYear": null,
+    "brochureFall": "https://oia.nutc.edu.tw/var/file/42/1042/img/1597/313422402.pdf",
+    "brochureFallYear": "115-1"
+   },
+   "lists": [
+    {
+     "year": "115",
+     "term": "fall",
+     "title": "秋季外國學生第二階段錄取公告",
+     "url": "https://oia.nutc.edu.tw/p/404-1042-134790.php"
+    }
+   ],
+   "terms": {
+    "spring": {
+     "ug": "none",
+     "rounds": []
+    },
+    "fall": {
+     "ug": "has",
+     "rounds": [
+      {
+       "start": {
+        "status": "historical",
+        "sourceYear": "115-1",
+        "label": "11 月中旬",
+        "sort": "2026-11-11",
+        "src": "https://oia.nutc.edu.tw/var/file/42/1042/img/506068650.pdf"
+       },
+       "end": {
+        "status": "historical",
+        "sourceYear": "115-1",
+        "label": "1 月上旬",
+        "sort": "2027-01-01",
+        "src": "https://oia.nutc.edu.tw/var/file/42/1042/img/506068650.pdf"
+       },
+       "result": {
+        "status": "historical",
+        "sourceYear": "115-1",
+        "label": "2 月上旬",
+        "sort": "2027-02-01",
+        "src": "https://oia.nutc.edu.tw/var/file/42/1042/img/506068650.pdf"
+       },
+       "note": null
+      },
+      {
+       "start": {
+        "status": "historical",
+        "sourceYear": "115-1",
+        "label": "4 月下旬",
+        "sort": "2027-04-21",
+        "src": "https://oia.nutc.edu.tw/var/file/42/1042/img/1597/313422402.pdf"
+       },
+       "end": {
+        "status": "historical",
+        "sourceYear": "115-1",
+        "label": "7 月上旬",
+        "sort": "2027-07-01",
+        "src": "https://oia.nutc.edu.tw/var/file/42/1042/img/1597/313422402.pdf"
+       },
+       "result": {
+        "status": "historical",
+        "sourceYear": "115-1",
+        "label": "7 月下旬",
+        "sort": "2027-07-21",
+        "src": "https://oia.nutc.edu.tw/var/file/42/1042/img/1597/313422402.pdf"
+       },
+       "note": null
+      }
+     ]
+    }
+   },
+   "checked": "2026-09-29"
+  },
+  {
+   "id": "1008",
+   "name": "靜宜大學",
+   "short": "靜宜",
+   "abbr": "PU",
+   "english": "Providence University",
+   "city": "臺中市",
+   "ownership": "private",
+   "type": "university",
+   "km": 15,
+   "commute": "local",
+   "place": "台中沙鹿區（海線）",
+   "travel": "開車/客運約 30–40 分",
+   "tier": "A",
+   "fee": {
+    "kind": "silent",
+    "text": "115 簡章沒有寫申請費，也沒寫明免收",
+    "src": "https://oia.pu.edu.tw/var/file/48/1048/img/1126/516627917.pdf",
+    "year": "115"
+   },
+   "tuition": {
+    "min": 44811,
+    "max": 53874,
+    "year": "114",
+    "text": "114 學年各院學雜費（每學期）；宿舍 10,000–15,500",
+    "src": "https://oia.pu.edu.tw/var/file/48/1048/img/1126/516627917.pdf"
+   },
+   "firstYearKind": "lang",
+   "semesterCost": {
+    "min": 44811,
+    "max": 53874,
+    "basis": "worst"
+   },
+   "aid": {
+    "sure": "看語言證書就給：TOCFL B1（三級）→ 第一學年學雜費同額助學金；A2（二級）→ 第一學年學費同額（雜費自付）。",
+    "review": "第二年起依班排名審核。"
+   },
+   "renew": "第二年起依前一學期排名：前 15% 35,000、15–30% 20,000、30–50% 8,000 元；無懲處並完成 10 小時國際學習。",
+   "lang": "中文授課學士：TOCFL A2 即可。春季入學跟原班一起上課，不另開班。",
+   "after": "春季第 1 梯 10/15 截止、11/30 放榜；第 2 梯 11/15 截止、12/24 放榜；放榜後 email 並寄書面通知；2027/2/22 註冊。",
+   "verdict": "A2 就能報，而且憑 TOCFL 證書就有第一年學費補助，不是比運氣的獎學金。春季第 1 梯 10/15 截止，最急。",
+   "verdictMy": "A2 ဖြင့် လျှောက်နိုင်။ TOCFL လက်မှတ်ရှိရင် ပထမနှစ် ကျောင်းလခ ထောက်ပံ့ငွေ ရ (B1 ဆို ပိုကောင်း)။ နွေဦး အဆင့် ၁ နောက်ဆုံးရက် 10/15 — အမြန်ဆုံး။",
+   "readYourself": [],
+   "bizAdmits": [],
+   "links": {
+    "apply": "https://mypu.pu.edu.tw/Framework/International/oia_oversea/admission/overseas?lang=en",
+    "website": "http://www.pu.edu.tw",
+    "brochureSpring": "https://oia.pu.edu.tw/var/file/48/1048/img/1126/516627917.pdf",
+    "brochureSpringYear": "115-2",
+    "brochureFall": "https://oia.pu.edu.tw/var/file/48/1048/img/1126/516627917.pdf",
+    "brochureFallYear": "115-1"
+   },
+   "lists": [
+    {
+     "year": "115",
+     "term": "fall",
+     "title": "秋季外國學生第一梯次錄取榜單",
+     "url": "https://oia.pu.edu.tw/var/file/48/1048/img/257/728221571.pdf"
+    },
+    {
+     "year": "115",
+     "term": "fall",
+     "title": "秋季外國學生第二梯次錄取榜單",
+     "url": "https://oia.pu.edu.tw/var/file/48/1048/img/257/519749998.pdf"
+    },
+    {
+     "year": "114",
+     "term": "fall",
+     "title": "秋季外國學生第一梯次錄取榜單",
+     "url": "https://oia.pu.edu.tw/var/file/48/1048/img/174/317234510.pdf"
+    },
+    {
+     "year": "114",
+     "term": "fall",
+     "title": "秋季外國學生第二梯次錄取公告",
+     "url": "https://oia.pu.edu.tw/p/406-1048-64344%2Cr13.php?Lang=en"
+    },
+    {
+     "year": "114",
+     "term": "spring",
+     "title": "春季外國學生第一梯次錄取榜單",
+     "url": "https://oia.pu.edu.tw/var/file/48/1048/img/720225637.pdf"
+    },
+    {
+     "year": "114",
+     "term": "spring",
+     "title": "春季外國學生第二梯次錄取公告",
+     "url": "https://oia.pu.edu.tw/p/16-1048-68428.php?Lang=zh-tw"
+    }
+   ],
+   "terms": {
+    "spring": {
+     "ug": "has",
+     "rounds": [
+      {
+       "start": {
+        "status": "official",
+        "sourceYear": "115-2",
+        "date": "2026-08-01",
+        "src": "https://oia.pu.edu.tw/p/426-1048-11.php"
+       },
+       "end": {
+        "status": "official",
+        "sourceYear": "115-2",
+        "date": "2026-10-15",
+        "src": "https://oia.pu.edu.tw/p/426-1048-11.php"
+       },
+       "result": {
+        "status": "official",
+        "sourceYear": "115-2",
+        "date": "2026-11-30",
+        "src": "https://oia.pu.edu.tw/p/426-1048-11.php"
+       },
+       "note": null
+      },
+      {
+       "start": {
+        "status": "official",
+        "sourceYear": "115-2",
+        "date": "2026-10-16",
+        "src": "https://oia.pu.edu.tw/p/426-1048-11.php"
+       },
+       "end": {
+        "status": "official",
+        "sourceYear": "115-2",
+        "date": "2026-11-15",
+        "src": "https://oia.pu.edu.tw/p/426-1048-11.php"
+       },
+       "result": {
+        "status": "official",
+        "sourceYear": "115-2",
+        "date": "2026-12-24",
+        "src": "https://oia.pu.edu.tw/p/426-1048-11.php"
+       },
+       "note": null
+      }
+     ]
+    },
+    "fall": {
+     "ug": "has",
+     "rounds": [
+      {
+       "start": {
+        "status": "historical",
+        "sourceYear": "115-1",
+        "label": "1 月中旬",
+        "sort": "2027-01-11",
+        "src": "https://oia.pu.edu.tw/p/426-1048-11.php"
+       },
+       "end": {
+        "status": "historical",
+        "sourceYear": "115-1",
+        "label": "4 月下旬",
+        "sort": "2027-04-21",
+        "src": "https://oia.pu.edu.tw/p/426-1048-11.php"
+       },
+       "result": {
+        "status": "historical",
+        "sourceYear": "115-1",
+        "label": "6 月上旬",
+        "sort": "2027-06-01",
+        "src": "https://oia.pu.edu.tw/p/426-1048-11.php"
+       },
+       "note": null
+      },
+      {
+       "start": {
+        "status": "historical",
+        "sourceYear": "115-1",
+        "label": "5 月上旬",
+        "sort": "2027-05-01",
+        "src": "https://oia.pu.edu.tw/p/426-1048-11.php"
+       },
+       "end": {
+        "status": "historical",
+        "sourceYear": "115-1",
+        "label": "6 月中旬",
+        "sort": "2027-06-11",
+        "src": "https://oia.pu.edu.tw/p/426-1048-11.php"
+       },
+       "result": {
+        "status": "historical",
+        "sourceYear": "115-1",
+        "label": "7 月下旬",
+        "sort": "2027-07-21",
+        "src": "https://oia.pu.edu.tw/p/426-1048-11.php"
+       },
+       "note": null
+      }
+     ]
+    }
+   },
+   "checked": "2026-09-29"
+  },
+  {
+   "id": "0006",
+   "name": "國立中興大學",
+   "short": "中興",
+   "abbr": "NCHU",
+   "english": "National Chung Hsing University",
+   "city": "臺中市",
+   "ownership": "public",
+   "type": "university",
+   "km": 2,
+   "commute": "local",
+   "place": "台中南區・市中心",
+   "travel": "市區公車/機車 10 分",
+   "tier": "P",
+   "fee": {
+    "kind": "silent",
+    "text": "115 簡章全文沒有寫申請費，也沒寫明免收",
+    "src": "https://oia.nchu.edu.tw/images/File/03_Apply_to_NCHU/3-1-Degree-Programs/3-1-2-International-Students/115_Academic_Year_Application_Guidelines_re.pdf",
+    "year": "115"
+   },
+   "tuition": {
+    "min": 45691,
+    "max": 53914,
+    "year": "114",
+    "text": "114 學年外國學生學士班學雜費（每學期，依學院）",
+    "src": "https://www.oia.nchu.edu.tw/index.php/zh/2-prospective-students-tw/2-4-fees-and-financing-tw/2-4-1-tuition-fees-tw"
+   },
+   "firstYearKind": "review",
+   "semesterCost": {
+    "min": 45691,
+    "max": 53914,
+    "basis": "worst"
+   },
+   "aid": {
+    "sure": null,
+    "review": "報名系統勾選「申請中興獎學金」：學費減免到本國生標準或全免，少數每月 6,000／8,000 元；審查，不保證。"
+   },
+   "renew": "每年再申請；學士前兩學期平均 70 以上，院系排序；最長 4 年。",
+   "lang": "全校最低 TOCFL A2；各系可以要求更高，報名前逐系確認。最多填兩個志願。",
+   "after": "春季只收研究所。學士只能報秋季：往年 1 月中–3 月中報名、5 月底放榜。",
+   "verdict": "台中最有名的國立大學，就在市區。學士只收秋季，放榜 5 月底較晚；獎學金要審查。值得報 2027 秋季。",
+   "verdictMy": "ထိုင်ချုံးမြို့ထဲရှိ နာမည်ကြီး အစိုးရတက္ကသိုလ်။ ဘွဲ့ကြို ဆောင်းဦးသာ (ဇန်နဝါရီ–မတ်)။ ပညာသင်ဆု စစ်ဆေးရွေးချယ်သည်။",
+   "readYourself": [],
+   "bizAdmits": [],
+   "links": {
+    "apply": "https://oiaapply.nchu.edu.tw",
+    "website": "http://www.nchu.edu.tw",
+    "brochureSpring": "https://oia.nchu.edu.tw/images/File/03_Apply_to_NCHU/3-1-Degree-Programs/3-1-2-International-Students/115_Academic_Year_Application_Guidelines_re.pdf",
+    "brochureSpringYear": "115-2",
+    "brochureFall": "https://oia.nchu.edu.tw/images/File/03_Apply_to_NCHU/3-1-Degree-Programs/3-1-2-International-Students/115_Academic_Year_Application_Guidelines_re.pdf",
+    "brochureFallYear": "115-1"
+   },
+   "lists": [
+    {
+     "year": "115",
+     "term": "fall",
+     "title": "秋季外國學位生錄取榜單",
+     "url": "https://www.oia.nchu.edu.tw/images/File/03_Apply_to_NCHU/3-1-Degree-Programs/3-1-2-International-Students/2026_Fall_Semester_NCHU.pdf"
+    },
+    {
+     "year": "114",
+     "term": "fall",
+     "title": "秋季外國學位生錄取榜單",
+     "url": "https://www.oia.nchu.edu.tw/images/File/03_Apply_to_NCHU/3-1-Degree-Programs/3-1-2-International-Students/2025_Fall_Semester_NCHU.pdf"
+    },
+    {
+     "year": "114",
+     "term": "spring",
+     "title": "春季外國學位生錄取榜單",
+     "url": "https://www.oia.nchu.edu.tw/images/File/03_Apply_to_NCHU/3-1-Degree-Programs/3-1-2-International-Students/2026_Spring_Semester_NCHU.pdf"
+    }
+   ],
+   "terms": {
+    "spring": {
+     "ug": "grad",
+     "rounds": []
+    },
+    "fall": {
+     "ug": "has",
+     "rounds": [
+      {
+       "start": {
+        "status": "historical",
+        "sourceYear": "115-1",
+        "label": "1 月中旬",
+        "sort": "2027-01-11",
+        "src": "https://oia.nchu.edu.tw/images/File/03_Apply_to_NCHU/3-1-Degree-Programs/3-1-2-International-Students/115_Academic_Year_Application_Guidelines_re.pdf"
+       },
+       "end": {
+        "status": "historical",
+        "sourceYear": "115-1",
+        "label": "3 月中旬",
+        "sort": "2027-03-11",
+        "src": "https://oia.nchu.edu.tw/images/File/03_Apply_to_NCHU/3-1-Degree-Programs/3-1-2-International-Students/115_Academic_Year_Application_Guidelines_re.pdf"
+       },
+       "result": {
+        "status": "historical",
+        "sourceYear": "115-1",
+        "label": "5 月下旬",
+        "sort": "2027-05-21",
+        "src": "https://oia.nchu.edu.tw/images/File/03_Apply_to_NCHU/3-1-Degree-Programs/3-1-2-International-Students/115_Academic_Year_Application_Guidelines_re.pdf"
+       },
+       "note": "原定5/31，如逢假日順延，請核對當屆實際公告。"
+      }
+     ]
+    }
+   },
+   "checked": "2026-09-29"
+  },
+  {
+   "id": "1001",
+   "name": "東海大學",
+   "short": "東海",
+   "abbr": "THU",
+   "english": "Tunghai University",
+   "city": "臺中市",
+   "ownership": "private",
+   "type": "university",
+   "km": 10,
+   "commute": "local",
+   "place": "台中西屯區（大度山）",
+   "travel": "市區公車約 30–40 分",
+   "tier": "P",
+   "fee": {
+    "kind": "free",
+    "amount": 0,
+    "text": "115-2 簡章第 8 頁：申請費「免費」",
+    "src": "https://exam2.thu.edu.tw/EXAM/download_doc_26/115_regulations.pdf",
+    "year": "115-2"
+   },
+   "tuition": {
+    "min": 57860,
+    "max": 67547,
+    "year": "115",
+    "text": "115 學年外國學生學士班學雜費（每學期，依系）；宿舍 9,260–12,760＋網路 800＋維護 1,000",
+    "src": "https://exam2.thu.edu.tw/EXAM/download_doc_26/26.pdf"
+   },
+   "firstYearKind": "review",
+   "semesterCost": {
+    "min": 57860,
+    "max": 67547,
+    "basis": "worst"
+   },
+   "aid": {
+    "sure": null,
+    "review": "外國學生獎助學金：學士每學年 100,000／60,000／20,000 元，審查並依經費核定。"
+   },
+   "renew": "在校學士 GPA 2.93 以上或班排前 25%；每年重新申請；通常每學期服務 10 小時；最多 4 年。",
+   "lang": "中文授課基本 TOCFL A2，但各系可以更高（例：財金 A2、會計 C1）。",
+   "after": "春季 10/1–10/31 線上報名，文件 11/3 前寄達；12 月上旬放榜；2027/1/4 前回覆入學意願；2 月上旬註冊。",
+   "verdict": "有名、免申請費、台中市內。學費是名單中最高（每學期約 5.8–6.8 萬），獎學金要審查。春季 10/1 開放報名。",
+   "verdictMy": "နာမည်ကြီး၊ လျှောက်လွှာကြေး အခမဲ့၊ ထိုင်ချုံးမြို့ထဲ။ ကျောင်းလခ အမြင့်ဆုံး (တစ်စာသင်နှစ် ~NT$58,000–68,000)။ နွေဦး 10/1–10/31။",
+   "readYourself": [],
+   "bizAdmits": [],
+   "links": {
+    "apply": "https://exam2.thu.edu.tw/EXAM/forlist.jsp",
+    "website": "https://www.thu.edu.tw/",
+    "brochureSpring": "https://exam2.thu.edu.tw/EXAM/index3_1_main.jsp?DOC=26",
+    "brochureSpringYear": "115-2",
+    "brochureFall": "https://exam2.thu.edu.tw/EXAM/index3_1_main.jsp?DOC=25",
+    "brochureFallYear": "115-1"
+   },
+   "lists": [
+    {
+     "year": "114",
+     "term": "fall",
+     "title": "秋季班外國學生申請入學錄取名單",
+     "url": "https://exam2.thu.edu.tw/EXAM/doc/1036711410_public_001.pdf"
+    },
+    {
+     "year": "114",
+     "term": "spring",
+     "title": "春季班外國學生錄取公告索引",
+     "url": "https://exam2.thu.edu.tw/EXAM/board_all.jsp?DOC=26"
+    }
+   ],
+   "terms": {
+    "spring": {
+     "ug": "has",
+     "rounds": [
+      {
+       "start": {
+        "status": "official",
+        "date": "2026-10-01"
+       },
+       "end": {
+        "status": "official",
+        "date": "2026-10-31"
+       },
+       "result": {
+        "status": "official",
+        "sort": "2026-12-01",
+        "label": "12 月上旬"
+       },
+       "note": "文件 11/3 前寄達；1/4 前回覆入學意願"
+      }
+     ]
+    },
+    "fall": {
+     "ug": "has",
+     "rounds": [
+      {
+       "start": {
+        "status": "historical",
+        "sourceYear": "115-1",
+        "label": "1 月下旬",
+        "sort": "2027-01-21",
+        "src": "https://exam2.thu.edu.tw/EXAM/download_doc_25/21.pdf"
+       },
+       "end": {
+        "status": "historical",
+        "sourceYear": "115-1",
+        "label": "2 月下旬",
+        "sort": "2027-02-21",
+        "src": "https://exam2.thu.edu.tw/EXAM/download_doc_25/21.pdf"
+       },
+       "result": {
+        "status": "historical",
+        "sourceYear": "115-1",
+        "label": "4月10日前",
+        "sort": "2027-04-01",
+        "src": "https://exam2.thu.edu.tw/EXAM/download_doc_25/21.pdf"
+       },
+       "note": null
+      },
+      {
+       "start": {
+        "status": "historical",
+        "sourceYear": "115-1",
+        "label": "3 月上旬",
+        "sort": "2027-03-01",
+        "src": "https://exam2.thu.edu.tw/EXAM/download_doc_25/21.pdf"
+       },
+       "end": {
+        "status": "historical",
+        "sourceYear": "115-1",
+        "label": "3 月下旬",
+        "sort": "2027-03-21",
+        "src": "https://exam2.thu.edu.tw/EXAM/download_doc_25/21.pdf"
+       },
+       "result": {
+        "status": "historical",
+        "sourceYear": "115-1",
+        "label": "5月初",
+        "sort": "2027-05-01",
+        "src": "https://exam2.thu.edu.tw/EXAM/download_doc_25/21.pdf"
+       },
+       "note": null
+      },
+      {
+       "start": {
+        "status": "historical",
+        "sourceYear": "115-1",
+        "label": "4 月上旬",
+        "sort": "2027-04-01",
+        "src": "https://exam2.thu.edu.tw/EXAM/download_doc_25/21.pdf"
+       },
+       "end": {
+        "status": "historical",
+        "sourceYear": "115-1",
+        "label": "4 月下旬",
+        "sort": "2027-04-21",
+        "src": "https://exam2.thu.edu.tw/EXAM/download_doc_25/21.pdf"
+       },
+       "result": {
+        "status": "historical",
+        "sourceYear": "115-1",
+        "label": "6月初",
+        "sort": "2027-06-01",
+        "src": "https://exam2.thu.edu.tw/EXAM/download_doc_25/21.pdf"
+       },
+       "note": null
+      },
+      {
+       "start": {
+        "status": "historical",
+        "sourceYear": "115-1",
+        "label": "5 月上旬",
+        "sort": "2027-05-01",
+        "src": "https://exam2.thu.edu.tw/EXAM/download_doc_25/21.pdf"
+       },
+       "end": {
+        "status": "historical",
+        "sourceYear": "115-1",
+        "label": "5 月下旬",
+        "sort": "2027-05-21",
+        "src": "https://exam2.thu.edu.tw/EXAM/download_doc_25/21.pdf"
+       },
+       "result": {
+        "status": "historical",
+        "sourceYear": "115-1",
+        "label": "7月初",
+        "sort": "2027-07-01",
+        "src": "https://exam2.thu.edu.tw/EXAM/download_doc_25/21.pdf"
+       },
+       "note": null
+      }
+     ]
+    }
+   },
+   "checked": "2026-09-29"
+  },
+  {
+   "id": "1007",
+   "name": "逢甲大學",
+   "short": "逢甲",
+   "abbr": "FCU",
+   "english": "Feng Chia University",
+   "city": "臺中市",
+   "ownership": "private",
+   "type": "university",
+   "km": 6,
+   "commute": "local",
+   "place": "台中西屯區（逢甲商圈）",
+   "travel": "市區公車約 20–30 分",
+   "tier": "P",
+   "fee": {
+    "kind": "unknown",
+    "text": "2027 春季簡章放在 SharePoint，要登入才能看，申請費沒辦法核對",
+    "src": "https://www.fcu.edu.tw/recurit_list/international-spring-semester/",
+    "year": "115-2"
+   },
+   "tuition": null,
+   "firstYearKind": "review",
+   "semesterCost": null,
+   "aid": {
+    "sure": null,
+    "review": "海外華裔暨外國學生獎助學金：每學年 120,000／60,000／30,000／20,000 元，審查、依名額；須先繳清學雜費。"
+   },
+   "renew": "第二年起依成績：學士平均 70 或班排前 50%；最長 4 年；不能和臺灣獎學金同領。",
+   "lang": "簡章要登入才能看，語言門檻請自己確認。",
+   "after": "第 1 梯：9/15–11/8 報名，11/24 放榜，12/4 寄入學許可。第 2 梯：11/11–11/30 報名，12/15 放榜，12/24 寄入學許可。2027/2/22 註冊。",
+   "verdict": "台中知名私立大學，春季第 1 梯 11/24 就放榜，是春季最早拿到入學許可的（12/4）。學費與申請費要自己看簡章。",
+   "verdictMy": "ထိုင်ချုံး နာမည်ကြီး ပုဂ္ဂလိက တက္ကသိုလ်။ နွေဦး အဆင့် ၁ 11/8 အထိ လျှောက်၊ 11/24 ရလဒ်၊ 12/4 ဝင်ခွင့်စာ — အစောဆုံး။",
+   "readYourself": [
+    {
+     "label": "2027 春季簡章（SharePoint，要登入或用瀏覽器開）",
+     "url": "https://fengchia-my.sharepoint.com/:b:/g/personal/osra_o365_fcu_edu_tw/IQD4eGVyErdXTrt1h72VPYg4AeugwmTNp0n9oa1UdvEGcU4?e=rZbQcU",
+     "why": "看申請費、學費、各系語言門檻"
+    }
+   ],
+   "bizAdmits": [],
+   "links": {
+    "apply": "https://www.fcu.edu.tw/recurit_list/international-fall-semester/",
+    "website": "http://www.fcu.edu.tw",
+    "brochureSpring": "https://www.fcu.edu.tw/recurit_list/international-spring-semester/",
+    "brochureSpringYear": "115-2",
+    "brochureFall": "https://www.fcu.edu.tw/recurit_list/international-fall-semester/",
+    "brochureFallYear": "115-1"
+   },
+   "lists": [
+    {
+     "year": "115",
+     "term": "fall",
+     "title": "秋季外國學生各梯次錄取公告索引（頁面可能更新）",
+     "url": "https://www.fcu.edu.tw/recurit_list/international-fall-semester/"
+    },
+    {
+     "year": "113",
+     "term": "spring",
+     "title": "春季外國學生第二梯次錄取公告",
+     "url": "https://s3.ap-southeast-1.amazonaws.com/web-content.fcu.edu.tw/wp-content/uploads/2024/12/17103119/113-2-%E8%8B%B1%E5%85%AC%E5%91%8A%E7%AC%AC%E4%BA%8C%E6%A2%AF%E6%AC%A1.pdf"
+    }
+   ],
+   "terms": {
+    "spring": {
+     "ug": "has",
+     "rounds": [
+      {
+       "start": {
+        "status": "official",
+        "sourceYear": "115-2",
+        "date": "2026-09-15",
+        "src": "https://www.fcu.edu.tw/recurit_list/international-spring-semester/"
+       },
+       "end": {
+        "status": "official",
+        "sourceYear": "115-2",
+        "date": "2026-11-08",
+        "src": "https://www.fcu.edu.tw/recurit_list/international-spring-semester/"
+       },
+       "result": {
+        "status": "official",
+        "sourceYear": "115-2",
+        "date": "2026-11-24",
+        "src": "https://www.fcu.edu.tw/recurit_list/international-spring-semester/"
+       },
+       "note": null,
+       "letter": "2026-12-04"
+      },
+      {
+       "start": {
+        "status": "official",
+        "sourceYear": "115-2",
+        "date": "2026-11-11",
+        "src": "https://www.fcu.edu.tw/recurit_list/international-spring-semester/"
+       },
+       "end": {
+        "status": "official",
+        "sourceYear": "115-2",
+        "date": "2026-11-30",
+        "src": "https://www.fcu.edu.tw/recurit_list/international-spring-semester/"
+       },
+       "result": {
+        "status": "official",
+        "sourceYear": "115-2",
+        "date": "2026-12-15",
+        "src": "https://www.fcu.edu.tw/recurit_list/international-spring-semester/"
+       },
+       "note": null,
+       "letter": "2026-12-24"
+      }
+     ]
+    },
+    "fall": {
+     "ug": "has",
+     "rounds": [
+      {
+       "start": {
+        "status": "historical",
+        "sourceYear": "115-1",
+        "label": "12 月中旬",
+        "sort": "2026-12-11",
+        "src": "https://www.fcu.edu.tw/recurit_list/international-fall-semester/"
+       },
+       "end": {
+        "status": "historical",
+        "sourceYear": "115-1",
+        "label": "3 月上旬",
+        "sort": "2027-03-01",
+        "src": "https://www.fcu.edu.tw/recurit_list/international-fall-semester/"
+       },
+       "result": {
+        "status": "historical",
+        "sourceYear": "115-1",
+        "label": "3 月下旬",
+        "sort": "2027-03-21",
+        "src": "https://www.fcu.edu.tw/recurit_list/international-fall-semester/"
+       },
+       "note": null
+      },
+      {
+       "start": {
+        "status": "historical",
+        "sourceYear": "115-1",
+        "label": "3 月上旬",
+        "sort": "2027-03-01",
+        "src": "https://www.fcu.edu.tw/recurit_list/international-fall-semester/"
+       },
+       "end": {
+        "status": "historical",
+        "sourceYear": "115-1",
+        "label": "4 月中旬",
+        "sort": "2027-04-11",
+        "src": "https://www.fcu.edu.tw/recurit_list/international-fall-semester/"
+       },
+       "result": {
+        "status": "historical",
+        "sourceYear": "115-1",
+        "label": "5 月上旬",
+        "sort": "2027-05-01",
+        "src": "https://www.fcu.edu.tw/recurit_list/international-fall-semester/"
+       },
+       "note": null
+      },
+      {
+       "start": {
+        "status": "historical",
+        "sourceYear": "115-1",
+        "label": "4 月中旬",
+        "sort": "2027-04-11",
+        "src": "https://www.fcu.edu.tw/recurit_list/international-fall-semester/"
+       },
+       "end": {
+        "status": "historical",
+        "sourceYear": "115-1",
+        "label": "6 月上旬",
+        "sort": "2027-06-01",
+        "src": "https://www.fcu.edu.tw/recurit_list/international-fall-semester/"
+       },
+       "result": {
+        "status": "historical",
+        "sourceYear": "115-1",
+        "label": "6 月下旬",
+        "sort": "2027-06-21",
+        "src": "https://www.fcu.edu.tw/recurit_list/international-fall-semester/"
+       },
+       "note": null
+      },
+      {
+       "start": {
+        "status": "historical",
+        "sourceYear": "115-1",
+        "label": "6 月中旬",
+        "sort": "2027-06-11",
+        "src": "https://www.fcu.edu.tw/recurit_list/international-fall-semester/"
+       },
+       "end": {
+        "status": "historical",
+        "sourceYear": "115-1",
+        "label": "7 月上旬",
+        "sort": "2027-07-01",
+        "src": "https://www.fcu.edu.tw/recurit_list/international-fall-semester/"
+       },
+       "result": {
+        "status": "historical",
+        "sourceYear": "115-1",
+        "label": "7 月下旬",
+        "sort": "2027-07-21",
+        "src": "https://www.fcu.edu.tw/recurit_list/international-fall-semester/"
+       },
+       "note": null
+      }
+     ]
+    }
+   },
+   "checked": "2026-09-29"
+  },
+  {
+   "id": "0017",
+   "name": "國立臺北大學",
+   "short": "北大",
+   "abbr": "NTPU",
+   "english": "National Taipei University",
+   "city": "新北市",
+   "ownership": "public",
+   "type": "university",
+   "km": 113,
+   "commute": "far",
+   "place": "新北三峽",
+   "travel": "高鐵到板橋再轉車，約 1.5–2 小時；要搬家",
+   "tier": "P",
+   "fee": {
+    "kind": "silent",
+    "text": "115 秋季簡章沒有寫一般學位生申請費，不能當作免費",
+    "src": "https://cms-carrier.ntpu.edu.tw/uploads/115_1_2026_c93708c94b.pdf",
+    "year": "115-1"
+   },
+   "tuition": null,
+   "firstYearKind": "review",
+   "semesterCost": null,
+   "aid": {
+    "sure": null,
+    "review": "鳶飛國際優秀新生獎學金：每學期 40,000 元、最多 4 年（外國學士新生；永續創新國際學院除外）；錄取後另外申請並審查。"
+   },
+   "renew": "每學期平均 75 以上並完成註冊；未達先停發；不能全職工作或領政府獎補助。",
+   "lang": "未逐系整理；看簡章。",
+   "after": "春季 9/3–10/31 報名（學士是否開放以簡章為準）；放榜往年約 12 月初。",
+   "verdict": "國立名校、獎學金每學期 4 萬（要審查）。在新北三峽要搬家，住宿與生活費要另外算。",
+   "verdictMy": "နာမည်ကြီး အစိုးရတက္ကသိုလ် (နယူးတိုင်ပေ)။ တစ်စာသင်နှစ် NT$40,000 ပညာသင်ဆု (စစ်ဆေးရွေး)။ အိမ်ပြောင်းရမည်။",
+   "readYourself": [],
+   "bizAdmits": [],
+   "links": {
+    "apply": "https://webap.ntpu.edu.tw/interstud/",
+    "website": "http://new.ntpu.edu.tw/",
+    "brochureSpring": null,
+    "brochureSpringYear": null,
+    "brochureFall": "https://cms-carrier.ntpu.edu.tw/uploads/115_1_2026_c93708c94b.pdf",
+    "brochureFallYear": "115-1"
+   },
+   "lists": [],
+   "terms": {
+    "spring": {
+     "ug": "has",
+     "rounds": [
+      {
+       "start": {
+        "status": "official",
+        "date": "2026-09-03"
+       },
+       "end": {
+        "status": "official",
+        "date": "2026-10-31"
+       },
+       "result": null,
+       "note": "學士班是否開放春季請以簡章為準；放榜往年約 12 月初"
+      }
+     ]
+    },
+    "fall": {
+     "ug": "has",
+     "rounds": [
+      {
+       "start": {
+        "status": "historical",
+        "sourceYear": "115-1",
+        "label": "12 月下旬",
+        "sort": "2026-12-21",
+        "src": "https://cms-carrier.ntpu.edu.tw/uploads/115_1_2026_c93708c94b.pdf"
+       },
+       "end": {
+        "status": "historical",
+        "sourceYear": "115-1",
+        "label": "3 月下旬",
+        "sort": "2027-03-21",
+        "src": "https://cms-carrier.ntpu.edu.tw/uploads/115_1_2026_c93708c94b.pdf"
+       },
+       "result": {
+        "status": "historical",
+        "sourceYear": "115-1",
+        "label": "5 月下旬",
+        "sort": "2027-05-21",
+        "src": "https://cms-carrier.ntpu.edu.tw/uploads/115_1_2026_c93708c94b.pdf"
+       },
+       "note": null
+      }
+     ]
+    }
+   },
+   "checked": "2026-09-29"
+  },
+  {
+   "id": "0025",
+   "name": "國立臺北科技大學",
+   "short": "北科",
+   "abbr": "NTUT",
+   "english": "National Taipei University of Technology",
+   "city": "臺北市",
+   "ownership": "public",
+   "type": "technology",
+   "km": 132,
+   "commute": "far",
+   "place": "台北市大安區",
+   "travel": "高鐵約 1 小時＋捷運；要搬家",
+   "tier": "P",
+   "fee": {
+    "kind": "free",
+    "amount": 0,
+    "text": "2027 春季簡章明載無申請費（只確認春季；秋季還沒公告）",
+    "src": "https://oia.ntut.edu.tw/var/file/32/1032/img/2027SpringAdmissionHandbook.pdf",
+    "year": "115-2"
+   },
+   "tuition": null,
+   "firstYearKind": "review",
+   "semesterCost": null,
+   "aid": {
+    "sure": null,
+    "review": "校長獎學金只有第一年：全額（每月 15,000，6 名）或半額（每月 8,000，20 名），兩者都補全額學雜費；報名時勾選，擇優。另有 TOCFL B1 以上可申請的學雜費 50% 減免。"
+   },
+   "renew": "校長獎學金不能續領。B1 學雜費減免：前學年學業 70、操行 80，而且 TOCFL 要比上次再高 1 級。",
+   "lang": "看系所。B1 以上才有學雜費減免資格。",
+   "after": "春季只收研究所。學士只能報秋季：116-1 已公告 2026/12/1–2027/3/10 報名、2027/5/1 放榜。",
+   "verdict": "台北名校，116-1 秋季日期已經正式公告。第一年全額獎學金名額很少；要搬到台北。",
+   "verdictMy": "တိုင်ပေ နာမည်ကြီး နည်းပညာတက္ကသိုလ်။ ဆောင်းဦး 2026/12/1–2027/3/10 လျှောက် (တရားဝင်)။ ပညာသင်ဆု နေရာနည်း။ အိမ်ပြောင်းရမည်။",
+   "readYourself": [],
+   "bizAdmits": [],
+   "links": {
+    "apply": "https://taipeitech.oia.ntut.edu.tw/foreign",
+    "website": "https://www.ntut.edu.tw/index.php",
+    "brochureSpring": "https://oia.ntut.edu.tw/var/file/32/1032/img/2027SpringAdmissionHandbook.pdf",
+    "brochureSpringYear": "115-2",
+    "brochureFall": null,
+    "brochureFallYear": null
+   },
+   "lists": [
+    {
+     "year": "114",
+     "term": "spring",
+     "title": "114春季外籍生錄取及獎學金結果",
+     "url": "https://oia.ntut.edu.tw/p/406-1032-150254%2Cr1150.php?Lang=zh-tw"
+    },
+    {
+     "year": "115",
+     "term": "fall",
+     "title": "115秋季外籍生錄取及獎學金結果",
+     "url": "https://oia.ntut.edu.tw/p/406-1032-105591%2Cr1150.php?Lang=zh-tw"
+    }
+   ],
+   "terms": {
+    "spring": {
+     "ug": "grad",
+     "rounds": []
+    },
+    "fall": {
+     "ug": "has",
+     "rounds": [
+      {
+       "start": {
+        "status": "official",
+        "sourceYear": "116-1",
+        "date": "2026-12-01",
+        "src": "https://oia.ntut.edu.tw/p/412-1032-13828.php?Lang=en"
+       },
+       "end": {
+        "status": "official",
+        "sourceYear": "116-1",
+        "date": "2027-03-10",
+        "src": "https://oia.ntut.edu.tw/p/412-1032-13828.php?Lang=en"
+       },
+       "result": {
+        "status": "official",
+        "sourceYear": "116-1",
+        "label": "2027年5月初",
+        "sort": "2027-05-01",
+        "src": "https://oia.ntut.edu.tw/p/412-1032-13828.php?Lang=en"
+       },
+       "note": null
+      }
+     ]
+    }
+   },
+   "checked": "2026-09-29"
+  },
+  {
+   "id": "1034",
+   "name": "弘光科技大學",
+   "short": "弘光",
+   "abbr": "HKU",
+   "english": "Hungkuang University",
+   "city": "臺中市",
+   "ownership": "private",
+   "type": "technology",
+   "km": 15,
+   "commute": "local",
+   "place": "台中沙鹿區（海線）",
+   "travel": "開車/客運約 30–40 分",
+   "tier": "B",
+   "fee": {
+    "kind": "free",
+    "amount": 0,
+    "text": "115 簡章第 19 頁：本項招生免收申請費（含 2027 春季）",
+    "src": "https://ifp.hk.edu.tw/wp-content/uploads/2026/09/%E5%BC%98%E5%85%89115%E5%A4%96%E5%9C%8B%E5%AD%B8%E7%94%9F%E6%8B%9B%E7%94%9F%E7%B0%A1%E7%AB%A0_%E4%BF%AEV2-1106.pdf",
+    "year": "115"
+   },
+   "tuition": {
+    "min": 45547,
+    "max": 55753,
+    "year": "115",
+    "text": "每學期 45,547–55,753（依系）",
+    "src": "https://ifp.hk.edu.tw/wp-content/uploads/2026/09/%E5%BC%98%E5%85%89115%E5%A4%96%E5%9C%8B%E5%AD%B8%E7%94%9F%E6%8B%9B%E7%94%9F%E7%B0%A1%E7%AB%A0_%E4%BF%AEV2-1106.pdf"
+   },
+   "firstYearKind": "review",
+   "semesterCost": {
+    "min": 45547,
+    "max": 55753,
+    "basis": "worst"
+   },
+   "aid": {
+    "sure": null,
+    "review": "每學期 A 級 50,000／B 級 30,000／C 級 10,000／D 級 5,000 元；要申請並審查。"
+   },
+   "renew": "新生與續讀審核條件不同，續領細則簡章沒寫清楚。",
+   "lang": "TOCFL A2（含）以上。護理、物理治療、語言治療春季不招生。",
+   "after": "春季 10/5–12/1 報名；2027/1/10 放榜；1/15 前 email＋郵寄入學許可。",
+   "verdict": "免申請費、A2、春季開到 12/1。放榜 1/10 較晚；私立科大，獎學金要審查。",
+   "verdictMy": "လျှောက်လွှာကြေး အခမဲ့၊ A2 ရ၊ နွေဦး 10/5–12/1။ ရလဒ် 1/10 (နောက်ကျ)။",
+   "readYourself": [],
+   "bizAdmits": [],
+   "links": {
+    "apply": "https://ifp.hk.edu.tw/入學申請/外國學生/",
+    "website": "https://www.hk.edu.tw/",
+    "brochureSpring": "https://ifp.hk.edu.tw/wp-content/uploads/2026/09/%E5%BC%98%E5%85%89115%E5%A4%96%E5%9C%8B%E5%AD%B8%E7%94%9F%E6%8B%9B%E7%94%9F%E7%B0%A1%E7%AB%A0_%E4%BF%AEV2-1106.pdf",
+    "brochureSpringYear": "115-2",
+    "brochureFall": null,
+    "brochureFallYear": null
+   },
+   "lists": [
+    {
+     "year": "114",
+     "term": "fall",
+     "title": "秋季外國學生第二梯次錄取公告",
+     "url": "https://ifp.hk.edu.tw/%E5%BC%98%E5%85%89%E7%A7%91%E6%8A%80%E5%A4%A7%E5%AD%B8114%E5%AD%B8%E5%B9%B4%E5%BA%A6%E7%A7%8B%E5%AD%A3%E7%8F%AD%EF%BC%88%E7%AC%AC%E4%BA%8C%E6%A2%AF%E6%AC%A1%EF%BC%89%E5%A4%96%E5%9C%8B%E5%AD%B8/"
+    },
+    {
+     "year": "114",
+     "term": "fall",
+     "title": "秋季外國學生第三梯次錄取公告",
+     "url": "https://www.hk.edu.tw/remote/HKifp77141/"
+    }
+   ],
+   "terms": {
+    "spring": {
+     "ug": "has",
+     "rounds": [
+      {
+       "start": {
+        "status": "official",
+        "sourceYear": null,
+        "date": "2026-10-05"
+       },
+       "end": {
+        "status": "official",
+        "sourceYear": null,
+        "date": "2026-12-01"
+       },
+       "result": {
+        "status": "official",
+        "sourceYear": null,
+        "date": "2027-01-10"
+       },
+       "note": null,
+       "letter": "2027-01-15"
+      }
+     ]
+    },
+    "fall": {
+     "ug": "has",
+     "rounds": [
+      {
+       "start": {
+        "status": "official",
+        "sourceYear": null,
+        "date": "2026-10-05"
+       },
+       "end": {
+        "status": "official",
+        "sourceYear": null,
+        "date": "2027-01-10"
+       },
+       "result": {
+        "status": "official",
+        "sourceYear": null,
+        "date": "2027-02-25"
+       },
+       "note": null
+      },
+      {
+       "start": {
+        "status": "conflict",
+        "sourceYear": null,
+        "label": "來源有差異"
+       },
+       "end": null,
+       "result": {
+        "status": "official",
+        "sourceYear": null,
+        "date": "2027-08-06"
+       },
+       "note": "第二梯中文版為 2027/03/01–07/01，英文版為 2027/01/01–05/01。請向校方確認。"
+      }
+     ]
+    }
+   },
+   "checked": "2026-09-29"
+  },
+  {
+   "id": "1018",
+   "name": "朝陽科技大學",
+   "short": "朝陽",
+   "abbr": "CYUT",
+   "english": "Chaoyang University of Technology",
+   "city": "臺中市",
+   "ownership": "private",
+   "type": "technology",
+   "km": 8,
+   "commute": "local",
+   "place": "台中霧峰區",
+   "travel": "市區公車約 40 分／機車 25 分",
+   "tier": "B",
+   "fee": {
+    "kind": "silent",
+    "text": "115 簡章沒有寫申請費，也沒寫明免收",
+    "src": "https://icsc.cyut.edu.tw/p/404-1008-58738.php?Lang=zh-tw",
+    "year": "115"
+   },
+   "tuition": {
+    "min": 48409,
+    "max": 55684,
+    "year": "115",
+    "text": "管理/人文 48,409；設計/理工/資訊/航空 55,684（每學期，住宿另計）",
+    "src": "https://icsc.cyut.edu.tw/p/404-1008-58738.php?Lang=zh-tw"
+   },
+   "firstYearKind": "review",
+   "semesterCost": {
+    "min": 48409,
+    "max": 55684,
+    "basis": "worst"
+   },
+   "aid": {
+    "sure": null,
+    "review": "每學期學雜費半額或全額，入學申請時一起申請，依前一學制成績與操行審查。"
+   },
+   "renew": "每學期依學業與操行重新審查；學士最多 8 學期。具體分數門檻未公開。",
+   "lang": "TOCFL A2。",
+   "after": "春季學士 12/19 截止（目前可報）。放榜日簡章頁沒寫。",
+   "verdict": "A2、春季開到 12/19（最晚截止），獎學金最多到全額學雜費但要審查。",
+   "verdictMy": "A2 ရ။ နွေဦး 12/19 အထိ (နောက်ဆုံးပိတ်)။ ကျောင်းလခ တစ်ဝက်/အပြည့် ပညာသင်ဆု (စစ်ဆေးရွေး)။",
+   "readYourself": [],
+   "bizAdmits": [],
+   "links": {
+    "apply": "https://icsc.cyut.edu.tw/p/404-1008-58738.php?Lang=zh-tw",
+    "website": "http://www.cyut.edu.tw",
+    "brochureSpring": "https://icsc.cyut.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9MelV6TDNCMFlWODBNekE1TkY4eE1qSTNNRFE1WHpnNE1EQTBMbkJrWmc9PQ==&fname=WW54RPOKIC4441MPHCLKRKZWQOTWWT14QO3435HGTX25LK40FCNKA054WW54FGOKPOPOZX10A404GDXTRKPKTSIG34B0NOYSVXVXDCTSWSB0VSOKUSKKYWFCNPPO44OOHCA0UWIGTWMODC35WSB040MKZTGDQPROWS30IGB4GGOK45USPOWSB510DGFGA0SXKO30B4ICIGRO35WWNPVX04OKYSB4JGUSPKKKICFCLOQOPPXX00ZS5430YWMONPWWEC34SSMKLPIDCCTSFCNKFDEGFG10KLTSVWPOXT15DG24NKXTMOMOA0YSIGICQLLO00JDQPTW14MK3045OOHGGHUSSS404544VSA0EGGDTWB4WSXSWSB0CGMKVXNPDDA0SW30IGA4QOOKLKFCICKKDHYX44B0TX24DCJGMK25WSEGXSXSHDYTPKA5XWROZWOPQOSSIGWXIC00YXMPLOPONK24ZSPKFHXS34UWXSGCGG05OOA5UWTS45UW00OKOK54LOCCHDHHHCEGEGWS14MOJGWSOP34PKGCJDJDLOA534A41111",
+    "brochureSpringYear": "115-2",
+    "brochureFall": "https://icsc.cyut.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9MelV6TDNCMFlWODBNekE1TkY4eE1qSTNNRFE1WHpnNE1EQTBMbkJrWmc9PQ==&fname=WW54RPOKIC4441MPHCLKRKZWQOTWWT14QO3435HGTX25LK40FCNKA054WW54FGOKPOPOZX10A404GDXTRKPKTSIG34B0NOYSVXVXDCTSWSB0VSOKUSKKYWFCNPPO44OOHCA0UWIGTWMODC35WSB040MKZTGDQPROWS30IGB4GGOK45USPOWSB510DGFGA0SXKO30B4ICIGRO35WWNPVX04OKYSB4JGUSPKKKICFCLOQOPPXX00ZS5430YWMONPWWEC34SSMKLPIDCCTSFCNKFDEGFG10KLTSVWPOXT15DG24NKXTMOMOA0YSIGICQLLO00JDQPTW14MK3045OOHGGHUSSS404544VSA0EGGDTWB4WSXSWSB0CGMKVXNPDDA0SW30IGA4QOOKLKFCICKKDHYX44B0TX24DCJGMK25WSEGXSXSHDYTPKA5XWROZWOPQOSSIGWXIC00YXMPLOPONK24ZSPKFHXS34UWXSGCGG05OOA5UWTS45UW00OKOK54LOCCHDHHHCEGEGWS14MOJGWSOP34PKGCJDJDLOA534A41111",
+    "brochureFallYear": "115-1"
+   },
+   "lists": [
+    {
+     "year": "115",
+     "term": "fall",
+     "title": "秋季外國學生錄取公告（各梯次）",
+     "url": "https://icsc.cyut.edu.tw/p/404-1008-39949.php?Lang=en"
+    },
+    {
+     "year": "113",
+     "term": "spring",
+     "title": "春季外國學生第一梯次錄取公告",
+     "url": "https://icsc.cyut.edu.tw/p/404-1008-51343.php?Lang=en"
+    },
+    {
+     "year": "113",
+     "term": "spring",
+     "title": "春季外國學生第二梯次錄取公告",
+     "url": "https://icsc.cyut.edu.tw/p/404-1008-52396.php?Lang=en"
+    }
+   ],
+   "terms": {
+    "spring": {
+     "ug": "has",
+     "rounds": [
+      {
+       "start": null,
+       "end": {
+        "status": "official",
+        "date": "2026-12-19"
+       },
+       "result": null,
+       "note": "學士/碩士截止；開始日頁面未寫，目前開放中"
+      }
+     ]
+    },
+    "fall": {
+     "ug": "has",
+     "rounds": [
+      {
+       "start": null,
+       "end": {
+        "status": "historical",
+        "sourceYear": "115-1",
+        "label": "7 月下旬",
+        "sort": "2027-07-21",
+        "src": "https://icsc.cyut.edu.tw/p/406-1008-58738,r1198.php?Lang=zh-tw"
+       },
+       "result": null,
+       "note": null
+      }
+     ]
+    }
+   },
+   "checked": "2026-09-29"
+  },
+  {
+   "id": "1048",
+   "name": "亞洲大學",
+   "short": "亞洲",
+   "abbr": "ASIA",
+   "english": "Asia University",
+   "city": "臺中市",
+   "ownership": "private",
+   "type": "university",
+   "km": 10,
+   "commute": "local",
+   "place": "台中霧峰區",
+   "travel": "市區公車約 40 分／機車 25 分",
+   "tier": "B",
+   "fee": {
+    "kind": "unknown",
+    "text": "簡章附件讀不到，申請費沒辦法核對",
+    "src": "https://admission.asia.edu.tw/AsiaGlobalAdmissions/ForeignStudent",
+    "year": "115"
+   },
+   "tuition": null,
+   "firstYearKind": "unknown",
+   "semesterCost": null,
+   "aid": {
+    "sure": null,
+    "review": "獎學金頁面讀不到，請自己看。"
+   },
+   "renew": "未核得。",
+   "lang": "未核得。",
+   "after": "115-2 春季報名到 2026/11/30（報名系統顯示開放中）。放榜日請看報名系統公告。",
+   "verdict": "春季開到 11/30，但申請費、學費、獎學金都讀不到，要你自己看兩個連結後再決定。",
+   "verdictMy": "နွေဦး 11/30 အထိ လျှောက်နိုင်။ ကြေး၊ ကျောင်းလခ၊ ပညာသင်ဆု အချက်အလက် မရ — link ကြည့်ပါ။",
+   "readYourself": [
+    {
+     "label": "亞洲大學外國學生報名系統（簡章、日期）",
+     "url": "https://admission.asia.edu.tw/AsiaGlobalAdmissions/ForeignStudent",
+     "why": "看申請費、學費、語言門檻"
+    },
+    {
+     "label": "亞洲大學國際學生獎學金",
+     "url": "https://oia.asia.edu.tw/p/412-1008-265.php?Lang=en",
+     "why": "看新生獎學金怎麼拿"
+    }
+   ],
+   "bizAdmits": [],
+   "links": {
+    "apply": "https://admission.asia.edu.tw/AsiaGlobalAdmissions/ForeignStudent",
+    "website": "https://www.asia.edu.tw/",
+    "brochureSpring": null,
+    "brochureSpringYear": null,
+    "brochureFall": null,
+    "brochureFallYear": null
+   },
+   "lists": [
+    {
+     "year": "114",
+     "term": "fall",
+     "title": "秋季外國學生錄取榜單",
+     "url": "https://ci.asia.edu.tw/uploads/asset/data/691e6f9d063ca28fd7942d46/114-1%E7%A7%8B%E5%AD%A3%E7%8F%AD_%E9%8C%84%E5%8F%96%E6%A6%9C%E5%96%AE_Asia_University_International_Admission_List_for_Fall_Semester_2025.pdf"
+    },
+    {
+     "year": "114",
+     "term": "spring",
+     "title": "春季外籍學生申請入學錄取公告",
+     "url": "https://ci.asia.edu.tw/zh_tw/news/hotnews/%E4%BA%9E%E6%B4%B2%E5%A4%A7%E5%AD%B8114%E5%AD%B8%E5%B9%B4%E5%BA%A6%E7%AC%AC%E4%BA%8C%E5%AD%B8%E6%9C%9F%E5%A4%96%E7%B1%8D%E5%AD%B8%E7%94%9F%E7%94%B3%E8%AB%8B%E5%85%A5%E5%AD%B8%E9%8C%84%E5%8F%96%E5%90%8D%E5%96%AE-65638122"
+    }
+   ],
+   "terms": {
+    "spring": {
+     "ug": "has",
+     "rounds": [
+      {
+       "start": {
+        "status": "official",
+        "date": "2026-02-21"
+       },
+       "end": {
+        "status": "official",
+        "date": "2026-11-30"
+       },
+       "result": null,
+       "note": "放榜日請看報名系統公告"
+      }
+     ]
+    },
+    "fall": {
+     "ug": "has",
+     "rounds": [
+      {
+       "start": {
+        "status": "historical",
+        "sourceYear": "115-1",
+        "label": "2 月下旬",
+        "sort": "2027-02-21",
+        "src": "https://admission.asia.edu.tw/AsiaGlobalAdmissions/ForeignStudent"
+       },
+       "end": {
+        "status": "historical",
+        "sourceYear": "115-1",
+        "label": "6 月下旬",
+        "sort": "2027-06-21",
+        "src": "https://admission.asia.edu.tw/AsiaGlobalAdmissions/ForeignStudent"
+       },
+       "result": null,
+       "note": null
+      },
+      {
+       "start": null,
+       "end": null,
+       "result": {
+        "status": "historical",
+        "sourceYear": "115-1",
+        "label": "5 月下旬",
+        "sort": "2027-05-21",
+        "src": "https://admission.asia.edu.tw/AsiaGlobalAdmissions/ForeignStudent"
+       },
+       "note": null
+      },
+      {
+       "start": null,
+       "end": null,
+       "result": {
+        "status": "historical",
+        "sourceYear": "115-1",
+        "label": "6 月下旬",
+        "sort": "2027-06-21",
+        "src": "https://admission.asia.edu.tw/AsiaGlobalAdmissions/ForeignStudent"
+       },
+       "note": null
+      },
+      {
+       "start": null,
+       "end": null,
+       "result": {
+        "status": "historical",
+        "sourceYear": "115-1",
+        "label": "7 月下旬",
+        "sort": "2027-07-21",
+        "src": "https://admission.asia.edu.tw/AsiaGlobalAdmissions/ForeignStudent"
+       },
+       "note": null
+      }
+     ]
+    }
+   },
+   "checked": "2026-09-29"
+  },
+  {
+   "id": "1062",
+   "name": "僑光科技大學",
+   "short": "僑光",
+   "abbr": "OCU",
+   "english": "Overseas Chinese University",
+   "city": "臺中市",
+   "ownership": "private",
+   "type": "technology",
+   "km": 8,
+   "commute": "local",
+   "place": "台中西屯區",
+   "travel": "市區公車約 30 分",
+   "tier": "B",
+   "fee": {
+    "kind": "unknown",
+    "text": "官網回應錯誤，簡章讀不到",
+    "src": "https://admission.ocu.edu.tw/p/412-1023-5671.php",
+    "year": "115"
+   },
+   "tuition": null,
+   "firstYearKind": "unknown",
+   "semesterCost": null,
+   "aid": {
+    "sure": null,
+    "review": "獎學金條文讀不到。"
+   },
+   "renew": "未核得。",
+   "lang": "未核得。",
+   "after": "114 春季有外國學生錄取公告，今年春季時程未核得。",
+   "verdict": "資料幾乎都讀不到。只有在其他台中學校都不適合時再看。",
+   "verdictMy": "အချက်အလက် မရသလောက်။ အခြားကျောင်းများ မသင့်တော်မှ ကြည့်ပါ။",
+   "readYourself": [
+    {
+     "label": "僑光外國學生招生頁",
+     "url": "https://admission.ocu.edu.tw/p/412-1023-5671.php",
+     "why": "看簡章、日期、申請費"
+    },
+    {
+     "label": "僑光國際事務獎學金頁",
+     "url": "https://ia.ocu.edu.tw/p/412-1013-2834.php?Lang=zh-tw",
+     "why": "看獎學金"
+    }
+   ],
+   "bizAdmits": [],
+   "links": {
+    "apply": "https://admission.ocu.edu.tw/p/412-1023-5671.php",
+    "website": "http://www.ocu.edu.tw",
+    "brochureSpring": null,
+    "brochureSpringYear": null,
+    "brochureFall": "https://admission.ocu.edu.tw/p/406-1023-72739%2Cr1364.php",
+    "brochureFallYear": "115-1"
+   },
+   "lists": [
+    {
+     "year": "114",
+     "term": "fall",
+     "title": "秋季外國學生錄取公告",
+     "url": "https://admission.ocu.edu.tw/p/404-1023-69454.php?Lang=zh-tw"
+    },
+    {
+     "year": "114",
+     "term": "spring",
+     "title": "春季外國學生錄取公告",
+     "url": "https://admission.ocu.edu.tw/p/405-1023-71761%2Cc5671.php"
+    },
+    {
+     "year": "113",
+     "term": "spring",
+     "title": "春季外國學生錄取公告",
+     "url": "https://admission.ocu.edu.tw/p/404-1023-66548.php?Lang=zh-tw"
+    }
+   ],
+   "terms": {
+    "spring": {
+     "ug": "unknown",
+     "rounds": []
+    },
+    "fall": {
+     "ug": "unknown",
+     "rounds": []
+    }
+   },
+   "checked": "2026-09-29"
+  },
+  {
+   "id": "0021",
+   "name": "國立暨南國際大學",
+   "short": "暨南",
+   "abbr": "NCNU",
+   "english": "National Chi Nan University",
+   "city": "南投縣",
+   "ownership": "public",
+   "type": "university",
+   "km": 32,
+   "commute": "near",
+   "place": "南投埔里",
+   "travel": "台中搭客運約 1 小時；住校為主",
+   "tier": "B",
+   "fee": {
+    "kind": "free",
+    "amount": 0,
+    "text": "115 秋季公告明載免申請費（春季不直接套用）",
+    "src": "https://apply.ncnu.edu.tw/",
+    "year": "115-1"
+   },
+   "tuition": null,
+   "firstYearKind": "review",
+   "semesterCost": null,
+   "aid": {
+    "sure": null,
+    "review": "學雜費部分減免到本國生標準或全免，學士最多 4 年；依預算名額審核，新生隨入學申請。"
+   },
+   "renew": "在校前學期平均 80（或系所推薦）；中文授課在校生要 TOCFL A2；每年 4/15–30、10/15–30 申請下學期。",
+   "lang": "依系。",
+   "after": "115-2 一般外國學位生春季時程還沒找到；往年 10 月下旬–11 月上旬報名、1 月初放榜。",
+   "verdict": "公立、免申請費、學雜費減免機會多。埔里離台中約 1 小時，平日要住校。",
+   "verdictMy": "အစိုးရ၊ လျှောက်လွှာကြေး အခမဲ့၊ ကျောင်းလခ လျှော့ပေးမှု အခွင့်များ။ ပူလီ (ထိုင်ချုံးမှ ၁ နာရီ)၊ ကျောင်းအဆောင်နေရမည်။",
+   "readYourself": [],
+   "bizAdmits": [],
+   "links": {
+    "apply": "https://apply.ncnu.edu.tw/",
+    "website": "https://www.ncnu.edu.tw/",
+    "brochureSpring": "https://admission.ncnu.edu.tw/var/file/55/1055/attach/92/pta_19892_2552091_55828.pdf",
+    "brochureSpringYear": "114-2",
+    "brochureFall": "https://oia.ncnu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9MekV4TDNCMFlWOHlNakUwTTE4eU1UUTJPRE14WHpnek1ETTNMbkJrWmc9PQ==&fname=WW54RPOKIC4441MPHCLKRKZWQOTWWT14QO3435HGTX25LK40FCNKA0540054JGEGNO0000HHA404ROJGYWSWTS14OPB0FHMPQPMPXWTSYSMKJGOKFHDC45FCRKXWUX25DGA0DCXTPKDGDCGCUSB004MPA1GDQPVWYSDCFCDG14SWYSUSROQO41104410IGGDIG30RLIC20ROWSWS01A104VSSSB4JGECQOKKGHSSWW4001LLEDPOWWMORKMO14GCWSJCUSHCGGGDMLEGOKB0FDUWOOKKMKTSWWTSIDHH44EG54TXMOXSMO35STRODCLKA1VXHGCCSWB4ECFGDG54GHUSPOXWCCOOA4JCEGGDZSB4HGICQOFCMOWSCC35DCA0ZW30JCSWFG54FCROYWDCYT05TSLKNO24QOJGMKYSWSEGXSWSMLMPFCB514YWKO0114DCKLGHSSLKTX1050EGTS14IGMOZTLOQOUWDC10GGA1WWSSUWYWCDUW50OK30OKKKTSZTIHHCXSLK24VWHCMOLKIGRKLOMKA1YTXWTSNKB0ECA4FHDCA0FCA4XWFDKKA4LKHGZWXSOKLOIC50NOCGIC00UXVS31YSUS14QK20KOHHHH",
+    "brochureFallYear": "115-1"
+   },
+   "lists": [
+    {
+     "year": "114",
+     "term": "spring",
+     "title": "114春季一般外國學生錄取公告",
+     "url": "https://oia.ncnu.edu.tw/p/404-1017-31908.php?Lang=zh-tw"
+    },
+    {
+     "year": "115",
+     "term": "fall",
+     "title": "115秋季第二梯一般外國學生錄取公告",
+     "url": "https://oia.ncnu.edu.tw/p/406-1017-35110%2Cr44.php?Lang=zh-tw"
+    }
+   ],
+   "terms": {
+    "spring": {
+     "ug": "has",
+     "rounds": [
+      {
+       "start": {
+        "status": "historical",
+        "sourceYear": "114-2",
+        "label": "10 月下旬",
+        "sort": "2026-10-21",
+        "src": "https://admission.ncnu.edu.tw/var/file/55/1055/attach/92/pta_19892_2552091_55828.pdf"
+       },
+       "end": {
+        "status": "historical",
+        "sourceYear": "114-2",
+        "label": "11 月中旬",
+        "sort": "2026-11-11",
+        "src": "https://admission.ncnu.edu.tw/var/file/55/1055/attach/92/pta_19892_2552091_55828.pdf"
+       },
+       "result": {
+        "status": "historical",
+        "sourceYear": "114-2",
+        "label": "1 月上旬",
+        "sort": "2027-01-01",
+        "src": "https://admission.ncnu.edu.tw/var/file/55/1055/attach/92/pta_19892_2552091_55828.pdf"
+       },
+       "note": null
+      }
+     ]
+    },
+    "fall": {
+     "ug": "has",
+     "rounds": [
+      {
+       "start": {
+        "status": "historical",
+        "sourceYear": "115-1",
+        "label": "12 月下旬",
+        "sort": "2026-12-21",
+        "src": "https://oia.ncnu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9MekV4TDNCMFlWOHlNakUwTTE4eU1UUTJPRE14WHpnek1ETTNMbkJrWmc9PQ==&fname=WW54RPOKIC4441MPHCLKRKZWQOTWWT14QO3435HGTX25LK40FCNKA0540054JGEGNO0000HHA404ROJGYWSWTS14OPB0FHMPQPMPXWTSYSMKJGOKFHDC45FCRKXWUX25DGA0DCXTPKDGDCGCUSB004MPA1GDQPVWYSDCFCDG14SWYSUSROQO41104410IGGDIG30RLIC20ROWSWS01A104VSSSB4JGECQOKKGHSSWW4001LLEDPOWWMORKMO14GCWSJCUSHCGGGDMLEGOKB0FDUWOOKKMKTSWWTSIDHH44EG54TXMOXSMO35STRODCLKA1VXHGCCSWB4ECFGDG54GHUSPOXWCCOOA4JCEGGDZSB4HGICQOFCMOWSCC35DCA0ZW30JCSWFG54FCROYWDCYT05TSLKNO24QOJGMKYSWSEGXSWSMLMPFCB514YWKO0114DCKLGHSSLKTX1050EGTS14IGMOZTLOQOUWDC10GGA1WWSSUWYWCDUW50OK30OKKKTSZTIHHCXSLK24VWHCMOLKIGRKLOMKA1YTXWTSNKB0ECA4FHDCA0FCA4XWFDKKA4LKHGZWXSOKLOIC50NOCGIC00UXVS31YSUS14QK20KOHHHH"
+       },
+       "end": {
+        "status": "historical",
+        "sourceYear": "115-1",
+        "label": "2 月下旬",
+        "sort": "2027-02-21",
+        "src": "https://oia.ncnu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9MekV4TDNCMFlWOHlNakUwTTE4eU1UUTJPRE14WHpnek1ETTNMbkJrWmc9PQ==&fname=WW54RPOKIC4441MPHCLKRKZWQOTWWT14QO3435HGTX25LK40FCNKA0540054JGEGNO0000HHA404ROJGYWSWTS14OPB0FHMPQPMPXWTSYSMKJGOKFHDC45FCRKXWUX25DGA0DCXTPKDGDCGCUSB004MPA1GDQPVWYSDCFCDG14SWYSUSROQO41104410IGGDIG30RLIC20ROWSWS01A104VSSSB4JGECQOKKGHSSWW4001LLEDPOWWMORKMO14GCWSJCUSHCGGGDMLEGOKB0FDUWOOKKMKTSWWTSIDHH44EG54TXMOXSMO35STRODCLKA1VXHGCCSWB4ECFGDG54GHUSPOXWCCOOA4JCEGGDZSB4HGICQOFCMOWSCC35DCA0ZW30JCSWFG54FCROYWDCYT05TSLKNO24QOJGMKYSWSEGXSWSMLMPFCB514YWKO0114DCKLGHSSLKTX1050EGTS14IGMOZTLOQOUWDC10GGA1WWSSUWYWCDUW50OK30OKKKTSZTIHHCXSLK24VWHCMOLKIGRKLOMKA1YTXWTSNKB0ECA4FHDCA0FCA4XWFDKKA4LKHGZWXSOKLOIC50NOCGIC00UXVS31YSUS14QK20KOHHHH"
+       },
+       "result": {
+        "status": "historical",
+        "sourceYear": "115-1",
+        "label": "4 月上旬",
+        "sort": "2027-04-01",
+        "src": "https://oia.ncnu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9MekV4TDNCMFlWOHlNakUwTTE4eU1UUTJPRE14WHpnek1ETTNMbkJrWmc9PQ==&fname=WW54RPOKIC4441MPHCLKRKZWQOTWWT14QO3435HGTX25LK40FCNKA0540054JGEGNO0000HHA404ROJGYWSWTS14OPB0FHMPQPMPXWTSYSMKJGOKFHDC45FCRKXWUX25DGA0DCXTPKDGDCGCUSB004MPA1GDQPVWYSDCFCDG14SWYSUSROQO41104410IGGDIG30RLIC20ROWSWS01A104VSSSB4JGECQOKKGHSSWW4001LLEDPOWWMORKMO14GCWSJCUSHCGGGDMLEGOKB0FDUWOOKKMKTSWWTSIDHH44EG54TXMOXSMO35STRODCLKA1VXHGCCSWB4ECFGDG54GHUSPOXWCCOOA4JCEGGDZSB4HGICQOFCMOWSCC35DCA0ZW30JCSWFG54FCROYWDCYT05TSLKNO24QOJGMKYSWSEGXSWSMLMPFCB514YWKO0114DCKLGHSSLKTX1050EGTS14IGMOZTLOQOUWDC10GGA1WWSSUWYWCDUW50OK30OKKKTSZTIHHCXSLK24VWHCMOLKIGRKLOMKA1YTXWTSNKB0ECA4FHDCA0FCA4XWFDKKA4LKHGZWXSOKLOIC50NOCGIC00UXVS31YSUS14QK20KOHHHH"
+       },
+       "note": null
+      },
+      {
+       "start": {
+        "status": "historical",
+        "sourceYear": "115-1",
+        "label": "4 月中旬",
+        "sort": "2027-04-11",
+        "src": "https://oia.ncnu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9MekV4TDNCMFlWOHlNakUwTTE4eU1UUTJPRE14WHpnek1ETTNMbkJrWmc9PQ==&fname=WW54RPOKIC4441MPHCLKRKZWQOTWWT14QO3435HGTX25LK40FCNKA0540054JGEGNO0000HHA404ROJGYWSWTS14OPB0FHMPQPMPXWTSYSMKJGOKFHDC45FCRKXWUX25DGA0DCXTPKDGDCGCUSB004MPA1GDQPVWYSDCFCDG14SWYSUSROQO41104410IGGDIG30RLIC20ROWSWS01A104VSSSB4JGECQOKKGHSSWW4001LLEDPOWWMORKMO14GCWSJCUSHCGGGDMLEGOKB0FDUWOOKKMKTSWWTSIDHH44EG54TXMOXSMO35STRODCLKA1VXHGCCSWB4ECFGDG54GHUSPOXWCCOOA4JCEGGDZSB4HGICQOFCMOWSCC35DCA0ZW30JCSWFG54FCROYWDCYT05TSLKNO24QOJGMKYSWSEGXSWSMLMPFCB514YWKO0114DCKLGHSSLKTX1050EGTS14IGMOZTLOQOUWDC10GGA1WWSSUWYWCDUW50OK30OKKKTSZTIHHCXSLK24VWHCMOLKIGRKLOMKA1YTXWTSNKB0ECA4FHDCA0FCA4XWFDKKA4LKHGZWXSOKLOIC50NOCGIC00UXVS31YSUS14QK20KOHHHH"
+       },
+       "end": {
+        "status": "historical",
+        "sourceYear": "115-1",
+        "label": "5 月中旬",
+        "sort": "2027-05-11",
+        "src": "https://oia.ncnu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9MekV4TDNCMFlWOHlNakUwTTE4eU1UUTJPRE14WHpnek1ETTNMbkJrWmc9PQ==&fname=WW54RPOKIC4441MPHCLKRKZWQOTWWT14QO3435HGTX25LK40FCNKA0540054JGEGNO0000HHA404ROJGYWSWTS14OPB0FHMPQPMPXWTSYSMKJGOKFHDC45FCRKXWUX25DGA0DCXTPKDGDCGCUSB004MPA1GDQPVWYSDCFCDG14SWYSUSROQO41104410IGGDIG30RLIC20ROWSWS01A104VSSSB4JGECQOKKGHSSWW4001LLEDPOWWMORKMO14GCWSJCUSHCGGGDMLEGOKB0FDUWOOKKMKTSWWTSIDHH44EG54TXMOXSMO35STRODCLKA1VXHGCCSWB4ECFGDG54GHUSPOXWCCOOA4JCEGGDZSB4HGICQOFCMOWSCC35DCA0ZW30JCSWFG54FCROYWDCYT05TSLKNO24QOJGMKYSWSEGXSWSMLMPFCB514YWKO0114DCKLGHSSLKTX1050EGTS14IGMOZTLOQOUWDC10GGA1WWSSUWYWCDUW50OK30OKKKTSZTIHHCXSLK24VWHCMOLKIGRKLOMKA1YTXWTSNKB0ECA4FHDCA0FCA4XWFDKKA4LKHGZWXSOKLOIC50NOCGIC00UXVS31YSUS14QK20KOHHHH"
+       },
+       "result": {
+        "status": "historical",
+        "sourceYear": "115-1",
+        "label": "6 月中旬",
+        "sort": "2027-06-11",
+        "src": "https://oia.ncnu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9MekV4TDNCMFlWOHlNakUwTTE4eU1UUTJPRE14WHpnek1ETTNMbkJrWmc9PQ==&fname=WW54RPOKIC4441MPHCLKRKZWQOTWWT14QO3435HGTX25LK40FCNKA0540054JGEGNO0000HHA404ROJGYWSWTS14OPB0FHMPQPMPXWTSYSMKJGOKFHDC45FCRKXWUX25DGA0DCXTPKDGDCGCUSB004MPA1GDQPVWYSDCFCDG14SWYSUSROQO41104410IGGDIG30RLIC20ROWSWS01A104VSSSB4JGECQOKKGHSSWW4001LLEDPOWWMORKMO14GCWSJCUSHCGGGDMLEGOKB0FDUWOOKKMKTSWWTSIDHH44EG54TXMOXSMO35STRODCLKA1VXHGCCSWB4ECFGDG54GHUSPOXWCCOOA4JCEGGDZSB4HGICQOFCMOWSCC35DCA0ZW30JCSWFG54FCROYWDCYT05TSLKNO24QOJGMKYSWSEGXSWSMLMPFCB514YWKO0114DCKLGHSSLKTX1050EGTS14IGMOZTLOQOUWDC10GGA1WWSSUWYWCDUW50OK30OKKKTSZTIHHCXSLK24VWHCMOLKIGRKLOMKA1YTXWTSNKB0ECA4FHDCA0FCA4XWFDKKA4LKHGZWXSOKLOIC50NOCGIC00UXVS31YSUS14QK20KOHHHH"
+       },
+       "note": null
+      }
+     ]
+    }
+   },
+   "checked": "2026-09-29"
+  },
+  {
+   "id": "0032",
+   "name": "國立聯合大學",
+   "short": "聯合",
+   "abbr": "NUU",
+   "english": "National United University",
+   "city": "苗栗縣",
+   "ownership": "public",
+   "type": "university",
+   "km": 47,
+   "commute": "near",
+   "place": "苗栗市",
+   "travel": "台中搭火車約 40–50 分；可通勤但遠",
+   "tier": "B",
+   "fee": {
+    "kind": "silent",
+    "text": "115 秋季簡章沒有寫申請費",
+    "src": "https://enroll.nuu.edu.tw/var/file/65/1065/attach/15/pta_76237_4431663_47936.pdf",
+    "year": "115-1"
+   },
+   "tuition": null,
+   "firstYearKind": "mostly",
+   "semesterCost": null,
+   "aid": {
+    "sure": "第 1 學年學費減免（不是全部學雜費），學費減免沒有名額上限。",
+    "review": "生活獎學金學士每月 6,000（每年 9 個月），每年只有 1–10 名。"
+   },
+   "renew": "生活獎學金：學士前學期 65 分、9 學分，操行 80 無小過，20 小時志工。",
+   "lang": "未逐系整理。",
+   "after": "只找到秋季：往年 2 月初–5 月初報名、6 月初放榜。",
+   "verdict": "公立、第一年學費減免不限名額。苗栗可以火車通勤但偏遠；只收秋季。",
+   "verdictMy": "အစိုးရ၊ ပထမနှစ် ကျောင်းလခ လျှော့ (အကန့်အသတ်မရှိ)။ မြောင်လီ၊ ရထားဖြင့် သွားနိုင်။ ဆောင်းဦးသာ။",
+   "readYourself": [],
+   "bizAdmits": [],
+   "links": {
+    "apply": "https://enroll.nuu.edu.tw/p/405-1065-76354,c735.php",
+    "website": "http://www.nuu.edu.tw",
+    "brochureSpring": null,
+    "brochureSpringYear": null,
+    "brochureFall": "https://enroll.nuu.edu.tw/var/file/65/1065/attach/15/pta_76237_4431663_47936.pdf",
+    "brochureFallYear": "115-1"
+   },
+   "lists": [
+    {
+     "year": "114",
+     "term": "fall",
+     "title": "114秋季一般外國学生錄取公告",
+     "url": "https://oia.nuu.edu.tw/p/405-1068-70323%2Cc1243.php?Lang=en"
+    }
+   ],
+   "terms": {
+    "spring": {
+     "ug": "unknown",
+     "rounds": []
+    },
+    "fall": {
+     "ug": "has",
+     "rounds": [
+      {
+       "start": {
+        "status": "historical",
+        "sourceYear": "115-1",
+        "label": "2 月上旬",
+        "sort": "2027-02-01",
+        "src": "https://enroll.nuu.edu.tw/var/file/65/1065/attach/15/pta_76237_4431663_47936.pdf"
+       },
+       "end": {
+        "status": "historical",
+        "sourceYear": "115-1",
+        "label": "5 月上旬",
+        "sort": "2027-05-01",
+        "src": "https://enroll.nuu.edu.tw/var/file/65/1065/attach/15/pta_76237_4431663_47936.pdf"
+       },
+       "result": {
+        "status": "historical",
+        "sourceYear": "115-1",
+        "label": "6 月上旬",
+        "sort": "2027-06-01",
+        "src": "https://enroll.nuu.edu.tw/var/file/65/1065/attach/15/pta_76237_4431663_47936.pdf"
+       },
+       "note": null
+      }
+     ]
+    }
+   },
+   "checked": "2026-09-29"
+  },
+  {
+   "id": "0051",
+   "name": "國立臺北商業大學",
+   "short": "北商",
+   "abbr": "NTUB",
+   "english": "National Taipei University of Business",
+   "city": "臺北市",
+   "ownership": "public",
+   "type": "technology",
+   "km": 132,
+   "commute": "far",
+   "place": "台北市中正區",
+   "travel": "高鐵約 1 小時＋捷運；要搬家",
+   "tier": "C",
+   "fee": {
+    "kind": "free",
+    "amount": 0,
+    "text": "115 簡章：申請費免收",
+    "src": "https://mplngt.ntub.edu.tw/p/406-1040-107904,r551.php?Lang=zh-tw",
+    "year": "115"
+   },
+   "tuition": null,
+   "firstYearKind": "review",
+   "semesterCost": null,
+   "aid": {
+    "sure": null,
+    "review": "每學期 15,000 元（不是每月），要申請並審查。"
+   },
+   "renew": "學士前學期平均 75 以上、操行 80 以上。",
+   "lang": "學士 A2（依系所表）。財力證明美金 3,000。",
+   "after": "只找到秋季：往年 1 月–5 月初報名、6 月初放榜。",
+   "verdict": "免申請費、A2，但在台北、只收秋季、獎學金小。",
+   "verdictMy": "တိုင်ပေ၊ ဆောင်းဦးသာ၊ ပညာသင်ဆု နည်း။",
+   "readYourself": [],
+   "bizAdmits": [],
+   "links": {
+    "apply": "https://admis.ntub.edu.tw/p/406-1028-115006%2Cr87.php",
+    "website": "http://www.ntub.edu.tw",
+    "brochureSpring": null,
+    "brochureSpringYear": null,
+    "brochureFall": "https://admis.ntub.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Mell4TDNCMFlWODVPVEU1TTE4ek9UQTROVGt3WHpRd016RTBMbkJrWmc9PQ==&fname=WW54RPOKIC4441MPHCLKRKZWQOTWWT14QO3435HGTX25LK40FCNKA054WW54FGOKPOPOZX10A404GDXTRKPKTSIG34B0NOYSVXVXDCTSWSB0VSOKUSKKYWFCNPPO44OOHCA0UWIGTWMODC35WSB040MKZTGDQPROWS30IGB4GGOK45USPOWSB510DGFGA0SXKO30B4ICIGRO35WWNPVX04OKYSB4JGUSPKKKVWOKNP44XTKKDGLK54TXXS30WSMK20B0YSGCLPJDWSTSNKROGHPO50HGFGOKVWPOTT15A404FCLOFC30EG1034B0NOWSIH35VSTWLKMKXWTWCCTSB550SSPOA5YX00JCWWHGVWKOLOWSSTEGQKWSQPUXYXA0KP3030B0QOOKLKFCICCC210544EG35YWQO14MKYSWS2404NPVXRLPKOKLKROWXFGQO54DGDCSSLKTTXX04EG30GDTW30HG25SSQKCCICIHA1DGCCNKFCYWA4YS10NKXXWW00ZXZX20XSFC14RKDGSW3534MOUSMK00VXNODCNKTSZSTWB0DCXSGHRK44CCID20XWEGXWTW14GDA1PK34SWYSGG35LOQPA0QOJGA020TSSTB0NPCCA5KKB0FGQKCHZS30LOGCQOROB1MOQPIDLKB0A0B414A0&cg=631",
+    "brochureFallYear": "115-1"
+   },
+   "lists": [],
+   "terms": {
+    "spring": {
+     "ug": "unknown",
+     "rounds": []
+    },
+    "fall": {
+     "ug": "has",
+     "rounds": [
+      {
+       "start": {
+        "status": "historical",
+        "sourceYear": "115-1",
+        "label": "1 月上旬",
+        "sort": "2027-01-01",
+        "src": "https://admis.ntub.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Mell4TDNCMFlWODVPVEU1TTE4ek9UQTROVGt3WHpRd016RTBMbkJrWmc9PQ==&fname=WW54RPOKIC4441MPHCLKRKZWQOTWWT14QO3435HGTX25LK40FCNKA054WW54FGOKPOPOZX10A404GDXTRKPKTSIG34B0NOYSVXVXDCTSWSB0VSOKUSKKYWFCNPPO44OOHCA0UWIGTWMODC35WSB040MKZTGDQPROWS30IGB4GGOK45USPOWSB510DGFGA0SXKO30B4ICIGRO35WWNPVX04OKYSB4JGUSPKKKVWOKNP44XTKKDGLK54TXXS30WSMK20B0YSGCLPJDWSTSNKROGHPO50HGFGOKVWPOTT15A404FCLOFC30EG1034B0NOWSIH35VSTWLKMKXWTWCCTSB550SSPOA5YX00JCWWHGVWKOLOWSSTEGQKWSQPUXYXA0KP3030B0QOOKLKFCICCC210544EG35YWQO14MKYSWS2404NPVXRLPKOKLKROWXFGQO54DGDCSSLKTTXX04EG30GDTW30HG25SSQKCCICIHA1DGCCNKFCYWA4YS10NKXXWW00ZXZX20XSFC14RKDGSW3534MOUSMK00VXNODCNKTSZSTWB0DCXSGHRK44CCID20XWEGXWTW14GDA1PK34SWYSGG35LOQPA0QOJGA020TSSTB0NPCCA5KKB0FGQKCHZS30LOGCQOROB1MOQPIDLKB0A0B414A0&cg=631"
+       },
+       "end": {
+        "status": "historical",
+        "sourceYear": "115-1",
+        "label": "5 月上旬",
+        "sort": "2027-05-01",
+        "src": "https://admis.ntub.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Mell4TDNCMFlWODVPVEU1TTE4ek9UQTROVGt3WHpRd016RTBMbkJrWmc9PQ==&fname=WW54RPOKIC4441MPHCLKRKZWQOTWWT14QO3435HGTX25LK40FCNKA054WW54FGOKPOPOZX10A404GDXTRKPKTSIG34B0NOYSVXVXDCTSWSB0VSOKUSKKYWFCNPPO44OOHCA0UWIGTWMODC35WSB040MKZTGDQPROWS30IGB4GGOK45USPOWSB510DGFGA0SXKO30B4ICIGRO35WWNPVX04OKYSB4JGUSPKKKVWOKNP44XTKKDGLK54TXXS30WSMK20B0YSGCLPJDWSTSNKROGHPO50HGFGOKVWPOTT15A404FCLOFC30EG1034B0NOWSIH35VSTWLKMKXWTWCCTSB550SSPOA5YX00JCWWHGVWKOLOWSSTEGQKWSQPUXYXA0KP3030B0QOOKLKFCICCC210544EG35YWQO14MKYSWS2404NPVXRLPKOKLKROWXFGQO54DGDCSSLKTTXX04EG30GDTW30HG25SSQKCCICIHA1DGCCNKFCYWA4YS10NKXXWW00ZXZX20XSFC14RKDGSW3534MOUSMK00VXNODCNKTSZSTWB0DCXSGHRK44CCID20XWEGXWTW14GDA1PK34SWYSGG35LOQPA0QOJGA020TSSTB0NPCCA5KKB0FGQKCHZS30LOGCQOROB1MOQPIDLKB0A0B414A0&cg=631"
+       },
+       "result": {
+        "status": "historical",
+        "sourceYear": "115-1",
+        "label": "6 月上旬",
+        "sort": "2027-06-01",
+        "src": "https://admis.ntub.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Mell4TDNCMFlWODVPVEU1TTE4ek9UQTROVGt3WHpRd016RTBMbkJrWmc9PQ==&fname=WW54RPOKIC4441MPHCLKRKZWQOTWWT14QO3435HGTX25LK40FCNKA054WW54FGOKPOPOZX10A404GDXTRKPKTSIG34B0NOYSVXVXDCTSWSB0VSOKUSKKYWFCNPPO44OOHCA0UWIGTWMODC35WSB040MKZTGDQPROWS30IGB4GGOK45USPOWSB510DGFGA0SXKO30B4ICIGRO35WWNPVX04OKYSB4JGUSPKKKVWOKNP44XTKKDGLK54TXXS30WSMK20B0YSGCLPJDWSTSNKROGHPO50HGFGOKVWPOTT15A404FCLOFC30EG1034B0NOWSIH35VSTWLKMKXWTWCCTSB550SSPOA5YX00JCWWHGVWKOLOWSSTEGQKWSQPUXYXA0KP3030B0QOOKLKFCICCC210544EG35YWQO14MKYSWS2404NPVXRLPKOKLKROWXFGQO54DGDCSSLKTTXX04EG30GDTW30HG25SSQKCCICIHA1DGCCNKFCYWA4YS10NKXXWW00ZXZX20XSFC14RKDGSW3534MOUSMK00VXNODCNKTSZSTWB0DCXSGHRK44CCID20XWEGXWTW14GDA1PK34SWYSGG35LOQPA0QOJGA020TSSTB0NPCCA5KKB0FGQKCHZS30LOGCQOROB1MOQPIDLKB0A0B414A0&cg=631"
+       },
+       "note": null
+      }
+     ]
+    }
+   },
+   "checked": "2026-09-29"
+  },
+  {
+   "id": "0031",
+   "name": "國立宜蘭大學",
+   "short": "宜蘭",
+   "abbr": "NIU",
+   "english": "National Ilan University",
+   "city": "宜蘭縣",
+   "ownership": "public",
+   "type": "university",
+   "km": 127,
+   "commute": "far",
+   "place": "宜蘭市",
+   "travel": "要搬家",
+   "tier": "C",
+   "fee": {
+    "kind": "silent",
+    "text": "115 簡章沒有寫申請費，不能當作免費",
+    "src": "https://isa.niu.edu.tw/var/file/73/1073/img/115-regulations-for-academic.pdf",
+    "year": "115"
+   },
+   "tuition": null,
+   "firstYearKind": "review",
+   "semesterCost": null,
+   "aid": {
+    "sure": null,
+    "review": "新生第一年半額學雜費，優秀者審查可全免；學士生活津貼每月 4,000；勾選申請、依核定。"
+   },
+   "renew": "第三學期起每學期重新申請；成績門檻未確認。",
+   "lang": "至少 TOCFL A2。",
+   "after": "春季只收研究所。學士秋季往年 12 月開始。",
+   "verdict": "遠、春季不收學士。",
+   "verdictMy": "ဝေးသည်၊ နွေဦး ဘွဲ့ကြို မလက်ခံ။",
+   "readYourself": [],
+   "bizAdmits": [],
+   "links": {
+    "apply": "https://isa.niu.edu.tw/",
+    "website": "http://www.niu.edu.tw",
+    "brochureSpring": "https://isa.niu.edu.tw/var/file/73/1073/img/115-regulations-for-academic.pdf",
+    "brochureSpringYear": "115-2",
+    "brochureFall": "https://isa.niu.edu.tw/var/file/73/1073/img/115-regulations-for-academic.pdf",
+    "brochureFallYear": "115-1"
+   },
+   "lists": [
+    {
+     "year": "115",
+     "term": "fall",
+     "title": "115第一梯次外國学生錄取公告",
+     "url": "https://isa.niu.edu.tw/p/404-1073-70986.php"
+    },
+    {
+     "year": "114",
+     "term": "spring",
+     "title": "114春季外國學生錄取公告",
+     "url": "https://isa.niu.edu.tw/p/405-1073-69070%2Cc5943.php"
+    }
+   ],
+   "terms": {
+    "spring": {
+     "ug": "grad",
+     "rounds": []
+    },
+    "fall": {
+     "ug": "has",
+     "rounds": [
+      {
+       "start": {
+        "status": "historical",
+        "sourceYear": "115-1",
+        "label": "12 月上旬",
+        "sort": "2026-12-01",
+        "src": "https://isa.niu.edu.tw/var/file/73/1073/img/115-regulations-for-academic.pdf"
+       },
+       "end": {
+        "status": "conflict",
+        "sourceYear": "115-1",
+        "label": "來源有差異",
+        "src": "https://isa.niu.edu.tw/var/file/73/1073/img/115-regulations-for-academic.pdf"
+       },
+       "result": {
+        "status": "historical",
+        "sourceYear": "115-1",
+        "label": "3 月中旬",
+        "sort": "2027-03-11",
+        "src": "https://isa.niu.edu.tw/var/file/73/1073/img/115-regulations-for-academic.pdf"
+       },
+       "note": "截止日期重要日程及中文為2026/1/20，英文內文p.9為2025/1/20，年份差異待確認。"
+      },
+      {
+       "start": {
+        "status": "historical",
+        "sourceYear": "115-1",
+        "label": "3 月中旬",
+        "sort": "2027-03-11",
+        "src": "https://isa.niu.edu.tw/var/file/73/1073/img/115-regulations-for-academic.pdf"
+       },
+       "end": {
+        "status": "historical",
+        "sourceYear": "115-1",
+        "label": "4 月下旬",
+        "sort": "2027-04-21",
+        "src": "https://isa.niu.edu.tw/var/file/73/1073/img/115-regulations-for-academic.pdf"
+       },
+       "result": {
+        "status": "historical",
+        "sourceYear": "115-1",
+        "label": "6 月中旬",
+        "sort": "2027-06-11",
+        "src": "https://isa.niu.edu.tw/var/file/73/1073/img/115-regulations-for-academic.pdf"
+       },
+       "note": null
+      }
+     ]
+    }
+   },
+   "checked": "2026-09-29"
+  },
+  {
+   "id": "0018",
+   "name": "國立嘉義大學",
+   "short": "嘉大",
+   "abbr": "NCYU",
+   "english": "National Chiayi University",
+   "city": "嘉義市",
+   "ownership": "public",
+   "type": "university",
+   "km": 77,
+   "commute": "far",
+   "place": "嘉義市",
+   "travel": "高鐵/火車約 1 小時；要搬家",
+   "tier": "C",
+   "fee": {
+    "kind": "free",
+    "amount": 0,
+    "text": "115 簡章明載免收申請費，至多申請 3 系",
+    "src": "https://www.ncyu.edu.tw/oia_eng/ServerFile/Get/786060ff-e628-4e3e-9dc1-35afcc76b7c6?nodeId=60284&sId=237992",
+    "year": "115"
+   },
+   "tuition": null,
+   "firstYearKind": "review",
+   "semesterCost": null,
+   "aid": {
+    "sure": null,
+    "review": "新生第一年學雜費比照本國生收費（申請入學時提出）；不是免學費。"
+   },
+   "renew": "第二年起每年申請：班排前 50% 學雜費比照本國生；51–70% 只有學費比照。",
+   "lang": "未逐系整理。",
+   "after": "春季沒找到一般招生；秋季往年 1–3 月、4–5 月兩梯。",
+   "verdict": "公立、免申請費、可報 3 系，但要搬到嘉義。",
+   "verdictMy": "အစိုးရ၊ ကြေးအခမဲ့၊ ဌာန ၃ ခု လျှောက်နိုင်၊ ချားယီ — အိမ်ပြောင်းရ။",
+   "readYourself": [],
+   "bizAdmits": [],
+   "links": {
+    "apply": "https://www.ncyu.edu.tw/oia_eng/ServerFile/Get/786060ff-e628-4e3e-9dc1-35afcc76b7c6?nodeId=60284&sId=237992",
+    "website": "http://www.ncyu.edu.tw",
+    "brochureSpring": null,
+    "brochureSpringYear": null,
+    "brochureFall": "https://www.ncyu.edu.tw/oia_eng/ServerFile/Get/786060ff-e628-4e3e-9dc1-35afcc76b7c6?nodeId=60284&sId=237992",
+    "brochureFallYear": "115-1"
+   },
+   "lists": [
+    {
+     "year": "115",
+     "term": "fall",
+     "title": "115外國學生第一梯次錄取公告",
+     "url": "https://www.ncyu.edu.tw/oia/Subject/Detail/239647?nodeId=58425"
+    },
+    {
+     "year": "114",
+     "term": "fall",
+     "title": "114外國學生第一梯次學士班錄取公告",
+     "url": "https://www.ncyu.edu.tw/oia/ServerFile/Get/4d3dda85-a5d6-4df4-a5d4-9dae496e6bf8?nodeId=58425&sId=222092"
+    }
+   ],
+   "terms": {
+    "spring": {
+     "ug": "unknown",
+     "rounds": []
+    },
+    "fall": {
+     "ug": "has",
+     "rounds": [
+      {
+       "start": {
+        "status": "historical",
+        "sourceYear": "115-1",
+        "label": "1 月上旬",
+        "sort": "2027-01-01",
+        "src": "https://www.ncyu.edu.tw/oia_eng/ServerFile/Get/786060ff-e628-4e3e-9dc1-35afcc76b7c6?nodeId=60284&sId=237992"
+       },
+       "end": {
+        "status": "historical",
+        "sourceYear": "115-1",
+        "label": "3 月上旬",
+        "sort": "2027-03-01",
+        "src": "https://www.ncyu.edu.tw/oia_eng/ServerFile/Get/786060ff-e628-4e3e-9dc1-35afcc76b7c6?nodeId=60284&sId=237992"
+       },
+       "result": {
+        "status": "conflict",
+        "sourceYear": "115-1",
+        "label": "來源有差異",
+        "src": "https://www.ncyu.edu.tw/oia_eng/ServerFile/Get/786060ff-e628-4e3e-9dc1-35afcc76b7c6?nodeId=60284&sId=237992"
+       },
+       "note": "簡章預定5/18放榜，國際處公告列表顯示5/20；實際公告日期待核。"
+      },
+      {
+       "start": {
+        "status": "historical",
+        "sourceYear": "115-1",
+        "label": "4 月中旬",
+        "sort": "2027-04-11",
+        "src": "https://www.ncyu.edu.tw/oia_eng/ServerFile/Get/786060ff-e628-4e3e-9dc1-35afcc76b7c6?nodeId=60284&sId=237992"
+       },
+       "end": {
+        "status": "historical",
+        "sourceYear": "115-1",
+        "label": "5 月中旬",
+        "sort": "2027-05-11",
+        "src": "https://www.ncyu.edu.tw/oia_eng/ServerFile/Get/786060ff-e628-4e3e-9dc1-35afcc76b7c6?nodeId=60284&sId=237992"
+       },
+       "result": {
+        "status": "historical",
+        "sourceYear": "115-1",
+        "label": "7 月上旬",
+        "sort": "2027-07-01",
+        "src": "https://www.ncyu.edu.tw/oia_eng/ServerFile/Get/786060ff-e628-4e3e-9dc1-35afcc76b7c6?nodeId=60284&sId=237992"
+       },
+       "note": null
+      }
+     ]
+    }
+   },
+   "checked": "2026-09-29"
+  },
+  {
+   "id": "0036",
+   "name": "國立臺南大學",
+   "short": "臺南",
+   "abbr": "NUTN",
+   "english": "National University of Tainan",
+   "city": "臺南市",
+   "ownership": "public",
+   "type": "university",
+   "km": 137,
+   "commute": "far",
+   "place": "台南市",
+   "travel": "要搬家",
+   "tier": "C",
+   "fee": {
+    "kind": "silent",
+    "text": "115 簡章沒有寫申請費，不能當作免費",
+    "src": "https://campus.nutn.edu.tw/newsPost3/postFiles/101347_Admissions%20Guide%20for%20International%20Students%20for%20the%20115th%20Academic%20Year.pdf",
+    "year": "115"
+   },
+   "tuition": null,
+   "firstYearKind": "review",
+   "semesterCost": null,
+   "aid": {
+    "sure": null,
+    "review": "全免類含免費宿舍；「減半」類其實是比照本國生收費；審查。"
+   },
+   "renew": "學士前學年平均 70，必修全過。",
+   "lang": "未逐系整理。",
+   "after": "春季只收研究所。",
+   "verdict": "遠、春季不收學士。",
+   "verdictMy": "ဝေးသည်၊ နွေဦး ဘွဲ့ကြို မလက်ခံ။",
+   "readYourself": [],
+   "bizAdmits": [],
+   "links": {
+    "apply": "https://campus.nutn.edu.tw/newsPost3/postFiles/101347_Admissions%20Guide%20for%20International%20Students%20for%20the%20115th%20Academic%20Year.pdf",
+    "website": "https://web.nutn.edu.tw/",
+    "brochureSpring": "https://campus.nutn.edu.tw/newsPost3/postFiles/101347_Admissions%20Guide%20for%20International%20Students%20for%20the%20115th%20Academic%20Year.pdf",
+    "brochureSpringYear": "115-2",
+    "brochureFall": "https://campus.nutn.edu.tw/newsPost3/postFiles/101347_Admissions%20Guide%20for%20International%20Students%20for%20the%20115th%20Academic%20Year.pdf",
+    "brochureFallYear": "115-1"
+   },
+   "lists": [
+    {
+     "year": "115",
+     "term": "fall",
+     "title": "115外國學生錄取公告",
+     "url": "https://campus.nutn.edu.tw/newspost3/readPost.aspx?boardNo=103748"
+    }
+   ],
+   "terms": {
+    "spring": {
+     "ug": "grad",
+     "rounds": []
+    },
+    "fall": {
+     "ug": "has",
+     "rounds": [
+      {
+       "start": {
+        "status": "historical",
+        "sourceYear": "115-1",
+        "label": "1 月上旬",
+        "sort": "2027-01-01",
+        "src": "https://campus.nutn.edu.tw/newsPost3/postFiles/101347_Admissions%20Guide%20for%20International%20Students%20for%20the%20115th%20Academic%20Year.pdf"
+       },
+       "end": {
+        "status": "historical",
+        "sourceYear": "115-1",
+        "label": "4 月上旬",
+        "sort": "2027-04-01",
+        "src": "https://campus.nutn.edu.tw/newsPost3/postFiles/101347_Admissions%20Guide%20for%20International%20Students%20for%20the%20115th%20Academic%20Year.pdf"
+       },
+       "result": {
+        "status": "historical",
+        "sourceYear": "115-1",
+        "label": "5 月下旬",
+        "sort": "2027-05-21",
+        "src": "https://campus.nutn.edu.tw/newsPost3/postFiles/101347_Admissions%20Guide%20for%20International%20Students%20for%20the%20115th%20Academic%20Year.pdf"
+       },
+       "note": null
+      }
+     ]
+    }
+   },
+   "checked": "2026-09-29"
+  },
+  {
+   "id": "0047",
+   "name": "國立高雄餐旅大學",
+   "short": "高餐",
+   "abbr": "NKUHT",
+   "english": "National Kaohsiung University of Hospitality and Tourism",
+   "city": "高雄市",
+   "ownership": "public",
+   "type": "technology",
+   "km": 177,
+   "commute": "far",
+   "place": "高雄小港",
+   "travel": "要搬家",
+   "tier": "C",
+   "fee": {
+    "kind": "silent",
+    "text": "115 簡章沒有寫申請費，不能當作免費",
+    "src": "https://international.nkuht.edu.tw/var/file/45/1045/img/749130689.pdf",
+    "year": "115"
+   },
+   "tuition": null,
+   "firstYearKind": "review",
+   "semesterCost": null,
+   "aid": {
+    "sure": null,
+    "review": "學士：學雜費全免／半免或宿舍全免，擇優審查。"
+   },
+   "renew": "第二年起每學期申請；成績與操行 80、前 50%；服務 15–25 小時。",
+   "lang": "未逐系整理。",
+   "after": "116-1 秋季已公告 2026/11/2–12/17 報名；放榜往年約 3 月。",
+   "verdict": "餐旅專業強，116-1 秋季日期已公告，但在高雄要搬家。",
+   "verdictMy": "ဟိုတယ်/စားသောက် ပညာ ကောင်း၊ ကောင်ရှုံး — အိမ်ပြောင်းရ။",
+   "readYourself": [],
+   "bizAdmits": [],
+   "links": {
+    "apply": "https://international.nkuht.edu.tw/p/404-1045-34386.php?Lang=en",
+    "website": "https://www.nkuht.edu.tw/p/403-1000-18.php",
+    "brochureSpring": null,
+    "brochureSpringYear": null,
+    "brochureFall": "https://international.nkuht.edu.tw/var/file/45/1045/img/749130689.pdf",
+    "brochureFallYear": "115-1"
+   },
+   "lists": [
+    {
+     "year": "115",
+     "term": "fall",
+     "title": "115一般外國學生第二梯次錄取公告入口（與國際專修部分列）",
+     "url": "https://international.nkuht.edu.tw/p/404-1045-21221.php?Lang=en"
+    }
+   ],
+   "terms": {
+    "spring": {
+     "ug": "unknown",
+     "rounds": []
+    },
+    "fall": {
+     "ug": "has",
+     "rounds": [
+      {
+       "start": {
+        "status": "official",
+        "sourceYear": "116-1",
+        "date": "2026-11-02",
+        "src": "https://examstd.nkuht.edu.tw/EnrollSTDFS/"
+       },
+       "end": {
+        "status": "official",
+        "sourceYear": "116-1",
+        "date": "2026-12-17",
+        "src": "https://examstd.nkuht.edu.tw/EnrollSTDFS/"
+       },
+       "result": {
+        "status": "historical",
+        "sourceYear": "115-1",
+        "label": "3 月中旬",
+        "sort": "2027-03-11",
+        "src": "https://international.nkuht.edu.tw/p/404-1045-34386.php?Lang=en"
+       },
+       "note": "第一梯申請期間已採116-1系統；放榜仍為115-1歷年參考，第二梯亦仍為歷年參考。各系截止時刻不同，請以系統個別欄位為準。"
+      },
+      {
+       "start": {
+        "status": "historical",
+        "sourceYear": "115-1",
+        "label": "1 月中旬",
+        "sort": "2027-01-11",
+        "src": "https://international.nkuht.edu.tw/p/404-1045-34386.php?Lang=en"
+       },
+       "end": {
+        "status": "historical",
+        "sourceYear": "115-1",
+        "label": "3 月下旬",
+        "sort": "2027-03-21",
+        "src": "https://international.nkuht.edu.tw/p/404-1045-34386.php?Lang=en"
+       },
+       "result": {
+        "status": "historical",
+        "sourceYear": "115-1",
+        "label": "5 月下旬",
+        "sort": "2027-05-21",
+        "src": "https://international.nkuht.edu.tw/p/404-1045-34386.php?Lang=en"
+       },
+       "note": null
+      }
+     ]
+    }
+   },
+   "checked": "2026-09-29"
+  },
+  {
+   "id": "0024",
+   "name": "國立屏東科技大學",
+   "short": "屏科",
+   "abbr": "NPUST",
+   "english": "National Pingtung University of Science and Technology",
+   "city": "屏東縣",
+   "ownership": "public",
+   "type": "technology",
+   "km": 166,
+   "commute": "far",
+   "place": "屏東內埔",
+   "travel": "要搬家",
+   "tier": "C",
+   "fee": {
+    "kind": "free",
+    "amount": 0,
+    "text": "官網招生頁明載免申請費",
+    "src": "https://oia2.npust.edu.tw/zh/future-students/",
+    "year": "官網常態"
+   },
+   "tuition": null,
+   "firstYearKind": "none",
+   "semesterCost": null,
+   "aid": {
+    "sure": null,
+    "review": "學士通常第二年起才能申請學雜費或住宿減免；一年級要特殊表現專案審議。"
+   },
+   "renew": "每年申請，學士成績 75、操行 80；要服務回饋。",
+   "lang": "未逐系整理。",
+   "after": "官網常態：春季約 8/1–10/21、秋季約 1/1–3/21（未標年度）。",
+   "verdict": "最遠，而且學士第一年通常沒有減免。",
+   "verdictMy": "အဝေးဆုံး၊ ပထမနှစ် လျှော့ပေးမှု မရှိသလောက်။",
+   "readYourself": [],
+   "bizAdmits": [],
+   "links": {
+    "apply": "https://oia2.npust.edu.tw/zh/future-students/",
+    "website": "http://www.npust.edu.tw",
+    "brochureSpring": "https://oia2.npust.edu.tw/zh/future-students/",
+    "brochureSpringYear": "官網常態說明（2026查核）",
+    "brochureFall": "https://oia2.npust.edu.tw/zh/future-students/",
+    "brochureFallYear": "官網常態說明（2026查核）"
+   },
+   "lists": [],
+   "terms": {
+    "spring": {
+     "ug": "has",
+     "rounds": [
+      {
+       "start": {
+        "status": "historical",
+        "sourceYear": "未標學年度",
+        "label": "8月開始（官網常態時程）",
+        "sort": "2026-08-01",
+        "src": "https://oia2.npust.edu.tw/zh/future-students/"
+       },
+       "end": {
+        "status": "historical",
+        "sourceYear": "未標學年度",
+        "label": "10月底截止（官網常態時程）",
+        "sort": "2026-10-21",
+        "src": "https://oia2.npust.edu.tw/zh/future-students/"
+       },
+       "result": null,
+       "note": null
+      }
+     ]
+    },
+    "fall": {
+     "ug": "has",
+     "rounds": [
+      {
+       "start": {
+        "status": "historical",
+        "sourceYear": "未標學年度",
+        "label": "1月開始（官網常態時程）",
+        "sort": "2027-01-01",
+        "src": "https://oia2.npust.edu.tw/zh/future-students/"
+       },
+       "end": {
+        "status": "historical",
+        "sourceYear": "未標學年度",
+        "label": "3月底截止（官網常態時程）",
+        "sort": "2027-03-21",
+        "src": "https://oia2.npust.edu.tw/zh/future-students/"
+       },
+       "result": null,
+       "note": null
+      }
+     ]
+    }
+   },
+   "checked": "2026-09-29"
+  },
+  {
+   "id": "0009",
+   "name": "國立中山大學",
+   "short": "中山",
+   "abbr": "NSYSU",
+   "english": "National Sun Yat-sen University",
+   "city": "高雄市",
+   "ownership": "public",
+   "type": "university",
+   "km": 173,
+   "commute": "far",
+   "place": "高雄西子灣",
+   "travel": "高鐵到左營再轉車約 1 小時半；要搬家",
+   "tier": "P",
+   "fee": {
+    "kind": "free",
+    "amount": 0,
+    "text": "官方外國學位生 FAQ Q8：不收申請費",
+    "src": "https://oia.nsysu.edu.tw/p/412-1308-20574.php?Lang=en",
+    "year": "現行FAQ"
+   },
+   "tuition": {
+    "min": 49460,
+    "max": 62080,
+    "year": "115",
+    "text": "每學期 49,460–62,080（依學院）；宿舍約 36,600／學年",
+    "src": "https://rpb78.nsysu.edu.tw/static/file/239/1239/img/409586988.pdf"
+   },
+   "firstYearKind": "review",
+   "semesterCost": {
+    "min": 49460,
+    "max": 62080,
+    "basis": "worst"
+   },
+   "aid": {
+    "sure": null,
+    "review": "報名時可一併申請中山獎學金：學士每月 6,000 元，依預算審核。"
+   },
+   "renew": "學士每次 1 年，續申請要至少 9 學分、平均 70 分（GPA 2.44）、無不良紀錄；工作居留或全職工作者排除。",
+   "lang": "依系；例如中文系要 TOCFL 4 級或 HSK 6 級。財力證明 US$4,000 或 NT$12 萬。",
+   "after": "春季簡章只看到碩博士（學士班沒列在春季表），學士只能報秋季。往年秋季 1/15–3/15 報名、6 月初放榜、6/20 前發入學許可。",
+   "verdict": "南部名校、免申請費、每月 6,000 獎學金，但在高雄要搬家，春季不收學士。",
+   "verdictMy": "တောင်ပိုင်း နာမည်ကြီး၊ လျှောက်လွှာကြေး အခမဲ့၊ တစ်လ NT$6,000 ပညာသင်ဆု။ ကောင်ရှုံး — အိမ်ပြောင်းရ၊ နွေဦး ဘွဲ့ကြို မရ။",
+   "readYourself": [],
+   "bizAdmits": [],
+   "links": {
+    "apply": "https://oia.nsysu.edu.tw/",
+    "website": "http://www.nsysu.edu.tw",
+    "brochureSpring": "https://rpb78.nsysu.edu.tw/static/file/239/1239/img/409586988.pdf",
+    "brochureSpringYear": null,
+    "brochureFall": "https://rpb78.nsysu.edu.tw/static/file/239/1239/img/409586988.pdf",
+    "brochureFallYear": "115-1"
+   },
+   "lists": [
+    {
+     "year": "114",
+     "term": "fall",
+     "title": "114秋季外國學生結果查詢公告（需登入個人系統，非公開名冊）",
+     "url": "https://oia.nsysu.edu.tw/p/406-1308-356180%2Cr4449.php?Lang=zh-tw"
+    }
+   ],
+   "terms": {
+    "spring": {
+     "ug": "has",
+     "rounds": [
+      {
+       "start": {
+        "status": "official",
+        "sourceYear": "115-2",
+        "date": "2026-08-01",
+        "src": "https://rpb78.nsysu.edu.tw/static/file/239/1239/img/409586988.pdf"
+       },
+       "end": {
+        "status": "official",
+        "sourceYear": "115-2",
+        "date": "2026-09-30",
+        "src": "https://rpb78.nsysu.edu.tw/static/file/239/1239/img/409586988.pdf"
+       },
+       "result": {
+        "status": "official",
+        "sourceYear": "115-2",
+        "label": "2026-12-10 前",
+        "sort": "2026-12-10",
+        "src": "https://rpb78.nsysu.edu.tw/static/file/239/1239/img/409586988.pdf"
+       },
+       "note": null
+      }
+     ]
+    },
+    "fall": {
+     "ug": "has",
+     "rounds": [
+      {
+       "start": {
+        "status": "historical",
+        "sourceYear": "115-1",
+        "label": "1 月中旬",
+        "sort": "2027-01-11",
+        "src": "https://rpb78.nsysu.edu.tw/static/file/239/1239/img/409586988.pdf"
+       },
+       "end": {
+        "status": "historical",
+        "sourceYear": "115-1",
+        "label": "3 月中旬",
+        "sort": "2027-03-11",
+        "src": "https://rpb78.nsysu.edu.tw/static/file/239/1239/img/409586988.pdf"
+       },
+       "result": {
+        "status": "historical",
+        "sourceYear": "115-1",
+        "label": "2026-06-05 前",
+        "sort": "2027-06-05",
+        "src": "https://rpb78.nsysu.edu.tw/static/file/239/1239/img/409586988.pdf"
+       },
+       "note": null
+      }
+     ]
+    }
+   },
+   "checked": "2026-09-29"
+  },
+  {
+   "id": "0008",
+   "name": "國立中央大學",
+   "short": "中央",
+   "abbr": "NCU",
+   "english": "National Central University",
+   "city": "桃園市",
+   "ownership": "public",
+   "type": "university",
+   "km": 106,
+   "commute": "far",
+   "place": "桃園中壢",
+   "travel": "高鐵到桃園再轉車約 1 小時半；要搬家",
+   "tier": "P",
+   "fee": {
+    "kind": "free",
+    "amount": 0,
+    "text": "115-1 與 115-2 簡章都明載無須繳申請費",
+    "src": "https://drive.google.com/uc?export=download&id=1YPMGlysvNc8ydZTcXqOA-4CMqi1xhhVM",
+    "year": "115"
+   },
+   "tuition": null,
+   "firstYearKind": "review",
+   "semesterCost": null,
+   "aid": {
+    "sure": null,
+    "review": "每月上限：學士 9,000、碩士 15,000、博士 40,000；可申請學費／學分費減免，雜費仍要自付；上限不保證核給。"
+   },
+   "renew": "在校學士累積平均 60 分，修過 1 門本校華語課或有中文溝通證明（秋季新生第 1 年下學期免）。",
+   "lang": "未逐系整理。",
+   "after": "學士只收秋季；春季只有研究所。往年秋季 1–3 月報名、5 月中放榜。",
+   "verdict": "國立名校、免申請費，獎學金學士每月最高 9,000。在桃園要搬家，春季不收學士。",
+   "verdictMy": "နာမည်ကြီး အစိုးရ၊ ကြေးအခမဲ့၊ ပညာသင်ဆု တစ်လ NT$9,000 အထိ။ တောင်ယွမ် — အိမ်ပြောင်းရ။",
+   "readYourself": [],
+   "bizAdmits": [],
+   "links": {
+    "apply": "https://cis.ncu.edu.tw/AdmissionSys/oia/activity",
+    "website": "http://www.ncu.edu.tw",
+    "brochureSpring": "https://drive.google.com/uc?export=download&id=1e3I9a43ephl92BxdqePpWl-BASsyH01K",
+    "brochureSpringYear": "115-2",
+    "brochureFall": "https://drive.google.com/uc?export=download&id=1YPMGlysvNc8ydZTcXqOA-4CMqi1xhhVM",
+    "brochureFallYear": "115-1"
+   },
+   "lists": [
+    {
+     "year": "114",
+     "term": "fall",
+     "title": "114秋季外國學生錄取公告",
+     "url": "https://cis.ncu.edu.tw/admissions/content/view/sn/75"
+    },
+    {
+     "year": "113",
+     "term": "spring",
+     "title": "113春季外國學生錄取公告",
+     "url": "https://cis.ncu.edu.tw/admissions/content/view/sn/72"
+    }
+   ],
+   "terms": {
+    "spring": {
+     "ug": "grad",
+     "rounds": []
+    },
+    "fall": {
+     "ug": "has",
+     "rounds": [
+      {
+       "start": {
+        "status": "historical",
+        "sourceYear": "115-1",
+        "label": "1 月上旬",
+        "sort": "2027-01-01",
+        "src": "https://drive.google.com/uc?export=download&id=1YPMGlysvNc8ydZTcXqOA-4CMqi1xhhVM"
+       },
+       "end": {
+        "status": "historical",
+        "sourceYear": "115-1",
+        "label": "3 月中旬",
+        "sort": "2027-03-11",
+        "src": "https://drive.google.com/uc?export=download&id=1YPMGlysvNc8ydZTcXqOA-4CMqi1xhhVM"
+       },
+       "result": {
+        "status": "historical",
+        "sourceYear": "115-1",
+        "label": "5 月中旬",
+        "sort": "2027-05-11",
+        "src": "https://drive.google.com/uc?export=download&id=1YPMGlysvNc8ydZTcXqOA-4CMqi1xhhVM"
+       },
+       "note": null
+      }
+     ]
+    }
+   },
+   "checked": "2026-09-29"
+  },
+  {
+   "id": "0013",
+   "name": "國立中正大學",
+   "short": "中正",
+   "abbr": "CCU",
+   "english": "National Chung Cheng University",
+   "city": "嘉義縣",
+   "ownership": "public",
+   "type": "university",
+   "km": 75,
+   "commute": "far",
+   "place": "嘉義民雄",
+   "travel": "高鐵/火車約 1 小時；要搬家",
+   "tier": "B",
+   "fee": {
+    "kind": "unknown",
+    "text": "115 簡章檔案多次逾時，申請費沒辦法核對",
+    "src": "https://oia.ccu.edu.tw/var/file/8/1008/img/814/372680683.pdf",
+    "year": "115"
+   },
+   "tuition": null,
+   "firstYearKind": "review",
+   "semesterCost": null,
+   "aid": {
+    "sure": null,
+    "review": "可核給部分或全額學費、學分費、雜費及宿舍減免與生活津貼，依學院決定，新生隨入學申請。"
+   },
+   "renew": "學士至少 8 學分、平均超過 65 分且品行良好；依審查。",
+   "lang": "未核得。",
+   "after": "學士只收秋季；春季只有研究所。往年秋季 1–3 月報名、4 月下旬放榜。",
+   "verdict": "國立、往年 4 月下旬放榜較早，但要搬到嘉義，申請費沒讀到。",
+   "verdictMy": "အစိုးရ၊ ရလဒ် စောစော (ဧပြီ)။ ချားယီ — အိမ်ပြောင်းရ။",
+   "readYourself": [
+    {
+     "label": "中正 115 簡章 PDF",
+     "url": "https://oia.ccu.edu.tw/var/file/8/1008/img/814/372680683.pdf",
+     "why": "看申請費與語言門檻"
+    }
+   ],
+   "bizAdmits": [],
+   "links": {
+    "apply": "https://oia.ccu.edu.tw/",
+    "website": "http://www.ccu.edu.tw",
+    "brochureSpring": "https://oia.ccu.edu.tw/var/file/8/1008/img/814/372680683.pdf",
+    "brochureSpringYear": null,
+    "brochureFall": null,
+    "brochureFallYear": null
+   },
+   "lists": [
+    {
+     "year": "115",
+     "term": "fall",
+     "title": "115秋季第一梯外國學生錄取公告",
+     "url": "https://oia.ccu.edu.tw/p/406-1008-89101,r1716.php?Lang=en"
+    },
+    {
+     "year": "114",
+     "term": "spring",
+     "title": "114春季外國學生錄取公告",
+     "url": "https://oia.ccu.edu.tw/p/406-1008-80729,r1716.php?Lang=en"
+    },
+    {
+     "year": "114",
+     "term": "fall",
+     "title": "114秋季第一梯外國學生錄取公告",
+     "url": "https://oia.ccu.edu.tw/p/406-1008-72653,r1716.php?Lang=en"
+    },
+    {
+     "year": "114",
+     "term": "fall",
+     "title": "114秋季第二梯外國學生錄取公告",
+     "url": "https://oia.ccu.edu.tw/p/406-1008-73801,r1716.php?Lang=en"
+    },
+    {
+     "year": "114",
+     "term": "fall",
+     "title": "114秋季第三梯外國學生錄取公告",
+     "url": "https://oia.ccu.edu.tw/p/406-1008-75856,r1716.php?Lang=en"
+    },
+    {
+     "year": "114",
+     "term": "fall",
+     "title": "114秋季第四梯外國學生錄取公告",
+     "url": "https://oia.ccu.edu.tw/p/406-1008-76521,r1716.php?Lang=en"
+    },
+    {
+     "year": "113",
+     "term": "spring",
+     "title": "113春季外國學生錄取公告",
+     "url": "https://oia.ccu.edu.tw/p/406-1008-67358,r1716.php?Lang=en"
+    }
+   ],
+   "terms": {
+    "spring": {
+     "ug": "grad",
+     "rounds": []
+    },
+    "fall": {
+     "ug": "has",
+     "rounds": [
+      {
+       "start": {
+        "status": "historical",
+        "sourceYear": "115-1",
+        "label": "1 月中旬",
+        "sort": "2027-01-11",
+        "src": "https://oia.ccu.edu.tw/var/file/8/1008/img/814/372680683.pdf"
+       },
+       "end": {
+        "status": "historical",
+        "sourceYear": "115-1",
+        "label": "3 月中旬",
+        "sort": "2027-03-11",
+        "src": "https://oia.ccu.edu.tw/var/file/8/1008/img/814/372680683.pdf"
+       },
+       "result": {
+        "status": "historical",
+        "sourceYear": "115-1",
+        "label": "4 月下旬",
+        "sort": "2027-04-21",
+        "src": "https://oia.ccu.edu.tw/var/file/8/1008/img/814/372680683.pdf"
+       },
+       "note": "IBP-ME、ELMD、EESL、INTENSE另行公告，不套用本表。"
+      }
+     ]
+    }
+   },
+   "checked": "2026-09-29"
+  },
+  {
+   "id": "0015",
+   "name": "國立彰化師範大學",
+   "short": "彰師大",
+   "abbr": "NCUE",
+   "english": "National Changhua University of Education",
+   "city": "彰化縣",
+   "ownership": "public",
+   "type": "university",
+   "km": 14,
+   "commute": "local",
+   "place": "彰化市",
+   "travel": "火車台中→彰化約 15 分，再轉公車；可通勤",
+   "tier": "A",
+   "fee": {
+    "kind": "free",
+    "amount": 0,
+    "text": "115 簡章明載免繳申請費；最多報 3 個系",
+    "src": "https://oicaweb.ncue.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9MelEwTDNCMFlWOHlORE01T1Y4M09UWTJOekF6WHpBeE9ETTVMbkJrWmc9PQ==",
+    "year": "115"
+   },
+   "tuition": null,
+   "firstYearKind": "full",
+   "semesterCost": {
+    "min": 0,
+    "max": 0,
+    "basis": "sure"
+   },
+   "aid": {
+    "sure": "一般外國學士新生：第一年免學雜費＋校內住宿減免（寒暑假除外），錄取註冊就核定，不用另外申請。",
+    "review": null
+   },
+   "renew": "學士只有第一年；第二年起沒有這項減免（研究所才可續領）。",
+   "lang": "TOCFL／英語門檻依系，不是全校統一；報名前要逐系看。財力證明 US$2,500。",
+   "after": "春季 9/18 已截止。往年秋季 12 月上旬–3 月上旬報名、4 月中旬放榜（第 1 梯）；第 2 梯 7 月才放榜，ARC 來不及。",
+   "verdict": "離台中最近的國立大學之一，免申請費，第一年學雜費＋宿舍錄取就免。秋季第 1 梯 4 月放榜，時間最安全。",
+   "verdictMy": "ထိုင်ချုံးနှင့် နီး၊ အစိုးရ၊ လျှောက်လွှာကြေး အခမဲ့၊ ပထမနှစ် ကျောင်းလခ+အဆောင် အခမဲ့ (အလိုအလျောက်)။ ဆောင်းဦး ပထမအကြိမ် ဧပြီ ရလဒ်။",
+   "readYourself": [],
+   "bizAdmits": [],
+   "links": {
+    "apply": "https://aps.ncue.edu.tw/exampg_f/",
+    "website": "https://www.ncue.edu.tw/",
+    "brochureSpring": "https://oicaweb.ncue.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9MelEwTDNCMFlWOHlORE01T1Y4M09UWTJOekF6WHpBeE9ETTVMbkJrWmc9PQ==&fname=WW54RPOKIC4441MPHCLKRKZWQOTWWT14QO3435HGTX25LK40FCNKA054WW54FGOKPOPOZX10A404GDXTRKPKTSIG34B0NOYSVXVXDCTSWSB0VSOKUSKKYWFCNPPO44OOHCA0UWIGTWMODC35WSB040MKZTGDQPROWS30IGB4GGOK45USPOWSB510DGFGA0SXKO30B4ICIGRO35WWNPVX04OKYSB4JGUSPKKKVWOKWW44FD00TSJCKPWWZSPKGDYWOPB035XSNPZTDCCCKPFGFDSW3410KLSSSSWWGDLPDG2441XTWW14MOKKDGRKQLXW00JDML50WSEC3050PKKKB5A0WWPONPZXEDNONO24ZSB4SSICSTEGGGMK44UXUTFGSW30ZS01YSCCJGROVWWWMPYXNOLKNP34DCJGMK2520FCXSXSVXVXHGB5ZWB050POYSSSUWB0YWPOOOZXIGLKNKXTZSPKWWKKOPQKXSGCGGRLWWCCROFCYWPOLO10JCOKSS00YTLPFGHGLKGDUSJG30HCECICMOHCMLXTDCA0LKA4B4ECFH10UWFC4440QLKKFGLKEGWSPKB0QLQL",
+    "brochureSpringYear": "115-2",
+    "brochureFall": "https://oicaweb.ncue.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9MelEwTDNCMFlWOHlORE01T1Y4M09UWTJOekF6WHpBeE9ETTVMbkJrWmc9PQ==&fname=WW54RPOKIC4441MPHCLKRKZWQOTWWT14QO3435HGTX25LK40FCNKA054WW54FGOKPOPOZX10A404GDXTRKPKTSIG34B0NOYSVXVXDCTSWSB0VSOKUSKKYWFCNPPO44OOHCA0UWIGTWMODC35WSB040MKZTGDQPROWS30IGB4GGOK45USPOWSB510DGFGA0SXKO30B4ICIGRO35WWNPVX04OKYSB4JGUSPKKKVWOKWW44FD00TSJCKPWWZSPKGDYWOPB035XSNPZTDCCCKPFGFDSW3410KLSSSSWWGDLPDG2441XTWW14MOKKDGRKQLXW00JDML50WSEC3050PKKKB5A0WWPONPZXEDNONO24ZSB4SSICSTEGGGMK44UXUTFGSW30ZS01YSCCJGROVWWWMPYXNOLKNP34DCJGMK2520FCXSXSVXVXHGB5ZWB050POYSSSUWB0YWPOOOZXIGLKNKXTZSPKWWKKOPQKXSGCGGRLWWCCROFCYWPOLO10JCOKSS00YTLPFGHGLKGDUSJG30HCECICMOHCMLXTDCA0LKA4B4ECFH10UWFC4440QLKKFGLKEGWSPKB0QLQL",
+    "brochureFallYear": "115-1"
+   },
+   "lists": [
+    {
+     "year": "113",
+     "term": "spring",
+     "title": "113學年度春季班外國學生錄取公告",
+     "url": "https://oicaweb.ncue.edu.tw/p/406-1019-28807,r142.php?Lang=zh-tw"
+    },
+    {
+     "year": "113",
+     "term": "fall",
+     "title": "113學年度秋季第一階段外國學生錄取公告",
+     "url": "https://oicaweb.ncue.edu.tw/p/406-1019-24536,r142.php?Lang=zh-tw"
+    }
+   ],
+   "terms": {
+    "spring": {
+     "ug": "has",
+     "rounds": [
+      {
+       "start": {
+        "status": "official",
+        "sourceYear": "115-2",
+        "date": "2026-07-18",
+        "src": "https://oicaweb.ncue.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9MelEwTDNCMFlWOHlORE01T1Y4M09UWTJOekF6WHpBeE9ETTVMbkJrWmc9PQ==&fname=WW54RPOKIC4441MPHCLKRKZWQOTWWT14QO3435HGTX25LK40FCNKA054WW54FGOKPOPOZX10A404GDXTRKPKTSIG34B0NOYSVXVXDCTSWSB0VSOKUSKKYWFCNPPO44OOHCA0UWIGTWMODC35WSB040MKZTGDQPROWS30IGB4GGOK45USPOWSB510DGFGA0SXKO30B4ICIGRO35WWNPVX04OKYSB4JGUSPKKKVWOKWW44FD00TSJCKPWWZSPKGDYWOPB035XSNPZTDCCCKPFGFDSW3410KLSSSSWWGDLPDG2441XTWW14MOKKDGRKQLXW00JDML50WSEC3050PKKKB5A0WWPONPZXEDNONO24ZSB4SSICSTEGGGMK44UXUTFGSW30ZS01YSCCJGROVWWWMPYXNOLKNP34DCJGMK2520FCXSXSVXVXHGB5ZWB050POYSSSUWB0YWPOOOZXIGLKNKXTZSPKWWKKOPQKXSGCGGRLWWCCROFCYWPOLO10JCOKSS00YTLPFGHGLKGDUSJG30HCECICMOHCMLXTDCA0LKA4B4ECFH10UWFC4440QLKKFGLKEGWSPKB0QLQL"
+       },
+       "end": {
+        "status": "official",
+        "sourceYear": "115-2",
+        "date": "2026-09-18",
+        "src": "https://oicaweb.ncue.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9MelEwTDNCMFlWOHlORE01T1Y4M09UWTJOekF6WHpBeE9ETTVMbkJrWmc9PQ==&fname=WW54RPOKIC4441MPHCLKRKZWQOTWWT14QO3435HGTX25LK40FCNKA054WW54FGOKPOPOZX10A404GDXTRKPKTSIG34B0NOYSVXVXDCTSWSB0VSOKUSKKYWFCNPPO44OOHCA0UWIGTWMODC35WSB040MKZTGDQPROWS30IGB4GGOK45USPOWSB510DGFGA0SXKO30B4ICIGRO35WWNPVX04OKYSB4JGUSPKKKVWOKWW44FD00TSJCKPWWZSPKGDYWOPB035XSNPZTDCCCKPFGFDSW3410KLSSSSWWGDLPDG2441XTWW14MOKKDGRKQLXW00JDML50WSEC3050PKKKB5A0WWPONPZXEDNONO24ZSB4SSICSTEGGGMK44UXUTFGSW30ZS01YSCCJGROVWWWMPYXNOLKNP34DCJGMK2520FCXSXSVXVXHGB5ZWB050POYSSSUWB0YWPOOOZXIGLKNKXTZSPKWWKKOPQKXSGCGGRLWWCCROFCYWPOLO10JCOKSS00YTLPFGHGLKGDUSJG30HCECICMOHCMLXTDCA0LKA4B4ECFH10UWFC4440QLKKFGLKEGWSPKB0QLQL"
+       },
+       "result": {
+        "status": "official",
+        "sourceYear": "115-2",
+        "date": "2026-10-28",
+        "src": "https://oicaweb.ncue.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9MelEwTDNCMFlWOHlORE01T1Y4M09UWTJOekF6WHpBeE9ETTVMbkJrWmc9PQ==&fname=WW54RPOKIC4441MPHCLKRKZWQOTWWT14QO3435HGTX25LK40FCNKA054WW54FGOKPOPOZX10A404GDXTRKPKTSIG34B0NOYSVXVXDCTSWSB0VSOKUSKKYWFCNPPO44OOHCA0UWIGTWMODC35WSB040MKZTGDQPROWS30IGB4GGOK45USPOWSB510DGFGA0SXKO30B4ICIGRO35WWNPVX04OKYSB4JGUSPKKKVWOKWW44FD00TSJCKPWWZSPKGDYWOPB035XSNPZTDCCCKPFGFDSW3410KLSSSSWWGDLPDG2441XTWW14MOKKDGRKQLXW00JDML50WSEC3050PKKKB5A0WWPONPZXEDNONO24ZSB4SSICSTEGGGMK44UXUTFGSW30ZS01YSCCJGROVWWWMPYXNOLKNP34DCJGMK2520FCXSXSVXVXHGB5ZWB050POYSSSUWB0YWPOOOZXIGLKNKXTZSPKWWKKOPQKXSGCGGRLWWCCROFCYWPOLO10JCOKSS00YTLPFGHGLKGDUSJG30HCECICMOHCMLXTDCA0LKA4B4ECFH10UWFC4440QLKKFGLKEGWSPKB0QLQL"
+       },
+       "note": null
+      }
+     ]
+    },
+    "fall": {
+     "ug": "has",
+     "rounds": [
+      {
+       "start": {
+        "status": "historical",
+        "sourceYear": "115-1",
+        "label": "12 月上旬",
+        "sort": "2026-12-01",
+        "src": "https://oicaweb.ncue.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9MelEwTDNCMFlWOHlORE01T1Y4M09UWTJOekF6WHpBeE9ETTVMbkJrWmc9PQ==&fname=WW54RPOKIC4441MPHCLKRKZWQOTWWT14QO3435HGTX25LK40FCNKA054WW54FGOKPOPOZX10A404GDXTRKPKTSIG34B0NOYSVXVXDCTSWSB0VSOKUSKKYWFCNPPO44OOHCA0UWIGTWMODC35WSB040MKZTGDQPROWS30IGB4GGOK45USPOWSB510DGFGA0SXKO30B4ICIGRO35WWNPVX04OKYSB4JGUSPKKKVWOKWW44FD00TSJCKPWWZSPKGDYWOPB035XSNPZTDCCCKPFGFDSW3410KLSSSSWWGDLPDG2441XTWW14MOKKDGRKQLXW00JDML50WSEC3050PKKKB5A0WWPONPZXEDNONO24ZSB4SSICSTEGGGMK44UXUTFGSW30ZS01YSCCJGROVWWWMPYXNOLKNP34DCJGMK2520FCXSXSVXVXHGB5ZWB050POYSSSUWB0YWPOOOZXIGLKNKXTZSPKWWKKOPQKXSGCGGRLWWCCROFCYWPOLO10JCOKSS00YTLPFGHGLKGDUSJG30HCECICMOHCMLXTDCA0LKA4B4ECFH10UWFC4440QLKKFGLKEGWSPKB0QLQL"
+       },
+       "end": {
+        "status": "historical",
+        "sourceYear": "115-1",
+        "label": "3 月上旬",
+        "sort": "2027-03-01",
+        "src": "https://oicaweb.ncue.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9MelEwTDNCMFlWOHlORE01T1Y4M09UWTJOekF6WHpBeE9ETTVMbkJrWmc9PQ==&fname=WW54RPOKIC4441MPHCLKRKZWQOTWWT14QO3435HGTX25LK40FCNKA054WW54FGOKPOPOZX10A404GDXTRKPKTSIG34B0NOYSVXVXDCTSWSB0VSOKUSKKYWFCNPPO44OOHCA0UWIGTWMODC35WSB040MKZTGDQPROWS30IGB4GGOK45USPOWSB510DGFGA0SXKO30B4ICIGRO35WWNPVX04OKYSB4JGUSPKKKVWOKWW44FD00TSJCKPWWZSPKGDYWOPB035XSNPZTDCCCKPFGFDSW3410KLSSSSWWGDLPDG2441XTWW14MOKKDGRKQLXW00JDML50WSEC3050PKKKB5A0WWPONPZXEDNONO24ZSB4SSICSTEGGGMK44UXUTFGSW30ZS01YSCCJGROVWWWMPYXNOLKNP34DCJGMK2520FCXSXSVXVXHGB5ZWB050POYSSSUWB0YWPOOOZXIGLKNKXTZSPKWWKKOPQKXSGCGGRLWWCCROFCYWPOLO10JCOKSS00YTLPFGHGLKGDUSJG30HCECICMOHCMLXTDCA0LKA4B4ECFH10UWFC4440QLKKFGLKEGWSPKB0QLQL"
+       },
+       "result": {
+        "status": "historical",
+        "sourceYear": "115-1",
+        "label": "4 月中旬",
+        "sort": "2027-04-11",
+        "src": "https://oicaweb.ncue.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9MelEwTDNCMFlWOHlORE01T1Y4M09UWTJOekF6WHpBeE9ETTVMbkJrWmc9PQ==&fname=WW54RPOKIC4441MPHCLKRKZWQOTWWT14QO3435HGTX25LK40FCNKA054WW54FGOKPOPOZX10A404GDXTRKPKTSIG34B0NOYSVXVXDCTSWSB0VSOKUSKKYWFCNPPO44OOHCA0UWIGTWMODC35WSB040MKZTGDQPROWS30IGB4GGOK45USPOWSB510DGFGA0SXKO30B4ICIGRO35WWNPVX04OKYSB4JGUSPKKKVWOKWW44FD00TSJCKPWWZSPKGDYWOPB035XSNPZTDCCCKPFGFDSW3410KLSSSSWWGDLPDG2441XTWW14MOKKDGRKQLXW00JDML50WSEC3050PKKKB5A0WWPONPZXEDNONO24ZSB4SSICSTEGGGMK44UXUTFGSW30ZS01YSCCJGROVWWWMPYXNOLKNP34DCJGMK2520FCXSXSVXVXHGB5ZWB050POYSSSUWB0YWPOOOZXIGLKNKXTZSPKWWKKOPQKXSGCGGRLWWCCROFCYWPOLO10JCOKSS00YTLPFGHGLKGDUSJG30HCECICMOHCMLXTDCA0LKA4B4ECFH10UWFC4440QLKKFGLKEGWSPKB0QLQL"
+       },
+       "note": null
+      },
+      {
+       "start": {
+        "status": "historical",
+        "sourceYear": "115-1",
+        "label": "4 月上旬",
+        "sort": "2027-04-01",
+        "src": "https://oicaweb.ncue.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9MelEwTDNCMFlWOHlORE01T1Y4M09UWTJOekF6WHpBeE9ETTVMbkJrWmc9PQ==&fname=WW54RPOKIC4441MPHCLKRKZWQOTWWT14QO3435HGTX25LK40FCNKA054WW54FGOKPOPOZX10A404GDXTRKPKTSIG34B0NOYSVXVXDCTSWSB0VSOKUSKKYWFCNPPO44OOHCA0UWIGTWMODC35WSB040MKZTGDQPROWS30IGB4GGOK45USPOWSB510DGFGA0SXKO30B4ICIGRO35WWNPVX04OKYSB4JGUSPKKKVWOKWW44FD00TSJCKPWWZSPKGDYWOPB035XSNPZTDCCCKPFGFDSW3410KLSSSSWWGDLPDG2441XTWW14MOKKDGRKQLXW00JDML50WSEC3050PKKKB5A0WWPONPZXEDNONO24ZSB4SSICSTEGGGMK44UXUTFGSW30ZS01YSCCJGROVWWWMPYXNOLKNP34DCJGMK2520FCXSXSVXVXHGB5ZWB050POYSSSUWB0YWPOOOZXIGLKNKXTZSPKWWKKOPQKXSGCGGRLWWCCROFCYWPOLO10JCOKSS00YTLPFGHGLKGDUSJG30HCECICMOHCMLXTDCA0LKA4B4ECFH10UWFC4440QLKKFGLKEGWSPKB0QLQL"
+       },
+       "end": {
+        "status": "historical",
+        "sourceYear": "115-1",
+        "label": "6 月中旬",
+        "sort": "2027-06-11",
+        "src": "https://oicaweb.ncue.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9MelEwTDNCMFlWOHlORE01T1Y4M09UWTJOekF6WHpBeE9ETTVMbkJrWmc9PQ==&fname=WW54RPOKIC4441MPHCLKRKZWQOTWWT14QO3435HGTX25LK40FCNKA054WW54FGOKPOPOZX10A404GDXTRKPKTSIG34B0NOYSVXVXDCTSWSB0VSOKUSKKYWFCNPPO44OOHCA0UWIGTWMODC35WSB040MKZTGDQPROWS30IGB4GGOK45USPOWSB510DGFGA0SXKO30B4ICIGRO35WWNPVX04OKYSB4JGUSPKKKVWOKWW44FD00TSJCKPWWZSPKGDYWOPB035XSNPZTDCCCKPFGFDSW3410KLSSSSWWGDLPDG2441XTWW14MOKKDGRKQLXW00JDML50WSEC3050PKKKB5A0WWPONPZXEDNONO24ZSB4SSICSTEGGGMK44UXUTFGSW30ZS01YSCCJGROVWWWMPYXNOLKNP34DCJGMK2520FCXSXSVXVXHGB5ZWB050POYSSSUWB0YWPOOOZXIGLKNKXTZSPKWWKKOPQKXSGCGGRLWWCCROFCYWPOLO10JCOKSS00YTLPFGHGLKGDUSJG30HCECICMOHCMLXTDCA0LKA4B4ECFH10UWFC4440QLKKFGLKEGWSPKB0QLQL"
+       },
+       "result": {
+        "status": "historical",
+        "sourceYear": "115-1",
+        "label": "7 月中旬",
+        "sort": "2027-07-11",
+        "src": "https://oicaweb.ncue.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9MelEwTDNCMFlWOHlORE01T1Y4M09UWTJOekF6WHpBeE9ETTVMbkJrWmc9PQ==&fname=WW54RPOKIC4441MPHCLKRKZWQOTWWT14QO3435HGTX25LK40FCNKA054WW54FGOKPOPOZX10A404GDXTRKPKTSIG34B0NOYSVXVXDCTSWSB0VSOKUSKKYWFCNPPO44OOHCA0UWIGTWMODC35WSB040MKZTGDQPROWS30IGB4GGOK45USPOWSB510DGFGA0SXKO30B4ICIGRO35WWNPVX04OKYSB4JGUSPKKKVWOKWW44FD00TSJCKPWWZSPKGDYWOPB035XSNPZTDCCCKPFGFDSW3410KLSSSSWWGDLPDG2441XTWW14MOKKDGRKQLXW00JDML50WSEC3050PKKKB5A0WWPONPZXEDNONO24ZSB4SSICSTEGGGMK44UXUTFGSW30ZS01YSCCJGROVWWWMPYXNOLKNP34DCJGMK2520FCXSXSVXVXHGB5ZWB050POYSSSUWB0YWPOOOZXIGLKNKXTZSPKWWKKOPQKXSGCGGRLWWCCROFCYWPOLO10JCOKSS00YTLPFGHGLKGDUSJG30HCECICMOHCMLXTDCA0LKA4B4ECFH10UWFC4440QLKKFGLKEGWSPKB0QLQL"
+       },
+       "note": null
+      }
+     ]
+    }
+   },
+   "checked": "2026-09-29"
+  },
+  {
+   "id": "0003",
+   "name": "國立臺灣大學",
+   "short": "臺大",
+   "abbr": "NTU",
+   "english": "National Taiwan University",
+   "city": "臺北市",
+   "ownership": "public",
+   "type": "university",
+   "km": 130,
+   "commute": "far",
+   "place": "台北公館",
+   "travel": "高鐵約 1 小時＋捷運；要搬家",
+   "tier": "P",
+   "fee": {
+    "kind": "paid",
+    "amount": 2000,
+    "text": "每系 NT$2,000（US$80），第 3 系起每系 1,500；最多 5 系",
+    "src": "https://admissions.ntu.edu.tw/wp-content/uploads/116-1Admission-Guidelines-for-Intl-Degree-Students_ENG-1.pdf",
+    "year": "116-1"
+   },
+   "tuition": null,
+   "firstYearKind": "review",
+   "semesterCost": null,
+   "aid": {
+    "sure": null,
+    "review": "報名時勾選國際學位生獎學金：每學期學雜費減免上限 10 萬＋每月 8,000，審核核給。"
+   },
+   "renew": "每學年平均 GPA 3.38 以上才續領。",
+   "lang": "依系；多數中文授課系要求高，報名前逐系看。",
+   "after": "2027 秋季（116-1）第 1 梯 9/29–11/5 報名、1/14 放榜；第 2 梯 12/1–1/19 報名、4/8 放榜。春季只收研究所。",
+   "verdict": "台灣第一名校，秋季第 1 梯 1 月就放榜。每系 2,000 元，錄取難度最高。",
+   "verdictMy": "ထိုင်ဝမ် နံပါတ် ၁ ကျောင်း၊ ဇန်နဝါရီ ရလဒ်။ ဌာနတစ်ခု NT$2,000၊ အခက်ဆုံး။",
+   "readYourself": [],
+   "bizAdmits": [],
+   "links": {
+    "apply": "https://admissions.ntu.edu.tw/apply/degree-students/international-students/",
+    "website": "http://www.ntu.edu.tw",
+    "brochureSpring": "https://admissions.ntu.edu.tw/wp-content/uploads/115-2Admission-Guidelines-for-Intl-Degree-Students_ENG_V2.pdf",
+    "brochureSpringYear": "115-2",
+    "brochureFall": "https://admissions.ntu.edu.tw/wp-content/uploads/116-1Admission-Guidelines-for-Intl-Degree-Students_ENG-1.pdf",
+    "brochureFallYear": "116-1"
+   },
+   "lists": [],
+   "terms": {
+    "spring": {
+     "ug": "grad",
+     "rounds": []
+    },
+    "fall": {
+     "ug": "has",
+     "rounds": [
+      {
+       "start": {
+        "status": "official",
+        "sourceYear": null,
+        "date": "2026-09-29"
+       },
+       "end": {
+        "status": "official",
+        "sourceYear": null,
+        "date": "2026-11-05"
+       },
+       "result": {
+        "status": "official",
+        "sourceYear": null,
+        "date": "2027-01-14"
+       },
+       "note": null
+      },
+      {
+       "start": {
+        "status": "official",
+        "sourceYear": null,
+        "date": "2026-12-01"
+       },
+       "end": {
+        "status": "official",
+        "sourceYear": null,
+        "date": "2027-01-19"
+       },
+       "result": {
+        "status": "official",
+        "sourceYear": null,
+        "date": "2027-04-08"
+       },
+       "note": null
+      }
+     ]
+    }
+   },
+   "checked": "2026-09-29"
+  },
+  {
+   "id": "0001",
+   "name": "國立政治大學",
+   "short": "政大",
+   "abbr": "NCCU",
+   "english": "National Chengchi University",
+   "city": "臺北市",
+   "ownership": "public",
+   "type": "university",
+   "km": 130,
+   "commute": "far",
+   "place": "台北文山木柵",
+   "travel": "高鐵約 1 小時＋捷運／公車；要搬家",
+   "tier": "P",
+   "fee": {
+    "kind": "paid",
+    "amount": 1600,
+    "text": "每件 NT$1,600（US$60），逐件收、不退",
+    "src": "https://drive.google.com/uc?export=download&id=1RC6EOaByXy7hqe6_2ddinrZZk64UGu3k",
+    "year": "116-1"
+   },
+   "tuition": null,
+   "firstYearKind": "review",
+   "semesterCost": null,
+   "aid": {
+    "sure": null,
+    "review": "外國新生學雜費減免、全額獎學金（學雜全免＋每月 1 萬＋機票）都要學院推薦，不能自己申請。"
+   },
+   "renew": "學院審查，依名額；學士最多 4 年。",
+   "lang": "依系；商學院多要求中文或英文程度，報名前逐系看。",
+   "after": "2027 秋季（116）第 1 梯 9/22–10/15 報名、11/27 放榜；第 2 梯 1/19–3/4 報名。春季只收研究所。",
+   "verdict": "商管最強的國立大學之一。第 1 梯 10/15 截止、11 月就放榜，但獎學金要學院推薦。",
+   "verdictMy": "စီးပွားရေး အကောင်းဆုံး အစိုးရကျောင်း။ ပထမအကြိမ် 10/15 ပိတ်၊ နိုဝင်ဘာ ရလဒ်။",
+   "readYourself": [],
+   "bizAdmits": [],
+   "links": {
+    "apply": "https://admission.nccu.edu.tw/intladmission/index/index/applyIntladmissionSn/26",
+    "website": "http://www.nccu.edu.tw",
+    "brochureSpring": "https://drive.google.com/file/d/1RC6EOaByXy7hqe6_2ddinrZZk64UGu3k/view",
+    "brochureSpringYear": null,
+    "brochureFall": "https://drive.google.com/file/d/1RC6EOaByXy7hqe6_2ddinrZZk64UGu3k/view",
+    "brochureFallYear": null
+   },
+   "lists": [
+    {
+     "year": "115",
+     "term": "fall",
+     "title": "115學年度外國學生錄取公告",
+     "url": "https://oic.nccu.edu.tw/Post/15944"
+    },
+    {
+     "year": "113",
+     "term": "fall",
+     "title": "113學年度外國學生錄取公告",
+     "url": "https://oic.nccu.edu.tw/Post/14461"
+    }
+   ],
+   "terms": {
+    "spring": {
+     "ug": "grad",
+     "rounds": []
+    },
+    "fall": {
+     "ug": "has",
+     "rounds": [
+      {
+       "start": {
+        "status": "official",
+        "sourceYear": null,
+        "date": "2026-09-22"
+       },
+       "end": {
+        "status": "official",
+        "sourceYear": null,
+        "date": "2026-10-15"
+       },
+       "result": {
+        "status": "official",
+        "sourceYear": null,
+        "date": "2026-11-27"
+       },
+       "note": null
+      },
+      {
+       "start": {
+        "status": "official",
+        "sourceYear": null,
+        "date": "2027-01-19"
+       },
+       "end": {
+        "status": "official",
+        "sourceYear": null,
+        "date": "2027-03-04"
+       },
+       "result": null,
+       "note": null
+      }
+     ]
+    }
+   },
+   "checked": "2026-09-29"
+  },
+  {
+   "id": "0002",
+   "name": "國立清華大學",
+   "short": "清華",
+   "abbr": "NTHU",
+   "english": "National Tsing Hua University",
+   "city": "新竹市",
+   "ownership": "public",
+   "type": "university",
+   "km": 80,
+   "commute": "far",
+   "place": "新竹東區",
+   "travel": "高鐵新竹約 30 分＋公車；要搬家",
+   "tier": "P",
+   "fee": {
+    "kind": "free",
+    "amount": 0,
+    "text": "緬甸屬聯合國 LDC，簡章明文 LDC 國籍免申請費（其他國籍 1–2 系 NT$2,000）",
+    "src": "https://oga.site.nthu.edu.tw/var/file/524/1524/img/4520/140282968.pdf",
+    "year": "115-2"
+   },
+   "tuition": null,
+   "firstYearKind": "review",
+   "semesterCost": null,
+   "aid": {
+    "sure": null,
+    "review": "報名時勾選清華國際學生獎學金：學士每月 5,000＋學費／學分費減免，依審查。"
+   },
+   "renew": "學士最長 4 年，每年依校方公告成績續領。",
+   "lang": "依系；報名前逐系看。",
+   "after": "2027 春季學士 8/3–9/30 報名、12/1 放榜。往年秋季學士 11 月下旬–1 月下旬報名、4 月下旬放榜。",
+   "verdict": "頂尖國立，緬甸國籍免申請費。春季學士 9/30 截止（明天），12/1 放榜。",
+   "verdictMy": "ထိပ်တန်း အစိုးရ၊ မြန်မာနိုင်ငံသား လျှောက်လွှာကြေး အခမဲ့ (LDC)။ နွေဦး 9/30 ပိတ်။",
+   "readYourself": [
+    {
+     "label": "清華 115-2 簡章 PDF",
+     "url": "https://oga.site.nthu.edu.tw/var/file/524/1524/img/4520/140282968.pdf",
+     "why": "確認 LDC 免費名單與 A2 可報的系"
+    }
+   ],
+   "bizAdmits": [],
+   "links": {
+    "apply": "https://nthuoga-admission.vm.nthu.edu.tw/student/index/portal",
+    "website": "http://www.nthu.edu.tw",
+    "brochureSpring": "https://oga.site.nthu.edu.tw/var/file/524/1524/img/4520/140282968.pdf",
+    "brochureSpringYear": "115-2",
+    "brochureFall": "https://oga.site.nthu.edu.tw/var/file/524/1524/img/4520/471347603.pdf",
+    "brochureFallYear": "115-1"
+   },
+   "lists": [
+    {
+     "year": "114",
+     "term": "fall",
+     "title": "114秋季外國學士生錄取公告",
+     "url": "https://apply.nthu.edu.tw/en/article/151-admission-list"
+    },
+    {
+     "year": "114",
+     "term": "fall",
+     "title": "114秋季外國研究生錄取公告",
+     "url": "https://apply.nthu.edu.tw/en/article/152-admission-list"
+    }
+   ],
+   "terms": {
+    "spring": {
+     "ug": "has",
+     "rounds": [
+      {
+       "start": {
+        "status": "official",
+        "sourceYear": null,
+        "date": "2026-08-03"
+       },
+       "end": {
+        "status": "official",
+        "sourceYear": null,
+        "date": "2026-09-30"
+       },
+       "result": {
+        "status": "official",
+        "sourceYear": null,
+        "date": "2026-12-01"
+       },
+       "note": null
+      }
+     ]
+    },
+    "fall": {
+     "ug": "has",
+     "rounds": [
+      {
+       "start": {
+        "status": "historical",
+        "sourceYear": "115-1",
+        "label": "11 月下旬",
+        "sort": "2026-11-21",
+        "src": "https://oga.site.nthu.edu.tw/var/file/524/1524/img/4520/471347603.pdf"
+       },
+       "end": {
+        "status": "historical",
+        "sourceYear": "115-1",
+        "label": "1 月下旬",
+        "sort": "2027-01-21",
+        "src": "https://oga.site.nthu.edu.tw/var/file/524/1524/img/4520/471347603.pdf"
+       },
+       "result": {
+        "status": "historical",
+        "sourceYear": "115-1",
+        "label": "4 月下旬",
+        "sort": "2027-04-21",
+        "src": "https://oga.site.nthu.edu.tw/var/file/524/1524/img/4520/471347603.pdf"
+       },
+       "note": null
+      }
+     ]
+    }
+   },
+   "checked": "2026-09-29"
+  },
+  {
+   "id": "0005",
+   "name": "國立成功大學",
+   "short": "成大",
+   "abbr": "NCKU",
+   "english": "National Cheng Kung University",
+   "city": "臺南市",
+   "ownership": "public",
+   "type": "university",
+   "km": 135,
+   "commute": "far",
+   "place": "台南東區",
+   "travel": "高鐵台南約 45 分＋接駁；要搬家",
+   "tier": "P",
+   "fee": {
+    "kind": "paid",
+    "amount": 2000,
+    "text": "一次 NT$2,000，最多 3 系，不退",
+    "src": "https://oia.ncku.edu.tw/var/file/32/1032/img/5041/NCKUAdmissionProspectusforInternationalStudentsFall2026Spring2027v5-3.pdf",
+    "year": "115"
+   },
+   "tuition": null,
+   "firstYearKind": "review",
+   "semesterCost": null,
+   "aid": {
+    "sure": null,
+    "review": "優秀國際學生獎助學金（115 起學士免學費），第一年隨入學文件審查，不另填表，但不是人人有。"
+   },
+   "renew": "第 2 年起依學院規則申請。",
+   "lang": "依系。",
+   "after": "春季只收研究所。往年秋季 12 月中旬–3 月中旬報名、6 月上旬放榜。",
+   "verdict": "南部第一名校，2,000 元報 3 系很划算；6 月上旬放榜，離 ARC 到期不遠。",
+   "verdictMy": "တောင်ပိုင်း နံပါတ်၁၊ NT$2,000 ဖြင့် ဌာန ၃ ခု။ ဇွန်လ အစ ရလဒ် — ARC နှင့် နီး။",
+   "readYourself": [],
+   "bizAdmits": [],
+   "links": {
+    "apply": "https://oia.ncku.edu.tw/",
+    "website": "http://www.ncku.edu.tw",
+    "brochureSpring": "https://oia.ncku.edu.tw/var/file/32/1032/img/5041/NCKUAdmissionProspectusforInternationalStudentsFall2026Spring2027v5-3.pdf",
+    "brochureSpringYear": null,
+    "brochureFall": "https://oia.ncku.edu.tw/var/file/32/1032/img/5041/NCKUAdmissionProspectusforInternationalStudentsFall2026Spring2027v5-3.pdf",
+    "brochureFallYear": null
+   },
+   "lists": [
+    {
+     "year": "114",
+     "term": "fall",
+     "title": "114秋季外國學生錄取公告",
+     "url": "https://oia.ncku.edu.tw/p/404-1032-283207.php?Lang=zh-tw"
+    },
+    {
+     "year": "114",
+     "term": "spring",
+     "title": "114春季外國學生錄取公告",
+     "url": "https://oia.ncku.edu.tw/p/404-1032-290312.php?Lang=zh-tw"
+    },
+    {
+     "year": "114",
+     "term": "fall",
+     "title": "114秋季外國學生備取遞補公告",
+     "url": "https://oia.ncku.edu.tw/p/404-1032-283712.php?Lang=en"
+    },
+    {
+     "year": "114",
+     "term": "spring",
+     "title": "114春季外國學生備取遞補公告",
+     "url": "https://oia.ncku.edu.tw/p/404-1032-290995.php?Lang=zh-tw"
+    }
+   ],
+   "terms": {
+    "spring": {
+     "ug": "grad",
+     "rounds": []
+    },
+    "fall": {
+     "ug": "has",
+     "rounds": [
+      {
+       "start": {
+        "status": "historical",
+        "sourceYear": "115-1",
+        "label": "12 月中旬",
+        "sort": "2026-12-11",
+        "src": "https://oia.ncku.edu.tw/var/file/32/1032/img/5041/NCKUAdmissionProspectusforInternationalStudentsFall2026Spring2027v5-3.pdf"
+       },
+       "end": {
+        "status": "historical",
+        "sourceYear": "115-1",
+        "label": "3 月中旬",
+        "sort": "2027-03-11",
+        "src": "https://oia.ncku.edu.tw/var/file/32/1032/img/5041/NCKUAdmissionProspectusforInternationalStudentsFall2026Spring2027v5-3.pdf"
+       },
+       "result": {
+        "status": "historical",
+        "sourceYear": "115-1",
+        "label": "6 月上旬",
+        "sort": "2027-06-01",
+        "src": "https://oia.ncku.edu.tw/var/file/32/1032/img/5041/NCKUAdmissionProspectusforInternationalStudentsFall2026Spring2027v5-3.pdf"
+       },
+       "note": null
+      }
+     ]
+    }
+   },
+   "checked": "2026-09-29"
+  },
+  {
+   "id": "0007",
+   "name": "國立陽明交通大學",
+   "short": "陽明交大",
+   "abbr": "NYCU",
+   "english": "National Yang Ming Chiao Tung University",
+   "city": "新竹市",
+   "ownership": "public",
+   "type": "university",
+   "km": 79,
+   "commute": "far",
+   "place": "新竹東區（光復校區）",
+   "travel": "高鐵新竹約 30 分＋公車；要搬家",
+   "tier": "P",
+   "fee": {
+    "kind": "paid",
+    "amount": 2000,
+    "text": "每系 NT$2,000，不退（醫學院等少數單位免收）",
+    "src": "https://oia.nycu.edu.tw/oia/en/app/artwebsite/view?id=788&module=artwebsite&serno=26969921-df03-4ec7-8ad1-f360e404c507",
+    "year": "現行"
+   },
+   "tuition": null,
+   "firstYearKind": "review",
+   "semesterCost": null,
+   "aid": {
+    "sure": null,
+    "review": "優秀外國新生獎學金：學雜／學分全免或比照本國生，另可能有生活津貼，委員會依預算核給。"
+   },
+   "renew": "學士 GPA 3.0、操行 A，要修華語課。",
+   "lang": "依系。",
+   "after": "春季只收研究所。往年秋季 12 月中旬–3 月中旬報名、5 月中旬放榜。",
+   "verdict": "理工名校，管理學院也不錯；5 月中放榜。每系 2,000 元。",
+   "verdictMy": "နာမည်ကြီး အစိုးရ၊ မေလ ရလဒ်။ ဌာနတစ်ခု NT$2,000။",
+   "readYourself": [],
+   "bizAdmits": [],
+   "links": {
+    "apply": "https://oia.nycu.edu.tw/oia/en/app/folder/782",
+    "website": "http://www.nycu.edu.tw",
+    "brochureSpring": null,
+    "brochureSpringYear": null,
+    "brochureFall": null,
+    "brochureFallYear": null
+   },
+   "lists": [
+    {
+     "year": "115",
+     "term": "fall",
+     "title": "115秋季一般外國學位生錄取結果（官方附件1）",
+     "url": "https://oia.nycu.edu.tw/oia/en/app/data/doc?module=nycu0012&detailNo=1524597567847927808&type=s"
+    },
+    {
+     "year": "115",
+     "term": "fall",
+     "title": "115秋季一般外國學位生錄取結果（官方附件2）",
+     "url": "https://oia.nycu.edu.tw/oia/en/app/data/doc?module=nycu0012&detailNo=1524597232601403392&type=s"
+    }
+   ],
+   "terms": {
+    "spring": {
+     "ug": "grad",
+     "rounds": []
+    },
+    "fall": {
+     "ug": "has",
+     "rounds": [
+      {
+       "start": {
+        "status": "historical",
+        "sourceYear": "115-1",
+        "label": "12 月中旬",
+        "sort": "2026-12-11",
+        "src": "https://www.nycu.edu.tw/oia/en/app/artwebsite/view?id=785&module=artwebsite&serno=07d9ede2-e896-4efe-a671-2b86dbc2a0d8"
+       },
+       "end": {
+        "status": "historical",
+        "sourceYear": "115-1",
+        "label": "3 月中旬",
+        "sort": "2027-03-11",
+        "src": "https://www.nycu.edu.tw/oia/en/app/artwebsite/view?id=785&module=artwebsite&serno=07d9ede2-e896-4efe-a671-2b86dbc2a0d8"
+       },
+       "result": {
+        "status": "historical",
+        "sourceYear": "115-1",
+        "label": "約5月中旬",
+        "sort": "2027-05-15",
+        "src": "https://www.nycu.edu.tw/oia/en/app/artwebsite/view?id=785&module=artwebsite&serno=07d9ede2-e896-4efe-a671-2b86dbc2a0d8"
+       },
+       "note": null
+      }
+     ]
+    }
+   },
+   "checked": "2026-09-29"
+  },
+  {
+   "id": "0004",
+   "name": "國立臺灣師範大學",
+   "short": "臺師大",
+   "abbr": "NTNU",
+   "english": "National Taiwan Normal University",
+   "city": "臺北市",
+   "ownership": "public",
+   "type": "university",
+   "km": 130,
+   "commute": "far",
+   "place": "台北大安",
+   "travel": "高鐵約 1 小時＋捷運；要搬家",
+   "tier": "P",
+   "fee": {
+    "kind": "unknown",
+    "text": "全校簡章讀不到；只有一個研究所 FAQ 寫 NT$1,500，不能套全校",
+    "src": "https://bds.oia.ntnu.edu.tw/bds/en/apply",
+    "year": "115"
+   },
+   "tuition": null,
+   "firstYearKind": "review",
+   "semesterCost": null,
+   "aid": {
+    "sure": null,
+    "review": "學士：第一學年免學雜費，但要系所審查推薦，不是錄取就有。"
+   },
+   "renew": "只補第一學年。",
+   "lang": "依系。",
+   "after": "春季 9/14 已截止。往年秋季第 1 梯 11 月上旬–12 月中旬報名、3 月上旬放榜；第 2 梯 1 月中旬–3 月報名、5 月上旬放榜。",
+   "verdict": "台北名校，第一年學雜費有機會全免（要系推薦）。申請費沒查到。",
+   "verdictMy": "ထိုင်ပေ နာမည်ကြီး၊ ပထမနှစ် ကျောင်းလခ အခမဲ့ ဖြစ်နိုင် (ဌာန ထောက်ခံ)။ ကြေး မသိ။",
+   "readYourself": [
+    {
+     "label": "臺師大外國學生申請系統",
+     "url": "https://bds.oia.ntnu.edu.tw/bds/en/apply",
+     "why": "申請費要在系統或簡章自己確認"
+    }
+   ],
+   "bizAdmits": [],
+   "links": {
+    "apply": "https://bds.oia.ntnu.edu.tw/bds/en/apply/application/dashboard",
+    "website": "http://www.ntnu.edu.tw",
+    "brochureSpring": "https://www.cfs.ntnu.edu.tw/index.php/admission_foreign/",
+    "brochureSpringYear": "115-2",
+    "brochureFall": "https://www.cfs.ntnu.edu.tw/index.php/admission_foreign/",
+    "brochureFallYear": "115-1"
+   },
+   "lists": [],
+   "terms": {
+    "spring": {
+     "ug": "has",
+     "rounds": [
+      {
+       "start": {
+        "status": "official",
+        "sourceYear": "115-2",
+        "date": "2026-08-03",
+        "src": "https://cantor.math.ntnu.edu.tw/index.php/en/admissions/international-students/"
+       },
+       "end": {
+        "status": "official",
+        "sourceYear": "115-2",
+        "date": "2026-09-14",
+        "src": "https://cantor.math.ntnu.edu.tw/index.php/en/admissions/international-students/"
+       },
+       "result": {
+        "status": "official",
+        "sourceYear": "115-2",
+        "date": "2026-11-20",
+        "src": "https://cantor.math.ntnu.edu.tw/index.php/en/admissions/international-students/"
+       },
+       "note": null
+      }
+     ]
+    },
+    "fall": {
+     "ug": "has",
+     "rounds": [
+      {
+       "start": {
+        "status": "historical",
+        "sourceYear": "115-1",
+        "label": "11 月上旬",
+        "sort": "2026-11-01",
+        "src": "https://cantor.math.ntnu.edu.tw/index.php/en/admissions/international-students/"
+       },
+       "end": {
+        "status": "historical",
+        "sourceYear": "115-1",
+        "label": "12 月中旬",
+        "sort": "2026-12-11",
+        "src": "https://cantor.math.ntnu.edu.tw/index.php/en/admissions/international-students/"
+       },
+       "result": {
+        "status": "historical",
+        "sourceYear": "115-1",
+        "label": "3 月上旬",
+        "sort": "2027-03-01",
+        "src": "https://cantor.math.ntnu.edu.tw/index.php/en/admissions/international-students/"
+       },
+       "note": "數學系官方轉載全校時程；個別系所延長期限請另查。"
+      },
+      {
+       "start": {
+        "status": "historical",
+        "sourceYear": "115-1",
+        "label": "1 月中旬",
+        "sort": "2027-01-11",
+        "src": "https://cantor.math.ntnu.edu.tw/index.php/en/admissions/international-students/"
+       },
+       "end": {
+        "status": "conflict",
+        "sourceYear": "115-1",
+        "label": "來源有差異"
+       },
+       "result": {
+        "status": "historical",
+        "sourceYear": "115-1",
+        "label": "5 月上旬",
+        "sort": "2027-05-01",
+        "src": "https://cantor.math.ntnu.edu.tw/index.php/en/admissions/international-students/"
+       },
+       "note": "中央時程轉載3/2截止；IHRD系所頁另列3/16，不推定全校延長。"
+      }
+     ]
+    }
+   },
+   "checked": "2026-09-29"
+  },
+  {
+   "id": "0022",
+   "name": "國立臺灣科技大學",
+   "short": "臺科",
+   "abbr": "NTUST",
+   "english": "National Taiwan University of Science and Technology",
+   "city": "臺北市",
+   "ownership": "public",
+   "type": "technology",
+   "km": 130,
+   "commute": "far",
+   "place": "台北大安（公館）",
+   "travel": "高鐵約 1 小時＋捷運；要搬家",
+   "tier": "P",
+   "fee": {
+    "kind": "paid",
+    "amount": 1000,
+    "text": "每系 NT$1,000（US$30）",
+    "src": "https://admission-r.ntust.edu.tw/p/450-1052-148283%2Cc0.php?Lang=en",
+    "year": "115"
+   },
+   "tuition": null,
+   "firstYearKind": "none",
+   "semesterCost": null,
+   "aid": {
+    "sure": null,
+    "review": null
+   },
+   "renew": "官方公告：學士不提供臺科大獎學金。",
+   "lang": "依系。",
+   "after": "春季只收研究所。往年秋季 1 月上旬–3 月中旬報名、5 月下旬放榜。",
+   "verdict": "科大第一名，但學士沒有學校獎學金，學費全自付。",
+   "verdictMy": "နည်းပညာ နံပါတ်၁၊ ဘွဲ့ကြို ပညာသင်ဆု မရှိ။",
+   "readYourself": [],
+   "bizAdmits": [],
+   "links": {
+    "apply": "https://admissions.ntust.edu.tw/graduateapp",
+    "website": "http://www.ntust.edu.tw",
+    "brochureSpring": "https://admission-r.ntust.edu.tw/p/450-1052-148283%2Cc0.php?Lang=en",
+    "brochureSpringYear": "115-2",
+    "brochureFall": "https://admission-r.ntust.edu.tw/p/412-1052-9572.php?Lang=en",
+    "brochureFallYear": "115-1"
+   },
+   "lists": [],
+   "terms": {
+    "spring": {
+     "ug": "grad",
+     "rounds": []
+    },
+    "fall": {
+     "ug": "has",
+     "rounds": [
+      {
+       "start": {
+        "status": "historical",
+        "sourceYear": "115-1",
+        "label": "1 月上旬",
+        "sort": "2027-01-01",
+        "src": "https://admission-r.ntust.edu.tw/p/412-1052-9572.php?Lang=en"
+       },
+       "end": {
+        "status": "historical",
+        "sourceYear": "115-1",
+        "label": "3 月中旬",
+        "sort": "2027-03-11",
+        "src": "https://admission-r.ntust.edu.tw/p/412-1052-9572.php?Lang=en"
+       },
+       "result": {
+        "status": "historical",
+        "sourceYear": "115-1",
+        "label": "5 月下旬",
+        "sort": "2027-05-21",
+        "src": "https://admission-r.ntust.edu.tw/p/412-1052-9572.php?Lang=en"
+       },
+       "note": "6/24 為最終錄取結果，5/27 不代表已取得正式入學許可。"
+      },
+      {
+       "start": null,
+       "end": null,
+       "result": {
+        "status": "historical",
+        "sourceYear": "115-1",
+        "label": "6 月下旬",
+        "sort": "2027-06-21",
+        "src": "https://admission-r.ntust.edu.tw/p/412-1052-9572.php?Lang=en"
+       },
+       "note": null
+      }
+     ]
+    }
+   },
+   "checked": "2026-09-29"
+  },
+  {
+   "id": "0019",
+   "name": "國立高雄大學",
+   "short": "高大",
+   "abbr": "NUK",
+   "english": "National University of Kaohsiung",
+   "city": "高雄市",
+   "ownership": "public",
+   "type": "university",
+   "km": 161,
+   "commute": "far",
+   "place": "高雄楠梓",
+   "travel": "高鐵左營約 1 小時＋轉車；要搬家",
+   "tier": "B",
+   "fee": {
+    "kind": "free",
+    "amount": 0,
+    "text": "2027 春秋簡章明載報名費免費",
+    "src": "https://interadmission.nuk.edu.tw/p/412-1063-4996.php?Lang=zh-tw",
+    "year": "115-2／116-1"
+   },
+   "tuition": null,
+   "firstYearKind": "review",
+   "semesterCost": null,
+   "aid": {
+    "sure": null,
+    "review": "新生一次性部分學雜費補助，約 20–50%，依核定。"
+   },
+   "renew": "在校生每年 3 月申請 5,000–20,000 元（一次），學士至少 6 學分、65 分。",
+   "lang": "中文授課原則 TOCFL A2。",
+   "after": "2027 春季 10/8–11/2 報名、12/17 放榜（正式）。2027 秋季 2/25–4/23 報名、6/15 放榜（正式）。",
+   "verdict": "免申請費、A2 可以、春秋日期都已正式公告；春季 12 月就放榜。缺點是在高雄。",
+   "verdictMy": "လျှောက်လွှာကြေး အခမဲ့၊ A2 ရ၊ နွေဦး 10/8–11/2 လျှောက်၊ 12/17 ရလဒ်။ ကောင်းကျိုးမဲ့ — ကောင်ရှုံး။",
+   "readYourself": [],
+   "bizAdmits": [],
+   "links": {
+    "apply": "https://interadmission.nuk.edu.tw/p/412-1063-4996.php?Lang=zh-tw",
+    "website": "http://www.nuk.edu.tw",
+    "brochureSpring": "https://interadmission.nuk.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9MemcwTDNCMFlWODVNVE14Tmw4ME9ERTVNRFk0WHpVMk56azJMbkJrWmc9PQ==&fname=0054ROB0RKSSTXHHGGXS54XSYWMOA135OPQKYSGCNP5110A5YSA4YS54WWECTTOKNO00XTZXVSZSMO20FCNKIC20B0FGXSHCUTXT31RONKTSWXA4CCPOKLRKLOPOSSZX04NOFC34TWMO5025PKJCUSYSMLA1LOVSROUSUSQO20SW34XXICWWUTNPIG04A434ZS30LKLKYSMOHGXS00GDLK40KPYWZWA020POVWA0RK44QLXXHCLKJGIGTWMOZTXWQO34B1HGTXNPWSPKNKROQO54WWKKKLOKZTPOUT00DGB0ROGDQOOKOOXS50B0LKB1IHXTXW40LKMKXWVWQOOKCDUSTWPOJDKKA4JCQKSXPKJCDCGC14B0MO104151VSCCYSDCZSDGOOKK1450RKPOHD10GG04A0HCFCOKWTRLWSNOQOHCCC05SSB5OKB0RKEG00SSROUWKK04POPO",
+    "brochureSpringYear": "115-2",
+    "brochureFall": "https://interadmission.nuk.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9MemcwTDNCMFlWODVNVE14Tmw4ME9ERTVNRFk0WHpVMk56azJMbkJrWmc9PQ==&fname=0054ROB0RKSSTXHHGGXS54XSYWMOA135OPQKYSGCNP5110A5YSA4YS54WWECTTOKNO00XTZXVSZSMO20FCNKIC20B0FGXSHCUTXT31RONKTSWXA4CCPOKLRKLOPOSSZX04NOFC34TWMO5025PKJCUSYSMLA1LOVSROUSUSQO20SW34XXICWWUTNPIG04A434ZS30LKLKYSMOHGXS00GDLK40KPYWZWA020POVWA0RK44QLXXHCLKJGIGTWMOZTXWQO34B1HGTXNPWSPKNKROQO54WWKKKLOKZTPOUT00DGB0ROGDQOOKOOXS50B0LKB1IHXTXW40LKMKXWVWQOOKCDUSTWPOJDKKA4JCQKSXPKJCDCGC14B0MO104151VSCCYSDCZSDGOOKK1450RKPOHD10GG04A0HCFCOKWTRLWSNOQOHCCC05SSB5OKB0RKEG00SSROUWKK04POPO",
+    "brochureFallYear": "116-1"
+   },
+   "lists": [],
+   "terms": {
+    "spring": {
+     "ug": "has",
+     "rounds": [
+      {
+       "start": {
+        "status": "official",
+        "sourceYear": "115-2",
+        "date": "2026-10-08",
+        "src": "https://interadmission.nuk.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9MemcwTDNCMFlWODVNVE14Tmw4ME9ERTVNRFk0WHpVMk56azJMbkJrWmc9PQ==&fname=0054ROB0RKSSTXHHGGXS54XSYWMOA135OPQKYSGCNP5110A5YSA4YS54WWECTTOKNO00XTZXVSZSMO20FCNKIC20B0FGXSHCUTXT31RONKTSWXA4CCPOKLRKLOPOSSZX04NOFC34TWMO5025PKJCUSYSMLA1LOVSROUSUSQO20SW34XXICWWUTNPIG04A434ZS30LKLKYSMOHGXS00GDLK40KPYWZWA020POVWA0RK44QLXXHCLKJGIGTWMOZTXWQO34B1HGTXNPWSPKNKROQO54WWKKKLOKZTPOUT00DGB0ROGDQOOKOOXS50B0LKB1IHXTXW40LKMKXWVWQOOKCDUSTWPOJDKKA4JCQKSXPKJCDCGC14B0MO104151VSCCYSDCZSDGOOKK1450RKPOHD10GG04A0HCFCOKWTRLWSNOQOHCCC05SSB5OKB0RKEG00SSROUWKK04POPO"
+       },
+       "end": {
+        "status": "official",
+        "sourceYear": "115-2",
+        "date": "2026-11-02",
+        "src": "https://interadmission.nuk.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9MemcwTDNCMFlWODVNVE14Tmw4ME9ERTVNRFk0WHpVMk56azJMbkJrWmc9PQ==&fname=0054ROB0RKSSTXHHGGXS54XSYWMOA135OPQKYSGCNP5110A5YSA4YS54WWECTTOKNO00XTZXVSZSMO20FCNKIC20B0FGXSHCUTXT31RONKTSWXA4CCPOKLRKLOPOSSZX04NOFC34TWMO5025PKJCUSYSMLA1LOVSROUSUSQO20SW34XXICWWUTNPIG04A434ZS30LKLKYSMOHGXS00GDLK40KPYWZWA020POVWA0RK44QLXXHCLKJGIGTWMOZTXWQO34B1HGTXNPWSPKNKROQO54WWKKKLOKZTPOUT00DGB0ROGDQOOKOOXS50B0LKB1IHXTXW40LKMKXWVWQOOKCDUSTWPOJDKKA4JCQKSXPKJCDCGC14B0MO104151VSCCYSDCZSDGOOKK1450RKPOHD10GG04A0HCFCOKWTRLWSNOQOHCCC05SSB5OKB0RKEG00SSROUWKK04POPO"
+       },
+       "result": {
+        "status": "official",
+        "sourceYear": "115-2",
+        "date": "2026-12-17",
+        "src": "https://interadmission.nuk.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9MemcwTDNCMFlWODVNVE14Tmw4ME9ERTVNRFk0WHpVMk56azJMbkJrWmc9PQ==&fname=0054ROB0RKSSTXHHGGXS54XSYWMOA135OPQKYSGCNP5110A5YSA4YS54WWECTTOKNO00XTZXVSZSMO20FCNKIC20B0FGXSHCUTXT31RONKTSWXA4CCPOKLRKLOPOSSZX04NOFC34TWMO5025PKJCUSYSMLA1LOVSROUSUSQO20SW34XXICWWUTNPIG04A434ZS30LKLKYSMOHGXS00GDLK40KPYWZWA020POVWA0RK44QLXXHCLKJGIGTWMOZTXWQO34B1HGTXNPWSPKNKROQO54WWKKKLOKZTPOUT00DGB0ROGDQOOKOOXS50B0LKB1IHXTXW40LKMKXWVWQOOKCDUSTWPOJDKKA4JCQKSXPKJCDCGC14B0MO104151VSCCYSDCZSDGOOKK1450RKPOHD10GG04A0HCFCOKWTRLWSNOQOHCCC05SSB5OKB0RKEG00SSROUWKK04POPO"
+       },
+       "note": null
+      }
+     ]
+    },
+    "fall": {
+     "ug": "has",
+     "rounds": [
+      {
+       "start": {
+        "status": "official",
+        "sourceYear": "116-1",
+        "date": "2027-02-25",
+        "src": "https://interadmission.nuk.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9MemcwTDNCMFlWODVNVE14Tmw4ME9ERTVNRFk0WHpVMk56azJMbkJrWmc9PQ==&fname=0054ROB0RKSSTXHHGGXS54XSYWMOA135OPQKYSGCNP5110A5YSA4YS54WWECTTOKNO00XTZXVSZSMO20FCNKIC20B0FGXSHCUTXT31RONKTSWXA4CCPOKLRKLOPOSSZX04NOFC34TWMO5025PKJCUSYSMLA1LOVSROUSUSQO20SW34XXICWWUTNPIG04A434ZS30LKLKYSMOHGXS00GDLK40KPYWZWA020POVWA0RK44QLXXHCLKJGIGTWMOZTXWQO34B1HGTXNPWSPKNKROQO54WWKKKLOKZTPOUT00DGB0ROGDQOOKOOXS50B0LKB1IHXTXW40LKMKXWVWQOOKCDUSTWPOJDKKA4JCQKSXPKJCDCGC14B0MO104151VSCCYSDCZSDGOOKK1450RKPOHD10GG04A0HCFCOKWTRLWSNOQOHCCC05SSB5OKB0RKEG00SSROUWKK04POPO"
+       },
+       "end": {
+        "status": "official",
+        "sourceYear": "116-1",
+        "date": "2027-04-23",
+        "src": "https://interadmission.nuk.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9MemcwTDNCMFlWODVNVE14Tmw4ME9ERTVNRFk0WHpVMk56azJMbkJrWmc9PQ==&fname=0054ROB0RKSSTXHHGGXS54XSYWMOA135OPQKYSGCNP5110A5YSA4YS54WWECTTOKNO00XTZXVSZSMO20FCNKIC20B0FGXSHCUTXT31RONKTSWXA4CCPOKLRKLOPOSSZX04NOFC34TWMO5025PKJCUSYSMLA1LOVSROUSUSQO20SW34XXICWWUTNPIG04A434ZS30LKLKYSMOHGXS00GDLK40KPYWZWA020POVWA0RK44QLXXHCLKJGIGTWMOZTXWQO34B1HGTXNPWSPKNKROQO54WWKKKLOKZTPOUT00DGB0ROGDQOOKOOXS50B0LKB1IHXTXW40LKMKXWVWQOOKCDUSTWPOJDKKA4JCQKSXPKJCDCGC14B0MO104151VSCCYSDCZSDGOOKK1450RKPOHD10GG04A0HCFCOKWTRLWSNOQOHCCC05SSB5OKB0RKEG00SSROUWKK04POPO"
+       },
+       "result": {
+        "status": "official",
+        "sourceYear": "116-1",
+        "date": "2027-06-15",
+        "src": "https://interadmission.nuk.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9MemcwTDNCMFlWODVNVE14Tmw4ME9ERTVNRFk0WHpVMk56azJMbkJrWmc9PQ==&fname=0054ROB0RKSSTXHHGGXS54XSYWMOA135OPQKYSGCNP5110A5YSA4YS54WWECTTOKNO00XTZXVSZSMO20FCNKIC20B0FGXSHCUTXT31RONKTSWXA4CCPOKLRKLOPOSSZX04NOFC34TWMO5025PKJCUSYSMLA1LOVSROUSUSQO20SW34XXICWWUTNPIG04A434ZS30LKLKYSMOHGXS00GDLK40KPYWZWA020POVWA0RK44QLXXHCLKJGIGTWMOZTXWQO34B1HGTXNPWSPKNKROQO54WWKKKLOKZTPOUT00DGB0ROGDQOOKOOXS50B0LKB1IHXTXW40LKMKXWVWQOOKCDUSTWPOJDKKA4JCQKSXPKJCDCGC14B0MO104151VSCCYSDCZSDGOOKK1450RKPOHD10GG04A0HCFCOKWTRLWSNOQOHCCC05SSB5OKB0RKEG00SSROUWKK04POPO"
+       },
+       "note": null
+      }
+     ]
+    }
+   },
+   "checked": "2026-09-29"
+  },
+  {
+   "id": "0052",
+   "name": "國立屏東大學",
+   "short": "屏大",
+   "abbr": "NPTU",
+   "english": "National Pingtung University",
+   "city": "屏東縣",
+   "ownership": "public",
+   "type": "university",
+   "km": 164,
+   "commute": "far",
+   "place": "屏東市",
+   "travel": "高鐵左營＋台鐵約 1 小時半；要搬家",
+   "tier": "B",
+   "fee": {
+    "kind": "free",
+    "amount": 0,
+    "text": "2026–2027 簡章第 18 頁「免申請費用／NO APPLICATION FEE」",
+    "src": "https://oiais.nptu.edu.tw/var/file/90/1090/img/2026-2027AdmissionGuide.pdf",
+    "year": "115"
+   },
+   "tuition": null,
+   "firstYearKind": "review",
+   "semesterCost": null,
+   "aid": {
+    "sure": null,
+    "review": "學士新生三選一：一學年學雜費同額、或每月 4,000、或一學年住宿費，依核定。"
+   },
+   "renew": "前學年排名前 50%，每次一年、最多 4 年。",
+   "lang": "中文授課至少 CEFR A2（A2 可以）。只收線上申請。",
+   "after": "2027 春季截止 10/15、11/30 放榜（正式）。往年秋季 4 月中旬截止、6 月中旬放榜。",
+   "verdict": "免申請費、A2 可報、春季 10/15 截止 11 月底放榜，最快拿到入學許可的選項之一。缺點是遠。",
+   "verdictMy": "လျှောက်လွှာကြေး အခမဲ့၊ A2 ရ၊ နွေဦး 10/15 ပိတ်၊ 11/30 ရလဒ်။ ဝေး။",
+   "readYourself": [],
+   "bizAdmits": [],
+   "links": {
+    "apply": "https://oiais.nptu.edu.tw/p/412-1090-12629.php?Lang=zh-tw",
+    "website": "http://www.nptu.edu.tw",
+    "brochureSpring": "https://oiais.nptu.edu.tw/var/file/90/1090/img/2026-2027AdmissionGuide.pdf",
+    "brochureSpringYear": "115-2",
+    "brochureFall": "https://oiais.nptu.edu.tw/var/file/90/1090/img/2026-2027AdmissionGuide.pdf",
+    "brochureFallYear": "115-1"
+   },
+   "lists": [
+    {
+     "year": "114",
+     "term": "spring",
+     "title": "114春季外國學生錄取公告",
+     "url": "https://oiais.nptu.edu.tw/p/406-1090-189648,r3222.php?Lang=zh-tw"
+    },
+    {
+     "year": "114",
+     "term": "fall",
+     "title": "114秋季外國學生原始榜單",
+     "url": "https://oiais.nptu.edu.tw/var/file/90/1090/img/381103840.pdf"
+    }
+   ],
+   "terms": {
+    "spring": {
+     "ug": "has",
+     "rounds": [
+      {
+       "start": null,
+       "end": {
+        "status": "official",
+        "sourceYear": "115-2",
+        "date": "2026-10-15",
+        "src": "https://oiais.nptu.edu.tw/var/file/90/1090/img/2026-2027AdmissionGuide.pdf"
+       },
+       "result": {
+        "status": "official",
+        "sourceYear": "115-2",
+        "date": "2026-11-30",
+        "src": "https://oiais.nptu.edu.tw/var/file/90/1090/img/2026-2027AdmissionGuide.pdf"
+       },
+       "note": null
+      }
+     ]
+    },
+    "fall": {
+     "ug": "has",
+     "rounds": [
+      {
+       "start": null,
+       "end": {
+        "status": "historical",
+        "sourceYear": "115-1",
+        "label": "4 月中旬",
+        "sort": "2027-04-11",
+        "src": "https://oiais.nptu.edu.tw/var/file/90/1090/img/2026-2027AdmissionGuide.pdf"
+       },
+       "result": {
+        "status": "historical",
+        "sourceYear": "115-1",
+        "label": "6 月中旬",
+        "sort": "2027-06-11",
+        "src": "https://oiais.nptu.edu.tw/var/file/90/1090/img/2026-2027AdmissionGuide.pdf"
+       },
+       "note": null
+      }
+     ]
+    }
+   },
+   "checked": "2026-09-29"
+  },
+  {
+   "id": "0023",
+   "name": "國立雲林科技大學",
+   "short": "雲科",
+   "abbr": "YunTech",
+   "english": "",
+   "city": "雲林縣",
+   "ownership": "public",
+   "type": "technology",
+   "km": 52,
+   "commute": "near",
+   "place": "雲林斗六",
+   "travel": "火車台中→斗六約 50 分；可通勤但很累",
+   "tier": "B",
+   "fee": {
+    "kind": "paid",
+    "amount": 1000,
+    "text": "NT$1,000（US$40），不退",
+    "src": "https://aax.yuntech.edu.tw/",
+    "year": "115"
+   },
+   "tuition": null,
+   "firstYearKind": "review",
+   "semesterCost": null,
+   "aid": {
+    "sure": null,
+    "review": "優秀外籍學生獎學金：學雜／學分費全免、1/2 或 1/4，隨入學申請審查。"
+   },
+   "renew": "每次 1 年，操行 80、各科 75；升 2 年級要 TOCFL A1、升 3 年級要 A2，導師推薦。",
+   "lang": "依系。",
+   "after": "春季只收研究所。往年秋季 3 月上旬–4 月中旬報名、6 月上旬放榜。",
+   "verdict": "離台中不遠的國立科大，管理學院強；6 月上旬放榜，時間偏緊。",
+   "verdictMy": "ထိုင်ချုံးနှင့် မဝေး၊ စီမံခန့်ခွဲမှု ကောင်း။ ဇွန်လ အစ ရလဒ်။",
+   "readYourself": [],
+   "bizAdmits": [],
+   "links": {
+    "apply": "https://aax.yuntech.edu.tw/",
+    "website": "http://www.yuntech.edu.tw",
+    "brochureSpring": "https://aax.yuntech.edu.tw/images/content/%E5%9C%8B%E9%9A%9B%E5%AD%B8%E7%94%9F%E7%94%B3%E8%AB%8B%E5%85%A5%E5%AD%B8/115/2027%E5%B9%B4%E6%98%A5%E5%AD%A3%E7%8F%AD%E5%A4%96%E5%9C%8B%E5%AD%B8%E7%94%9F%E7%94%B3%E8%AB%8B%E5%85%A5%E5%AD%B8%E7%B0%A1%E7%AB%A0%202027%20Spring%20Application%20Guide.pdf",
+    "brochureSpringYear": "115-2",
+    "brochureFall": "https://aax.yuntech.edu.tw/images/content/%E5%9C%8B%E9%9A%9B%E5%AD%B8%E7%94%9F%E7%94%B3%E8%AB%8B%E5%85%A5%E5%AD%B8/115/2026%E5%B9%B4%E7%A7%8B%E5%AD%A3%E7%8F%AD%E5%A4%96%E5%9C%8B%E5%AD%B8%E7%94%9F%E7%94%B3%E8%AB%8B%E5%85%A5%E5%AD%B8%E7%B0%A1%E7%AB%A0%202026%20Fall%20Application%20Guide%20.pdf",
+    "brochureFallYear": "115-1"
+   },
+   "lists": [
+    {
+     "year": "115",
+     "term": "fall",
+     "title": "115秋季一般外國學生官方原始榜單",
+     "url": "https://aax.yuntech.edu.tw/images/content/國際學生申請入學/115/2026年秋季班外國學生錄取榜單Admission List.pdf"
+    },
+    {
+     "year": "114",
+     "term": "spring",
+     "title": "114春季一般外國學生官方原始榜單",
+     "url": "https://aax.yuntech.edu.tw/images/content/%E5%9C%8B%E9%9A%9B%E5%AD%B8%E7%94%9F%E7%94%B3%E8%AB%8B%E5%85%A5%E5%AD%B8/114/2026%E5%B9%B4%E6%98%A5%E5%AD%A3%E7%8F%AD%E5%A4%96%E5%9C%8B%E5%AD%B8%E7%94%9F%E9%8C%84%E5%8F%96%E6%A6%9C%E5%96%AEAdmission%20List.pdf"
+    },
+    {
+     "year": "114",
+     "term": "fall",
+     "title": "114秋季一般外國學生官方原始榜單",
+     "url": "https://aax.yuntech.edu.tw/images/content/%E5%9C%8B%E9%9A%9B%E5%AD%B8%E7%94%9F%E7%94%B3%E8%AB%8B%E5%85%A5%E5%AD%B8/114/2025%E5%B9%B4%E7%A7%8B%E5%AD%A3%E7%8F%AD%E5%A4%96%E5%9C%8B%E5%AD%B8%E7%94%9F%E9%8C%84%E5%8F%96%E6%A6%9C%E5%96%AEAdmission%20List.pdf"
+    },
+    {
+     "year": "113",
+     "term": "spring",
+     "title": "113春季一般外國學生官方原始榜單",
+     "url": "https://aax.yuntech.edu.tw/images/content/%E5%9C%8B%E9%9A%9B%E5%AD%B8%E7%94%9F%E7%94%B3%E8%AB%8B%E5%85%A5%E5%AD%B8/113/2025%E5%B9%B4%E6%98%A5%E5%AD%A3%E7%8F%AD%E5%A4%96%E5%9C%8B%E5%AD%B8%E7%94%9F%E9%8C%84%E5%8F%96%E6%A6%9C%E5%96%AEAdmission%20List.pdf"
+    },
+    {
+     "year": "113",
+     "term": "fall",
+     "title": "113秋季一般外國學生官方原始榜單",
+     "url": "https://aax.yuntech.edu.tw/images/content/%E5%9C%8B%E9%9A%9B%E5%AD%B8%E7%94%9F%E7%94%B3%E8%AB%8B%E5%85%A5%E5%AD%B8/113/2024%E5%B9%B4%E7%A7%8B%E5%AD%A3%E5%A4%96%E5%9C%8B%E5%AD%B8%E7%94%9F%E9%8C%84%E5%8F%96%E6%A6%9C%E5%96%AEAdmission%20List%20%28revised%29.pdf"
+    },
+    {
+     "year": "112",
+     "term": "spring",
+     "title": "112春季一般外國學生官方原始榜單",
+     "url": "https://aax.yuntech.edu.tw/images/content/%E5%9C%8B%E9%9A%9B%E5%AD%B8%E7%94%9F%E7%94%B3%E8%AB%8B%E5%85%A5%E5%AD%B8/112/2024%E5%B9%B4%E6%98%A5%E5%AD%A3%E5%A4%96%E5%9C%8B%E5%AD%B8%E7%94%9F%E9%8C%84%E5%8F%96%E6%A6%9C%E5%96%AEAdmission%20List.pdf"
+    },
+    {
+     "year": "112",
+     "term": "fall",
+     "title": "112秋季一般外國學生官方原始榜單",
+     "url": "https://aax.yuntech.edu.tw/images/content/%E5%9C%8B%E9%9A%9B%E5%AD%B8%E7%94%9F%E7%94%B3%E8%AB%8B%E5%85%A5%E5%AD%B8/112/2023%E5%B9%B4%E7%A7%8B%E5%AD%A3%E7%8F%AD%E5%A4%96%E5%9C%8B%E5%AD%B8%E7%94%9F%E9%8C%84%E5%8F%96%E6%A6%9C%E5%96%AEAdmission%20List.pdf"
+    }
+   ],
+   "terms": {
+    "spring": {
+     "ug": "grad",
+     "rounds": []
+    },
+    "fall": {
+     "ug": "has",
+     "rounds": [
+      {
+       "start": {
+        "status": "historical",
+        "sourceYear": "115-1",
+        "label": "3 月上旬",
+        "sort": "2027-03-01",
+        "src": "https://aax.yuntech.edu.tw/images/content/%E5%9C%8B%E9%9A%9B%E5%AD%B8%E7%94%9F%E7%94%B3%E8%AB%8B%E5%85%A5%E5%AD%B8/115/2026%E5%B9%B4%E7%A7%8B%E5%AD%A3%E7%8F%AD%E5%A4%96%E5%9C%8B%E5%AD%B8%E7%94%9F%E7%94%B3%E8%AB%8B%E5%85%A5%E5%AD%B8%E7%B0%A1%E7%AB%A0%202026%20Fall%20Application%20Guide%20.pdf"
+       },
+       "end": {
+        "status": "historical",
+        "sourceYear": "115-1",
+        "label": "4 月中旬",
+        "sort": "2027-04-11",
+        "src": "https://aax.yuntech.edu.tw/images/content/%E5%9C%8B%E9%9A%9B%E5%AD%B8%E7%94%9F%E7%94%B3%E8%AB%8B%E5%85%A5%E5%AD%B8/115/2026%E5%B9%B4%E7%A7%8B%E5%AD%A3%E7%8F%AD%E5%A4%96%E5%9C%8B%E5%AD%B8%E7%94%9F%E7%94%B3%E8%AB%8B%E5%85%A5%E5%AD%B8%E7%B0%A1%E7%AB%A0%202026%20Fall%20Application%20Guide%20.pdf"
+       },
+       "result": {
+        "status": "historical",
+        "sourceYear": "115-1",
+        "label": "6 月上旬",
+        "sort": "2027-06-01",
+        "src": "https://aax.yuntech.edu.tw/images/content/%E5%9C%8B%E9%9A%9B%E5%AD%B8%E7%94%9F%E7%94%B3%E8%AB%8B%E5%85%A5%E5%AD%B8/115/2026%E5%B9%B4%E7%A7%8B%E5%AD%A3%E7%8F%AD%E5%A4%96%E5%9C%8B%E5%AD%B8%E7%94%9F%E7%94%B3%E8%AB%8B%E5%85%A5%E5%AD%B8%E7%B0%A1%E7%AB%A0%202026%20Fall%20Application%20Guide%20.pdf"
+       },
+       "note": null
+      }
+     ]
+    }
+   },
+   "checked": "2026-09-29"
+  },
+  {
+   "id": "0033",
+   "name": "國立虎尾科技大學",
+   "short": "虎尾",
+   "abbr": "NFU",
+   "english": "National Formosa University",
+   "city": "雲林縣",
+   "ownership": "public",
+   "type": "technology",
+   "km": 55,
+   "commute": "near",
+   "place": "雲林虎尾",
+   "travel": "高鐵雲林站約 25 分＋公車；可通勤但很累",
+   "tier": "B",
+   "fee": {
+    "kind": "paid",
+    "amount": 1000,
+    "text": "每人 NT$1,000（US$40），最多 3 系，不退",
+    "src": "https://enrollstudents.nfu.edu.tw/download/20260310003/27261",
+    "year": "115-1"
+   },
+   "tuition": null,
+   "firstYearKind": "review",
+   "semesterCost": null,
+   "aid": {
+    "sure": null,
+    "review": "就學獎助金：學費減免或每月津貼，委員會依成績、預算核定，沒有保證金額。"
+   },
+   "renew": "每次一學年；前學年平均 80、操行 80。",
+   "lang": "依系。",
+   "after": "春季學士有沒有開沒查到（只有往年 9–10 月的參考）。往年秋季 4 月上旬–5 月中旬報名、6 月上旬放榜。",
+   "verdict": "國立科大、1,000 元報 3 系；6 月上旬放榜，時間偏緊。",
+   "verdictMy": "အစိုးရ နည်းပညာ၊ NT$1,000 ဖြင့် ဌာန ၃ ခု။ ဇွန်လ အစ ရလဒ်။",
+   "readYourself": [],
+   "bizAdmits": [],
+   "links": {
+    "apply": "https://enrollstudents.nfu.edu.tw/content/60008/download/115/22743",
+    "website": "http://www.nfu.edu.tw",
+    "brochureSpring": null,
+    "brochureSpringYear": null,
+    "brochureFall": "https://enrollstudents.nfu.edu.tw/download/20260310003/27261",
+    "brochureFallYear": "115-1"
+   },
+   "lists": [
+    {
+     "year": "115",
+     "term": "fall",
+     "title": "115外國學生錄取公告",
+     "url": "https://enrollstudents.nfu.edu.tw/content/60008/admission/115/24841"
+    }
+   ],
+   "terms": {
+    "spring": {
+     "ug": "has",
+     "rounds": [
+      {
+       "start": {
+        "status": "historical",
+        "sourceYear": "原始年度待複核",
+        "label": "約09月中旬",
+        "sort": "2026-09-11"
+       },
+       "end": {
+        "status": "historical",
+        "sourceYear": "原始年度待複核",
+        "label": "約10月底",
+        "sort": "2026-10-21"
+       },
+       "result": {
+        "status": "historical",
+        "sourceYear": "原始年度待複核",
+        "label": "約12月初",
+        "sort": "2026-12-01"
+       },
+       "note": null
+      }
+     ]
+    },
+    "fall": {
+     "ug": "has",
+     "rounds": [
+      {
+       "start": {
+        "status": "historical",
+        "sourceYear": "115-1",
+        "label": "4 月上旬",
+        "sort": "2027-04-01",
+        "src": "https://enrollstudents.nfu.edu.tw/download/20260310003/27261"
+       },
+       "end": {
+        "status": "historical",
+        "sourceYear": "115-1",
+        "label": "5 月中旬",
+        "sort": "2027-05-11",
+        "src": "https://enrollstudents.nfu.edu.tw/download/20260310003/27261"
+       },
+       "result": {
+        "status": "historical",
+        "sourceYear": "115-1",
+        "label": "6 月上旬",
+        "sort": "2027-06-01",
+        "src": "https://enrollstudents.nfu.edu.tw/download/20260310003/27261"
+       },
+       "note": null
+      }
+     ]
+    }
+   },
+   "checked": "2026-09-29"
+  },
+  {
+   "id": "0020",
+   "name": "國立東華大學",
+   "short": "東華",
+   "abbr": "NDHU",
+   "english": "National Dong Hwa University",
+   "city": "花蓮縣",
+   "ownership": "public",
+   "type": "university",
+   "km": 91,
+   "commute": "far",
+   "place": "花蓮壽豐",
+   "travel": "火車台中→花蓮約 4–5 小時；要搬家",
+   "tier": "C",
+   "fee": {
+    "kind": "paid",
+    "amount": 1200,
+    "text": "NT$1,200，不退",
+    "src": "https://oia.ndhu.edu.tw/var/file/27/1027/img/4756/894840940.pdf",
+    "year": "115"
+   },
+   "tuition": null,
+   "firstYearKind": "unknown",
+   "semesterCost": null,
+   "aid": {
+    "sure": null,
+    "review": "只查到在校生獎學金（完成一學期後申請）；新生獎學金沒查到。"
+   },
+   "renew": "在校生：學期學費部分至全額減免，生活津貼每學期 2–4 萬；要 TOCFL 3 級或華語課證明。",
+   "lang": "依系。",
+   "after": "春季日期官網與簡章不一致（簡章 10/31 截止）。往年秋季 1 月上旬–3 月中旬報名、5 月上旬放榜。",
+   "verdict": "最遠的一間，新生獎學金不明。",
+   "verdictMy": "အဝေးဆုံး၊ ပညာသင်ဆု မရှင်း။",
+   "readYourself": [],
+   "bizAdmits": [],
+   "links": {
+    "apply": "https://oia.ndhu.edu.tw/p/412-1027-21529.php?Lang=en",
+    "website": "http://www.ndhu.edu.tw",
+    "brochureSpring": "https://oia.ndhu.edu.tw/var/file/27/1027/img/4756/894840940.pdf",
+    "brochureSpringYear": "115-2",
+    "brochureFall": "https://oia.ndhu.edu.tw/var/file/27/1027/img/4756/894840940.pdf",
+    "brochureFallYear": "115-1"
+   },
+   "lists": [
+    {
+     "year": "115",
+     "term": "fall",
+     "title": "115外國學生秋季第二梯次錄取公告",
+     "url": "https://oia.ndhu.edu.tw/p/405-1027-259259,c21529.php?Lang=en"
+    }
+   ],
+   "terms": {
+    "spring": {
+     "ug": "has",
+     "rounds": [
+      {
+       "start": {
+        "status": "official",
+        "sourceYear": null,
+        "date": "2026-09-01"
+       },
+       "end": {
+        "status": "conflict",
+        "sourceYear": null,
+        "label": "來源有差異"
+       },
+       "result": {
+        "status": "conflict",
+        "sourceYear": null,
+        "label": "來源有差異"
+       },
+       "note": null
+      }
+     ]
+    },
+    "fall": {
+     "ug": "has",
+     "rounds": [
+      {
+       "start": {
+        "status": "historical",
+        "sourceYear": "115-1",
+        "label": "1 月上旬",
+        "sort": "2027-01-01",
+        "src": "https://oia.ndhu.edu.tw/var/file/27/1027/img/4756/894840940.pdf"
+       },
+       "end": {
+        "status": "historical",
+        "sourceYear": "115-1",
+        "label": "3 月中旬",
+        "sort": "2027-03-11",
+        "src": "https://oia.ndhu.edu.tw/var/file/27/1027/img/4756/894840940.pdf"
+       },
+       "result": {
+        "status": "historical",
+        "sourceYear": "115-1",
+        "label": "5 月上旬",
+        "sort": "2027-05-01",
+        "src": "https://oia.ndhu.edu.tw/var/file/27/1027/img/4756/894840940.pdf"
+       },
+       "note": null
+      },
+      {
+       "start": {
+        "status": "historical",
+        "sourceYear": "115-1",
+        "label": "3 月中旬",
+        "sort": "2027-03-11",
+        "src": "https://oia.ndhu.edu.tw/var/file/27/1027/img/4756/894840940.pdf"
+       },
+       "end": {
+        "status": "historical",
+        "sourceYear": "115-1",
+        "label": "4 月中旬",
+        "sort": "2027-04-11",
+        "src": "https://oia.ndhu.edu.tw/var/file/27/1027/img/4756/894840940.pdf"
+       },
+       "result": {
+        "status": "historical",
+        "sourceYear": "115-1",
+        "label": "6 月上旬",
+        "sort": "2027-06-01",
+        "src": "https://oia.ndhu.edu.tw/var/file/27/1027/img/4756/894840940.pdf"
+       },
+       "note": null
+      }
+     ]
+    }
+   },
+   "checked": "2026-09-29"
+  },
+  {
+   "id": "0012",
+   "name": "國立臺灣海洋大學",
+   "short": "海大",
+   "abbr": "NTOU",
+   "english": "National Taiwan Ocean University",
+   "city": "基隆市",
+   "ownership": "public",
+   "type": "university",
+   "km": 157,
+   "commute": "far",
+   "place": "基隆中正區",
+   "travel": "高鐵台北＋客運約 2 小時；要搬家",
+   "tier": "C",
+   "fee": {
+    "kind": "silent",
+    "text": "2027 春季簡章與費用說明都沒寫申請費，也沒寫免收",
+    "src": "https://oia.ntou.edu.tw/var/file/22/1022/img/1458/2027_Spring_Admissionbrochure_Released_2026Julyedition.pdf",
+    "year": "115-2"
+   },
+   "tuition": null,
+   "firstYearKind": "review",
+   "semesterCost": null,
+   "aid": {
+    "sure": null,
+    "review": "學士全額或部分學費減免，隨入學申請交獎學金申請表。"
+   },
+   "renew": "一年一核，續年重新申請。",
+   "lang": "依系。",
+   "after": "簡章明寫學士只收秋季。秋季日期還沒公告，也沒有往年資料。",
+   "verdict": "有海運管理，但遠、秋季日期與申請費都不明。",
+   "verdictMy": "ဝေး၊ ရက်စွဲနှင့် ကြေး မသိ။",
+   "readYourself": [
+    {
+     "label": "海大招生頁",
+     "url": "https://oia.ntou.edu.tw/p/403-1022-974-1.php?Lang=en",
+     "why": "秋季簡章公告後看日期與申請費"
+    }
+   ],
+   "bizAdmits": [],
+   "links": {
+    "apply": "https://oia.ntou.edu.tw/p/412-1022-7231.php?Lang=en",
+    "website": "http://www.ntou.edu.tw",
+    "brochureSpring": "https://oia.ntou.edu.tw/var/file/22/1022/img/1458/2027_Spring_Admissionbrochure_Released_2026Julyedition.pdf",
+    "brochureSpringYear": "115-2",
+    "brochureFall": null,
+    "brochureFallYear": null
+   },
+   "lists": [
+    {
+     "year": "114",
+     "term": "fall",
+     "title": "114秋季外國學生錄取公告",
+     "url": "https://oia.ntou.edu.tw/p/406-1022-114472%2Cr11.php?Lang=en"
+    },
+    {
+     "year": "114",
+     "term": "spring",
+     "title": "114春季外國學生錄取公告",
+     "url": "https://oia.ntou.edu.tw/p/406-1022-120592%2Cr11.php?Lang=zh-tw"
+    }
+   ],
+   "terms": {
+    "spring": {
+     "ug": "grad",
+     "rounds": []
+    },
+    "fall": {
+     "ug": "unknown",
+     "rounds": []
+    }
+   },
+   "checked": "2026-09-29"
+  },
+  {
+   "id": "0053",
+   "name": "國立高雄科技大學",
+   "short": "高科",
+   "abbr": "NKUST",
+   "english": "National Kaohsiung University of Science and Technology",
+   "city": "高雄市",
+   "ownership": "public",
+   "type": "technology",
+   "km": 169,
+   "commute": "far",
+   "place": "高雄三民（建工）等多校區",
+   "travel": "高鐵左營約 1 小時＋轉車；要搬家",
+   "tier": "C",
+   "fee": {
+    "kind": "paid",
+    "amount": 800,
+    "text": "NT$800，不退",
+    "src": "https://oia.nkust.edu.tw/en/unit-11-262-5.html",
+    "year": "115"
+   },
+   "tuition": null,
+   "firstYearKind": "unknown",
+   "semesterCost": null,
+   "aid": {
+    "sure": null,
+    "review": "只查到碩博士獎學金；學士目前金額沒查到。"
+   },
+   "renew": "—",
+   "lang": "依系。",
+   "after": "春季只收研究所。往年秋季 3 月上旬–4 月下旬報名、6 月下旬放榜（離 ARC 到期只差幾天）。",
+   "verdict": "商管科系多，但 6 月下旬才放榜，ARC 很緊；學士獎學金不明。",
+   "verdictMy": "ဇွန်လကုန် ရလဒ် — ARC နှင့် အလွန်နီး။",
+   "readYourself": [],
+   "bizAdmits": [],
+   "links": {
+    "apply": "https://oia.nkust.edu.tw/en/unit-11-262-5.html",
+    "website": "http://www.nkust.edu.tw",
+    "brochureSpring": "https://oia.nkust.edu.tw/images/upload/files/2027%E6%98%A5(115-2)%E5%A4%96%E5%9C%8B%E5%AD%B8%E7%94%9F%E6%8B%9B%E7%94%9F%E7%B0%A1%E7%AB%A0%202027%20Spring%20Semester%20International%20Student%20Admission%20Guidelines.pdf",
+    "brochureSpringYear": "115-2",
+    "brochureFall": "https://oia.nkust.edu.tw/images/upload/files/2026%E7%A7%8B%E5%A4%96%E5%9C%8B%E5%AD%B8%E7%94%9F%E6%8B%9B%E7%94%9F%E7%B0%A1%E7%AB%A0%202026%20Fall%20International%20Degree%20Student%20Prospectus.pdf",
+    "brochureFallYear": "115-1"
+   },
+   "lists": [
+    {
+     "year": "114",
+     "term": "fall",
+     "title": "2025 (114-1) Admission List（官方頁內入口）",
+     "url": "https://oia.nkust.edu.tw/unit-11-268-6.html"
+    },
+    {
+     "year": "114",
+     "term": "spring",
+     "title": "2026 (114-2) Admission List（官方頁內入口）",
+     "url": "https://oia.nkust.edu.tw/unit-11-268-6.html"
+    }
+   ],
+   "terms": {
+    "spring": {
+     "ug": "grad",
+     "rounds": []
+    },
+    "fall": {
+     "ug": "has",
+     "rounds": [
+      {
+       "start": {
+        "status": "historical",
+        "sourceYear": "115-1",
+        "label": "3 月上旬",
+        "sort": "2027-03-01",
+        "src": "https://oia.nkust.edu.tw/images/upload/files/2026%E7%A7%8B%E5%A4%96%E5%9C%8B%E5%AD%B8%E7%94%9F%E6%8B%9B%E7%94%9F%E7%B0%A1%E7%AB%A0%202026%20Fall%20International%20Degree%20Student%20Prospectus.pdf"
+       },
+       "end": {
+        "status": "historical",
+        "sourceYear": "115-1",
+        "label": "4 月下旬",
+        "sort": "2027-04-21",
+        "src": "https://oia.nkust.edu.tw/images/upload/files/2026%E7%A7%8B%E5%A4%96%E5%9C%8B%E5%AD%B8%E7%94%9F%E6%8B%9B%E7%94%9F%E7%B0%A1%E7%AB%A0%202026%20Fall%20International%20Degree%20Student%20Prospectus.pdf"
+       },
+       "result": {
+        "status": "historical",
+        "sourceYear": "115-1",
+        "label": "6 月下旬",
+        "sort": "2027-06-21",
+        "src": "https://oia.nkust.edu.tw/images/upload/files/2026%E7%A7%8B%E5%A4%96%E5%9C%8B%E5%AD%B8%E7%94%9F%E6%8B%9B%E7%94%9F%E7%B0%A1%E7%AB%A0%202026%20Fall%20International%20Degree%20Student%20Prospectus.pdf"
+       },
+       "note": null
+      }
+     ]
+    }
+   },
+   "checked": "2026-09-29"
+  }
+ ]
+}

@@ -1,0 +1,12 @@
+{
+  "name": "taiwan-study-handoff",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node qa.mjs && node research/weiquan-2026-09-28/qa.mjs",
+    "test:browser": "node research/weiquan-board-2026-09-29/qa-browser.mjs"
+  },
+  "devDependencies": {
+    "linkedom": "0.18.13"
+  }
+}

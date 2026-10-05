@@ -1,0 +1,6675 @@
+{
+  "updated": "2026-09-19",
+  "registryYear": "115",
+  "registrySource": "https://stats.moe.gov.tw/files/opendata/u1_new.json",
+  "cities": {
+    "臺北市": "Taipei",
+    "新北市": "New Taipei",
+    "基隆市": "Keelung",
+    "桃園市": "Taoyuan",
+    "新竹市": "Hsinchu City",
+    "新竹縣": "Hsinchu County",
+    "苗栗縣": "Miaoli",
+    "臺中市": "Taichung",
+    "彰化縣": "Changhua",
+    "南投縣": "Nantou",
+    "雲林縣": "Yunlin",
+    "嘉義市": "Chiayi City",
+    "嘉義縣": "Chiayi County",
+    "臺南市": "Tainan",
+    "高雄市": "Kaohsiung",
+    "屏東縣": "Pingtung",
+    "宜蘭縣": "Yilan",
+    "花蓮縣": "Hualien",
+    "臺東縣": "Taitung",
+    "澎湖縣": "Penghu",
+    "金門縣": "Kinmen"
+  },
+  "schools": [
+    {
+      "id": "0001",
+      "name": "國立政治大學",
+      "short": "政大",
+      "abbr": "NCCU",
+      "english": "National Chengchi University",
+      "cities": [
+        "臺北市"
+      ],
+      "cityEn": "Taipei",
+      "type": "university",
+      "ownership": "public",
+      "difficulty": 5,
+      "website": "http://www.nccu.edu.tw",
+      "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPU5DQ1UtMDAwMS0x",
+      "admission": {
+        "url": "https://admission.nccu.edu.tw/intladmission/index/index/applyIntladmissionSn/26",
+        "kind": "apply"
+      },
+      "terms": {
+        "spring": {
+          "rounds": [
+            {
+              "start": {
+                "date": "2026-09-22",
+                "status": "official"
+              },
+              "end": {
+                "date": "2026-10-15",
+                "status": "official"
+              },
+              "result": {
+                "date": "2026-11-27",
+                "status": "official"
+              }
+            }
+          ],
+          "sources": [
+            "https://nccuadmission.nccu.edu.tw/Post/331",
+            "https://oic.nccu.edu.tw/Post/16113"
+          ],
+          "notes": [
+            {
+              "zh": "116 招生第一梯容許研究所提前至 115-2 春季入學；學士不可套用春季。",
+              "my": "ဘွဲ့လွန်လျှောက်သူများသာ 115-2 နွေဦးတွင် စော၍ ဝင်ခွင့်ယူနိုင်သည်။"
+            }
+          ],
+          "scope": "graduate",
+          "scopeLabel": {
+            "zh": "學士／碩士／博士依當屆開放系所",
+            "my": "ဘွဲ့ကြို / မဟာဘွဲ့ / ပါရဂူ — လမ်းညွှန်ပါ ဘာသာရပ်အတိုင်း"
+          },
+          "brochure": {
+            "url": "https://drive.google.com/file/d/1RC6EOaByXy7hqe6_2ddinrZZk64UGu3k/view",
+            "status": "official"
+          }
+        },
+        "fall": {
+          "rounds": [
+            {
+              "start": {
+                "date": "2026-09-22",
+                "status": "official"
+              },
+              "end": {
+                "date": "2026-10-15",
+                "status": "official"
+              },
+              "result": {
+                "date": "2026-11-27",
+                "status": "official"
+              },
+              "name": {
+                "zh": "1",
+                "my": "1"
+              }
+            },
+            {
+              "start": {
+                "date": "2027-01-19",
+                "status": "official"
+              },
+              "end": {
+                "date": "2027-03-04",
+                "status": "official"
+              },
+              "result": null,
+              "name": {
+                "zh": "2",
+                "my": "2"
+              }
+            }
+          ],
+          "sources": [
+            "https://nccuadmission.nccu.edu.tw/Post/331",
+            "https://oic.nccu.edu.tw/Post/16113"
+          ],
+          "notes": [
+            {
+              "zh": "簡章連結為第一梯；第一梯未招生系所可能於第二梯開放。",
+              "my": "အသေးစိတ်ကို တရားဝင်ဝင်ခွင့်လမ်းညွှန်တွင် အတည်ပြုပါ။"
+            }
+          ],
+          "scope": "all",
+          "scopeLabel": {
+            "zh": "學士／碩士／博士依當屆開放系所",
+            "my": "ဘွဲ့ကြို / မဟာဘွဲ့ / ပါရဂူ — လမ်းညွှန်ပါ ဘာသာရပ်အတိုင်း"
+          },
+          "brochure": {
+            "url": "https://drive.google.com/file/d/1RC6EOaByXy7hqe6_2ddinrZZk64UGu3k/view",
+            "status": "official"
+          },
+          "programLink": "https://docs.google.com/spreadsheets/d/187k9n7AZig-AlyFjELKLgTs1BLzdL1Vg/edit"
+        }
+      },
+      "checked": "2026-09-19",
+      "reviewState": "unavailable"
+    },
+    {
+      "id": "0002",
+      "name": "國立清華大學",
+      "short": "清華",
+      "abbr": "NTHU",
+      "english": "National Tsing Hua University",
+      "cities": [
+        "新竹市"
+      ],
+      "cityEn": "Hsinchu City",
+      "type": "university",
+      "ownership": "public",
+      "difficulty": 5,
+      "website": "http://www.nthu.edu.tw",
+      "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPU5USFUtMDAwMi0y",
+      "admission": {
+        "url": "https://nthuoga-admission.vm.nthu.edu.tw/",
+        "kind": "apply"
+      },
+      "terms": {
+        "spring": {
+          "rounds": [
+            {
+              "start": {
+                "date": "2026-08-03",
+                "status": "official"
+              },
+              "end": {
+                "date": "2026-09-30",
+                "status": "official"
+              },
+              "result": {
+                "date": "2026-12-01",
+                "status": "official"
+              }
+            }
+          ],
+          "sources": [
+            "https://apply.nthu.edu.tw/article/70-%E7%94%B3%E8%AB%8B%E5%89%8D%E9%A0%88%E7%9F%A5"
+          ],
+          "notes": [],
+          "scope": "all",
+          "scopeLabel": {
+            "zh": "學士／碩士／博士依當屆開放系所",
+            "my": "ဘွဲ့ကြို / မဟာဘွဲ့ / ပါရဂူ — လမ်းညွှန်ပါ ဘာသာရပ်အတိုင်း"
+          },
+          "brochure": {
+            "url": "https://apply.nthu.edu.tw/article/70-%E7%94%B3%E8%AB%8B%E5%89%8D%E9%A0%88%E7%9F%A5",
+            "status": "official"
+          }
+        },
+        "fall": {
+          "rounds": [
+            {
+              "start": {
+                "label": {
+                  "zh": "約2026/11月下旬",
+                  "my": "ခန့် 2026/11 လကုန်ပိုင်း"
+                },
+                "sort": "2026-11-21",
+                "status": "historical",
+                "basis": "115"
+              },
+              "end": {
+                "label": {
+                  "zh": "約2027/01月底",
+                  "my": "ခန့် 2027/01 လကုန်"
+                },
+                "sort": "2027-01-21",
+                "status": "historical",
+                "basis": "115"
+              },
+              "result": null,
+              "name": {
+                "zh": "學士 / Undergraduate",
+                "my": "學士 / Undergraduate"
+              }
+            },
+            {
+              "start": {
+                "label": {
+                  "zh": "約2026/12月中旬",
+                  "my": "ခန့် 2026/12 လလယ်"
+                },
+                "sort": "2026-12-11",
+                "status": "historical",
+                "basis": "115"
+              },
+              "end": {
+                "label": {
+                  "zh": "約2027/02月下旬",
+                  "my": "ခန့် 2027/02 လကုန်ပိုင်း"
+                },
+                "sort": "2027-02-21",
+                "status": "historical",
+                "basis": "115"
+              },
+              "result": null,
+              "name": {
+                "zh": "研究所 / Graduate",
+                "my": "研究所 / Graduate"
+              }
+            }
+          ],
+          "sources": [
+            "https://apply.nthu.edu.tw/article/70-%E7%94%B3%E8%AB%8B%E5%89%8D%E9%A0%88%E7%9F%A5"
+          ],
+          "notes": [
+            {
+              "zh": "以 2026 秋學士 2025/11/25–2026/01/31、研究所 2025/12/15–2026/02/25 推估。2027 正式日期待核。",
+              "my": "အသေးစိတ်ကို တရားဝင်ဝင်ခွင့်လမ်းညွှန်တွင် အတည်ပြုပါ။"
+            }
+          ]
+        }
+      },
+      "checked": "2026-09-19",
+      "reviewState": "unavailable"
+    },
+    {
+      "id": "0003",
+      "name": "國立臺灣大學",
+      "short": "臺大",
+      "abbr": "NTU",
+      "english": "National Taiwan University",
+      "cities": [
+        "臺北市"
+      ],
+      "cityEn": "Taipei",
+      "type": "university",
+      "ownership": "public",
+      "difficulty": 5,
+      "website": "http://www.ntu.edu.tw",
+      "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPU5UVS0wMDAzLTM",
+      "admission": {
+        "url": "https://admissions.ntu.edu.tw/apply/degree-students/international-students/",
+        "kind": "admission"
+      },
+      "terms": {
+        "spring": {
+          "rounds": [
+            {
+              "start": {
+                "date": "2026-08-03",
+                "status": "official"
+              },
+              "end": {
+                "date": "2026-09-17",
+                "status": "official"
+              },
+              "result": {
+                "date": "2026-11-10",
+                "status": "official"
+              }
+            }
+          ],
+          "sources": [
+            "https://admissions.ntu.edu.tw/apply/degree-students/international-students/"
+          ],
+          "notes": [],
+          "scope": "graduate",
+          "scopeLabel": {
+            "zh": "學士／碩士／博士依當屆開放系所",
+            "my": "ဘွဲ့ကြို / မဟာဘွဲ့ / ပါရဂူ — လမ်းညွှန်ပါ ဘာသာရပ်အတိုင်း"
+          },
+          "brochure": {
+            "url": "https://admissions.ntu.edu.tw/wp-content/uploads/115-2Admission-Guidelines-for-Intl-Degree-Students_ENG_V2.pdf",
+            "status": "official"
+          }
+        },
+        "fall": {
+          "rounds": [
+            {
+              "start": {
+                "date": "2026-09-29",
+                "status": "official"
+              },
+              "end": {
+                "date": "2026-11-05",
+                "status": "official"
+              },
+              "result": {
+                "date": "2027-01-14",
+                "status": "official"
+              },
+              "name": {
+                "zh": "1",
+                "my": "1"
+              }
+            },
+            {
+              "start": {
+                "date": "2026-12-01",
+                "status": "official"
+              },
+              "end": {
+                "date": "2027-01-19",
+                "status": "official"
+              },
+              "result": {
+                "date": "2027-04-08",
+                "status": "official"
+              },
+              "name": {
+                "zh": "2",
+                "my": "2"
+              }
+            }
+          ],
+          "sources": [
+            "https://admissions.ntu.edu.tw/apply/degree-students/international-students/"
+          ],
+          "notes": [
+            {
+              "zh": "第一梯若結果為 Postponed，需等第二梯公布；尚未開放的報名系統由此官方頁進入。",
+              "my": "ပထမအဆင့်တွင် Postponed ဖြစ်ပါက ဒုတိယအဆင့်ရလဒ်ကို စောင့်ရန် လိုသည်။"
+            }
+          ],
+          "scope": "all",
+          "scopeLabel": {
+            "zh": "學士／碩士／博士依當屆開放系所",
+            "my": "ဘွဲ့ကြို / မဟာဘွဲ့ / ပါရဂူ — လမ်းညွှန်ပါ ဘာသာရပ်အတိုင်း"
+          },
+          "brochure": {
+            "url": "https://admissions.ntu.edu.tw/wp-content/uploads/116-1Admission-Guidelines-for-Intl-Degree-Students_ENG-1.pdf",
+            "status": "official"
+          }
+        }
+      },
+      "checked": "2026-09-19",
+      "reviewState": "unavailable"
+    },
+    {
+      "id": "0004",
+      "name": "國立臺灣師範大學",
+      "short": "臺師大",
+      "abbr": "NTNU",
+      "english": "National Taiwan Normal University",
+      "cities": [
+        "臺北市"
+      ],
+      "cityEn": "Taipei",
+      "type": "university",
+      "ownership": "public",
+      "difficulty": 4,
+      "website": "http://www.ntnu.edu.tw",
+      "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPU5UTlUtMDAwNC00",
+      "admission": {
+        "url": "http://www.ntnu.edu.tw",
+        "kind": "home"
+      },
+      "terms": {
+        "spring": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        },
+        "fall": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        }
+      },
+      "checked": "2026-09-19",
+      "reviewState": "unavailable"
+    },
+    {
+      "id": "0005",
+      "name": "國立成功大學",
+      "short": "成大",
+      "abbr": "NCKU",
+      "english": "National Cheng Kung University",
+      "cities": [
+        "臺南市"
+      ],
+      "cityEn": "Tainan",
+      "type": "university",
+      "ownership": "public",
+      "difficulty": 5,
+      "website": "http://www.ncku.edu.tw",
+      "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPU5DS1UtMDAwNS01",
+      "admission": {
+        "url": "https://oia.ncku.edu.tw/",
+        "kind": "admission"
+      },
+      "terms": {
+        "spring": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        },
+        "fall": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        }
+      },
+      "checked": "2026-09-19",
+      "reviewState": "unavailable"
+    },
+    {
+      "id": "0006",
+      "name": "國立中興大學",
+      "short": "中興",
+      "abbr": "NCHU",
+      "english": "National Chung Hsing University",
+      "cities": [
+        "臺中市"
+      ],
+      "cityEn": "Taichung",
+      "type": "university",
+      "ownership": "public",
+      "difficulty": 4,
+      "website": "http://www.nchu.edu.tw",
+      "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPU5DSFUtMDAwNi02",
+      "admission": {
+        "url": "https://oia.nchu.edu.tw/",
+        "kind": "admission"
+      },
+      "terms": {
+        "spring": {
+          "rounds": [],
+          "sources": [
+            "https://oia.nchu.edu.tw/"
+          ],
+          "notes": [
+            {
+              "zh": "既有來源春季僅列碩博士；學士春季不沿用研究所日期。",
+              "my": "အသေးစိတ်ကို တရားဝင်ဝင်ခွင့်လမ်းညွှန်တွင် အတည်ပြုပါ။"
+            }
+          ],
+          "scope": "graduate",
+          "scopeLabel": {
+            "zh": "學士／碩士／博士依當屆開放系所",
+            "my": "ဘွဲ့ကြို / မဟာဘွဲ့ / ပါရဂူ — လမ်းညွှန်ပါ ဘာသာရပ်အတိုင်း"
+          }
+        },
+        "fall": {
+          "rounds": [
+            {
+              "start": {
+                "label": {
+                  "zh": "約2027/01月中旬",
+                  "my": "ခန့် 2027/01 လလယ်"
+                },
+                "sort": "2027-01-11",
+                "status": "historical",
+                "basis": "115"
+              },
+              "end": {
+                "label": {
+                  "zh": "約2027/03月中下旬",
+                  "my": "ခန့် 2027/03 လ中下旬"
+                },
+                "sort": "2027-03-11",
+                "status": "historical",
+                "basis": "115"
+              },
+              "result": {
+                "label": {
+                  "zh": "約2027/05月底",
+                  "my": "ခန့် 2027/05 လကုန်"
+                },
+                "sort": "2027-05-21",
+                "status": "historical",
+                "basis": "115"
+              }
+            }
+          ],
+          "sources": [
+            "https://oia.nchu.edu.tw/"
+          ],
+          "notes": [
+            {
+              "zh": "日期為提供資料包的歷年參考；本次尚未完成官方附件的逐項複核，不代表本期正式公告。",
+              "my": "ရက်စွဲများသည် ပေးထားသော ယခင်နှစ်ကိုးကားစာရင်းမှ ဖြစ်သည်။ တရားဝင်ဖိုင်နှင့် အပြည့်အစုံ ထပ်မစစ်နိုင်သေးပါ။ ယခုကာလ တရားဝင်ရက် မဟုတ်ပါ။"
+            }
+          ]
+        }
+      },
+      "checked": "2026-09-19",
+      "reviewState": "unavailable"
+    },
+    {
+      "id": "0007",
+      "name": "國立陽明交通大學",
+      "short": "陽明交大",
+      "abbr": "NYCU",
+      "english": "National Yang Ming Chiao Tung University",
+      "cities": [
+        "新竹市",
+        "臺北市"
+      ],
+      "cityEn": "Hsinchu City",
+      "type": "university",
+      "ownership": "public",
+      "difficulty": 5,
+      "website": "http://www.nycu.edu.tw",
+      "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPU5ZQ1UtMDAwNy03",
+      "admission": {
+        "url": "https://oia.nycu.edu.tw/oia/en/app/folder/782",
+        "kind": "admission"
+      },
+      "terms": {
+        "spring": {
+          "rounds": [
+            {
+              "start": {
+                "date": "2026-08-10",
+                "status": "official"
+              },
+              "end": {
+                "date": "2026-09-30",
+                "status": "official"
+              },
+              "result": {
+                "date": "2026-11-13",
+                "status": "official"
+              }
+            }
+          ],
+          "sources": [
+            "https://oia.nycu.edu.tw/oia/en/app/artwebsite/view?id=785&module=artwebsite&serno=07d9ede2-e896-4efe-a671-2b86dbc2a0d8"
+          ],
+          "notes": [],
+          "scope": "graduate",
+          "scopeLabel": {
+            "zh": "學士／碩士／博士依當屆開放系所",
+            "my": "ဘွဲ့ကြို / မဟာဘွဲ့ / ပါရဂူ — လမ်းညွှန်ပါ ဘာသာရပ်အတိုင်း"
+          }
+        },
+        "fall": {
+          "rounds": [
+            {
+              "start": {
+                "label": {
+                  "zh": "約2026/12月下旬",
+                  "my": "ခန့် 2026/12 လကုန်ပိုင်း"
+                },
+                "sort": "2026-12-21",
+                "status": "historical",
+                "basis": "115"
+              },
+              "end": {
+                "label": {
+                  "zh": "約2027/03月中旬",
+                  "my": "ခန့် 2027/03 လလယ်"
+                },
+                "sort": "2027-03-11",
+                "status": "historical",
+                "basis": "115"
+              },
+              "result": {
+                "label": {
+                  "zh": "約2027/05月中旬",
+                  "my": "ခန့် 2027/05 လလယ်"
+                },
+                "sort": "2027-05-11",
+                "status": "historical",
+                "basis": "115"
+              }
+            }
+          ],
+          "sources": [
+            "https://oia.nycu.edu.tw/oia/en/app/artwebsite/view?id=785&module=artwebsite&serno=07d9ede2-e896-4efe-a671-2b86dbc2a0d8"
+          ],
+          "notes": [
+            {
+              "zh": "前屆 2025/12/20–2026/03/15 申請、原訂 2026/05 月中放榜；校方註明可能隨審查進度調整。",
+              "my": "အသေးစိတ်ကို တရားဝင်ဝင်ခွင့်လမ်းညွှန်တွင် အတည်ပြုပါ။"
+            }
+          ]
+        }
+      },
+      "checked": "2026-09-19",
+      "reviewState": "unavailable"
+    },
+    {
+      "id": "0008",
+      "name": "國立中央大學",
+      "short": "中央",
+      "abbr": "NCU",
+      "english": "National Central University",
+      "cities": [
+        "桃園市"
+      ],
+      "cityEn": "Taoyuan",
+      "type": "university",
+      "ownership": "public",
+      "difficulty": 4,
+      "website": "http://www.ncu.edu.tw",
+      "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPU5DVS0wMDA4LTg",
+      "admission": {
+        "url": "https://cis.ncu.edu.tw/admissions/",
+        "kind": "admission"
+      },
+      "terms": {
+        "spring": {
+          "rounds": [
+            {
+              "start": {
+                "date": "2026-08-01",
+                "status": "official"
+              },
+              "end": {
+                "date": "2026-09-30",
+                "status": "official"
+              },
+              "result": {
+                "date": "2026-11-24",
+                "status": "official"
+              }
+            }
+          ],
+          "sources": [
+            "https://cis.ncu.edu.tw/admissions//menu.content/view/sn/72"
+          ],
+          "notes": []
+        },
+        "fall": {
+          "rounds": [
+            {
+              "start": {
+                "label": {
+                  "zh": "約2027/01月初",
+                  "my": "ခန့် 2027/01 လအစ"
+                },
+                "sort": "2027-01-01",
+                "status": "historical",
+                "basis": "115"
+              },
+              "end": {
+                "label": {
+                  "zh": "約2027/03月中旬",
+                  "my": "ခန့် 2027/03 လလယ်"
+                },
+                "sort": "2027-03-11",
+                "status": "historical",
+                "basis": "115"
+              },
+              "result": {
+                "label": {
+                  "zh": "約2027/05月中下旬",
+                  "my": "ခန့် 2027/05 လ中下旬"
+                },
+                "sort": "2027-05-11",
+                "status": "historical",
+                "basis": "115"
+              }
+            }
+          ],
+          "sources": [
+            "https://cis.ncu.edu.tw/admissions//menu.content/view/sn/72"
+          ],
+          "notes": [
+            {
+              "zh": "前屆 2026/01/01–03/15 申請、05/20 公告正取；備取另有通知，不與正取混用。",
+              "my": "အသေးစိတ်ကို တရားဝင်ဝင်ခွင့်လမ်းညွှန်တွင် အတည်ပြုပါ။"
+            }
+          ]
+        }
+      },
+      "checked": "2026-09-19",
+      "reviewState": "unavailable"
+    },
+    {
+      "id": "0009",
+      "name": "國立中山大學",
+      "short": "中山",
+      "abbr": "NSYSU",
+      "english": "National Sun Yat-sen University",
+      "cities": [
+        "高雄市"
+      ],
+      "cityEn": "Kaohsiung",
+      "type": "university",
+      "ownership": "public",
+      "difficulty": 4,
+      "website": "http://www.nsysu.edu.tw",
+      "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPU5TWVNVLTAwMDktOQ",
+      "admission": {
+        "url": "https://oia.nsysu.edu.tw/",
+        "kind": "admission"
+      },
+      "terms": {
+        "spring": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        },
+        "fall": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        }
+      },
+      "checked": "2026-09-19",
+      "reviewState": "unavailable"
+    },
+    {
+      "id": "0012",
+      "name": "國立臺灣海洋大學",
+      "short": "海大",
+      "abbr": "NTOU",
+      "english": "National Taiwan Ocean University",
+      "cities": [
+        "基隆市"
+      ],
+      "cityEn": "Keelung",
+      "type": "university",
+      "ownership": "public",
+      "difficulty": 4,
+      "website": "http://www.ntou.edu.tw",
+      "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPU5UT1UtMDAxMi0xMA",
+      "admission": {
+        "url": "https://oia.ntou.edu.tw/p/412-1022-7231.php?Lang=en",
+        "kind": "admission"
+      },
+      "terms": {
+        "spring": {
+          "rounds": [
+            {
+              "start": {
+                "date": "2026-07-15",
+                "status": "official"
+              },
+              "end": {
+                "date": "2026-10-31",
+                "status": "official"
+              },
+              "result": {
+                "date": "2026-12-18",
+                "status": "official"
+              }
+            }
+          ],
+          "sources": [
+            "https://oia.ntou.edu.tw/p/412-1022-7231.php?Lang=en"
+          ],
+          "notes": [],
+          "scope": "graduate",
+          "scopeLabel": {
+            "zh": "學士／碩士／博士依當屆開放系所",
+            "my": "ဘွဲ့ကြို / မဟာဘွဲ့ / ပါရဂူ — လမ်းညွှန်ပါ ဘာသာရပ်အတိုင်း"
+          },
+          "brochure": {
+            "url": "https://oia.ntou.edu.tw/p/412-1022-7231.php?Lang=en",
+            "status": "official"
+          },
+          "apply": {
+            "url": "https://oia.ntou.edu.tw/p/423-1022-863.php?Lang=zh-tw",
+            "kind": "apply"
+          }
+        },
+        "fall": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        }
+      },
+      "checked": "2026-09-19",
+      "reviewState": "unavailable"
+    },
+    {
+      "id": "0013",
+      "name": "國立中正大學",
+      "short": "中正",
+      "abbr": "CCU",
+      "english": "National Chung Cheng University",
+      "cities": [
+        "嘉義縣"
+      ],
+      "cityEn": "Chiayi County",
+      "type": "university",
+      "ownership": "public",
+      "difficulty": 4,
+      "website": "http://www.ccu.edu.tw",
+      "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPUNDVS0wMDEzLTEx",
+      "admission": {
+        "url": "https://oia.ccu.edu.tw/",
+        "kind": "admission"
+      },
+      "terms": {
+        "spring": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        },
+        "fall": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        }
+      },
+      "checked": "2026-09-19",
+      "reviewState": "unavailable"
+    },
+    {
+      "id": "0014",
+      "name": "國立高雄師範大學",
+      "short": "高師大",
+      "abbr": "NKNU",
+      "english": "National Kaohsiung Normal University",
+      "cities": [
+        "高雄市"
+      ],
+      "cityEn": "Kaohsiung",
+      "type": "university",
+      "ownership": "public",
+      "difficulty": 3,
+      "website": "http://www.nknu.edu.tw",
+      "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPU5LTlUtMDAxNC0xMg",
+      "admission": {
+        "url": "https://sso.nknu.edu.tw/InternationalAdmissions/Default.aspx",
+        "kind": "apply"
+      },
+      "terms": {
+        "spring": {
+          "rounds": [
+            {
+              "start": {
+                "date": "2026-07-20",
+                "status": "official"
+              },
+              "end": {
+                "date": "2026-10-15",
+                "status": "official"
+              },
+              "result": {
+                "date": "2026-12-05",
+                "status": "official"
+              }
+            }
+          ],
+          "sources": [
+            "https://oia.nknu.edu.tw/news-detail.php?id=343",
+            "https://oia.nknu.edu.tw/uploads/news/attachments/attachment_20260119152512_696ddc588cf7c.pdf"
+          ],
+          "notes": [],
+          "scope": "all",
+          "scopeLabel": {
+            "zh": "學士／碩士／博士依當屆開放系所",
+            "my": "ဘွဲ့ကြို / မဟာဘွဲ့ / ပါရဂူ — လမ်းညွှန်ပါ ဘာသာရပ်အတိုင်း"
+          },
+          "brochure": {
+            "url": "https://oia.nknu.edu.tw/uploads/news/attachments/attachment_20260119152512_696ddc588cf7c.pdf#page=3",
+            "status": "official"
+          }
+        },
+        "fall": {
+          "rounds": [
+            {
+              "start": {
+                "label": {
+                  "zh": "約2027/01月下旬",
+                  "my": "ခန့် 2027/01 လကုန်ပိုင်း"
+                },
+                "sort": "2027-01-21",
+                "status": "historical",
+                "basis": "115"
+              },
+              "end": {
+                "label": {
+                  "zh": "約2027/04月中旬",
+                  "my": "ခန့် 2027/04 လလယ်"
+                },
+                "sort": "2027-04-11",
+                "status": "historical",
+                "basis": "115"
+              },
+              "result": {
+                "label": {
+                  "zh": "約2027/06月上旬",
+                  "my": "ခန့် 2027/06 လအစ"
+                },
+                "sort": "2027-06-01",
+                "status": "historical",
+                "basis": "115"
+              }
+            }
+          ],
+          "sources": [
+            "https://oia.nknu.edu.tw/news-detail.php?id=343",
+            "https://oia.nknu.edu.tw/uploads/news/attachments/attachment_20260119152512_696ddc588cf7c.pdf"
+          ],
+          "notes": [
+            {
+              "zh": "依前屆 2026/01/20–04/15、06/05 放榜推估；116 正式簡章未核得。",
+              "my": "အသေးစိတ်ကို တရားဝင်ဝင်ခွင့်လမ်းညွှန်တွင် အတည်ပြုပါ။"
+            }
+          ]
+        }
+      },
+      "checked": "2026-09-19",
+      "reviewState": "unavailable"
+    },
+    {
+      "id": "0015",
+      "name": "國立彰化師範大學",
+      "short": "彰師大",
+      "abbr": "NCUE",
+      "english": "National Changhua University of Education",
+      "cities": [
+        "彰化縣"
+      ],
+      "cityEn": "Changhua",
+      "type": "university",
+      "ownership": "public",
+      "difficulty": 3,
+      "website": "https://www.ncue.edu.tw/",
+      "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPU5DVUUtMDAxNS0xMw",
+      "admission": {
+        "url": "https://oicaweb.ncue.edu.tw/p/406-1019-24585,r142.php?Lang=zh-tw",
+        "kind": "admission"
+      },
+      "terms": {
+        "spring": {
+          "rounds": [
+            {
+              "start": {
+                "label": {
+                  "zh": "約2026/07–11月",
+                  "my": "ခန့် 2026/07–11 လ"
+                },
+                "sort": "2026-07-01",
+                "status": "historical",
+                "basis": "歷年"
+              },
+              "end": null,
+              "result": {
+                "label": {
+                  "zh": "約2026/11–12月",
+                  "my": "ခန့် 2026/11–12 လ"
+                },
+                "sort": "2026-11-01",
+                "status": "historical",
+                "basis": "歷年"
+              }
+            }
+          ],
+          "sources": [
+            "https://oicaweb.ncue.edu.tw/p/406-1019-24585,r142.php?Lang=zh-tw"
+          ],
+          "notes": [
+            {
+              "zh": "日期為提供資料包的歷年參考；本次尚未完成官方附件的逐項複核，不代表本期正式公告。",
+              "my": "ရက်စွဲများသည် ပေးထားသော ယခင်နှစ်ကိုးကားစာရင်းမှ ဖြစ်သည်။ တရားဝင်ဖိုင်နှင့် အပြည့်အစုံ ထပ်မစစ်နိုင်သေးပါ။ ယခုကာလ တရားဝင်ရက် မဟုတ်ပါ။"
+            }
+          ]
+        },
+        "fall": {
+          "rounds": [
+            {
+              "start": null,
+              "end": null,
+              "result": {
+                "label": {
+                  "zh": "約2027/04月中旬",
+                  "my": "ခန့် 2027/04 လလယ်"
+                },
+                "sort": "2027-04-11",
+                "status": "historical",
+                "basis": "115"
+              }
+            }
+          ],
+          "sources": [
+            "https://oicaweb.ncue.edu.tw/p/406-1019-24585,r142.php?Lang=zh-tw"
+          ],
+          "notes": [
+            {
+              "zh": "日期為提供資料包的歷年參考；本次尚未完成官方附件的逐項複核，不代表本期正式公告。",
+              "my": "ရက်စွဲများသည် ပေးထားသော ယခင်နှစ်ကိုးကားစာရင်းမှ ဖြစ်သည်။ တရားဝင်ဖိုင်နှင့် အပြည့်အစုံ ထပ်မစစ်နိုင်သေးပါ။ ယခုကာလ တရားဝင်ရက် မဟုတ်ပါ။"
+            }
+          ]
+        }
+      },
+      "checked": "2026-09-19",
+      "reviewState": "unavailable"
+    },
+    {
+      "id": "0017",
+      "name": "國立臺北大學",
+      "short": "北大",
+      "abbr": "NTPU",
+      "english": "National Taipei University",
+      "cities": [
+        "新北市",
+        "臺北市"
+      ],
+      "cityEn": "New Taipei",
+      "type": "university",
+      "ownership": "public",
+      "difficulty": 4,
+      "website": "http://new.ntpu.edu.tw/",
+      "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPU5UUFUtMDAxNy0xNA",
+      "admission": {
+        "url": "https://oia.ntpu.edu.tw/home.jsp?lang=tw",
+        "kind": "admission"
+      },
+      "terms": {
+        "spring": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        },
+        "fall": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        }
+      },
+      "checked": "2026-09-19",
+      "reviewState": "unavailable"
+    },
+    {
+      "id": "0018",
+      "name": "國立嘉義大學",
+      "short": "嘉大",
+      "abbr": "NCYU",
+      "english": "National Chiayi University",
+      "cities": [
+        "嘉義市"
+      ],
+      "cityEn": "Chiayi City",
+      "type": "university",
+      "ownership": "public",
+      "difficulty": 3,
+      "website": "http://www.ncyu.edu.tw",
+      "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPU5DWVUtMDAxOC0xNQ",
+      "admission": {
+        "url": "http://www.ncyu.edu.tw",
+        "kind": "home"
+      },
+      "terms": {
+        "spring": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        },
+        "fall": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        }
+      },
+      "checked": "2026-09-19",
+      "reviewState": "unavailable"
+    },
+    {
+      "id": "0019",
+      "name": "國立高雄大學",
+      "short": "高大",
+      "abbr": "NUK",
+      "english": "National University of Kaohsiung",
+      "cities": [
+        "高雄市"
+      ],
+      "cityEn": "Kaohsiung",
+      "type": "university",
+      "ownership": "public",
+      "difficulty": 3,
+      "website": "http://www.nuk.edu.tw",
+      "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPU5VSy0wMDE5LTE2",
+      "admission": {
+        "url": "http://www.nuk.edu.tw",
+        "kind": "home"
+      },
+      "terms": {
+        "spring": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        },
+        "fall": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        }
+      },
+      "checked": "2026-09-19",
+      "reviewState": "unavailable"
+    },
+    {
+      "id": "0020",
+      "name": "國立東華大學",
+      "short": "東華",
+      "abbr": "NDHU",
+      "english": "National Dong Hwa University",
+      "cities": [
+        "花蓮縣"
+      ],
+      "cityEn": "Hualien",
+      "type": "university",
+      "ownership": "public",
+      "difficulty": 3,
+      "website": "http://www.ndhu.edu.tw",
+      "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPU5ESFUtMDAyMC0xNw",
+      "admission": {
+        "url": "https://oia.ndhu.edu.tw/p/412-1027-21529.php?Lang=en",
+        "kind": "admission"
+      },
+      "terms": {
+        "spring": {
+          "rounds": [
+            {
+              "start": {
+                "date": "2026-09-01",
+                "status": "official"
+              },
+              "end": {
+                "label": {
+                  "zh": "簡章10/31；網頁年份有誤",
+                  "my": "လမ်းညွှန် 10/31; ဝက်ဘ်နှစ် မတူ"
+                },
+                "status": "conflict"
+              },
+              "result": {
+                "label": {
+                  "zh": "簡章12/20；網頁不一致",
+                  "my": "လမ်းညွှန် 12/20; ဝက်ဘ်နှင့် မတူ"
+                },
+                "status": "conflict"
+              }
+            }
+          ],
+          "sources": [
+            "https://oia.ndhu.edu.tw/p/412-1027-21529.php?Lang=en",
+            "https://oia.ndhu.edu.tw/var/file/27/1027/img/4756/894840940.pdf"
+          ],
+          "notes": [
+            {
+              "zh": "115 簡章中英均列截止 2026/10/31、放榜 2026/12/20；官網 2027 春欄卻寫截止 2025/10/31、放榜 2025/12/15。保留衝突，向校方確認。",
+              "my": "လမ်းညွှန်တွင် 2026/10/31 နောက်ဆုံးရက်၊ 2026/12/20 ရလဒ်ဟု ရှိသော်လည်း ဝက်ဘ်စာမျက်နှာတွင် 2025 ခုနှစ် ရက်စွဲများ ဖြစ်နေသည်။ ကျောင်းနှင့် အတည်ပြုပါ။"
+            }
+          ],
+          "scope": "all",
+          "scopeLabel": {
+            "zh": "學士／碩士／博士依當屆開放系所",
+            "my": "ဘွဲ့ကြို / မဟာဘွဲ့ / ပါရဂူ — လမ်းညွှန်ပါ ဘာသာရပ်အတိုင်း"
+          },
+          "brochure": {
+            "url": "https://oia.ndhu.edu.tw/var/file/27/1027/img/4756/894840940.pdf#page=5",
+            "status": "official"
+          }
+        },
+        "fall": {
+          "rounds": [
+            {
+              "start": {
+                "label": {
+                  "zh": "約2027/01月初",
+                  "my": "ခန့် 2027/01 လအစ"
+                },
+                "sort": "2027-01-01",
+                "status": "historical",
+                "basis": "115"
+              },
+              "end": {
+                "label": {
+                  "zh": "約2027/03月中旬",
+                  "my": "ခန့် 2027/03 လလယ်"
+                },
+                "sort": "2027-03-11",
+                "status": "historical",
+                "basis": "115"
+              },
+              "result": {
+                "label": {
+                  "zh": "約2027/05月上旬",
+                  "my": "ခန့် 2027/05 လအစ"
+                },
+                "sort": "2027-05-01",
+                "status": "historical",
+                "basis": "115"
+              },
+              "name": {
+                "zh": "1",
+                "my": "1"
+              }
+            },
+            {
+              "start": {
+                "label": {
+                  "zh": "約2027/03月中旬",
+                  "my": "ခန့် 2027/03 လလယ်"
+                },
+                "sort": "2027-03-11",
+                "status": "historical",
+                "basis": "115"
+              },
+              "end": {
+                "label": {
+                  "zh": "約2027/04月中旬",
+                  "my": "ခန့် 2027/04 လလယ်"
+                },
+                "sort": "2027-04-11",
+                "status": "historical",
+                "basis": "115"
+              },
+              "result": {
+                "label": {
+                  "zh": "約2027/06月上旬",
+                  "my": "ခန့် 2027/06 လအစ"
+                },
+                "sort": "2027-06-01",
+                "status": "historical",
+                "basis": "115"
+              },
+              "name": {
+                "zh": "2",
+                "my": "2"
+              }
+            }
+          ],
+          "sources": [
+            "https://oia.ndhu.edu.tw/p/412-1027-21529.php?Lang=en",
+            "https://oia.ndhu.edu.tw/var/file/27/1027/img/4756/894840940.pdf"
+          ],
+          "notes": [
+            {
+              "zh": "依 2026 秋兩梯 01/02–03/15、03/16–04/14；05/10、06/10 放榜推估。",
+              "my": "အသေးစိတ်ကို တရားဝင်ဝင်ခွင့်လမ်းညွှန်တွင် အတည်ပြုပါ။"
+            }
+          ]
+        }
+      },
+      "checked": "2026-09-19",
+      "reviewState": "unavailable"
+    },
+    {
+      "id": "0021",
+      "name": "國立暨南國際大學",
+      "short": "暨南",
+      "abbr": "NCNU",
+      "english": "National Chi Nan University",
+      "cities": [
+        "南投縣"
+      ],
+      "cityEn": "Nantou",
+      "type": "university",
+      "ownership": "public",
+      "difficulty": 3,
+      "website": "https://www.ncnu.edu.tw/",
+      "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPU5DTlUtMDAyMS0xOA",
+      "admission": {
+        "url": "https://admission.ncnu.edu.tw/p/403-1055-608-1.php?Lang=zh-tw",
+        "kind": "admission"
+      },
+      "terms": {
+        "spring": {
+          "rounds": [
+            {
+              "start": {
+                "label": {
+                  "zh": "約2026/10月下旬",
+                  "my": "ခန့် 2026/10 လကုန်ပိုင်း"
+                },
+                "sort": "2026-10-21",
+                "status": "historical",
+                "basis": "115春"
+              },
+              "end": {
+                "label": {
+                  "zh": "約2026/11月中旬",
+                  "my": "ခန့် 2026/11 လလယ်"
+                },
+                "sort": "2026-11-11",
+                "status": "historical",
+                "basis": "115春"
+              },
+              "result": {
+                "label": {
+                  "zh": "約2027/01月初",
+                  "my": "ခန့် 2027/01 လအစ"
+                },
+                "sort": "2027-01-01",
+                "status": "historical",
+                "basis": "115春"
+              }
+            }
+          ],
+          "sources": [
+            "https://admission.ncnu.edu.tw/p/403-1055-608-1.php?Lang=zh-tw"
+          ],
+          "notes": [
+            {
+              "zh": "日期為提供資料包的歷年參考；本次尚未完成官方附件的逐項複核，不代表本期正式公告。",
+              "my": "ရက်စွဲများသည် ပေးထားသော ယခင်နှစ်ကိုးကားစာရင်းမှ ဖြစ်သည်။ တရားဝင်ဖိုင်နှင့် အပြည့်အစုံ ထပ်မစစ်နိုင်သေးပါ။ ယခုကာလ တရားဝင်ရက် မဟုတ်ပါ။"
+            },
+            {
+              "zh": "前屆申請 2025/10/27–11/14、實際放榜 2026/01/05；2026/01/16 為入學通知寄發規劃，不能當作放榜或收到日。",
+              "my": "အသေးစိတ်ကို တရားဝင်ဝင်ခွင့်လမ်းညွှန်တွင် အတည်ပြုပါ။"
+            }
+          ]
+        },
+        "fall": {
+          "rounds": [
+            {
+              "start": {
+                "label": {
+                  "zh": "約2026/12月下旬",
+                  "my": "ခန့် 2026/12 လကုန်ပိုင်း"
+                },
+                "sort": "2026-12-21",
+                "status": "historical",
+                "basis": "115"
+              },
+              "end": {
+                "label": {
+                  "zh": "約2027/02月下旬",
+                  "my": "ခန့် 2027/02 လကုန်ပိုင်း"
+                },
+                "sort": "2027-02-21",
+                "status": "historical",
+                "basis": "115"
+              },
+              "result": {
+                "label": {
+                  "zh": "約2027/04月初",
+                  "my": "ခန့် 2027/04 လအစ"
+                },
+                "sort": "2027-04-01",
+                "status": "historical",
+                "basis": "115"
+              },
+              "name": {
+                "zh": "1",
+                "my": "1"
+              }
+            },
+            {
+              "start": null,
+              "end": null,
+              "result": {
+                "label": {
+                  "zh": "約2027/06月中旬",
+                  "my": "ခန့် 2027/06 လလယ်"
+                },
+                "sort": "2027-06-11",
+                "status": "historical",
+                "basis": "115"
+              },
+              "name": {
+                "zh": "2",
+                "my": "2"
+              }
+            }
+          ],
+          "sources": [
+            "https://admission.ncnu.edu.tw/p/403-1055-608-1.php?Lang=zh-tw"
+          ],
+          "notes": [
+            {
+              "zh": "日期為提供資料包的歷年參考；本次尚未完成官方附件的逐項複核，不代表本期正式公告。",
+              "my": "ရက်စွဲများသည် ပေးထားသော ယခင်နှစ်ကိုးကားစာရင်းမှ ဖြစ်သည်။ တရားဝင်ဖိုင်နှင့် အပြည့်အစုံ ထပ်မစစ်နိုင်သေးပါ။ ယခုကာလ တရားဝင်ရက် မဟုတ်ပါ။"
+            },
+            {
+              "zh": "前屆第二梯開始／截止在來源資料未列明，保留空白。",
+              "my": "အသေးစိတ်ကို တရားဝင်ဝင်ခွင့်လမ်းညွှန်တွင် အတည်ပြုပါ။"
+            }
+          ]
+        }
+      },
+      "checked": "2026-09-19",
+      "reviewState": "unavailable"
+    },
+    {
+      "id": "0022",
+      "name": "國立臺灣科技大學",
+      "short": "臺科",
+      "abbr": "NTUST",
+      "english": "National Taiwan University of Science and Technology",
+      "cities": [
+        "臺北市"
+      ],
+      "cityEn": "Taipei",
+      "type": "technology",
+      "ownership": "public",
+      "difficulty": 5,
+      "website": "http://www.ntust.edu.tw",
+      "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPVRBSVdBTiBURUNILTAwMjItMTk",
+      "admission": {
+        "url": "https://admissions.ntust.edu.tw/graduateapp",
+        "kind": "apply"
+      },
+      "terms": {
+        "spring": {
+          "rounds": [
+            {
+              "start": {
+                "date": "2026-07-01",
+                "status": "official"
+              },
+              "end": {
+                "date": "2026-09-11",
+                "status": "official"
+              },
+              "result": {
+                "date": "2026-10-30",
+                "status": "official"
+              }
+            }
+          ],
+          "sources": [
+            "https://admissions.ntust.edu.tw/graduateapp"
+          ],
+          "notes": [
+            {
+              "zh": "10/30 是預分發錄取狀態與獎學金結果；11/30 為獎學金遞補結果及寄發錄取通知，兩者不同。",
+              "my": "10/30 သည် ယာယီဝင်ခွင့်နှင့် ပညာသင်ဆုရလဒ် ဖြစ်သည်။ 11/30 တွင် ပညာသင်ဆုအရန်ရလဒ်နှင့် ဝင်ခွင့်စာ ပေးပို့သည်။"
+            }
+          ],
+          "scope": "graduate",
+          "scopeLabel": {
+            "zh": "學士／碩士／博士依當屆開放系所",
+            "my": "ဘွဲ့ကြို / မဟာဘွဲ့ / ပါရဂူ — လမ်းညွှန်ပါ ဘာသာရပ်အတိုင်း"
+          }
+        },
+        "fall": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        }
+      },
+      "checked": "2026-09-19",
+      "reviewState": "unavailable"
+    },
+    {
+      "id": "0023",
+      "name": "國立雲林科技大學",
+      "short": "雲科",
+      "abbr": "YunTech",
+      "english": "",
+      "cities": [
+        "雲林縣"
+      ],
+      "cityEn": "Yunlin",
+      "type": "technology",
+      "ownership": "public",
+      "difficulty": 4,
+      "website": "http://www.yuntech.edu.tw",
+      "catalog": null,
+      "admission": {
+        "url": "https://aax.yuntech.edu.tw/",
+        "kind": "admission"
+      },
+      "terms": {
+        "spring": {
+          "rounds": [],
+          "sources": [
+            "https://aax.yuntech.edu.tw/"
+          ],
+          "notes": [
+            {
+              "zh": "提供資料中的 115 春季為碩博士招生；學士不可使用研究所日期。",
+              "my": "အသေးစိတ်ကို တရားဝင်ဝင်ခွင့်လမ်းညွှန်တွင် အတည်ပြုပါ။"
+            }
+          ],
+          "scope": "graduate",
+          "scopeLabel": {
+            "zh": "學士／碩士／博士依當屆開放系所",
+            "my": "ဘွဲ့ကြို / မဟာဘွဲ့ / ပါရဂူ — လမ်းညွှန်ပါ ဘာသာရပ်အတိုင်း"
+          }
+        },
+        "fall": {
+          "rounds": [
+            {
+              "start": null,
+              "end": null,
+              "result": {
+                "label": {
+                  "zh": "約2027/06月初",
+                  "my": "ခန့် 2027/06 လအစ"
+                },
+                "sort": "2027-06-01",
+                "status": "historical",
+                "basis": "115"
+              }
+            }
+          ],
+          "sources": [
+            "https://aax.yuntech.edu.tw/"
+          ],
+          "notes": [
+            {
+              "zh": "日期為提供資料包的歷年參考；本次尚未完成官方附件的逐項複核，不代表本期正式公告。",
+              "my": "ရက်စွဲများသည် ပေးထားသော ယခင်နှစ်ကိုးကားစာရင်းမှ ဖြစ်သည်။ တရားဝင်ဖိုင်နှင့် အပြည့်အစုံ ထပ်မစစ်နိုင်သေးပါ။ ယခုကာလ တရားဝင်ရက် မဟုတ်ပါ။"
+            }
+          ]
+        }
+      },
+      "checked": "2026-09-19",
+      "reviewState": "unavailable"
+    },
+    {
+      "id": "0024",
+      "name": "國立屏東科技大學",
+      "short": "屏科",
+      "abbr": "NPUST",
+      "english": "National Pingtung University of Science and Technology",
+      "cities": [
+        "屏東縣"
+      ],
+      "cityEn": "Pingtung",
+      "type": "technology",
+      "ownership": "public",
+      "difficulty": 3,
+      "website": "http://www.npust.edu.tw",
+      "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPU5QVVNULTAwMjQtMjE",
+      "admission": {
+        "url": "http://www.npust.edu.tw",
+        "kind": "home"
+      },
+      "terms": {
+        "spring": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        },
+        "fall": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        }
+      },
+      "checked": "2026-09-19",
+      "reviewState": "unavailable"
+    },
+    {
+      "id": "0025",
+      "name": "國立臺北科技大學",
+      "short": "北科",
+      "abbr": "NTUT",
+      "english": "National Taipei University of Technology",
+      "cities": [
+        "臺北市"
+      ],
+      "cityEn": "Taipei",
+      "type": "technology",
+      "ownership": "public",
+      "difficulty": 4,
+      "website": "https://www.ntut.edu.tw/index.php",
+      "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPVRBSVBFSSBURUNILTAwMjUtMjI",
+      "admission": {
+        "url": "https://oia.ntut.edu.tw/p/412-1032-13828.php?Lang=en",
+        "kind": "admission"
+      },
+      "terms": {
+        "spring": {
+          "rounds": [
+            {
+              "start": {
+                "date": "2026-08-01",
+                "status": "official"
+              },
+              "end": {
+                "date": "2026-09-30",
+                "status": "official"
+              },
+              "result": {
+                "label": {
+                  "zh": "11/6／11月中 · 待確認",
+                  "my": "11/6 / 11 လလယ် · အတည်ပြုရန်"
+                },
+                "status": "conflict"
+              },
+              "note": {
+                "zh": "簡章 p.i 及 p.5 為 2026/11/06；招生網頁寫 11 月中。未確認修訂先後，不擅自選一天。",
+                "my": "အသေးစိတ်ကို တရားဝင်ဝင်ခွင့်လမ်းညွှန်တွင် အတည်ပြုပါ။"
+              }
+            }
+          ],
+          "sources": [
+            "https://oia.ntut.edu.tw/p/412-1032-13828.php?Lang=en",
+            "https://oia.ntut.edu.tw/var/file/32/1032/img/2027SpringAdmissionHandbook.pdf"
+          ],
+          "notes": [
+            {
+              "zh": "放榜日期有官方來源衝突，因此不加入確定放榜日排序。",
+              "my": "တရားဝင်ရင်းမြစ်နှစ်ခု၏ ရလဒ်ရက် မတူသဖြင့် အတည်ပြုရက်အဖြစ် မစီထားပါ။"
+            }
+          ],
+          "brochure": {
+            "url": "https://oia.ntut.edu.tw/var/file/32/1032/img/2027SpringAdmissionHandbook.pdf",
+            "status": "official"
+          }
+        },
+        "fall": {
+          "rounds": [
+            {
+              "start": {
+                "date": "2026-12-01",
+                "status": "official"
+              },
+              "end": {
+                "date": "2027-03-10",
+                "status": "official"
+              },
+              "result": {
+                "label": {
+                  "zh": "2027/05月初",
+                  "my": "2027/05 လအစ"
+                },
+                "sort": "2027-05-01",
+                "status": "official",
+                "basis": "115"
+              }
+            }
+          ],
+          "sources": [
+            "https://oia.ntut.edu.tw/p/412-1032-13828.php?Lang=en"
+          ],
+          "notes": [
+            {
+              "zh": "官方招生頁列出 116-1 時程；2027 秋各系是否開放仍須以該期簡章確認。",
+              "my": "အသေးစိတ်ကို တရားဝင်ဝင်ခွင့်လမ်းညွှန်တွင် အတည်ပြုပါ။"
+            }
+          ]
+        }
+      },
+      "checked": "2026-09-19",
+      "reviewState": "page-read"
+    },
+    {
+      "id": "0028",
+      "name": "國立臺北藝術大學",
+      "short": "北藝",
+      "abbr": "TNUA",
+      "english": "Taipei National University of the Arts",
+      "cities": [
+        "臺北市"
+      ],
+      "cityEn": "Taipei",
+      "type": "university",
+      "ownership": "public",
+      "difficulty": null,
+      "website": "http://www.tnua.edu.tw",
+      "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPVROVUEtMDAyOC0yMw",
+      "admission": {
+        "url": "http://www.tnua.edu.tw",
+        "kind": "home"
+      },
+      "terms": {
+        "spring": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        },
+        "fall": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        }
+      },
+      "checked": "2026-09-19",
+      "reviewState": "unavailable"
+    },
+    {
+      "id": "0029",
+      "name": "國立臺灣藝術大學",
+      "short": "臺藝",
+      "abbr": "NTUA",
+      "english": "National Taiwan University of Arts",
+      "cities": [
+        "新北市"
+      ],
+      "cityEn": "New Taipei",
+      "type": "university",
+      "ownership": "public",
+      "difficulty": null,
+      "website": "http://www.ntua.edu.tw",
+      "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPU5UVUEtMDAyOS0yNA",
+      "admission": {
+        "url": "http://www.ntua.edu.tw",
+        "kind": "home"
+      },
+      "terms": {
+        "spring": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        },
+        "fall": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        }
+      },
+      "checked": "2026-09-19",
+      "reviewState": "unavailable"
+    },
+    {
+      "id": "0030",
+      "name": "國立臺東大學",
+      "short": "臺東",
+      "abbr": "NTTU",
+      "english": "National Taitung University",
+      "cities": [
+        "臺東縣"
+      ],
+      "cityEn": "Taitung",
+      "type": "university",
+      "ownership": "public",
+      "difficulty": 3,
+      "website": "http://www.nttu.edu.tw",
+      "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPU5UVFUtMDAzMC0yNQ",
+      "admission": {
+        "url": "http://www.nttu.edu.tw",
+        "kind": "home"
+      },
+      "terms": {
+        "spring": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        },
+        "fall": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        }
+      },
+      "checked": "2026-09-19",
+      "reviewState": "unavailable"
+    },
+    {
+      "id": "0031",
+      "name": "國立宜蘭大學",
+      "short": "宜蘭",
+      "abbr": "NIU",
+      "english": "National Ilan University",
+      "cities": [
+        "宜蘭縣"
+      ],
+      "cityEn": "Yilan",
+      "type": "university",
+      "ownership": "public",
+      "difficulty": 3,
+      "website": "http://www.niu.edu.tw",
+      "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPU5JVS0wMDMxLTI2",
+      "admission": {
+        "url": "https://isa.niu.edu.tw/",
+        "kind": "admission"
+      },
+      "terms": {
+        "spring": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        },
+        "fall": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        }
+      },
+      "checked": "2026-09-19",
+      "reviewState": "page-read"
+    },
+    {
+      "id": "0032",
+      "name": "國立聯合大學",
+      "short": "聯合",
+      "abbr": "NUU",
+      "english": "National United University",
+      "cities": [
+        "苗栗縣"
+      ],
+      "cityEn": "Miaoli",
+      "type": "university",
+      "ownership": "public",
+      "difficulty": 3,
+      "website": "http://www.nuu.edu.tw",
+      "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPU5VVS0wMDMyLTI3",
+      "admission": {
+        "url": "http://www.nuu.edu.tw",
+        "kind": "home"
+      },
+      "terms": {
+        "spring": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        },
+        "fall": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        }
+      },
+      "checked": "2026-09-19",
+      "reviewState": "unavailable"
+    },
+    {
+      "id": "0033",
+      "name": "國立虎尾科技大學",
+      "short": "虎尾",
+      "abbr": "NFU",
+      "english": "National Formosa University",
+      "cities": [
+        "雲林縣"
+      ],
+      "cityEn": "Yunlin",
+      "type": "technology",
+      "ownership": "public",
+      "difficulty": 3,
+      "website": "http://www.nfu.edu.tw",
+      "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPU5GVS0wMDMzLTI4",
+      "admission": {
+        "url": "https://oia.nfu.edu.tw/",
+        "kind": "admission"
+      },
+      "terms": {
+        "spring": {
+          "rounds": [
+            {
+              "start": {
+                "label": {
+                  "zh": "約2026/09月中旬",
+                  "my": "ခန့် 2026/09 လလယ်"
+                },
+                "sort": "2026-09-11",
+                "status": "historical",
+                "basis": "115春"
+              },
+              "end": {
+                "label": {
+                  "zh": "約2026/10月底",
+                  "my": "ခန့် 2026/10 လကုန်"
+                },
+                "sort": "2026-10-21",
+                "status": "historical",
+                "basis": "115春"
+              },
+              "result": {
+                "label": {
+                  "zh": "約2026/12月初",
+                  "my": "ခန့် 2026/12 လအစ"
+                },
+                "sort": "2026-12-01",
+                "status": "historical",
+                "basis": "115春"
+              }
+            }
+          ],
+          "sources": [
+            "https://oia.nfu.edu.tw/"
+          ],
+          "notes": [
+            {
+              "zh": "日期為提供資料包的歷年參考；本次尚未完成官方附件的逐項複核，不代表本期正式公告。",
+              "my": "ရက်စွဲများသည် ပေးထားသော ယခင်နှစ်ကိုးကားစာရင်းမှ ဖြစ်သည်။ တရားဝင်ဖိုင်နှင့် အပြည့်အစုံ ထပ်မစစ်နိုင်သေးပါ။ ယခုကာလ တရားဝင်ရက် မဟုတ်ပါ။"
+            },
+            {
+              "zh": "前屆 2025/09/17–10/31 申請；實際 2025/12/04 放榜，原訂 11/27 不再當作實際榜單日。",
+              "my": "အသေးစိတ်ကို တရားဝင်ဝင်ခွင့်လမ်းညွှန်တွင် အတည်ပြုပါ။"
+            }
+          ]
+        },
+        "fall": {
+          "rounds": [
+            {
+              "start": {
+                "label": {
+                  "zh": "約2027/04月初",
+                  "my": "ခန့် 2027/04 လအစ"
+                },
+                "sort": "2027-04-01",
+                "status": "historical",
+                "basis": "115"
+              },
+              "end": {
+                "label": {
+                  "zh": "約2027/05月中旬",
+                  "my": "ခန့် 2027/05 လလယ်"
+                },
+                "sort": "2027-05-11",
+                "status": "historical",
+                "basis": "115"
+              },
+              "result": {
+                "label": {
+                  "zh": "約2027/06月上旬",
+                  "my": "ခန့် 2027/06 လအစ"
+                },
+                "sort": "2027-06-01",
+                "status": "historical",
+                "basis": "115"
+              }
+            }
+          ],
+          "sources": [
+            "https://oia.nfu.edu.tw/"
+          ],
+          "notes": [
+            {
+              "zh": "日期為提供資料包的歷年參考；本次尚未完成官方附件的逐項複核，不代表本期正式公告。",
+              "my": "ရက်စွဲများသည် ပေးထားသော ယခင်နှစ်ကိုးကားစာရင်းမှ ဖြစ်သည်။ တရားဝင်ဖိုင်နှင့် အပြည့်အစုံ ထပ်မစစ်နိုင်သေးပါ။ ယခုကာလ တရားဝင်ရက် မဟုတ်ပါ။"
+            }
+          ]
+        }
+      },
+      "checked": "2026-09-19",
+      "reviewState": "page-read"
+    },
+    {
+      "id": "0035",
+      "name": "國立臺南藝術大學",
+      "short": "南藝",
+      "abbr": "TNNUA",
+      "english": "Tainan National University of the Arts",
+      "cities": [
+        "臺南市"
+      ],
+      "cityEn": "Tainan",
+      "type": "university",
+      "ownership": "public",
+      "difficulty": null,
+      "website": "http://www.tnnua.edu.tw",
+      "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPVROTlVBLTAwMzUtMjk",
+      "admission": {
+        "url": "http://www.tnnua.edu.tw",
+        "kind": "home"
+      },
+      "terms": {
+        "spring": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        },
+        "fall": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        }
+      },
+      "checked": "2026-09-19",
+      "reviewState": "unavailable"
+    },
+    {
+      "id": "0036",
+      "name": "國立臺南大學",
+      "short": "臺南",
+      "abbr": "NUTN",
+      "english": "National University of Tainan",
+      "cities": [
+        "臺南市"
+      ],
+      "cityEn": "Tainan",
+      "type": "university",
+      "ownership": "public",
+      "difficulty": 3,
+      "website": "https://web.nutn.edu.tw/",
+      "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPU5VVE4tMDAzNi0zMA",
+      "admission": {
+        "url": "https://web.nutn.edu.tw/",
+        "kind": "home"
+      },
+      "terms": {
+        "spring": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        },
+        "fall": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        }
+      },
+      "checked": "2026-09-19",
+      "reviewState": "unavailable"
+    },
+    {
+      "id": "0037",
+      "name": "國立臺北教育大學",
+      "short": "北教",
+      "abbr": "NTUE",
+      "english": "National Taipei University of Education",
+      "cities": [
+        "臺北市"
+      ],
+      "cityEn": "Taipei",
+      "type": "university",
+      "ownership": "public",
+      "difficulty": 3,
+      "website": "http://www.ntue.edu.tw",
+      "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPU5UVUUtMDAzNy0zMQ",
+      "admission": {
+        "url": "http://www.ntue.edu.tw",
+        "kind": "home"
+      },
+      "terms": {
+        "spring": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        },
+        "fall": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        }
+      },
+      "checked": "2026-09-19",
+      "reviewState": "unavailable"
+    },
+    {
+      "id": "0039",
+      "name": "國立臺中教育大學",
+      "short": "中教",
+      "abbr": "NTCU",
+      "english": "National Taichung University of Education",
+      "cities": [
+        "臺中市"
+      ],
+      "cityEn": "Taichung",
+      "type": "university",
+      "ownership": "public",
+      "difficulty": 3,
+      "website": "http://www.ntcu.edu.tw",
+      "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPU5UQ1UtMDAzOS0zMg",
+      "admission": {
+        "url": "https://insch.ntcu.edu.tw/en/",
+        "kind": "apply"
+      },
+      "terms": {
+        "spring": {
+          "rounds": [
+            {
+              "start": {
+                "date": "2026-08-01",
+                "status": "official"
+              },
+              "end": {
+                "date": "2026-10-31",
+                "status": "official"
+              },
+              "result": null
+            }
+          ],
+          "sources": [
+            "https://insch.ntcu.edu.tw/en/news_detail.php?sn=16"
+          ],
+          "notes": [],
+          "scope": "all",
+          "scopeLabel": {
+            "zh": "學士／碩士／博士依當屆開放系所",
+            "my": "ဘွဲ့ကြို / မဟာဘွဲ့ / ပါရဂူ — လမ်းညွှန်ပါ ဘာသာရပ်အတိုင်း"
+          },
+          "brochure": {
+            "url": "https://insch.ntcu.edu.tw/en/enroll_detail.php?sn=7",
+            "status": "official"
+          }
+        },
+        "fall": {
+          "rounds": [
+            {
+              "start": null,
+              "end": {
+                "label": {
+                  "zh": "約2027/04月底",
+                  "my": "ခန့် 2027/04 လကုန်"
+                },
+                "sort": "2027-04-21",
+                "status": "historical",
+                "basis": "115"
+              },
+              "result": {
+                "label": {
+                  "zh": "約2027/06月中旬",
+                  "my": "ခန့် 2027/06 လလယ်"
+                },
+                "sort": "2027-06-11",
+                "status": "historical",
+                "basis": "115"
+              }
+            }
+          ],
+          "sources": [
+            "https://insch.ntcu.edu.tw/en/"
+          ],
+          "notes": [
+            {
+              "zh": "依校方前屆 2026/04/30 截止、2026/06/17 實際公告推估。",
+              "my": "အသေးစိတ်ကို တရားဝင်ဝင်ခွင့်လမ်းညွှန်တွင် အတည်ပြုပါ။"
+            }
+          ]
+        }
+      },
+      "checked": "2026-09-19",
+      "reviewState": "page-read"
+    },
+    {
+      "id": "0042",
+      "name": "國立澎湖科技大學",
+      "short": "澎科",
+      "abbr": "NPU",
+      "english": "National Penghu University of Science and Technology",
+      "cities": [
+        "澎湖縣"
+      ],
+      "cityEn": "Penghu",
+      "type": "technology",
+      "ownership": "public",
+      "difficulty": 2,
+      "website": "https://www.npu.edu.tw/",
+      "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPU5QVS0wMDQyLTMz",
+      "admission": {
+        "url": "https://www.npu.edu.tw/",
+        "kind": "home"
+      },
+      "terms": {
+        "spring": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        },
+        "fall": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        }
+      },
+      "checked": "2026-09-19",
+      "reviewState": "unavailable"
+    },
+    {
+      "id": "0043",
+      "name": "國立勤益科技大學",
+      "short": "勤益",
+      "abbr": "NCUT",
+      "english": "National Chin-Yi University of Technology",
+      "cities": [
+        "臺中市"
+      ],
+      "cityEn": "Taichung",
+      "type": "technology",
+      "ownership": "public",
+      "difficulty": 3,
+      "website": "https://www.ncut.edu.tw/",
+      "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPU5DVVQtMDA0My0zNA",
+      "admission": {
+        "url": "https://admission.ncut.edu.tw/",
+        "kind": "admission"
+      },
+      "terms": {
+        "spring": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        },
+        "fall": {
+          "rounds": [
+            {
+              "start": {
+                "label": {
+                  "zh": "約2027/03月下旬",
+                  "my": "ခန့် 2027/03 လကုန်ပိုင်း"
+                },
+                "sort": "2027-03-21",
+                "status": "historical",
+                "basis": "115"
+              },
+              "end": {
+                "label": {
+                  "zh": "約2027/05月上旬",
+                  "my": "ခန့် 2027/05 လအစ"
+                },
+                "sort": "2027-05-01",
+                "status": "historical",
+                "basis": "115"
+              },
+              "result": {
+                "label": {
+                  "zh": "約2027/07月中下旬",
+                  "my": "ခန့် 2027/07 လ中下旬"
+                },
+                "sort": "2027-07-11",
+                "status": "historical",
+                "basis": "115"
+              }
+            }
+          ],
+          "sources": [
+            "https://admission.ncut.edu.tw/"
+          ],
+          "notes": [
+            {
+              "zh": "日期為提供資料包的歷年參考；本次尚未完成官方附件的逐項複核，不代表本期正式公告。",
+              "my": "ရက်စွဲများသည် ပေးထားသော ယခင်နှစ်ကိုးကားစာရင်းမှ ဖြစ်သည်။ တရားဝင်ဖိုင်နှင့် အပြည့်အစုံ ထပ်မစစ်နိုင်သေးပါ။ ယခုကာလ တရားဝင်ရက် မဟုတ်ပါ။"
+            }
+          ]
+        }
+      },
+      "checked": "2026-09-19",
+      "reviewState": "unavailable"
+    },
+    {
+      "id": "0044",
+      "name": "國立體育大學",
+      "short": "國體",
+      "abbr": "NTSU",
+      "english": "National Taiwan Sport University",
+      "cities": [
+        "桃園市"
+      ],
+      "cityEn": "Taoyuan",
+      "type": "university",
+      "ownership": "public",
+      "difficulty": null,
+      "website": "http://www.ntsu.edu.tw",
+      "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPU5UU1UtMDA0NC0zNQ",
+      "admission": {
+        "url": "http://www.ntsu.edu.tw",
+        "kind": "home"
+      },
+      "terms": {
+        "spring": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        },
+        "fall": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        }
+      },
+      "checked": "2026-09-19",
+      "reviewState": "unavailable"
+    },
+    {
+      "id": "0046",
+      "name": "國立臺北護理健康大學",
+      "short": "北護",
+      "abbr": "NTUNHS",
+      "english": "National Taipei University of Nursing and Health Sciences",
+      "cities": [
+        "臺北市"
+      ],
+      "cityEn": "Taipei",
+      "type": "technology",
+      "ownership": "public",
+      "difficulty": null,
+      "website": "http://www.ntunhs.edu.tw",
+      "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPU5UVU5IUy0wMDQ2LTM2",
+      "admission": {
+        "url": "http://www.ntunhs.edu.tw",
+        "kind": "home"
+      },
+      "terms": {
+        "spring": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        },
+        "fall": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        }
+      },
+      "checked": "2026-09-19",
+      "reviewState": "page-read"
+    },
+    {
+      "id": "0047",
+      "name": "國立高雄餐旅大學",
+      "short": "高餐",
+      "abbr": "NKUHT",
+      "english": "National Kaohsiung University of Hospitality and Tourism",
+      "cities": [
+        "高雄市"
+      ],
+      "cityEn": "Kaohsiung",
+      "type": "technology",
+      "ownership": "public",
+      "difficulty": 3,
+      "website": "https://www.nkuht.edu.tw/p/403-1000-18.php",
+      "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPU5LVUhULTAwNDctMzc",
+      "admission": {
+        "url": "https://www.nkuht.edu.tw/p/403-1000-18.php",
+        "kind": "home"
+      },
+      "terms": {
+        "spring": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        },
+        "fall": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        }
+      },
+      "checked": "2026-09-19",
+      "reviewState": "unavailable"
+    },
+    {
+      "id": "0048",
+      "name": "國立金門大學",
+      "short": "金門",
+      "abbr": "NQU",
+      "english": "National Quemoy University",
+      "cities": [
+        "金門縣"
+      ],
+      "cityEn": "Kinmen",
+      "type": "university",
+      "ownership": "public",
+      "difficulty": 2,
+      "website": "https://www.nqu.edu.tw/app/home.php?Lang=zh-tw",
+      "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPU5RVS0wMDQ4LTM4",
+      "admission": {
+        "url": "https://www.nqu.edu.tw/app/home.php?Lang=zh-tw",
+        "kind": "home"
+      },
+      "terms": {
+        "spring": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        },
+        "fall": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        }
+      },
+      "checked": "2026-09-19",
+      "reviewState": "unavailable"
+    },
+    {
+      "id": "0049",
+      "name": "國立臺灣體育運動大學",
+      "short": "臺體",
+      "abbr": "NTUS",
+      "english": "National Taiwan University of Sport",
+      "cities": [
+        "臺中市"
+      ],
+      "cityEn": "Taichung",
+      "type": "university",
+      "ownership": "public",
+      "difficulty": null,
+      "website": "https://www.ntus.edu.tw/cht/index.php",
+      "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPU5UVVMtMDA0OS0zOQ",
+      "admission": {
+        "url": "https://www.ntus.edu.tw/cht/index.php",
+        "kind": "home"
+      },
+      "terms": {
+        "spring": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        },
+        "fall": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        }
+      },
+      "checked": "2026-09-19",
+      "reviewState": "unavailable"
+    },
+    {
+      "id": "0050",
+      "name": "國立臺中科技大學",
+      "short": "中科",
+      "abbr": "NUTC",
+      "english": "National Taichung University of Science and Technology",
+      "cities": [
+        "臺中市"
+      ],
+      "cityEn": "Taichung",
+      "type": "technology",
+      "ownership": "public",
+      "difficulty": 3,
+      "website": "http://www.nutc.edu.tw/bin/home.php",
+      "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPU5UQ1VTVC0wMDUwLTQw",
+      "admission": {
+        "url": "http://www.nutc.edu.tw/bin/home.php",
+        "kind": "home"
+      },
+      "terms": {
+        "spring": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        },
+        "fall": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        }
+      },
+      "checked": "2026-09-19",
+      "reviewState": "unavailable"
+    },
+    {
+      "id": "0051",
+      "name": "國立臺北商業大學",
+      "short": "北商",
+      "abbr": "NTUB",
+      "english": "National Taipei University of Business",
+      "cities": [
+        "臺北市"
+      ],
+      "cityEn": "Taipei",
+      "type": "technology",
+      "ownership": "public",
+      "difficulty": 3,
+      "website": "http://www.ntub.edu.tw",
+      "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPU5UVUItMDA1MS00MQ",
+      "admission": {
+        "url": "http://www.ntub.edu.tw",
+        "kind": "home"
+      },
+      "terms": {
+        "spring": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        },
+        "fall": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        }
+      },
+      "checked": "2026-09-19",
+      "reviewState": "unavailable"
+    },
+    {
+      "id": "0052",
+      "name": "國立屏東大學",
+      "short": "屏大",
+      "abbr": "NPTU",
+      "english": "National Pingtung University",
+      "cities": [
+        "屏東縣"
+      ],
+      "cityEn": "Pingtung",
+      "type": "university",
+      "ownership": "public",
+      "difficulty": 3,
+      "website": "http://www.nptu.edu.tw",
+      "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPU5QVFUtMDA1Mi00Mg",
+      "admission": {
+        "url": "https://oiais.nptu.edu.tw/p/412-1090-12629.php?Lang=zh-tw",
+        "kind": "admission"
+      },
+      "terms": {
+        "spring": {
+          "rounds": [
+            {
+              "start": null,
+              "end": {
+                "date": "2026-10-15",
+                "status": "official"
+              },
+              "result": {
+                "date": "2026-11-30",
+                "status": "official"
+              }
+            }
+          ],
+          "sources": [
+            "https://oiais.nptu.edu.tw/p/412-1090-12629.php?Lang=zh-tw"
+          ],
+          "notes": []
+        },
+        "fall": {
+          "rounds": [
+            {
+              "start": null,
+              "end": {
+                "label": {
+                  "zh": "約2027/04月中旬",
+                  "my": "ခန့် 2027/04 လလယ်"
+                },
+                "sort": "2027-04-11",
+                "status": "historical",
+                "basis": "115"
+              },
+              "result": {
+                "label": {
+                  "zh": "約2027/06月中旬",
+                  "my": "ခန့် 2027/06 လလယ်"
+                },
+                "sort": "2027-06-11",
+                "status": "historical",
+                "basis": "115"
+              }
+            }
+          ],
+          "sources": [
+            "https://oiais.nptu.edu.tw/p/412-1090-12629.php?Lang=zh-tw"
+          ],
+          "notes": [
+            {
+              "zh": "前屆 2026 秋截止 04/15、放榜 06/15；開始日未核得，不自行補入。",
+              "my": "အသေးစိတ်ကို တရားဝင်ဝင်ခွင့်လမ်းညွှန်တွင် အတည်ပြုပါ။"
+            }
+          ]
+        }
+      },
+      "checked": "2026-09-19",
+      "reviewState": "page-read"
+    },
+    {
+      "id": "0053",
+      "name": "國立高雄科技大學",
+      "short": "高科",
+      "abbr": "NKUST",
+      "english": "National Kaohsiung University of Science and Technology",
+      "cities": [
+        "高雄市"
+      ],
+      "cityEn": "Kaohsiung",
+      "type": "technology",
+      "ownership": "public",
+      "difficulty": 3,
+      "website": "http://www.nkust.edu.tw",
+      "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPU5LVVNULTAwNTMtNDM",
+      "admission": {
+        "url": "https://oia.nkust.edu.tw/news_det-970.html",
+        "kind": "admission"
+      },
+      "terms": {
+        "spring": {
+          "rounds": [
+            {
+              "start": {
+                "date": "2026-09-07",
+                "status": "official"
+              },
+              "end": {
+                "date": "2026-10-07",
+                "status": "official"
+              },
+              "result": {
+                "date": "2026-11-30",
+                "status": "official"
+              }
+            }
+          ],
+          "sources": [
+            "https://oia.nkust.edu.tw/news_det-970.html",
+            "https://oia.nkust.edu.tw/images/upload/files/2027%E6%98%A5(115-2)%E5%A4%96%E5%9C%8B%E5%AD%B8%E7%94%9F%E6%8B%9B%E7%94%9F%E7%B0%A1%E7%AB%A0%202027%20Spring%20Semester%20International%20Student%20Admission%20Guidelines.pdf"
+          ],
+          "notes": [
+            {
+              "zh": "11/30 放榜；12 月上旬確認意願後才開放入學許可下載。",
+              "my": "11/30 ရလဒ်ထွက်သည်။ တက်ရောက်မည်ဟု အတည်ပြုပြီးမှ ဒီဇင်ဘာလအစတွင် ဝင်ခွင့်စာ ရယူနိုင်သည်။"
+            }
+          ],
+          "scope": "graduate",
+          "scopeLabel": {
+            "zh": "學士／碩士／博士依當屆開放系所",
+            "my": "ဘွဲ့ကြို / မဟာဘွဲ့ / ပါရဂူ — လမ်းညွှန်ပါ ဘာသာရပ်အတိုင်း"
+          },
+          "brochure": {
+            "url": "https://oia.nkust.edu.tw/images/upload/files/2027%E6%98%A5(115-2)%E5%A4%96%E5%9C%8B%E5%AD%B8%E7%94%9F%E6%8B%9B%E7%94%9F%E7%B0%A1%E7%AB%A0%202027%20Spring%20Semester%20International%20Student%20Admission%20Guidelines.pdf#page=19",
+            "status": "official"
+          }
+        },
+        "fall": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        }
+      },
+      "checked": "2026-09-19",
+      "reviewState": "page-read"
+    },
+    {
+      "id": "0144",
+      "name": "國立臺灣戲曲學院",
+      "short": "臺灣戲曲",
+      "abbr": "TCPA",
+      "english": "National Taiwan College of Performing Arts",
+      "cities": [
+        "臺北市"
+      ],
+      "cityEn": "Taipei",
+      "type": "college",
+      "ownership": "public",
+      "difficulty": null,
+      "website": "http://www.tcpa.edu.tw/",
+      "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPU5UQ1BBLTAxNDQtNDQ",
+      "admission": {
+        "url": "http://www.tcpa.edu.tw/",
+        "kind": "home"
+      },
+      "terms": {
+        "spring": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        },
+        "fall": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        }
+      },
+      "checked": "2026-09-19",
+      "reviewState": "page-read"
+    },
+    {
+      "id": "0221",
+      "name": "國立臺南護理專科學校",
+      "short": "臺南護專",
+      "abbr": "NTIN",
+      "english": "National Tainan Junior College of Nursing",
+      "cities": [
+        "臺南市"
+      ],
+      "cityEn": "Tainan",
+      "type": "junior",
+      "ownership": "public",
+      "difficulty": null,
+      "website": "http://www.ntin.edu.tw",
+      "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPU5USU4tMDIyMS00NQ",
+      "admission": {
+        "url": "http://www.ntin.edu.tw",
+        "kind": "home"
+      },
+      "terms": {
+        "spring": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        },
+        "fall": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        }
+      },
+      "checked": "2026-09-19",
+      "reviewState": "page-read"
+    },
+    {
+      "id": "0222",
+      "name": "國立臺東專科學校",
+      "short": "臺東專科",
+      "abbr": "NTC",
+      "english": "",
+      "cities": [
+        "臺東縣"
+      ],
+      "cityEn": "Taitung",
+      "type": "junior",
+      "ownership": "public",
+      "difficulty": null,
+      "website": "https://www.ntc.edu.tw/",
+      "catalog": null,
+      "admission": {
+        "url": "https://www.ntc.edu.tw/",
+        "kind": "home"
+      },
+      "terms": {
+        "spring": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        },
+        "fall": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        }
+      },
+      "checked": "2026-09-19",
+      "reviewState": "page-read"
+    },
+    {
+      "id": "1001",
+      "name": "東海大學",
+      "short": "東海",
+      "abbr": "THU",
+      "english": "Tunghai University",
+      "cities": [
+        "臺中市"
+      ],
+      "cityEn": "Taichung",
+      "type": "university",
+      "ownership": "private",
+      "difficulty": 3,
+      "website": "https://www.thu.edu.tw/",
+      "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPVRIVS0xMDAxLTQ3",
+      "admission": {
+        "url": "https://exam2.thu.edu.tw/EXAM/forlist.jsp",
+        "kind": "admission"
+      },
+      "terms": {
+        "spring": {
+          "rounds": [
+            {
+              "start": {
+                "date": "2026-10-01",
+                "status": "official"
+              },
+              "end": {
+                "date": "2026-10-31",
+                "status": "official"
+              },
+              "result": {
+                "label": {
+                  "zh": "2026/12月初",
+                  "my": "2026/12 လအစ"
+                },
+                "sort": "2026-12-01",
+                "status": "official",
+                "basis": "115"
+              }
+            }
+          ],
+          "sources": [
+            "https://exam2.thu.edu.tw/EXAM/download_doc_26/21.pdf"
+          ],
+          "notes": [],
+          "scope": "all",
+          "scopeLabel": {
+            "zh": "學士／碩士／博士依當屆開放系所",
+            "my": "ဘွဲ့ကြို / မဟာဘွဲ့ / ပါရဂူ — လမ်းညွှန်ပါ ဘာသာရပ်အတိုင်း"
+          },
+          "brochure": {
+            "url": "https://exam2.thu.edu.tw/EXAM/download_doc_26/21.pdf",
+            "status": "official"
+          }
+        },
+        "fall": {
+          "rounds": [
+            {
+              "start": {
+                "label": {
+                  "zh": "約2027/01月下旬",
+                  "my": "ခန့် 2027/01 လကုန်ပိုင်း"
+                },
+                "sort": "2027-01-21",
+                "status": "historical",
+                "basis": "115"
+              },
+              "end": {
+                "label": {
+                  "zh": "約2027/02月底",
+                  "my": "ခန့် 2027/02 လကုန်"
+                },
+                "sort": "2027-02-21",
+                "status": "historical",
+                "basis": "115"
+              },
+              "result": {
+                "label": {
+                  "zh": "約2027/04月上旬",
+                  "my": "ခန့် 2027/04 လအစ"
+                },
+                "sort": "2027-04-01",
+                "status": "historical",
+                "basis": "115"
+              },
+              "name": {
+                "zh": "1",
+                "my": "1"
+              }
+            },
+            {
+              "start": {
+                "label": {
+                  "zh": "約2027/03月初",
+                  "my": "ခန့် 2027/03 လအစ"
+                },
+                "sort": "2027-03-01",
+                "status": "historical",
+                "basis": "115"
+              },
+              "end": {
+                "label": {
+                  "zh": "約2027/03月底",
+                  "my": "ခန့် 2027/03 လကုန်"
+                },
+                "sort": "2027-03-21",
+                "status": "historical",
+                "basis": "115"
+              },
+              "result": {
+                "label": {
+                  "zh": "約2027/05月初",
+                  "my": "ခန့် 2027/05 လအစ"
+                },
+                "sort": "2027-05-01",
+                "status": "historical",
+                "basis": "115"
+              },
+              "name": {
+                "zh": "2",
+                "my": "2"
+              }
+            },
+            {
+              "start": {
+                "label": {
+                  "zh": "約2027/04月初",
+                  "my": "ခန့် 2027/04 လအစ"
+                },
+                "sort": "2027-04-01",
+                "status": "historical",
+                "basis": "115"
+              },
+              "end": {
+                "label": {
+                  "zh": "約2027/04月底",
+                  "my": "ခန့် 2027/04 လကုန်"
+                },
+                "sort": "2027-04-21",
+                "status": "historical",
+                "basis": "115"
+              },
+              "result": {
+                "label": {
+                  "zh": "約2027/06月初",
+                  "my": "ခန့် 2027/06 လအစ"
+                },
+                "sort": "2027-06-01",
+                "status": "historical",
+                "basis": "115"
+              },
+              "name": {
+                "zh": "3",
+                "my": "3"
+              }
+            },
+            {
+              "start": {
+                "label": {
+                  "zh": "約2027/05月初",
+                  "my": "ခန့် 2027/05 လအစ"
+                },
+                "sort": "2027-05-01",
+                "status": "historical",
+                "basis": "115"
+              },
+              "end": {
+                "label": {
+                  "zh": "約2027/05月下旬",
+                  "my": "ခန့် 2027/05 လကုန်ပိုင်း"
+                },
+                "sort": "2027-05-21",
+                "status": "historical",
+                "basis": "115"
+              },
+              "result": {
+                "label": {
+                  "zh": "約2027/07月初",
+                  "my": "ခန့် 2027/07 လအစ"
+                },
+                "sort": "2027-07-01",
+                "status": "historical",
+                "basis": "115"
+              },
+              "name": {
+                "zh": "4",
+                "my": "4"
+              }
+            }
+          ],
+          "sources": [
+            "https://exam2.thu.edu.tw/EXAM/download_doc_26/21.pdf"
+          ],
+          "notes": [
+            {
+              "zh": "使用 115 學年度秋季四梯規劃；116 各梯日期尚待當屆公告確認。",
+              "my": "အသေးစိတ်ကို တရားဝင်ဝင်ခွင့်လမ်းညွှန်တွင် အတည်ပြုပါ။"
+            }
+          ]
+        }
+      },
+      "checked": "2026-09-19",
+      "reviewState": "page-read"
+    },
+    {
+      "id": "1002",
+      "name": "輔仁大學",
+      "short": "輔仁",
+      "abbr": "FJU",
+      "english": "Fu Jen Catholic University",
+      "cities": [
+        "新北市"
+      ],
+      "cityEn": "New Taipei",
+      "type": "university",
+      "ownership": "private",
+      "difficulty": 3,
+      "website": "http://www.fju.edu.tw",
+      "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPUZKQ1UtMTAwMi00OA",
+      "admission": {
+        "url": "http://www.fju.edu.tw",
+        "kind": "home"
+      },
+      "terms": {
+        "spring": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        },
+        "fall": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        }
+      },
+      "checked": "2026-09-19",
+      "reviewState": "unavailable"
+    },
+    {
+      "id": "1003",
+      "name": "東吳大學",
+      "short": "東吳",
+      "abbr": "SCU",
+      "english": "Soochow University",
+      "cities": [
+        "臺北市"
+      ],
+      "cityEn": "Taipei",
+      "type": "university",
+      "ownership": "private",
+      "difficulty": 3,
+      "website": "http://www.scu.edu.tw",
+      "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPVNDVS0xMDAzLTQ5",
+      "admission": {
+        "url": "http://www.scu.edu.tw",
+        "kind": "home"
+      },
+      "terms": {
+        "spring": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        },
+        "fall": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        }
+      },
+      "checked": "2026-09-19",
+      "reviewState": "unavailable"
+    },
+    {
+      "id": "1004",
+      "name": "中原大學",
+      "short": "中原",
+      "abbr": "CYCU",
+      "english": "Chung Yuan Christian University",
+      "cities": [
+        "桃園市"
+      ],
+      "cityEn": "Taoyuan",
+      "type": "university",
+      "ownership": "private",
+      "difficulty": 3,
+      "website": "http://www.cycu.edu.tw",
+      "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPUNZQ1UtMTAwNC01MA",
+      "admission": {
+        "url": "http://www.cycu.edu.tw",
+        "kind": "home"
+      },
+      "terms": {
+        "spring": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        },
+        "fall": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        }
+      },
+      "checked": "2026-09-19",
+      "reviewState": "unavailable"
+    },
+    {
+      "id": "1005",
+      "name": "淡江大學",
+      "short": "淡江",
+      "abbr": "TKU",
+      "english": "Tamkang University",
+      "cities": [
+        "新北市"
+      ],
+      "cityEn": "New Taipei",
+      "type": "university",
+      "ownership": "private",
+      "difficulty": 3,
+      "website": "http://www.tku.edu.tw",
+      "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPVRLVS0xMDA1LTUx",
+      "admission": {
+        "url": "http://www.tku.edu.tw",
+        "kind": "home"
+      },
+      "terms": {
+        "spring": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        },
+        "fall": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        }
+      },
+      "checked": "2026-09-19",
+      "reviewState": "unavailable"
+    },
+    {
+      "id": "1006",
+      "name": "中國文化大學",
+      "short": "文化",
+      "abbr": "PCCU",
+      "english": "Chinese Culture University",
+      "cities": [
+        "臺北市"
+      ],
+      "cityEn": "Taipei",
+      "type": "university",
+      "ownership": "private",
+      "difficulty": 2,
+      "website": "http://www.pccu.edu.tw",
+      "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPUNDVS0xMDA2LTUy",
+      "admission": {
+        "url": "http://www.pccu.edu.tw",
+        "kind": "home"
+      },
+      "terms": {
+        "spring": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        },
+        "fall": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        }
+      },
+      "checked": "2026-09-19",
+      "reviewState": "page-read"
+    },
+    {
+      "id": "1007",
+      "name": "逢甲大學",
+      "short": "逢甲",
+      "abbr": "FCU",
+      "english": "Feng Chia University",
+      "cities": [
+        "臺中市"
+      ],
+      "cityEn": "Taichung",
+      "type": "university",
+      "ownership": "private",
+      "difficulty": 3,
+      "website": "http://www.fcu.edu.tw",
+      "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPUZDVS0xMDA3LTUz",
+      "admission": {
+        "url": "https://oia.fcu.edu.tw/",
+        "kind": "admission"
+      },
+      "terms": {
+        "spring": {
+          "rounds": [
+            {
+              "start": {
+                "label": {
+                  "zh": "約2026/09月",
+                  "my": "ခန့် 2026/09 လ"
+                },
+                "sort": "2026-09-01",
+                "status": "historical",
+                "basis": "歷年"
+              },
+              "end": {
+                "label": {
+                  "zh": "約2026/11月",
+                  "my": "ခန့် 2026/11 လ"
+                },
+                "sort": "2026-11-01",
+                "status": "historical",
+                "basis": "歷年"
+              },
+              "result": {
+                "label": {
+                  "zh": "約2026/12月",
+                  "my": "ခန့် 2026/12 လ"
+                },
+                "sort": "2026-12-01",
+                "status": "historical",
+                "basis": "歷年"
+              }
+            }
+          ],
+          "sources": [
+            "https://oia.fcu.edu.tw/"
+          ],
+          "notes": [
+            {
+              "zh": "日期為提供資料包的歷年參考；本次尚未完成官方附件的逐項複核，不代表本期正式公告。",
+              "my": "ရက်စွဲများသည် ပေးထားသော ယခင်နှစ်ကိုးကားစာရင်းမှ ဖြစ်သည်။ တရားဝင်ဖိုင်နှင့် အပြည့်အစုံ ထပ်မစစ်နိုင်သေးပါ။ ယခုကာလ တရားဝင်ရက် မဟုတ်ပါ။"
+            }
+          ]
+        },
+        "fall": {
+          "rounds": [
+            {
+              "start": {
+                "label": {
+                  "zh": "約2026/12月中旬",
+                  "my": "ခန့် 2026/12 လလယ်"
+                },
+                "sort": "2026-12-11",
+                "status": "historical",
+                "basis": "115"
+              },
+              "end": {
+                "label": {
+                  "zh": "約2027/03月初",
+                  "my": "ခန့် 2027/03 လအစ"
+                },
+                "sort": "2027-03-01",
+                "status": "historical",
+                "basis": "115"
+              },
+              "result": {
+                "label": {
+                  "zh": "約2027/03月下旬",
+                  "my": "ခန့် 2027/03 လကုန်ပိုင်း"
+                },
+                "sort": "2027-03-21",
+                "status": "historical",
+                "basis": "115"
+              },
+              "name": {
+                "zh": "1",
+                "my": "1"
+              }
+            },
+            {
+              "start": {
+                "label": {
+                  "zh": "約2027/03月初",
+                  "my": "ခန့် 2027/03 လအစ"
+                },
+                "sort": "2027-03-01",
+                "status": "historical",
+                "basis": "115"
+              },
+              "end": {
+                "label": {
+                  "zh": "約2027/04月中旬",
+                  "my": "ခန့် 2027/04 လလယ်"
+                },
+                "sort": "2027-04-11",
+                "status": "historical",
+                "basis": "115"
+              },
+              "result": {
+                "label": {
+                  "zh": "約2027/05月初",
+                  "my": "ခန့် 2027/05 လအစ"
+                },
+                "sort": "2027-05-01",
+                "status": "historical",
+                "basis": "115"
+              },
+              "name": {
+                "zh": "2",
+                "my": "2"
+              }
+            }
+          ],
+          "sources": [
+            "https://oia.fcu.edu.tw/"
+          ],
+          "notes": [
+            {
+              "zh": "日期為提供資料包的歷年參考；本次尚未完成官方附件的逐項複核，不代表本期正式公告。",
+              "my": "ရက်စွဲများသည် ပေးထားသော ယခင်နှစ်ကိုးကားစာရင်းမှ ဖြစ်သည်။ တရားဝင်ဖိုင်နှင့် အပြည့်အစုံ ထပ်မစစ်နိုင်သေးပါ။ ယခုကာလ တရားဝင်ရက် မဟုတ်ပါ။"
+            }
+          ]
+        }
+      },
+      "checked": "2026-09-19",
+      "reviewState": "page-read"
+    },
+    {
+      "id": "1008",
+      "name": "靜宜大學",
+      "short": "靜宜",
+      "abbr": "PU",
+      "english": "Providence University",
+      "cities": [
+        "臺中市"
+      ],
+      "cityEn": "Taichung",
+      "type": "university",
+      "ownership": "private",
+      "difficulty": 2,
+      "website": "http://www.pu.edu.tw",
+      "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPVBVLTEwMDgtNTQ",
+      "admission": {
+        "url": "https://mypu.pu.edu.tw/Framework/International/oia_oversea/admission/overseas?lang=en",
+        "kind": "apply"
+      },
+      "terms": {
+        "spring": {
+          "rounds": [
+            {
+              "start": {
+                "label": {
+                  "zh": "約2026/08月初",
+                  "my": "ခန့် 2026/08 လအစ"
+                },
+                "sort": "2026-08-01",
+                "status": "historical",
+                "basis": "一般時程"
+              },
+              "end": {
+                "label": {
+                  "zh": "約2026/10月中旬",
+                  "my": "ခန့် 2026/10 လလယ်"
+                },
+                "sort": "2026-10-11",
+                "status": "historical",
+                "basis": "一般時程"
+              },
+              "result": {
+                "label": {
+                  "zh": "約2026/12月初",
+                  "my": "ခန့် 2026/12 လအစ"
+                },
+                "sort": "2026-12-01",
+                "status": "historical",
+                "basis": "歷年"
+              },
+              "name": {
+                "zh": "1",
+                "my": "1"
+              }
+            },
+            {
+              "start": {
+                "label": {
+                  "zh": "約2026/10月中旬",
+                  "my": "ခန့် 2026/10 လလယ်"
+                },
+                "sort": "2026-10-11",
+                "status": "historical",
+                "basis": "一般時程"
+              },
+              "end": {
+                "label": {
+                  "zh": "約2026/11月中旬",
+                  "my": "ခန့် 2026/11 လလယ်"
+                },
+                "sort": "2026-11-11",
+                "status": "historical",
+                "basis": "一般時程"
+              },
+              "result": {
+                "label": {
+                  "zh": "約2027/01月初",
+                  "my": "ခန့် 2027/01 လအစ"
+                },
+                "sort": "2027-01-01",
+                "status": "historical",
+                "basis": "歷年"
+              },
+              "name": {
+                "zh": "2",
+                "my": "2"
+              }
+            }
+          ],
+          "sources": [
+            "https://oia.pu.edu.tw/p/426-1048-11.php"
+          ],
+          "notes": [
+            {
+              "zh": "官網一般時程第一梯 8/1–10/15、第二梯 10/16–11/15；放榜月初為提供資料所載歷年規劃，當屆仍待核。",
+              "my": "အသေးစိတ်ကို တရားဝင်ဝင်ခွင့်လမ်းညွှန်တွင် အတည်ပြုပါ။"
+            }
+          ]
+        },
+        "fall": {
+          "rounds": [
+            {
+              "start": {
+                "label": {
+                  "zh": "約2027/01月初",
+                  "my": "ခန့် 2027/01 လအစ"
+                },
+                "sort": "2027-01-01",
+                "status": "historical",
+                "basis": "一般時程"
+              },
+              "end": {
+                "label": {
+                  "zh": "約2027/04月底",
+                  "my": "ခန့် 2027/04 လကုန်"
+                },
+                "sort": "2027-04-21",
+                "status": "historical",
+                "basis": "一般時程"
+              },
+              "result": {
+                "label": {
+                  "zh": "約2027/06月初",
+                  "my": "ခန့် 2027/06 လအစ"
+                },
+                "sort": "2027-06-01",
+                "status": "historical",
+                "basis": "115"
+              },
+              "name": {
+                "zh": "1",
+                "my": "1"
+              }
+            },
+            {
+              "start": {
+                "label": {
+                  "zh": "約2027/05月初",
+                  "my": "ခန့် 2027/05 လအစ"
+                },
+                "sort": "2027-05-01",
+                "status": "historical",
+                "basis": "一般時程"
+              },
+              "end": {
+                "label": {
+                  "zh": "約2027/06月中旬",
+                  "my": "ခန့် 2027/06 လလယ်"
+                },
+                "sort": "2027-06-11",
+                "status": "historical",
+                "basis": "一般時程"
+              },
+              "result": null,
+              "name": {
+                "zh": "2",
+                "my": "2"
+              }
+            }
+          ],
+          "sources": [
+            "https://oia.pu.edu.tw/p/426-1048-11.php"
+          ],
+          "notes": [
+            {
+              "zh": "官網一般招生時程未指定 116 年；前屆第一梯 2026/06/04 放榜資料尚待官方複核。",
+              "my": "အသေးစိတ်ကို တရားဝင်ဝင်ခွင့်လမ်းညွှန်တွင် အတည်ပြုပါ။"
+            }
+          ]
+        }
+      },
+      "checked": "2026-09-19",
+      "reviewState": "page-read"
+    },
+    {
+      "id": "1009",
+      "name": "長庚大學",
+      "short": "長庚",
+      "abbr": "CGU",
+      "english": "Chang Gung University",
+      "cities": [
+        "桃園市"
+      ],
+      "cityEn": "Taoyuan",
+      "type": "university",
+      "ownership": "private",
+      "difficulty": 3,
+      "website": "http://www.cgu.edu.tw",
+      "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPUNHVS0xMDA5LTU1",
+      "admission": {
+        "url": "https://recruit-intl.cgu.edu.tw/",
+        "kind": "apply"
+      },
+      "terms": {
+        "spring": {
+          "rounds": [
+            {
+              "start": {
+                "date": "2026-08-03",
+                "status": "official"
+              },
+              "end": {
+                "date": "2026-09-25",
+                "status": "official"
+              },
+              "result": null
+            }
+          ],
+          "sources": [
+            "https://www.cgu.edu.tw/recruit_intl-ch/Subject/Detail/70660?nodeId=14133"
+          ],
+          "notes": [],
+          "brochure": {
+            "url": "https://drive.google.com/file/d/1GfUGXVXaxL7PiOr72w5tM1UBW2Iwdet6/view",
+            "status": "official"
+          }
+        },
+        "fall": {
+          "rounds": [
+            {
+              "start": {
+                "date": "2026-09-25",
+                "status": "official"
+              },
+              "end": {
+                "date": "2026-11-17",
+                "status": "official"
+              },
+              "result": null,
+              "name": {
+                "zh": "1",
+                "my": "1"
+              }
+            },
+            {
+              "start": {
+                "date": "2026-12-29",
+                "status": "official"
+              },
+              "end": {
+                "date": "2027-02-20",
+                "status": "official"
+              },
+              "result": null,
+              "name": {
+                "zh": "2",
+                "my": "2"
+              }
+            }
+          ],
+          "sources": [
+            "https://www.cgu.edu.tw/recruit_intl-ch/Subject/Detail/83974?nodeId=14133"
+          ],
+          "notes": [],
+          "brochure": {
+            "url": "https://drive.google.com/file/d/12V5elgjqLkb6pbukFOpLTRh5xZTd4DxQ/view",
+            "status": "official"
+          }
+        }
+      },
+      "checked": "2026-09-19",
+      "reviewState": "unavailable"
+    },
+    {
+      "id": "1010",
+      "name": "元智大學",
+      "short": "元智",
+      "abbr": "YZU",
+      "english": "Yuan Ze University",
+      "cities": [
+        "桃園市"
+      ],
+      "cityEn": "Taoyuan",
+      "type": "university",
+      "ownership": "private",
+      "difficulty": 3,
+      "website": "http://www.yzu.edu.tw",
+      "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPVlaVS0xMDEwLTU2",
+      "admission": {
+        "url": "http://www.yzu.edu.tw",
+        "kind": "home"
+      },
+      "terms": {
+        "spring": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        },
+        "fall": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        }
+      },
+      "checked": "2026-09-19",
+      "reviewState": "page-read"
+    },
+    {
+      "id": "1011",
+      "name": "中華大學",
+      "short": "中華",
+      "abbr": "CHU",
+      "english": "Chung Hua University",
+      "cities": [
+        "新竹市"
+      ],
+      "cityEn": "Hsinchu City",
+      "type": "university",
+      "ownership": "private",
+      "difficulty": 2,
+      "website": "http://www.chu.edu.tw",
+      "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPUNIVS0xMDExLTU3",
+      "admission": {
+        "url": "http://www.chu.edu.tw",
+        "kind": "home"
+      },
+      "terms": {
+        "spring": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        },
+        "fall": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        }
+      },
+      "checked": "2026-09-19",
+      "reviewState": "page-read"
+    },
+    {
+      "id": "1012",
+      "name": "大葉大學",
+      "short": "大葉",
+      "abbr": "DYU",
+      "english": "Dayeh University",
+      "cities": [
+        "彰化縣"
+      ],
+      "cityEn": "Changhua",
+      "type": "university",
+      "ownership": "private",
+      "difficulty": 2,
+      "website": "http://www.dyu.edu.tw",
+      "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPURZVS0xMDEyLTU4",
+      "admission": {
+        "url": "http://www.dyu.edu.tw",
+        "kind": "home"
+      },
+      "terms": {
+        "spring": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        },
+        "fall": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        }
+      },
+      "checked": "2026-09-19",
+      "reviewState": "page-read"
+    },
+    {
+      "id": "1013",
+      "name": "華梵大學",
+      "short": "華梵",
+      "abbr": "HFU",
+      "english": "Huafan University",
+      "cities": [
+        "新北市"
+      ],
+      "cityEn": "New Taipei",
+      "type": "university",
+      "ownership": "private",
+      "difficulty": null,
+      "website": "http://www.hfu.edu.tw",
+      "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPUhGVS0xMDEzLTU5",
+      "admission": {
+        "url": "http://www.hfu.edu.tw",
+        "kind": "home"
+      },
+      "terms": {
+        "spring": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        },
+        "fall": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        }
+      },
+      "checked": "2026-09-19",
+      "reviewState": "unavailable"
+    },
+    {
+      "id": "1014",
+      "name": "義守大學",
+      "short": "義守",
+      "abbr": "ISU",
+      "english": "I-Shou University",
+      "cities": [
+        "高雄市"
+      ],
+      "cityEn": "Kaohsiung",
+      "type": "university",
+      "ownership": "private",
+      "difficulty": 2,
+      "website": "http://www.isu.edu.tw",
+      "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPUlTVS0xMDE0LTYw",
+      "admission": {
+        "url": "http://www.isu.edu.tw",
+        "kind": "home"
+      },
+      "terms": {
+        "spring": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        },
+        "fall": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        }
+      },
+      "checked": "2026-09-19",
+      "reviewState": "unavailable"
+    },
+    {
+      "id": "1015",
+      "name": "世新大學",
+      "short": "世新",
+      "abbr": "SHU",
+      "english": "Shih Hsin University",
+      "cities": [
+        "臺北市"
+      ],
+      "cityEn": "Taipei",
+      "type": "university",
+      "ownership": "private",
+      "difficulty": 2,
+      "website": "http://www.shu.edu.tw",
+      "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPVNIVS0xMDE1LTYx",
+      "admission": {
+        "url": "http://www.shu.edu.tw",
+        "kind": "home"
+      },
+      "terms": {
+        "spring": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        },
+        "fall": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        }
+      },
+      "checked": "2026-09-19",
+      "reviewState": "unavailable"
+    },
+    {
+      "id": "1016",
+      "name": "銘傳大學",
+      "short": "銘傳",
+      "abbr": "MCU",
+      "english": "Ming Chuan University",
+      "cities": [
+        "臺北市",
+        "桃園市"
+      ],
+      "cityEn": "Taipei",
+      "type": "university",
+      "ownership": "private",
+      "difficulty": 2,
+      "website": "http://www.mcu.edu.tw",
+      "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPU1DVS0xMDE2LTYy",
+      "admission": {
+        "url": "http://www.mcu.edu.tw",
+        "kind": "home"
+      },
+      "terms": {
+        "spring": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        },
+        "fall": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        }
+      },
+      "checked": "2026-09-19",
+      "reviewState": "unavailable"
+    },
+    {
+      "id": "1017",
+      "name": "實踐大學",
+      "short": "實踐",
+      "abbr": "USC",
+      "english": "Shih Chien University",
+      "cities": [
+        "臺北市",
+        "高雄市"
+      ],
+      "cityEn": "Taipei",
+      "type": "university",
+      "ownership": "private",
+      "difficulty": 2,
+      "website": "https://www.usc.edu.tw/",
+      "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPVVTQy0xMDE3LTYz",
+      "admission": {
+        "url": "https://www.usc.edu.tw/",
+        "kind": "home"
+      },
+      "terms": {
+        "spring": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        },
+        "fall": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        }
+      },
+      "checked": "2026-09-19",
+      "reviewState": "page-read"
+    },
+    {
+      "id": "1018",
+      "name": "朝陽科技大學",
+      "short": "朝陽",
+      "abbr": "CYUT",
+      "english": "Chaoyang University of Technology",
+      "cities": [
+        "臺中市"
+      ],
+      "cityEn": "Taichung",
+      "type": "technology",
+      "ownership": "private",
+      "difficulty": 3,
+      "website": "http://www.cyut.edu.tw",
+      "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPUNZVVQtMTAxOC02NA",
+      "admission": {
+        "url": "https://icsc.cyut.edu.tw/p/406-1008-58738,r1198.php?Lang=zh-tw",
+        "kind": "admission"
+      },
+      "terms": {
+        "spring": {
+          "rounds": [
+            {
+              "start": null,
+              "end": {
+                "date": "2026-12-19",
+                "status": "official"
+              },
+              "result": null
+            }
+          ],
+          "sources": [
+            "https://icsc.cyut.edu.tw/p/406-1008-58738,r1198.php?Lang=zh-tw"
+          ],
+          "notes": [
+            {
+              "zh": "學士／碩士截止 2026/12/19；博士截止不同，不能套用。開始申請與放榜未核得。",
+              "my": "အသေးစိတ်ကို တရားဝင်ဝင်ခွင့်လမ်းညွှန်တွင် အတည်ပြုပါ။"
+            }
+          ],
+          "scope": "all",
+          "scopeLabel": {
+            "zh": "學士／碩士／博士依當屆開放系所",
+            "my": "ဘွဲ့ကြို / မဟာဘွဲ့ / ပါရဂူ — လမ်းညွှန်ပါ ဘာသာရပ်အတိုင်း"
+          }
+        },
+        "fall": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        }
+      },
+      "checked": "2026-09-19",
+      "reviewState": "unavailable"
+    },
+    {
+      "id": "1019",
+      "name": "高雄醫學大學",
+      "short": "高醫",
+      "abbr": "KMU",
+      "english": "Kaohsiung Medical University",
+      "cities": [
+        "高雄市"
+      ],
+      "cityEn": "Kaohsiung",
+      "type": "university",
+      "ownership": "private",
+      "difficulty": null,
+      "website": "http://www2.kmu.edu.tw",
+      "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPUtNVS0xMDE5LTY1",
+      "admission": {
+        "url": "http://www2.kmu.edu.tw",
+        "kind": "home"
+      },
+      "terms": {
+        "spring": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        },
+        "fall": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        }
+      },
+      "checked": "2026-09-19",
+      "reviewState": "page-read"
+    },
+    {
+      "id": "1020",
+      "name": "南華大學",
+      "short": "南華",
+      "abbr": "NHU",
+      "english": "Nanhua University",
+      "cities": [
+        "嘉義縣"
+      ],
+      "cityEn": "Chiayi County",
+      "type": "university",
+      "ownership": "private",
+      "difficulty": 2,
+      "website": "http://www.nhu.edu.tw",
+      "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPU5IVS0xMDIwLTY2",
+      "admission": {
+        "url": "http://www.nhu.edu.tw",
+        "kind": "home"
+      },
+      "terms": {
+        "spring": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        },
+        "fall": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        }
+      },
+      "checked": "2026-09-19",
+      "reviewState": "unavailable"
+    },
+    {
+      "id": "1021",
+      "name": "真理大學",
+      "short": "真理",
+      "abbr": "AU",
+      "english": "Aletheia University",
+      "cities": [
+        "新北市"
+      ],
+      "cityEn": "New Taipei",
+      "type": "university",
+      "ownership": "private",
+      "difficulty": 2,
+      "website": "http://www.au.edu.tw",
+      "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPUFVLTEwMjEtNjc",
+      "admission": {
+        "url": "http://www.au.edu.tw",
+        "kind": "home"
+      },
+      "terms": {
+        "spring": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        },
+        "fall": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        }
+      },
+      "checked": "2026-09-19",
+      "reviewState": "unavailable"
+    },
+    {
+      "id": "1022",
+      "name": "大同大學",
+      "short": "大同",
+      "abbr": "TTU",
+      "english": "Tatung University",
+      "cities": [
+        "臺北市"
+      ],
+      "cityEn": "Taipei",
+      "type": "university",
+      "ownership": "private",
+      "difficulty": 3,
+      "website": "http://www.ttu.edu.tw",
+      "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPVRUVS0xMDIyLTY4",
+      "admission": {
+        "url": "http://www.ttu.edu.tw",
+        "kind": "home"
+      },
+      "terms": {
+        "spring": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        },
+        "fall": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        }
+      },
+      "checked": "2026-09-19",
+      "reviewState": "unavailable"
+    },
+    {
+      "id": "1023",
+      "name": "南臺科技大學",
+      "short": "南臺",
+      "abbr": "STUST",
+      "english": "Southern Taiwan University of Science and Technology",
+      "cities": [
+        "臺南市"
+      ],
+      "cityEn": "Tainan",
+      "type": "technology",
+      "ownership": "private",
+      "difficulty": 3,
+      "website": "http://www.stust.edu.tw",
+      "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPVNUVVNULTEwMjMtNjk",
+      "admission": {
+        "url": "http://www.stust.edu.tw",
+        "kind": "home"
+      },
+      "terms": {
+        "spring": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        },
+        "fall": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        }
+      },
+      "checked": "2026-09-19",
+      "reviewState": "unavailable"
+    },
+    {
+      "id": "1024",
+      "name": "崑山科技大學",
+      "short": "崑山",
+      "abbr": "KSU",
+      "english": "Kun Shan University",
+      "cities": [
+        "臺南市"
+      ],
+      "cityEn": "Tainan",
+      "type": "technology",
+      "ownership": "private",
+      "difficulty": 2,
+      "website": "http://www.ksu.edu.tw",
+      "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPUtTVS0xMDI0LTcw",
+      "admission": {
+        "url": "http://www.ksu.edu.tw",
+        "kind": "home"
+      },
+      "terms": {
+        "spring": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        },
+        "fall": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        }
+      },
+      "checked": "2026-09-19",
+      "reviewState": "unavailable"
+    },
+    {
+      "id": "1025",
+      "name": "嘉南藥理大學",
+      "short": "嘉藥",
+      "abbr": "CNU",
+      "english": "Chia Nan University of Pharmacy & Science",
+      "cities": [
+        "臺南市"
+      ],
+      "cityEn": "Tainan",
+      "type": "technology",
+      "ownership": "private",
+      "difficulty": null,
+      "website": "http://www.cnu.edu.tw",
+      "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPUNOVS0xMDI1LTcx",
+      "admission": {
+        "url": "http://www.cnu.edu.tw",
+        "kind": "home"
+      },
+      "terms": {
+        "spring": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        },
+        "fall": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        }
+      },
+      "checked": "2026-09-19",
+      "reviewState": "page-read"
+    },
+    {
+      "id": "1026",
+      "name": "樹德科技大學",
+      "short": "樹德",
+      "abbr": "STU",
+      "english": "Shu-Te University",
+      "cities": [
+        "高雄市"
+      ],
+      "cityEn": "Kaohsiung",
+      "type": "technology",
+      "ownership": "private",
+      "difficulty": 2,
+      "website": "http://www.stu.edu.tw",
+      "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPVNUVS0xMDI2LTcy",
+      "admission": {
+        "url": "http://www.stu.edu.tw",
+        "kind": "home"
+      },
+      "terms": {
+        "spring": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        },
+        "fall": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        }
+      },
+      "checked": "2026-09-19",
+      "reviewState": "page-read"
+    },
+    {
+      "id": "1027",
+      "name": "慈濟大學",
+      "short": "慈濟",
+      "abbr": "TCU",
+      "english": "Tzu Chi University",
+      "cities": [
+        "花蓮縣"
+      ],
+      "cityEn": "Hualien",
+      "type": "university",
+      "ownership": "private",
+      "difficulty": null,
+      "website": "http://www.tcu.edu.tw",
+      "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPVRDVS0xMDI3LTcz",
+      "admission": {
+        "url": "https://admissions.tcu.edu.tw/?page_id=5125",
+        "kind": "admission"
+      },
+      "terms": {
+        "spring": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        },
+        "fall": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        }
+      },
+      "checked": "2026-09-19",
+      "reviewState": "page-read"
+    },
+    {
+      "id": "1028",
+      "name": "臺北醫學大學",
+      "short": "北醫",
+      "abbr": "TMU",
+      "english": "Taipei Medical University",
+      "cities": [
+        "臺北市"
+      ],
+      "cityEn": "Taipei",
+      "type": "university",
+      "ownership": "private",
+      "difficulty": null,
+      "website": "http://www.tmu.edu.tw",
+      "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPVRNVS0xMDI4LTc0",
+      "admission": {
+        "url": "https://oge.tmu.edu.tw/",
+        "kind": "admission"
+      },
+      "terms": {
+        "spring": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        },
+        "fall": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        }
+      },
+      "checked": "2026-09-19",
+      "reviewState": "page-read"
+    },
+    {
+      "id": "1029",
+      "name": "中山醫學大學",
+      "short": "中山醫",
+      "abbr": "CSMU",
+      "english": "Chung Shan Medical University",
+      "cities": [
+        "臺中市"
+      ],
+      "cityEn": "Taichung",
+      "type": "university",
+      "ownership": "private",
+      "difficulty": null,
+      "website": "http://www.csmu.edu.tw",
+      "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPUNTTVUtMTAyOS03NQ",
+      "admission": {
+        "url": "http://www.csmu.edu.tw",
+        "kind": "home"
+      },
+      "terms": {
+        "spring": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        },
+        "fall": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        }
+      },
+      "checked": "2026-09-19",
+      "reviewState": "page-read"
+    },
+    {
+      "id": "1030",
+      "name": "龍華科技大學",
+      "short": "龍華",
+      "abbr": "LHU",
+      "english": "Lunghwa University of Science and Technology",
+      "cities": [
+        "桃園市"
+      ],
+      "cityEn": "Taoyuan",
+      "type": "technology",
+      "ownership": "private",
+      "difficulty": 2,
+      "website": "http://www.lhu.edu.tw/",
+      "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPUxIVS0xMDMwLTc2",
+      "admission": {
+        "url": "http://www.lhu.edu.tw/",
+        "kind": "home"
+      },
+      "terms": {
+        "spring": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        },
+        "fall": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        }
+      },
+      "checked": "2026-09-19",
+      "reviewState": "unavailable"
+    },
+    {
+      "id": "1031",
+      "name": "輔英科技大學",
+      "short": "輔英",
+      "abbr": "FYU",
+      "english": "Fooyin University",
+      "cities": [
+        "高雄市"
+      ],
+      "cityEn": "Kaohsiung",
+      "type": "technology",
+      "ownership": "private",
+      "difficulty": null,
+      "website": "https://www.fy.edu.tw/",
+      "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPUZZVS0xMDMxLTc3",
+      "admission": {
+        "url": "https://www.fy.edu.tw/",
+        "kind": "home"
+      },
+      "terms": {
+        "spring": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        },
+        "fall": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        }
+      },
+      "checked": "2026-09-19",
+      "reviewState": "unavailable"
+    },
+    {
+      "id": "1032",
+      "name": "明新科技大學",
+      "short": "明新",
+      "abbr": "MUST",
+      "english": "Minghsin University of Science and Technology",
+      "cities": [
+        "新竹縣"
+      ],
+      "cityEn": "Hsinchu County",
+      "type": "technology",
+      "ownership": "private",
+      "difficulty": 2,
+      "website": "http://www.must.edu.tw",
+      "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPU1VU1QtMTAzMi03OA",
+      "admission": {
+        "url": "http://www.must.edu.tw",
+        "kind": "home"
+      },
+      "terms": {
+        "spring": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        },
+        "fall": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        }
+      },
+      "checked": "2026-09-19",
+      "reviewState": "unavailable"
+    },
+    {
+      "id": "1033",
+      "name": "長榮大學",
+      "short": "長榮",
+      "abbr": "CJCU",
+      "english": "Chang Jung Christian University",
+      "cities": [
+        "臺南市"
+      ],
+      "cityEn": "Tainan",
+      "type": "university",
+      "ownership": "private",
+      "difficulty": 2,
+      "website": "http://www.cjcu.edu.tw",
+      "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPUNKQ1UtMTAzMy03OQ",
+      "admission": {
+        "url": "http://www.cjcu.edu.tw",
+        "kind": "home"
+      },
+      "terms": {
+        "spring": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        },
+        "fall": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        }
+      },
+      "checked": "2026-09-19",
+      "reviewState": "page-read"
+    },
+    {
+      "id": "1034",
+      "name": "弘光科技大學",
+      "short": "弘光",
+      "abbr": "HKU",
+      "english": "Hungkuang University",
+      "cities": [
+        "臺中市"
+      ],
+      "cityEn": "Taichung",
+      "type": "technology",
+      "ownership": "private",
+      "difficulty": 2,
+      "website": "https://www.hk.edu.tw/",
+      "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPUhLLTEwMzQtODA",
+      "admission": {
+        "url": "https://ifp.hk.edu.tw/入學申請/外國學生/",
+        "kind": "admission"
+      },
+      "terms": {
+        "spring": {
+          "rounds": [
+            {
+              "start": {
+                "date": "2026-10-05",
+                "status": "official"
+              },
+              "end": {
+                "date": "2026-12-01",
+                "status": "official"
+              },
+              "result": {
+                "date": "2027-01-10",
+                "status": "official"
+              }
+            }
+          ],
+          "sources": [
+            "https://ifp.hk.edu.tw/入學申請/外國學生/",
+            "https://ifp.hk.edu.tw/wp-content/uploads/2026/09/%E5%BC%98%E5%85%89115%E5%A4%96%E5%9C%8B%E5%AD%B8%E7%94%9F%E6%8B%9B%E7%94%9F%E7%B0%A1%E7%AB%A0_%E4%BF%AEV2-1106.pdf"
+          ],
+          "notes": [],
+          "scope": "all",
+          "scopeLabel": {
+            "zh": "學士／碩士／博士依當屆開放系所",
+            "my": "ဘွဲ့ကြို / မဟာဘွဲ့ / ပါရဂူ — လမ်းညွှန်ပါ ဘာသာရပ်အတိုင်း"
+          },
+          "brochure": {
+            "url": "https://ifp.hk.edu.tw/wp-content/uploads/2026/09/%E5%BC%98%E5%85%89115%E5%A4%96%E5%9C%8B%E5%AD%B8%E7%94%9F%E6%8B%9B%E7%94%9F%E7%B0%A1%E7%AB%A0_%E4%BF%AEV2-1106.pdf#page=6",
+            "status": "official"
+          },
+          "programs": [
+            {
+              "zh": "春季不招：護理系學士／碩士、物理治療系、語言治療與聽力學系。",
+              "my": "နွေဦးတွင် Nursing ဘွဲ့ကြို/မဟာဘွဲ့၊ Physical Therapy၊ Speech-Language Pathology & Audiology မလက်ခံပါ။"
+            },
+            {
+              "zh": "營養、動物保健、餐旅、國際溝通英語、化妝品、美髮、幼保、文化設計與行銷、運動休閒、多媒體遊戲等：完整學位別見簡章第 5–7 頁。",
+              "my": "Nutrition၊ Animal Healthcare၊ Hospitality၊ English၊ Cosmetology၊ Hair Styling၊ Child Care၊ Design & Marketing၊ Sports၊ Games စသည့်ဘာသာရပ်များ။ ဘွဲ့အဆင့်ကို စာမျက်နှာ 5–7 တွင် စစ်ပါ။"
+            }
+          ],
+          "apply": {
+            "url": "https://pse.is/79fakm",
+            "kind": "apply"
+          }
+        },
+        "fall": {
+          "rounds": [
+            {
+              "start": {
+                "date": "2026-10-05",
+                "status": "official"
+              },
+              "end": {
+                "date": "2027-01-10",
+                "status": "official"
+              },
+              "result": {
+                "date": "2027-02-25",
+                "status": "official"
+              },
+              "name": {
+                "zh": "1",
+                "my": "1"
+              }
+            },
+            {
+              "start": {
+                "label": {
+                  "zh": "起訖中英不一致",
+                  "my": "စရက်/ဆုံးရက် မတူညီ"
+                },
+                "status": "conflict"
+              },
+              "end": null,
+              "result": {
+                "date": "2027-08-06",
+                "status": "official"
+              },
+              "name": {
+                "zh": "2",
+                "my": "2"
+              },
+              "note": {
+                "zh": "第二梯中文版為 2027/03/01–07/01，英文版為 2027/01/01–05/01。請向校方確認。",
+                "my": "အသေးစိတ်ကို တရားဝင်ဝင်ခွင့်လမ်းညွှန်တွင် အတည်ပြုပါ။"
+              }
+            }
+          ],
+          "sources": [
+            "https://ifp.hk.edu.tw/入學申請/外國學生/"
+          ],
+          "notes": [
+            {
+              "zh": "已核得 2027 秋招生網頁時程；網頁尚無可下載的 116 簡章，系所不可直接沿用春季。",
+              "my": "2027 ဆောင်းဦးရက်စွဲ ရှိသော်လည်း လမ်းညွှန် မရသေးပါ။ နွေဦးဘာသာရပ်စာရင်းကို မသုံးပါနှင့်။"
+            }
+          ]
+        }
+      },
+      "checked": "2026-09-19",
+      "reviewState": "unavailable"
+    },
+    {
+      "id": "1035",
+      "name": "中國醫藥大學",
+      "short": "中國醫",
+      "abbr": "CMU",
+      "english": "China Medical University",
+      "cities": [
+        "臺中市"
+      ],
+      "cityEn": "Taichung",
+      "type": "university",
+      "ownership": "private",
+      "difficulty": null,
+      "website": "http://www.cmu.edu.tw",
+      "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPUNNVS0xMDM1LTgx",
+      "admission": {
+        "url": "https://cmucia.cmu.edu.tw/admission_international.html",
+        "kind": "admission"
+      },
+      "terms": {
+        "spring": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        },
+        "fall": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        }
+      },
+      "checked": "2026-09-19",
+      "reviewState": "page-read"
+    },
+    {
+      "id": "1036",
+      "name": "健行科技大學",
+      "short": "健行",
+      "abbr": "UCH",
+      "english": "Chien Hsin University of Science and Technology",
+      "cities": [
+        "桃園市"
+      ],
+      "cityEn": "Taoyuan",
+      "type": "technology",
+      "ownership": "private",
+      "difficulty": 2,
+      "website": "http://www.uch.edu.tw",
+      "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPVVDSC0xMDM2LTgy",
+      "admission": {
+        "url": "http://www.uch.edu.tw",
+        "kind": "home"
+      },
+      "terms": {
+        "spring": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        },
+        "fall": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        }
+      },
+      "checked": "2026-09-19",
+      "reviewState": "page-read"
+    },
+    {
+      "id": "1037",
+      "name": "正修科技大學",
+      "short": "正修",
+      "abbr": "CSU",
+      "english": "Cheng Shiu University",
+      "cities": [
+        "高雄市"
+      ],
+      "cityEn": "Kaohsiung",
+      "type": "technology",
+      "ownership": "private",
+      "difficulty": 2,
+      "website": "https://www.csu.edu.tw/",
+      "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPUNTVS0xMDM3LTgz",
+      "admission": {
+        "url": "https://www.csu.edu.tw/",
+        "kind": "home"
+      },
+      "terms": {
+        "spring": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        },
+        "fall": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        }
+      },
+      "checked": "2026-09-19",
+      "reviewState": "unavailable"
+    },
+    {
+      "id": "1038",
+      "name": "萬能科技大學",
+      "short": "萬能",
+      "abbr": "VNU",
+      "english": "Vanung University",
+      "cities": [
+        "桃園市"
+      ],
+      "cityEn": "Taoyuan",
+      "type": "technology",
+      "ownership": "private",
+      "difficulty": 2,
+      "website": "http://www.vnu.edu.tw/",
+      "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPVZOVS0xMDM4LTg0",
+      "admission": {
+        "url": "http://www.vnu.edu.tw/",
+        "kind": "home"
+      },
+      "terms": {
+        "spring": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        },
+        "fall": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        }
+      },
+      "checked": "2026-09-19",
+      "reviewState": "unavailable"
+    },
+    {
+      "id": "1039",
+      "name": "玄奘大學",
+      "short": "玄奘",
+      "abbr": "HCU",
+      "english": "Hsuan Chuang University",
+      "cities": [
+        "新竹市"
+      ],
+      "cityEn": "Hsinchu City",
+      "type": "university",
+      "ownership": "private",
+      "difficulty": null,
+      "website": "https://www.hcu.edu.tw/hcu/zh-tw",
+      "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPUhDVS0xMDM5LTg1",
+      "admission": {
+        "url": "https://www.hcu.edu.tw/hcu/zh-tw",
+        "kind": "home"
+      },
+      "terms": {
+        "spring": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        },
+        "fall": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        }
+      },
+      "checked": "2026-09-19",
+      "reviewState": "unavailable"
+    },
+    {
+      "id": "1040",
+      "name": "建國科技大學",
+      "short": "建國",
+      "abbr": "CTU",
+      "english": "Chienkuo Technology University",
+      "cities": [
+        "彰化縣"
+      ],
+      "cityEn": "Changhua",
+      "type": "technology",
+      "ownership": "private",
+      "difficulty": 2,
+      "website": "http://www.ctu.edu.tw",
+      "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPUNUVS0xMDQwLTg2",
+      "admission": {
+        "url": "http://www.ctu.edu.tw",
+        "kind": "home"
+      },
+      "terms": {
+        "spring": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        },
+        "fall": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        }
+      },
+      "checked": "2026-09-19",
+      "reviewState": "unavailable"
+    },
+    {
+      "id": "1041",
+      "name": "明志科技大學",
+      "short": "明志",
+      "abbr": "MCUT",
+      "english": "Ming Chi University of Technology",
+      "cities": [
+        "新北市"
+      ],
+      "cityEn": "New Taipei",
+      "type": "technology",
+      "ownership": "private",
+      "difficulty": 3,
+      "website": "http://www.mcut.edu.tw/",
+      "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPU1DVVQtMTA0MS04Nw",
+      "admission": {
+        "url": "http://www.mcut.edu.tw/",
+        "kind": "home"
+      },
+      "terms": {
+        "spring": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        },
+        "fall": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        }
+      },
+      "checked": "2026-09-19",
+      "reviewState": "page-read"
+    },
+    {
+      "id": "1042",
+      "name": "台鋼科技大學",
+      "short": "台鋼",
+      "abbr": "TSUST",
+      "english": "Taiwan Steel University of Science and Technology",
+      "cities": [
+        "高雄市"
+      ],
+      "cityEn": "Kaohsiung",
+      "type": "technology",
+      "ownership": "private",
+      "difficulty": 2,
+      "website": "http://www.kyu.edu.tw",
+      "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPUtZVS0xMDQyLTg4",
+      "admission": {
+        "url": "https://forstud.tsust.edu.tw/p/412-1024-365.php",
+        "kind": "admission"
+      },
+      "terms": {
+        "spring": {
+          "rounds": [
+            {
+              "start": null,
+              "end": {
+                "date": "2026-12-18",
+                "status": "official"
+              },
+              "result": null
+            }
+          ],
+          "sources": [
+            "https://forstud.tsust.edu.tw/p/412-1024-365.php"
+          ],
+          "notes": [
+            {
+              "zh": "官網「即日起」無發布日，無法確定開始日；2027/01/05 標示寄發入學許可，不能代替放榜日。",
+              "my": "ဝက်ဘ်တွင် စတင်ရက် မပါပါ။ 2027/01/05 သည် ဝင်ခွင့်စာပို့ရက် ဖြစ်ပြီး ရလဒ်ကြေညာရက် မဟုတ်ပါ။"
+            }
+          ]
+        },
+        "fall": {
+          "rounds": [
+            {
+              "start": null,
+              "end": {
+                "label": {
+                  "zh": "約2027/07月下旬",
+                  "my": "ခန့် 2027/07 လကုန်ပိုင်း"
+                },
+                "sort": "2027-07-21",
+                "status": "historical",
+                "basis": "115"
+              },
+              "result": null
+            }
+          ],
+          "sources": [
+            "https://forstud.tsust.edu.tw/p/412-1024-365.php"
+          ],
+          "notes": [
+            {
+              "zh": "前屆截止 2026/07/20，開始與放榜無法分別核得。",
+              "my": "အသေးစိတ်ကို တရားဝင်ဝင်ခွင့်လမ်းညွှန်တွင် အတည်ပြုပါ။"
+            }
+          ]
+        }
+      },
+      "checked": "2026-09-19",
+      "reviewState": "unavailable"
+    },
+    {
+      "id": "1043",
+      "name": "大仁科技大學",
+      "short": "大仁",
+      "abbr": "TAJEN",
+      "english": "Tajen University",
+      "cities": [
+        "屏東縣"
+      ],
+      "cityEn": "Pingtung",
+      "type": "technology",
+      "ownership": "private",
+      "difficulty": 2,
+      "website": "http://www.tajen.edu.tw",
+      "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPVRBSkVOLTEwNDMtODk",
+      "admission": {
+        "url": "http://www.tajen.edu.tw",
+        "kind": "home"
+      },
+      "terms": {
+        "spring": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        },
+        "fall": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        }
+      },
+      "checked": "2026-09-19",
+      "reviewState": "unavailable"
+    },
+    {
+      "id": "1044",
+      "name": "聖約翰科技大學",
+      "short": "聖約翰",
+      "abbr": "SJU",
+      "english": "St. John's University",
+      "cities": [
+        "新北市"
+      ],
+      "cityEn": "New Taipei",
+      "type": "technology",
+      "ownership": "private",
+      "difficulty": 2,
+      "website": "https://www.sju.edu.tw/",
+      "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPVNKVS0xMDQ0LTkw",
+      "admission": {
+        "url": "https://www.sju.edu.tw/",
+        "kind": "home"
+      },
+      "terms": {
+        "spring": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        },
+        "fall": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        }
+      },
+      "checked": "2026-09-19",
+      "reviewState": "page-read"
+    },
+    {
+      "id": "1045",
+      "name": "嶺東科技大學",
+      "short": "嶺東",
+      "abbr": "LTU",
+      "english": "Ling Tung University",
+      "cities": [
+        "臺中市"
+      ],
+      "cityEn": "Taichung",
+      "type": "technology",
+      "ownership": "private",
+      "difficulty": 2,
+      "website": "http://www.ltu.edu.tw",
+      "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPUxUVS0xMDQ1LTkx",
+      "admission": {
+        "url": "http://www.ltu.edu.tw",
+        "kind": "home"
+      },
+      "terms": {
+        "spring": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        },
+        "fall": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        }
+      },
+      "checked": "2026-09-19",
+      "reviewState": "page-read"
+    },
+    {
+      "id": "1046",
+      "name": "中國科技大學",
+      "short": "中國科大",
+      "abbr": "CUTE",
+      "english": "China University of Technology",
+      "cities": [
+        "臺北市",
+        "新竹縣"
+      ],
+      "cityEn": "Taipei",
+      "type": "technology",
+      "ownership": "private",
+      "difficulty": 2,
+      "website": "http://www.cute.edu.tw/",
+      "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPUNVVGUtMTA0Ni05Mg",
+      "admission": {
+        "url": "http://www.cute.edu.tw/",
+        "kind": "home"
+      },
+      "terms": {
+        "spring": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        },
+        "fall": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        }
+      },
+      "checked": "2026-09-19",
+      "reviewState": "unavailable"
+    },
+    {
+      "id": "1047",
+      "name": "中臺科技大學",
+      "short": "中臺",
+      "abbr": "CTUST",
+      "english": "Central Taiwan University of Science and Technology",
+      "cities": [
+        "臺中市"
+      ],
+      "cityEn": "Taichung",
+      "type": "technology",
+      "ownership": "private",
+      "difficulty": null,
+      "website": "http://www.ctust.edu.tw",
+      "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPUNUVVNULTEwNDctOTM",
+      "admission": {
+        "url": "http://www.ctust.edu.tw",
+        "kind": "home"
+      },
+      "terms": {
+        "spring": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        },
+        "fall": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        }
+      },
+      "checked": "2026-09-19",
+      "reviewState": "unavailable"
+    },
+    {
+      "id": "1048",
+      "name": "亞洲大學",
+      "short": "亞洲",
+      "abbr": "ASIA",
+      "english": "Asia University",
+      "cities": [
+        "臺中市"
+      ],
+      "cityEn": "Taichung",
+      "type": "university",
+      "ownership": "private",
+      "difficulty": 2,
+      "website": "https://www.asia.edu.tw/",
+      "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPUFTSUEtMTA0OC05NA",
+      "admission": {
+        "url": "https://admission.asia.edu.tw/AsiaGlobalAdmissions/ForeignStudent",
+        "kind": "apply"
+      },
+      "terms": {
+        "spring": {
+          "rounds": [
+            {
+              "start": null,
+              "end": {
+                "label": {
+                  "zh": "約2026/11月底",
+                  "my": "ခန့် 2026/11 လကုန်"
+                },
+                "sort": "2026-11-21",
+                "status": "historical",
+                "basis": "提供資料"
+              },
+              "result": {
+                "label": {
+                  "zh": "分梯／滾動，待核",
+                  "my": "အဆင့်လိုက်၊ အတည်ပြုရန်"
+                },
+                "status": "historical",
+                "basis": "提供資料"
+              }
+            }
+          ],
+          "sources": [
+            "https://admission.asia.edu.tw/AsiaGlobalAdmissions/ForeignStudent"
+          ],
+          "notes": [
+            {
+              "zh": "日期為提供資料包的歷年參考；本次尚未完成官方附件的逐項複核，不代表本期正式公告。",
+              "my": "ရက်စွဲများသည် ပေးထားသော ယခင်နှစ်ကိုးကားစာရင်းမှ ဖြစ်သည်။ တရားဝင်ဖိုင်နှင့် အပြည့်အစုံ ထပ်မစစ်နိုင်သေးပါ။ ယခုကာလ တရားဝင်ရက် မဟုတ်ပါ။"
+            }
+          ]
+        },
+        "fall": {
+          "rounds": [
+            {
+              "start": {
+                "label": {
+                  "zh": "約2027/02月下旬",
+                  "my": "ခန့် 2027/02 လကုန်ပိုင်း"
+                },
+                "sort": "2027-02-21",
+                "status": "historical",
+                "basis": "115"
+              },
+              "end": null,
+              "result": {
+                "label": {
+                  "zh": "約2027/05月上旬",
+                  "my": "ခန့် 2027/05 လအစ"
+                },
+                "sort": "2027-05-01",
+                "status": "historical",
+                "basis": "115"
+              },
+              "name": {
+                "zh": "1",
+                "my": "1"
+              }
+            },
+            {
+              "start": null,
+              "end": null,
+              "result": {
+                "label": {
+                  "zh": "約2027/05月底",
+                  "my": "ခန့် 2027/05 လကုန်"
+                },
+                "sort": "2027-05-21",
+                "status": "historical",
+                "basis": "115"
+              },
+              "name": {
+                "zh": "2",
+                "my": "2"
+              }
+            }
+          ],
+          "sources": [
+            "https://admission.asia.edu.tw/AsiaGlobalAdmissions/ForeignStudent"
+          ],
+          "notes": [
+            {
+              "zh": "日期為提供資料包的歷年參考；本次尚未完成官方附件的逐項複核，不代表本期正式公告。",
+              "my": "ရက်စွဲများသည် ပေးထားသော ယခင်နှစ်ကိုးကားစာရင်းမှ ဖြစ်သည်။ တရားဝင်ဖိုင်နှင့် အပြည့်အစုံ ထပ်မစစ်နိုင်သေးပါ။ ယခုကာလ တရားဝင်ရက် မဟုတ်ပါ။"
+            },
+            {
+              "zh": "前屆第一梯實際 2026/05/07 放榜，非原訂 04/30；不可保證滾動申請即時放榜。",
+              "my": "အသေးစိတ်ကို တရားဝင်ဝင်ခွင့်လမ်းညွှန်တွင် အတည်ပြုပါ။"
+            }
+          ]
+        }
+      },
+      "checked": "2026-09-19",
+      "reviewState": "unavailable"
+    },
+    {
+      "id": "1049",
+      "name": "開南大學",
+      "short": "開南",
+      "abbr": "KNU",
+      "english": "Kainan University",
+      "cities": [
+        "桃園市"
+      ],
+      "cityEn": "Taoyuan",
+      "type": "university",
+      "ownership": "private",
+      "difficulty": 2,
+      "website": "http://www.knu.edu.tw",
+      "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPUtOVS0xMDQ5LTk1",
+      "admission": {
+        "url": "http://www.knu.edu.tw",
+        "kind": "home"
+      },
+      "terms": {
+        "spring": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        },
+        "fall": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        }
+      },
+      "checked": "2026-09-19",
+      "reviewState": "unavailable"
+    },
+    {
+      "id": "1050",
+      "name": "佛光大學",
+      "short": "佛光",
+      "abbr": "FGU",
+      "english": "Fo Guang University",
+      "cities": [
+        "宜蘭縣"
+      ],
+      "cityEn": "Yilan",
+      "type": "university",
+      "ownership": "private",
+      "difficulty": 2,
+      "website": "http://www.fgu.edu.tw",
+      "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPUZHVS0xMDUwLTk2",
+      "admission": {
+        "url": "http://www.fgu.edu.tw",
+        "kind": "home"
+      },
+      "terms": {
+        "spring": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        },
+        "fall": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        }
+      },
+      "checked": "2026-09-19",
+      "reviewState": "unavailable"
+    },
+    {
+      "id": "1051",
+      "name": "台南應用科技大學",
+      "short": "南應",
+      "abbr": "TUT",
+      "english": "Tainan University of Technology",
+      "cities": [
+        "臺南市"
+      ],
+      "cityEn": "Tainan",
+      "type": "technology",
+      "ownership": "private",
+      "difficulty": 2,
+      "website": "http://www.tut.edu.tw/",
+      "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPVRVVGVjaC0xMDUxLTk3",
+      "admission": {
+        "url": "http://www.tut.edu.tw/",
+        "kind": "home"
+      },
+      "terms": {
+        "spring": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        },
+        "fall": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        }
+      },
+      "checked": "2026-09-19",
+      "reviewState": "page-read"
+    },
+    {
+      "id": "1052",
+      "name": "中信科技大學",
+      "short": "中信科大",
+      "abbr": "CTUST-TN",
+      "english": "CTBC University of Technology",
+      "cities": [
+        "臺南市"
+      ],
+      "cityEn": "Tainan",
+      "type": "technology",
+      "ownership": "private",
+      "difficulty": 2,
+      "website": "http://www.feu.edu.tw",
+      "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPUNUQkNURUNILTEwNTItOTg",
+      "admission": {
+        "url": "http://www.feu.edu.tw",
+        "kind": "home"
+      },
+      "terms": {
+        "spring": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        },
+        "fall": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        }
+      },
+      "checked": "2026-09-19",
+      "reviewState": "unavailable"
+    },
+    {
+      "id": "1053",
+      "name": "元培醫事科技大學",
+      "short": "元培",
+      "abbr": "YPU",
+      "english": "Yuanpei University of Medical Technology",
+      "cities": [
+        "新竹市"
+      ],
+      "cityEn": "Hsinchu City",
+      "type": "technology",
+      "ownership": "private",
+      "difficulty": null,
+      "website": "http://www.ypu.edu.tw/",
+      "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPVlVTVQtMTA1My05OQ",
+      "admission": {
+        "url": "https://top.ypu.edu.tw/p/404-1080-81467.php",
+        "kind": "admission"
+      },
+      "terms": {
+        "spring": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        },
+        "fall": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        }
+      },
+      "checked": "2026-09-19",
+      "reviewState": "page-read"
+    },
+    {
+      "id": "1054",
+      "name": "景文科技大學",
+      "short": "景文",
+      "abbr": "JUST",
+      "english": "Jinwen University of Science and Technology",
+      "cities": [
+        "新北市"
+      ],
+      "cityEn": "New Taipei",
+      "type": "technology",
+      "ownership": "private",
+      "difficulty": 2,
+      "website": "http://www.just.edu.tw/",
+      "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPUpJTldFTi0xMDU0LTEwMA",
+      "admission": {
+        "url": "http://www.just.edu.tw/",
+        "kind": "home"
+      },
+      "terms": {
+        "spring": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        },
+        "fall": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        }
+      },
+      "checked": "2026-09-19",
+      "reviewState": "page-read"
+    },
+    {
+      "id": "1055",
+      "name": "中華醫事科技大學",
+      "short": "中華醫大",
+      "abbr": "HWAI",
+      "english": "Chung Hwa University of Medical Technology",
+      "cities": [
+        "臺南市"
+      ],
+      "cityEn": "Tainan",
+      "type": "technology",
+      "ownership": "private",
+      "difficulty": null,
+      "website": "http://www.hwai.edu.tw",
+      "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPUNIVU1ULTEwNTUtMTAx",
+      "admission": {
+        "url": "http://www.hwai.edu.tw",
+        "kind": "home"
+      },
+      "terms": {
+        "spring": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        },
+        "fall": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        }
+      },
+      "checked": "2026-09-19",
+      "reviewState": "page-read"
+    },
+    {
+      "id": "1056",
+      "name": "東南科技大學",
+      "short": "東南",
+      "abbr": "TNU",
+      "english": "Tungnan University",
+      "cities": [
+        "新北市"
+      ],
+      "cityEn": "New Taipei",
+      "type": "technology",
+      "ownership": "private",
+      "difficulty": 2,
+      "website": "https://www.tnu.edu.tw/",
+      "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPVROVS0xMDU2LTEwMg",
+      "admission": {
+        "url": "https://www.tnu.edu.tw/",
+        "kind": "home"
+      },
+      "terms": {
+        "spring": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        },
+        "fall": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        }
+      },
+      "checked": "2026-09-19",
+      "reviewState": "unavailable"
+    },
+    {
+      "id": "1057",
+      "name": "德明財經科技大學",
+      "short": "德明",
+      "abbr": "TAKMING",
+      "english": "Takming University of Science and Technology",
+      "cities": [
+        "臺北市"
+      ],
+      "cityEn": "Taipei",
+      "type": "technology",
+      "ownership": "private",
+      "difficulty": 2,
+      "website": "http://www.takming.edu.tw",
+      "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPVRBS01JTkctMTA1Ny0xMDM",
+      "admission": {
+        "url": "http://www.takming.edu.tw",
+        "kind": "home"
+      },
+      "terms": {
+        "spring": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        },
+        "fall": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        }
+      },
+      "checked": "2026-09-19",
+      "reviewState": "unavailable"
+    },
+    {
+      "id": "1060",
+      "name": "南開科技大學",
+      "short": "南開",
+      "abbr": "NKUT",
+      "english": "Nan Kai University of Technology",
+      "cities": [
+        "南投縣"
+      ],
+      "cityEn": "Nantou",
+      "type": "technology",
+      "ownership": "private",
+      "difficulty": 2,
+      "website": "http://www.nkut.edu.tw",
+      "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPU5LVVQtMTA2MC0xMDU",
+      "admission": {
+        "url": "http://www.nkut.edu.tw",
+        "kind": "home"
+      },
+      "terms": {
+        "spring": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        },
+        "fall": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        }
+      },
+      "checked": "2026-09-19",
+      "reviewState": "unavailable"
+    },
+    {
+      "id": "1061",
+      "name": "中華科技大學",
+      "short": "中華科大",
+      "abbr": "CUST",
+      "english": "China University of Science and Technology",
+      "cities": [
+        "臺北市"
+      ],
+      "cityEn": "Taipei",
+      "type": "technology",
+      "ownership": "private",
+      "difficulty": 2,
+      "website": "http://www.cust.edu.tw/www/cust.html",
+      "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPUNVU1QtMTA2MS0xMDY",
+      "admission": {
+        "url": "https://www.cust.edu.tw/enroll/international-2.html",
+        "kind": "admission"
+      },
+      "terms": {
+        "spring": {
+          "rounds": [
+            {
+              "start": {
+                "date": "2026-11-02",
+                "status": "official"
+              },
+              "end": {
+                "date": "2026-12-15",
+                "status": "official"
+              },
+              "result": {
+                "label": {
+                  "zh": "2027/01月",
+                  "my": "2027/01 လ"
+                },
+                "sort": "2027-01-01",
+                "status": "official",
+                "basis": "115"
+              }
+            }
+          ],
+          "sources": [
+            "https://www.cust.edu.tw/enroll/international-2.html"
+          ],
+          "notes": [
+            {
+              "zh": "官方只公布 1 月，未提供確定放榜日；招生四技及碩士。",
+              "my": "တရားဝင်ကြေညာချက်တွင် ဇန်နဝါရီလဟုသာ ဖော်ပြသည်။ ဘွဲ့ကြိုနှင့် မဟာဘွဲ့ လက်ခံသည်။"
+            }
+          ],
+          "scope": "all",
+          "scopeLabel": {
+            "zh": "學士／碩士／博士依當屆開放系所",
+            "my": "ဘွဲ့ကြို / မဟာဘွဲ့ / ပါရဂူ — လမ်းညွှန်ပါ ဘာသာရပ်အတိုင်း"
+          },
+          "brochure": {
+            "url": "https://www.cust.edu.tw/enroll/international-2.html",
+            "status": "official"
+          }
+        },
+        "fall": {
+          "rounds": [
+            {
+              "start": {
+                "label": {
+                  "zh": "約2027/02月下旬",
+                  "my": "ခန့် 2027/02 လကုန်ပိုင်း"
+                },
+                "sort": "2027-02-21",
+                "status": "historical",
+                "basis": "115"
+              },
+              "end": {
+                "label": {
+                  "zh": "約2027/06月中旬",
+                  "my": "ခန့် 2027/06 လလယ်"
+                },
+                "sort": "2027-06-11",
+                "status": "historical",
+                "basis": "115"
+              },
+              "result": {
+                "label": {
+                  "zh": "約2027/08月",
+                  "my": "ခန့် 2027/08 လ"
+                },
+                "sort": "2027-08-01",
+                "status": "historical",
+                "basis": "115"
+              }
+            }
+          ],
+          "sources": [
+            "https://www.cust.edu.tw/enroll/international-2.html"
+          ],
+          "notes": [
+            {
+              "zh": "依 2026 秋 02/23–06/12 申請、8 月放榜推估；116 日期待公告。",
+              "my": "အသေးစိတ်ကို တရားဝင်ဝင်ခွင့်လမ်းညွှန်တွင် အတည်ပြုပါ။"
+            }
+          ]
+        }
+      },
+      "checked": "2026-09-19",
+      "reviewState": "page-read"
+    },
+    {
+      "id": "1062",
+      "name": "僑光科技大學",
+      "short": "僑光",
+      "abbr": "OCU",
+      "english": "Overseas Chinese University",
+      "cities": [
+        "臺中市"
+      ],
+      "cityEn": "Taichung",
+      "type": "technology",
+      "ownership": "private",
+      "difficulty": 2,
+      "website": "http://www.ocu.edu.tw",
+      "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPU9DVS0xMDYyLTEwNw",
+      "admission": {
+        "url": "https://admission.ocu.edu.tw/p/412-1023-5671.php",
+        "kind": "admission"
+      },
+      "terms": {
+        "spring": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        },
+        "fall": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        }
+      },
+      "checked": "2026-09-19",
+      "reviewState": "unavailable"
+    },
+    {
+      "id": "1063",
+      "name": "育達科技大學",
+      "short": "育達",
+      "abbr": "YDU",
+      "english": "Yu Da University of Science and Technology",
+      "cities": [
+        "苗栗縣"
+      ],
+      "cityEn": "Miaoli",
+      "type": "technology",
+      "ownership": "private",
+      "difficulty": 2,
+      "website": "http://www.ydu.edu.tw",
+      "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPVlEVS0xMDYzLTEwOA",
+      "admission": {
+        "url": "http://www.ydu.edu.tw",
+        "kind": "home"
+      },
+      "terms": {
+        "spring": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        },
+        "fall": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        }
+      },
+      "checked": "2026-09-19",
+      "reviewState": "page-read"
+    },
+    {
+      "id": "1064",
+      "name": "美和科技大學",
+      "short": "美和",
+      "abbr": "MEIHO",
+      "english": "Meiho University",
+      "cities": [
+        "屏東縣"
+      ],
+      "cityEn": "Pingtung",
+      "type": "technology",
+      "ownership": "private",
+      "difficulty": null,
+      "website": "https://www.meiho.edu.tw/",
+      "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPU1VLTEwNjQtMTA5",
+      "admission": {
+        "url": "https://www.meiho.edu.tw/",
+        "kind": "home"
+      },
+      "terms": {
+        "spring": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        },
+        "fall": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        }
+      },
+      "checked": "2026-09-19",
+      "reviewState": "unavailable"
+    },
+    {
+      "id": "1065",
+      "name": "吳鳳科技大學",
+      "short": "吳鳳",
+      "abbr": "WFU",
+      "english": "Wufeng University",
+      "cities": [
+        "嘉義縣"
+      ],
+      "cityEn": "Chiayi County",
+      "type": "technology",
+      "ownership": "private",
+      "difficulty": 2,
+      "website": "http://www.wfu.edu.tw/",
+      "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPVdGVS0xMDY1LTExMA",
+      "admission": {
+        "url": "http://www.wfu.edu.tw/",
+        "kind": "home"
+      },
+      "terms": {
+        "spring": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        },
+        "fall": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        }
+      },
+      "checked": "2026-09-19",
+      "reviewState": "unavailable"
+    },
+    {
+      "id": "1069",
+      "name": "修平科技大學",
+      "short": "修平",
+      "abbr": "HUST",
+      "english": "Hsiuping University of Science and Technology",
+      "cities": [
+        "臺中市"
+      ],
+      "cityEn": "Taichung",
+      "type": "technology",
+      "ownership": "private",
+      "difficulty": 2,
+      "website": "http://www.hust.edu.tw/",
+      "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPUhVU1QtMTA2OS0xMTI",
+      "admission": {
+        "url": "http://www.hust.edu.tw/",
+        "kind": "home"
+      },
+      "terms": {
+        "spring": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        },
+        "fall": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        }
+      },
+      "checked": "2026-09-19",
+      "reviewState": "unavailable"
+    },
+    {
+      "id": "1070",
+      "name": "長庚科技大學",
+      "short": "長庚科大",
+      "abbr": "CGUST",
+      "english": "",
+      "cities": [
+        "桃園市",
+        "嘉義縣"
+      ],
+      "cityEn": "Taoyuan",
+      "type": "technology",
+      "ownership": "private",
+      "difficulty": null,
+      "website": "http://www.cgust.edu.tw",
+      "catalog": null,
+      "admission": {
+        "url": "http://www.cgust.edu.tw",
+        "kind": "home"
+      },
+      "terms": {
+        "spring": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        },
+        "fall": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        }
+      },
+      "checked": "2026-09-19",
+      "reviewState": "unavailable"
+    },
+    {
+      "id": "1071",
+      "name": "臺北城市科技大學",
+      "short": "北城",
+      "abbr": "TPCU",
+      "english": "Taipei City University of Science and Technology",
+      "cities": [
+        "臺北市"
+      ],
+      "cityEn": "Taipei",
+      "type": "technology",
+      "ownership": "private",
+      "difficulty": 2,
+      "website": "https://www.tpcu.edu.tw/",
+      "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPVRQQ1UtMTA3MS0xMTQ",
+      "admission": {
+        "url": "https://www.tpcu.edu.tw/",
+        "kind": "home"
+      },
+      "terms": {
+        "spring": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        },
+        "fall": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        }
+      },
+      "checked": "2026-09-19",
+      "reviewState": "unavailable"
+    },
+    {
+      "id": "1072",
+      "name": "敏實科技大學",
+      "short": "敏實",
+      "abbr": "MITUST",
+      "english": "Minth University of Science and Technology",
+      "cities": [
+        "新竹縣"
+      ],
+      "cityEn": "Hsinchu County",
+      "type": "technology",
+      "ownership": "private",
+      "difficulty": 2,
+      "website": "https://www.mitust.edu.tw/",
+      "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPU1JVFVTVC0xMDcyLTExNQ",
+      "admission": {
+        "url": "https://www.mitust.edu.tw/",
+        "kind": "home"
+      },
+      "terms": {
+        "spring": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        },
+        "fall": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        }
+      },
+      "checked": "2026-09-19",
+      "reviewState": "page-read"
+    },
+    {
+      "id": "1073",
+      "name": "醒吾科技大學",
+      "short": "醒吾",
+      "abbr": "HWU",
+      "english": "Hsing Wu University of Science and Technology",
+      "cities": [
+        "新北市"
+      ],
+      "cityEn": "New Taipei",
+      "type": "technology",
+      "ownership": "private",
+      "difficulty": 2,
+      "website": "https://www.hwu.edu.tw/",
+      "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPUhXVS0xMDczLTExNg",
+      "admission": {
+        "url": "https://www.hwu.edu.tw/",
+        "kind": "home"
+      },
+      "terms": {
+        "spring": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        },
+        "fall": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        }
+      },
+      "checked": "2026-09-19",
+      "reviewState": "page-read"
+    },
+    {
+      "id": "1075",
+      "name": "文藻外語大學",
+      "short": "文藻",
+      "abbr": "WZU",
+      "english": "Wenzao Ursuline University of Languages",
+      "cities": [
+        "高雄市"
+      ],
+      "cityEn": "Kaohsiung",
+      "type": "technology",
+      "ownership": "private",
+      "difficulty": 3,
+      "website": "http://www.wzu.edu.tw",
+      "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPVdaVS0xMDc1LTExNw",
+      "admission": {
+        "url": "http://www.wzu.edu.tw",
+        "kind": "home"
+      },
+      "terms": {
+        "spring": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        },
+        "fall": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        }
+      },
+      "checked": "2026-09-19",
+      "reviewState": "page-read"
+    },
+    {
+      "id": "1076",
+      "name": "華夏科技大學",
+      "short": "華夏",
+      "abbr": "HWH",
+      "english": "Hwa Hsia University of Technology",
+      "cities": [
+        "新北市"
+      ],
+      "cityEn": "New Taipei",
+      "type": "technology",
+      "ownership": "private",
+      "difficulty": null,
+      "website": "http://www.hwh.edu.tw",
+      "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPUhXSC0xMDc2LTExOA",
+      "admission": {
+        "url": "http://www.hwh.edu.tw",
+        "kind": "home"
+      },
+      "terms": {
+        "spring": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        },
+        "fall": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        }
+      },
+      "checked": "2026-09-19",
+      "reviewState": "unavailable"
+    },
+    {
+      "id": "1078",
+      "name": "致理科技大學",
+      "short": "致理",
+      "abbr": "CLUT",
+      "english": "Chihlee University of Technology",
+      "cities": [
+        "新北市"
+      ],
+      "cityEn": "New Taipei",
+      "type": "technology",
+      "ownership": "private",
+      "difficulty": 3,
+      "website": "http://www.chihlee.edu.tw",
+      "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPUNMVVQtMTA3OC0xMjA",
+      "admission": {
+        "url": "http://www.chihlee.edu.tw",
+        "kind": "home"
+      },
+      "terms": {
+        "spring": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        },
+        "fall": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        }
+      },
+      "checked": "2026-09-19",
+      "reviewState": "unavailable"
+    },
+    {
+      "id": "1079",
+      "name": "康寧大學",
+      "short": "康寧",
+      "abbr": "UKN",
+      "english": "University of Kang Ning",
+      "cities": [
+        "臺北市"
+      ],
+      "cityEn": "Taipei",
+      "type": "university",
+      "ownership": "private",
+      "difficulty": null,
+      "website": "http://www.ukn.edu.tw/",
+      "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPVVLTi0xMDc5LTEyMQ",
+      "admission": {
+        "url": "http://www.ukn.edu.tw/",
+        "kind": "home"
+      },
+      "terms": {
+        "spring": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        },
+        "fall": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        }
+      },
+      "checked": "2026-09-19",
+      "reviewState": "unavailable"
+    },
+    {
+      "id": "1080",
+      "name": "宏國德霖科技大學",
+      "short": "德霖",
+      "abbr": "HDUT",
+      "english": "Hungkuo Delin University of Technology",
+      "cities": [
+        "新北市"
+      ],
+      "cityEn": "New Taipei",
+      "type": "technology",
+      "ownership": "private",
+      "difficulty": 2,
+      "website": "http://www.hdut.edu.tw/",
+      "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPUhEVVQtMTA4MC0xMjI",
+      "admission": {
+        "url": "http://www.hdut.edu.tw/",
+        "kind": "home"
+      },
+      "terms": {
+        "spring": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        },
+        "fall": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        }
+      },
+      "checked": "2026-09-19",
+      "reviewState": "page-read"
+    },
+    {
+      "id": "1082",
+      "name": "崇右影藝科技大學",
+      "short": "崇右",
+      "abbr": "CUFA",
+      "english": "Chungyu University of Film and Arts Technology",
+      "cities": [
+        "基隆市"
+      ],
+      "cityEn": "Keelung",
+      "type": "technology",
+      "ownership": "private",
+      "difficulty": null,
+      "website": "http://www.cufa.edu.tw/",
+      "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPUNVRkEtMTA4Mi0xMjQ",
+      "admission": {
+        "url": "http://www.cufa.edu.tw/",
+        "kind": "home"
+      },
+      "terms": {
+        "spring": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        },
+        "fall": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        }
+      },
+      "checked": "2026-09-19",
+      "reviewState": "unavailable"
+    },
+    {
+      "id": "1083",
+      "name": "台北海洋科技大學",
+      "short": "海洋科大",
+      "abbr": "TUMT",
+      "english": "Taipei University of Marine Technology",
+      "cities": [
+        "新北市"
+      ],
+      "cityEn": "New Taipei",
+      "type": "technology",
+      "ownership": "private",
+      "difficulty": 2,
+      "website": "http://www.tumt.edu.tw/app/home.php",
+      "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPVRVTVQtMTA4My0xMjU",
+      "admission": {
+        "url": "http://www.tumt.edu.tw/app/home.php",
+        "kind": "home"
+      },
+      "terms": {
+        "spring": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        },
+        "fall": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        }
+      },
+      "checked": "2026-09-19",
+      "reviewState": "unavailable"
+    },
+    {
+      "id": "1084",
+      "name": "亞東科技大學",
+      "short": "亞東",
+      "abbr": "AEUST",
+      "english": "Asia Eastern University of Science and Technology",
+      "cities": [
+        "新北市"
+      ],
+      "cityEn": "New Taipei",
+      "type": "technology",
+      "ownership": "private",
+      "difficulty": 2,
+      "website": "https://www.aeust.edu.tw/",
+      "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPUFFVVNULTEwODQtMTI2",
+      "admission": {
+        "url": "https://www.aeust.edu.tw/",
+        "kind": "home"
+      },
+      "terms": {
+        "spring": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        },
+        "fall": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        }
+      },
+      "checked": "2026-09-19",
+      "reviewState": "unavailable"
+    },
+    {
+      "id": "1085",
+      "name": "馬偕醫學大學",
+      "short": "馬偕醫大",
+      "abbr": "MMU",
+      "english": "",
+      "cities": [
+        "新北市"
+      ],
+      "cityEn": "New Taipei",
+      "type": "university",
+      "ownership": "private",
+      "difficulty": null,
+      "website": "http://www.mmc.edu.tw",
+      "catalog": null,
+      "admission": {
+        "url": "http://www.mmc.edu.tw",
+        "kind": "home"
+      },
+      "terms": {
+        "spring": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        },
+        "fall": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        }
+      },
+      "checked": "2026-09-19",
+      "reviewState": "page-read"
+    },
+    {
+      "id": "1125",
+      "name": "中信金融管理學院",
+      "short": "中信金融",
+      "abbr": "CTBC",
+      "english": "CTBC Financial Management College",
+      "cities": [
+        "臺南市"
+      ],
+      "cityEn": "Tainan",
+      "type": "college",
+      "ownership": "private",
+      "difficulty": 2,
+      "website": "https://www.ctbc.edu.tw/",
+      "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPUNUQkMtMTEyNS0xMjc",
+      "admission": {
+        "url": "https://www.ctbc.edu.tw/",
+        "kind": "home"
+      },
+      "terms": {
+        "spring": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        },
+        "fall": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        }
+      },
+      "checked": "2026-09-19",
+      "reviewState": "unavailable"
+    },
+    {
+      "id": "1168",
+      "name": "南亞技術學院",
+      "short": "南亞",
+      "abbr": "NANYA",
+      "english": "Nanya Institute of Technology",
+      "cities": [
+        "桃園市"
+      ],
+      "cityEn": "Taoyuan",
+      "type": "college",
+      "ownership": "private",
+      "difficulty": 2,
+      "website": "http://www.nanya.edu.tw/home.aspx",
+      "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPU5hbnlhIEluc3RpdHV0ZSBPZiBUZWNobm9sb2d5LTExNjgtMTI5",
+      "admission": {
+        "url": "http://www.nanya.edu.tw/home.aspx",
+        "kind": "home"
+      },
+      "terms": {
+        "spring": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        },
+        "fall": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        }
+      },
+      "checked": "2026-09-19",
+      "reviewState": "page-read"
+    },
+    {
+      "id": "1183",
+      "name": "黎明技術學院",
+      "short": "黎明",
+      "abbr": "LIT",
+      "english": "Lee-Ming Institute of Technology",
+      "cities": [
+        "新北市"
+      ],
+      "cityEn": "New Taipei",
+      "type": "college",
+      "ownership": "private",
+      "difficulty": 2,
+      "website": "http://www.lit.edu.tw",
+      "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPUxJVC0xMTgzLTEzMA",
+      "admission": {
+        "url": "http://www.lit.edu.tw",
+        "kind": "home"
+      },
+      "terms": {
+        "spring": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        },
+        "fall": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        }
+      },
+      "checked": "2026-09-19",
+      "reviewState": "unavailable"
+    },
+    {
+      "id": "1185",
+      "name": "德育護理健康學院",
+      "short": "德育",
+      "abbr": "DYHU",
+      "english": "Deh Yu College of Nursing and Health",
+      "cities": [
+        "基隆市"
+      ],
+      "cityEn": "Keelung",
+      "type": "college",
+      "ownership": "private",
+      "difficulty": null,
+      "website": "https://www.dyhu.edu.tw/",
+      "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPUNLVS0xMTg1LTEzMQ",
+      "admission": {
+        "url": "https://www.dyhu.edu.tw/",
+        "kind": "home"
+      },
+      "terms": {
+        "spring": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        },
+        "fall": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        }
+      },
+      "checked": "2026-09-19",
+      "reviewState": "unavailable"
+    },
+    {
+      "id": "1196",
+      "name": "法鼓文理學院",
+      "short": "法鼓",
+      "abbr": "DILA",
+      "english": "Dharma Drum Institute of Liberal Arts",
+      "cities": [
+        "新北市"
+      ],
+      "cityEn": "New Taipei",
+      "type": "college",
+      "ownership": "private",
+      "difficulty": null,
+      "website": "http://www.dila.edu.tw/",
+      "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPURJTEEtMTE5Ni0xMzQ",
+      "admission": {
+        "url": "http://www.dila.edu.tw/",
+        "kind": "home"
+      },
+      "terms": {
+        "spring": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        },
+        "fall": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        }
+      },
+      "checked": "2026-09-19",
+      "reviewState": "unavailable"
+    },
+    {
+      "id": "1282",
+      "name": "馬偕醫護管理專科學校",
+      "short": "馬偕護專",
+      "abbr": "MKC",
+      "english": "",
+      "cities": [
+        "臺北市",
+        "新北市"
+      ],
+      "cityEn": "Taipei",
+      "type": "junior",
+      "ownership": "private",
+      "difficulty": null,
+      "website": "http://www.mkc.edu.tw",
+      "catalog": null,
+      "admission": {
+        "url": "http://www.mkc.edu.tw",
+        "kind": "home"
+      },
+      "terms": {
+        "spring": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        },
+        "fall": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        }
+      },
+      "checked": "2026-09-19",
+      "reviewState": "page-read"
+    },
+    {
+      "id": "1283",
+      "name": "仁德醫護管理專科學校",
+      "short": "仁德",
+      "abbr": "JENTE",
+      "english": "",
+      "cities": [
+        "苗栗縣"
+      ],
+      "cityEn": "Miaoli",
+      "type": "junior",
+      "ownership": "private",
+      "difficulty": null,
+      "website": "http://www.jente.edu.tw",
+      "catalog": null,
+      "admission": {
+        "url": "http://www.jente.edu.tw",
+        "kind": "home"
+      },
+      "terms": {
+        "spring": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        },
+        "fall": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        }
+      },
+      "checked": "2026-09-19",
+      "reviewState": "page-read"
+    },
+    {
+      "id": "1284",
+      "name": "樹人醫護管理專科學校",
+      "short": "樹人",
+      "abbr": "SZMC",
+      "english": "Shu-Zen Junior College of Medicine and Management",
+      "cities": [
+        "高雄市"
+      ],
+      "cityEn": "Kaohsiung",
+      "type": "junior",
+      "ownership": "private",
+      "difficulty": null,
+      "website": "http://www.szmc.edu.tw",
+      "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPVNaTUMtMTI4NC0xMzc",
+      "admission": {
+        "url": "http://www.szmc.edu.tw",
+        "kind": "home"
+      },
+      "terms": {
+        "spring": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        },
+        "fall": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        }
+      },
+      "checked": "2026-09-19",
+      "reviewState": "page-read"
+    },
+    {
+      "id": "1285",
+      "name": "慈惠醫護管理專科學校",
+      "short": "慈惠",
+      "abbr": "TZUHUI",
+      "english": "",
+      "cities": [
+        "屏東縣"
+      ],
+      "cityEn": "Pingtung",
+      "type": "junior",
+      "ownership": "private",
+      "difficulty": null,
+      "website": "https://www.tzuhui.edu.tw/home",
+      "catalog": null,
+      "admission": {
+        "url": "https://www.tzuhui.edu.tw/home",
+        "kind": "home"
+      },
+      "terms": {
+        "spring": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        },
+        "fall": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        }
+      },
+      "checked": "2026-09-19",
+      "reviewState": "unavailable"
+    },
+    {
+      "id": "1286",
+      "name": "耕莘健康管理專科學校",
+      "short": "耕莘",
+      "abbr": "CTCN",
+      "english": "Cardinal Tien Junior College of Healthcare & Management",
+      "cities": [
+        "新北市"
+      ],
+      "cityEn": "New Taipei",
+      "type": "junior",
+      "ownership": "private",
+      "difficulty": null,
+      "website": "http://www.ctcn.edu.tw",
+      "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPUNUQ04tMTI4Ni0xMzk",
+      "admission": {
+        "url": "http://www.ctcn.edu.tw",
+        "kind": "home"
+      },
+      "terms": {
+        "spring": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        },
+        "fall": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        }
+      },
+      "checked": "2026-09-19",
+      "reviewState": "unavailable"
+    },
+    {
+      "id": "1287",
+      "name": "敏惠醫護管理專科學校",
+      "short": "敏惠",
+      "abbr": "MHCHCM",
+      "english": "",
+      "cities": [
+        "臺南市"
+      ],
+      "cityEn": "Tainan",
+      "type": "junior",
+      "ownership": "private",
+      "difficulty": null,
+      "website": "https://www.mhchcm.edu.tw/",
+      "catalog": null,
+      "admission": {
+        "url": "https://www.mhchcm.edu.tw/",
+        "kind": "home"
+      },
+      "terms": {
+        "spring": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        },
+        "fall": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        }
+      },
+      "checked": "2026-09-19",
+      "reviewState": "unavailable"
+    },
+    {
+      "id": "1289",
+      "name": "育英醫護管理專科學校",
+      "short": "育英",
+      "abbr": "YUHING",
+      "english": "",
+      "cities": [
+        "高雄市"
+      ],
+      "cityEn": "Kaohsiung",
+      "type": "junior",
+      "ownership": "private",
+      "difficulty": null,
+      "website": "https://www.yuhing.edu.tw/ischool/publish_page/0/",
+      "catalog": null,
+      "admission": {
+        "url": "https://www.yuhing.edu.tw/ischool/publish_page/0/",
+        "kind": "home"
+      },
+      "terms": {
+        "spring": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        },
+        "fall": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        }
+      },
+      "checked": "2026-09-19",
+      "reviewState": "unavailable"
+    },
+    {
+      "id": "1291",
+      "name": "聖母醫護管理專科學校",
+      "short": "聖母",
+      "abbr": "SMC",
+      "english": "",
+      "cities": [
+        "宜蘭縣"
+      ],
+      "cityEn": "Yilan",
+      "type": "junior",
+      "ownership": "private",
+      "difficulty": null,
+      "website": "http://www.smc.edu.tw/",
+      "catalog": null,
+      "admission": {
+        "url": "http://www.smc.edu.tw/",
+        "kind": "home"
+      },
+      "terms": {
+        "spring": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        },
+        "fall": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        }
+      },
+      "checked": "2026-09-19",
+      "reviewState": "unavailable"
+    },
+    {
+      "id": "1292",
+      "name": "新生醫護管理專科學校",
+      "short": "新生",
+      "abbr": "HSC",
+      "english": "",
+      "cities": [
+        "桃園市"
+      ],
+      "cityEn": "Taoyuan",
+      "type": "junior",
+      "ownership": "private",
+      "difficulty": null,
+      "website": "https://www.hsc.edu.tw/",
+      "catalog": null,
+      "admission": {
+        "url": "https://www.hsc.edu.tw/",
+        "kind": "home"
+      },
+      "terms": {
+        "spring": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        },
+        "fall": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        }
+      },
+      "checked": "2026-09-19",
+      "reviewState": "unavailable"
+    },
+    {
+      "id": "1293",
+      "name": "崇仁醫護管理專科學校",
+      "short": "崇仁",
+      "abbr": "CJC",
+      "english": "Chung-Jen Junior College of Nursing, Health Sciences and Management",
+      "cities": [
+        "嘉義縣"
+      ],
+      "cityEn": "Chiayi County",
+      "type": "junior",
+      "ownership": "private",
+      "difficulty": null,
+      "website": "https://www.cjc.edu.tw/",
+      "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPUNKQy0xMjkzLTE0NA",
+      "admission": {
+        "url": "https://www.cjc.edu.tw/",
+        "kind": "home"
+      },
+      "terms": {
+        "spring": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        },
+        "fall": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        }
+      },
+      "checked": "2026-09-19",
+      "reviewState": "unavailable"
+    },
+    {
+      "id": "3002",
+      "name": "臺北市立大學",
+      "short": "北市大",
+      "abbr": "UT",
+      "english": "University of Taipei",
+      "cities": [
+        "臺北市"
+      ],
+      "cityEn": "Taipei",
+      "type": "university",
+      "ownership": "public",
+      "difficulty": 3,
+      "website": "http://www.uTaipei.edu.tw",
+      "catalog": "https://www.studyintaiwan.org/how-to-apply/program?q=c2NoPVVUQUlQRUktMzAwMi0xNDc",
+      "admission": {
+        "url": "http://www.uTaipei.edu.tw",
+        "kind": "home"
+      },
+      "terms": {
+        "spring": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        },
+        "fall": {
+          "rounds": [],
+          "sources": [],
+          "notes": []
+        }
+      },
+      "checked": "2026-09-19",
+      "reviewState": "page-read"
+    }
+  ]
+}
