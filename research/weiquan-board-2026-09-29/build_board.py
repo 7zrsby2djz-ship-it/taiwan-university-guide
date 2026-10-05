@@ -32,21 +32,38 @@ def ev(e):
     if e.get('sourceUrl'): out['src'] = e['sourceUrl']
     return out
 
-def ov(t):
+def ov(t, source=None, year=None):
     if not t: return None
+    if isinstance(t, dict): return dict(t)
     st, d, *lab = t
-    if st == 'official-month': return {'status': 'official', 'sort': d, 'label': lab[0]}
-    if st == 'hist': return {'status': 'historical', 'sourceYear': '115', 'sort': d, 'label': lab[0]}
-    return {'status': st, 'date': d}
+    if st == 'official-month': out = {'status': 'official', 'sort': d, 'label': lab[0]}
+    elif st == 'hist': out = {'status': 'historical', 'sourceYear': year or '115', 'sort': d, 'label': lab[0]}
+    else: out = {'status': st, 'date': d}
+    if source: out['src'] = source
+    if year: out.setdefault('sourceYear', year)
+    return out
+
+def within_arc(rounds):
+    """Keep early admission-letter exceptions, but omit results after the ARC deadline."""
+    out = []
+    for r in rounds:
+        result = r.get('result') or {}
+        effective = r.get('letter') or result.get('date') or result.get('sort')
+        if effective and effective > '2027-06-30': continue
+        out.append(r)
+    return out
 
 def term_info(s, key, extra):
     T = s['terms'][key]
     o = ROUND_OVERRIDE.get((s['id'], key))
+    if isinstance(o, dict):
+        return {**o, 'rounds': within_arc(o.get('rounds', []))}
     if o in ('none', 'grad'):
         return {'ug': o, 'rounds': []}
     if o:
-        rounds = [dict(start=ov(r['start']), end=ov(r['end']), result=ov(r['result']), note=r.get('note')) for r in ROUND_OVERRIDE[(s['id'], key)]]
-        return {'ug': 'has', 'rounds': rounds}
+        brochure = T.get('brochure') or {}
+        rounds = [{**r, **{k: ov(r.get(k), r.get('src') or brochure.get('url'), r.get('year') or brochure.get('academicYear')) for k in ('start', 'end', 'result')}} for r in o]
+        return {'ug': 'has', 'rounds': within_arc(rounds)}
     if T.get('availability') == 'not_offered_in_source':
         return {'ug': 'none', 'rounds': []}
     ug = []
@@ -64,7 +81,7 @@ def term_info(s, key, extra):
     if letters:
         letters = letters if isinstance(letters, list) else [letters]
         for r, d in zip(ug, letters): r['letter'] = d
-    return {'ug': status, 'rounds': ug}
+    return {'ug': status, 'rounds': within_arc(ug)}
 
 def first_year(e):
     t, f = e.get('tuition'), e['firstYear']
@@ -92,6 +109,8 @@ for sid, e in S.items():
         'after': e['after'], 'verdict': e['verdict'], 'verdictMy': e['verdictMy'],
         'readYourself': e.get('readYourself', []),
         'bizAdmits': e.get('bizAdmits', []),
+        'bizAdmitsNote': e.get('bizAdmitsNote'),
+        'renewSource': e.get('renewSource'),
         'links': {
             'apply': (s.get('admission') or {}).get('url') or s.get('website'),
             'website': s.get('website'),
@@ -107,7 +126,7 @@ for sid, e in S.items():
     out.append(rec)
 
 doc = {
-    'schemaVersion': 1, 'updated': CHECKED, 'reference': '台中車站直線距離（公里）',
+    'schemaVersion': 1, 'updated': max(e['checked'] for e in S.values()), 'reference': '台中車站直線距離（公里）',
     'arcExpiry': '2027-06-30', 'tocfl': {'now': 'A2', 'nextExam': '2026-11', 'note': '960 分，970 分可拿 B1'},
     'schools': out,
 }

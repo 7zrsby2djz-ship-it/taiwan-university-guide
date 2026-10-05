@@ -12,7 +12,7 @@ for s in sorted(b['schools'], key=lambda x: ('APBC'.index(x['tier']), x['km'])):
     g = []
     f = s['fee']
     if f['kind'] in ('silent', 'unknown'):
-        g.append('申請費：' + ('簡章沒寫' if f['kind'] == 'silent' else '讀不到'))
+        g.append('申請費：' + ('簡章未明示' if f['kind'] == 'silent' else '學士規定尚未核得'))
     for term in ('spring', 'fall'):
         TT = s['terms'][term]
         if TT['ug'] == 'unknown':
@@ -23,14 +23,18 @@ for s in sorted(b['schools'], key=lambda x: ('APBC'.index(x['tier']), x['km'])):
                 g.append(f"{'春' if term == 'spring' else '秋'}季第{i}梯：放榜日沒有")
     if s['firstYearKind'] == 'unknown':
         g.append('新生獎學金：沒查到')
-    if not s['aid'].get('sure') and not s['aid'].get('review'):
+    if s['firstYearKind'] != 'none' and not s['aid'].get('sure') and not s['aid'].get('review'):
         g.append('獎學金條件：空白')
     if not s['renew'] or s['renew'].strip() in ('—', '-') or '沒查到' in s['renew']:
         g.append('續領方式：沒查到')
+    elif '未核得' in s['renew']:
+        g.append('續領條件：部分尚未核得')
     if not s.get('tuition'):
         g.append('學雜費：沒有數字')
     if not s.get('bizAdmits'):
-        g.append('商管系上榜人數：還沒數')
+        g.append('商管系上榜人數：' + (s.get('bizAdmitsNote') or '還沒數'))
+    elif '仍待分系核對' in (s.get('bizAdmitsNote') or ''):
+        g.append('商管系上榜人數：' + s['bizAdmitsNote'])
     links = list(dict.fromkeys(s['links'].get(k) for k in ('brochureFall', 'brochureSpring') if s['links'].get(k)))
     if f.get('src') and f['src'] not in links: links.append(f['src'])
     rows.append((s, g, links))
