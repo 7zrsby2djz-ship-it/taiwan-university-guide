@@ -297,7 +297,7 @@ function roundsTable(s, term) {
   const label = term === 'spring' ? t('springT') : t('fallT');
   if (T.ug === 'grad') return `<p class="term-line"><b>${label}</b> ${t('gradOnly')}</p>`;
   if (T.ug === 'none') return `<p class="term-line"><b>${label}</b> ${t('noneTerm')}</p>`;
-  if (!T.rounds.length) return `<p class="term-line"><b>${label}</b> ${t('unknownTerm')}</p>`;
+  if (!T.rounds.length) return `<p class="term-line"><b>${label}</b> ${T.note ? esc(T.note) : t('unknownTerm')}</p>`;
   return `<div class="scroll"><table class="rounds"><caption>${label}</caption><thead><tr><th>${t('round')}</th><th>${t('opens')}</th><th>${t('deadline')}</th><th>${t('result')}</th><th>${t('letter')}</th></tr></thead><tbody>${T.rounds.map((r, i) => `<tr><td>${i + 1}</td>${['start', 'end', 'result'].map(k => `<td class="${evClass(r[k])}">${esc(evText(r[k]))}</td>`).join('')}<td class="${r.letter ? 'ok' : 'none'}">${r.letter ? ymd(r.letter) : '—'}</td></tr>${r.note ? `<tr class="note-row"><td colspan="5">${esc(r.note)}</td></tr>` : ''}`).join('')}</tbody></table></div>`;
 }
 function schoolCard(s) {

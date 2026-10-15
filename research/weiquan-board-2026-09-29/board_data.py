@@ -2613,3 +2613,88 @@ ROUND_OVERRIDE.update({
    "year": "116"
  }
 })
+
+
+# ---- 2026-10-15：39 校官網重查（Claude，8 組平行查核）----
+# 只寫官方網頁／簡章明載的日期；116 未公告的學校維持往年參考，不搬 115 日期當今年。
+U = '2026-10-15'
+def _O(d, src, yr='116'): return {'status': 'official', 'date': d, 'sourceYear': yr, 'src': src, 'year': yr}
+def _OL(sort, label, src, yr='116'): return {'status': 'official', 'sort': sort, 'label': label, 'sourceYear': yr, 'src': src, 'year': yr}
+def _rd(start, end, result, src, yr='116', letter=None, note=None):
+    r = {'start': start and _O(start, src, yr), 'end': _O(end, src, yr), 'result': result if isinstance(result, dict) or result is None else _O(result, src, yr), 'src': src, 'year': yr}
+    if letter: r['letter'] = letter
+    if note: r['note'] = note
+    return r
+
+_HK = 'https://ifp.hk.edu.tw/wp-content/uploads/2026/09/116外國學生招生簡章_確定.pdf'
+_HKP = 'https://ifp.hk.edu.tw/入學申請/外國學生/'
+_NIU = 'https://isa.niu.edu.tw/var/file/73/1073/img/116-regulations-for-academic.pdf'
+_NYCU = 'https://oia.nycu.edu.tw/oia/en/app/artwebsite/view?module=artwebsite&id=785&serno=07d9ede2-e896-4efe-a671-2b86dbc2a0d8'
+_NUK = 'https://interadmission.nuk.edu.tw/p/412-1063-4996.php?Lang=zh-tw'
+_NCUE = 'https://oicaweb.ncue.edu.tw/p/406-1019-35039,r676.php?Lang=zh-tw'
+
+ROUND_OVERRIDE.update({
+ ('1034', 'fall'): {'ug': 'has', 'rounds': [
+   _rd('2026-10-05', '2027-01-10', '2027-02-25', _HK, letter='2027-03-15', note='116 簡章：3/15 前寄錄取通知。第 2 梯 8/6 才放榜，ARC 來不及，不列。')]},
+ ('1034', 'spring'): {'ug': 'has', 'rounds': [
+   _rd('2026-10-05', '2026-12-01', '2027-01-10', _HKP, yr='115-2', letter='2027-01-15', note='1/15 前寄錄取通知；護理、物理治療、語言治療春季不招。')]},
+ ('0031', 'fall'): {'ug': 'has', 'rounds': [
+   _rd('2026-12-01', '2027-01-03', '2027-03-22', _NIU, letter='2027-03-31', note='116 簡章表格日期；簡章第五節仍寫舊年日期，以表格為準。'),
+   _rd('2027-04-01', '2027-04-30', '2027-06-15', _NIU, letter='2027-06-22', note='6/22 寄錄取通知，離 ARC 到期只差 8 天，很緊。')]},
+ ('0007', 'fall'): {'ug': 'has', 'rounds': [
+   _rd('2026-12-20', '2027-03-15', _OL('2027-05-15', '2027 年 5 月中旬', _NYCU), _NYCU, note='國際處 Important Dates：3/15 中午截止；5 月下旬通知錄取。116 簡章 PDF 還沒上架。')]},
+ ('0019', 'spring'): {'ug': 'has', 'rounds': [
+   _rd('2026-10-08', '2026-11-02', '2026-12-17', _NUK, yr='115-2', letter='2027-01-04', note='最多選 3 系；亞太工管系、金融系春季不收。')]},
+ ('0019', 'fall'): {'ug': 'has', 'rounds': [
+   _rd('2027-02-25', '2027-04-23', '2027-06-15', _NUK, letter='2027-07-01')],
+   'note': '2027 秋季 6/15 放榜，但 7/1 才發入學通知，晚於 ARC 到期（6/30），所以不列。'},  # 7/1 才發入學通知 → build 會自動拿掉
+ ('0015', 'spring'): {'ug': 'has', 'rounds': [
+   {'start': _O('2026-07-18', _NCUE, '115-2'), 'end': _O('2026-09-18', _NCUE, '115-2'),
+    'result': _OL('2026-11-30', '11 月底（原 10/28 延後，確切日期另公告）', _NCUE, '115-2'), 'src': _NCUE, 'year': '115-2',
+    'note': '10/15 公告：春季錄取名單延到 11 月底。'}]},
+ ('0033', 'spring'): 'grad',
+ ('0032', 'spring'): 'none',
+})
+
+S['1034'].update(
+  fee=dict(kind='free', amount=0, text='116 簡章第 13 頁：本項招生免收申請費', src=_HK, year='116'),
+  brochureFall=_HK, brochureFallYear='116',
+  after='2027 春：10/5–12/1 報名，1/10 放榜，1/15 前寄錄取通知。2027 秋（116 簡章已出）：第 1 梯 10/5–2027/1/10 報名，2/25 放榜，3/15 前寄錄取通知；第 2 梯 8 月才放榜，趕不上 ARC。',
+  checked=U)
+S['0031'].update(
+  fee=dict(kind='silent', text='116 簡章沒寫申請費，也沒寫免收，不能當免費', src=_NIU, year='116'),
+  firstYear=dict(kind='half'),
+  aid=dict(sure='116 簡章：新生第一學年學雜費減半（領臺灣獎學金等政府獎學金者不適用）。', review='表現優異經學院審查：可全額減免學雜費；學士每月 4,000 元。'),
+  brochureFall=_NIU, brochureFallYear='116',
+  after='116 簡章已出，學士只收秋季（名額 40）。第 1 梯 12/1–2027/1/3 報名，3/22 放榜，3/31 寄錄取通知；第 2 梯 4/1–4/30 報名，6/15 放榜，6/22 寄通知（很緊）。',
+  verdict='遠在宜蘭，但 116 日期已正式公布，第一年學雜費減半；第 1 梯 3 月就放榜。申請費簡章沒寫。',
+  checked=U)
+S['0007'].update(
+  fee=dict(kind='paid', amount=2000, text='每系 NT$2,000，任何情況不退（現行頁面已沒有列免收單位）', src='https://oia.nycu.edu.tw/oia/en/app/artwebsite/view?module=artwebsite&id=788&serno=26969921-df03-4ec7-8ad1-f360e404c507', year='現行（2026-10-08 更新）'),
+  after='春季只收研究所。2027 秋季：12/20 開放申請，3/15 中午截止，5 月中旬放榜（含獎學金），5 月下旬通知錄取。116 簡章 PDF 還沒上架。',
+  checked=U)
+S['0019'].update(
+  fee=dict(kind='free', amount=0, text='2027 春季公告：「免申請費！」最多選 3 系', src='https://interadmission.nuk.edu.tw/p/406-1063-100867,r11.php?Lang=zh-tw', year='115-2'),
+  after='2027 春：10/8–11/2 報名，12/17 放榜，2027/1/4 發入學通知。2027 秋：6/15 放榜，但 7/1 才發入學通知，晚於 ARC 到期，已從板上拿掉；只能報春季。',
+  verdict='免申請費、A2 可以；春季 11/2 截止、12/17 放榜，是現在最值得報的南部國立之一。秋季入學通知 7/1 才發，趕不上 ARC。',
+  checked=U)
+S['1007'].update(
+  lang=S['1007']['lang'] + ' 9/7 公告：TOCFL 只收官網下載的電子證書 PDF 原檔，驗證不過不受理。',
+  checked=U)
+S['0015'].update(checked=U)
+
+CHANGES = [
+ dict(date=U, id='0019', kind='new', text='春季入學通知日公布：2027/1/4。秋季 7/1 才發入學通知（晚於 ARC），秋季已拿掉，只剩春季可報（11/2 截止、免申請費）。'),
+ dict(date=U, id='1034', kind='new', text='116 秋季簡章出了：第 1 梯 2027/1/10 截止、2/25 放榜、3/15 前寄通知；明文免申請費。'),
+ dict(date=U, id='0031', kind='new', text='116 簡章出了：秋季第 1 梯 12/1–1/3 報名、3/22 放榜；新生第一年學雜費減半。'),
+ dict(date=U, id='0007', kind='new', text='2027 秋季日程公布：12/20 開放、3/15 截止、5 月中放榜。'),
+ dict(date=U, id='0015', kind='change', text='春季錄取名單從 10/28 延到 11 月底（春季已截止，有報名才相關）。'),
+ dict(date=U, id='0001', kind='new', text='第 2 梯 2027/1/19–3/4 公布；第 1 梯今天（10/15）下午 5 點截止。'),
+ dict(date=U, id='0047', kind='new', text='報名系統已設定 116 第 1 梯：11/2–12/17（簡章與放榜日還沒公布）。'),
+ dict(date=U, id='0033', kind='change', text='更正：2027 春季只收碩博士，學士只能報秋季。'),
+ dict(date=U, id='0032', kind='change', text='確認：學士只收秋季。'),
+ dict(date=U, id='1007', kind='check', text='TOCFL 證書只收官網下載的電子 PDF 原檔，上傳前先下載好。'),
+ dict(date=U, id='0052', kind='check', text='春季今天（10/15）截止，放榜仍是 11/30。'),
+ dict(date=U, id='0003', kind='check', text='116 第 1 梯開放中，11/5 截止、2027/1/14 放榜；每系 2,000 元，沒有 LDC 免費。'),
+ dict(date=U, id=None, kind='check', text='其他學校的 116（2027 秋）簡章都還沒公告：北科說 11 月、臺科往年 12/1、中科說 11–12 月。往年日期仍標「往年」。'),
+]
