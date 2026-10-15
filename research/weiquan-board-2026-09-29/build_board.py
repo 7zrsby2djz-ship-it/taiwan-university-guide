@@ -9,6 +9,10 @@ import json, math, pathlib, sys
 ROOT = pathlib.Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(pathlib.Path(__file__).parent))
 from board_data import S, COORDS, ROUND_OVERRIDE, CHECKED
+try:
+    from board_data import CHANGES
+except ImportError:
+    CHANGES = []
 
 schools = {s['id']: s for s in json.loads((ROOT/'dist/schools.json').read_text())['schools']}
 insights = json.loads((ROOT/'dist/school-insights.json').read_text())['schools']
@@ -128,6 +132,7 @@ for sid, e in S.items():
 doc = {
     'schemaVersion': 1, 'updated': max(e['checked'] for e in S.values()), 'reference': '台中車站直線距離（公里）',
     'arcExpiry': '2027-06-30', 'tocfl': {'now': 'A2', 'nextExam': '2026-11', 'note': '960 分，970 分可拿 B1'},
+    'changes': CHANGES,
     'schools': out,
 }
 (ROOT/'dist/wq-board.json').write_text(json.dumps(doc, ensure_ascii=False, indent=1))

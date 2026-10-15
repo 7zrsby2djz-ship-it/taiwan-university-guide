@@ -47,6 +47,11 @@ const W = {
   prep: ['每一間都要準備', 'ကျောင်းတိုင်းအတွက် ပြင်ဆင်ရန်'],
   foot: ['資料查核：2026/09/29。只有官方當期公告才顯示確切日期；「往年」是上一年的月份參考。金額與日期以官方簡章為準；分組是我的建議，不是官方排名。', '2026/09/29 စစ်ဆေးထားသည်။ တရားဝင်ကြေညာချက်မှသာ ရက်အတိအကျပြသည်။ "ယခင်နှစ်" သည် ကိုးကားချက်သာ။'],
   kmUnit: ['公里', 'km'], yuan: ['元', 'NT$'],
+  navNews: ['這次更新', 'အသစ်'], navMine: ['我的申請', 'ကျွန်ုပ်၏'], navNow: ['現在可報', 'ယခု'], navSchools: ['學校', 'ကျောင်း'], navCompare: ['比較', 'နှိုင်းယှဉ်'], navAfter: ['換居留', 'ARC'],
+  news: ['這次更新', 'နောက်ဆုံး ပြင်ဆင်ချက်'], mine: ['我的申請', 'ကျွန်ုပ်၏ လျှောက်လွှာများ'],
+  search: ['找學校（名稱、縮寫、地點）', 'ကျောင်းရှာရန်'], filterBiz: ['商管有外籍生上榜', 'စီးပွားရေး နိုင်ငံခြားသား ဝင်ဖူး'],
+  note: ['備註', 'မှတ်ချက်'], save: ['存備註', 'သိမ်းရန်'], saved: ['已存', 'သိမ်းပြီး'],
+  bizShort: ['商管外籍上榜', 'စီးပွားရေး ဝင်ခွင့်'], isNew: ['新', 'အသစ်'],
 };
 const STATUS = [['', '還沒決定', 'မဆုံးဖြတ်ရသေး'], ['want', '要報', 'လျှောက်မည်'], ['applied', '已報名', 'လျှောက်ပြီး'], ['admitted', '錄取', 'ဝင်ခွင့်ရ'], ['no', '不考慮', 'မလျှောက်']];
 const TIERS = {
@@ -57,10 +62,22 @@ const TIERS = {
 };
 const TIER_ORDER = {A: 0, P: 1, B: 2, C: 3};
 
-let data, lang = store.get('wq-lang', 'zh'), statusMap = store.get('wq-board-status', {}), filters = new Set(), sortKey = 'tier', openCards = new Set();
+let data, lang = store.get('wq-lang', 'zh'), localStatus = store.get('wq-board-status', {}), localNotes = store.get('wq-board-notes', {}), filters = new Set(), sortKey = 'tier', openCards = new Set(), query = '', newsAll = false;
+// Shared progress (status + note per school). Cloud = artifact db when this view can use it; otherwise this device only.
+const cloud = {db: null, ready: false, writable: false, docs: {}};
+let statusMap = {};
 if (!['zh', 'my'].includes(lang)) lang = 'zh';
 if (['zh', 'my'].includes(qs.get('lang'))) lang = qs.get('lang');
-if (!statusMap || typeof statusMap !== 'object') statusMap = {};
+if (!localStatus || typeof localStatus !== 'object') localStatus = {};
+if (!localNotes || typeof localNotes !== 'object') localNotes = {};
+const VALID = new Set(['want', 'applied', 'admitted', 'no']);
+function syncStatusMap() {
+  statusMap = {};
+  const src = cloud.ready ? Object.fromEntries(Object.entries(cloud.docs).map(([k, v]) => [k, v.status])) : localStatus;
+  for (const [k, v] of Object.entries(src)) if (VALID.has(v)) statusMap[k] = v;
+}
+const noteOf = id => (cloud.ready ? cloud.docs[id]?.note : localNotes[id]) || '';
+syncStatusMap();
 const t = k => (W[k] || [k, k])[lang === 'zh' ? 0 : 1];
 const zh = () => lang === 'zh';
 
@@ -102,7 +119,7 @@ function springView(s) {
   if (T.ug === 'none') return {cls: 'bad', text: zh() ? '只收秋季' : 'ဆောင်းဦးသာ'};
   const w = windowsOf(s).filter(x => x.term === 'spring');
   const live = w.find(x => x.end >= TODAY);
-  if (live) return {cls: 'good', text: (zh() ? '報到 ' : '') + md(live.end) + (zh() ? '' : ' အထိ')};
+  if (live) return {cls: 'good', text: (zh() ? '報名到 ' : '') + md(live.end) + (zh() ? '' : ' အထိ')};
   if (w.length) return {cls: 'muted', text: zh() ? '已截止' : 'ပိတ်ပြီး'};
   if (T.ug === 'has') return {cls: 'muted', text: zh() ? '只有往年參考' : 'ယခင်နှစ်သာ'};
   return {cls: 'muted', text: zh() ? '沒查到' : 'မသိရ'};
@@ -134,11 +151,67 @@ const refLabel = e => !e ? '—' : e.status === 'conflict' ? t('diff') : (e.labe
 const isOpen = w => w.end >= TODAY && (!w.start || w.start <= TODAY);
 const isSoon = w => w.start && w.start > TODAY;
 const hasSure = s => ['full', 'half', 'minus', 'lang', 'mostly'].includes(s.firstYearKind);
+// Biggest business-department count on the official lists (ties: newer year first).
+function bizTop(s) {
+  const l = s.bizAdmits || [];
+  if (!l.length) return null;
+  return [...l].sort((a, b) => b.count - a.count || String(b.year).localeCompare(String(a.year)))[0];
+}
+const deptShort = d => String(d).replace(/（.*?）|\(.*?\)/g, '').replace(/學系|學士學位學程|學位學程|學程/g, '').trim();
+const latestNews = () => { const c = data.changes || []; const d = c.map(x => x.date).sort().pop(); return d ? c.filter(x => x.date === d) : []; };
+const isNewSchool = s => latestNews().some(c => c.id === s.id);
+// The next date that matters for one school, given its status.
+function nextStep(s, st) {
+  const ws = windowsOf(s);
+  if (st === 'admitted') return {cls: 'good', text: zh() ? '拿入學許可去換居留' : 'ARC ပြောင်းရန်'};
+  if (st === 'applied') {
+    const res = ws.filter(w => w.result?.date && w.result.date >= TODAY).sort((a, b) => a.result.date.localeCompare(b.result.date))[0];
+    if (res) return {cls: 'warn', text: zh() ? `放榜 ${mdw(res.result.date)}・還有 ${dayDiff(TODAY, res.result.date)} 天` : `ရလဒ် ${md(res.result.date)}`};
+    const lab = ws.find(w => w.result && !w.result.date && w.result.label);
+    return {cls: 'muted', text: zh() ? `等放榜${lab ? `（${lab.result.label}）` : ''}` : 'ရလဒ် စောင့်'};
+  }
+  const open = ws.filter(isOpen).sort((a, b) => a.end.localeCompare(b.end))[0];
+  if (open) { const d = dayDiff(TODAY, open.end); return {cls: d <= 14 ? 'bad' : 'warn', text: zh() ? `截止 ${mdw(open.end)}・剩 ${d} 天` : `${md(open.end)} ပိတ်`}; }
+  const soon = ws.filter(isSoon).sort((a, b) => a.start.localeCompare(b.start))[0];
+  if (soon) return {cls: 'muted', text: zh() ? `${mdw(soon.start)} 開始報名` : `${md(soon.start)} ဖွင့်`};
+  const ref = refWindows(s).sort((a, b) => a.key.localeCompare(b.key))[0];
+  if (ref) return {cls: 'muted', text: zh() ? `往年約 ${refLabel(ref.r.start)} 開始（今年未公布）` : 'ယခင်နှစ် ရက်သာ'};
+  return {cls: 'muted', text: zh() ? '還沒有可報的梯次' : '—'};
+}
 
 // ---- sections ----
 function header() {
   return `<header class="bar"><div class="wrap bar-in"><a class="brand" href="./index.html?lang=${lang}&weiquan=1" title="${esc(t('allSite'))}"><span class="mark" aria-hidden="true">偉</span><span><strong>${esc(t('title'))}</strong><small>${zh() ? '給第一次上大學的他' : 'ပထမဆုံး တက္ကသိုလ်တက်မည့်သူအတွက်'}</small></span></a>
   <div class="bar-actions"><a class="ghost" href="./index.html?lang=${lang}&weiquan=1">${esc(t('allSite'))}</a><div class="seg" role="group" aria-label="Language"><button id="lang-zh" data-lang="zh" aria-pressed="${zh()}">繁中</button><button id="lang-my" data-lang="my" aria-pressed="${!zh()}" lang="my">မြန်မာ</button></div></div></div></header>`;
+}
+function navBar() {
+  const N = [['news', 'navNews'], ['mine', 'navMine'], ['now', 'navNow'], ['schools', 'navSchools'], ['compare', 'navCompare'], ['after', 'navAfter']].filter(([k]) => k !== 'news' || (data.changes || []).length);
+  return `<nav class="jump" aria-label="${zh() ? '跳到' : 'သွားရန်'}"><div class="wrap jump-in">${N.map(([k, w]) => `<a href="#${k}">${esc(t(w))}${k === 'mine' && Object.keys(statusMap).length ? ` <b>${Object.values(statusMap).filter(v => v !== 'no').length}</b>` : ''}</a>`).join('')}</div></nav>`;
+}
+function newsSection() {
+  const all = [...(data.changes || [])].sort((a, b) => b.date.localeCompare(a.date));
+  if (!all.length) return '';
+  const latest = all[0].date, top = all.filter(c => c.date === latest);
+  const shown = newsAll ? all : top.slice(0, 6);
+  const by = Object.fromEntries(data.schools.map(s => [s.id, s]));
+  const kindTxt = {new: zh() ? '新公布' : 'အသစ်', change: zh() ? '有變動' : 'ပြောင်း', check: zh() ? '確認' : 'စစ်', drop: zh() ? '拿掉' : 'ဖယ်'};
+  return `<section class="wrap block" id="news"><div class="block-head"><h2>${t('news')} <span class="count">${ymd(latest)}</span></h2><p>${zh() ? `這次查到 ${top.length} 項變動。點學校名稱看詳情。` : `${top.length} ခု`}</p></div>
+  <ul class="news">${shown.map(c => { const sc = by[c.id]; return `<li class="k-${esc(c.kind || 'change')}"><span class="nk">${esc(kindTxt[c.kind] || kindTxt.change)}</span><div>${sc ? `<button class="linkish" data-jump="${sc.id}">${esc(sc.short)}</button> ` : ''}${esc(c.text)}${c.date !== latest ? ` <small class="muted">${ymd(c.date)}</small>` : ''}</div></li>`; }).join('')}</ul>
+  ${all.length > shown.length || newsAll ? `<button class="more" data-action="news">${newsAll ? t('hide') : (zh() ? `顯示全部 ${all.length} 項` : `${all.length} ခု အားလုံး`)}</button>` : ''}</section>`;
+}
+function mineSection() {
+  const order = {applied: 0, want: 1, admitted: 2};
+  const mine = data.schools.filter(s => order[statusMap[s.id]] !== undefined).sort((a, b) => order[statusMap[a.id]] - order[statusMap[b.id]] || TIER_ORDER[a.tier] - TIER_ORDER[b.tier]);
+  const counts = STATUS.slice(1).map(([k, a, b]) => [k, zh() ? a : b, data.schools.filter(s => statusMap[s.id] === k).length]).filter(x => x[2]);
+  const pending = cloud.ready && cloud.writable && Object.entries(localStatus).some(([k, v]) => VALID.has(v) && !cloud.docs[k]);
+  const sync = cloud.ready ? (cloud.writable ? (zh() ? '☁ 雲端同步：在任何裝置打開這頁都看到同一份' : '☁ ထပ်တူ') : (zh() ? '☁ 雲端資料（你只能看，不能改）' : '☁ ကြည့်ရုံသာ')) : (zh() ? '只存在這台裝置（換手機看不到）' : 'ဤဖုန်းတွင်သာ');
+  return `<section class="wrap block" id="mine"><div class="block-head"><h2>${t('mine')}</h2><p class="sync">${esc(sync)}</p></div>
+  <div class="mine-sum">${counts.map(([k, l, n]) => `<span class="st-${k}">${esc(l)} <b>${n}</b></span>`).join('') || `<span class="muted">${zh() ? '在學校卡片右上角選「要報」「已報名」，這裡就會列出下一步要做什麼。' : 'ကျောင်းကတ်တွင် အခြေအနေ ရွေးပါ။'}</span>`}<button class="btn ghost" data-action="copy">${t('copy')}</button></div>
+  ${pending ? `<p class="hint">${zh() ? '這台裝置有之前存的標記還沒放上雲端。' : ''}<button class="fclear" data-action="upload">${zh() ? '放上雲端' : 'တင်ရန်'}</button></p>` : ''}
+  <textarea id="copy-box" class="copy-box" readonly hidden></textarea>
+  ${mine.length ? `<div class="mine-list">${mine.map(s => { const st = statusMap[s.id], n = nextStep(s, st), note = noteOf(s.id), canWrite = !cloud.ready || cloud.writable; return `<article class="mine-row st-${st}"><div class="mr-top"><h3><button class="linkish" data-jump="${s.id}">${esc(s.short)}</button> <span class="km">${s.km} ${t('kmUnit')}</span></h3>${statusSelect(s, 'mine')}</div>
+    <p class="next ${n.cls}">${esc(n.text)}</p>
+    <div class="note-box"><label for="note-${s.id}" class="sr">${t('note')} ${esc(s.short)}</label><textarea id="note-${s.id}" data-note="${s.id}" rows="2" maxlength="500" placeholder="${zh() ? '備註：例如「國際處要補高中文件」「已寄出 10/20」' : 'မှတ်ချက်'}" ${canWrite ? '' : 'readonly'}>${esc(note)}</textarea>${canWrite ? `<button class="btn ghost" data-save="${s.id}">${t('save')}</button>` : ''}</div></article>`; }).join('')}</div>` : ''}</section>`;
 }
 function profile() {
   const arcDays = dayDiff(TODAY, data.arcExpiry);
@@ -153,7 +226,7 @@ function windowCard(w, soon) {
   return `<article class="ticket ${urgent ? 'urgent' : ''} ${soon ? 'soon' : ''} tier-${s.tier}"><div class="tk-left"><span class="tk-count">${esc(leftTxt)}</span><span class="tk-term">${w.term === 'spring' ? t('springT') : t('fallT')}${w.many ? ` · ${zh() ? `第 ${w.round} 梯` : `${t('round')} ${w.round}`}` : ''}</span></div>
   <div class="tk-main"><h3><button class="linkish" data-jump="${s.id}">${esc(s.short)}</button> <span class="abbr">${esc(s.abbr)}</span> <span class="km">${s.km} ${t('kmUnit')}</span></h3>
   <p class="tk-dates"><span>${w.start ? `${ymd(w.start)} → ` : ''}<b>${t('deadline')} ${mdw(w.end)}</b></span>${res ? `<span>${esc(res)}</span>` : ''}${w.letter ? `<span>${t('letter')} ${md(w.letter)}</span>` : ''}</p>
-  <p class="tk-chips">${lateResult(w.result) ? lateChip() : ''}<span class="chip ${fee.cls}">${t('fFee')} ${esc(fee.text)}</span><span class="chip ${cost.cls}">${zh() ? '第一學期' : 'ကျောင်းလခ'} ${esc(cost.text)}</span></p>
+  <p class="tk-chips">${statusMap[s.id] && statusMap[s.id] !== 'no' ? `<span class="chip mine st-${statusMap[s.id]}">${esc(STATUS.find(x => x[0] === statusMap[s.id])[zh() ? 1 : 2])}</span>` : ''}${lateResult(w.result) ? lateChip() : ''}<span class="chip ${fee.cls}">${t('fFee')} ${esc(fee.text)}</span><span class="chip ${cost.cls}">${zh() ? '第一學期' : 'ကျောင်းလခ'} ${esc(cost.text)}</span></p>
   ${w.note ? `<p class="tk-note">${esc(w.note)}</p>` : ''}</div>
   <div class="tk-go"><a class="btn" href="${esc(safeURL(s.links.apply))}" target="_blank" rel="noopener noreferrer">${t('apply')} ↗</a></div></article>`;
 }
@@ -204,7 +277,7 @@ function chances() {
 }
 
 function filterBar() {
-  const F = [['now', 'filterNow'], ['local', 'filterLocal'], ['sure', 'filterSure'], ['free', 'filterFree']];
+  const F = [['now', 'filterNow'], ['local', 'filterLocal'], ['sure', 'filterSure'], ['free', 'filterFree'], ['biz', 'filterBiz']];
   return `<div class="filters" role="group" aria-label="${zh() ? '篩選' : 'စစ်ထုတ်'}">${F.map(([k, w]) => `<button id="f-${k}" class="fchip" data-filter="${k}" aria-pressed="${filters.has(k)}">${esc(t(w))}</button>`).join('')}${filters.size ? `<button class="fclear" data-filter="clear">${t('clear')}</button>` : ''}</div>`;
 }
 function passes(s) {
@@ -212,6 +285,7 @@ function passes(s) {
   if (filters.has('local') && s.commute !== 'local') return false;
   if (filters.has('sure') && !hasSure(s)) return false;
   if (filters.has('free') && s.fee.kind !== 'free') return false;
+  if (filters.has('biz') && !(s.bizAdmits || []).length) return false;
   return true;
 }
 function statusSelect(s, where) {
@@ -230,8 +304,9 @@ function schoolCard(s) {
   const fee = feeView(s.fee), cost = costView(s), sp = springView(s), isOpenCard = openCards.has(s.id);
   const sure = s.aid.sure, rev = s.aid.review;
   const lk = s.links, listLinks = s.lists;
-  return `<article class="school tier-${s.tier}" id="s-${s.id}"><div class="s-top"><div class="s-name"><h3>${esc(s.short)} <span class="abbr">${esc(s.abbr)}</span></h3><p>${esc(s.name)}・${esc(s.place)}・${s.km} ${t('kmUnit')}</p></div>${statusSelect(s, 'card')}</div>
+  return `<article class="school tier-${s.tier}" id="s-${s.id}"><div class="s-top"><div class="s-name"><h3>${esc(s.short)} <span class="abbr">${esc(s.abbr)}</span>${isNewSchool(s) ? ` <span class="newb">${t('isNew')}</span>` : ''}</h3><p>${esc(s.name)}・${esc(s.place)}・${s.km} ${t('kmUnit')}</p></div>${statusSelect(s, 'card')}</div>
   <dl class="quad"><div><dt>${t('fSpring')}</dt><dd class="${sp.cls}">${esc(sp.text)}</dd></div><div><dt>${t('fFee')}</dt><dd class="${fee.cls}">${esc(fee.text)}</dd></div><div><dt>${t('fCost')}</dt><dd class="${cost.cls}">${esc(cost.text)}${cost.note ? `<small>${esc(cost.note)}</small>` : ''}</dd></div><div><dt>${zh() ? '新生優惠' : 'ပညာသင်ဆု'}</dt><dd class="${sure ? 'good' : rev && !/未核得|讀不到|沒有/.test(rev) ? 'warn' : 'muted'}">${sure ? (zh() ? '確定有' : 'သေချာ') : rev && !/未核得|讀不到|沒有/.test(rev) ? (zh() ? '要審查' : 'စစ်ဆေး') : (zh() ? '沒有／沒查到' : 'မရှိ/မသိ')}</dd></div></dl>
+  ${(() => { const b = bizTop(s), note = noteOf(s.id); const c = []; if (b) c.push(`<span class="chip biz">${t('bizShort')}：${esc(deptShort(b.dept))} ${b.count} ${zh() ? '人' : 'ဦး'}（${esc(b.year)}${b.term === 'spring' ? (zh() ? '春' : '') : b.term === 'fall' ? (zh() ? '秋' : '') : ''}）</span>`); if (note) c.push(`<span class="chip note">✎ ${esc(note.length > 26 ? note.slice(0, 26) + '…' : note)}</span>`); return c.length ? `<p class="s-chips">${c.join('')}</p>` : ''; })()}
   <p class="verdict">${esc(zh() ? s.verdict : s.verdictMy)}</p>${!zh() ? `<p class="verdict-zh" lang="zh-Hant">${esc(s.verdict)}</p>` : ''}
   <button class="more" data-toggle="${s.id}" aria-expanded="${isOpenCard}" aria-controls="d-${s.id}">${isOpenCard ? t('hide') : t('details')}</button>
   <div class="s-detail" id="d-${s.id}" ${isOpenCard ? '' : 'hidden'}>
@@ -248,21 +323,30 @@ function schoolCard(s) {
    <section><h4>${t('links')}</h4><p class="btnrow"><a class="btn" href="${esc(safeURL(lk.apply))}" target="_blank" rel="noopener noreferrer">${t('apply')} ↗</a>${lk.brochureSpring ? `<a class="btn ghost" href="${esc(safeURL(lk.brochureSpring))}" target="_blank" rel="noopener noreferrer">${t('brochure')} ${zh() ? '春' : 'နွေဦး'} ${esc(lk.brochureSpringYear || '')} ↗</a>` : ''}${lk.brochureFall && lk.brochureFall !== lk.brochureSpring ? `<a class="btn ghost" href="${esc(safeURL(lk.brochureFall))}" target="_blank" rel="noopener noreferrer">${t('brochure')} ${zh() ? '秋' : 'ဆောင်းဦး'} ${esc(lk.brochureFallYear || '')} ↗</a>` : ''}<a class="btn ghost" href="./index.html?lang=${lang}&term=spring&q=${encodeURIComponent(s.abbr)}">${zh() ? '原始研究資料' : 'မူရင်း'}</a></p><small class="muted-note">${zh() ? '查核' : 'စစ်ဆေး'} ${ymd(s.checked)}</small></section>
   </div></article>`;
 }
-function schoolsSection() {
-  const list = data.schools.filter(passes);
+const norm = v => String(v || '').toLowerCase().replace(/臺/g, '台');
+const matchQ = s => !query || [s.short, s.name, s.abbr, s.english, s.place, s.city].some(v => norm(v).includes(norm(query)));
+function schoolsList() {
+  const list = data.schools.filter(s => passes(s) && matchQ(s));
   const groups = ['A', 'P', 'B', 'C'].map(k => [k, list.filter(s => s.tier === k)]).filter(([, l]) => l.length);
-  return `<section class="wrap block" id="schools"><div class="block-head"><h2>${t('schools')} <span class="count">${list.length}/${data.schools.length}</span></h2><p>${zh() ? '分組是我依你的條件（距離、費用、獎學金好拿、早放榜、名校）給的建議。' : 'အုပ်စုခွဲခြင်းသည် အကြံပြုချက်သာ။'}</p></div>${filterBar()}
-  ${groups.length ? groups.map(([k, l]) => `<div class="tier-group"><div class="tier-head tier-${k}"><h3>${esc(TIERS[k][zh() ? 0 : 1])}</h3>${zh() ? `<p>${esc(TIERS[k][2])}</p>` : ''}</div><div class="cards">${l.map(schoolCard).join('')}</div></div>`).join('') : `<p class="empty">${t('noMatch')}</p>`}</section>`;
+  return {n: list.length, html: groups.length ? groups.map(([k, l]) => `<div class="tier-group"><div class="tier-head tier-${k}"><h3>${esc(TIERS[k][zh() ? 0 : 1])}</h3>${zh() ? `<p>${esc(TIERS[k][2])}</p>` : ''}</div><div class="cards">${l.map(schoolCard).join('')}</div></div>`).join('') : `<p class="empty">${t('noMatch')}</p>`};
+}
+function schoolsSection() {
+  const L = schoolsList();
+  return `<section class="wrap block" id="schools"><div class="block-head"><h2>${t('schools')} <span class="count" id="school-count">${L.n}/${data.schools.length}</span></h2><p>${zh() ? '分組是我依你的條件（距離、費用、獎學金好拿、早放榜、名校）給的建議。' : 'အုပ်စုခွဲခြင်းသည် အကြံပြုချက်သာ။'}</p></div>
+  <div class="searchbox"><input id="q" type="search" value="${esc(query)}" placeholder="${esc(t('search'))}" aria-label="${esc(t('search'))}" autocomplete="off"></div>${filterBar()}
+  <div id="school-list">${L.html}</div></section>`;
 }
 function compareSection() {
   const firstResult = s => { const r = windowsOf(s).filter(w => w.term === 'spring' && w.result?.status === 'official' && w.result.date).map(w => w.result.date).sort()[0]; return r || null; };
   const cmp = (a, b) => a == null && b == null ? 0 : a == null ? 1 : b == null ? -1 : a < b ? -1 : a > b ? 1 : 0;
-  const keys = {tier: (a, b) => TIER_ORDER[a.tier] - TIER_ORDER[b.tier] || a.km - b.km, km: (a, b) => a.km - b.km, cost: (a, b) => cmp(a.semesterCost?.min, b.semesterCost?.min), result: (a, b) => cmp(firstResult(a), firstResult(b))};
+  const fallResult = s => { const r = (s.terms.fall.rounds || []).filter(x => !lateRound(x)).map(x => x.result).filter(e => e && (e.date || e.sort)).sort((a, b) => (a.date || a.sort).localeCompare(b.date || b.sort))[0]; return r || null; };
+  const bizN = s => bizTop(s)?.count ?? null;
+  const keys = {tier: (a, b) => TIER_ORDER[a.tier] - TIER_ORDER[b.tier] || a.km - b.km, km: (a, b) => a.km - b.km, cost: (a, b) => cmp(a.semesterCost?.min, b.semesterCost?.min), result: (a, b) => cmp(firstResult(a), firstResult(b)), fall: (a, b) => cmp(fallResult(a) && (fallResult(a).date || fallResult(a).sort), fallResult(b) && (fallResult(b).date || fallResult(b).sort)), biz: (a, b) => cmp(bizN(b), bizN(a)), fee: (a, b) => ({free: 0, paid: 1, silent: 2, unknown: 3}[a.fee.kind] - {free: 0, paid: 1, silent: 2, unknown: 3}[b.fee.kind]) || (a.fee.amount || 0) - (b.fee.amount || 0)};
   const rows = [...data.schools].sort((a, b) => keys[sortKey](a, b) || a.km - b.km);
   const th = (k, label) => k ? `<th scope="col" aria-sort="${sortKey === k ? 'ascending' : 'none'}"><button data-sort="${k}">${esc(label)}${sortKey === k ? ' ↓' : ''}</button></th>` : `<th scope="col">${esc(label)}</th>`;
-  return `<section class="wrap block" id="compare"><div class="block-head"><h2>${t('compare')}</h2><p>${zh() ? '點表頭排序。第一學期學雜費：綠色＝已扣確定優惠；橘色＝沒拿獎學金時的最高額。' : 'ခေါင်းစဉ်ကို နှိပ်၍ စီပါ။'}</p></div>
-  <div class="scroll"><table class="cmp"><thead><tr>${th('tier', zh() ? '學校（分組）' : 'ကျောင်း')}${th('km', zh() ? '距離' : 'km')}${th(null, t('fSpring'))}${th(null, t('fFee'))}${th('cost', t('fCost'))}${th('result', zh() ? '春季最早放榜' : 'နွေဦး ရလဒ်')}${th(null, t('status'))}</tr></thead>
-  <tbody>${rows.map(s => { const f = feeView(s.fee), c = costView(s), sp = springView(s), r = firstResult(s); return `<tr class="tier-${s.tier}"><th scope="row"><button class="linkish" data-jump="${s.id}">${esc(s.short)}</button> <span class="tier-dot">${s.tier === 'P' ? (zh() ? '名校' : '★') : s.tier}</span></th><td class="num">${s.km}</td><td class="${sp.cls}">${esc(sp.text)}</td><td class="${f.cls}">${esc(f.text)}</td><td class="${c.cls} num">${esc(c.text)}</td><td class="num">${r ? md(r) : '—'}</td><td>${statusSelect(s, 'row')}</td></tr>`; }).join('')}</tbody></table></div></section>`;
+  return `<section class="wrap block" id="compare"><div class="block-head"><h2>${t('compare')}</h2><p>${zh() ? '點表頭排序；表格可以左右滑。第一學期學雜費：綠色＝已扣確定優惠；橘色＝沒拿獎學金時的最高額。商管外籍上榜＝榜單上人數最多的商管系。' : 'ခေါင်းစဉ်ကို နှိပ်၍ စီပါ။'}</p></div>
+  <div class="scroll"><table class="cmp"><thead><tr>${th('tier', zh() ? '學校（分組）' : 'ကျောင်း')}${th('km', zh() ? '距離' : 'km')}${th(null, t('fSpring'))}${th('fee', t('fFee'))}${th('cost', t('fCost'))}${th('result', zh() ? '春季放榜' : 'နွေဦး ရလဒ်')}${th('fall', zh() ? '秋季最早放榜' : 'ဆောင်းဦး ရလဒ်')}${th('biz', t('bizShort'))}${th(null, t('status'))}</tr></thead>
+  <tbody>${rows.map(s => { const f = feeView(s.fee), c = costView(s), sp = springView(s), r = firstResult(s); return `<tr class="tier-${s.tier}"><th scope="row"><button class="linkish" data-jump="${s.id}">${esc(s.short)}</button> <span class="tier-dot">${s.tier === 'P' ? (zh() ? '名校' : '★') : s.tier}</span></th><td class="num">${s.km}</td><td class="${sp.cls}">${esc(sp.text)}</td><td class="${f.cls}">${esc(f.text)}</td><td class="${c.cls} num">${esc(c.text)}</td><td class="num">${r ? md(r) : '—'}</td>${(() => { const fr = fallResult(s); return `<td class="num ${fr && fr.status !== 'official' ? 'muted' : ''}">${fr ? (fr.status === 'official' && fr.date ? md(fr.date) : esc((zh() ? '往年 ' : '') + (fr.label || ''))) : '—'}</td>`; })()}${(() => { const b = bizTop(s); return `<td class="${b ? '' : 'muted'}">${b ? `${esc(deptShort(b.dept))} <b class="num">${b.count}</b>` : '—'}</td>`; })()}<td>${statusSelect(s, 'row')}</td></tr>`; }).join('')}</tbody></table></div></section>`;
 }
 function residenceSection() {
   const nia = 'https://www.immigration.gov.tw/5385/7244/7250/7317/%E5%B1%85%E7%95%99/29996/';
@@ -277,21 +361,16 @@ function residenceSection() {
     ['ARC မကုန်ခင်', 'သက်တမ်းမကုန်ခင် လျှောက်ရမည်။ တစ်လ စောပြီး ဝင်ခွင့်စာ ရထားပါ။'],
     ['ပညာသင်ဆု သတိ', 'အချိန်ပြည့်အလုပ်လုပ်သူ / အလုပ်ARC ကို ပညာသင်ဆု မပေးသော ကျောင်းများ ရှိသည်။'],
   ];
-  const prep = zh() ? ['護照、居留證（ARC）影本', '高中畢業證書與成績單（多數要駐外館處驗證，外文要附中/英譯本）', 'TOCFL 成績證明（11 月考到 B1 就換新的）', '財力證明：多數 US$3,000–5,000 或 NT$10 萬；中山醫要 US$10,000', '讀書計畫、推薦信（依各校簡章）', '收件地址要寫對：中教等學校的入學通知用郵寄']
+  const prep = zh() ? ['護照、居留證（ARC）影本', '高中畢業證書與成績單（多數要駐外館處驗證，外文要附中/英譯本）', 'TOCFL 成績證明（11 月考到 B1 就換新的）', '財力證明：多數 US$2,500–5,000 或 NT$10–12 萬（依各校簡章）', '讀書計畫、推薦信（依各校簡章）', '收件地址要寫對：中教等學校的入學通知用郵寄']
     : ['ပတ်စ်ပို့၊ ARC မိတ္တူ', 'အထက်တန်း အောင်လက်မှတ်နှင့် အမှတ်စာရင်း (အတည်ပြုချက်လို)', 'TOCFL လက်မှတ်', 'ငွေကြေးအထောက်အထား US$3,000–5,000', 'ပညာရေး အစီအစဉ်၊ ထောက်ခံစာ', 'လိပ်စာ မှန်ကန်စွာ ရေးပါ'];
   return `<section class="wrap block split" id="after"><div><div class="block-head"><h2>${t('residence')}</h2></div><ol class="steps">${items.map(([h, p]) => `<li><strong>${esc(h)}</strong><p>${esc(p)}</p></li>`).join('')}</ol><p><a href="${nia}" target="_blank" rel="noopener noreferrer">${zh() ? '移民署：外國人申請居留及變更居留原因送件須知' : 'လူဝင်မှုကြီးကြပ်ရေး ညွှန်ကြားချက်'} ↗</a></p></div>
   <div><div class="block-head"><h2>${t('prep')}</h2></div><ul class="checklist">${prep.map(p => `<li>${esc(p)}</li>`).join('')}</ul><p class="hint">${zh() ? '目前查到的簡章都沒有另外收「錄取通知書費」或保證金；錄取後要付的是第一學期學雜費、住宿與保險（外國學生健保每月 826 元）。嶺東簡章提到宿舍保證金，但檔案亂碼無法確認。' : 'ဝင်ခွင့်စာအတွက် ကြေးမရှိ။ ဝင်ခွင့်ရပြီးနောက် ကျောင်းလခ၊ အဆောင်၊ အာမခံ ပေးရမည်။'}</p></div></section>`;
 }
-function progressBar() {
-  const counts = Object.fromEntries(STATUS.map(([k]) => [k, 0]));
-  for (const s of data.schools) counts[statusMap[s.id] || '']++;
-  const parts = STATUS.slice(1).filter(([k]) => counts[k]).map(([k, a, b]) => `<span class="st-${k}">${esc(zh() ? a : b)} <b>${counts[k]}</b></span>`).join('');
-  return `<div class="wrap progress"><div class="prog-in"><strong>${t('status')}</strong>${parts || `<span class="muted">${zh() ? '在每間學校右上角選「要報」「已報名」，這裡會統計，也能複製給他看。' : 'ကျောင်းတိုင်းတွင် အခြေအနေ ရွေးပါ။'}</span>`}<button class="btn ghost" data-action="copy">${t('copy')}</button></div><textarea id="copy-box" class="copy-box" readonly hidden></textarea></div>`;
-}
 function render() {
   document.documentElement.lang = zh() ? 'zh-Hant' : 'my';
   document.title = zh() ? '偉銓選校板' : '偉銓 · ကျောင်းရွေးဘုတ်';
-  root.innerHTML = `${header()}<main>${profile()}${progressBar()}${nowSection()}${chances()}${schoolsSection()}${compareSection()}${residenceSection()}</main><footer class="wrap foot"><p>${esc(t('foot'))}</p><p><a href="./index.html?lang=${lang}&weiquan=1">${esc(t('allSite'))}</a></p></footer>`;
+  syncStatusMap();
+  root.innerHTML = `${header()}${navBar()}<main>${profile()}${newsSection()}${mineSection()}${nowSection()}${chances()}${schoolsSection()}${compareSection()}${residenceSection()}</main><footer class="wrap foot"><p>${esc(t('foot')).replace('2026/09/29', ymd(data.updated))}</p><p><a href="./index.html?lang=${lang}&weiquan=1">${esc(t('allSite'))}</a></p></footer>`;
 }
 
 // ---- events ----
@@ -301,13 +380,45 @@ function progressText() {
   for (const [k, a, b] of STATUS.slice(1)) {
     const l = data.schools.filter(s => statusMap[s.id] === k);
     if (!l.length) continue;
-    lines.push(`【${zh() ? a : b}】` + l.map(s => { const w = windowsOf(s).filter(isOpen).sort((x, y) => x.end.localeCompare(y.end))[0]; return s.short + (w && k === 'want' ? `（${t('deadline')} ${md(w.end)}）` : ''); }).join('、'));
+    lines.push(`【${zh() ? a : b}】` + l.map(s => { const n = k === 'no' ? null : nextStep(s, k), note = noteOf(s.id); return s.short + (n ? `（${n.text}）` : '') + (note ? `：${note}` : ''); }).join('\n  '));
   }
   if (lines.length === 1) lines.push(zh() ? '還沒標記學校。' : '—');
   return lines.join('\n');
 }
+// ---- progress writes (cloud when available, else this device) ----
+function rerenderKeep(focusId) { const y = window.scrollY; render(); window.scrollTo(0, y); if (focusId) document.getElementById(focusId)?.focus({preventScroll: true}); }
+async function saveProgress(id, patch) {
+  if (cloud.ready) {
+    if (!cloud.writable) { toast(zh() ? '你沒有修改權限' : 'ပြင်ခွင့်မရှိ'); return false; }
+    const cur = cloud.docs[id] || {};
+    const next = {status: patch.status ?? cur.status ?? '', note: patch.note ?? cur.note ?? '', updatedAt: new Date().toISOString()};
+    try {
+      if (!next.status && !next.note) await cloud.db.doc('progress/' + id).delete();
+      else await cloud.db.doc('progress/' + id).set(next);
+      if (!next.status && !next.note) delete cloud.docs[id]; else cloud.docs[id] = next;
+      return true;
+    } catch (err) {
+      if (err?.code === 'invalid_argument') { cloud.writable = false; toast(zh() ? '這個帳號不能修改雲端資料' : 'ပြင်ခွင့်မရှိ'); }
+      else toast(zh() ? '沒存成功，請再試一次' : 'မသိမ်းနိုင်ပါ');
+      return false;
+    }
+  }
+  if ('status' in patch) { if (patch.status) localStatus[id] = patch.status; else delete localStatus[id]; store.set('wq-board-status', localStatus); }
+  if ('note' in patch) { if (patch.note) localNotes[id] = patch.note; else delete localNotes[id]; store.set('wq-board-notes', localNotes); }
+  return true;
+}
 document.addEventListener('click', async e => {
   const b = e.target.closest('button'); if (!b) return;
+  if (b.dataset.action === 'news') { newsAll = !newsAll; rerenderKeep(); return; }
+  if (b.dataset.save) {
+    const id = b.dataset.save, v = (document.getElementById('note-' + id)?.value || '').trim().slice(0, 500);
+    if (await saveProgress(id, {note: v})) { toast(t('saved')); rerenderKeep('note-' + id); }
+    return;
+  }
+  if (b.dataset.action === 'upload') {
+    for (const [k, v] of Object.entries(localStatus)) if (VALID.has(v) && !cloud.docs[k]) await saveProgress(k, {status: v, note: localNotes[k] || ''});
+    toast(zh() ? '已放上雲端' : 'တင်ပြီး'); rerenderKeep(); return;
+  }
   if (b.dataset.lang) { lang = b.dataset.lang; store.set('wq-lang', lang); render(); document.getElementById('lang-' + lang)?.focus(); return; }
   if (b.dataset.toggle) { const id = b.dataset.toggle; openCards.has(id) ? openCards.delete(id) : openCards.add(id); const d = document.getElementById('d-' + id); d.hidden = !openCards.has(id); b.setAttribute('aria-expanded', String(openCards.has(id))); b.textContent = openCards.has(id) ? t('hide') : t('details'); return; }
   if (b.dataset.filter) { const k = b.dataset.filter; if (k === 'clear') filters.clear(); else filters.has(k) ? filters.delete(k) : filters.add(k); const y = window.scrollY; render(); window.scrollTo(0, y); document.getElementById('f-' + k)?.focus({preventScroll: true}); return; }
@@ -319,17 +430,43 @@ document.addEventListener('click', async e => {
     catch { const box = document.getElementById('copy-box'); box.hidden = false; box.value = text; box.focus(); box.select(); toast(t('copyFail')); }
   }
 });
-document.addEventListener('change', e => {
+document.addEventListener('change', async e => {
   const n = e.target; if (!n.dataset?.status) return;
-  const id = n.dataset.status; if (n.value) statusMap[id] = n.value; else delete statusMap[id];
-  store.set('wq-board-status', statusMap);
-  const y = window.scrollY, focusId = n.id; render(); window.scrollTo(0, y); document.getElementById(focusId)?.focus({preventScroll: true});
+  const id = n.dataset.status, focusId = n.id;
+  if (await saveProgress(id, {status: n.value})) rerenderKeep(focusId); else rerenderKeep(focusId);
 });
+document.addEventListener('input', e => {
+  if (e.target.id !== 'q') return;
+  query = e.target.value.trim();
+  const L = schoolsList();
+  document.getElementById('school-list').innerHTML = L.html;
+  document.getElementById('school-count').textContent = `${L.n}/${data.schools.length}`;
+});
+
+// Light up shared progress when this view can use the artifact database. Never blocks first paint.
+async function initCloud() {
+  if (!window.claude?.use) return;
+  try {
+    const [db, user] = await Promise.all([window.claude.use('db'), window.claude.use('user')]);
+    if (!db) return;
+    const can = user ? await user.can('data.write') : null;
+    cloud.db = db; cloud.writable = can !== false;
+    db.collection('progress').onSnapshot(snap => {
+      const docs = {};
+      for (const d of snap.docs) { const v = d.data() || {}; docs[d.id] = {status: VALID.has(v.status) ? v.status : '', note: typeof v.note === 'string' ? v.note.slice(0, 500) : ''}; }
+      cloud.docs = docs; cloud.ready = true;
+      const a = document.activeElement;
+      if (a && (a.dataset?.note || a.id === 'q')) return; // don't wipe what someone is typing
+      rerenderKeep(a?.id);
+    }, () => {});
+  } catch { /* stay on this-device mode */ }
+}
 
 try {
   const r = await fetch('./wq-board.json'); if (!r.ok) throw new Error('data');
   data = await r.json();
   render();
+  initCloud();
   if (location.hash && document.querySelector(location.hash)) document.querySelector(location.hash).scrollIntoView();
 } catch (err) {
   root.innerHTML = '<main class="wq-loading"><p>資料載入失敗，請重新整理。<br>အချက်အလက် မတင်နိုင်ပါ။</p></main>';

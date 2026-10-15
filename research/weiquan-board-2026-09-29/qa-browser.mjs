@@ -85,9 +85,16 @@ const noOverflow = async p => assert.equal(await p.evaluate(() => document.docum
   await p.click('[data-toggle="0039"]');
   assert.equal(await p.isVisible('#d-0039'), true);
   await p.selectOption('#st-card-0039', 'want');
-  assert.match(await p.textContent('.prog-in'), /要報\s*1/);
+  assert.match(await p.textContent('.mine-sum'), /要報\s*1/);
+  await p.fill('#note-0039', 'QA 備註');
+  await p.click('[data-save="0039"]');
+  assert.match(await p.textContent('#s-0039'), /QA 備註/, 'note shows on the card');
+  await p.fill('#q', '中教');
+  assert.equal(await p.locator('.school').count(), 1, 'search narrows the list');
+  await p.fill('#q', '');
   await p.reload({waitUntil: 'networkidle'});
   assert.equal(await p.inputValue('#st-card-0039'), 'want', 'status persists on this device');
+  assert.equal(await p.inputValue('#note-0039'), 'QA 備註', 'note persists on this device');
   await p.click('#lang-my');
   assert.match(await p.textContent('h1'), /ကျောင်း/);
   await noOverflow(p);
