@@ -3,7 +3,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "test": "node qa.mjs && node research/weiquan-2026-09-28/qa.mjs",
+    "test": "node qa.mjs && node research/weiquan-2026-09-28/qa.mjs && node qa-board.mjs",
     "test:browser": "node research/weiquan-board-2026-09-29/qa-browser.mjs"
   },
   "devDependencies": {

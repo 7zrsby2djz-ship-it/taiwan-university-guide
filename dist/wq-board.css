@@ -28,6 +28,7 @@ body{margin:0;background:var(--paper);color:var(--ink);font:15px/1.7 var(--ui)}
 :lang(my){font-family:Padauk,"Noto Sans Myanmar",var(--ui);line-height:1.9}
 a{color:var(--teal);text-underline-offset:3px}
 button,select,textarea{font:inherit;color:inherit}
+input{font-family:inherit;color:inherit}
 button{cursor:pointer}
 :focus-visible{outline:3px solid var(--teal);outline-offset:3px}
 [hidden]{display:none!important}
@@ -264,3 +265,27 @@ section[id]{scroll-margin-top:64px}
 .cmp th[scope="row"]{position:sticky;left:0;background:var(--card);z-index:1;white-space:nowrap}
 .cmp thead th:first-child{position:sticky;left:0;z-index:2}
 .cmp{min-width:860px}
+
+/* A compact entry point before the detailed school and date lists. */
+.overview{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.overview a{display:flex;flex-wrap:wrap;align-items:center;gap:4px 10px;min-width:0;padding:12px 16px;background:var(--card);border:1px solid var(--line);border-radius:12px;color:var(--ink);text-decoration:none}
+.overview a strong{font-size:28px;line-height:1.2;color:var(--navy);font-variant-numeric:tabular-nums}
+.overview a span{font-size:14px;overflow-wrap:anywhere}
+.overview a span:last-child{margin-left:auto;color:var(--teal)}
+.snapshot{margin:10px 0 0;color:var(--ink-2);font-size:12px}
+.reference-fold{margin-top:20px;border:1px solid var(--line);border-radius:12px;padding:12px 14px}
+.reference-fold summary{cursor:pointer;font-weight:700;min-height:28px}
+.reference-fold summary span{font-size:13px;font-weight:400;color:var(--ink-2)}
+.reference-fold .tickets{margin-top:12px}
+.searchbox{display:flex;gap:8px;align-items:center}
+.searchbox input{min-width:0;flex:1}
+.searchbox button{flex:none;min-height:44px}
+.view-tools{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px;margin:-4px 0 14px}
+.view-tools p{margin:0;color:var(--ink-2);font-size:13px}
+.draft-hint{display:block;margin-top:6px;font-size:12px;color:var(--warn)}
+.compare-legend{margin:0 0 10px}
+.cmp thead button{min-height:36px}
+.fchip,.jump a,.more{min-height:40px}
+.school{scroll-margin-top:70px}
+@media (min-width:641px){.school{scroll-margin-top:132px}}
+@media (max-width:520px){.overview{gap:6px}.overview a{padding:10px;gap:5px}.overview a strong{font-size:25px}.overview a span{font-size:12px}.overview a span:last-child{display:none}.overview a span{flex-basis:100%}.view-tools .btn{min-height:44px}.searchbox button{font-size:13px;padding:6px 9px}}

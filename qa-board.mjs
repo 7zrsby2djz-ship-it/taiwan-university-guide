@@ -1,0 +1,162 @@
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import {parseHTML} from 'linkedom';
+import {isDate, isLateRound, officialWindows, isOpen, nextResult, compareNullable, matchesQuery, readView} from './dist/wq-core.js';
+
+const board = JSON.parse(fs.readFileSync(new URL('./dist/wq-board.json', import.meta.url)));
+const school = id => board.schools.find(s => s.id === id);
+const official = date => ({status: 'official', date});
+assert.equal(isDate('2026-02-30'), false);
+assert.equal(isDate('2028-02-29'), true);
+assert.equal(isDate('2026-2-01'), false);
+assert.equal(isDate(null), false);
+
+const earlyLetter = {start: official('2027-03-01'), end: official('2027-05-01'), result: official('2027-07-20'), letter: '2027-05-27'};
+assert.equal(isLateRound(earlyLetter, board.arcExpiry), false, 'admission letter can precede the public list');
+assert.equal(isLateRound({...earlyLetter, letter: '2027-07-01'}, board.arcExpiry), true);
+const graduate = {terms: {spring: {ug: 'grad', rounds: [earlyLetter]}, fall: {ug: 'none', rounds: []}}};
+assert.deepEqual(officialWindows(graduate, board.arcExpiry), [], 'never advertise graduate rounds as undergraduate');
+const cyutWindow = officialWindows(school('1018'), board.arcExpiry)[0];
+assert.equal(cyutWindow.start, null);
+assert.equal(isOpen(cyutWindow, '2026-10-31'), false, 'a known deadline does not prove that applications are open');
+assert.equal(nextResult(school('1008'), 'spring', '2026-10-31', board.arcExpiry).date, '2026-12-24', 'compare the still-available second round');
+assert.equal(nextResult(school('1008'), 'spring', '2027-01-01', board.arcExpiry), null);
+assert.equal(nextResult(school('0007'), 'fall', '2026-10-31', board.arcExpiry).status, 'official');
+for (const dir of [1, -1]) {
+  const values = [null, 4, undefined, 1, 2].sort((a, b) => compareNullable(a, b, dir));
+  assert.deepEqual(values.slice(0, 3), dir === 1 ? [1, 2, 4] : [4, 2, 1]);
+}
+assert.equal(matchesQuery(school('0039'), '台中 NTCU'), true);
+assert.equal(matchesQuery(school('1001'), 'ＴＨＵ'), true);
+const view = readView(new URLSearchParams('q=中教&filters=local,invented,free&sort=bad&dir=desc'));
+assert.deepEqual([...view.filters], ['local', 'free']);
+assert.equal(view.sortKey, 'tier');
+console.log('PASS board rules: valid dates, undergraduate eligibility, unknown opening dates, admission letters, relevant rounds, unknowns last, multiword search, URL validation.');
+
+const storage = new Map();
+let mountCount = 0, blocked = false, copied = '';
+async function mount(url = 'https://guide.test/weiquan.html?lang=zh&today=2026-10-31') {
+  const {window, document} = parseHTML(fs.readFileSync(new URL('./dist/weiquan.html', import.meta.url), 'utf8'));
+  Object.assign(globalThis, {window, document, location: new URL(url)});
+  globalThis.history = {replaceState: (_state, _title, value) => { globalThis.location = new URL(value, location); }};
+  globalThis.localStorage = {
+    getItem: key => storage.get(key) || null,
+    setItem: (key, value) => { if (blocked) throw new Error('Quota exceeded'); storage.set(key, value); },
+  };
+  Object.defineProperty(globalThis, 'navigator', {configurable: true, value: {clipboard: {writeText: async text => { copied = text; }}}});
+  globalThis.fetch = async () => ({ok: true, json: async () => structuredClone(board)});
+  window.HTMLElement.prototype.scrollIntoView = function () {};
+  window.HTMLElement.prototype.select = function () {};
+  window.scrollTo = () => {};
+  await import(`./dist/wq-board.js?qa=${++mountCount}`);
+  return document;
+}
+const settle = () => new Promise(resolve => setImmediate(resolve));
+const find = selector => { const node = document.querySelector(selector); assert.ok(node, selector); return node; };
+async function click(selector) { find(selector).dispatchEvent(new window.Event('click', {bubbles: true})); await settle(); }
+async function change(selector, value) { const node = find(selector); Object.defineProperty(node, 'value', {value, configurable: true}); node.dispatchEvent(new window.Event('change', {bubbles: true})); await settle(); }
+function input(selector, value) { const node = find(selector); node.value = value; node.dispatchEvent(new window.Event('input', {bubbles: true})); }
+const ids = () => [...document.querySelectorAll('.cmp tbody tr [data-jump]')].map(node => node.dataset.jump);
+
+await mount();
+assert.equal(document.querySelectorAll('.school').length, 39);
+assert.equal(document.querySelectorAll('.cmp tbody tr').length, 39);
+const openTickets = find('#now .tickets');
+assert.equal(openTickets.querySelector('[data-jump="1018"]'), null);
+assert.ok(find('.pending-windows [data-jump="1018"]'));
+assert.equal(find('#reference-fold').hasAttribute('open'), false);
+assert.ok([...document.querySelectorAll('.ref .tk-count')].every(n => !n.textContent.includes('天')), 'historical months do not have fake daily countdowns');
+assert.ok(!find('#d-1018').textContent.includes('往年 第2梯開始待確認'), 'unknown dates do not look historical');
+assert.ok(find('.cmp [data-jump="0007"]').closest('tr').textContent.includes('2027 年 5 月中旬'));
+assert.ok(!find('.cmp [data-jump="0007"]').closest('tr').textContent.includes('往年'), 'official approximate dates retain official status');
+assert.ok(find('.cmp [data-jump="1008"]').closest('tr').textContent.includes('2026/12/24'));
+
+input('#q', '台中 NTCU');
+assert.equal(document.querySelectorAll('.school').length, 1);
+assert.deepEqual(ids(), ['0039']);
+assert.equal(find('#compare-count').textContent, '1/39');
+assert.equal(new URL(location).searchParams.get('q'), '台中 NTCU');
+await click('[data-action="clear-search"]');
+await click('#f-local'); await click('#f-free');
+const expected = board.schools.filter(s => s.commute === 'local' && s.fee.kind === 'free').map(s => s.id).sort();
+assert.deepEqual([...document.querySelectorAll('.school')].map(n => n.id.slice(2)).sort(), expected);
+assert.deepEqual(ids().sort(), expected);
+await click('[data-filter="clear"]');
+
+input('#q', '找不到的學校');
+assert.equal(document.querySelectorAll('.school').length, 0);
+assert.equal(document.querySelectorAll('.cmp tbody tr').length, 0);
+await click('#now [data-jump="0039"]');
+assert.equal(find('#q').value, '');
+assert.equal(find('#d-0039').hidden, false, 'cross-section jump reveals the school even after a failed search');
+input('#q', '找不到的學校'); await click('#compare [data-action="reset-view"]');
+assert.equal(document.querySelectorAll('.school').length, 39);
+
+for (const key of ['biz', 'cost', 'fee', 'fall']) {
+  for (let direction = 0; direction < 2; direction++) {
+    await click(`[data-sort="${key}"]`);
+    const known = id => {
+      const s = school(id);
+      return key === 'biz' ? !!s.bizAdmits?.length : key === 'cost' ? !!s.semesterCost
+        : key === 'fee' ? ['free', 'paid'].includes(s.fee.kind) : !!nextResult(s, 'fall', '2026-10-31', board.arcExpiry);
+    };
+    let unknownSeen = false;
+    for (const id of ids()) { if (!known(id)) unknownSeen = true; else assert.equal(unknownSeen, false, `${key}: unknown values last in both directions`); }
+  }
+}
+await click('[data-sort="biz"]');
+assert.equal(find('[data-sort="biz"]').closest('th').getAttribute('aria-sort'), 'descending');
+assert.equal(ids()[0], '1001', 'largest business count first, not missing data');
+console.log('PASS board interactions: shared search/filter results, no-match recovery, cross-section jump, official labels, current-round comparison, reversible sorts.');
+
+await change('#st-card-0039', 'want');
+input('#note-0039', '  還沒按儲存的備註：A2／B1 補件  ');
+assert.equal(JSON.parse(storage.get('wq-board-drafts'))['0039'], '  還沒按儲存的備註：A2／B1 補件  ');
+await click('#lang-my');
+assert.equal(find('#note-0039').value, '  還沒按儲存的備註：A2／B1 補件  ');
+await click('#f-local');
+assert.equal(find('#note-0039').value, '  還沒按儲存的備註：A2／B1 補件  ');
+input('#q', 'NTCU');
+const restoredURL = location.href;
+await mount(restoredURL);
+assert.equal(document.documentElement.lang, 'my');
+assert.equal(find('#q').value, 'NTCU');
+assert.equal(find('#f-local').getAttribute('aria-pressed'), 'true');
+assert.deepEqual(ids(), ['0039']);
+assert.equal(find('#note-0039').value, '  還沒按儲存的備註：A2／B1 補件  ');
+await click('[data-save="0039"]');
+assert.equal(JSON.parse(storage.get('wq-board-notes'))['0039'], '還沒按儲存的備註：A2／B1 補件');
+assert.equal(JSON.parse(storage.get('wq-board-drafts'))['0039'], undefined);
+assert.ok(find('#s-0039').textContent.includes('A2／B1 補件'));
+await click('[data-action="share-view"]');
+assert.equal(new URL(copied).searchParams.get('today'), null, 'testing date is not shared');
+assert.equal(new URL(copied).searchParams.get('q'), 'NTCU');
+assert.equal(copied.includes('補件'), false, 'notes do not enter share URLs');
+assert.equal(new URL(copied).hash, '#schools');
+await click('#lang-zh');
+input('#note-0039', '<img src=x onerror=alert(1)>');
+await click('[data-save="0039"]');
+assert.equal(document.querySelector('.chip.note img'), null, 'notes cannot inject HTML');
+assert.ok(find('#s-0039 .chip.note').textContent.includes('<img'));
+blocked = true;
+input('#note-0039', '儲存失敗也要保留的內容');
+await click('[data-save="0039"]');
+assert.match(find('#wq-toast').textContent, /無法儲存/);
+assert.equal(find('#note-0039').value, '儲存失敗也要保留的內容');
+await change('#st-card-0039', 'no');
+assert.equal(find('#st-card-0039').value, 'want', 'failed status writes keep the last saved value');
+assert.notEqual(JSON.parse(storage.get('wq-board-notes'))['0039'], '儲存失敗也要保留的內容');
+blocked = false;
+
+// Invalid persistent values and URL fragments cannot break the page.
+storage.set('wq-board-status', JSON.stringify(['want']));
+storage.set('wq-board-notes', JSON.stringify({'0039': {bad: true}, bogus: 'ignored'}));
+storage.set('wq-board-drafts', JSON.stringify({'0039': 12, bogus: 'ignored'}));
+await mount('https://guide.test/weiquan.html?lang=zh&today=2026-10-31#%ZZ');
+assert.equal(document.querySelectorAll('.school').length, 39);
+await change('#st-card-1018', 'applied');
+assert.match(find('#mine').textContent, /12\/18/, 'waiting for a result still works when the round deadline is unknown');
+await mount('https://guide.test/weiquan.html?lang=zh&today=2027-08-01');
+assert.match(find('#now').textContent, /目前沒有官方公告的學士報名期/);
+assert.equal(document.querySelectorAll('.cmp tbody tr').length, 39);
+console.log('PASS board persistence: draft recovery across language/filter/reload, explicit save, storage-failure feedback, private share URLs, corrupted storage, malformed anchors, expired intakes.');
