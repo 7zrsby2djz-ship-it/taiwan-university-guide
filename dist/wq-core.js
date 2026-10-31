@@ -63,5 +63,62 @@ export function readView(params) {
     filters: new Set((params.get('filters') || '').split(',').filter(k => FILTERS.includes(k))),
     sortKey: SORTS.includes(params.get('sort')) ? params.get('sort') : 'tier',
     sortDirection: params.get('dir') === 'desc' ? -1 : 1,
+    compareIds: (params.get('compare') || '').split(',').filter(Boolean),
   };
+}
+
+export function cleanComparison(values, schoolIds) {
+  if (!Array.isArray(values)) return [];
+  const known = new Set(schoolIds);
+  return [...new Set(values.filter(id => typeof id === 'string' && known.has(id)))].slice(0, 3);
+}
+
+export function roundChoices(school) {
+  return ['spring', 'fall'].flatMap(term => school.terms[term]?.ug !== 'has' ? []
+    : (school.terms[term].rounds || []).map((round, index) => ({...round, term, round: index + 1, key: `${term}:${index + 1}`})));
+}
+
+// Detect changed/reordered rounds instead of silently attaching old progress to a new intake.
+function roundSignature(round) {
+  const values = ['start', 'end', 'result'].map(key => {
+    const event = round[key];
+    return event ? [event.status, event.date || '', event.sort || '', event.label || '', event.sourceYear || event.year || ''] : null;
+  });
+  const text = JSON.stringify([round.term, values, round.letter || '']);
+  let hash = 2166136261;
+  for (let i = 0; i < text.length; i++) hash = Math.imul(hash ^ text.charCodeAt(i), 16777619);
+  return (hash >>> 0).toString(16);
+}
+
+export function selectRound(school, key) {
+  const round = roundChoices(school).find(r => r.key === key);
+  return round ? {key, signature: roundSignature(round)} : null;
+}
+
+export function resolveRound(school, selection) {
+  if (!selection || typeof selection !== 'object') return {state: 'none', round: null};
+  const round = roundChoices(school).find(r => r.key === selection.key);
+  if (!round || selection.signature !== roundSignature(round)) return {state: 'stale', round: null};
+  return {state: 'valid', round};
+}
+
+const exact = event => event?.status === 'official' && isDate(event.date) ? event.date : null;
+export function taskForRound(round, status, today) {
+  const result = exact(round.result), start = exact(round.start), end = exact(round.end);
+  const letter = isDate(round.letter) && ['end', 'result'].some(k => round[k]?.status === 'official') ? round.letter : null;
+  if (status === 'admitted') return letter && letter >= today ? {kind: 'letter', date: letter} : {kind: 'documents'};
+  if (status === 'applied') {
+    if (result) {
+      if (result >= today) return {kind: 'result', date: result};
+      if (letter && letter >= today) return {kind: 'letter', date: letter};
+      return {kind: 'result-ready', date: result};
+    }
+    if (round.result?.status === 'official' && round.result.label) return {kind: 'result-window', event: round.result};
+    return {kind: 'verify-result', event: round.result};
+  }
+  if (end && end < today) return {kind: 'closed', date: end};
+  if (start && start > today) return {kind: 'opens', date: start};
+  if (!end) return {kind: 'verify-deadline', event: round.end};
+  if (!start) return {kind: 'confirm-open', date: end};
+  return {kind: 'deadline', date: end};
 }

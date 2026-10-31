@@ -2,7 +2,8 @@
 // Data: ./wq-board.json (built by research/weiquan-board-2026-09-29/build_board.py).
 // Only official dates are shown as exact dates; past-year references are labelled.
 import {isDate, isLateRound, undergraduateRounds, officialWindows, isOpen as openOn,
-  isSoon as soonOn, isUnconfirmed, nextResult, compareNullable, matchesQuery, readView} from './wq-core.js';
+  isSoon as soonOn, isUnconfirmed, nextResult, compareNullable, matchesQuery, readView,
+  cleanComparison, roundChoices, selectRound, resolveRound, taskForRound} from './wq-core.js';
 
 const root = document.querySelector('#board');
 const esc = v => String(v ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -67,6 +68,18 @@ const W = {
   openSummary: ['已確認可報', 'ယခု လျှောက်နိုင်'],
   urgentSummary: ['7 天內截止', '၇ ရက်အတွင်း ပိတ်မည်'],
   trackedSummary: ['我的申請', 'ကျွန်ုပ်၏ လျှောက်လွှာ'],
+  addCompare: ['加入比較', 'နှိုင်းယှဉ်ရန် ရွေး'], compared: ['已加入比較', 'ရွေးထားပြီး'],
+  focusedCompare: ['我選的學校', 'ရွေးထားသောကျောင်းများ'],
+  compareLimit: ['最多比較 3 間，先移除一間再加入', 'အများဆုံး ၃ ကျောင်း။ တစ်ကျောင်းဖယ်ပြီး ထပ်ရွေးပါ။'],
+  removeCompare: ['移出比較', 'နှိုင်းယှဉ်မှုမှ ဖယ်ရန်'],
+  clearCompare: ['清空比較', 'ရွေးထားမှု ရှင်းရန်'],
+  goCompare: ['前往比較', 'နှိုင်းယှဉ်ကြည့်ရန်'],
+  chooseRound: ['申請哪一梯', 'လျှောက်သည့်အကြိမ်'],
+  roundAuto: ['尚未指定・僅顯示參考', 'မရွေးရသေး · ကိုးကားသာ'],
+  roundStale: ['時程資料已變動，請重新確認申請梯次', 'ရက်စွဲပြောင်းထားသည်။ အကြိမ်ကို ပြန်ရွေးပါ။'],
+  roundSource: ['這一梯的官方來源', 'ဤအကြိမ်၏ တရားဝင်ရင်းမြစ်'],
+  noRound: ['沒有可核對的學士梯次，請向學校確認', 'ဘွဲ့ကြိုအချိန်ဇယား အတည်ပြုရန် ကျောင်းကို မေးပါ။'],
+  chosenRound: ['已指定梯次', 'ရွေးထားသည့်အကြိမ်'],
 };
 const STATUS = [['', '還沒決定', 'မဆုံးဖြတ်ရသေး'], ['want', '要報', 'လျှောက်မည်'], ['applied', '已報名', 'လျှောက်ပြီး'], ['admitted', '錄取', 'ဝင်ခွင့်ရ'], ['no', '不考慮', 'မလျှောက်']];
 const TIERS = {
@@ -79,6 +92,7 @@ const TIER_ORDER = {A: 0, P: 1, B: 2, C: 3};
 
 const view = readView(qs);
 let data, lang = store.get('wq-lang', 'zh'), localStatus = store.get('wq-board-status', {}), localNotes = store.get('wq-board-notes', {}), drafts = store.get('wq-board-drafts', {}),
+  localRounds = store.get('wq-board-rounds', {}), compareIds = qs.has('compare') ? view.compareIds : store.get('wq-board-compare', []),
   {filters, sortKey, sortDirection, query} = view, openCards = new Set(), newsAll = false, refsExpanded = false;
 // Shared progress (status + note per school). Cloud = artifact db when this view can use it; otherwise this device only.
 const cloud = {db: null, ready: false, writable: false, docs: {}};
@@ -89,6 +103,7 @@ const record = v => v && typeof v === 'object' && !Array.isArray(v);
 if (!record(localStatus)) localStatus = {};
 if (!record(localNotes)) localNotes = {};
 if (!record(drafts)) drafts = {};
+if (!record(localRounds)) localRounds = {};
 const VALID = new Set(['want', 'applied', 'admitted', 'no']);
 function syncStatusMap() {
   statusMap = {};
@@ -97,6 +112,7 @@ function syncStatusMap() {
 }
 const noteOf = id => (cloud.ready ? cloud.docs[id]?.note : localNotes[id]) || '';
 const draftOf = id => Object.hasOwn(drafts, id) ? drafts[id] : noteOf(id);
+const roundOf = id => (cloud.ready ? cloud.docs[id]?.round : localRounds[id]) || null;
 syncStatusMap();
 const t = k => (W[k] || [k, k])[lang === 'zh' ? 0 : 1];
 const zh = () => lang === 'zh';
@@ -178,6 +194,9 @@ const latestNews = () => { const c = data.changes || []; const d = c.map(x => x.
 const isNewSchool = s => latestNews().some(c => c.id === s.id);
 // The next date that matters for one school, given its status.
 function nextStep(s, st) {
+  const selected = resolveRound(s, roundOf(s.id));
+  if (selected.state === 'stale') return {cls: 'warn', text: t('roundStale')};
+  if (selected.round) return selectedTask(selected.round, st);
   const ws = windowsOf(s);
   if (st === 'admitted') return {cls: 'good', text: zh() ? '拿入學許可去換居留' : 'ARC ပြောင်းရန်'};
   if (st === 'applied') {
@@ -189,14 +208,45 @@ function nextStep(s, st) {
     return {cls: 'muted', text: zh() ? `等放榜${res ? `（${evText(res)}）` : '（請核對已報名的梯次）'}` : 'ရလဒ် စောင့်'};
   }
   const open = ws.filter(isOpen).sort((a, b) => a.end.localeCompare(b.end))[0];
-  if (open) { const d = dayDiff(TODAY, open.end); return {cls: d <= 14 ? 'bad' : 'warn', text: zh() ? `截止 ${mdw(open.end)}・剩 ${d} 天` : `${md(open.end)} ပိတ်`}; }
+  if (open) { const d = dayDiff(TODAY, open.end); return {cls: d <= 14 ? 'bad' : 'warn', text: zh() ? `截止 ${mdw(open.end)}・剩 ${d} 天` : `${md(open.end)} ပိတ်`, due: open.end, kind: 'deadline'}; }
   const soon = ws.filter(isSoon).sort((a, b) => a.start.localeCompare(b.start))[0];
   if (soon) return {cls: 'muted', text: zh() ? `${mdw(soon.start)} 開始報名` : `${md(soon.start)} ဖွင့်`};
   const pending = ws.find(w => isUnconfirmed(w, TODAY));
   if (pending) return {cls: 'warn', text: `${t('pendingStart')} · ${t('deadline')} ${mdw(pending.end)}`};
   const ref = refWindows(s).sort((a, b) => a.key.localeCompare(b.key))[0];
-  if (ref) return {cls: 'muted', text: zh() ? `往年約 ${refLabel(ref.r.start)} 開始（今年未公布）` : 'ယခင်နှစ် ရက်သာ'};
+  if (ref) return {cls: 'muted', text: zh() ? `往年約 ${refLabel(ref.r.start)} 開始（本期日期待核對）` : 'ယခင်နှစ် ရက်သာ'};
   return {cls: 'muted', text: zh() ? '還沒有可報的梯次' : '—'};
+}
+
+function selectedTask(round, status) {
+  const task = taskForRound(round, status, TODAY), d = task.date ? dayDiff(TODAY, task.date) : null;
+  const date = task.date ? ymd(task.date) : '';
+  const labels = {
+    deadline: [d === 0 ? `今天截止（${date}）` : `截止 ${date}・剩 ${d} 天`, `${date} ပိတ် · ${d} ရက် ကျန်`],
+    opens: [`${date} 開始報名`, `${date} ဖွင့်မည်`],
+    closed: [`這一梯已於 ${date} 截止；請確認是否已送出或改選梯次`, `${date} ပိတ်ပြီး။ လျှောက်ပြီးမပြီး စစ်ပါ။`],
+    result: [d === 0 ? `今天放榜（${date}），請看官方結果` : `放榜 ${date}・還有 ${d} 天`, `${date} ရလဒ် · ${d} ရက်`],
+    letter: [`入學許可預計 ${date} 寄發；請確認收件與後續手續`, `ဝင်ခွင့်စာ ${date} ပို့မည်။ ကျောင်းနှင့် အတည်ပြုပါ။`],
+    'result-ready': [`${date} 的放榜日已到；請查結果並更新進度`, `${date} ရလဒ်ထွက်ရက် ရောက်ပြီး။ အခြေအနေ ပြင်ပါ။`],
+    'result-window': [`等待放榜：${evText(task.event)}`, `ရလဒ် စောင့် · ${evText(task.event)}`],
+    'verify-result': [`放榜待確認${task.event ? `：${evText(task.event)}` : ''}；請查這一梯的官方來源`, 'ရလဒ်ရက်ကို ကျောင်းနှင့် အတည်ပြုပါ။'],
+    'verify-deadline': [`這一梯的截止日待確認${task.event ? `：${evText(task.event)}` : ''}`, 'ဤအကြိမ်၏ ပိတ်ရက်ကို အတည်ပြုပါ။'],
+    'confirm-open': [`開放狀態待確認；官方截止 ${date}`, `${date} ပိတ်။ ဖွင့်မဖွင့် အတည်ပြုပါ။`],
+    documents: ['確認已取得入學許可，再核對註冊與居留手續', 'ဝင်ခွင့်စာ ရရှိပြီးမပြီး၊ မှတ်ပုံတင်ရက်နှင့် ARC စစ်ပါ။'],
+  };
+  return {cls: ['closed', 'result-ready'].includes(task.kind) || (task.kind === 'deadline' && d <= 7) ? 'bad' : ['opens', 'documents'].includes(task.kind) ? 'muted' : 'warn',
+    text: labels[task.kind][zh() ? 0 : 1], due: task.date, kind: task.kind};
+}
+
+const roundName = r => `${r.term === 'spring' ? t('springT') : t('fallT')} · ${zh() ? `第 ${r.round} 梯` : `${t('round')} ${r.round}`}`;
+function roundControl(s) {
+  const choices = roundChoices(s), selected = resolveRound(s, roundOf(s.id));
+  if (!choices.length) return `<p class="hint">${t('noRound')}</p>`;
+  const canWrite = !cloud.ready || cloud.writable;
+  return `<div class="round-control"><label for="round-${s.id}">${t('chooseRound')}</label>
+    <select id="round-${s.id}" data-round="${s.id}" ${canWrite ? '' : 'disabled'}><option value="" ${selected.round ? '' : 'selected'}>${selected.state === 'stale' ? t('roundStale') : t('roundAuto')}</option>
+    ${choices.map(r => `<option value="${r.key}" ${selected.round?.key === r.key ? 'selected' : ''}>${esc(roundName(r))}${r.end ? ` · ${t('deadline')} ${esc(evText(r.end))}` : ''}</option>`).join('')}</select>
+    ${selected.round ? `<a href="${esc(safeURL(selected.round.src || selected.round.end?.src || selected.round.result?.src || s.links.apply))}" target="_blank" rel="noopener noreferrer">${t('roundSource')} ↗</a>` : ''}</div>`;
 }
 
 // ---- sections ----
@@ -221,7 +271,9 @@ function newsSection() {
 }
 function mineSection() {
   const order = {applied: 0, want: 1, admitted: 2};
-  const mine = data.schools.filter(s => order[statusMap[s.id]] !== undefined).sort((a, b) => order[statusMap[a.id]] - order[statusMap[b.id]] || TIER_ORDER[a.tier] - TIER_ORDER[b.tier]);
+  const priority = s => { const task = nextStep(s, statusMap[s.id]);
+    return task.kind === 'deadline' && dayDiff(TODAY, task.due) <= 7 ? 0 : ['closed', 'result-ready'].includes(task.kind) || (task.kind === 'result' && task.due === TODAY) ? 1 : 2 + order[statusMap[s.id]]; };
+  const mine = data.schools.filter(s => order[statusMap[s.id]] !== undefined).sort((a, b) => priority(a) - priority(b) || TIER_ORDER[a.tier] - TIER_ORDER[b.tier]);
   const counts = STATUS.slice(1).map(([k, a, b]) => [k, zh() ? a : b, data.schools.filter(s => statusMap[s.id] === k).length]).filter(x => x[2]);
   const pending = cloud.ready && cloud.writable && Object.entries(localStatus).some(([k, v]) => VALID.has(v) && !cloud.docs[k]);
   const sync = cloud.ready ? (cloud.writable ? (zh() ? '☁ 雲端同步：在任何裝置打開這頁都看到同一份' : '☁ ထပ်တူ') : (zh() ? '☁ 雲端資料（你只能看，不能改）' : '☁ ကြည့်ရုံသာ')) : (zh() ? '只存在這台裝置（換手機看不到）' : 'ဤဖုန်းတွင်သာ');
@@ -229,7 +281,8 @@ function mineSection() {
   <div class="mine-sum">${counts.map(([k, l, n]) => `<span class="st-${k}">${esc(l)} <b>${n}</b></span>`).join('') || `<span class="muted">${zh() ? '在學校卡片右上角選「要報」「已報名」，這裡就會列出下一步要做什麼。' : 'ကျောင်းကတ်တွင် အခြေအနေ ရွေးပါ။'}</span>`}<button class="btn ghost" data-action="copy">${t('copy')}</button></div>
   ${pending ? `<p class="hint">${zh() ? '這台裝置有之前存的標記還沒放上雲端。' : ''}<button class="fclear" data-action="upload">${zh() ? '放上雲端' : 'တင်ရန်'}</button></p>` : ''}
   <textarea id="copy-box" class="copy-box" readonly hidden></textarea>
-  ${mine.length ? `<div class="mine-list">${mine.map(s => { const st = statusMap[s.id], n = nextStep(s, st), note = draftOf(s.id), canWrite = !cloud.ready || cloud.writable; return `<article class="mine-row st-${st}"><div class="mr-top"><h3><button class="linkish" data-jump="${s.id}">${esc(s.short)}</button> <span class="km">${s.km} ${t('kmUnit')}</span></h3>${statusSelect(s, 'mine')}</div>
+  ${mine.length ? `<p class="hint">${zh() ? '先選實際申請的季別與梯次；7 天內截止、已到放榜日的項目優先顯示。' : 'လျှောက်သည့်အကြိမ်ကို ရွေးပါ။ အရေးကြီးသောရက် အရင်ပြသည်။'}</p><div class="mine-list">${mine.map(s => { const st = statusMap[s.id], n = nextStep(s, st), note = draftOf(s.id), canWrite = !cloud.ready || cloud.writable; return `<article class="mine-row st-${st}" data-progress-school="${s.id}"><div class="mr-top"><h3><button class="linkish" data-jump="${s.id}">${esc(s.short)}</button> <span class="km">${s.km} ${t('kmUnit')}</span></h3>${statusSelect(s, 'mine')}</div>
+    ${roundControl(s)}
     <p class="next ${n.cls}">${esc(n.text)}</p>
     <div class="note-box"><label for="note-${s.id}" class="sr">${t('note')} ${esc(s.short)}</label><textarea id="note-${s.id}" data-note="${s.id}" aria-describedby="draft-${s.id}" rows="2" maxlength="500" placeholder="${zh() ? '備註：例如「國際處要補高中文件」「已寄出 10/20」' : 'မှတ်ချက်'}" ${canWrite ? '' : 'readonly'}>${esc(note)}</textarea>${canWrite ? `<button class="btn ghost" data-save="${s.id}">${t('save')}</button>` : ''}</div><small class="draft-hint" id="draft-${s.id}" ${Object.hasOwn(drafts, s.id) ? '' : 'hidden'}>${t('draft')}</small></article>`; }).join('')}</div>` : ''}</section>`;
 }
@@ -318,7 +371,11 @@ function passes(s) {
 }
 function statusSelect(s, where) {
   const v = statusMap[s.id] || '';
-  return `<label class="status st-${v || 'none'}"><span class="sr">${t('status')} ${esc(s.short)}</span><select id="st-${where}-${s.id}" data-status="${s.id}">${STATUS.map(([k, a, b]) => `<option value="${k}" ${k === v ? 'selected' : ''}>${esc(zh() ? a : b)}</option>`).join('')}</select></label>`;
+  return `<label class="status st-${v || 'none'}"><span class="sr">${t('status')} ${esc(s.short)}</span><select id="st-${where}-${s.id}" data-status="${s.id}" ${cloud.ready && !cloud.writable ? 'disabled' : ''}>${STATUS.map(([k, a, b]) => `<option value="${k}" ${k === v ? 'selected' : ''}>${esc(zh() ? a : b)}</option>`).join('')}</select></label>`;
+}
+function compareButton(s) {
+  const active = compareIds.includes(s.id);
+  return `<button id="compare-card-${s.id}" class="compare-button" data-compare="${s.id}" aria-pressed="${active}">${active ? '✓ ' : '＋ '}${active ? t('compared') : t('addCompare')}<span class="sr"> ${esc(s.short)}</span></button>`;
 }
 function roundsTable(s, term) {
   const T = s.terms[term];
@@ -336,7 +393,7 @@ function schoolCard(s) {
   <dl class="quad"><div><dt>${t('fSpring')}</dt><dd class="${sp.cls}">${esc(sp.text)}</dd></div><div><dt>${t('fFee')}</dt><dd class="${fee.cls}">${esc(fee.text)}</dd></div><div><dt>${t('fCost')}</dt><dd class="${cost.cls}">${esc(cost.text)}${cost.note ? `<small>${esc(cost.note)}</small>` : ''}</dd></div><div><dt>${zh() ? '新生優惠' : 'ပညာသင်ဆု'}</dt><dd class="${sure ? 'good' : rev && !/未核得|讀不到|沒有/.test(rev) ? 'warn' : 'muted'}">${sure ? (zh() ? '確定有' : 'သေချာ') : rev && !/未核得|讀不到|沒有/.test(rev) ? (zh() ? '要審查' : 'စစ်ဆေး') : (zh() ? '沒有／沒查到' : 'မရှိ/မသိ')}</dd></div></dl>
   ${(() => { const b = bizTop(s), note = noteOf(s.id); const c = []; if (b) c.push(`<span class="chip biz">${t('bizShort')}：${esc(deptShort(b.dept))} ${b.count} ${zh() ? '人' : 'ဦး'}（${esc(b.year)}${b.term === 'spring' ? (zh() ? '春' : '') : b.term === 'fall' ? (zh() ? '秋' : '') : ''}）</span>`); if (note) c.push(`<span class="chip note">✎ ${esc(note.length > 26 ? note.slice(0, 26) + '…' : note)}</span>`); return c.length ? `<p class="s-chips">${c.join('')}</p>` : ''; })()}
   <p class="verdict">${esc(zh() ? s.verdict : s.verdictMy)}</p>${!zh() ? `<p class="verdict-zh" lang="zh-Hant">${esc(s.verdict)}</p>` : ''}
-  <button class="more" data-toggle="${s.id}" aria-expanded="${isOpenCard}" aria-controls="d-${s.id}">${isOpenCard ? t('hide') : t('details')}</button>
+  <div class="school-actions">${compareButton(s)}<button class="more" data-toggle="${s.id}" aria-expanded="${isOpenCard}" aria-controls="d-${s.id}">${isOpenCard ? t('hide') : t('details')}</button></div>
   <div class="s-detail" id="d-${s.id}" ${isOpenCard ? '' : 'hidden'}>
    <section><h4>${t('aidHow')}</h4>${sure ? `<p><span class="tag good">${t('sure')}</span> ${esc(sure)}</p>` : ''}${rev ? `<p><span class="tag warn">${t('review')}</span> ${esc(rev)}</p>` : ''}</section>
    <section><h4>${t('renew')}</h4><p>${esc(s.renew)}</p></section>
@@ -366,6 +423,41 @@ function schoolsSection() {
   <div class="view-tools"><p>${zh() ? '搜尋與篩選同時套用到下方比較表。連結只分享篩選，不含備註。' : 'ရှာဖွေမှုနှင့် စစ်ထုတ်မှုသည် နှိုင်းယှဉ်ဇယားတွင်လည်း အကျုံးဝင်သည်။'}</p><button class="btn ghost" data-action="share-view">${t('shareView')}</button></div><input id="share-box" aria-label="${esc(t('shareView'))}" class="copy-box" readonly hidden>
   <div id="school-list">${L.html}</div></section>`;
 }
+function sourceLink(url, year = '') {
+  if (!url) return '';
+  return `<a class="cell-source" href="${esc(safeURL(url))}" target="_blank" rel="noopener noreferrer">${esc(year)} ${zh() ? '官方來源' : 'ရင်းမြစ်'} ↗</a>`;
+}
+function focusComparison() {
+  const schools = compareIds.map(id => data.schools.find(s => s.id === id));
+  if (!schools.length) return `<div class="compare-intro"><strong>${zh() ? '先挑 2–3 間，逐項比較' : '၂–၃ ကျောင်းရွေး၍ နှိုင်းယှဉ်ပါ'}</strong><p>${zh() ? '在學校卡片按「加入比較」。費用、語言與獎學金會放在同一張表，搜尋或改篩選也不會清掉已選學校。' : 'ကျောင်းကတ်တွင် ရွေးပါ။ ရှာဖွေမှု ပြောင်းလည်း ရွေးထားမှု မပျောက်ပါ။'}</p></div>`;
+  const rows = [
+    [t('fCost'), s => { const c = costView(s); return `<strong class="${c.cls}">${esc(c.text)}</strong><small>${esc(c.note)}</small>${sourceLink(s.tuition?.src, s.tuition?.year)}`; }],
+    [t('fFee'), s => { const f = feeView(s.fee); return `<strong class="${f.cls}">${esc(f.text)}</strong><small>${esc(s.fee.text)}</small>${sourceLink(s.fee.src, s.fee.year)}`; }],
+    [t('fKm'), s => `${s.km} ${t('kmUnit')}<small>${esc(s.place)}</small><small>${zh() ? '距離不等於通勤時間' : 'ခရီးချိန် မဟုတ်ပါ'}</small>`],
+    [zh() ? '最近官方截止' : 'နောက်ဆုံးရက်', s => {
+      const window = windowsOf(s).filter(w => w.end >= TODAY).sort((a, b) => a.end.localeCompare(b.end))[0];
+      if (!window) return `<span class="muted">${zh() ? '沒有尚未截止的官方梯次' : 'တရားဝင်အချိန်ဇယား မရှိပါ'}</span>`;
+      const r = roundChoices(s).find(r => r.key === `${window.term}:${window.round}`);
+      return `<strong>${ymd(window.end)}</strong><small>${esc(roundName({...window, round: window.round}))}</small>${isUnconfirmed(window, TODAY) ? `<small class="warn">${t('pendingStart')}</small>` : ''}${sourceLink(r?.end?.src || r?.src)}`;
+    }],
+    [zh() ? '春季可報情況' : 'နွေဦး', s => { const spring = springView(s); return `<span class="${spring.cls}">${esc(spring.text)}</span>`; }],
+    [zh() ? '秋季可報梯次放榜' : 'ဆောင်းဦး ရလဒ်', s => { const e = nextResult(s, 'fall', TODAY, data.arcExpiry); return `<span class="${evClass(e)}">${esc(evText(e))}</span>${sourceLink(e?.src, e?.sourceYear)}`; }],
+    [t('lang'), s => esc(s.lang)],
+    [t('sure'), s => s.aid.sure ? `<span class="good">${esc(s.aid.sure)}</span>` : `<span class="muted">${zh() ? '未核得確定優惠' : 'မအတည်ပြုနိုင်သေး'}</span>`],
+    [t('review'), s => esc(s.aid.review || (zh() ? '尚未核得' : 'မသိရသေး'))],
+    [t('renew'), s => esc(s.renew)],
+    [t('bizShort'), s => { const b = bizTop(s); return b ? `${esc(b.dept)} <b>${b.count}</b> ${zh() ? '人' : 'ဦး'}<small>${esc(b.year)} ${b.term === 'spring' ? (zh() ? '春' : 'နွေဦး') : b.term === 'fall' ? (zh() ? '秋' : 'ဆောင်းဦး') : ''}</small>${sourceLink(b.src)}` : '—'; }],
+    [t('status'), s => statusSelect(s, 'focus')],
+  ];
+  return `<div class="focus-comparison"><div class="focus-head"><h2>${t('focusedCompare')} <span class="count">${schools.length}/3</span></h2><button class="fclear" data-action="clear-compare">${t('clearCompare')}</button></div>
+    <p class="hint">${zh() ? '固定保留這幾間，與上方篩選分開。手機可左右滑；學雜費不含申請費、住宿與生活費。各項金額仍須核對來源年度。' : 'ရွေးထားမှုသည် စစ်ထုတ်မှုနှင့် မဆိုင်ပါ။ ဇယားကို ဘယ်ညာရွှေ့ပါ။ အဆောင်နှင့် နေထိုင်စရိတ် မပါ။'}</p>
+    <div class="scroll focus-scroll" tabindex="0" role="region" aria-label="${esc(t('focusedCompare'))}"><table class="focus-table" style="--schools:${schools.length}"><caption class="sr">${t('focusedCompare')}：${schools.map(s => esc(s.short)).join('、')}</caption><thead><tr><th scope="col">${zh() ? '比較項目' : 'အချက်အလက်'}</th>${schools.map(s => `<th scope="col"><button class="linkish" data-jump="${s.id}">${esc(s.short)}</button><small>${esc(s.abbr)}</small><button class="remove-compare" data-compare="${s.id}" aria-label="${esc(t('removeCompare') + ' ' + s.short)}">× ${t('removeCompare')}</button></th>`).join('')}</tr></thead>
+    <tbody>${rows.map(([label, cell]) => `<tr><th scope="row">${esc(label)}</th>${schools.map(s => `<td data-focus-school="${s.id}">${cell(s)}</td>`).join('')}</tr>`).join('')}</tbody></table></div></div>`;
+}
+function compareTray() {
+  if (!compareIds.length) return '';
+  return `<aside class="compare-tray" aria-label="${esc(t('focusedCompare'))}"><div class="wrap"><div><strong>${t('focusedCompare')} ${compareIds.length}/3</strong><small>${compareIds.map(id => esc(data.schools.find(s => s.id === id).short)).join(' · ')}</small></div><a class="btn" href="#compare">${t('goCompare')} ↗</a><button class="fclear" data-action="clear-compare">${t('clearCompare')}</button></div></aside>`;
+}
 function compareSection() {
   const resultFor = (s, term) => nextResult(s, term, TODAY, data.arcExpiry);
   const resultKey = (s, term) => { const e = resultFor(s, term); return e?.date || e?.sort || null; };
@@ -386,7 +478,7 @@ function compareSection() {
     ? `<th scope="col" aria-sort="${sortKey === key ? (direction === 1 ? 'ascending' : 'descending') : 'none'}"><button data-sort="${key}">${esc(label)}${sortKey === key ? (direction === 1 ? ' ↑' : ' ↓') : ''}</button></th>`
     : `<th scope="col">${esc(label)}</th>`;
   const resultCell = e => `<td class="num ${evClass(e)}">${e ? esc(evText(e)) : '—'}</td>`;
-  return `<section class="wrap block" id="compare"><div class="block-head"><h2>${t('compare')} <span class="count" id="compare-count">${rows.length}/${data.schools.length}</span></h2>
+  return `<section class="wrap block" id="compare" tabindex="-1">${focusComparison()}<div class="block-head all-compare-head"><h2>${zh() ? '全部符合篩選的學校' : 'စစ်ထုတ်ထားသောကျောင်းများ'} <span class="count" id="compare-count">${rows.length}/${data.schools.length}</span></h2>
     <p>${zh() ? '跟隨上方搜尋與篩選。點表頭切換升冪／降冪；未知值排最後。放榜只比較尚未截止的梯次，已報名者請看「我的申請」。' : 'အပေါ်မှ စစ်ထုတ်မှုအတိုင်း။ ခေါင်းစဉ်နှိပ်၍ အစဉ်ပြောင်းပါ။ မသိသောတန်ဖိုး နောက်ဆုံးထားသည်။'}</p></div>
     <p class="hint compare-legend">${zh() ? '學雜費：綠色已扣確定優惠；橘色尚未扣審查型獎學金。商管上榜人數保留原榜單口徑，不是錄取率。表格可左右滑動。' : 'ဇယားကို ဘယ်ညာ ရွှေ့ကြည့်နိုင်သည်။'}</p>
     ${rows.length ? `<div class="scroll" tabindex="0" role="region" aria-label="${esc(t('compare'))}"><table class="cmp"><thead><tr>
@@ -422,12 +514,13 @@ function render() {
   document.documentElement.lang = zh() ? 'zh-Hant' : 'my';
   document.title = zh() ? '偉銓選校板' : '偉銓 · ကျောင်းရွေးဘုတ်';
   syncStatusMap();
-  root.innerHTML = `${header()}${navBar()}<main>${profile()}${overview()}${newsSection()}${mineSection()}${nowSection()}${chances()}${schoolsSection()}${compareSection()}${residenceSection()}</main><footer class="wrap foot"><p>${esc(t('foot')).replace('2026/09/29', ymd(data.updated))}</p><p><a href="./index.html?lang=${lang}&weiquan=1">${esc(t('allSite'))}</a></p></footer>`;
+  document.body.classList.toggle('has-comparison', compareIds.length > 0);
+  root.innerHTML = `${header()}${navBar()}<main>${profile()}${overview()}${newsSection()}${mineSection()}${nowSection()}${chances()}${schoolsSection()}${compareSection()}${residenceSection()}</main><footer class="wrap foot"><p>${esc(t('foot')).replace('2026/09/29', ymd(data.updated))}</p><p><a href="./index.html?lang=${lang}&weiquan=1">${esc(t('allSite'))}</a></p></footer>${compareTray()}`;
   updateURL();
 }
 function updateURL() {
   const url = new URL(location.href);
-  const values = {lang, q: query, filters: [...filters].sort().join(','), sort: sortKey === 'tier' ? '' : sortKey, dir: sortDirection === -1 ? 'desc' : ''};
+  const values = {lang, q: query, filters: [...filters].sort().join(','), sort: sortKey === 'tier' ? '' : sortKey, dir: sortDirection === -1 ? 'desc' : '', compare: compareIds.join(',')};
   for (const [key, value] of Object.entries(values)) value ? url.searchParams.set(key, value) : url.searchParams.delete(key);
   if (url.href !== location.href) history.replaceState(null, '', url.href);
 }
@@ -449,24 +542,33 @@ function progressText() {
   for (const [k, a, b] of STATUS.slice(1)) {
     const l = data.schools.filter(s => statusMap[s.id] === k);
     if (!l.length) continue;
-    lines.push(`【${zh() ? a : b}】` + l.map(s => { const n = k === 'no' ? null : nextStep(s, k), note = noteOf(s.id); return s.short + (n ? `（${n.text}）` : '') + (note ? `：${note}` : ''); }).join('\n  '));
+    lines.push(`【${zh() ? a : b}】` + l.map(s => { const n = k === 'no' ? null : nextStep(s, k), note = noteOf(s.id), r = resolveRound(s, roundOf(s.id)).round; return s.short + (r ? `・${roundName(r)}` : '') + (n ? `（${n.text}）` : '') + (note ? `：${note}` : ''); }).join('\n  '));
   }
   if (lines.length === 1) lines.push(zh() ? '還沒標記學校。' : '—');
   return lines.join('\n');
 }
 // ---- progress writes (cloud when available, else this device) ----
 function rerenderKeep(focusId) { const y = window.scrollY; render(); window.scrollTo(0, y); if (focusId) document.getElementById(focusId)?.focus({preventScroll: true}); }
+const progressWrites = new Map();
 async function saveProgress(id, patch) {
+  const previous = progressWrites.get(id) || Promise.resolve();
+  const pending = previous.catch(() => {}).then(() => writeProgress(id, patch));
+  progressWrites.set(id, pending);
+  try { return await pending; }
+  finally { if (progressWrites.get(id) === pending) progressWrites.delete(id); }
+}
+async function writeProgress(id, patch) {
   if (!data.schools.some(s => s.id === id)) return false;
   if ('status' in patch && patch.status !== '' && !VALID.has(patch.status)) return false;
+  if (patch.round && resolveRound(data.schools.find(s => s.id === id), patch.round).state !== 'valid') return false;
   if (cloud.ready) {
     if (!cloud.writable) { toast(zh() ? '你沒有修改權限' : 'ပြင်ခွင့်မရှိ'); return false; }
     const cur = cloud.docs[id] || {};
-    const next = {status: patch.status ?? cur.status ?? '', note: patch.note ?? cur.note ?? '', updatedAt: new Date().toISOString()};
+    const next = {status: patch.status ?? cur.status ?? '', note: patch.note ?? cur.note ?? '', round: 'round' in patch ? patch.round : cur.round || null, updatedAt: new Date().toISOString()};
     try {
-      if (!next.status && !next.note) await cloud.db.doc('progress/' + id).delete();
+      if (!next.status && !next.note && !next.round) await cloud.db.doc('progress/' + id).delete();
       else await cloud.db.doc('progress/' + id).set(next);
-      if (!next.status && !next.note) delete cloud.docs[id]; else cloud.docs[id] = next;
+      if (!next.status && !next.note && !next.round) delete cloud.docs[id]; else cloud.docs[id] = next;
       return true;
     } catch (err) {
       if (err?.code === 'invalid_argument') { cloud.writable = false; toast(zh() ? '這個帳號不能修改雲端資料' : 'ပြင်ခွင့်မရှိ'); }
@@ -474,17 +576,33 @@ async function saveProgress(id, patch) {
       return false;
     }
   }
-  for (const [key, current, storageKey] of [['status', localStatus, 'wq-board-status'], ['note', localNotes, 'wq-board-notes']]) {
+  for (const [key, current, storageKey] of [['status', localStatus, 'wq-board-status'], ['note', localNotes, 'wq-board-notes'], ['round', localRounds, 'wq-board-rounds']]) {
     if (!(key in patch)) continue;
     const next = {...current};
     if (patch[key]) next[id] = patch[key]; else delete next[id];
     if (!store.set(storageKey, next)) { toast(t('saveError')); return false; }
-    if (key === 'status') localStatus = next; else localNotes = next;
+    if (key === 'status') localStatus = next; else if (key === 'note') localNotes = next; else localRounds = next;
   }
   return true;
 }
 document.addEventListener('click', async e => {
   const b = e.target.closest('button'); if (!b) return;
+  if (b.dataset.compare) {
+    const id = b.dataset.compare;
+    const fromComparison = !!b.closest('.focus-comparison');
+    if (!data.schools.some(s => s.id === id)) return;
+    if (!compareIds.includes(id) && compareIds.length === 3) { toast(t('compareLimit')); return; }
+    compareIds = compareIds.includes(id) ? compareIds.filter(value => value !== id) : [...compareIds, id];
+    if (!store.set('wq-board-compare', compareIds)) toast(t('saveError'));
+    const y = window.scrollY; render();
+    const focus = fromComparison ? document.querySelector('.focus-comparison [data-compare]') || document.getElementById('compare') : document.getElementById('compare-card-' + id);
+    focus?.focus({preventScroll: true}); window.scrollTo(0, y);
+    return;
+  }
+  if (b.dataset.action === 'clear-compare') {
+    if (!store.set('wq-board-compare', [])) { toast(t('saveError')); return; }
+    compareIds = []; rerenderKeep('compare'); return;
+  }
   if (b.dataset.action === 'news') { newsAll = !newsAll; rerenderKeep(); return; }
   if (b.dataset.save) {
     const id = b.dataset.save, v = (document.getElementById('note-' + id)?.value || '').trim().slice(0, 500);
@@ -493,7 +611,10 @@ document.addEventListener('click', async e => {
   }
   if (b.dataset.action === 'upload') {
     let success = true;
-    for (const [k, v] of Object.entries(localStatus)) if (VALID.has(v) && !cloud.docs[k]) success = await saveProgress(k, {status: v, note: localNotes[k] || ''}) && success;
+    for (const [k, v] of Object.entries(localStatus)) if (VALID.has(v) && !cloud.docs[k]) {
+      const s = data.schools.find(s => s.id === k), r = s && resolveRound(s, localRounds[k]).state === 'valid' ? localRounds[k] : null;
+      success = await saveProgress(k, {status: v, note: localNotes[k] || '', round: r}) && success;
+    }
     if (success) toast(zh() ? '已放上雲端' : 'တင်ပြီး'); rerenderKeep(); return;
   }
   if (b.dataset.lang) { lang = b.dataset.lang; store.set('wq-lang', lang); render(); document.getElementById('lang-' + lang)?.focus(); return; }
@@ -504,7 +625,7 @@ document.addEventListener('click', async e => {
   if (b.dataset.action === 'reset-view') { filters.clear(); query = ''; rerenderKeep('q'); return; }
   if (b.dataset.action === 'clear-search') { query = ''; document.getElementById('q').value = ''; updateLists(); document.getElementById('q').focus({preventScroll: true}); return; }
   if (b.dataset.action === 'share-view') {
-    const url = new URL(location.href); url.hash = 'schools'; url.searchParams.delete('today');
+    const url = new URL(location.href); url.hash = compareIds.length ? 'compare' : 'schools'; url.searchParams.delete('today'); url.searchParams.set('compare', compareIds.join(','));
     try { await navigator.clipboard.writeText(url.href); toast(t('viewCopied')); }
     catch { const box = document.getElementById('share-box'); box.hidden = false; box.value = url.href; box.focus(); box.select(); toast(t('copyFail')); }
     return;
@@ -516,7 +637,14 @@ document.addEventListener('click', async e => {
   }
 });
 document.addEventListener('change', async e => {
-  const n = e.target; if (!n.dataset?.status) return;
+  const n = e.target;
+  if (n.dataset?.round) {
+    const s = data.schools.find(s => s.id === n.dataset.round); if (!s) return;
+    if (n.value && !selectRound(s, n.value)) { rerenderKeep(n.id); return; }
+    await saveProgress(s.id, {round: n.value ? selectRound(s, n.value) : null});
+    rerenderKeep(n.id); return;
+  }
+  if (!n.dataset?.status) return;
   const id = n.dataset.status, focusId = n.id;
   if (await saveProgress(id, {status: n.value})) rerenderKeep(focusId); else rerenderKeep(focusId);
 });
@@ -542,7 +670,7 @@ async function initCloud() {
     cloud.db = db; cloud.writable = can !== false;
     db.collection('progress').onSnapshot(snap => {
       const docs = {};
-      for (const d of snap.docs) { if (!data.schools.some(s => s.id === d.id)) continue; const v = d.data() || {}; docs[d.id] = {status: VALID.has(v.status) ? v.status : '', note: typeof v.note === 'string' ? v.note.slice(0, 500) : ''}; }
+      for (const d of snap.docs) { if (!data.schools.some(s => s.id === d.id)) continue; const v = d.data() || {}; docs[d.id] = {status: VALID.has(v.status) ? v.status : '', note: typeof v.note === 'string' ? v.note.slice(0, 500) : '', round: record(v.round) && typeof v.round.key === 'string' && typeof v.round.signature === 'string' ? {key: v.round.key, signature: v.round.signature} : null}; }
       cloud.docs = docs; cloud.ready = true;
       const a = document.activeElement;
       if (a && (a.dataset?.note || a.id === 'q')) return; // don't wipe what someone is typing
@@ -555,6 +683,9 @@ try {
   const r = await fetch('./wq-board.json'); if (!r.ok) throw new Error('data');
   data = await r.json();
   const known = new Set(data.schools.map(s => s.id));
+  compareIds = cleanComparison(compareIds, known);
+  if (qs.has('compare')) store.set('wq-board-compare', compareIds);
+  localRounds = Object.fromEntries(Object.entries(localRounds).filter(([id, value]) => known.has(id) && record(value) && typeof value.key === 'string' && typeof value.signature === 'string').map(([id, value]) => [id, {key: value.key.slice(0, 20), signature: value.signature.slice(0, 20)}]));
   localStatus = Object.fromEntries(Object.entries(localStatus).filter(([id, value]) => known.has(id) && VALID.has(value)));
   for (const [kind, entries] of [['notes', localNotes], ['drafts', drafts]]) {
     const clean = Object.fromEntries(Object.entries(entries).filter(([id, value]) => known.has(id) && typeof value === 'string').map(([id, value]) => [id, value.slice(0, 500)]));
