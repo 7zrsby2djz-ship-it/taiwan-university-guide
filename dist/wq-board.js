@@ -34,7 +34,7 @@ const W = {
   chances: ['ARC 到期前還有 2 次機會', 'ARC မကုန်ခင် အခွင့်အရေး ၂ ကြိမ်'],
   schools: ['學校', 'ကျောင်းများ'],
   compare: ['比較表', 'နှိုင်းယှဉ်ဇယား'],
-  fSpring: ['2027 春', '2027 နွေဦး'], fFee: ['申請費', 'လျှောက်လွှာကြေး'], fCost: ['第一學期學雜費', 'ပထမ စာသင်နှစ်ဝက် ကျောင်းလခ'], fKm: ['距台中車站', 'ထိုင်ချုံးဘူတာမှ'],
+  fSpring: ['2027 春', '2027 နွေဦး'], fFall: ['2027 秋', '2027 ဆောင်းဦး'], fNext: ['下一次機會', 'နောက်တစ်ကြိမ်'], fFee: ['申請費', 'လျှောက်လွှာကြေး'], fCost: ['第一學期學雜費', 'ပထမ စာသင်နှစ်ဝက် ကျောင်းလခ'], fKm: ['距台中車站', 'ထိုင်ချုံးဘူတာမှ'],
   details: ['看全部重點', 'အသေးစိတ်ကြည့်ရန်'], hide: ['收起', 'ပိတ်ရန်'],
   aidHow: ['獎學金怎麼拿', 'ပညာသင်ဆု ဘယ်လိုရမလဲ'], sure: ['錄取或有證書就有', 'ဝင်ခွင့်ရရင် / လက်မှတ်ရှိရင် ရမည်'], review: ['要審查，不一定有', 'စစ်ဆေးရွေးချယ် · မသေချာ'],
   renew: ['怎麼續領', 'ဆက်ရရန် စည်းကမ်း'], tuition: ['學費', 'ကျောင်းလခ'], lang: ['語言門檻', 'ဘာသာစကား လိုအပ်ချက်'],
@@ -167,6 +167,27 @@ function springView(s) {
 }
 
 const windowsOf = s => officialWindows(s, data.arcExpiry);
+// The next undergraduate chance across both intakes: open now, opening soon, start unconfirmed, then past-year references.
+function nextChance(s) {
+  const termName = term => term === 'spring' ? t('fSpring') : t('fFall');
+  const live = windowsOf(s).filter(w => w.end >= TODAY);
+  const pick = (list, key) => [...list].sort((a, b) => key(a).localeCompare(key(b)))[0];
+  const open = pick(live.filter(isOpen), w => w.end);
+  if (open) return {cls: dayDiff(TODAY, open.end) <= 7 ? 'bad' : 'good', text: `${termName(open.term)} · ${zh() ? '報名到 ' : ''}${md(open.end)}${zh() ? '' : ' အထိ'}`};
+  const soon = pick(live.filter(isSoon), w => w.start);
+  if (soon) return {cls: 'good', text: `${termName(soon.term)} · ${md(soon.start)} ${t('opens')}`};
+  const pending = pick(live.filter(w => isUnconfirmed(w, TODAY)), w => w.end);
+  if (pending) return {cls: 'warn', text: `${termName(pending.term)} · ${t('pendingStart')}`};
+  const ref = pick(['spring', 'fall'].flatMap(term => undergraduateRounds(s, term, data.arcExpiry).map(r => ({term, r})))
+    .filter(({r}) => r.end && r.end.status !== 'official' && r.end.sort && r.end.sort >= TODAY), x => x.r.end.sort);
+  if (ref) {
+    const label = String(ref.r.end.label || '').replace(/^\d*\s*往年\s*/, '').replace(/\s*截止$/, '');
+    return {cls: 'past', text: `${termName(ref.term)} · ${t('past')} ${zh() ? label + ' 截止' : '~' + ref.r.end.sort.slice(0, 7).replace('-', '/')}`, small: zh() ? '今年還沒公告' : 'မကြေညာရသေး'};
+  }
+  const undated = ['spring', 'fall'].find(term => undergraduateRounds(s, term, data.arcExpiry).some(r => r.end && r.end.status !== 'official' && !r.end.sort));
+  if (undated) return {cls: 'muted', text: `${termName(undated)} · ${zh() ? '日期待公告' : 'ရက် မကြေညာရသေး'}`};
+  return {cls: 'muted', text: zh() ? '還沒查到下一次' : 'မသိရသေး'};
+}
 // Rounds with past-year references; this does not prove the school has not published newer dates.
 function refWindows(s) {
   const out = [];
@@ -255,7 +276,7 @@ function header() {
   <div class="bar-actions"><a class="ghost" href="./index.html?lang=${lang}&weiquan=1">${esc(t('allSite'))}</a><div class="seg" role="group" aria-label="Language"><button id="lang-zh" data-lang="zh" aria-pressed="${zh()}">繁中</button><button id="lang-my" data-lang="my" aria-pressed="${!zh()}" lang="my">မြန်မာ</button></div></div></div></header>`;
 }
 function navBar() {
-  const N = [['news', 'navNews'], ['mine', 'navMine'], ['now', 'navNow'], ['schools', 'navSchools'], ['compare', 'navCompare'], ['after', 'navAfter']].filter(([k]) => k !== 'news' || (data.changes || []).length);
+  const N = [['mine', 'navMine'], ['now', 'navNow'], ['news', 'navNews'], ['schools', 'navSchools'], ['compare', 'navCompare'], ['after', 'navAfter']].filter(([k]) => k !== 'news' || (data.changes || []).length);
   return `<nav class="jump" aria-label="${zh() ? '跳到' : 'သွားရန်'}"><div class="wrap jump-in">${N.map(([k, w]) => `<a href="#${k}">${esc(t(w))}${k === 'mine' && Object.keys(statusMap).length ? ` <b>${Object.values(statusMap).filter(v => v !== 'no').length}</b>` : ''}</a>`).join('')}</div></nav>`;
 }
 function newsSection() {
@@ -350,9 +371,9 @@ function chances() {
       zh: '2026/12 到 2027/5 報名。放榜在 ARC 到期（6/30）之後的梯次，板上已經拿掉。11 月若考到 B1：中教、中科可報的系變多，靜宜第一年補助從「學費」升到「學雜費」。', my: '2026/12–2027/5 လျှောက်။ နိုဝင်ဘာတွင် B1 ရရင် ဌာနပိုများ၊ ပညာသင်ဆု ပိုကောင်း။'},
   ];
   const bands = C.map((c, i) => `<span class="band ${c.k} ${c.ref ? 'ref' : ''}" style="left:${pos(c.a)}%;width:${Math.max(0, pos(c.b) - pos(c.a)).toFixed(2)}%"><i>${i + 1}</i></span>`).join('');
-  const ticks = ['2026-09-01', '2027-01-01', '2027-04-01', '2027-07-01', '2027-08-01'].map(d => `<span class="tick" style="left:${pos(d)}%">${d.slice(0, 7).replace('-', '/')}</span>`).join('');
+  const ticks = ['2026-09-01', '2026-12-01', '2027-03-01', '2027-06-01'].map((d, i) => `<span class="tick${i ? '' : ' start'}" style="left:${pos(d)}%">${d.slice(0, 7).replace('-', '/')}</span>`).join('');
   return `<section class="wrap block" id="chances"><div class="block-head"><h2>${t('chances')}</h2><p>${zh() ? '變更居留要在到期前送件，建議 2027/5 前拿到入學許可。' : '2027/5 မတိုင်ခင် ဝင်ခွင့်စာ ရအောင်လုပ်ပါ။'}</p></div>
-  <div class="track" role="img" aria-label="${zh() ? '2026/09 到 2027/08 的報名期與 ARC 到期日' : 'Timeline'}"><div class="rail">${bands}<span class="mk today" style="left:${pos(TODAY)}%"><b>${zh() ? '今天' : 'ယနေ့'}</b></span><span class="mk exam" style="left:${pos('2026-11-15')}%"><b>TOCFL</b></span><span class="mk arc" style="left:${pos('2027-06-30')}%"><b>ARC</b></span></div><div class="ticks">${ticks}</div></div>
+  <div class="track" role="img" aria-label="${zh() ? '2026/09 到 2027/08 的報名期與 ARC 到期日' : 'Timeline'}"><div class="rail">${bands}<span class="mk today${TODAY > '2026-10-01' ? ' flip' : ''}" style="left:${pos(TODAY)}%"><b>${zh() ? '今天' : 'ယနေ့'}</b></span><span class="mk exam" style="left:${pos('2026-11-15')}%"><b>TOCFL</b></span><span class="mk arc" style="left:${pos('2027-06-30')}%"><b>ARC</b></span></div><div class="ticks">${ticks}</div></div>
   <ol class="chance-list">${C.map((c, i) => `<li class="${c.k}"><span class="num">${i + 1}</span><div><strong>${esc(c.name[zh() ? 0 : 1])}</strong>${c.ref ? `<em>${zh() ? '往年推估' : 'ခန့်မှန်း'}</em>` : ''}<p>${esc(zh() ? c.zh : c.my)}</p><small>${t('result')} ${c.r}</small></div></li>`).join('')}</ol></section>`;
 }
 
@@ -386,11 +407,11 @@ function roundsTable(s, term) {
   return `<div class="scroll" tabindex="0" role="region" aria-label="${esc(label)}"><table class="rounds"><caption>${label}</caption><thead><tr><th>${t('round')}</th><th>${t('opens')}</th><th>${t('deadline')}</th><th>${t('result')}</th><th>${t('letter')}</th></tr></thead><tbody>${T.rounds.map((r, i) => `<tr><td>${i + 1}</td>${['start', 'end', 'result'].map(k => `<td class="${evClass(r[k])}">${esc(evText(r[k]))}</td>`).join('')}<td class="${evClass(letterEvent(r))}">${esc(evText(letterEvent(r)))}</td></tr>${r.note ? `<tr class="note-row"><td colspan="5">${esc(r.note)}</td></tr>` : ''}`).join('')}</tbody></table></div>`;
 }
 function schoolCard(s) {
-  const fee = feeView(s.fee), cost = costView(s), sp = springView(s), isOpenCard = openCards.has(s.id);
+  const fee = feeView(s.fee), cost = costView(s), sp = nextChance(s), isOpenCard = openCards.has(s.id);
   const sure = s.aid.sure, rev = s.aid.review;
   const lk = s.links, listLinks = s.lists;
   return `<article class="school tier-${s.tier}" id="s-${s.id}"><div class="s-top"><div class="s-name"><h3>${esc(s.short)} <span class="abbr">${esc(s.abbr)}</span>${isNewSchool(s) ? ` <span class="newb">${t('isNew')}</span>` : ''}</h3><p>${esc(s.name)}・${esc(s.place)}・${s.km} ${t('kmUnit')}</p></div>${statusSelect(s, 'card')}</div>
-  <dl class="quad"><div><dt>${t('fSpring')}</dt><dd class="${sp.cls}">${esc(sp.text)}</dd></div><div><dt>${t('fFee')}</dt><dd class="${fee.cls}">${esc(fee.text)}</dd></div><div><dt>${t('fCost')}</dt><dd class="${cost.cls}">${esc(cost.text)}${cost.note ? `<small>${esc(cost.note)}</small>` : ''}</dd></div><div><dt>${zh() ? '新生優惠' : 'ပညာသင်ဆု'}</dt><dd class="${sure ? 'good' : rev && !/未核得|讀不到|沒有/.test(rev) ? 'warn' : 'muted'}">${sure ? (zh() ? '確定有' : 'သေချာ') : rev && !/未核得|讀不到|沒有/.test(rev) ? (zh() ? '要審查' : 'စစ်ဆေး') : (zh() ? '沒有／沒查到' : 'မရှိ/မသိ')}</dd></div></dl>
+  <dl class="quad"><div><dt>${t('fNext')}</dt><dd class="${sp.cls}">${esc(sp.text)}${sp.small ? `<small>${esc(sp.small)}</small>` : ''}</dd></div><div><dt>${t('fFee')}</dt><dd class="${fee.cls}">${esc(fee.text)}</dd></div><div><dt>${t('fCost')}</dt><dd class="${cost.cls}">${esc(cost.text)}${cost.note ? `<small>${esc(cost.note)}</small>` : ''}</dd></div><div><dt>${zh() ? '新生優惠' : 'ပညာသင်ဆု'}</dt><dd class="${sure ? 'good' : rev && !/未核得|讀不到|沒有/.test(rev) ? 'warn' : 'muted'}">${sure ? (zh() ? '確定有' : 'သေချာ') : rev && !/未核得|讀不到|沒有/.test(rev) ? (zh() ? '要審查' : 'စစ်ဆေး') : (zh() ? '沒有／沒查到' : 'မရှိ/မသိ')}</dd></div></dl>
   ${(() => { const b = bizTop(s), note = noteOf(s.id); const c = []; if (b) c.push(`<span class="chip biz">${t('bizShort')}：${esc(deptShort(b.dept))} ${b.count} ${zh() ? '人' : 'ဦး'}（${esc(b.year)}${b.term === 'spring' ? (zh() ? '春' : '') : b.term === 'fall' ? (zh() ? '秋' : '') : ''}）</span>`); if (note) c.push(`<span class="chip note">✎ ${esc(note.length > 26 ? note.slice(0, 26) + '…' : note)}</span>`); return c.length ? `<p class="s-chips">${c.join('')}</p>` : ''; })()}
   <p class="verdict">${esc(zh() ? s.verdict : s.verdictMy)}</p>${!zh() ? `<p class="verdict-zh" lang="zh-Hant">${esc(s.verdict)}</p>` : ''}
   <div class="school-actions">${compareButton(s)}<button class="more" data-toggle="${s.id}" aria-expanded="${isOpenCard}" aria-controls="d-${s.id}">${isOpenCard ? t('hide') : t('details')}</button></div>
@@ -515,7 +536,7 @@ function render() {
   document.title = zh() ? '偉銓選校板' : '偉銓 · ကျောင်းရွေးဘုတ်';
   syncStatusMap();
   document.body.classList.toggle('has-comparison', compareIds.length > 0);
-  root.innerHTML = `${header()}${navBar()}<main>${profile()}${overview()}${newsSection()}${mineSection()}${nowSection()}${chances()}${schoolsSection()}${compareSection()}${residenceSection()}</main><footer class="wrap foot"><p>${esc(t('foot')).replace('2026/09/29', ymd(data.updated))}</p><p><a href="./index.html?lang=${lang}&weiquan=1">${esc(t('allSite'))}</a></p></footer>${compareTray()}`;
+  root.innerHTML = `${header()}${navBar()}<main>${profile()}${overview()}${mineSection()}${nowSection()}${newsSection()}${chances()}${schoolsSection()}${compareSection()}${residenceSection()}</main><footer class="wrap foot"><p>${esc(t('foot')).replace('2026/09/29', ymd(data.updated))}</p><p><a href="./index.html?lang=${lang}&weiquan=1">${esc(t('allSite'))}</a></p></footer>${compareTray()}`;
   updateURL();
 }
 function updateURL() {

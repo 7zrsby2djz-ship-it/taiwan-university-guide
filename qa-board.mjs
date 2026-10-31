@@ -72,6 +72,14 @@ assert.ok(!find('#d-1018').textContent.includes('往年 第2梯開始待確認')
 assert.ok(find('.cmp [data-jump="0007"]').closest('tr').textContent.includes('2027 年 5 月中旬'));
 assert.ok(!find('.cmp [data-jump="0007"]').closest('tr').textContent.includes('往年'), 'official approximate dates retain official status');
 assert.ok(find('.cmp [data-jump="1008"]').closest('tr').textContent.includes('2026/12/24'));
+const nextCell = id => find(`#s-${id} .quad div`).textContent;
+assert.ok(nextCell('1008').includes('2027 春') && nextCell('1008').includes('11/15'), 'next chance shows the open spring round');
+assert.ok(nextCell('0043').includes('2027 秋') && nextCell('0043').includes('往年') && !nextCell('0043').includes('往年 115 往年'), 'past-year fall reference is labelled once');
+assert.ok(nextCell('0025').includes('12/1'), 'official fall opening is shown when spring is graduate-only');
+assert.ok(nextCell('0001').includes('日期待公告'), 'undated rounds are not shown as missing schools');
+assert.ok(document.querySelector('main').innerHTML.indexOf('id="now"') < document.querySelector('main').innerHTML.indexOf('id="news"'), 'actions come before old update notes');
+assert.equal([...document.querySelectorAll('.ticks .tick')].length, 4, 'timeline ticks do not crowd at the end');
+console.log('PASS next chance: open spring, official fall opening, single past-year label, undated rounds, section order, timeline ticks.');
 
 input('#q', '台中 NTCU');
 assert.equal(document.querySelectorAll('.school').length, 1);
