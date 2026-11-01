@@ -320,6 +320,29 @@ section[id]{scroll-margin-top:64px}
 .focus-head{display:flex;align-items:center;justify-content:space-between;gap:12px}
 .focus-head h2{font-size:22px}
 .focus-comparison{margin-bottom:28px}
+.decision-panel{margin:18px 0 24px}
+.decision-panel>h3{font-size:18px;margin:0 0 5px}
+.decision-panel>.hint{margin:0 0 12px}
+.decision-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,290px),1fr));gap:12px;align-items:start}
+.decision-card{min-width:0;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px;overflow-wrap:anywhere}
+.decision-card-head{display:flex;align-items:baseline;gap:10px;border-bottom:2px solid var(--mint);padding-bottom:9px}
+.decision-card-head h4{font-size:20px;margin:0}
+.decision-card-head span{font-size:12px;color:var(--ink-2)}
+.decision-card dl{margin:12px 0}
+.decision-card dl>div{margin:0 0 12px}
+.decision-card dt{font-size:12px;color:var(--ink-2);margin-bottom:3px}
+.decision-card dd{margin:0;font-size:14px;font-weight:600;line-height:1.6}
+.decision-card dd small{display:block;margin-top:3px;font-size:12px;font-weight:400;color:var(--ink-2)}
+.decision-card .good{color:var(--good)}.decision-card .warn{color:var(--warn)}.decision-card .bad{color:var(--bad)}
+.inquiry-form{margin-top:12px;border-top:1px solid var(--line);padding-top:6px}
+.inquiry-form summary{cursor:pointer;padding:10px 0;min-height:44px;font-size:14px;font-weight:600;color:var(--teal)}
+.inquiry-form label{display:block;font-size:13px;margin-top:12px}
+.inquiry-form input{display:block;box-sizing:border-box;width:100%;min-width:0;border:1px solid var(--line);border-radius:8px;background:var(--paper);padding:10px;margin:5px 0 10px;font:inherit;font-size:16px;min-height:44px}
+.inquiry-form .btn{min-height:44px;white-space:normal;font-size:13px}
+.inquiry-form .hint{font-size:12px;margin:9px 0}
+.decision-language{font-size:13px;line-height:1.7;margin:6px 0 12px}
+.inquiry-text{box-sizing:border-box;min-height:250px;resize:vertical;font:inherit;font-size:14px;line-height:1.7;margin-bottom:8px}
+.inquiry-text:focus,.inquiry-form input:focus{outline:2px solid var(--teal);outline-offset:2px}
 .focus-scroll{margin-top:12px;border:1px solid var(--line);border-radius:12px;background:var(--card)}
 .focus-table{table-layout:fixed;width:100%;min-width:calc(110px + var(--schools) * 220px);font-size:14px}
 .focus-table th,.focus-table td{vertical-align:top;text-align:left;padding:12px 14px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);overflow-wrap:anywhere}

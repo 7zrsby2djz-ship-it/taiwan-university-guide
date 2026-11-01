@@ -27,6 +27,8 @@ Decision rules live in `dist/wq-core.js`. An official deadline alone does not pr
 
 On the personal board, “加入比較” pins up to three schools for a side-by-side comparison of costs, source years, deadlines, language requirements and scholarship conditions. These choices remain visible when search/filters change, persist on this device, and can be included in the public filter link. The 139-school directory is independent of this feature.
 
+“報名前先確認” summarizes each pinned school's undergraduate scope, application round, admission letter and cost source years for one selected intake. `dist/wq-decision.js` keeps uncertain openings, past-year references, conflicting dates and late letters explicit; it never scores personal eligibility. “準備詢問學校” creates an editable Chinese admissions inquiry using an optional target department. Drafts are stored on this device per school and intake, survive refresh, and are excluded from public comparison summaries and shared links. Copying does not send a message. See [the decision-workflow review](research/ux-2026-11-02/REPORT.md).
+
 “我的申請” can track one chosen semester/round per school. It stores the choice separately from the existing status and note, and shows the corresponding deadline, result or letter task. Historical and approximate events do not become exact countdowns. A signature detects changed/reordered intake data and asks the user to reselect; progress is not silently reassigned. Per-school progress writes are queued to preserve simultaneous round/note changes. See [the second-round review](research/ux-2026-10-31/ROUND2.md).
 
 ## Verification

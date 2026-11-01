@@ -4,6 +4,7 @@
 import {isDate, isLateRound, admissionLetter, undergraduateRounds, officialWindows, isOpen as openOn,
   isSoon as soonOn, isUnconfirmed, nextResult, compareNullable, matchesQuery, readView,
   cleanComparison, roundChoices, selectRound, resolveRound, taskForRound, INTAKES, matchesIntake} from './wq-core.js';
+import {decisionFor, inquiryText} from './wq-decision.js';
 
 const root = document.querySelector('#board');
 const esc = v => String(v ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -86,6 +87,12 @@ const W = {
   intake: ['目標季別', 'ဝင်ခွင့်ရာသီ'],
   copyCompare: ['複製比較摘要', 'နှိုင်းယှဉ်ချက် ကူးရန်'],
   compareCopied: ['比較摘要已複製，包含來源年度與連結', 'နှိုင်းယှဉ်ချက်နှင့် ရင်းမြစ် ကူးပြီး'],
+  decision: ['報名前先確認', 'မလျှောက်မီ စစ်ဆေးရန်'],
+  inquiry: ['準備詢問學校', 'ကျောင်းကို မေးရန် ပြင်ဆင်ပါ'],
+  department: ['想申請的科系（可留空）', 'လျှောက်လိုသည့်ဌာန (မဖြည့်လည်းရ)'],
+  generateInquiry: ['產生／重新產生草稿', 'မူကြမ်း ဖန်တီး / ပြန်ဖန်တီးရန်'],
+  copyInquiry: ['複製詢問草稿', 'မေးခွန်းမူကြမ်း ကူးရန်'],
+  inquiryCopied: ['詢問草稿已複製，請自行貼給學校', 'မူကြမ်း ကူးပြီး။ ကျောင်းထံ ကိုယ်တိုင် ပို့ပါ။'],
 };
 const STATUS = [['', '還沒決定', 'မဆုံးဖြတ်ရသေး'], ['want', '要報', 'လျှောက်မည်'], ['applied', '已報名', 'လျှောက်ပြီး'], ['admitted', '錄取', 'ဝင်ခွင့်ရ'], ['no', '不考慮', 'မလျှောက်']];
 const TIERS = {
@@ -101,6 +108,8 @@ let data, lang = store.get('wq-lang', 'zh'), localStatus = store.get('wq-board-s
   localRounds = store.get('wq-board-rounds', {}), compareIds = qs.has('compare') ? view.compareIds : store.get('wq-board-compare', []),
   {filters, sortKey, sortDirection, query} = view, intake = qs.has('term') ? view.intake : store.get('wq-board-intake', 'all'),
   openCards = new Set(), newsAll = false, refsExpanded = false, upcomingExpanded = false;
+let inquiryData = store.get('wq-board-inquiries', {});
+const openInquiries = new Set();
 if (!INTAKES.includes(intake)) intake = 'all';
 if (qs.has('term')) store.set('wq-board-intake', intake);
 if (intake === 'fall' && sortKey === 'result') sortKey = 'fall';
@@ -115,6 +124,7 @@ if (!record(localStatus)) localStatus = {};
 if (!record(localNotes)) localNotes = {};
 if (!record(drafts)) drafts = {};
 if (!record(localRounds)) localRounds = {};
+if (!record(inquiryData)) inquiryData = {};
 const VALID = new Set(['want', 'applied', 'admitted', 'no']);
 function syncStatusMap() {
   statusMap = {};
@@ -486,9 +496,55 @@ function sourceLink(url, year = '') {
   if (!url) return '';
   return `<a class="cell-source" href="${esc(safeURL(url))}" target="_blank" rel="noopener noreferrer">${esc(year)} ${zh() ? '官方來源' : 'ရင်းမြစ်'} ↗</a>`;
 }
+const inquiryKey = id => `${id}:${intake}`;
+function inquiryOf(id) {
+  const entry = inquiryData[inquiryKey(id)];
+  return {department: typeof entry?.department === 'string' ? entry.department.slice(0, 80) : '',
+    draft: typeof entry?.draft === 'string' ? entry.draft.slice(0, 8000) : ''};
+}
+function saveInquiry(id, patch) {
+  inquiryData[inquiryKey(id)] = {...inquiryOf(id), ...patch};
+  if (!store.set('wq-board-inquiries', inquiryData)) toast(zh() ? '草稿暫留此頁；此裝置無法儲存，請先複製' : 'မသိမ်းနိုင်ပါ။ မူကြမ်းကို အရင်ကူးပါ။');
+}
+function decisionPanel(schools) {
+  const words = (a, b) => zh() ? a : b;
+  const intro = `<h3>${t('decision')}</h3><p class="hint">${words('依目前季別整理招生資料；不是錄取機率或資格判定。已報名的梯次請看「我的申請」。', 'ရွေးထားသည့်ရာသီအတွက် အချက်အလက်သာ။ ဝင်ခွင့်အလားအလာ မဟုတ်ပါ။ လျှောက်ပြီးသူသည် မိမိလျှောက်လွှာကို ကြည့်ပါ။')}</p>`;
+  if (intake === 'all') return `<div class="decision-panel">${intro}<p>${words('先選一季，才能確認同一梯次的截止、入學許可與費用年度。', 'နောက်ဆုံးရက်၊ ဝင်ခွင့်စာနှင့် ကုန်ကျစရိတ် စစ်ရန် ရာသီတစ်ခုရွေးပါ။')}</p><div class="browse-actions"><button class="btn ghost" data-intake="spring">${t('fSpring')}</button><button class="btn ghost" data-intake="fall">${t('fFall')}</button></div></div>`;
+  return `<div class="decision-panel">${intro}<div class="decision-grid">${schools.map(s => {
+    const p = decisionFor(s, intake, TODAY, data.arcExpiry), r = p.round, entry = inquiryOf(s.id);
+    const scopes = {has: words('資料列有學士；仍須確認目標科系', 'ဘွဲ့ကြိုရှိသည်။ ဌာနကို ထပ်စစ်ပါ။'), grad: t('gradOnly'), none: t('noneTerm'), unknown: words('是否招學士仍待確認', 'ဘွဲ့ကြို လက်ခံမလား အတည်ပြုရန်')};
+    const times = {
+      open: words(`受理中 · ${r?.end?.date ? ymd(r.end.date) : ''} 截止`, `လက်ခံဆဲ · ${r?.end?.date || ''}`),
+      upcoming: words(`${r?.start?.date ? ymd(r.start.date) : ''} 開始`, `${r?.start?.date || ''} ဖွင့်မည်`),
+      'confirm-opening': words('有截止日；是否已開放待確認', 'နောက်ဆုံးရက်ရှိ၊ ဖွင့်မဖွင့် မသိ'),
+      historical: words('只有往年參考，當期日期待公告／核對', 'ယခင်နှစ်သာ၊ ယခုရာသီရက်စွဲ စစ်ရန်'),
+      conflict: words('官方資料有差異，先向學校確認', 'ရင်းမြစ်မတူ၊ ကျောင်းကို မေးပါ'),
+      closed: words('已查到的梯次均截止；追加招生待確認', 'သိထားသည့်အကြိမ်များ ပိတ်ပြီး၊ ထပ်ဖွင့်မလား မေးပါ'),
+      unknown: words('當期正式時程待確認', 'ယခုရာသီအချိန်ဇယား အတည်ပြုရန်'),
+    };
+    const officialLetter = ['official', 'tight', 'late'].includes(p.letterKind);
+    const letterText = officialLetter ? `${ymd(p.letter.date)} · ${p.letterKind === 'late' ? words('晚於 ARC 到期', 'ARC ကုန်ပြီးနောက်') : words(`比 ARC 到期早 ${p.gap} 天${p.letterKind === 'tight' ? '，時間緊' : ''}`, `ARC မကုန်မီ ${p.gap} ရက်${p.letterKind === 'tight' ? '၊ အချိန်နည်းသည်' : ''}`)}`
+      : p.letterKind === 'historical' ? words('只有往年寄發參考，當期許可日期待確認', 'ယခင်နှစ်သာ၊ ယခုရာသီဝင်ခွင့်စာရက် မသိ')
+      : words('尚無可用的當期許可日期；放榜不等於取得許可', 'ယခုရာသီဝင်ခွင့်စာရက် မသိ။ ရလဒ်ရက်နှင့် မတူပါ။');
+    const checks = [
+      [words('學士範圍', 'ဘွဲ့ကြို'), scopes[p.ug] || scopes.unknown, ['grad', 'none'].includes(p.ug) ? 'bad' : 'warn', ''],
+      [words('報名時程', 'လျှောက်ရက်'), times[p.timing], ['open', 'upcoming'].includes(p.timing) ? 'good' : 'warn', r ? `${esc(roundName(r))}${r.end ? ` · ${t('deadline')} ${esc(evText(r.end))}` : ''}` : ''],
+      [t('letter'), letterText, p.letterKind === 'official' ? 'good' : p.letterKind === 'late' ? 'bad' : 'warn', officialLetter ? esc(words('此為公告日期，須另確認下載／寄達時間與居留辦理。', 'ကြေညာရက်သာ။ ရရှိချိန်နှင့် ARC လုပ်ငန်းစဉ်ကို ထပ်စစ်ပါ။')) : ''],
+      [words('費用年度', 'ကုန်ကျစရိတ်နှစ်'), words(`申請費：${s.fee.year || '待確認'}；學雜費：${s.tuition?.year || '待確認'}`, `လျှောက်လွှာကြေး: ${s.fee.year || '—'} · ကျောင်းလခ: ${s.tuition?.year || '—'}`), p.feeCurrent && p.tuitionCurrent ? 'good' : 'warn', esc(words(p.feeCurrent && p.tuitionCurrent ? '來源年度相符；仍須核對目標科系及獎助資格。' : '有費用未核到目標年度，優惠金額先作參考。', p.feeCurrent && p.tuitionCurrent ? 'နှစ်ကိုက်ညီသည်။ ဌာနနှင့် ပညာသင်ဆု စည်းကမ်းစစ်ပါ။' : 'ယခုနှစ်အတွက် မအတည်ပြုရသေး၊ ကိုးကားသာ။'))],
+    ];
+    return `<article class="decision-card" data-decision-school="${s.id}"><div class="decision-card-head"><h4>${esc(s.short)}</h4><span>${esc(s.abbr)}</span></div><dl>${checks.map(([label, text, cls, detail]) => `<div><dt>${esc(label)}</dt><dd class="${cls}">${esc(text)}${detail ? `<small>${detail}</small>` : ''}</dd></div>`).join('')}</dl>${sourceLink(p.source, r?.end?.sourceYear || s.terms[intake]?.year)}
+      <details class="inquiry-form" data-inquiry-fold="${s.id}" ${openInquiries.has(inquiryKey(s.id)) ? 'open' : ''}><summary>${t('inquiry')}</summary>
+        <p class="hint">${words('語言依科系而異，先看已查到的條件：', 'ဘာသာစကားလိုအပ်ချက်သည် ဌာနအလိုက် မတူပါ။')}</p><p class="decision-language">${esc(s.lang)}</p>
+        <label for="dept-${s.id}">${t('department')}</label><input id="dept-${s.id}" data-department="${s.id}" maxlength="80" value="${esc(entry.department)}" placeholder="${words('例如：企業管理學系', 'ဥပမာ: စီးပွားရေးစီမံခန့်ခွဲမှု')}">
+        <button class="btn ghost" data-generate-inquiry="${s.id}">${t('generateInquiry')}</button>
+        <p class="hint">${words('中文草稿可自行修改；重新產生會依目前科系重寫。科系與草稿只存這台裝置，不放進分享連結。', 'တရုတ်မူကြမ်းကို ပြင်နိုင်သည်။ ပြန်ဖန်တီးလျှင် အသစ်ရေးမည်။ ဤစက်တွင်သာ သိမ်းပြီး မျှဝေလင့်ခ်တွင် မပါ။')}</p>
+        <div id="inquiry-output-${s.id}" ${entry.draft ? '' : 'hidden'}><label for="inquiry-${s.id}">${words('給招生單位的中文草稿', 'ကျောင်းထံပို့ရန် တရုတ်မူကြမ်း')}</label><textarea id="inquiry-${s.id}" data-inquiry-draft="${s.id}" class="copy-box inquiry-text" maxlength="8000" lang="zh-Hant">${esc(entry.draft)}</textarea><button class="btn" data-copy-inquiry="${s.id}">${t('copyInquiry')}</button></div>
+      </details></article>`;
+  }).join('')}</div></div>`;
+}
 function focusComparison() {
   const schools = compareIds.map(id => data.schools.find(s => s.id === id));
-  if (!schools.length) return `<div class="compare-intro"><strong>${zh() ? '先挑 2–3 間，逐項比較' : '၂–၃ ကျောင်းရွေး၍ နှိုင်းယှဉ်ပါ'}</strong><p>${zh() ? '在學校卡片按「加入比較」。費用、語言與獎學金會放在同一張表，搜尋或改篩選也不會清掉已選學校。' : 'ကျောင်းကတ်တွင် ရွေးပါ။ ရှာဖွေမှု ပြောင်းလည်း ရွေးထားမှု မပျောက်ပါ။'}</p></div>`;
+  if (!schools.length) return `<div class="compare-intro"><strong>${zh() ? '先挑 2–3 間，逐項比較' : '၂–၃ ကျောင်းရွေး၍ နှိုင်းယှဉ်ပါ'}</strong><p>${zh() ? '在學校卡片按「加入比較」，就能看報名前檢查、整理詢問學校的草稿，再比較費用與獎助。搜尋或改篩選也會保留已選學校。' : 'ကျောင်းကတ်တွင် ရွေးပြီး မလျှောက်မီ စစ်ဆေးရန်၊ ကျောင်းကိုမေးရန်နှင့် ကုန်ကျစရိတ် နှိုင်းယှဉ်ရန်။ ရှာဖွေမှု ပြောင်းလည်း ရွေးထားမှု မပျောက်ပါ။'}</p></div>`;
   const rows = [
     [t('fCost'), s => { const c = costView(s); return `<strong class="${c.cls}">${esc(c.text)}</strong><small>${esc(c.note)}</small>${sourceLink(s.tuition?.src, s.tuition?.year)}`; }],
     [t('fFee'), s => { const f = feeView(s.fee); return `<strong class="${f.cls}">${esc(f.text)}</strong><small>${esc(s.fee.text)}</small>${sourceLink(s.fee.src, s.fee.year)}`; }],
@@ -511,7 +567,7 @@ function focusComparison() {
   ];
   return `<div class="focus-comparison"><div class="focus-head"><h2>${t('focusedCompare')} <span class="count">${schools.length}/3</span></h2><div class="browse-actions"><button class="btn ghost" data-action="copy-compare">${t('copyCompare')}</button><button class="fclear" data-action="clear-compare">${t('clearCompare')}</button></div></div><p class="comparison-scope">${t('intake')}：${esc(intakeName())}</p><textarea id="compare-copy-box" class="copy-box" aria-label="${esc(t('copyCompare'))}" readonly hidden></textarea>
     <p class="hint">${zh() ? '固定保留這幾間，與上方篩選分開。手機可左右滑；學雜費不含申請費、住宿與生活費。各項金額仍須核對來源年度。' : 'ရွေးထားမှုသည် စစ်ထုတ်မှုနှင့် မဆိုင်ပါ။ ဇယားကို ဘယ်ညာရွှေ့ပါ။ အဆောင်နှင့် နေထိုင်စရိတ် မပါ။'}</p>
-    <div class="scroll focus-scroll" tabindex="0" role="region" aria-label="${esc(t('focusedCompare'))}"><table class="focus-table" style="--schools:${schools.length}"><caption class="sr">${t('focusedCompare')}：${schools.map(s => esc(s.short)).join('、')}</caption><thead><tr><th scope="col">${zh() ? '比較項目' : 'အချက်အလက်'}</th>${schools.map(s => `<th scope="col"><button class="linkish" data-jump="${s.id}">${esc(s.short)}</button><small>${esc(s.abbr)}</small><button class="remove-compare" data-compare="${s.id}" aria-label="${esc(t('removeCompare') + ' ' + s.short)}">× ${t('removeCompare')}</button></th>`).join('')}</tr></thead>
+    ${decisionPanel(schools)}<div class="scroll focus-scroll" tabindex="0" role="region" aria-label="${esc(t('focusedCompare'))}"><table class="focus-table" style="--schools:${schools.length}"><caption class="sr">${t('focusedCompare')}：${schools.map(s => esc(s.short)).join('、')}</caption><thead><tr><th scope="col">${zh() ? '比較項目' : 'အချက်အလက်'}</th>${schools.map(s => `<th scope="col"><button class="linkish" data-jump="${s.id}">${esc(s.short)}</button><small>${esc(s.abbr)}</small><button class="remove-compare" data-compare="${s.id}" aria-label="${esc(t('removeCompare') + ' ' + s.short)}">× ${t('removeCompare')}</button></th>`).join('')}</tr></thead>
     <tbody>${rows.map(([label, cell]) => `<tr><th scope="row">${esc(label)}</th>${schools.map(s => `<td data-focus-school="${s.id}">${cell(s)}</td>`).join('')}</tr>`).join('')}</tbody></table></div></div>`;
 }
 function compareTray() {
@@ -619,6 +675,8 @@ function comparisonText() {
       `${t('fFee')}：${fee.text}（${s.fee.year || t('unknownDate')}）`,
       `${t('fCost')}：${cost.text}${cost.note ? ` · ${cost.note}` : ''}（${s.tuition?.year || t('unknownDate')}）`,
       `${t('fKm')}：${s.km} ${t('kmUnit')}`, `${t('lang')}：${s.lang}`);
+    const decision = decisionFor(s, intake, TODAY, data.arcExpiry);
+    if (decision.kind === 'plan' && (!decision.feeCurrent || !decision.tuitionCurrent)) lines.push(zh() ? '有費用未核到目標年度，優惠金額先作參考。' : 'ယခုနှစ် ကုန်ကျစရိတ် မအတည်ပြုရသေး၊ ကိုးကားသာ။');
     if (s.aid.sure) lines.push(`${t('sure')}：${s.aid.sure}`);
     if (s.aid.review) lines.push(`${t('review')}：${s.aid.review}`);
     const source = nextOfficialWindow(s);
@@ -673,6 +731,21 @@ async function writeProgress(id, patch) {
 }
 document.addEventListener('click', async e => {
   const b = e.target.closest('button'); if (!b) return;
+  if (b.dataset.generateInquiry) {
+    const s = data.schools.find(s => s.id === b.dataset.generateInquiry);
+    if (!s || !['spring', 'fall'].includes(intake)) return;
+    const draft = inquiryText(s, intake, inquiryOf(s.id).department, decisionFor(s, intake, TODAY, data.arcExpiry));
+    saveInquiry(s.id, {draft});
+    const output = document.getElementById('inquiry-output-' + s.id), box = document.getElementById('inquiry-' + s.id);
+    output.hidden = false; box.value = draft; box.focus({preventScroll: true});
+    toast(zh() ? '草稿已產生，可修改後複製' : 'မူကြမ်း ဖန်တီးပြီး၊ ပြင်ပြီး ကူးနိုင်သည်။'); return;
+  }
+  if (b.dataset.copyInquiry) {
+    const box = document.getElementById('inquiry-' + b.dataset.copyInquiry); if (!box) return;
+    try { await navigator.clipboard.writeText(box.value); toast(t('inquiryCopied')); }
+    catch { box.focus(); box.select(); toast(t('copyFail')); }
+    return;
+  }
   if (b.dataset.intake && INTAKES.includes(b.dataset.intake)) {
     intake = b.dataset.intake; store.set('wq-board-intake', intake);
     if (intake === 'fall' && sortKey === 'result') sortKey = 'fall';
@@ -747,6 +820,12 @@ document.addEventListener('change', async e => {
   if (await saveProgress(id, {status: n.value})) rerenderKeep(focusId); else rerenderKeep(focusId);
 });
 document.addEventListener('input', e => {
+  if (e.target.dataset?.department || e.target.dataset?.inquiryDraft) {
+    const id = e.target.dataset.department || e.target.dataset.inquiryDraft;
+    if (!data.schools.some(s => s.id === id) || !['spring', 'fall'].includes(intake)) return;
+    saveInquiry(id, e.target.dataset.department ? {department: e.target.value.slice(0, 80)} : {draft: e.target.value.slice(0, 8000)});
+    return;
+  }
   if (e.target.dataset?.note) {
     const id = e.target.dataset.note;
     drafts[id] = e.target.value.slice(0, 500);
@@ -759,6 +838,10 @@ document.addEventListener('input', e => {
 document.addEventListener('toggle', e => {
   if (e.target.id === 'reference-fold') refsExpanded = e.target.open;
   if (e.target.id === 'upcoming-fold') upcomingExpanded = e.target.open;
+  if (e.target.dataset?.inquiryFold) {
+    const key = inquiryKey(e.target.dataset.inquiryFold);
+    e.target.open ? openInquiries.add(key) : openInquiries.delete(key);
+  }
 }, true);
 
 // Light up shared progress when this view can use the artifact database. Never blocks first paint.
@@ -774,7 +857,7 @@ async function initCloud() {
       for (const d of snap.docs) { if (!data.schools.some(s => s.id === d.id)) continue; const v = d.data() || {}; docs[d.id] = {status: VALID.has(v.status) ? v.status : '', note: typeof v.note === 'string' ? v.note.slice(0, 500) : '', round: record(v.round) && typeof v.round.key === 'string' && typeof v.round.signature === 'string' ? {key: v.round.key, signature: v.round.signature} : null}; }
       cloud.docs = docs; cloud.ready = true;
       const a = document.activeElement;
-      if (a && (a.dataset?.note || a.id === 'q')) return; // don't wipe what someone is typing
+      if (a && (a.dataset?.note || a.dataset?.department || a.dataset?.inquiryDraft || a.id === 'q')) return; // don't wipe what someone is typing
       rerenderKeep(a?.id);
     }, () => {});
   } catch { /* stay on this-device mode */ }
