@@ -1,6 +1,13 @@
 // Shared decision rules. Sorting keys are never evidence of an exact date.
 export const FILTERS = ['now', 'local', 'sure', 'free', 'biz', 'mine'];
 export const SORTS = ['tier', 'km', 'cost', 'result', 'fall', 'biz', 'fee'];
+export const INTAKES = ['all', 'spring', 'fall'];
+
+export function matchesIntake(school, intake) {
+  if (intake === 'all') return true;
+  // Unknown scope stays visible for verification, never as a confirmed window.
+  return ['has', 'unknown'].includes(school.terms[intake]?.ug);
+}
 
 export function isDate(value) {
   return typeof value === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(value)
@@ -73,6 +80,7 @@ export function readView(params) {
     sortKey: SORTS.includes(params.get('sort')) ? params.get('sort') : 'tier',
     sortDirection: params.get('dir') === 'desc' ? -1 : 1,
     compareIds: (params.get('compare') || '').split(',').filter(Boolean),
+    intake: INTAKES.includes(params.get('term')) ? params.get('term') : 'all',
   };
 }
 

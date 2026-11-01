@@ -275,6 +275,20 @@ section[id]{scroll-margin-top:64px}
 .overview a span{font-size:14px;overflow-wrap:anywhere}
 .overview a span:last-child{margin-left:auto;color:var(--teal)}
 .snapshot{margin:10px 0 0;color:var(--ink-2);font-size:12px}
+#browse{padding-block:12px}
+.browse-panel{border:1px solid var(--line);border-radius:12px;padding:16px;background:var(--card)}
+.browse-panel .block-head{margin-bottom:10px}
+.intake-controls{display:flex;align-items:center;flex-wrap:wrap;gap:6px 14px;margin-bottom:12px}
+.intake-controls>strong{font-size:13px;color:var(--ink-2);font-weight:500}
+.intake-controls .seg{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));max-width:480px;width:100%}
+.intake-controls button{min-height:44px;min-width:0;white-space:normal;line-height:1.5}
+.browse-panel .filters{margin:12px 0}
+.browse-panel .view-tools{margin:0}
+.browse-actions{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px}
+.browse-actions button{min-height:44px}
+.mine-scope,.comparison-scope{margin:2px 0 10px;color:var(--ink-2);font-size:13px}
+.focus-head{flex-wrap:wrap}
+@media(max-width:520px){.browse-panel{padding:12px}.browse-panel .block-head h2{font-size:19px}.browse-panel .intake-controls button{padding-inline:6px;font-size:13px}.browse-panel .browse-actions{justify-content:space-between;width:100%}.focus-head .browse-actions{width:100%}.focus-head .browse-actions .btn{flex:1;justify-content:center}}
 .reference-fold{margin-top:20px;border:1px solid var(--line);border-radius:12px;padding:12px 14px}
 .reference-fold summary{cursor:pointer;font-weight:700;min-height:28px}
 .reference-fold summary span{font-size:13px;font-weight:400;color:var(--ink-2)}
