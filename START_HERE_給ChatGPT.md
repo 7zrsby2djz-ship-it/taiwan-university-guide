@@ -1,5 +1,7 @@
 # 給 ChatGPT：偉銓選校板交接（2026-10-05，Claude 整理）
 
+> 2026/11/01更新：最新39校逐欄查核與編輯來源在 `research/admissions-2026-11-01/README.md`。`board_data.py` 會明列載入該目錄六份已審閱JSON，接續修改須同時核對這一層，不能只改前面的舊S定義。仍以腳本再生 `dist/wq-board.json`，不要手改輸出。偉銓選校板正式網址為 https://taiwan-study-guide.adored-rhino-4625.chatgpt.site/weiquan?lang=zh ，GitHub與既有Sites同步發布。
+
 ## 一句話
 請幫忙**補資料**，不用改版面。要補的是 39 校的：申請費、放榜時間、商管系外籍生上榜人數、獎學金條件與續領方式。
 每校缺什麼，看根目錄的 **`待補清單.md`**（自動產生）。

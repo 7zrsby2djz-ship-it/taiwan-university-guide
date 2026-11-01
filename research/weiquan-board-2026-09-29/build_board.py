@@ -52,7 +52,10 @@ def within_arc(rounds):
     out = []
     for r in rounds:
         result = r.get('result') or {}
-        effective = r.get('letter') or result.get('date') or result.get('sort')
+        letter = r.get('letter')
+        if isinstance(letter, dict):
+            letter = letter.get('date') or letter.get('sort')
+        effective = letter or result.get('date') or result.get('sort')
         if effective and effective > '2027-06-30': continue
         out.append(r)
     return out
@@ -115,11 +118,12 @@ for sid, e in S.items():
         'bizAdmits': e.get('bizAdmits', []),
         'bizAdmitsNote': e.get('bizAdmitsNote'),
         'renewSource': e.get('renewSource'),
+        'audit': e.get('audit'),
         'links': {
-            'apply': (s.get('admission') or {}).get('url') or s.get('website'),
+            'apply': e.get('apply') or (s.get('admission') or {}).get('url') or s.get('website'),
             'website': s.get('website'),
-            'brochureSpring': (s['terms']['spring'].get('brochure') or {}).get('url'),
-            'brochureSpringYear': (s['terms']['spring'].get('brochure') or {}).get('academicYear'),
+            'brochureSpring': e.get('brochureSpring') or (s['terms']['spring'].get('brochure') or {}).get('url'),
+            'brochureSpringYear': e.get('brochureSpringYear') or (s['terms']['spring'].get('brochure') or {}).get('academicYear'),
             'brochureFall': e.get('brochureFall') or (s['terms']['fall'].get('brochure') or {}).get('url'),
             'brochureFallYear': e.get('brochureFallYear') or (s['terms']['fall'].get('brochure') or {}).get('academicYear'),
         },

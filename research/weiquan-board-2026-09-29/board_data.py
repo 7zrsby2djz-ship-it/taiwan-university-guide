@@ -2719,3 +2719,44 @@ CHANGES += [
  dict(date=U2, id='0001', kind='new', text='第 2 梯報名期寫進日程：2027/1/19–3/4（放榜日還沒公告）。'),
  dict(date=U2, id=None, kind='check', text='11/1 重查 2027 秋季：勤益、中科、中興、東海、逢甲、朝陽、亞洲、暨南、臺科、中央、成大、中山、北大、中正、北商、臺南的 116 秋季外國學生簡章都還沒公告，仍標「往年」。中科說 11–12 月公布。'),
 ]
+
+
+# Reviewed 2026-11-01 corrections. These explicit inputs are part of this
+# editorial layer; importing a new research draft must never publish it.
+def _apply_admissions_audit():
+    import json
+    from pathlib import Path
+    audit_dir = Path(__file__).resolve().parents[1] / 'admissions-2026-11-01'
+    seen = set()
+    for filename in ('priority.json', 'local.json', 'north.json', 'national.json', 'regional.json', 'remaining.json'):
+        audit = json.loads((audit_dir / filename).read_text())
+        for entry in audit['schools']:
+            sid = entry['id']
+            if sid not in S or sid in seen:
+                raise ValueError(f'Unexpected or duplicate audited school: {sid}')
+            seen.add(sid)
+            # Each supplied nested field is a complete replacement, so old
+            # scholarship years/amounts cannot leak into a new source object.
+            S[sid].update(entry['patch'])
+            S[sid]['checked'] = audit['checked']
+            sources = []
+            for source in entry['evidence']:
+                if source['url'] not in [s['url'] for s in sources]:
+                    sources.append({'url': source['url'], 'year': source.get('year', '')})
+            S[sid]['audit'] = {
+                'date': audit['checked'], 'fields': entry.get('checkedLabels', entry['checkedFields']),
+                'limitations': entry.get('limitations', []), 'sources': sources,
+            }
+            for term, replacement in entry.get('terms', {}).items():
+                if term not in ('spring', 'fall'):
+                    raise ValueError(f'Invalid term: {term}')
+                for rd in replacement.get('rounds', []):
+                    # Preserve event precision and source year for letters.
+                    if 'letterEvent' in rd:
+                        rd['letter'] = rd.pop('letterEvent')
+                ROUND_OVERRIDE[(sid, term)] = replacement
+    if seen != set(S):
+        raise ValueError(f'Audit coverage differs from the approved 39 schools: {set(S) - seen}')
+    return json.loads((audit_dir / 'changes.json').read_text())
+
+CHANGES = _apply_admissions_audit()

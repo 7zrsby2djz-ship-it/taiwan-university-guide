@@ -18,6 +18,9 @@ for s in sorted(b['schools'], key=lambda x: ('APBC'.index(x['tier']), x['km'])):
         if TT['ug'] == 'unknown':
             g.append(('春季' if term == 'spring' else '秋季') + '：學士有沒有開不知道')
         for i, r in enumerate(TT.get('rounds') or [], 1):
+            for key, title in (('start', '開始'), ('end', '截止')):
+                if (r.get(key) or {}).get('status') in ('unknown', 'conflict'):
+                    g.append(f"{'春' if term == 'spring' else '秋'}季第{i}梯：{title}日待核／來源有差異")
             res = r.get('result') or {}
             if not (res.get('date') or res.get('sort')):
                 g.append(f"{'春' if term == 'spring' else '秋'}季第{i}梯：放榜日沒有")
@@ -29,6 +32,8 @@ for s in sorted(b['schools'], key=lambda x: ('APBC'.index(x['tier']), x['km'])):
         g.append('續領方式：沒查到')
     elif '未核得' in s['renew']:
         g.append('續領條件：部分尚未核得')
+    if '衝突' in s['renew'] or '版本不一致' in s['renew']:
+        g.append('續領條件：官方來源版本有差異')
     if not s.get('tuition'):
         g.append('學雜費：沒有數字')
     if not s.get('bizAdmits'):
@@ -40,8 +45,9 @@ for s in sorted(b['schools'], key=lambda x: ('APBC'.index(x['tier']), x['km'])):
     rows.append((s, g, links))
 
 out = [f'# 選校板待補清單（{T} 產生）', '',
-       f'共 {len(rows)} 校。ARC 到期 {A}：放榜晚於這天的梯次不要加。',
+       f'共 {len(rows)} 校。ARC 到期 {A}：已知入學許可取得晚於這天的梯次不要加，不能只看放榜日。',
        '每補一項，都要附官方網址與學年度；簡章沒寫申請費 ≠ 免費。', '',
+       '本次查核範圍與未核得限制見 `research/admissions-2026-11-01/`；最後更新日不代表所有欄位均已換成本年度。', '',
        '| 優先 | 學校 | 還缺什麼 | 從哪裡查 |', '|---|---|---|---|']
 for s, g, links in rows:
     out.append(f"| {TIER[s['tier']]} | {s['id']} {s['short']} | {'<br>'.join(g) or '（大致齊全）'} | {'<br>'.join(f'[連結{i}]({u})' for i, u in enumerate(links[:3], 1)) or '學校官網'} |")

@@ -1,0 +1,325 @@
+{
+  "checked": "2026-11-01",
+  "schools": [
+    {
+      "id": "0039",
+      "checkedFields": [
+        "春季時程",
+        "申請費",
+        "報名入口"
+      ],
+      "patch": {
+        "apply": "https://insch.ntcu.edu.tw/",
+        "brochureSpring": "https://oia.ntcu.edu.tw/storage/media/W4NT9CD1uUPo9eA6KMtDqVYo5skoJ5OoHJhO2mNI.pdf",
+        "brochureSpringYear": "115-2",
+        "after": "2027 春季申請已於 2026/10/31 截止；12/17 放榜、12/24 寄發入學通知。10/22 停電公告說明系統於 10/31 21:00–11/1 21:00（臺灣時間）停用，建議提前上傳，並非延期受理。報到須交驗證過的學歷。2027 秋季當期簡章與時程仍待核對。",
+        "verdict": "市中心、公立，第一年學雜費減免。2027 春季已於 10/31 截止；國際企業系須聽、讀 B1，A2 不能直接視為符合商管門檻。秋季先看往年參考，等當期公告。",
+        "verdictMy": "ထိုင်ချုံးမြို့လယ်၊ အစိုးရကျောင်း။ ပထမနှစ် ကျောင်းလခ လျှော့ပေးသည်။ 2027 နွေဦးလျှောက်လွှာ 2026/10/31 တွင် ပိတ်ပြီး။ International Business အတွက် နားထောင်/ဖတ် B1 လိုသည်။ 2027 ဆောင်းဦး အချိန်ဇယားကို ထပ်စစ်ရန်။"
+      },
+      "terms": {},
+      "evidence": [
+        {
+          "url": "https://insch.ntcu.edu.tw/en/news_detail.php?sn=16",
+          "claim": "2026/7/31 春季公告：2026/8/1–10/31 受理。",
+          "year": "115-2"
+        },
+        {
+          "url": "https://insch.ntcu.edu.tw/en/news_detail.php?sn=19",
+          "claim": "2026/10/22 停電公告：10/31 21:00–11/1 21:00 停用，建議提前上傳，未公告延期。",
+          "year": "115-2"
+        },
+        {
+          "url": "https://oia.ntcu.edu.tw/storage/media/W4NT9CD1uUPo9eA6KMtDqVYo5skoJ5OoHJhO2mNI.pdf",
+          "claim": "115 英文簡章第2頁春季12/17結果、12/24通知，第9頁學士申請費NT$1,200／US$50。",
+          "year": "115"
+        }
+      ],
+      "limitations": [
+        "當期春季系統因公告停電暫停，下載附件曾回503；另由國際處同年度正式PDF核對時程與費用。",
+        "116 秋季當期簡章尚未核得；學費及續領細項保留原來源年度，不宣稱本次全部重核。"
+      ],
+      "checkedLabels": [
+        "春季招生與時程",
+        "申請費及適用年度",
+        "報名入口"
+      ]
+    },
+    {
+      "id": "0043",
+      "checkedFields": [
+        "春季招生學制",
+        "新生減免"
+      ],
+      "patch": {
+        "apply": "https://admission.ncut.edu.tw/",
+        "brochureSpring": "https://admission.ncut.edu.tw/parts/proofReaderNews.ashx?ii=_837988978077643.pdf",
+        "brochureSpringYear": "115-2",
+        "after": "2027 春季簡章招生名額與系所表只有碩博士，不能把 10/12–11/15、11/16–12/20 套用到學士。學士秋季仍以 115 往年第一梯 3/23–5/10、5/27 寄通知作參考，116 當期時程待核對。"
+      },
+      "terms": {
+        "spring": {
+          "ug": "grad",
+          "rounds": [],
+          "note": "115-2 正式簡章第7–13頁只列碩博士招生。",
+          "src": "https://admission.ncut.edu.tw/parts/proofReaderNews.ashx?ii=_837988978077643.pdf",
+          "year": "115-2"
+        }
+      },
+      "evidence": [
+        {
+          "url": "https://admission.ncut.edu.tw/parts/proofReaderNews.ashx?ii=_837988978077643.pdf",
+          "claim": "2026/9/29 公告115-2春季簡章，第7–13頁只列碩博士。第17頁（PDF18頁）入學獎助要點修正至115/1/5，明訂115學年起學士第一學年學雜費半額減免。",
+          "year": "115-2"
+        }
+      ],
+      "limitations": [
+        "春季研究所學費不能拿來覆蓋學士費用；學士仍保留115秋季來源。",
+        "116 秋季一般外國學士簡章與日期尚未核得。"
+      ],
+      "checkedLabels": [
+        "春季招生與時程",
+        "獎助學金條件"
+      ]
+    },
+    {
+      "id": "0050",
+      "checkedFields": [
+        "秋季公告版本",
+        "獎學金",
+        "續領方式",
+        "報名入口"
+      ],
+      "patch": {
+        "apply": "https://recruit.nutc.edu.tw/oia/ITNS",
+        "aid": {
+          "sure": "115 學年起適用：一般外國新生錄取後免另申請，第一學年註冊時每學期直接減免學雜費最高 25,000 元；不適用政府獎學金受獎生，經費不足得停止或按比例減少。",
+          "review": "舊生每學年審查，符合資格人數的前 1/5 名額每學期最高 50,000 元，其餘最高 25,000 元；須先繳當期註冊費，再依審查核發。"
+        },
+        "renew": "115/5/19 修正要點：學士最近一學年平均 75、操行 80；每學期服務 60 小時，第1學期未完成不得續領第2學期。每學年開學後2週內重申請，每次核給1學年；四技最多4年，政府獎學金不得並領，經費不足得縮減或停辦。",
+        "renewSource": "https://oia.nutc.edu.tw/var/file/42/1042/img/422285790.pdf",
+        "after": "只收秋季。官方頁的較新搜尋索引列 116 第一階段一般外國生 2026/11/10–12/28；但本次開啟同頁仍顯示尚未報名與舊版內容，報名系統也未能完整讀取，因此標記來源版本待核對，不啟動倒數。116 放榜與許可日期尚未核得，不沿用往年2月初當正式日期。",
+        "verdict": "市中心、公立，新生第一學年每學期最高減免25,000元。116早梯的官網索引列11/10–12/28，但頁面版本尚有差異，先準備資料，開放與截止日期須再核對。",
+        "verdictMy": "မြို့လယ်၊ အစိုးရကျောင်း။ ပထမနှစ် စာသင်ကာလတစ်ခုလျှင် NT$25,000 အထိ လျှော့။ 2027 ဆောင်းဦးအတွက် 11/10–12/28 ဟု ရှာဖွေမှုရလဒ်တွင် ဖော်ပြသော်လည်း တရားဝင်စာမျက်နှာဗားရှင်း ကွာခြားနေ၍ ရက်စွဲများ ထပ်စစ်ရန်။",
+        "readYourself": [
+          {
+            "label": "116 秋季第一階段公告版本待核對",
+            "url": "https://oia.nutc.edu.tw/p/412-1042-14296.php",
+            "why": "搜尋索引列2026/11/10–12/28，開啟頁面仍為舊版；尚無可核對的116放榜日。"
+          }
+        ]
+      },
+      "terms": {
+        "fall": {
+          "ug": "has",
+          "rounds": [
+            {
+              "start": {
+                "status": "conflict",
+                "label": "官網索引11/10；頁面版本待核對",
+                "sourceYear": "116",
+                "src": "https://oia.nutc.edu.tw/p/412-1042-14296.php"
+              },
+              "end": {
+                "status": "conflict",
+                "label": "官網索引12/28；頁面版本待核對",
+                "sourceYear": "116",
+                "src": "https://oia.nutc.edu.tw/p/412-1042-14296.php"
+              },
+              "result": {
+                "status": "unknown",
+                "label": "116 放榜日尚未核得",
+                "sourceYear": "116",
+                "src": "https://oia.nutc.edu.tw/p/412-1042-14296.php"
+              },
+              "note": "官方搜尋索引列一般外國生116秋季2026/11/10–12/28；開啟頁面仍為舊版，因此不當作已核定的報名倒數。僑港澳生11/23–12/20是另一管道，不套用。",
+              "src": "https://oia.nutc.edu.tw/p/412-1042-14296.php",
+              "year": "116"
+            }
+          ],
+          "note": "116 第一階段公告來源版本待核對；不沿用115放榜日。"
+        }
+      },
+      "evidence": [
+        {
+          "url": "https://oia.nutc.edu.tw/p/412-1042-14296.php",
+          "claim": "system1_search_query 2026/11/1 取得較新官方搜尋內容：一般外國生2026/11/10–12/28；open同網址仍為舊版，直接下載403，列為版本衝突。",
+          "year": "116"
+        },
+        {
+          "url": "https://oia.nutc.edu.tw/var/file/42/1042/img/422285790.pdf",
+          "claim": "115/5/19修正要點：新生免申請、每學期最高25,000，舊生75/80及60服務時數、前1/5最高50,000，經費不足可停辦或縮減。",
+          "year": "115起適用"
+        }
+      ],
+      "limitations": [
+        "116 報名日期有官方頁面與索引的版本差異，未標official；未核得116放榜日、許可日期及當期一般外國學士簡章。",
+        "學費仍保留114參考表；未宣稱升為116費用。"
+      ],
+      "checkedLabels": [
+        "秋季招生與時程",
+        "獎助學金條件",
+        "獎助續領規定",
+        "報名入口"
+      ]
+    },
+    {
+      "id": "1008",
+      "checkedFields": [
+        "春季時程",
+        "申請費未明示",
+        "獎助學金",
+        "續領方式",
+        "學費參考年度",
+        "報名入口"
+      ],
+      "patch": {
+        "apply": "https://mypu.pu.edu.tw/Framework/International/oia_oversea/admission/overseas?lang=en",
+        "aid": {
+          "sure": "一般外國學士依華語資格核給：入學申請前 TOCFL B1→第一學年學雜費同額助學金；A2→第一學年學費同額，雜費自付。須在申請系統產出、簽名並上傳助學金申請表，不能只憑有證書就省略申請。",
+          "review": "第二學年起按前學期班排名、操行及國際參與學習審核；每學期仍須在公告期限內申請。"
+        },
+        "renew": "第二學年起，前學期班排前15%：35,000元；15.01–30%：20,000元；30.01–50%：8,000元。須無懲處、完成10小時國際參與學習，依每學期公告期限申請；學士第二年起至多3年。",
+        "renewSource": "https://oia.pu.edu.tw/var/file/48/1048/img/626273731.pdf",
+        "tuition": {
+          "min": 44811,
+          "max": 53874,
+          "year": "114",
+          "text": "114學年每學期學雜費參考44,811–53,874元；管理／國際學院一般學系45,496元，其中學費37,282、雜費8,214。A2資格的第一年助學金僅抵學費，雜費及其他費用自付；116實際收費待當年度公告。",
+          "src": "https://oia.pu.edu.tw/p/426-1048-11.php"
+        },
+        "after": "2027春季第1梯已於2026/10/15截止、11/30放榜；第2梯10/16–11/15受理、12/24放榜，2027/2/22註冊。116秋季一般外國生簡章尚未核得；網站的2027秋季僑生簡章屬不同管道。",
+        "verdict": "A2可申請中文授課學士，第一年學費同額助學金須完成申請，雜費仍自付；B1才是學雜費同額。2027春季目前是第2梯，11/15截止、12/24放榜；116秋季須等當期一般外國生簡章。",
+        "verdictMy": "A2 ဖြင့် တရုတ်ဘာသာသင် ဘွဲ့ကြို လျှောက်နိုင်။ ပထမနှစ် ကျောင်းလခနှင့်ညီမျှသော ထောက်ပံ့ငွေအတွက် ဖောင်တင်ရန်လိုပြီး အထွေထွေကြေးကို ကိုယ်တိုင်ပေးရမည်။ B1 ဆို ကျောင်းလခနှင့် အထွေထွေကြေး နှစ်မျိုးလုံး။ 2027 နွေဦး ဒုတိယအကြိမ် 11/15 ပိတ်၊ 12/24 ရလဒ်ထွက်မည်။"
+      },
+      "terms": {},
+      "evidence": [
+        {
+          "url": "https://oia.pu.edu.tw/var/file/48/1048/img/1126/516627917.pdf",
+          "claim": "PDF正文為115學年（metadata舊標112），日程表春季第1梯10/15、11/30，第2梯11/15、12/24；全文未找到明文申請費或免收。",
+          "year": "115"
+        },
+        {
+          "url": "https://oia.pu.edu.tw/var/file/48/1048/img/626273731.pdf",
+          "claim": "113/3/20修正現行獎助辦法第10條：A2學費、B1學雜費同額；第2年起班排15/30/50%、35,000/20,000/8,000；10小時學習、每學期申請。",
+          "year": "113/3/20修正，現行頁連結"
+        },
+        {
+          "url": "https://oia.pu.edu.tw/p/426-1048-11.php",
+          "claim": "一般外國生助學金表須系統產出、簽名上傳；費用表明列2025–26即114參考年，管理學院37,282+8,214=45,496。",
+          "year": "114費用參考／現行招生頁"
+        }
+      ],
+      "limitations": [
+        "未找到申請費或免收的明文，維持silent。",
+        "116秋季一般外國學士簡章尚未核得，僑生116簡章不套用。",
+        "費用依114參考，助學金核定及撥付不等於一開始不必備繳費資金。"
+      ],
+      "checkedLabels": [
+        "春季招生與時程",
+        "申請費及適用年度",
+        "獎助學金條件",
+        "獎助續領規定",
+        "學雜費參考年度",
+        "報名入口"
+      ]
+    },
+    {
+      "id": "0015",
+      "checkedFields": [
+        "秋季時程",
+        "申請費",
+        "學費參考年度",
+        "新生減免",
+        "語言門檻",
+        "財力證明",
+        "報名入口"
+      ],
+      "patch": {
+        "apply": "https://aps.ncue.edu.tw/exampg_f/",
+        "brochureFall": "https://oicaweb.ncue.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9MelEwTDNCMFlWOHlOVEEyTlY4NU56VTVPVEkyWHpVeU5qZ3pMbkJrWmc9PQ==",
+        "brochureFallYear": "116",
+        "fee": {
+          "kind": "free",
+          "amount": 0,
+          "text": "116正式簡章第14頁：免繳申請費；最多可申請3個系所班組，錄取後擇一註冊。",
+          "src": "https://oicaweb.ncue.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9MelEwTDNCMFlWOHlOVEEyTlY4NU56VTVPVEkyWHpVeU5qZ3pMbkJrWmc9PQ==",
+          "year": "116"
+        },
+        "tuition": {
+          "min": 46936,
+          "max": 54031,
+          "year": "115",
+          "text": "116簡章引用115學年每學期參考表46,936–54,031元；管理學院47,594元（原板47,491已修正），其他費用另計；116以註冊當年公告為準。",
+          "src": "https://oicaweb.ncue.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9MelEwTDNCMFlWOHlOVEEyTlY4NU56VTVPVEkyWHpVeU5qZ3pMbkJrWmc9PQ=="
+        },
+        "lang": "116簡章：資管兩組須TOCFL聽、讀A2；企管與會計須聽、讀B1；財務金融技術須聽說讀寫B1。財力證明至少US$3,000，需最近3個月內開立；不是舊板US$2,500。企管僅招秋季。",
+        "renewSource": "https://oicaweb.ncue.edu.tw/var/file/19/1019/img/164/239068053.pdf",
+        "after": "116秋季第1梯2026/12/7–2027/3/5報名，5/21放榜、5/28寄發錄取通知。第2梯7/23放榜、7/30寄通知，晚於ARC而不列。2027春季原10/28結果延至2026年11月底，確切日期另公告；116簡章的春季是2028入學，不能覆蓋2027春季。",
+        "verdict": "離台中近、免申請費，新生第一年學雜費與校內宿舍依入學獎勵減免。116秋季已正式公告：12/7–3/5受理，5/21放榜、5/28寄通知；企管須聽讀B1，資管兩組A2。",
+        "verdictMy": "ထိုင်ချုံးနှင့်နီး၊ လျှောက်လွှာကြေးအခမဲ့။ ပထမနှစ် ကျောင်းလခနှင့် အဆောင် လျှော့ပေးသည်။ 2027 ဆောင်းဦး ပထမအကြိမ် 2026/12/7–2027/3/5 လျှောက်၊ 5/21 ရလဒ်၊ 5/28 ဝင်ခွင့်စာပို့မည်။ Business Administration အတွက် နားထောင်/ဖတ် B1 လိုသည်။ Information Management နှစ်အုပ်စု A2။"
+      },
+      "terms": {
+        "fall": {
+          "ug": "has",
+          "rounds": [
+            {
+              "start": {
+                "status": "official",
+                "date": "2026-12-07",
+                "sourceYear": "116",
+                "src": "https://oicaweb.ncue.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9MelEwTDNCMFlWOHlOVEEyTlY4NU56VTVPVEkyWHpVeU5qZ3pMbkJrWmc9PQ=="
+              },
+              "end": {
+                "status": "official",
+                "date": "2027-03-05",
+                "sourceYear": "116",
+                "src": "https://oicaweb.ncue.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9MelEwTDNCMFlWOHlOVEEyTlY4NU56VTVPVEkyWHpVeU5qZ3pMbkJrWmc9PQ=="
+              },
+              "result": {
+                "status": "official",
+                "date": "2027-05-21",
+                "sourceYear": "116",
+                "src": "https://oicaweb.ncue.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9MelEwTDNCMFlWOHlOVEEyTlY4NU56VTVPVEkyWHpVeU5qZ3pMbkJrWmc9PQ=="
+              },
+              "letter": "2027-05-28",
+              "note": "116正式簡章日程表（臺灣時間）；第2梯7月才有結果與通知，不列。",
+              "year": "116",
+              "src": "https://oicaweb.ncue.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9MelEwTDNCMFlWOHlOVEEyTlY4NU56VTVPVEkyWHpVeU5qZ3pMbkJrWmc9PQ=="
+            }
+          ]
+        }
+      },
+      "evidence": [
+        {
+          "url": "https://oicaweb.ncue.edu.tw/p/404-1019-24585.php?Lang=zh-tw",
+          "claim": "頁面標題仍115，但附件已含116一般外國學生正式簡章，與旁邊國際專修部、新型碩士專班分開。",
+          "year": "116"
+        },
+        {
+          "url": "https://oicaweb.ncue.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9MelEwTDNCMFlWOHlOVEEyTlY4NU56VTVPVEkyWHpVeU5qZ3pMbkJrWmc9PQ==",
+          "claim": "直接下載HTTP200、1,370,727 bytes；正文116。日程表視覺核對12/7–3/5、5/21、5/28；第14頁免費；第16–17頁引用115費用表管理47,594；第10頁財力US$3,000；第22頁商管語言。",
+          "year": "116（費用引用115）"
+        },
+        {
+          "url": "https://oicaweb.ncue.edu.tw/var/file/19/1019/img/164/239068053.pdf",
+          "claim": "現行111/11/23通過獎勵外國學生要點：新生第一年免學雜費並提供學生宿舍，免另申請，學士只限第一年。",
+          "year": "111修正現行要點"
+        }
+      ],
+      "limitations": [
+        "招生頁標題與附件年度不同，採PDF正文116並人工看過日程表；網頁工具長下載網址404，短官方下載網址本機HTTP200。",
+        "費用表明列115參考，不能宣稱116收費已定。",
+        "2027春季放榜延期保留10/15公告，116簡章春季欄屬2028。"
+      ],
+      "checkedLabels": [
+        "秋季招生與時程",
+        "申請費及適用年度",
+        "學雜費參考年度",
+        "獎助學金條件",
+        "語言門檻",
+        "財力證明",
+        "報名入口"
+      ]
+    }
+  ]
+}

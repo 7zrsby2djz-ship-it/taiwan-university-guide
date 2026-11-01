@@ -1,0 +1,703 @@
+{
+  "checked": "2026-11-01",
+  "scope": "一般外國學生學士；2027春115-2、2027秋116-1；ARC參考2027-06-30；目前TOCFL A2",
+  "schools": [
+    {
+      "id": "0036",
+      "name": "國立臺南大學",
+      "checkedFields": [
+        "spring.ug",
+        "fall.reference",
+        "fee.silent",
+        "tuition.year",
+        "aid",
+        "renew",
+        "lang.business"
+      ],
+      "patch": {
+        "fee": {
+          "kind": "silent",
+          "text": "已重讀 115 簡章；未找到申請費或明文免收的說明，不能當免費。",
+          "src": "https://campus.nutn.edu.tw/newsPost3/postFiles/101347_Admissions%20Guide%20for%20International%20Students%20for%20the%20115th%20Academic%20Year.pdf",
+          "year": "115"
+        },
+        "tuition": {
+          "min": 45691,
+          "max": 53183,
+          "year": "115",
+          "text": "每學期學費＋雜費參考 45,691–53,183 元。一般管理 46,091；依學院收費。",
+          "src": "https://campus.nutn.edu.tw/newsPost3/postFiles/101347_Admissions%20Guide%20for%20International%20Students%20for%20the%20115th%20Academic%20Year.pdf"
+        },
+        "aid": {
+          "sure": null,
+          "review": "115簡章：新生擇優審查，原則每系學雜費全免1名及依預算提供若干名本國生收費標準補助。全免含學雜、學分、資訊及平安保險費，並安排免費宿舍；不是錄取保證。",
+          "src": "https://campus.nutn.edu.tw/newsPost3/postFiles/101347_Admissions%20Guide%20for%20International%20Students%20for%20the%20115th%20Academic%20Year.pdf",
+          "year": "115"
+        },
+        "renew": "每學年重新申請，學士最多4年；在學生須前一學年（或兩學期）平均70以上、必修全過且無違法或重大過失。簡章列在學生8/15或2/10前申請；實際依當期公告。",
+        "lang": "115簡章：經營與管理學士要TOCFL B1（Level3）或HSK5，另列英語成績門檻（如IELTS 4.0）；目前只有A2不能直接認定符合該系。行政管理學士中文要求A2，另有英文門檻；116仍須核對當年系所表。",
+        "after": "2027春季僅碩博士。115往年秋季5/21放榜、回覆意願後6/12寄入學許可；116秋季正式日期及許可日本次未核得。",
+        "verdict": "公立但離台中遠。115經營與管理學士需中文B1並另列英文門檻；目前A2不足以直接報該系。2027春季不收一般學士，116秋日期待核。",
+        "verdictMy": "စီးပွားရေးဘွဲ့ကြိုအတွက် တရုတ်စာ B1 နှင့် အင်္ဂလိပ်စာ လိုသည်၊ A2 တစ်ခုတည်း မလုံလောက်ပါ။ 2027 နွေဦး ဘွဲ့ကြိုမဖွင့်ပါ။ ဆောင်းဦးရက်များ ထပ်စစ်ရန်။"
+      },
+      "terms": {
+        "spring": {
+          "ug": "grad",
+          "rounds": [],
+          "note": "115招生簡章第二梯次明定僅碩士、博士，2027春季不開一般學士。",
+          "src": "https://campus.nutn.edu.tw/newsPost3/postFiles/101347_Admissions%20Guide%20for%20International%20Students%20for%20the%20115th%20Academic%20Year.pdf",
+          "year": "115-2"
+        },
+        "fall": {
+          "ug": "has",
+          "rounds": [
+            {
+              "start": {
+                "status": "historical",
+                "sourceYear": "115-1",
+                "label": "1 月上旬",
+                "sort": "2027-01-01",
+                "src": "https://campus.nutn.edu.tw/newsPost3/postFiles/101347_Admissions%20Guide%20for%20International%20Students%20for%20the%20115th%20Academic%20Year.pdf"
+              },
+              "end": {
+                "status": "historical",
+                "sourceYear": "115-1",
+                "label": "4 月上旬",
+                "sort": "2027-04-01",
+                "src": "https://campus.nutn.edu.tw/newsPost3/postFiles/101347_Admissions%20Guide%20for%20International%20Students%20for%20the%20115th%20Academic%20Year.pdf"
+              },
+              "result": {
+                "status": "historical",
+                "sourceYear": "115-1",
+                "label": "5 月下旬",
+                "sort": "2027-05-21",
+                "src": "https://campus.nutn.edu.tw/newsPost3/postFiles/101347_Admissions%20Guide%20for%20International%20Students%20for%20the%20115th%20Academic%20Year.pdf"
+              },
+              "note": null
+            }
+          ],
+          "note": "116秋季正式日期本次未核得；下列維持115歷年參考。115秋季入學許可於2026/6/12寄發，不能將2027許可日視為已公告。"
+        }
+      },
+      "evidence": [
+        {
+          "url": "https://campus.nutn.edu.tw/newsPost3/postFiles/101347_Admissions%20Guide%20for%20International%20Students%20for%20the%20115th%20Academic%20Year.pdf",
+          "claim": "115時程表：秋季2026/1/5–4/9、5/21放榜、6/12核發寄出入學許可；春季只收碩博士。學費表標115參考標準；獎學金依名額與預算審查。",
+          "year": "115",
+          "webRef": "turn123view1"
+        },
+        {
+          "url": "https://campus.nutn.edu.tw/newsPost3/postFiles/101347_Admissions%20Guide%20for%20International%20Students%20for%20the%20115th%20Academic%20Year.pdf",
+          "claim": "經營與管理學士的中文門檻為TOCFL Level3/HSK5，另列英文成績；一般入學申請費及明文免收未核得。",
+          "year": "115",
+          "webRef": "turn93view0"
+        },
+        {
+          "url": "https://admissions.nutn.edu.tw/Admissions/",
+          "claim": "近期116公告含僑港澳及研究所；一般外國學士116簡章本次未核得，不把僑港澳9/29–11/10當一般外國生時程。",
+          "year": "截至2026-11-01",
+          "webRef": "turn70search2"
+        }
+      ],
+      "limitations": [
+        "申請費保留silent，沒有明文免收不能判免費。",
+        "116秋一般外國學士當期規定未核得；保留115參考，不將搜尋無結果寫成尚未公告。",
+        "本次未逐系比對所有科系的語言門檻。"
+      ],
+      "checkedLabels": [
+        "春季招生與時程",
+        "秋季招生與時程",
+        "申請費及適用年度",
+        "學雜費參考年度",
+        "獎助學金條件",
+        "獎助續領規定",
+        "語言門檻"
+      ]
+    },
+    {
+      "id": "0047",
+      "name": "國立高雄餐旅大學",
+      "checkedFields": [
+        "fall.scope",
+        "fall.reference",
+        "fee.silent",
+        "tuition.year",
+        "aid",
+        "renew",
+        "lang.general"
+      ],
+      "patch": {
+        "fee": {
+          "kind": "silent",
+          "text": "115一般外國生簡章未核得申請費或明文免收；116一般學士簡章尚待核對，不能當免費。",
+          "src": "https://international.nkuht.edu.tw/var/file/45/1045/img/811192071.pdf",
+          "year": "115參考；116待核"
+        },
+        "tuition": {
+          "min": 45961,
+          "max": 45961,
+          "year": "115",
+          "text": "每學期學費＋雜費參考 45,961–45,961 元。日間四年制學士；制服、材料、住宿等另計。",
+          "src": "https://international.nkuht.edu.tw/var/file/45/1045/img/811192071.pdf"
+        },
+        "aid": {
+          "sure": null,
+          "review": "現行官網：學士新生可申請學雜費全免、半免、宿舍全免或教學助理獎學金；均須提出申請及審查，依當年經費調整。",
+          "src": "https://international.nkuht.edu.tw/p/404-1045-7260.php?Lang=en",
+          "year": "官網2026-10-29更新；116依當期規定"
+        },
+        "renew": "第二學年起每學期開學前另行申請，交前兩學期成績；學業及操行各80以上、班排前50%。依學業、操行、班排排序；依獎項須服務25／20／15小時，未達標次學期取消，可達標後再申請。",
+        "lang": "現行一般說明：中文授課至少TOCFL A2，英文授課至少CEFR B1，須按系所授課語言交證明；116一般學位科系表仍待核，不能把博士培英招生系所套用給學士。",
+        "after": "撤回原列116秋一般學士11/2–12/17。10/29公告的116簡章只供博士培英；一般學位簡章預計11月底前公告。115往年兩梯放榜為3/20、5/29，僅作歷年參考，116許可日未核得。",
+        "verdict": "一般學士116正式時程待核。10/29公布的116簡章與目前系統項目只限博士培英，不能據此判斷偉銓11/2可報；目前只保留115歷年參考。",
+        "verdictMy": "ဘွဲ့ကြို 116 ပညာသင်နှစ် လျှောက်လွှာရက်များကို အတည်မပြုနိုင်သေးပါ။ လက်ရှိ 116 ကြေညာချက်မှာ ပါရဂူ Elite Scholarship အတွက်သာ ဖြစ်သည်။ ယခင်နှစ်ရက်များသည် ကိုးကားရန်သာ။"
+      },
+      "terms": {
+        "spring": {
+          "ug": "unknown",
+          "rounds": []
+        },
+        "fall": {
+          "ug": "has",
+          "rounds": [
+            {
+              "start": {
+                "status": "historical",
+                "label": "115往年10/30開始",
+                "sort": "2026-10-30",
+                "sourceYear": "115-1",
+                "src": "https://international.nkuht.edu.tw/var/file/45/1045/img/811192071.pdf"
+              },
+              "end": {
+                "status": "historical",
+                "label": "115往年12/15截止",
+                "sort": "2026-12-15",
+                "sourceYear": "115-1",
+                "src": "https://international.nkuht.edu.tw/var/file/45/1045/img/811192071.pdf"
+              },
+              "result": {
+                "status": "historical",
+                "label": "115往年3/20放榜",
+                "sort": "2027-03-20",
+                "sourceYear": "115-1",
+                "src": "https://international.nkuht.edu.tw/var/file/45/1045/img/811192071.pdf"
+              },
+              "note": "全部為115歷年參考；撤回原先誤列為116一般學士的11/2–12/17正式日期。116一般學位簡章依10/29公告預計11月底前公布。"
+            },
+            {
+              "start": {
+                "status": "historical",
+                "label": "115往年1/20開始",
+                "sort": "2027-01-20",
+                "sourceYear": "115-1",
+                "src": "https://international.nkuht.edu.tw/var/file/45/1045/img/811192071.pdf"
+              },
+              "end": {
+                "status": "historical",
+                "label": "115往年3/23截止",
+                "sort": "2027-03-23",
+                "sourceYear": "115-1",
+                "src": "https://international.nkuht.edu.tw/var/file/45/1045/img/811192071.pdf"
+              },
+              "result": {
+                "status": "historical",
+                "label": "115往年5/29放榜",
+                "sort": "2027-05-29",
+                "sourceYear": "115-1",
+                "src": "https://international.nkuht.edu.tw/var/file/45/1045/img/811192071.pdf"
+              },
+              "note": "115歷年參考，不是116正式梯次。"
+            }
+          ],
+          "note": "10/29官方公告目前116簡章僅博士培英申請者；一般學位簡章預計11月底前公告。當前系統亦只有博士培英項目。一般學士116報名、放榜及入學許可日未核得。",
+          "src": "https://international.nkuht.edu.tw/p/404-1045-34385.php?Lang=zh-tw",
+          "year": "116待核；115參考"
+        }
+      },
+      "evidence": [
+        {
+          "url": "https://international.nkuht.edu.tw/p/404-1045-34385.php?Lang=zh-tw",
+          "claim": "最後更新2026/10/29。116附件明示僅博士班培英；一般學位生簡章預計11月底前公告。這是撤銷一般學士11/2–12/17正式日期的直接範圍證據。",
+          "year": "116",
+          "webRef": "turn75view0"
+        },
+        {
+          "url": "https://examstd.nkuht.edu.tw/EnrollSTDFS/",
+          "claim": "系統1161僅列觀光所英文博士D11601，明示僅博士培英申請者，報名11/2–11/13；並非一般學士。",
+          "year": "116-1",
+          "webRef": "turn39view1"
+        },
+        {
+          "url": "https://international.nkuht.edu.tw/var/file/45/1045/img/119284130.pdf",
+          "claim": "當期116PDF封面同樣標博士培英專用；不可從內容範本推論一般學士適用。",
+          "year": "116",
+          "webRef": "turn21view0"
+        },
+        {
+          "url": "https://international.nkuht.edu.tw/var/file/45/1045/img/811192071.pdf",
+          "claim": "115一般招生兩梯確切日期：2025/10/30–12/15、2026/3/20放榜；2026/1/20–3/23、5/29放榜。學士學雜費每學期45961，額外制服、材料、住宿另計。",
+          "year": "115",
+          "webRef": "turn114view0"
+        },
+        {
+          "url": "https://international.nkuht.edu.tw/p/404-1045-7260.php?Lang=en",
+          "claim": "10/29更新頁區分學士新生獎項與二年級以上獎學金；學士成績/操行80與前50%，依獎項服務15–25小時。",
+          "year": "官網2026-10-29",
+          "webRef": "turn39view2"
+        }
+      ],
+      "limitations": [
+        "116一般學士申請費、正式申請與放榜/許可日期待當期一般學位簡章，不能用博士培英公告代替。",
+        "本檔將錯誤正式日期替換為已讀115歷年參考；沒有刪除可核實的115兩梯資料。",
+        "115 PDF原749130689.pdf目前重新導向811192071.pdf；引用採解析出的官方最終網址。"
+      ],
+      "checkedLabels": [
+        "秋季招生與時程",
+        "申請費及適用年度",
+        "學雜費參考年度",
+        "獎助學金條件",
+        "獎助續領規定",
+        "語言門檻"
+      ]
+    },
+    {
+      "id": "0024",
+      "name": "國立屏東科技大學",
+      "checkedFields": [
+        "spring.ug",
+        "fall.reference",
+        "fee.free",
+        "tuition.year",
+        "aid",
+        "lang.general"
+      ],
+      "patch": {
+        "fee": {
+          "kind": "free",
+          "amount": 0,
+          "text": "官網招生頁明載免申請費",
+          "src": "https://oia2.npust.edu.tw/zh/future-students/",
+          "year": "官網常態"
+        },
+        "tuition": {
+          "min": 44030,
+          "max": 48540,
+          "year": "115",
+          "text": "每學期學費＋雜費參考 44,030–48,540 元。管理類 44,030；依學院收費。",
+          "src": "https://oia2.npust.edu.tw/zh/wp-content/uploads/sites/2/2025/11/115學年度屏東科技大學招生簡章-中英文版-new-20260105.pdf"
+        },
+        "lang": "115一般外國生簡章：中文授課至少TOCFL A2，獸醫學士要求B1；英文授課至少CEFR B1。須再看各系表，不能把英文學程當中文A2即可。",
+        "after": "2027春季僅碩博士。116秋正式日期本次未核得；115往年1/1–3/31報名、6/15放榜作參考。115簡章說錄取名單於系統公告並逐一email通知，未另列一般學士入學許可寄發日。"
+      },
+      "terms": {
+        "spring": {
+          "ug": "grad",
+          "rounds": [],
+          "note": "115簡章明定2027春季僅碩博士，不收一般學士。",
+          "src": "https://oia2.npust.edu.tw/zh/wp-content/uploads/sites/2/2025/11/115學年度屏東科技大學招生簡章-中英文版-new-20260105.pdf",
+          "year": "115-2"
+        },
+        "fall": {
+          "ug": "has",
+          "rounds": [
+            {
+              "start": {
+                "status": "historical",
+                "sort": "2027-01-01",
+                "label": "115 往年 1/1 開始",
+                "sourceYear": "115",
+                "src": "https://oia2.npust.edu.tw/zh/wp-content/uploads/sites/2/2025/11/115學年度屏東科技大學招生簡章-中英文版-new-20260105.pdf",
+                "year": "115"
+              },
+              "end": {
+                "status": "historical",
+                "sort": "2027-03-31",
+                "label": "115 往年 3/31 截止",
+                "sourceYear": "115",
+                "src": "https://oia2.npust.edu.tw/zh/wp-content/uploads/sites/2/2025/11/115學年度屏東科技大學招生簡章-中英文版-new-20260105.pdf",
+                "year": "115"
+              },
+              "result": {
+                "status": "historical",
+                "sort": "2027-06-15",
+                "label": "115 往年 6/15 放榜",
+                "sourceYear": "115",
+                "src": "https://oia2.npust.edu.tw/zh/wp-content/uploads/sites/2/2025/11/115學年度屏東科技大學招生簡章-中英文版-new-20260105.pdf",
+                "year": "115"
+              },
+              "note": "115歷年資料，不是116正式報名、放榜日期。"
+            }
+          ],
+          "note": "116秋當期正式日期本次未核得；115往年時程保留作參考。",
+          "src": "https://oia2.npust.edu.tw/zh/wp-content/uploads/sites/2/2025/11/115學年度屏東科技大學招生簡章-中英文版-new-20260105.pdf",
+          "year": "115"
+        }
+      },
+      "evidence": [
+        {
+          "url": "https://oia2.npust.edu.tw/zh/future-students/",
+          "claim": "招生頁明載免收申請費；中文A2/英文B1，獸醫學士B1；網頁常態時間不可直接當116正式日期。",
+          "year": "官網常態",
+          "webRef": "turn19view1"
+        },
+        {
+          "url": "https://oia2.npust.edu.tw/zh/wp-content/uploads/sites/2/2025/11/115學年度屏東科技大學招生簡章-中英文版-new-20260105.pdf",
+          "claim": "115PDF封面適用2026秋及2027春；春季明定碩博士，秋季2026/1/1–3/31、6/15放榜。學士商管每學期44030；一般學士獎學金第一年不提供、第二年申請，熱帶農業少數新生獎項另計。",
+          "year": "115",
+          "webRef": "turn47view1"
+        },
+        {
+          "url": "https://oia2.npust.edu.tw/zh/getfile/外籍生招生簡章/",
+          "claim": "當前官網檔案下載頁所連仍為115中英文對照PDF；不能據此斷言116未公告，也不能升級115參考日期。",
+          "year": "截至2026-11-01",
+          "webRef": "turn43view0"
+        }
+      ],
+      "limitations": [
+        "116秋費用及招生日期未核得當期簡章，保留115/官網常態來源年度。",
+        "續領75/80分與7月申請來自原板111修正版，這次未重讀現行完整續領辦法，不在checkedFields標成已更新。",
+        "一般學士第一年獎學金none保留，熱帶農業例外不可套商管。"
+      ],
+      "checkedLabels": [
+        "春季招生與時程",
+        "秋季招生與時程",
+        "申請費及適用年度",
+        "學雜費參考年度",
+        "獎助學金條件",
+        "語言門檻"
+      ]
+    },
+    {
+      "id": "0020",
+      "name": "國立東華大學",
+      "checkedFields": [
+        "spring.ug",
+        "spring.rounds",
+        "fall.reference",
+        "fee.paid",
+        "tuition.year",
+        "aid.application",
+        "lang.general"
+      ],
+      "patch": {
+        "fee": {
+          "kind": "paid",
+          "amount": 1200,
+          "text": "NT$1,200，不退",
+          "src": "https://oia.ndhu.edu.tw/var/file/27/1027/img/4756/894840940.pdf",
+          "year": "115"
+        },
+        "tuition": {
+          "min": 48000,
+          "max": 55580,
+          "year": "114",
+          "text": "每學期學費＋雜費參考 48,000–55,580 元。115 簡章引用 114 估值，含表列保險、網路等其他費用。",
+          "src": "https://oia.ndhu.edu.tw/var/file/27/1027/img/4756/894840940.pdf"
+        },
+        "lang": "115簡章一般門檻：中文學程TOCFL A2以上；英語學士學程CEFR B1以上，系所另訂要求優先。不是所有商管系都能用中文A2直接申請。",
+        "after": "2027春季10/31已截止，115簡章列12/20公布錄取及獎學金結果。英文入口頁仍有2025舊年份錯植，採當期PDF；116秋正式日期及入學許可寄發日，本次未核得。"
+      },
+      "terms": {
+        "spring": {
+          "ug": "has",
+          "rounds": [
+            {
+              "start": {
+                "status": "official",
+                "date": "2026-09-01",
+                "sourceYear": "115",
+                "src": "https://oia.ndhu.edu.tw/var/file/27/1027/img/4756/894840940.pdf",
+                "year": "115"
+              },
+              "end": {
+                "status": "official",
+                "date": "2026-10-31",
+                "sourceYear": "115",
+                "src": "https://oia.ndhu.edu.tw/var/file/27/1027/img/4756/894840940.pdf",
+                "year": "115"
+              },
+              "result": {
+                "status": "official",
+                "date": "2026-12-20",
+                "sourceYear": "115",
+                "src": "https://oia.ndhu.edu.tw/var/file/27/1027/img/4756/894840940.pdf",
+                "year": "115"
+              },
+              "note": "採115 PDF正式日期；入口網頁2025舊年份與當期PDF不一致。"
+            }
+          ],
+          "note": "115簡章封面明載2026/9/1–10/31、12/20結果；英文入口頁仍有2025年份錯植，採當期PDF。",
+          "src": "https://oia.ndhu.edu.tw/var/file/27/1027/img/4756/894840940.pdf",
+          "year": "115"
+        },
+        "fall": {
+          "ug": "has",
+          "rounds": [
+            {
+              "start": {
+                "status": "historical",
+                "sourceYear": "115-1",
+                "label": "1 月上旬",
+                "sort": "2027-01-01",
+                "src": "https://oia.ndhu.edu.tw/var/file/27/1027/img/4756/894840940.pdf"
+              },
+              "end": {
+                "status": "historical",
+                "sourceYear": "115-1",
+                "label": "3 月中旬",
+                "sort": "2027-03-11",
+                "src": "https://oia.ndhu.edu.tw/var/file/27/1027/img/4756/894840940.pdf"
+              },
+              "result": {
+                "status": "historical",
+                "sourceYear": "115-1",
+                "label": "5 月上旬",
+                "sort": "2027-05-01",
+                "src": "https://oia.ndhu.edu.tw/var/file/27/1027/img/4756/894840940.pdf"
+              },
+              "note": null
+            },
+            {
+              "start": {
+                "status": "historical",
+                "sourceYear": "115-1",
+                "label": "3 月中旬",
+                "sort": "2027-03-11",
+                "src": "https://oia.ndhu.edu.tw/var/file/27/1027/img/4756/894840940.pdf"
+              },
+              "end": {
+                "status": "historical",
+                "sourceYear": "115-1",
+                "label": "4 月中旬",
+                "sort": "2027-04-11",
+                "src": "https://oia.ndhu.edu.tw/var/file/27/1027/img/4756/894840940.pdf"
+              },
+              "result": {
+                "status": "historical",
+                "sourceYear": "115-1",
+                "label": "6 月上旬",
+                "sort": "2027-06-01",
+                "src": "https://oia.ndhu.edu.tw/var/file/27/1027/img/4756/894840940.pdf"
+              },
+              "note": null
+            }
+          ],
+          "note": "116秋正式日期本次未核得；兩梯均為115歷年參考。"
+        }
+      },
+      "evidence": [
+        {
+          "url": "https://oia.ndhu.edu.tw/var/file/27/1027/img/4756/894840940.pdf",
+          "claim": "115當期PDF封面明列2027春季2026/9/1–10/31、2026/12/20結果含獎學金；本科系表包含春季學士。申請費1200不退；申請時勾選獎學金，不保證核給；費用表引用114學年度估值。",
+          "year": "115；學費114",
+          "webRef": "turn54view1"
+        },
+        {
+          "url": "https://oia.ndhu.edu.tw/p/412-1027-21529.php?Lang=en",
+          "claim": "英文入口2027春季段落仍把截止與結果寫為2025年，與115PDF衝突；該頁1200申請費與不可退亦再次確認。",
+          "year": "現行頁有年份錯植",
+          "webRef": "turn114view1"
+        }
+      ],
+      "limitations": [
+        "保留已核正確的115 PDF正式春季日期，不因網頁錯植而降級或把2025改成臆測2026/12/15。",
+        "未核得116秋當期簡章；歷年兩梯不升正式。",
+        "獎學金續領完整辦法此次未重讀；原板113規則與115-1申請日維持原來源年度，不宣稱116適用。",
+        "放榜日不等同入學許可寄發日，未列letter日期。"
+      ],
+      "checkedLabels": [
+        "春季招生與時程",
+        "秋季招生與時程",
+        "申請費及適用年度",
+        "學雜費參考年度",
+        "獎助學金條件",
+        "語言門檻"
+      ]
+    },
+    {
+      "id": "0012",
+      "name": "國立臺灣海洋大學",
+      "checkedFields": [
+        "spring.ug",
+        "fall.unknown",
+        "fee.scope"
+      ],
+      "patch": {
+        "fee": {
+          "kind": "unknown",
+          "text": "已核官網2027春季只收研究所；116秋一般外國學士適用申請費本次未核得，不能推定免費。",
+          "src": "https://oia.ntou.edu.tw/p/412-1022-7231.php?Lang=en",
+          "year": "115-2頁面；116-1學士待核"
+        },
+        "after": "2027春季明文不收學士。116秋一般外國學士正式申請、放榜及入學許可日期本次未核得，維持待核。"
+      },
+      "terms": {
+        "spring": {
+          "ug": "grad",
+          "rounds": [],
+          "note": "2027春季官方招生頁明載不提供學士申請；頁上7/15–10/31、12/18屬當期研究所，不能套一般學士。",
+          "src": "https://oia.ntou.edu.tw/p/412-1022-7231.php?Lang=en",
+          "year": "115-2"
+        },
+        "fall": {
+          "ug": "unknown",
+          "rounds": [],
+          "note": "本次未核得116秋一般外國學士正式日期與費用，維持unknown；不是斷言未公告。"
+        }
+      },
+      "evidence": [
+        {
+          "url": "https://oia.ntou.edu.tw/p/412-1022-7231.php?Lang=en",
+          "claim": "2027春季頁明載學士不開放；英語頁7/15–10/31及12/18為春季研究所時程，不用於偉銓。",
+          "year": "115-2",
+          "webRef": "turn75view1"
+        },
+        {
+          "url": "https://oia.ntou.edu.tw/p/412-1022-7231.php?Lang=zh-tw",
+          "claim": "同一招生頁中文日期把申請起訖寫到2027年，且結果為2026/12/18，與英文版有年份矛盾；春季學士不招則兩版本一致。",
+          "year": "115-2頁面錯植",
+          "webRef": "turn70search5"
+        },
+        {
+          "url": "https://oia.ntou.edu.tw/p/412-1022-7228.php?Lang=en",
+          "claim": "獎學金常態頁提學雜全免與每月4000–12000，但未區分一般學士；春季招生頁則寫8000/月。不能把研究所/泛稱津貼當學士保證獎勵。",
+          "year": "常態頁；學士116適用待核",
+          "webRef": "turn103view0"
+        },
+        {
+          "url": "https://oia.ntou.edu.tw/var/file/22/1022/img/1458/2027_Spring_Admissionbrochure_Released_2026Julyedition.pdf",
+          "claim": "web工具因14MB內容過大無法擷取PDF；這是讀取限制，不是不存在當期簡章。",
+          "year": "115-2",
+          "webRef": "turn100view1"
+        }
+      ],
+      "limitations": [
+        "116秋一般外國學士申請費、學費、獎學金及續領規則尚未核得；維持unknown/原有年度，不寫成零元或保證全免。",
+        "春季PDF擷取因內容過大被拒；本科資格以官方招生頁直接文字確認。",
+        "常態獎學金與招生頁月津貼不同，且研究所/學士範圍未充分區分；原板學士獎項不在本次checkedFields內。"
+      ],
+      "checkedLabels": [
+        "春季招生與時程",
+        "秋季招生與時程",
+        "申請費及適用年度"
+      ]
+    },
+    {
+      "id": "0053",
+      "name": "國立高雄科技大學",
+      "checkedFields": [
+        "spring.ug",
+        "spring.source",
+        "fall.reference",
+        "fall.letter.reference",
+        "fee.paid",
+        "lang.general",
+        "aid.scope"
+      ],
+      "patch": {
+        "fee": {
+          "kind": "paid",
+          "amount": 800,
+          "text": "115秋一般外國生申請費NT$800，不退；未繳不受理。116秋仍須核當期規定。",
+          "src": "https://oia.nkust.edu.tw/images/upload/files/2026%E7%A7%8B%E5%A4%96%E5%9C%8B%E5%AD%B8%E7%94%9F%E6%8B%9B%E7%94%9F%E7%B0%A1%E7%AB%A0%202026%20Fall%20International%20Degree%20Student%20Prospectus.pdf",
+          "year": "115-1參考"
+        },
+        "lang": "現行招生一般規定：中文授課至少CEFR A2、英語授課至少B1；中英雙語須兩種語言證明。科系可訂更高要求，116秋須看當期科系表。",
+        "aid": {
+          "sure": null,
+          "review": "現行招生頁列學士/碩士依申請人數分配名額，可審查減免學雜及學分費，期限1年；學士116當期適用辦法尚待核，不能當錄取即有。頁上碩博士月津貼不得套學士。",
+          "src": "https://oia.nkust.edu.tw/en/unit-11-262-5.html",
+          "year": "現行官網；116學士適用待核"
+        },
+        "after": "2027春季名額表僅碩博士。115往年秋季6月下旬公布結果，入學許可預計7月初才可於系統下載，已晚於6/30參考期限；116當期日期尚待核。",
+        "verdict": "公立但離台中遠。2027春季不收一般學士；116秋正式日待核。115往年入學許可到7月初才開放下載，不能只看6月下旬放榜就認定趕得上6/30。",
+        "verdictMy": "2027 နွေဦး ဘွဲ့ကြိုမဖွင့်ပါ။ ယခင်နှစ် ဝင်ခွင့်စာ ဇူလိုင်အစပိုင်းမှ ဒေါင်းလုဒ်ရပြီး 6/30 ကျော်နေသည်။ 2027 ဆောင်းဦး တရားဝင်ရက် ထပ်စစ်ရန်။"
+      },
+      "terms": {
+        "spring": {
+          "ug": "grad",
+          "rounds": [],
+          "note": "2027春最新修訂PDF（檔名尾碼(1)）名額表僅碩士184與博士，學士/二技僅出現在通用表單，不能當春季學士開放。",
+          "src": "https://oia.nkust.edu.tw/images/upload/files/2027春(115-2)外國學生招生簡章%202027%20Spring%20Semester%20International%20Student%20Admission%20Guidelines(1).pdf",
+          "year": "115-2"
+        },
+        "fall": {
+          "ug": "has",
+          "rounds": [
+            {
+              "start": {
+                "status": "historical",
+                "sourceYear": "115-1",
+                "label": "3 月上旬",
+                "sort": "2027-03-01",
+                "src": "https://oia.nkust.edu.tw/images/upload/files/2026%E7%A7%8B%E5%A4%96%E5%9C%8B%E5%AD%B8%E7%94%9F%E6%8B%9B%E7%94%9F%E7%B0%A1%E7%AB%A0%202026%20Fall%20International%20Degree%20Student%20Prospectus.pdf"
+              },
+              "end": {
+                "status": "historical",
+                "sourceYear": "115-1",
+                "label": "4 月下旬",
+                "sort": "2027-04-21",
+                "src": "https://oia.nkust.edu.tw/images/upload/files/2026%E7%A7%8B%E5%A4%96%E5%9C%8B%E5%AD%B8%E7%94%9F%E6%8B%9B%E7%94%9F%E7%B0%A1%E7%AB%A0%202026%20Fall%20International%20Degree%20Student%20Prospectus.pdf"
+              },
+              "result": {
+                "status": "historical",
+                "sourceYear": "115-1",
+                "label": "6 月下旬",
+                "sort": "2027-06-21",
+                "src": "https://oia.nkust.edu.tw/images/upload/files/2026%E7%A7%8B%E5%A4%96%E5%9C%8B%E5%AD%B8%E7%94%9F%E6%8B%9B%E7%94%9F%E7%B0%A1%E7%AB%A0%202026%20Fall%20International%20Degree%20Student%20Prospectus.pdf"
+              },
+              "note": "115歷年參考；先確認入學意願，入學許可預計7月初才於系統下載。116正式日未核得，不能認定可在6/30前取得許可。",
+              "letter": {
+                "status": "historical",
+                "label": "115往年7月初開放入學許可下載",
+                "sort": "2027-07-01",
+                "sourceYear": "115-1",
+                "src": "https://oia.nkust.edu.tw/images/upload/files/2026%E7%A7%8B%E5%A4%96%E5%9C%8B%E5%AD%B8%E7%94%9F%E6%8B%9B%E7%94%9F%E7%B0%A1%E7%AB%A0%202026%20Fall%20International%20Degree%20Student%20Prospectus.pdf"
+              }
+            }
+          ],
+          "note": "116正式日未核得；115往年6月下旬結果、7月初才開放LOA下載，後者已超過偉銓ARC參考期限6/30，不能只用放榜估算。"
+        }
+      },
+      "evidence": [
+        {
+          "url": "https://oia.nkust.edu.tw/en/unit-11-262-5.html",
+          "claim": "招生頁現列2027春PDF連至尾碼(1)最新版；一般語言中文A2、英文B1、雙語需兩種。獎學金學士名額及一年獎期列在網頁，但附件現行辦法只連碩博士。",
+          "year": "現行頁2026-11-01",
+          "webRef": "turn43view2"
+        },
+        {
+          "url": "https://oia.nkust.edu.tw/images/upload/files/2027春(115-2)外國學生招生簡章%202027%20Spring%20Semester%20International%20Student%20Admission%20Guidelines(1).pdf",
+          "claim": "最新2027春PDF第18頁招生名額僅碩士/博士；通用附件出現學士欄位不能據此推春季收學士。",
+          "year": "115-2",
+          "webRef": "turn87view0"
+        },
+        {
+          "url": "https://oia.nkust.edu.tw/images/upload/files/2026%E7%A7%8B%E5%A4%96%E5%9C%8B%E5%AD%B8%E7%94%9F%E6%8B%9B%E7%94%9F%E7%B0%A1%E7%AB%A0%202026%20Fall%20International%20Degree%20Student%20Prospectus.pdf",
+          "claim": "115秋一般外國生簡章第7–8頁列申請費800元不退；第2頁寫入學許可信預計7月初開放系統下載且須先確認就讀意願，不能將6月放榜當同日取得LOA。",
+          "year": "115-1",
+          "webRef": "turn123view0"
+        },
+        {
+          "url": "https://rule.nkust.edu.tw/p/405-1033-78435,c726.php",
+          "claim": "115秋PDF引用的學碩士獎學金辦法頁標113學年度入學適用；不能自動當116學士續領標準。",
+          "year": "113",
+          "webRef": "turn54view2"
+        }
+      ],
+      "limitations": [
+        "letter使用historical事件物件，sort僅用於歷年季節排序，絕不是已公告2027/7/1。整合時build_board.within_arc目前僅接受字串letter；須取letter.date/sort或在展示層保留風險，否則會TypeError。",
+        "若篩除ARC後才有許可的歷年梯次，after/verdict仍需保留7月許可風險，避免看似完全無資料。",
+        "本次沒有新證據能把114學費升級115或116，原年度與金額維持。",
+        "學士116獎學金續領完整適用辦法未核得；首年優惠仍維持unknown，非保證全免。"
+      ],
+      "checkedLabels": [
+        "春季招生與時程",
+        "秋季招生與時程",
+        "申請費及適用年度",
+        "語言門檻",
+        "獎助學金條件"
+      ]
+    }
+  ]
+}

@@ -8,9 +8,18 @@ export function isDate(value) {
     && new Date(value + 'T00:00:00Z').toISOString().slice(0, 10) === value;
 }
 
+export function admissionLetter(round) {
+  if (round.letter && typeof round.letter === 'object') return round.letter;
+  if (!isDate(round.letter)) return null;
+  return ['end', 'result'].some(k => round[k]?.status === 'official')
+    ? {status: 'official', date: round.letter}
+    : {status: 'historical', sort: round.letter, label: round.letter.slice(5).replace('-', '/')};
+}
+
 export function isLateRound(round, arcExpiry) {
   // An earlier admission letter can precede the public result list.
-  const available = round.letter || round.result?.date || round.result?.sort;
+  const letter = admissionLetter(round);
+  const available = letter?.date || letter?.sort || round.result?.date || round.result?.sort;
   return (available || round.end?.date || round.end?.sort || '') > arcExpiry;
 }
 
@@ -26,7 +35,7 @@ export function officialWindows(school, arcExpiry) {
     .filter(r => r.end?.status === 'official' && isDate(r.end.date))
     .map(r => ({s: school, term, round: r.round, many: school.terms[term].rounds.length > 1,
       start: r.start?.status === 'official' && isDate(r.start.date) ? r.start.date : null,
-      end: r.end.date, result: r.result, letter: r.letter, note: r.note})));
+      end: r.end.date, result: r.result, letter: admissionLetter(r), note: r.note})));
 }
 
 export const isOpen = (window, today) => !!window.start && window.start <= today && window.end >= today;
@@ -105,7 +114,7 @@ export function resolveRound(school, selection) {
 const exact = event => event?.status === 'official' && isDate(event.date) ? event.date : null;
 export function taskForRound(round, status, today) {
   const result = exact(round.result), start = exact(round.start), end = exact(round.end);
-  const letter = isDate(round.letter) && ['end', 'result'].some(k => round[k]?.status === 'official') ? round.letter : null;
+  const letter = exact(admissionLetter(round));
   if (status === 'admitted') return letter && letter >= today ? {kind: 'letter', date: letter} : {kind: 'documents'};
   if (status === 'applied') {
     if (result) {

@@ -1,0 +1,894 @@
+{
+  "checked": "2026-11-01",
+  "scope": "一般外國學生首次申請學士，2027春115-2／秋116-1，ARC參考2027-06-30、既有A2",
+  "schools": [
+    {
+      "id": "1001",
+      "name": "東海大學",
+      "checked": "2026-11-01",
+      "checkedFields": [
+        "terms.spring",
+        "terms.fall",
+        "fee",
+        "lang",
+        "tuition"
+      ],
+      "patch": {
+        "fee": {
+          "kind": "free",
+          "amount": 0,
+          "text": "115一般外國生簡章申請免費；116秋待新簡章確認。",
+          "src": "https://exam2.thu.edu.tw/EXAM/download_doc_26/23.pdf",
+          "year": "115"
+        },
+        "after": "2027春季只收碩、博士，偉銓不能以學士申請。116秋季當期公告尚未核得；115往年前三梯1/21–2/28、3/1–3/31、4/1–4/30僅供規劃。",
+        "verdict": "台中知名私校。2027春季只收研究所，學士須等116秋季；115免費申請，獎學金需審查。",
+        "verdictMy": "2027 နွေဦးတွင် မဟာဘွဲ့နှင့် ပါရဂူဘွဲ့သာ လက်ခံသည်။ ဘွဲ့ကြိုအတွက် 2027 ဆောင်းဦး ကြေညာချက်ကို စောင့်ပါ။",
+        "tuition": {
+          "min": 57860,
+          "max": 67547,
+          "year": "115",
+          "text": "115一般中文授課學士每學期57,860–67,547；企管等58,741。國際學院與英語特殊組另有較高收費，逐系確認。",
+          "src": "https://exam2.thu.edu.tw/EXAM/download_doc_26/26.pdf"
+        },
+        "readYourself": [
+          {
+            "label": "東海115簡章中文分冊",
+            "url": "https://exam2.thu.edu.tw/EXAM/download_doc_26/23.pdf",
+            "why": "招生名額表春季學士欄空白，只有碩博招生。"
+          },
+          {
+            "label": "東海外國學生申請頁",
+            "url": "https://oir.thu.edu.tw/front/600_admission/timeline/pages.php?ID=dGh1X29zYSZ0aW1lbGluZQ%3D%3D",
+            "why": "春季標示Postgraduate Programs only。"
+          }
+        ]
+      },
+      "terms": {
+        "spring": {
+          "ug": "grad",
+          "rounds": [],
+          "note": "招生名額表及國際處頁明載春季只收碩博。",
+          "src": "https://exam2.thu.edu.tw/EXAM/download_doc_26/23.pdf",
+          "year": "115-2"
+        },
+        "fall": {
+          "ug": "has",
+          "rounds": [
+            {
+              "start": {
+                "status": "historical",
+                "sourceYear": "115",
+                "src": "https://exam2.thu.edu.tw/EXAM/download_doc_26/21.pdf",
+                "label": "115往年01/21",
+                "sort": "2027-01-21"
+              },
+              "end": {
+                "status": "historical",
+                "sourceYear": "115",
+                "src": "https://exam2.thu.edu.tw/EXAM/download_doc_26/21.pdf",
+                "label": "115往年02/28",
+                "sort": "2027-02-28"
+              },
+              "result": {
+                "status": "historical",
+                "sourceYear": "115",
+                "src": "https://exam2.thu.edu.tw/EXAM/download_doc_26/21.pdf",
+                "label": "115往年4/10前",
+                "sort": "2027-04-10"
+              },
+              "note": "116未公告；115往年參考，許可寄發日未核得。"
+            },
+            {
+              "start": {
+                "status": "historical",
+                "sourceYear": "115",
+                "src": "https://exam2.thu.edu.tw/EXAM/download_doc_26/21.pdf",
+                "label": "115往年03/01",
+                "sort": "2027-03-01"
+              },
+              "end": {
+                "status": "historical",
+                "sourceYear": "115",
+                "src": "https://exam2.thu.edu.tw/EXAM/download_doc_26/21.pdf",
+                "label": "115往年03/31",
+                "sort": "2027-03-31"
+              },
+              "result": {
+                "status": "historical",
+                "sourceYear": "115",
+                "src": "https://exam2.thu.edu.tw/EXAM/download_doc_26/21.pdf",
+                "label": "115往年5月初",
+                "sort": "2027-05-01"
+              },
+              "note": "116未公告；115往年參考，許可寄發日未核得。"
+            },
+            {
+              "start": {
+                "status": "historical",
+                "sourceYear": "115",
+                "src": "https://exam2.thu.edu.tw/EXAM/download_doc_26/21.pdf",
+                "label": "115往年04/01",
+                "sort": "2027-04-01"
+              },
+              "end": {
+                "status": "historical",
+                "sourceYear": "115",
+                "src": "https://exam2.thu.edu.tw/EXAM/download_doc_26/21.pdf",
+                "label": "115往年04/30",
+                "sort": "2027-04-30"
+              },
+              "result": {
+                "status": "historical",
+                "sourceYear": "115",
+                "src": "https://exam2.thu.edu.tw/EXAM/download_doc_26/21.pdf",
+                "label": "115往年6月初",
+                "sort": "2027-06-01"
+              },
+              "note": "116未公告；115往年參考，許可寄發日未核得。"
+            }
+          ],
+          "note": "116未公告；115往年參考，7月結果第4梯未列。",
+          "src": "https://exam2.thu.edu.tw/EXAM/download_doc_26/21.pdf",
+          "year": "115"
+        }
+      },
+      "evidence": [
+        {
+          "url": "https://exam2.thu.edu.tw/EXAM/download_doc_26/23.pdf",
+          "claim": "第40頁招生名額表：春季學士欄空白、碩博為新生；PDF第1頁截圖已對齊欄位。第46頁免費、中文基本A2，會計C1、財金A2。",
+          "year": "115",
+          "visualRef": "turn97view0",
+          "webRef": "turn67view2"
+        },
+        {
+          "url": "https://oir.thu.edu.tw/front/600_admission/timeline/pages.php?ID=dGh1X29zYSZ0aW1lbGluZQ%3D%3D",
+          "claim": "春季明寫Postgraduate Programs only，交叉佐證學士不招。",
+          "year": "現行",
+          "webRef": "turn95search4"
+        },
+        {
+          "url": "https://exam2.thu.edu.tw/EXAM/download_doc_26/21.pdf",
+          "claim": "115秋前三梯1/21–2/28（4/10前結果）、3/1–3/31（5月初）、4/1–4/30（6月初）；第4梯7月結果。",
+          "year": "115",
+          "retrieval": "local HTTP200 PDF pdftotext"
+        },
+        {
+          "url": "https://exam2.thu.edu.tw/EXAM/download_doc_26/26.pdf",
+          "claim": "2026/6/1更新115收費表，一般中文學士57,860–67,547，企管等58,741；國際學院更高。",
+          "year": "115",
+          "retrieval": "local HTTP200 PDF pdftotext"
+        }
+      ],
+      "limitations": [
+        "116秋未公告，不能把115往年轉official。",
+        "本次未重核THU獎學金金額與續領。"
+      ],
+      "changes": [
+        "春季has改grad，移除把研究所日期套用學士的錯誤。"
+      ],
+      "checkedLabels": [
+        "春季招生與時程",
+        "秋季招生與時程",
+        "申請費及適用年度",
+        "語言門檻",
+        "學雜費參考年度"
+      ]
+    },
+    {
+      "id": "1007",
+      "name": "逢甲大學",
+      "checked": "2026-11-01",
+      "checkedFields": [
+        "terms.spring",
+        "fee",
+        "aid",
+        "renew",
+        "lang"
+      ],
+      "patch": {
+        "after": "第1梯9/15–11/8，11/24放榜、12/1獎助結果、12/4寄許可；第2梯11/11–11/30，12/15放榜、12/22獎助結果、12/24寄許可。2/22註冊。",
+        "aid": {
+          "sure": null,
+          "review": "每學年120,000／60,000／30,000／20,000元，入學時申請、依預算擇優。先註冊、繳清全額學雜費及選課，後分學期核發。",
+          "src": "https://myfcu.fcu.edu.tw/main/S6800/S680004_Out_Download.aspx?newfilename=9aa467b3c791471f8c4a137a82c41efa_2_1.pdf&originfilename=逢甲大學海外華裔學生暨外國學生獎助學金設置要點_114學年度起獲獎學生適用.pdf",
+          "year": "114起適用"
+        },
+        "renew": "第2學年起校方主動擇優審核；學士前一學年70分或班排前50%；一般最多4學年（部分系5年）。入學及在學助學金有校內服務義務；不得與臺灣獎學金同領。",
+        "renewSource": {
+          "src": "https://myfcu.fcu.edu.tw/main/S6800/S680004_Out_Download.aspx?newfilename=9aa467b3c791471f8c4a137a82c41efa_2_1.pdf&originfilename=逢甲大學海外華裔學生暨外國學生獎助學金設置要點_114學年度起獲獎學生適用.pdf",
+          "year": "114起適用"
+        },
+        "verdict": "台中知名私立。2027春季第1梯11/8截止、11/24結果、12/4寄許可；第2梯11/11–11/30受理。獎助須審查且先繳清全額學雜費，本期申請費及學費仍須核對完整簡章。",
+        "verdictMy": "2027 နွေဦး ပထမအကြိမ် 11/8 ပိတ်၊ 11/24 ရလဒ်၊ 12/4 ဝင်ခွင့်စာပို့မည်။ ဒုတိယအကြိမ် 11/11–11/30။ ပညာသင်ဆု စစ်ဆေးပြီး ကျောင်းလခအပြည့် အရင်ပေးရန်လိုသည်။"
+      },
+      "terms": {
+        "spring": {
+          "ug": "has",
+          "rounds": [
+            {
+              "start": {
+                "status": "official",
+                "sourceYear": "115-2",
+                "src": "https://www.fcu.edu.tw/recurit_list/international-spring-semester/",
+                "date": "2026-09-15"
+              },
+              "end": {
+                "status": "official",
+                "sourceYear": "115-2",
+                "src": "https://www.fcu.edu.tw/recurit_list/international-spring-semester/",
+                "date": "2026-11-08"
+              },
+              "result": {
+                "status": "official",
+                "sourceYear": "115-2",
+                "src": "https://www.fcu.edu.tw/recurit_list/international-spring-semester/",
+                "date": "2026-11-24"
+              },
+              "letter": "2026-12-04",
+              "note": "獎助學金12/1另公布，入學許可12/04寄發。"
+            },
+            {
+              "start": {
+                "status": "official",
+                "sourceYear": "115-2",
+                "src": "https://www.fcu.edu.tw/recurit_list/international-spring-semester/",
+                "date": "2026-11-11"
+              },
+              "end": {
+                "status": "official",
+                "sourceYear": "115-2",
+                "src": "https://www.fcu.edu.tw/recurit_list/international-spring-semester/",
+                "date": "2026-11-30"
+              },
+              "result": {
+                "status": "official",
+                "sourceYear": "115-2",
+                "src": "https://www.fcu.edu.tw/recurit_list/international-spring-semester/",
+                "date": "2026-12-15"
+              },
+              "letter": "2026-12-24",
+              "note": "獎助學金12/22另公布，入學許可12/24寄發。"
+            }
+          ],
+          "src": "https://www.fcu.edu.tw/recurit_list/international-spring-semester/",
+          "year": "115-2"
+        }
+      },
+      "evidence": [
+        {
+          "url": "https://www.fcu.edu.tw/recurit_list/international-spring-semester/",
+          "claim": "2027春兩梯日期與原資料一致；另列12/1、12/22獎助名單。TOCFL須官網下載電子證書PDF原檔。",
+          "year": "115-2",
+          "webRef": "turn113view0"
+        },
+        {
+          "url": "https://myfcu.fcu.edu.tw/main/S6800/S680004_Out_Download.aspx?newfilename=9aa467b3c791471f8c4a137a82c41efa_2_1.pdf&originfilename=逢甲大學海外華裔學生暨外國學生獎助學金設置要點_114學年度起獲獎學生適用.pdf",
+          "claim": "114起適用：年度四種金額，預算擇優；學士70或前50%、一般4年；須先全額繳費，助學金有服務義務。",
+          "year": "114起適用",
+          "webRef": "turn124view0"
+        }
+      ],
+      "limitations": [
+        "SharePoint春季簡章仍須Microsoft登入，費用、逐系語言及學費unreadable，未知不改免費。",
+        "116秋未核得。",
+        "建議apply連結改春季正式頁；需主代理採用可渲染的連結覆寫欄位。"
+      ],
+      "changes": [
+        "補獎助另行公布日期與服務義務。"
+      ],
+      "checkedLabels": [
+        "春季招生與時程",
+        "申請費及適用年度",
+        "獎助學金條件",
+        "獎助續領規定",
+        "語言門檻"
+      ]
+    },
+    {
+      "id": "1018",
+      "name": "朝陽科技大學",
+      "checked": "2026-11-01",
+      "checkedFields": [
+        "terms.spring",
+        "fee",
+        "tuition",
+        "lang",
+        "aid",
+        "renew"
+      ],
+      "patch": {},
+      "terms": {},
+      "evidence": [
+        {
+          "url": "https://icsc.cyut.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9MelV6TDNCMFlWODBNekE1TkY4eE1qSTNNRFE1WHpnNE1EQTBMbkJrWmc9PQ==&fname=WW54RPOKIC4441MPHCLKRKZWQOTWWT14QO3435HGTX25LK40FCNKA054WW54FGOKPOPOZX10A404GDXTRKPKTSIG34B0NOYSVXVXDCTSWSB0VSOKUSKKYWFCNPPO44OOHCA0UWIGTWMODC35WSB040MKZTGDQPROWS30IGB4GGOK45USPOWSB510DGFGA0SXKO30B4ICIGRO35WWNPVX04OKYSB4JGUSPKKKICFCLOQOPPXX00ZS5430YWMONPWWEC34SSMKLPIDCCTSFCNKFDEGFG10KLTSVWPOXT15DG24NKXTMOMOA0YSIGICQLLO00JDQPTW14MK3045OOHGGHUSSS404544VSA0EGGDTWB4WSXSWSB0CGMKVXNPDDA0SW30IGA4QOOKLKFCICKKDHYX44B0TX24DCJGMK25WSEGXSXSHDYTPKA5XWROZWOPQOSSIGWXIC00YXMPLOPONK24ZSPKFHXS34UWXSGCGG05OOA5UWTS45UW00OKOK54LOCCHDHHHCEGEGWS14MOJGWSOP34PKGCJDJDLOA534A41111",
+          "claim": "115一般外國生簡章：學士春9/20–12/19；12/18、1/15結果，12/24、1/22通知；各批截止未單列。中文A2。申請費或免費未明載。",
+          "year": "115",
+          "retrieval": "local HTTP200 PDF843286 bytes pdftotext"
+        },
+        {
+          "url": "https://icsc.cyut.edu.tw/p/404-1008-39946.php?Lang=en",
+          "claim": "2027春學士碩士12/19截止，博士11/13不能套用學士。",
+          "year": "115-2",
+          "webRef": "turn106search1"
+        },
+        {
+          "url": "https://icsc.cyut.edu.tw/p/404-1008-20583.php?Lang=en",
+          "claim": "新生隨入學申請，半額或全額學雜費審查；學士最多8學期，學業操行按學期重核，分數另訂。",
+          "year": "現行",
+          "retrieval": "local HTTP200 HTML"
+        },
+        {
+          "url": "https://icsc.cyut.edu.tw/p/404-1008-58738.php?Lang=zh-tw",
+          "claim": "115學費48,409–55,684；簡章同列2026參考，沒有核得116費率。",
+          "year": "115"
+        }
+      ],
+      "limitations": [
+        "新招生頁下載404，既有115官方下載200且可解析，不因此刪除原時程。",
+        "費用維持silent，沒有當免費。",
+        "116秋未公告；115秋首梯7/3結果晚於ARC。",
+        "詳細續領分數未核得。"
+      ],
+      "changes": [
+        "原春季日期、A2與115學費確認一致，無需改日期。"
+      ],
+      "checkedLabels": [
+        "春季招生與時程",
+        "申請費及適用年度",
+        "學雜費參考年度",
+        "語言門檻",
+        "獎助學金條件",
+        "獎助續領規定"
+      ]
+    },
+    {
+      "id": "1048",
+      "name": "亞洲大學",
+      "checked": "2026-11-01",
+      "checkedFields": [
+        "terms.spring",
+        "fee",
+        "tuition",
+        "lang",
+        "aid",
+        "renew"
+      ],
+      "patch": {
+        "tuition": {
+          "min": 47170,
+          "max": 57160,
+          "year": "114",
+          "text": "115簡章引用114學士費率，每學期47,170–57,160；經營管理／財金／會計47,800。實收依入學年度公告。",
+          "src": "https://oia.asia.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9MelU1TDNCMFlWOHpPVFZmTnpBd05qUTBOMTg0TXprd09DNXdaR1k9&fname=WW54RPOKIC4441MPHCLKFCZWXSMOWT24PKJCYS35TXVXPO40NKB4OPB4WS1030EGPOCCIHXXVS04GDWWMK3040GCB0B0TS35GGMPB5OONKTS34FGOOA401XXVW4044GDIGPONOYWKKKODG3550NOPONPCC35GGA0XWUSUSSWWSLK01XXMK54A5NPFG10FG24FC14MKKKQOMO10ICQPUXB0TSUSB0ZWA0QODCXWDCYWUSLLZX00B054ICMKTWVXMKQO34CCMK41A1OOA0YSDCFC54GG54A0PKGCPOCDHHA40454TXVWTWMOXS34RKNOWSA1VX44FCWSMKB0FG00HGKLA0SS44LP05EDNOEGMORKB440GCDGVW24MKUT35YXB4POB4YSQOWSKKXXOKPO04POMP"
+        },
+        "lang": "115一般外國生簡章：中文授課TOCFL／CEFR A2或新HSK4；仍須逐系確認。",
+        "aid": {
+          "sure": null,
+          "review": "隨入學申請並審查。現行獎學金頁／規章將學士列C類（學費減半、雜費全繳）；115簡章仍按委員會核定。年限與續領來源不同，依當期獎助通知確認。",
+          "src": "https://oia.asia.edu.tw/p/412-1008-265.php?Lang=en",
+          "year": "現行頁與115簡章有差異",
+          "sources": [
+            {
+              "src": "https://oia.asia.edu.tw/var/file/8/1008/img/880433126.pdf",
+              "year": "112.10.17修正"
+            },
+            {
+              "src": "https://oia.asia.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9MelU1TDNCMFlWOHpPVFZmTnpBd05qUTBOMTg0TXprd09DNXdaR1k9&fname=WW54RPOKIC4441MPHCLKFCZWXSMOWT24PKJCYS35TXVXPO40NKB4OPB4WS1030EGPOCCIHXXVS04GDWWMK3040GCB0B0TS35GGMPB5OONKTS34FGOOA401XXVW4044GDIGPONOYWKKKODG3550NOPONPCC35GGA0XWUSUSSWWSLK01XXMK54A5NPFG10FG24FC14MKKKQOMO10ICQPUXB0TSUSB0ZWA0QODCXWDCYWUSLLZX00B054ICMKTWVXMKQO34CCMK41A1OOA0YSDCFC54GG54A0PKGCPOCDHHA40454TXVWTWMOXS34RKNOWSA1VX44FCWSMKB0FG00HGKLA0SS44LP05EDNOEGMORKB440GCDGVW24MKUT35YXB4POB4YSQOWSKKXXOKPO04POMP",
+              "year": "115"
+            }
+          ]
+        },
+        "renew": "官方來源衝突：115簡章寫學士最多1年、前學年80分，B級以上每學期服務30小時；現行獎學金頁及規章寫C類、最多4年、75分，操行未達80降級、未達75取消。115新生適用優先順序未核得，先按一年做預算，不保證4年。新生先繳全額學雜費，核准獎助期末發放。",
+        "renewSource": {
+          "src": "https://oia.asia.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9MelU1TDNCMFlWOHpPVFZmTnpBd05qUTBOMTg0TXprd09DNXdaR1k9&fname=WW54RPOKIC4441MPHCLKFCZWXSMOWT24PKJCYS35TXVXPO40NKB4OPB4WS1030EGPOCCIHXXVS04GDWWMK3040GCB0B0TS35GGMPB5OONKTS34FGOOA401XXVW4044GDIGPONOYWKKKODG3550NOPONPCC35GGA0XWUSUSSWWSLK01XXMK54A5NPFG10FG24FC14MKKKQOMO10ICQPUXB0TSUSB0ZWA0QODCXWDCYWUSLLZX00B054ICMKTWVXMKQO34CCMK41A1OOA0YSDCFC54GG54A0PKGCPOCDHHA40454TXVWTWMOXS34RKNOWSA1VX44FCWSMKB0FG00HGKLA0SS44LP05EDNOEGMORKB440GCDGVW24MKUT35YXB4POB4YSQOWSKKXXOKPO04POMP",
+          "year": "115與現行辦法有差異",
+          "sources": [
+            {
+              "src": "https://oia.asia.edu.tw/var/file/8/1008/img/880433126.pdf",
+              "year": "112.10.17修正"
+            },
+            {
+              "src": "https://oia.asia.edu.tw/p/412-1008-265.php?Lang=en",
+              "year": "現行頁"
+            },
+            {
+              "src": "https://oia.asia.edu.tw/p/412-1008-1358.php?Lang=en",
+              "year": "115"
+            }
+          ]
+        },
+        "after": "春季全期11/29截止（報名頁11/30有差異，建議11/29前完成），10/30一批已公告；尚有11/30、12/30結果，放榜後寄e-LoA，精確寄發日未單列。116秋當期公告尚未核得。",
+        "verdict": "免申請費、中文授課A2，春季建議11/29前完成。學士學費參考每學期4.7–5.7萬；獎助年限及續領有官方來源衝突，先按全額繳費與一年獎助做預算。",
+        "verdictMy": "လျှောက်လွှာကြေး အခမဲ့၊ တရုတ်ဘာသာသင်တန်း A2။ 11/29 မတိုင်မီ လျှောက်ပါ။ ပညာသင်ဆု သက်တမ်းစည်းမျဉ်း မတူသဖြင့် လေးနှစ်ရမည်ဟု မယူဆပါနှင့်။",
+        "readYourself": [
+          {
+            "label": "亞洲115一般學位生簡章",
+            "url": "https://oia.asia.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9MelU1TDNCMFlWOHpPVFZmTnpBd05qUTBOMTg0TXprd09DNXdaR1k9&fname=WW54RPOKIC4441MPHCLKFCZWXSMOWT24PKJCYS35TXVXPO40NKB4OPB4WS1030EGPOCCIHXXVS04GDWWMK3040GCB0B0TS35GGMPB5OONKTS34FGOOA401XXVW4044GDIGPONOYWKKKODG3550NOPONPCC35GGA0XWUSUSSWWSLK01XXMK54A5NPFG10FG24FC14MKKKQOMO10ICQPUXB0TSUSB0ZWA0QODCXWDCYWUSLLZX00B054ICMKTWVXMKQO34CCMK41A1OOA0YSDCFC54GG54A0PKGCPOCDHHA40454TXVWTWMOXS34RKNOWSA1VX44FCWSMKB0FG00HGKLA0SS44LP05EDNOEGMORKB440GCDGVW24MKUT35YXB4POB4YSQOWSKKXXOKPO04POMP",
+            "why": "學士申請费、獎學金與一年受獎上限"
+          },
+          {
+            "label": "亞洲115春秋放榜時程",
+            "url": "https://oia.asia.edu.tw/p/404-1008-2484.php?Lang=en",
+            "why": "截止日兩個官方來源不同，建議11/29前完成"
+          },
+          {
+            "label": "亞洲115新生註冊須知",
+            "url": "https://oia.asia.edu.tw/p/412-1008-1358.php?Lang=en",
+            "why": "先付足學雜費，學期末再核發補助"
+          },
+          {
+            "label": "亞洲現行獎學金規章",
+            "url": "https://oia.asia.edu.tw/var/file/8/1008/img/880433126.pdf",
+            "why": "學士C、4年、75分，與115簡章1年／80分有差異。"
+          },
+          {
+            "label": "亞洲現行獎學金頁",
+            "url": "https://oia.asia.edu.tw/p/412-1008-265.php?Lang=en",
+            "why": "須以當期錄取獎助通知核對適用年限。"
+          }
+        ]
+      },
+      "terms": {
+        "spring": {
+          "ug": "has",
+          "rounds": [
+            {
+              "start": {
+                "status": "official",
+                "date": "2026-02-21",
+                "sourceYear": "115",
+                "src": "https://oia.asia.edu.tw/p/404-1008-2484.php?Lang=en",
+                "year": "115"
+              },
+              "end": {
+                "status": "unknown",
+                "label": "各批截止未單列（全期11/29）",
+                "sourceYear": "115",
+                "src": "https://oia.asia.edu.tw/p/404-1008-2484.php?Lang=en",
+                "year": "115"
+              },
+              "result": {
+                "status": "official",
+                "date": "2026-10-30",
+                "sourceYear": "115",
+                "src": "https://oia.asia.edu.tw/p/404-1008-2484.php?Lang=en",
+                "year": "115"
+              },
+              "note": "官方第5次放榜；簡章／時程全期11/29截止，報名頁寫11/30，建議11/29前完成。 放榜後寄e-LoA，精確寄發日未公告。"
+            },
+            {
+              "start": {
+                "status": "official",
+                "date": "2026-02-21",
+                "sourceYear": "115",
+                "src": "https://oia.asia.edu.tw/p/404-1008-2484.php?Lang=en",
+                "year": "115"
+              },
+              "end": {
+                "status": "unknown",
+                "label": "各批截止未單列（全期11/29）",
+                "sourceYear": "115",
+                "src": "https://oia.asia.edu.tw/p/404-1008-2484.php?Lang=en",
+                "year": "115"
+              },
+              "result": {
+                "status": "official",
+                "date": "2026-11-30",
+                "sourceYear": "115",
+                "src": "https://oia.asia.edu.tw/p/404-1008-2484.php?Lang=en",
+                "year": "115"
+              },
+              "note": "官方第6次放榜；簡章／時程全期11/29截止，報名頁寫11/30，建議11/29前完成。 放榜後寄e-LoA，精確寄發日未公告。"
+            },
+            {
+              "start": {
+                "status": "official",
+                "date": "2026-02-21",
+                "sourceYear": "115",
+                "src": "https://oia.asia.edu.tw/p/404-1008-2484.php?Lang=en",
+                "year": "115"
+              },
+              "end": {
+                "status": "official",
+                "date": "2026-11-29",
+                "sourceYear": "115",
+                "src": "https://oia.asia.edu.tw/p/404-1008-2484.php?Lang=en",
+                "year": "115"
+              },
+              "result": {
+                "status": "official",
+                "date": "2026-12-30",
+                "sourceYear": "115",
+                "src": "https://oia.asia.edu.tw/p/404-1008-2484.php?Lang=en",
+                "year": "115"
+              },
+              "note": "官方第7次放榜；簡章／時程全期11/29截止，報名頁寫11/30，建議11/29前完成。 放榜後寄e-LoA，精確寄發日未公告。"
+            }
+          ],
+          "note": "10/30第5次已公告；尚有11/30第6次與12/30第7次。各批截止未單列；全期11/29，報名頁11/30差異保留。",
+          "src": "https://oia.asia.edu.tw/p/404-1008-2484.php?Lang=en",
+          "year": "115"
+        }
+      },
+      "evidence": [
+        {
+          "url": "https://oia.asia.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9MelU1TDNCMFlWOHpPVFZmTnpBd05qUTBOMTg0TXprd09DNXdaR1k9&fname=WW54RPOKIC4441MPHCLKFCZWXSMOWT24PKJCYS35TXVXPO40NKB4OPB4WS1030EGPOCCIHXXVS04GDWWMK3040GCB0B0TS35GGMPB5OONKTS34FGOOA401XXVW4044GDIGPONOYWKKKODG3550NOPONPCC35GGA0XWUSUSSWWSLK01XXMK54A5NPFG10FG24FC14MKKKQOMO10ICQPUXB0TSUSB0ZWA0QODCXWDCYWUSLLZX00B054ICMKTWVXMKQO34CCMK41A1OOA0YSDCFC54GG54A0PKGCPOCDHHA40454TXVWTWMOXS34RKNOWSA1VX44FCWSMKB0FG00HGKLA0SS44LP05EDNOEGMORKB440GCDGVW24MKUT35YXB4POB4YSQOWSKKXXOKPO04POMP",
+          "claim": "115免費、中文A2；學士學雜費引用114年47,170–57,160，商管47,800；獎助最多1年80分B以上服務30h；放榜後寄e-LoA，未列精確寄發日。",
+          "year": "115",
+          "supportingRefs": [
+            "turn111search5",
+            "turn121view0",
+            "turn121view3",
+            "turn126view1",
+            "turn128view0"
+          ],
+          "webRef": "turn118view1"
+        },
+        {
+          "url": "https://oia.asia.edu.tw/var/file/8/1008/img/880433126.pdf",
+          "claim": "112.10.17修正規章：一般外國生學士C學費半額／雜費全繳，最多4年、前學年75分，操行80及75降級／取消。",
+          "year": "112.10.17",
+          "webRef": "turn67view0"
+        },
+        {
+          "url": "https://oia.asia.edu.tw/p/412-1008-265.php?Lang=en",
+          "claim": "現行官網仍刊C類4年75分，未說明與115招生簡章優先次序。",
+          "year": "現行",
+          "webRef": "turn61search0"
+        },
+        {
+          "url": "https://oia.asia.edu.tw/p/412-1008-1358.php?Lang=en",
+          "claim": "新生先全額繳學雜費，核准獎助當學期期末發放。",
+          "year": "115",
+          "webRef": "turn61search3"
+        },
+        {
+          "url": "https://oia.asia.edu.tw/p/404-1008-2484.php?Lang=en",
+          "claim": "春全期11/29，結果10/30、11/30、12/30。",
+          "year": "115",
+          "webRef": "turn44search7"
+        }
+      ],
+      "limitations": [
+        "官方獎助來源真有衝突，不單方面宣稱保證4年或將75取代80。",
+        "114費率是參考，不能標成115／116已定。",
+        "116秋未公告。"
+      ],
+      "changes": [
+        "補A2、114學士學費；完整呈現獎助衝突。"
+      ],
+      "checkedLabels": [
+        "春季招生與時程",
+        "申請費及適用年度",
+        "學雜費參考年度",
+        "語言門檻",
+        "獎助學金條件",
+        "獎助續領規定"
+      ]
+    },
+    {
+      "id": "1034",
+      "name": "弘光科技大學",
+      "checked": "2026-11-01",
+      "checkedFields": [
+        "terms.spring",
+        "terms.fall",
+        "fee",
+        "tuition",
+        "lang",
+        "aid"
+      ],
+      "patch": {
+        "tuition": {
+          "min": 45547,
+          "max": 55057,
+          "year": "115",
+          "text": "116簡章引用115學士費率，每學期45,547–55,057；餐旅51,936、健康事業管理／文化設計行銷45,547。116標準未定案。",
+          "src": "https://ifp.hk.edu.tw/wp-content/uploads/2026/09/116外國學生招生簡章_確定.pdf"
+        },
+        "lang": "TOCFL A2含以上。B1是畢業前提升建議，不是入學硬門檻；護理、物理治療、語言治療春季不招生。"
+      },
+      "terms": {},
+      "evidence": [
+        {
+          "url": "https://ifp.hk.edu.tw/wp-content/uploads/2026/09/116外國學生招生簡章_確定.pdf",
+          "claim": "116簡章12頁免申請費；14–16頁學士45547–55057，中文明寫116未定案、用115參考；17頁A5萬/B3萬/C1萬/D5千需審查。秋第1梯10/5–1/10、2/25結果、3/15前通知。",
+          "year": "116（費率115）",
+          "supportingRefs": [
+            "turn38view0",
+            "turn34view0"
+          ],
+          "webRef": "turn27view0"
+        },
+        {
+          "url": "https://ifp.hk.edu.tw/入學申請/外國學生/",
+          "claim": "2027春10/5–12/1、1/10結果、1/15前通知、2/22註冊，與原資料一致。秋第2梯英文日期誤植，PDF為3/1–7/1，8月結果超ARC。",
+          "year": "115-2／116",
+          "webRef": "turn26view3"
+        },
+        {
+          "url": "https://ifp.hk.edu.tw/入學申請/學雜費及各項收費資訊/",
+          "claim": "官網明文116未定案，115費率與116簡章表一致。",
+          "year": "115",
+          "webRef": "turn26view2"
+        },
+        {
+          "url": "https://ifp.hk.edu.tw/456-2/",
+          "claim": "A2或HSK4入學；B1只是畢業前提升目標。",
+          "year": "現行",
+          "webRef": "turn34view3"
+        }
+      ],
+      "limitations": [
+        "續領詳細學業操行分數未核得。",
+        "春季簡章下載仍指舊115檔，但一般外國生現行頁已列2027春時程。"
+      ],
+      "changes": [
+        "學費來源年度114改115，金額相同；116尚未定案。"
+      ],
+      "checkedLabels": [
+        "春季招生與時程",
+        "秋季招生與時程",
+        "申請費及適用年度",
+        "學雜費參考年度",
+        "語言門檻",
+        "獎助學金條件"
+      ]
+    },
+    {
+      "id": "1062",
+      "name": "僑光科技大學",
+      "checked": "2026-11-01",
+      "checkedFields": [
+        "terms.spring",
+        "terms.fall",
+        "fee",
+        "tuition",
+        "lang",
+        "aid",
+        "renew"
+      ],
+      "patch": {
+        "fee": {
+          "kind": "paid",
+          "amount": 1000,
+          "text": "115一般外國生：NT$1,000或US$35，未繳不受理。",
+          "src": "https://admission.ocu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9MemcyTDNCMFlWODNOVGsyTUY4MU5EVXdPRFUxWHprMU1UVXhMbkJrWmc9PQ==&fname=WW54RPOKIC4441MPHCLKRKZWQOTWWT14QO3435HGTX25LK40FCNKA054WW54FGOKPOPOZX10A404GDXTRKPKTSIG34B0NOYSVXVXDCTSWSB0VSOKUSKKYWFCNPPO44OOHCA0UWIGTWMODC35WSB040MKZTGDQPROWS30IGB4GGOK45USPOWSB510DGFGA0SXKO30B4ICIGRO35WWNPVX04OKYSB4JGUSPKKKSWOKYWCCOOHHLOXWIGJGDC30US25IGUWMPNPUTUXCCB534YWLOB4B1OK34OKZTCCID10TSZSDHDH&cg=5671",
+          "year": "115"
+        },
+        "tuition": {
+          "min": 45020,
+          "max": 51653,
+          "year": "115",
+          "text": "115學雜費每學期：商管／財金／國貿／行銷等45,020；設計／資訊／餐飲51,653；觀光／旅館48,337。電腦890與網路250另計。",
+          "src": "https://admission.ocu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9MemcyTDNCMFlWODNOVGsyTUY4MU5EVXdPRFUxWHprMU1UVXhMbkJrWmc9PQ==&fname=WW54RPOKIC4441MPHCLKRKZWQOTWWT14QO3435HGTX25LK40FCNKA054WW54FGOKPOPOZX10A404GDXTRKPKTSIG34B0NOYSVXVXDCTSWSB0VSOKUSKKYWFCNPPO44OOHCA0UWIGTWMODC35WSB040MKZTGDQPROWS30IGB4GGOK45USPOWSB510DGFGA0SXKO30B4ICIGRO35WWNPVX04OKYSB4JGUSPKKKSWOKYWCCOOHHLOXWIGJGDC30US25IGUWMPNPUTUXCCB534YWLOB4B1OK34OKZTCCID10TSZSDHDH&cg=5671"
+        },
+        "firstYear": {
+          "kind": "review"
+        },
+        "aid": {
+          "sure": null,
+          "review": "需申請與核定：全額、1/2、1/3、1/4學雜費減免或免費住宿；另有每月3,000、每學期5個月生活助學，與獎學金僅能擇一。新生優先，非保證。",
+          "src": "https://admission.ocu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9MemcyTDNCMFlWODNOVGsyTUY4MU5EVXdPRFUxWHprMU1UVXhMbkJrWmc9PQ==&fname=WW54RPOKIC4441MPHCLKRKZWQOTWWT14QO3435HGTX25LK40FCNKA054WW54FGOKPOPOZX10A404GDXTRKPKTSIG34B0NOYSVXVXDCTSWSB0VSOKUSKKYWFCNPPO44OOHCA0UWIGTWMODC35WSB040MKZTGDQPROWS30IGB4GGOK45USPOWSB510DGFGA0SXKO30B4ICIGRO35WWNPVX04OKYSB4JGUSPKKKSWOKYWCCOOHHLOXWIGJGDC30US25IGUWMPNPUTUXCCB534YWLOB4B1OK34OKZTCCID10TSZSDHDH&cg=5671",
+          "year": "115"
+        },
+        "renew": "每次核定1學期，學士最多4年；新生先申請，後續由承辦單位公告名單。詳細學業、操行與續領門檻簡章未列，尚未核得。",
+        "renewSource": {
+          "src": "https://admission.ocu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9MemcyTDNCMFlWODNOVGsyTUY4MU5EVXdPRFUxWHprMU1UVXhMbkJrWmc9PQ==&fname=WW54RPOKIC4441MPHCLKRKZWQOTWWT14QO3435HGTX25LK40FCNKA054WW54FGOKPOPOZX10A404GDXTRKPKTSIG34B0NOYSVXVXDCTSWSB0VSOKUSKKYWFCNPPO44OOHCA0UWIGTWMODC35WSB040MKZTGDQPROWS30IGB4GGOK45USPOWSB510DGFGA0SXKO30B4ICIGRO35WWNPVX04OKYSB4JGUSPKKKSWOKYWCCOOHHLOXWIGJGDC30US25IGUWMPNPUTUXCCB534YWLOB4B1OK34OKZTCCID10TSZSDHDH&cg=5671",
+          "year": "115"
+        },
+        "lang": "115一般外國生：TOCFL Band A基礎級CEFR A2以上或其他中文能力證明，中文母語可免附；以中文授課，一次限申請一系。",
+        "after": "2027春9/14–11/27申請、12/21結果、1/29前回覆前置資料、2/19前報到；許可寄發日期未單列。116秋當期公告尚未核得，115秋7/6結果晚於ARC。",
+        "readYourself": [
+          {
+            "label": "僑光115一般外國生簡章公告",
+            "url": "https://admission.ocu.edu.tw/p/406-1023-72739,r1364.php",
+            "why": "讀一般外國生附件，排除新南向產學專班。"
+          },
+          {
+            "label": "僑光一般外國生申請",
+            "url": "https://apply.ocu.edu.tw/international",
+            "why": "簡章指定申請系統。"
+          }
+        ],
+        "verdict": "台中西屯、A2可申請，春季11/27截止、12/21結果。申請費1,000元，學雜費每學期約4.5–5.2萬；獎助需審查，許可寄發日未公告。",
+        "verdictMy": "A2 ဖြင့်လျှောက်နိုင်သည်။ နွေဦး 11/27 ပိတ်၊ 12/21 ရလဒ်။ လျှောက်လွှာကြေး NT$1,000၊ ကျောင်းလခ တစ်နှစ်ဝက် NT$45,020–51,653။ ပညာသင်ဆု စစ်ဆေးရွေးချယ်သည်။",
+        "apply": "https://apply.ocu.edu.tw/international"
+      },
+      "terms": {
+        "spring": {
+          "ug": "has",
+          "rounds": [
+            {
+              "start": {
+                "status": "official",
+                "sourceYear": "115-2",
+                "src": "https://admission.ocu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9MemcyTDNCMFlWODNOVGsyTUY4MU5EVXdPRFUxWHprMU1UVXhMbkJrWmc9PQ==&fname=WW54RPOKIC4441MPHCLKRKZWQOTWWT14QO3435HGTX25LK40FCNKA054WW54FGOKPOPOZX10A404GDXTRKPKTSIG34B0NOYSVXVXDCTSWSB0VSOKUSKKYWFCNPPO44OOHCA0UWIGTWMODC35WSB040MKZTGDQPROWS30IGB4GGOK45USPOWSB510DGFGA0SXKO30B4ICIGRO35WWNPVX04OKYSB4JGUSPKKKSWOKYWCCOOHHLOXWIGJGDC30US25IGUWMPNPUTUXCCB534YWLOB4B1OK34OKZTCCID10TSZSDHDH&cg=5671",
+                "date": "2026-09-14"
+              },
+              "end": {
+                "status": "official",
+                "sourceYear": "115-2",
+                "src": "https://admission.ocu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9MemcyTDNCMFlWODNOVGsyTUY4MU5EVXdPRFUxWHprMU1UVXhMbkJrWmc9PQ==&fname=WW54RPOKIC4441MPHCLKRKZWQOTWWT14QO3435HGTX25LK40FCNKA054WW54FGOKPOPOZX10A404GDXTRKPKTSIG34B0NOYSVXVXDCTSWSB0VSOKUSKKYWFCNPPO44OOHCA0UWIGTWMODC35WSB040MKZTGDQPROWS30IGB4GGOK45USPOWSB510DGFGA0SXKO30B4ICIGRO35WWNPVX04OKYSB4JGUSPKKKSWOKYWCCOOHHLOXWIGJGDC30US25IGUWMPNPUTUXCCB534YWLOB4B1OK34OKZTCCID10TSZSDHDH&cg=5671",
+                "date": "2026-11-27"
+              },
+              "result": {
+                "status": "official",
+                "sourceYear": "115-2",
+                "src": "https://admission.ocu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9MemcyTDNCMFlWODNOVGsyTUY4MU5EVXdPRFUxWHprMU1UVXhMbkJrWmc9PQ==&fname=WW54RPOKIC4441MPHCLKRKZWQOTWWT14QO3435HGTX25LK40FCNKA054WW54FGOKPOPOZX10A404GDXTRKPKTSIG34B0NOYSVXVXDCTSWSB0VSOKUSKKYWFCNPPO44OOHCA0UWIGTWMODC35WSB040MKZTGDQPROWS30IGB4GGOK45USPOWSB510DGFGA0SXKO30B4ICIGRO35WWNPVX04OKYSB4JGUSPKKKSWOKYWCCOOHHLOXWIGJGDC30US25IGUWMPNPUTUXCCB534YWLOB4B1OK34OKZTCCID10TSZSDHDH&cg=5671",
+                "date": "2026-12-21"
+              },
+              "note": "一般外國生學士；許可寄發日未單列，不能把結果日當取得日。1/29前回覆、2/19前報到。"
+            }
+          ],
+          "src": "https://admission.ocu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9MemcyTDNCMFlWODNOVGsyTUY4MU5EVXdPRFUxWHprMU1UVXhMbkJrWmc9PQ==&fname=WW54RPOKIC4441MPHCLKRKZWQOTWWT14QO3435HGTX25LK40FCNKA054WW54FGOKPOPOZX10A404GDXTRKPKTSIG34B0NOYSVXVXDCTSWSB0VSOKUSKKYWFCNPPO44OOHCA0UWIGTWMODC35WSB040MKZTGDQPROWS30IGB4GGOK45USPOWSB510DGFGA0SXKO30B4ICIGRO35WWNPVX04OKYSB4JGUSPKKKSWOKYWCCOOHHLOXWIGJGDC30US25IGUWMPNPUTUXCCB534YWLOB4B1OK34OKZTCCID10TSZSDHDH&cg=5671",
+          "year": "115-2"
+        },
+        "fall": {
+          "ug": "unknown",
+          "rounds": [],
+          "note": "116秋未公告；115秋7/6結果晚於ARC，不推算成116正式時程。",
+          "src": "https://admission.ocu.edu.tw/p/406-1023-72739,r1364.php",
+          "year": "115"
+        }
+      },
+      "evidence": [
+        {
+          "url": "https://admission.ocu.edu.tw/p/406-1023-72739,r1364.php",
+          "claim": "可下載115一般外國生中英簡章，同站另有產學專班，不混用。",
+          "year": "115",
+          "webRef": "turn59view0"
+        },
+        {
+          "url": "https://admission.ocu.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9MemcyTDNCMFlWODNOVGsyTUY4MU5EVXdPRFUxWHprMU1UVXhMbkJrWmc9PQ==&fname=WW54RPOKIC4441MPHCLKRKZWQOTWWT14QO3435HGTX25LK40FCNKA054WW54FGOKPOPOZX10A404GDXTRKPKTSIG34B0NOYSVXVXDCTSWSB0VSOKUSKKYWFCNPPO44OOHCA0UWIGTWMODC35WSB040MKZTGDQPROWS30IGB4GGOK45USPOWSB510DGFGA0SXKO30B4ICIGRO35WWNPVX04OKYSB4JGUSPKKKSWOKYWCCOOHHLOXWIGJGDC30US25IGUWMPNPUTUXCCB534YWLOB4B1OK34OKZTCCID10TSZSDHDH&cg=5671",
+          "claim": "中文1頁春9/14–11/27、12/21結果、1/29回覆、2/19報到；5頁1000元或35美元；6頁A2；8頁獎助每學期核定、最多4年；9頁115學雜費45020／51653／48337。",
+          "year": "115",
+          "retrieval": "observed official download URL; local urllib HTTP200 PDF1236280 bytes, pdftotext; English PDF1157269 bytes timetable crosschecked"
+        },
+        {
+          "url": "https://admission.ocu.edu.tw/p/403-1023-1398-1.php",
+          "claim": "2027招生列表仍列115外國生秋春，未核得116一般外國生簡章。",
+          "year": "查核2026-11-01",
+          "webRef": "turn95search0"
+        }
+      ],
+      "limitations": [
+        "秋過往截止表6/11、內文6/12前有差異，春11/27一致。",
+        "許可寄發日及續領詳細成績未單列。",
+        "網頁工具PDF404，但觀察到的官方下載URL本機HTTP200可解析；沒有登入或繞過權限。"
+      ],
+      "changes": [
+        "補春季學士、費用1000、115學費、A2及獎助。"
+      ],
+      "checkedLabels": [
+        "春季招生與時程",
+        "秋季招生與時程",
+        "申請費及適用年度",
+        "學雜費參考年度",
+        "語言門檻",
+        "獎助學金條件",
+        "獎助續領規定"
+      ]
+    },
+    {
+      "id": "0006",
+      "name": "國立中興大學",
+      "checked": "2026-11-01",
+      "checkedFields": [
+        "terms.spring",
+        "terms.fall",
+        "fee",
+        "tuition",
+        "lang",
+        "aid",
+        "renew"
+      ],
+      "patch": {
+        "aid": {
+          "sure": null,
+          "review": "入學申請勾選中興獎學金，審查減到本國生學費或全免；少數學士可每月6,000元。8,000屬博士額度，不適用偉銓學士。",
+          "src": "https://oia.nchu.edu.tw/images/File/03_Apply_to_NCHU/3-1-Degree-Programs/3-1-2-International-Students/115_Academic_Year_Application_Guidelines_re.pdf",
+          "year": "115"
+        },
+        "after": "春季只收碩博。學士秋116當期公告尚未核得；115往年1/15–3/20、5/31結果（假日順延），FAQ稱入學證明通常7月寄，需另核ARC前能否取得。",
+        "verdict": "台中市區國立大學，學士只收秋。116當期公告尚未核得；115往年5月底結果，FAQ稱證明7月寄，不能保證趕上ARC。獎助需審查。",
+        "verdictMy": "ဘွဲ့ကြို ဆောင်းဦးသာ။ 2027 ရက်စွဲမကြေညာသေး၊ ဝင်ခွင့်စာပို့ချိန်ကို ARC မကုန်မီ စစ်ရန်လိုသည်။",
+        "renewSource": {
+          "src": "https://oia.nchu.edu.tw/index.php/1-1-about-en-2/2-8-scholarships-en/2-8-1-nchu-scholarships-en",
+          "year": "現行"
+        }
+      },
+      "terms": {
+        "spring": {
+          "ug": "grad",
+          "rounds": [],
+          "src": "https://oia.nchu.edu.tw/index.php/3-apply-to-nchu-en/3-1-degree-programs-en/3-1-2-international-students-en/3-1-2-2-application-procedure-en",
+          "year": "115-2"
+        },
+        "fall": {
+          "ug": "has",
+          "rounds": [
+            {
+              "start": {
+                "status": "historical",
+                "sourceYear": "115",
+                "src": "https://oia.nchu.edu.tw/images/File/03_Apply_to_NCHU/3-1-Degree-Programs/3-1-2-International-Students/115_Academic_Year_Application_Guidelines_re.pdf",
+                "label": "115往年1/15",
+                "sort": "2027-01-15"
+              },
+              "end": {
+                "status": "historical",
+                "sourceYear": "115",
+                "src": "https://oia.nchu.edu.tw/images/File/03_Apply_to_NCHU/3-1-Degree-Programs/3-1-2-International-Students/115_Academic_Year_Application_Guidelines_re.pdf",
+                "label": "115往年3/20",
+                "sort": "2027-03-20"
+              },
+              "result": {
+                "status": "historical",
+                "sourceYear": "115",
+                "src": "https://oia.nchu.edu.tw/images/File/03_Apply_to_NCHU/3-1-Degree-Programs/3-1-2-International-Students/115_Academic_Year_Application_Guidelines_re.pdf",
+                "label": "115往年5/31（假日順延）",
+                "sort": "2027-05-31"
+              },
+              "note": "116未公告；FAQ稱秋入學證明通常7月寄，不能以5月底結果保證ARC前拿到許可。",
+              "letterEvent": {
+                "status": "historical",
+                "label": "官網FAQ：秋季通常7月寄證明，116個別日期待核",
+                "sort": "2027-07-01",
+                "sourceYear": "常態FAQ／115參考，非116正式日",
+                "src": "https://www.oia.nchu.edu.tw/index.php?Itemid=353&id=64&lang=en&option=com_content&view=article"
+              }
+            }
+          ],
+          "note": "116正式許可日未核得；現行FAQ稱秋季通常7月寄入學證明，晚於6/30，原歷年參考梯次不列可趕ARC。",
+          "src": "https://oia.nchu.edu.tw/images/File/03_Apply_to_NCHU/3-1-Degree-Programs/3-1-2-International-Students/115_Academic_Year_Application_Guidelines_re.pdf",
+          "year": "115"
+        }
+      },
+      "evidence": [
+        {
+          "url": "https://oia.nchu.edu.tw/index.php/3-apply-to-nchu-en/3-1-degree-programs-en/3-1-2-international-students-en/3-1-2-2-application-procedure-en",
+          "claim": "現行申請表秋1/15–3/20、5/31結果，春只碩博，仍連115簡章。",
+          "year": "115",
+          "webRef": "turn59view1"
+        },
+        {
+          "url": "https://oia.nchu.edu.tw/images/File/03_Apply_to_NCHU/3-1-Degree-Programs/3-1-2-International-Students/115_Academic_Year_Application_Guidelines_re.pdf",
+          "claim": "115一般簡章：學士只秋；學士碩士生活費6000、博士8000；中文最低A2。學費引用114學士45691–53914，未明載申請費或免費。",
+          "year": "115",
+          "retrieval": "local HTTP200 PDF1212909 bytes pdftotext"
+        },
+        {
+          "url": "https://oia.nchu.edu.tw/index.php/1-1-about-en-2/2-8-scholarships-en/2-8-1-nchu-scholarships-en",
+          "claim": "學士前兩學期平均70參加年度審查，一般最多4年；非達分保證。",
+          "year": "現行",
+          "webRef": "turn90view0"
+        },
+        {
+          "url": "https://www.oia.nchu.edu.tw/index.php?Itemid=353&id=64&lang=en&option=com_content&view=article",
+          "claim": "FAQ春只研究所，秋入學證明通常7月寄。116精確日期仍未知。",
+          "year": "現行",
+          "webRef": "turn44search2"
+        }
+      ],
+      "limitations": [
+        "116未公告，所有秋日期historical。",
+        "申請費silent保持，不改免費；費率年度保持114。",
+        "FAQ通常7月不是116正式寄發日，保留ARC未知。"
+      ],
+      "changes": [
+        "學士獎助去除博士8000；修正往年排序日期並補ARC許可風險。"
+      ],
+      "checkedLabels": [
+        "春季招生與時程",
+        "秋季招生與時程",
+        "申請費及適用年度",
+        "學雜費參考年度",
+        "語言門檻",
+        "獎助學金條件",
+        "獎助續領規定"
+      ]
+    }
+  ]
+}

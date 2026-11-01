@@ -1,7 +1,7 @@
 // 偉銓選校板 — decision board for the 39 personal schools.
 // Data: ./wq-board.json (built by research/weiquan-board-2026-09-29/build_board.py).
 // Only official dates are shown as exact dates; past-year references are labelled.
-import {isDate, isLateRound, undergraduateRounds, officialWindows, isOpen as openOn,
+import {isDate, isLateRound, admissionLetter, undergraduateRounds, officialWindows, isOpen as openOn,
   isSoon as soonOn, isUnconfirmed, nextResult, compareNullable, matchesQuery, readView,
   cleanComparison, roundChoices, selectRound, resolveRound, taskForRound} from './wq-core.js';
 
@@ -49,7 +49,7 @@ const W = {
   noMatch: ['沒有學校同時符合這些條件。', 'ကိုက်ညီသော ကျောင်းမရှိပါ။'], clear: ['清除', 'ရှင်းရန်'],
   residence: ['拿到入學許可後：換居留', 'ဝင်ခွင့်စာရပြီးနောက် · ARC ပြောင်းရန်'],
   prep: ['每一間都要準備', 'ကျောင်းတိုင်းအတွက် ပြင်ဆင်ရန်'],
-  foot: ['資料查核：2026/09/29。只有官方當期公告才顯示確切日期；「往年」是上一年的月份參考。金額與日期以官方簡章為準；分組是我的建議，不是官方排名。', '2026/09/29 စစ်ဆေးထားသည်။ တရားဝင်ကြေညာချက်မှသာ ရက်အတိအကျပြသည်။ "ယခင်နှစ်" သည် ကိုးကားချက်သာ။'],
+  foot: ['最後更新：2026/09/29。各校本次核對項目與待確認事項列在詳情，費用另標適用年度；「往年」僅供規劃，不是今年已確定的日期。金額與日期以官方簡章為準；分組是我的建議，不是官方排名。', '2026/09/29 နောက်ဆုံးပြင်ဆင်ထားသည်။ တစ်ကျောင်းချင်း စစ်ဆေးထားသည့်အချက်များနှင့် မသေချာချက်များကို အသေးစိတ်တွင် ကြည့်ပါ။ "ယခင်နှစ်" သည် ကိုးကားရန်သာ။'],
   kmUnit: ['公里', 'km'], yuan: ['元', 'NT$'],
   navNews: ['這次更新', 'အသစ်'], navMine: ['我的申請', 'ကျွန်ုပ်၏'], navNow: ['現在可報', 'ယခု'], navSchools: ['學校', 'ကျောင်း'], navCompare: ['比較', 'နှိုင်းယှဉ်'], navAfter: ['換居留', 'ARC'],
   news: ['這次更新', 'နောက်ဆုံး ပြင်ဆင်ချက်'], mine: ['我的申請', 'ကျွန်ုပ်၏ လျှောက်လွှာများ'],
@@ -128,13 +128,12 @@ function evText(e) {
   if (!e) return '—';
   if (e.status === 'official' && e.date) return ymd(e.date);
   if (e.status === 'official' && e.label) return e.label;
-  if (e.status === 'conflict') return t('diff');
+  if (e.status === 'conflict') return e.label || t('diff');
   if (!['historical', 'estimated'].includes(e.status)) return e.label || t('unknownDate');
   return e.label?.includes('往年') && zh() ? e.label : `${t('past')} ${e.label || ''}`.trim();
 }
 const evClass = e => !e ? 'none' : e.status === 'official' ? 'ok' : e.status === 'conflict' ? 'bad' : ['historical', 'estimated'].includes(e.status) ? 'past' : 'none';
-const letterEvent = r => !r.letter ? null : ['end', 'result'].some(k => r[k]?.status === 'official')
-  ? {status: 'official', date: r.letter} : {status: 'historical', label: md(r.letter)};
+const letterEvent = admissionLetter;
 
 function feeView(f) {
   if (f.kind === 'free') return {cls: 'good', text: zh() ? '免費（明文）' : 'အခမဲ့'};
@@ -182,10 +181,10 @@ function nextChance(s) {
     .filter(({r}) => r.end && r.end.status !== 'official' && r.end.sort && r.end.sort >= TODAY), x => x.r.end.sort);
   if (ref) {
     const label = String(ref.r.end.label || '').replace(/^\d*\s*往年\s*/, '').replace(/\s*截止$/, '');
-    return {cls: 'past', text: `${termName(ref.term)} · ${t('past')} ${zh() ? label + ' 截止' : '~' + ref.r.end.sort.slice(0, 7).replace('-', '/')}`, small: zh() ? '今年還沒公告' : 'မကြေညာရသေး'};
+    return {cls: 'past', text: `${termName(ref.term)} · ${t('past')} ${zh() ? label + ' 截止' : '~' + ref.r.end.sort.slice(0, 7).replace('-', '/')}`, small: zh() ? '當期時程待核對' : 'ယခုနှစ်ရက် ထပ်စစ်ရန်'};
   }
   const undated = ['spring', 'fall'].find(term => undergraduateRounds(s, term, data.arcExpiry).some(r => r.end && r.end.status !== 'official' && !r.end.sort));
-  if (undated) return {cls: 'muted', text: `${termName(undated)} · ${zh() ? '日期待公告' : 'ရက် မကြေညာရသေး'}`};
+  if (undated) return {cls: 'muted', text: `${termName(undated)} · ${zh() ? '日期待核對' : 'ရက် ထပ်စစ်ရန်'}`};
   return {cls: 'muted', text: zh() ? '還沒查到下一次' : 'မသိရသေး'};
 }
 // Rounds with past-year references; this does not prove the school has not published newer dates.
@@ -317,16 +316,17 @@ function overview() {
   const schoolCount = items => new Set(items.map(w => w.s.id)).size;
   const tracked = data.schools.filter(s => ['want', 'applied', 'admitted'].includes(statusMap[s.id])).length;
   const stats = [['now', schoolCount(open), 'openSummary'], ['now', schoolCount(open.filter(w => dayDiff(TODAY, w.end) <= 7)), 'urgentSummary'], ['mine', tracked, 'trackedSummary']];
-  return `<div class="wrap"><nav class="overview" aria-label="${zh() ? '申請摘要' : 'အကျဉ်းချုပ်'}">${stats.map(([id, n, label]) => `<a href="#${id}"><strong>${n}</strong><span>${t(label)}</span><span aria-hidden="true">↗</span></a>`).join('')}</nav><p class="snapshot">${zh() ? `招生資料查核 ${ymd(data.updated)}。倒數依台灣日期計算；不是即時公告。` : `${ymd(data.updated)} အထိ စစ်ဆေးထားသည်။ အချိန်နှင့်တပြေးညီ မဟုတ်ပါ။`}</p></div>`;
+  return `<div class="wrap"><nav class="overview" aria-label="${zh() ? '申請摘要' : 'အကျဉ်းချုပ်'}">${stats.map(([id, n, label]) => `<a href="#${id}"><strong>${n}</strong><span>${t(label)}</span><span aria-hidden="true">↗</span></a>`).join('')}</nav><p class="snapshot">${zh() ? `招生資料最後更新 ${ymd(data.updated)}。各校詳情列本次核對項目與來源年度；倒數依台灣日期計算。` : `${ymd(data.updated)} နောက်ဆုံးပြင်ဆင်ထားသည်။ စစ်ဆေးထားသည့်အချက်နှင့် ရင်းမြစ်နှစ်ကို တစ်ကျောင်းချင်း ကြည့်ပါ။`}</p></div>`;
 }
 function windowCard(w, soon, pending = false) {
   const s = w.s, left = dayDiff(TODAY, w.end), fee = feeView(s.fee), cost = costView(s);
   const urgent = !soon && !pending && left <= 21;
   const leftTxt = pending ? t('pendingStart') : soon ? `${t('opens')} ${mdw(w.start)}` : left === 0 ? t('lastDay') : zh() ? `剩 ${left} 天` : `${left} ${t('days')} ${t('left')}`;
   const res = w.result ? `${t('result')} ${evText(w.result)}` : '';
+  const letter = admissionLetter(w);
   return `<article class="ticket ${urgent ? 'urgent' : ''} ${soon ? 'soon' : ''} tier-${s.tier}"><div class="tk-left"><span class="tk-count">${esc(leftTxt)}</span><span class="tk-term">${w.term === 'spring' ? t('springT') : t('fallT')}${w.many ? ` · ${zh() ? `第 ${w.round} 梯` : `${t('round')} ${w.round}`}` : ''}</span></div>
   <div class="tk-main"><h3><button class="linkish" data-jump="${s.id}">${esc(s.short)}</button> <span class="abbr">${esc(s.abbr)}</span> <span class="km">${s.km} ${t('kmUnit')}</span></h3>
-  <p class="tk-dates"><span>${w.start ? `${ymd(w.start)} → ` : ''}<b>${t('deadline')} ${mdw(w.end)}</b></span>${res ? `<span>${esc(res)}</span>` : ''}${w.letter ? `<span>${t('letter')} ${md(w.letter)}</span>` : ''}</p>
+  <p class="tk-dates"><span>${w.start ? `${ymd(w.start)} → ` : ''}<b>${t('deadline')} ${mdw(w.end)}</b></span>${res ? `<span>${esc(res)}</span>` : ''}${letter ? `<span class="${evClass(letter)}">${t('letter')} ${esc(evText(letter))}</span>` : ''}</p>
   <p class="tk-chips">${statusMap[s.id] && statusMap[s.id] !== 'no' ? `<span class="chip mine st-${statusMap[s.id]}">${esc(STATUS.find(x => x[0] === statusMap[s.id])[zh() ? 1 : 2])}</span>` : ''}${lateResult(w.result) ? lateChip() : ''}<span class="chip ${fee.cls}">${t('fFee')} ${esc(fee.text)}</span><span class="chip ${cost.cls}">${zh() ? '第一學期' : 'ကျောင်းလခ'} ${esc(cost.text)}</span></p>
   ${w.note ? `<p class="tk-note">${esc(w.note)}</p>` : ''}</div>
   <div class="tk-go"><a class="btn ${pending ? 'ghost' : ''}" href="${esc(safeURL(s.links.apply))}" target="_blank" rel="noopener noreferrer">${pending ? (zh() ? '向校方確認' : 'ကျောင်းကို မေးရန်') : t('apply')} ↗</a></div></article>`;
@@ -365,11 +365,19 @@ const T0 = Date.UTC(2026, 8, 1), T1 = Date.UTC(2027, 7, 1);
 const pos = d => Math.max(0, Math.min(100, (Date.parse(d + 'T00:00:00Z') - T0) / (T1 - T0) * 100)).toFixed(2);
 function chances() {
   const C = [
-    {k: 'spring', a: TODAY, b: '2026-12-19', r: '2026-11 ～ 2027-01', name: ['2027 春', '2027 နွေဦး'], ref: false,
-      zh: '現在到 12 月報名，11 月底到 1 月放榜。用現在的 A2。', my: 'ယခု–ဒီဇင်ဘာ လျှောက်၊ နိုဝင်ဘာ–ဇန်နဝါရီ ရလဒ်။ A2 ဖြင့်။'},
-    {k: 'fall', a: '2026-12-01', b: '2027-05-31', r: '2027-02 ～ 06', name: ['2027 秋', '2027 ဆောင်းဦး'], ref: false,
-      zh: '2026/12 到 2027/5 報名。放榜在 ARC 到期（6/30）之後的梯次，板上已經拿掉。11 月若考到 B1：中教、中科可報的系變多，靜宜第一年補助從「學費」升到「學雜費」。', my: '2026/12–2027/5 လျှောက်။ နိုဝင်ဘာတွင် B1 ရရင် ဌာနပိုများ၊ ပညာသင်ဆု ပိုကောင်း။'},
-  ];
+    {k: 'spring', name: ['2027 春', '2027 နွေဦး'], ref: false,
+      zh: '依各校尚未截止的正式梯次彙整；A2仍須逐系核對，中英雙語課程可能另要英檢。圖示涵蓋的月份不代表每天都有招生。', my: 'မပိတ်သေးသော တရားဝင်အချိန်များကို စုစည်းထားသည်။ A2 အပြင် ဌာနအလိုက် အင်္ဂလိပ်စာ လိုနိုင်သည်။'},
+    {k: 'fall', name: ['2027 秋', '2027 ဆောင်းဦး'], ref: false,
+      zh: '已知入學許可晚於ARC到期（6/30）的梯次已排除，許可日期待核者須另外確認。B1可增加部分商管選擇；靜宜第一年補助由學費提升至學雜費。', my: 'ဝင်ခွင့်စာ 6/30 ကျော်မှရမည့်အကြိမ်များကို ဖယ်ထားသည်။ ရက်မသိသေးပါက ထပ်စစ်ရန်။ B1 ရလျှင် ဌာနရွေးချယ်မှု ပိုများနိုင်သည်။'},
+  ].map(c => {
+    const windows = data.schools.flatMap(windowsOf).filter(w => w.term === c.k && w.end >= TODAY);
+    const starts = windows.map(w => w.start).filter(Boolean).sort();
+    const ends = windows.map(w => w.end).sort();
+    const results = windows.map(w => w.result).filter(e => e?.status === 'official' && (e.date || e.sort))
+      .map(e => (e.date || e.sort).slice(0, 7).replace('-', '/')).sort();
+    return {...c, a: starts.length ? [TODAY, starts[0]].sort().at(-1) : TODAY, b: ends.at(-1) || TODAY,
+      r: results.length ? [...new Set([results[0], results.at(-1)])].join(' ～ ') : t('unknownDate')};
+  });
   const bands = C.map((c, i) => `<span class="band ${c.k} ${c.ref ? 'ref' : ''}" style="left:${pos(c.a)}%;width:${Math.max(0, pos(c.b) - pos(c.a)).toFixed(2)}%"><i>${i + 1}</i></span>`).join('');
   const ticks = ['2026-09-01', '2026-12-01', '2027-03-01', '2027-06-01'].map((d, i) => `<span class="tick${i ? '' : ' start'}" style="left:${pos(d)}%">${d.slice(0, 7).replace('-', '/')}</span>`).join('');
   return `<section class="wrap block" id="chances"><div class="block-head"><h2>${t('chances')}</h2><p>${zh() ? '變更居留要在到期前送件，建議 2027/5 前拿到入學許可。' : '2027/5 မတိုင်ခင် ဝင်ခွင့်စာ ရအောင်လုပ်ပါ။'}</p></div>
@@ -406,6 +414,12 @@ function roundsTable(s, term) {
   if (!T.rounds.length) return `<p class="term-line"><b>${label}</b> ${T.note ? esc(T.note) : t('unknownTerm')}</p>`;
   return `<div class="scroll" tabindex="0" role="region" aria-label="${esc(label)}"><table class="rounds"><caption>${label}</caption><thead><tr><th>${t('round')}</th><th>${t('opens')}</th><th>${t('deadline')}</th><th>${t('result')}</th><th>${t('letter')}</th></tr></thead><tbody>${T.rounds.map((r, i) => `<tr><td>${i + 1}</td>${['start', 'end', 'result'].map(k => `<td class="${evClass(r[k])}">${esc(evText(r[k]))}</td>`).join('')}<td class="${evClass(letterEvent(r))}">${esc(evText(letterEvent(r)))}</td></tr>${r.note ? `<tr class="note-row"><td colspan="5">${esc(r.note)}</td></tr>` : ''}`).join('')}</tbody></table></div>`;
 }
+function auditView(s) {
+  const a = s.audit;
+  if (!a) return `<small class="muted-note">${zh() ? '最近核對' : 'စစ်ဆေး'} ${ymd(s.checked)}</small>`;
+  return `<p class="muted-note">${zh() ? '本次核對' : 'စစ်ဆေး'} ${ymd(a.date)}：${esc(a.fields.join('、'))}。${zh() ? '其他欄位保留原來源年度，未核得項目見上方說明。' : 'အခြားအချက်များအတွက် မူရင်းနှစ်နှင့် မသေချာချက်ကို ကြည့်ပါ။'}</p>
+  <details class="audit-sources"><summary>${zh() ? '本次官方查核來源' : 'တရားဝင်ရင်းမြစ်များ'}</summary><ul class="linklist">${a.sources.map((source, i) => `<li><a href="${esc(safeURL(source.url))}" target="_blank" rel="noopener noreferrer">${zh() ? '官方來源' : 'ရင်းမြစ်'} ${i + 1} · ${esc(source.year)} ↗</a></li>`).join('')}</ul></details>`;
+}
 function schoolCard(s) {
   const fee = feeView(s.fee), cost = costView(s), sp = nextChance(s), isOpenCard = openCards.has(s.id);
   const sure = s.aid.sure, rev = s.aid.review;
@@ -426,7 +440,7 @@ function schoolCard(s) {
    ${s.readYourself.length ? `<section class="yourself"><h4>${t('yourself')}</h4><ul>${s.readYourself.map(r => `<li><a href="${esc(safeURL(r.url))}" target="_blank" rel="noopener noreferrer">${esc(r.label)} ↗</a><small>${esc(r.why)}</small></li>`).join('')}</ul></section>` : ''}
    ${(s.bizAdmits || []).length || s.bizAdmitsNote ? `<section><h4>${t('biz')}</h4>${(s.bizAdmits || []).length ? `<ul class="linklist">${s.bizAdmits.map(b => `<li><a href="${esc(safeURL(b.src))}" target="_blank" rel="noopener noreferrer">${esc(b.dept)}：${esc(String(b.count))} ${zh() ? '人' : 'ဦး'}（${esc(b.year)}${b.term === 'spring' ? (zh() ? ' 春' : ' နွေဦး') : b.term === 'fall' ? (zh() ? ' 秋' : ' ဆောင်းဦး') : ''}${b.round && !String(b.dept).includes('梯') ? (zh() ? ` 第${esc(String(b.round))}梯` : ` #${esc(String(b.round))}`) : ''}）↗</a></li>`).join('')}</ul>` : ''}${s.bizAdmitsNote ? `<p>${esc(s.bizAdmitsNote)}</p>` : ''}<small class="muted-note">${zh() ? '數字是從官方榜單數出來的；人多代表這個系較常收外籍生，不是錄取率。各梯不能相加。' : 'တရားဝင်စာရင်းမှ ရေတွက်။'}</small></section>` : ''}
    ${listLinks.length ? `<section><h4>${t('lists')}</h4><ul class="linklist">${listLinks.map(n => `<li><a href="${esc(safeURL(n.url))}" target="_blank" rel="noopener noreferrer">${esc(n.year)} ${n.term === 'spring' ? (zh() ? '春' : 'နွေဦး') : (zh() ? '秋' : 'ဆောင်းဦး')}・${esc(n.title)} ↗</a></li>`).join('')}</ul><small class="muted-note">${zh() ? '榜單只放官方連結；上榜人數不是錄取率。' : 'တရားဝင် link သာ။'}</small></section>` : ''}
-   <section><h4>${t('links')}</h4><p class="btnrow"><a class="btn" href="${esc(safeURL(lk.apply))}" target="_blank" rel="noopener noreferrer">${t('apply')} ↗</a>${lk.brochureSpring ? `<a class="btn ghost" href="${esc(safeURL(lk.brochureSpring))}" target="_blank" rel="noopener noreferrer">${t('brochure')} ${zh() ? '春' : 'နွေဦး'} ${esc(lk.brochureSpringYear || '')} ↗</a>` : ''}${lk.brochureFall && lk.brochureFall !== lk.brochureSpring ? `<a class="btn ghost" href="${esc(safeURL(lk.brochureFall))}" target="_blank" rel="noopener noreferrer">${t('brochure')} ${zh() ? '秋' : 'ဆောင်းဦး'} ${esc(lk.brochureFallYear || '')} ↗</a>` : ''}<a class="btn ghost" href="./index.html?lang=${lang}&term=spring&q=${encodeURIComponent(s.abbr)}">${zh() ? '原始研究資料' : 'မူရင်း'}</a></p><small class="muted-note">${zh() ? '查核' : 'စစ်ဆေး'} ${ymd(s.checked)}</small></section>
+   <section><h4>${t('links')}</h4><p class="btnrow"><a class="btn" href="${esc(safeURL(lk.apply))}" target="_blank" rel="noopener noreferrer">${t('apply')} ↗</a>${lk.brochureSpring ? `<a class="btn ghost" href="${esc(safeURL(lk.brochureSpring))}" target="_blank" rel="noopener noreferrer">${t('brochure')} ${zh() ? '春' : 'နွေဦး'} ${esc(lk.brochureSpringYear || '')} ↗</a>` : ''}${lk.brochureFall && lk.brochureFall !== lk.brochureSpring ? `<a class="btn ghost" href="${esc(safeURL(lk.brochureFall))}" target="_blank" rel="noopener noreferrer">${t('brochure')} ${zh() ? '秋' : 'ဆောင်းဦး'} ${esc(lk.brochureFallYear || '')} ↗</a>` : ''}<a class="btn ghost" href="./index.html?lang=${lang}&term=spring&q=${encodeURIComponent(s.abbr)}">${zh() ? '原始研究資料' : 'မူရင်း'}</a></p>${auditView(s)}</section>
   </div></article>`;
 }
 const matchQ = s => matchesQuery(s, query);

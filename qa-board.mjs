@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import {parseHTML} from 'linkedom';
-import {isDate, isLateRound, officialWindows, isOpen, nextResult, compareNullable, matchesQuery, readView,
+import {isDate, isLateRound, admissionLetter, officialWindows, isOpen, nextResult, compareNullable, matchesQuery, readView,
   cleanComparison, roundChoices, selectRound, resolveRound, taskForRound} from './dist/wq-core.js';
 
 const board = JSON.parse(fs.readFileSync(new URL('./dist/wq-board.json', import.meta.url)));
@@ -15,6 +15,10 @@ assert.equal(isDate(null), false);
 const earlyLetter = {start: official('2027-03-01'), end: official('2027-05-01'), result: official('2027-07-20'), letter: '2027-05-27'};
 assert.equal(isLateRound(earlyLetter, board.arcExpiry), false, 'admission letter can precede the public list');
 assert.equal(isLateRound({...earlyLetter, letter: '2027-07-01'}, board.arcExpiry), true);
+const julyLetter = {status: 'historical', sort: '2027-07-01', label: '115往年7月初', sourceYear: '115'};
+assert.equal(isLateRound({...earlyLetter, letter: julyLetter}, board.arcExpiry), true, 'a month-only historical letter can reveal an ARC risk without becoming an exact current date');
+assert.deepEqual(admissionLetter({...earlyLetter, letter: julyLetter}), julyLetter);
+assert.deepEqual(taskForRound({...earlyLetter, letter: julyLetter}, 'admitted', '2026-11-01'), {kind: 'documents'}, 'an official application deadline never promotes a historical letter');
 const graduate = {terms: {spring: {ug: 'grad', rounds: [earlyLetter]}, fall: {ug: 'none', rounds: []}}};
 assert.deepEqual(officialWindows(graduate, board.arcExpiry), [], 'never advertise graduate rounds as undergraduate');
 const cyutWindow = officialWindows(school('1018'), board.arcExpiry)[0];
@@ -33,6 +37,37 @@ const view = readView(new URLSearchParams('q=中教&filters=local,invented,free&
 assert.deepEqual([...view.filters], ['local', 'free']);
 assert.equal(view.sortKey, 'tier');
 console.log('PASS board rules: valid dates, undergraduate eligibility, unknown opening dates, admission letters, relevant rounds, unknowns last, multiword search, URL validation.');
+
+// Admissions corrections that materially change whether, when and at what cost to apply.
+assert.equal(board.updated, '2026-11-01');
+assert.equal(school('1001').terms.spring.ug, 'grad');
+assert.equal(school('1062').fee.amount, 1000);
+assert.equal(school('1062').terms.spring.rounds[0].end.date, '2026-11-27');
+assert.equal(school('0002').terms.fall.rounds[0].end.date, '2027-01-25');
+assert.equal(school('0015').terms.fall.rounds[0].letter, '2027-05-28');
+assert.match(school('0015').tuition.text, /47,594/);
+assert.equal(school('0021').fee.kind, 'silent', 'last autumn\'s free fee cannot imply the new spring intake is free');
+assert.equal(school('0021').terms.spring.rounds[0].end.date, '2026-11-29');
+assert.equal(school('0022').terms.fall.rounds.length, 1, 'preliminary and final results are one application round');
+assert.equal(school('0018').terms.fall.rounds[0].letter.status, 'unknown', 'an acceptance reply form is not an admission letter');
+assert.equal(school('0032').firstYearKind, 'review', 'a waiver subject to approval is not an unconditional zero-cost promise');
+assert.deepEqual(school('0053').terms.fall.rounds, []);
+assert.deepEqual(school('0006').terms.fall.rounds, []);
+assert.equal(school('0003').terms.fall.rounds[0].end.date, undefined, 'maintenance notice invalidates the original exact deadline');
+assert.equal(officialWindows(school('0003'), board.arcExpiry).some(w => w.round === 1), false);
+assert.deepEqual(officialWindows(school('0047'), board.arcExpiry), []);
+assert.deepEqual(officialWindows(school('0050'), board.arcExpiry), [], 'conflicting official page versions do not start a countdown');
+for (const s of board.schools) {
+  assert.ok(s.audit.fields.length && s.audit.sources.length, `${s.id}: explicit audit coverage and sources`);
+  assert.equal(s.audit.date, '2026-11-01');
+  for (const term of Object.values(s.terms)) for (const r of term.rounds) {
+    for (const e of [r.start, r.end, r.result, typeof r.letter === 'object' ? r.letter : null].filter(Boolean)) {
+      assert.ok(e.src && e.sourceYear, `${s.id}: event provenance`);
+      if (e.status !== 'official') assert.equal(e.date, undefined, `${s.id}: uncertain/historical values are not exact dates`);
+    }
+  }
+}
+console.log('PASS admissions audit: 39 scoped records, official years, spring eligibility, corrected fees, letter timing, outdated and conflicting deadlines, one-round results, conditional aid.');
 
 const storage = new Map();
 let mountCount = 0, blocked = false, copied = '';
