@@ -4,7 +4,7 @@
 import {isDate, isLateRound, admissionLetter, undergraduateRounds, officialWindows, isOpen as openOn,
   isSoon as soonOn, isUnconfirmed, nextResult, compareNullable, matchesQuery, readView,
   cleanComparison, roundChoices, selectRound, resolveRound, taskForRound, INTAKES, matchesIntake} from './wq-core.js';
-import {decisionFor, inquiryText} from './wq-decision.js';
+import {decisionFor, inquiryText, feeEvidence, matchesFreeFee, matchesSourceYear} from './wq-decision.js';
 
 const root = document.querySelector('#board');
 const esc = v => String(v ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -37,7 +37,7 @@ const W = {
   compare: ['比較表', 'နှိုင်းယှဉ်ဇယား'],
   fSpring: ['2027 春', '2027 နွေဦး'], fFall: ['2027 秋', '2027 ဆောင်းဦး'], fNext: ['下一次機會', 'နောက်တစ်ကြိမ်'], fFee: ['申請費', 'လျှောက်လွှာကြေး'], fCost: ['第一學期學雜費', 'ပထမ စာသင်နှစ်ဝက် ကျောင်းလခ'], fKm: ['距台中車站', 'ထိုင်ချုံးဘူတာမှ'],
   details: ['看全部重點', 'အသေးစိတ်ကြည့်ရန်'], hide: ['收起', 'ပိတ်ရန်'],
-  aidHow: ['獎學金怎麼拿', 'ပညာသင်ဆု ဘယ်လိုရမလဲ'], sure: ['錄取或有證書就有', 'ဝင်ခွင့်ရရင် / လက်မှတ်ရှိရင် ရမည်'], review: ['要審查，不一定有', 'စစ်ဆေးရွေးချယ် · မသေချာ'],
+  aidHow: ['獎學金怎麼拿', 'ပညာသင်ဆု ဘယ်လိုရမလဲ'], sure: ['依錄取／證書條件減免', 'ဝင်ခွင့် / လက်မှတ် စည်းကမ်းအရ လျှော့'], review: ['要審查，不一定有', 'စစ်ဆေးရွေးချယ် · မသေချာ'],
   renew: ['怎麼續領', 'ဆက်ရရန် စည်းကမ်း'], tuition: ['學費', 'ကျောင်းလခ'], lang: ['語言門檻', 'ဘာသာစကား လိုအပ်ချက်'],
   schedule: ['學士時程', 'ဘွဲ့ကြို အချိန်ဇယား'], after: ['錄取後', 'ဝင်ခွင့်ရပြီးနောက်'], lists: ['歷年榜單（官方）', 'ယခင်နှစ် ဝင်ခွင့်စာရင်း'], biz: ['商管系外籍生上榜人數', 'စီးပွားရေးဌာန နိုင်ငံခြားသား ဝင်ခွင့်ရသူ'],
   links: ['官方連結', 'တရားဝင် link'], yourself: ['待確認事項與補充來源', 'ထပ်စစ်ရန်နှင့် အခြားရင်းမြစ်များ'],
@@ -46,7 +46,7 @@ const W = {
   gradOnly: ['只收研究所，學士不能報', 'ဘွဲ့လွန်သာ · ဘွဲ့ကြို မရ'], noneTerm: ['這季不招生', 'ဤရာသီ မလက်ခံ'], unknownTerm: ['還沒查到時程', 'အချိန်ဇယား မသိရသေး'],
   status: ['我的進度', 'ကျွန်ုပ်၏ အခြေအနေ'],
   copy: ['複製進度給他看', 'အခြေအနေ ကူးရန်'], copied: ['已複製，可以貼到 LINE', 'ကူးပြီးပါပြီ'], copyFail: ['無法自動複製，請手動選取下面文字', 'ကိုယ်တိုင် ကူးပါ'],
-  filterNow: ['現在能報', 'ယခုလျှောက်နိုင်'], filterLocal: ['台中通勤圈', 'ထိုင်ချုံး နီး'], filterSure: ['錄取就有學費優惠', 'ဝင်ခွင့်ရရင် ကျောင်းလခလျှော့'], filterFree: ['明文免申請費', 'လျှောက်လွှာကြေး အခမဲ့'],
+  filterNow: ['現在能報', 'ယခုလျှောက်နိုင်'], filterLocal: ['台中通勤圈', 'ထိုင်ချုံး နီး'], filterSure: ['有學費減免資料', 'ကျောင်းလခလျှော့ သတင်းရှိ'], filterFree: ['本期明文免申請費', 'ယခုရာသီ လျှောက်လွှာကြေး အခမဲ့'],
   noMatch: ['沒有學校同時符合這些條件。', 'ကိုက်ညီသော ကျောင်းမရှိပါ။'], clear: ['清除', 'ရှင်းရန်'],
   residence: ['拿到入學許可後：換居留', 'ဝင်ခွင့်စာရပြီးနောက် · ARC ပြောင်းရန်'],
   prep: ['每一間都要準備', 'ကျောင်းတိုင်းအတွက် ပြင်ဆင်ရန်'],
@@ -96,7 +96,7 @@ const W = {
 };
 const STATUS = [['', '還沒決定', 'မဆုံးဖြတ်ရသေး'], ['want', '要報', 'လျှောက်မည်'], ['applied', '已報名', 'လျှောက်ပြီး'], ['admitted', '錄取', 'ဝင်ခွင့်ရ'], ['no', '不考慮', 'မလျှောက်']];
 const TIERS = {
-  A: ['台中近又省錢・首選', 'ထိုင်ချုံးနီး · ငွေသက်သာ · ဦးစားပေး', '市區或近郊、公立或第一年有確定優惠。'],
+  A: ['台中近又省錢・首選', 'ထိုင်ချုံးနီး · ငွေသက်သာ · ဦးစားပေး', '市區或近郊；費用與減免請按本期條件核對。'],
   P: ['知名學校・遠或貴也值得考慮', 'နာမည်ကြီးကျောင်း · ဝေး/ဈေးကြီးလည်း စဉ်းစားထိုက်', '你說過，名校上了可以多花一點。'],
   B: ['備案・條件普通或資料要你自己看', 'အရန်ကျောင်းများ', '台中私立科大、較遠的公立；有些資料讀不到。'],
   C: ['暫不優先', 'ဦးစားမပေး', '要搬家又不是名校、醫學類學費高，或學士不能報春季。'],
@@ -156,21 +156,28 @@ function evText(e) {
 const evClass = e => !e ? 'none' : e.status === 'official' ? 'ok' : e.status === 'conflict' ? 'bad' : ['historical', 'estimated'].includes(e.status) ? 'past' : 'none';
 const letterEvent = admissionLetter;
 
-function feeView(f) {
-  if (f.kind === 'free') return {cls: 'good', text: zh() ? '免費（明文）' : 'အခမဲ့'};
-  if (f.kind === 'paid') return {cls: 'warn', text: zh() ? `${f.amount.toLocaleString('en')} 元` : `NT$${f.amount.toLocaleString('en')}`};
-  if (f.kind === 'silent') return {cls: 'muted', text: zh() ? '簡章沒寫' : 'မဖော်ပြ'};
-  return {cls: 'muted', text: zh() ? '待確認' : 'မသိရ'};
+function feeView(s, term = intake) {
+  const f = s.fee, e = feeEvidence(s, term);
+  const source = e.year ? (zh() ? `來源 ${e.year}` : `ရင်းမြစ် ${e.year}`) : (zh() ? '來源年度待確認' : 'ရင်းမြစ်နှစ် မသိ');
+  const label = e.current ? (zh() ? '本期資料，仍看適用條件' : 'ယခုရာသီ၊ စည်းကမ်းစစ်ပါ')
+    : e.scoped ? (zh() ? '本期適用待確認' : 'ယခုရာသီအတွက် စစ်ရန်') : (zh() ? '依年度與季別核對' : 'နှစ်နှင့် ရာသီကို စစ်ပါ');
+  const note = `${source} · ${label}`;
+  if (e.known && f.kind === 'free') return {cls: e.current ? 'good' : 'muted', text: zh() ? `免費（${e.current ? '依條件' : '參考'}）` : `အခမဲ့ (${e.current ? 'စည်းကမ်းအရ' : 'ကိုးကား'})`, note};
+  if (e.known && f.kind === 'paid') return {cls: e.current ? 'warn' : 'muted', text: (zh() ? `${f.amount.toLocaleString('en')} 元` : `NT$${f.amount.toLocaleString('en')}`) + (e.current ? '' : (zh() ? '（參考）' : ' (ကိုးကား)')), note};
+  return {cls: 'muted', text: f.kind === 'silent' ? (zh() ? '簡章沒寫' : 'မဖော်ပြ') : (zh() ? '待確認' : 'မသိရ'), note};
 }
-function costView(s) {
+function costView(s, term = intake) {
   const c = s.semesterCost;
   if (!c) return {cls: 'muted', text: zh() ? '還沒查到' : 'မသိရသေး', note: ''};
+  const source = s.tuition?.year ? (zh() ? `學費表 ${s.tuition.year}` : `ကျောင်းလခနှစ် ${s.tuition.year}`) : (zh() ? '學費表年度待確認' : 'ကျောင်းလခနှစ် မသိ');
+  const current = ['spring', 'fall'].includes(term) && matchesSourceYear(s.tuition?.year, term);
+  const yearNote = source + (term === 'all' ? '' : current ? '' : (zh() ? ' · 本期待核' : ' · ယခုရာသီ စစ်ရန်'));
   if (c.basis === 'sure') {
-    if (c.max === 0) return {cls: 'good', text: zh() ? '0 元' : 'NT$0', note: zh() ? '第一年錄取就免' : 'ပထမနှစ် အခမဲ့'};
-    return {cls: 'good', text: money(c.min, c.max), note: zh() ? '已扣錄取就有的減免' : 'လျှော့ပြီးနောက်'};
+    const amount = c.max === 0 ? (zh() ? '0 元' : 'NT$0') : money(c.min, c.max);
+    return {cls: 'muted', text: amount + (zh() ? '（優惠試算）' : ' (လျှော့တွက်)'), note: `${yearNote} · ${zh() ? '按既有減免條件試算，須再核本期優惠' : 'လျှော့စည်းကမ်းအရ တွက်ထား၊ ယခုရာသီ ထပ်စစ်ပါ'}`};
   }
   const note = s.firstYearKind === 'lang' ? (zh() ? '有 A2 證書可再免學費部分' : 'A2 လက်မှတ်ဖြင့် ထပ်လျှော့') : (zh() ? '沒拿到獎學金時' : 'ပညာသင်ဆု မရလျှင်');
-  return {cls: s.semesterCost.max > 60000 ? 'bad' : 'warn', text: money(c.min, c.max), note};
+  return {cls: 'muted', text: money(c.min, c.max) + (zh() ? '（參考）' : ' (ကိုးကား)'), note: `${yearNote} · ${note}`};
 }
 function springView(s) {
   const T = s.terms.spring;
@@ -343,7 +350,8 @@ function browseSection() {
   return `<section class="wrap block" id="browse"><div class="browse-panel"><div class="block-head"><h2>${t('browse')}</h2><span class="count" id="view-count" role="status" aria-live="polite">${selectedSchools().length}/${data.schools.length}</span></div>
   <div class="intake-controls"><strong>${t('intake')}</strong><div class="seg" role="group" aria-label="${esc(t('intake'))}">${INTAKES.map(key => `<button id="term-${key}" data-intake="${key}" aria-pressed="${intake === key}">${esc(labels[key])}</button>`).join('')}</div></div>
   <div class="searchbox"><input id="q" type="search" value="${esc(query)}" maxlength="150" placeholder="${esc(t('search'))}" aria-label="${esc(t('search'))}" autocomplete="off"><button class="ghost" data-action="clear-search" ${query ? '' : 'hidden'}>${t('clearSearch')}</button></div>${filterBar()}
-  <div class="view-tools"><p>${zh() ? '季別、搜尋與條件同步套用到受理時程、學校卡片與比較表。' : 'ရာသီ၊ ရှာဖွေမှုနှင့် စစ်ထုတ်မှုကို ရက်စွဲ၊ ကျောင်းကတ်၊ ဇယားတို့တွင် အတူသုံးသည်။'}</p><div class="browse-actions"><button class="fclear" data-action="reset-view">${t('resetView')}</button><button class="btn ghost" data-action="share-view">${t('shareView')}</button></div></div><input id="share-box" aria-label="${esc(t('shareView'))}" class="copy-box" readonly hidden>
+  <div class="view-tools"><p>${zh() ? '季別、搜尋與條件同步套用到受理時程、學校卡片與比較表。' : 'ရာသီ၊ ရှာဖွေမှုနှင့် စစ်ထုတ်မှုကို ရက်စွဲ၊ ကျောင်းကတ်၊ ဇယားတို့တွင် အတူသုံးသည်။'}</p><div class="browse-actions"><button class="fclear" data-action="reset-view">${t('resetView')}</button><button class="btn ghost" data-action="share-view">${t('shareView')}</button></div></div>
+  ${filters.has('free') || filters.has('sure') ? `<p class="fee-filter-help">${filters.has('free') ? (intake === 'all' ? (zh() ? '目前含往年免費資料；選春季或秋季後，只保留該期學士與來源年度相符的免申請費資料。' : 'ယခင်နှစ် အခမဲ့သတင်းပါသည်။ ရာသီရွေးလျှင် ယင်းရာသီဘွဲ့ကြိုနှင့် ရင်းမြစ်နှစ် ကိုက်ညီသည့်ကျောင်းသာ ပြမည်။') : (zh() ? '本期免申請費只列學士範圍及來源年度相符者，仍須符合國籍等減免條件。往年或未標季別的免費資料，可清除此條件後查看。' : 'ယခုရာသီ ဘွဲ့ကြိုနှင့် ရင်းမြစ်နှစ် ကိုက်ညီမှ ပြသည်။ နိုင်ငံသား စည်းကမ်းကို စစ်ပါ။ အခြားသတင်းကြည့်ရန် စစ်ထုတ်မှုရှင်းပါ။')) : ''}${filters.has('sure') ? (zh() ? ' 學費減免包含證書條件與往年資料，不代表本期已核定或個人已符合資格。' : ' ကျောင်းလခလျှော့သတင်းတွင် လက်မှတ်စည်းကမ်းနှင့် ယခင်နှစ်ပါသည်။ ယခုရာသီ ရမည်ဟု မဆိုလိုပါ။') : ''}</p>` : ''}<input id="share-box" aria-label="${esc(t('shareView'))}" class="copy-box" readonly hidden>
   </div></section>`;
 }
 function overview() {
@@ -354,7 +362,7 @@ function overview() {
   return `<div class="wrap" id="board-overview"><nav class="overview" aria-label="${zh() ? '申請摘要' : 'အကျဉ်းချုပ်'}">${stats.map(([id, n, label]) => `<a href="#${id}"><strong>${n}</strong><span>${t(label)}</span><span aria-hidden="true">↗</span></a>`).join('')}</nav><p class="snapshot">${zh() ? `招生資料最後更新 ${ymd(data.updated)}。各校詳情列本次核對項目與來源年度；倒數依台灣日期計算。` : `${ymd(data.updated)} နောက်ဆုံးပြင်ဆင်ထားသည်။ စစ်ဆေးထားသည့်အချက်နှင့် ရင်းမြစ်နှစ်ကို တစ်ကျောင်းချင်း ကြည့်ပါ။`}</p></div>`;
 }
 function windowCard(w, soon, pending = false) {
-  const s = w.s, left = dayDiff(TODAY, w.end), fee = feeView(s.fee), cost = costView(s);
+  const s = w.s, left = dayDiff(TODAY, w.end), fee = feeView(s, w.term), cost = costView(s, w.term);
   const urgent = !soon && !pending && left <= 21;
   const leftTxt = pending ? t('pendingStart') : soon ? `${t('opens')} ${mdw(w.start)}` : left === 0 ? t('lastDay') : zh() ? `剩 ${left} 天` : `${left} ${t('days')} ${t('left')}`;
   const res = w.result ? `${t('result')} ${evText(w.result)}` : '';
@@ -362,7 +370,7 @@ function windowCard(w, soon, pending = false) {
   return `<article class="ticket ${urgent ? 'urgent' : ''} ${soon ? 'soon' : ''} tier-${s.tier}" data-school="${s.id}" data-term="${w.term}"><div class="tk-left"><span class="tk-count">${esc(leftTxt)}</span><span class="tk-term">${w.term === 'spring' ? t('springT') : t('fallT')}${w.many ? ` · ${zh() ? `第 ${w.round} 梯` : `${t('round')} ${w.round}`}` : ''}</span></div>
   <div class="tk-main"><h3><button class="linkish" data-jump="${s.id}">${esc(s.short)}</button> <span class="abbr">${esc(s.abbr)}</span> <span class="km">${s.km} ${t('kmUnit')}</span></h3>
   <p class="tk-dates"><span>${w.start ? `${ymd(w.start)} → ` : ''}<b>${t('deadline')} ${mdw(w.end)}</b></span>${res ? `<span>${esc(res)}</span>` : ''}${letter ? `<span class="${evClass(letter)}">${t('letter')} ${esc(evText(letter))}</span>` : ''}</p>
-  <p class="tk-chips">${statusMap[s.id] && statusMap[s.id] !== 'no' ? `<span class="chip mine st-${statusMap[s.id]}">${esc(STATUS.find(x => x[0] === statusMap[s.id])[zh() ? 1 : 2])}</span>` : ''}${lateResult(w.result) ? lateChip() : ''}<span class="chip ${fee.cls}">${t('fFee')} ${esc(fee.text)}</span><span class="chip ${cost.cls}">${zh() ? '第一學期' : 'ကျောင်းလခ'} ${esc(cost.text)}</span></p>
+  <p class="tk-chips">${statusMap[s.id] && statusMap[s.id] !== 'no' ? `<span class="chip mine st-${statusMap[s.id]}">${esc(STATUS.find(x => x[0] === statusMap[s.id])[zh() ? 1 : 2])}</span>` : ''}${lateResult(w.result) ? lateChip() : ''}<span class="chip fee-chip ${fee.cls}">${t('fFee')} ${esc(fee.text)}<small>${esc(fee.note)}</small></span><span class="chip fee-chip ${cost.cls}">${zh() ? '第一學期' : 'ကျောင်းလခ'} ${esc(cost.text)}<small>${esc(cost.note)}</small></span></p>
   ${w.note ? `<p class="tk-note">${esc(w.note)}</p>` : ''}</div>
   <div class="tk-go"><a class="btn ${pending ? 'ghost' : ''}" href="${esc(safeURL(s.links.apply))}" target="_blank" rel="noopener noreferrer">${pending ? (zh() ? '向校方確認' : 'ကျောင်းကို မေးရန်') : t('apply')} ↗</a></div></article>`;
 }
@@ -374,11 +382,11 @@ function refCount() {
   return zh() ? '往年月份參考' : 'ယခင်နှစ် ကိုးကား';
 }
 function refCard(w) {
-  const s = w.s, r = w.r, fee = feeView(s.fee), cost = costView(s), yr = r.end.sourceYear || r.start?.sourceYear || '';
+  const s = w.s, r = w.r, fee = feeView(s, w.term), cost = costView(s, w.term), yr = r.end.sourceYear || r.start?.sourceYear || '';
   return `<article class="ticket ref tier-${s.tier}" data-school="${s.id}" data-term="${w.term}"><div class="tk-left"><span class="tk-count">${esc(refCount(r))}</span><span class="tk-term">${w.term === 'spring' ? t('springT') : t('fallT')}${w.many ? ` · ${zh() ? `第 ${w.round} 梯` : `${t('round')} ${w.round}`}` : ''}</span></div>
   <div class="tk-main"><h3><button class="linkish" data-jump="${s.id}">${esc(s.short)}</button> <span class="abbr">${esc(s.abbr)}</span> <span class="km">${s.km} ${t('kmUnit')}</span></h3>
   <p class="tk-dates"><span>${t('opens')} ${esc(refLabel(r.start))}</span><span><b>${t('deadline')} ${esc(refLabel(r.end))}</b></span><span>${t('result')} ${esc(refLabel(r.result))}</span></p>
-  <p class="tk-chips"><span class="chip past">${zh() ? `往年推算（${esc(yr)}），不是今年正式日期` : `ယခင်နှစ် ${esc(yr)} · ယခုနှစ် တရားဝင်ရက် မဟုတ်`}</span>${lateResult(r.result) ? lateChip() : ''}<span class="chip ${fee.cls}">${t('fFee')} ${esc(fee.text)}</span><span class="chip ${cost.cls}">${zh() ? '第一學期' : 'ကျောင်းလခ'} ${esc(cost.text)}</span></p></div>
+  <p class="tk-chips"><span class="chip past">${zh() ? `往年推算（${esc(yr)}），不是今年正式日期` : `ယခင်နှစ် ${esc(yr)} · ယခုနှစ် တရားဝင်ရက် မဟုတ်`}</span>${lateResult(r.result) ? lateChip() : ''}<span class="chip fee-chip ${fee.cls}">${t('fFee')} ${esc(fee.text)}<small>${esc(fee.note)}</small></span><span class="chip fee-chip ${cost.cls}">${zh() ? '第一學期' : 'ကျောင်းလခ'} ${esc(cost.text)}<small>${esc(cost.note)}</small></span></p></div>
   <div class="tk-go"><a class="btn ghost" href="${esc(safeURL(s.links.apply))}" target="_blank" rel="noopener noreferrer">${zh() ? '看官網' : 'ဝက်ဘ်ဆိုက်'} ↗</a></div></article>`;
 }
 function nowSection() {
@@ -422,14 +430,14 @@ function chances() {
 
 function filterBar() {
   const F = [['now', 'filterNow'], ['local', 'filterLocal'], ['sure', 'filterSure'], ['free', 'filterFree'], ['biz', 'filterBiz'], ['mine', 'filterMine']];
-  return `<div class="filters" role="group" aria-label="${zh() ? '篩選' : 'စစ်ထုတ်'}">${F.map(([k, w]) => `<button id="f-${k}" class="fchip" data-filter="${k}" aria-pressed="${filters.has(k)}">${esc(t(w))}</button>`).join('')}${filters.size ? `<button class="fclear" data-filter="clear">${t('clear')}</button>` : ''}</div>`;
+  return `<div class="filters" role="group" aria-label="${zh() ? '篩選' : 'စစ်ထုတ်'}">${F.map(([k, w]) => `<button id="f-${k}" class="fchip" data-filter="${k}" aria-pressed="${filters.has(k)}">${esc(k === 'free' && intake === 'all' ? (zh() ? '免申請費資料（含往年）' : 'အခမဲ့သတင်း (ယခင်နှစ်ပါ)') : t(w))}</button>`).join('')}${filters.size ? `<button class="fclear" data-filter="clear">${t('clear')}</button>` : ''}</div>`;
 }
 function passes(s) {
   if (!matchesIntake(s, intake)) return false;
   if (filters.has('now') && !scopedWindows(s).some(isOpen)) return false;
   if (filters.has('local') && s.commute !== 'local') return false;
   if (filters.has('sure') && !hasSure(s)) return false;
-  if (filters.has('free') && s.fee.kind !== 'free') return false;
+  if (filters.has('free') && !matchesFreeFee(s, intake)) return false;
   if (filters.has('biz') && !(s.bizAdmits || []).length) return false;
   if (filters.has('mine') && !['want', 'applied', 'admitted'].includes(statusMap[s.id])) return false;
   return true;
@@ -457,11 +465,11 @@ function auditView(s) {
   <details class="audit-sources"><summary>${zh() ? '本次官方查核來源' : 'တရားဝင်ရင်းမြစ်များ'}</summary><ul class="linklist">${a.sources.map((source, i) => `<li><a href="${esc(safeURL(source.url))}" target="_blank" rel="noopener noreferrer">${zh() ? '官方來源' : 'ရင်းမြစ်'} ${i + 1} · ${esc(source.year)} ↗</a></li>`).join('')}</ul></details>`;
 }
 function schoolCard(s) {
-  const fee = feeView(s.fee), cost = costView(s), sp = nextChance(s), isOpenCard = openCards.has(s.id);
+  const fee = feeView(s), cost = costView(s), sp = nextChance(s), isOpenCard = openCards.has(s.id);
   const sure = s.aid.sure, rev = s.aid.review;
   const lk = s.links, listLinks = s.lists;
   return `<article class="school tier-${s.tier}" id="s-${s.id}"><div class="s-top"><div class="s-name"><h3>${esc(s.short)} <span class="abbr">${esc(s.abbr)}</span>${isNewSchool(s) ? ` <span class="newb">${t('isNew')}</span>` : ''}</h3><p>${esc(s.name)}・${esc(s.place)}・${s.km} ${t('kmUnit')}</p></div>${statusSelect(s, 'card')}</div>
-  <dl class="quad"><div><dt>${t('fNext')}</dt><dd class="${sp.cls}">${esc(sp.text)}${sp.small ? `<small>${esc(sp.small)}</small>` : ''}</dd></div><div><dt>${t('fFee')}</dt><dd class="${fee.cls}">${esc(fee.text)}</dd></div><div><dt>${t('fCost')}</dt><dd class="${cost.cls}">${esc(cost.text)}${cost.note ? `<small>${esc(cost.note)}</small>` : ''}</dd></div><div><dt>${zh() ? '新生優惠' : 'ပညာသင်ဆု'}</dt><dd class="${sure ? 'good' : rev && !/未核得|讀不到|沒有/.test(rev) ? 'warn' : 'muted'}">${sure ? (zh() ? '確定有' : 'သေချာ') : rev && !/未核得|讀不到|沒有/.test(rev) ? (zh() ? '要審查' : 'စစ်ဆေး') : (zh() ? '沒有／沒查到' : 'မရှိ/မသိ')}</dd></div></dl>
+  <dl class="quad"><div><dt>${t('fNext')}</dt><dd class="${sp.cls}">${esc(sp.text)}${sp.small ? `<small>${esc(sp.small)}</small>` : ''}</dd></div><div><dt>${t('fFee')}</dt><dd class="${fee.cls}">${esc(fee.text)}<small class="fee-note">${esc(fee.note)}</small></dd></div><div><dt>${t('fCost')}</dt><dd class="${cost.cls}">${esc(cost.text)}${cost.note ? `<small>${esc(cost.note)}</small>` : ''}</dd></div><div><dt>${zh() ? '新生優惠' : 'ပညာသင်ဆု'}</dt><dd class="${sure ? 'warn' : rev && !/未核得|讀不到|沒有/.test(rev) ? 'warn' : 'muted'}">${sure ? (zh() ? '依條件減免' : 'စည်းကမ်းအရ လျှော့') : rev && !/未核得|讀不到|沒有/.test(rev) ? (zh() ? '要審查' : 'စစ်ဆေး') : (zh() ? '沒有／沒查到' : 'မရှိ/မသိ')}</dd></div></dl>
   ${(() => { const b = bizTop(s), note = noteOf(s.id); const c = []; if (b) c.push(`<span class="chip biz">${t('bizShort')}：${esc(deptShort(b.dept))} ${b.count} ${zh() ? '人' : 'ဦး'}（${esc(b.year)}${b.term === 'spring' ? (zh() ? '春' : '') : b.term === 'fall' ? (zh() ? '秋' : '') : ''}）</span>`); if (note) c.push(`<span class="chip note">✎ ${esc(note.length > 26 ? note.slice(0, 26) + '…' : note)}</span>`); return c.length ? `<p class="s-chips">${c.join('')}</p>` : ''; })()}
   <p class="verdict">${esc(zh() ? s.verdict : s.verdictMy)}</p>${!zh() ? `<p class="verdict-zh" lang="zh-Hant">${esc(s.verdict)}</p>` : ''}
   <div class="school-actions">${compareButton(s)}<button class="more" data-toggle="${s.id}" aria-expanded="${isOpenCard}" aria-controls="d-${s.id}">${isOpenCard ? t('hide') : t('details')}</button></div>
@@ -476,7 +484,7 @@ function schoolCard(s) {
    ${s.readYourself.length ? `<section class="yourself"><h4>${t('yourself')}</h4><ul>${s.readYourself.map(r => `<li><a href="${esc(safeURL(r.url))}" target="_blank" rel="noopener noreferrer">${esc(r.label)} ↗</a><small>${esc(r.why)}</small></li>`).join('')}</ul></section>` : ''}
    ${(s.bizAdmits || []).length || s.bizAdmitsNote ? `<section><h4>${t('biz')}</h4>${(s.bizAdmits || []).length ? `<ul class="linklist">${s.bizAdmits.map(b => `<li><a href="${esc(safeURL(b.src))}" target="_blank" rel="noopener noreferrer">${esc(b.dept)}：${esc(String(b.count))} ${zh() ? '人' : 'ဦး'}（${esc(b.year)}${b.term === 'spring' ? (zh() ? ' 春' : ' နွေဦး') : b.term === 'fall' ? (zh() ? ' 秋' : ' ဆောင်းဦး') : ''}${b.round && !String(b.dept).includes('梯') ? (zh() ? ` 第${esc(String(b.round))}梯` : ` #${esc(String(b.round))}`) : ''}）↗</a></li>`).join('')}</ul>` : ''}${s.bizAdmitsNote ? `<p>${esc(s.bizAdmitsNote)}</p>` : ''}<small class="muted-note">${zh() ? '數字是從官方榜單數出來的；人多代表這個系較常收外籍生，不是錄取率。各梯不能相加。' : 'တရားဝင်စာရင်းမှ ရေတွက်။'}</small></section>` : ''}
    ${listLinks.length ? `<section><h4>${t('lists')}</h4><ul class="linklist">${listLinks.map(n => `<li><a href="${esc(safeURL(n.url))}" target="_blank" rel="noopener noreferrer">${esc(n.year)} ${n.term === 'spring' ? (zh() ? '春' : 'နွေဦး') : (zh() ? '秋' : 'ဆောင်းဦး')}・${esc(n.title)} ↗</a></li>`).join('')}</ul><small class="muted-note">${zh() ? '榜單只放官方連結；上榜人數不是錄取率。' : 'တရားဝင် link သာ။'}</small></section>` : ''}
-   <section><h4>${t('links')}</h4><p class="btnrow"><a class="btn" href="${esc(safeURL(lk.apply))}" target="_blank" rel="noopener noreferrer">${t('apply')} ↗</a>${lk.brochureSpring ? `<a class="btn ghost" href="${esc(safeURL(lk.brochureSpring))}" target="_blank" rel="noopener noreferrer">${t('brochure')} ${zh() ? '春' : 'နွေဦး'} ${esc(lk.brochureSpringYear || '')} ↗</a>` : ''}${lk.brochureFall && lk.brochureFall !== lk.brochureSpring ? `<a class="btn ghost" href="${esc(safeURL(lk.brochureFall))}" target="_blank" rel="noopener noreferrer">${t('brochure')} ${zh() ? '秋' : 'ဆောင်းဦး'} ${esc(lk.brochureFallYear || '')} ↗</a>` : ''}<a class="btn ghost" href="./index.html?lang=${lang}&term=spring&q=${encodeURIComponent(s.abbr)}">${zh() ? '原始研究資料' : 'မူရင်း'}</a></p>${auditView(s)}</section>
+   <section><h4>${t('links')}</h4><p class="btnrow"><a class="btn" href="${esc(safeURL(lk.apply))}" target="_blank" rel="noopener noreferrer">${t('apply')} ↗</a>${lk.brochureSpring ? `<a class="btn ghost" href="${esc(safeURL(lk.brochureSpring))}" target="_blank" rel="noopener noreferrer">${t('brochure')} ${zh() ? '春' : 'နွေဦး'} ${esc(lk.brochureSpringYear || '')} ↗</a>` : ''}${lk.brochureFall && lk.brochureFall !== lk.brochureSpring ? `<a class="btn ghost" href="${esc(safeURL(lk.brochureFall))}" target="_blank" rel="noopener noreferrer">${t('brochure')} ${zh() ? '秋' : 'ဆောင်းဦး'} ${esc(lk.brochureFallYear || '')} ↗</a>` : ''}<a class="btn ghost" href="./index.html?lang=${lang}&term=${intake === 'fall' ? 'fall' : 'spring'}&q=${encodeURIComponent(s.abbr)}">${zh() ? '原始研究資料' : 'မူရင်း'}</a></p>${auditView(s)}</section>
   </div></article>`;
 }
 const matchQ = s => matchesQuery(s, query);
@@ -547,7 +555,7 @@ function focusComparison() {
   if (!schools.length) return `<div class="compare-intro"><strong>${zh() ? '先挑 2–3 間，逐項比較' : '၂–၃ ကျောင်းရွေး၍ နှိုင်းယှဉ်ပါ'}</strong><p>${zh() ? '在學校卡片按「加入比較」，就能看報名前檢查、整理詢問學校的草稿，再比較費用與獎助。搜尋或改篩選也會保留已選學校。' : 'ကျောင်းကတ်တွင် ရွေးပြီး မလျှောက်မီ စစ်ဆေးရန်၊ ကျောင်းကိုမေးရန်နှင့် ကုန်ကျစရိတ် နှိုင်းယှဉ်ရန်။ ရှာဖွေမှု ပြောင်းလည်း ရွေးထားမှု မပျောက်ပါ။'}</p></div>`;
   const rows = [
     [t('fCost'), s => { const c = costView(s); return `<strong class="${c.cls}">${esc(c.text)}</strong><small>${esc(c.note)}</small>${sourceLink(s.tuition?.src, s.tuition?.year)}`; }],
-    [t('fFee'), s => { const f = feeView(s.fee); return `<strong class="${f.cls}">${esc(f.text)}</strong><small>${esc(s.fee.text)}</small>${sourceLink(s.fee.src, s.fee.year)}`; }],
+    [t('fFee'), s => { const f = feeView(s); return `<strong class="${f.cls}">${esc(f.text)}</strong><small class="fee-note">${esc(f.note)}</small><small>${esc(s.fee.text)}</small>${sourceLink(s.fee.src, s.fee.year)}`; }],
     [t('fKm'), s => `${s.km} ${t('kmUnit')}<small>${esc(s.place)}</small><small>${zh() ? '距離不等於通勤時間' : 'ခရီးချိန် မဟုတ်ပါ'}</small>`],
     [zh() ? '最近官方截止' : 'နောက်ဆုံးရက်', s => {
       const window = nextOfficialWindow(s);
@@ -559,7 +567,7 @@ function focusComparison() {
     ...(intake !== 'fall' ? [[zh() ? '春季可報情況' : 'နွေဦး', s => { const spring = springView(s); return `<span class="${spring.cls}">${esc(spring.text)}</span>`; }]] : []),
     ...(intake !== 'spring' ? [[zh() ? '秋季可報梯次放榜' : 'ဆောင်းဦး ရလဒ်', s => { const e = nextResult(s, 'fall', TODAY, data.arcExpiry); return `<span class="${evClass(e)}">${esc(evText(e))}</span>${sourceLink(e?.src, e?.sourceYear)}`; }]] : []),
     [t('lang'), s => esc(s.lang)],
-    [t('sure'), s => s.aid.sure ? `<span class="good">${esc(s.aid.sure)}</span>` : `<span class="muted">${zh() ? '未核得確定優惠' : 'မအတည်ပြုနိုင်သေး'}</span>`],
+    [t('sure'), s => s.aid.sure ? `<span>${esc(s.aid.sure)}</span><small>${zh() ? '條件須按本期簡章核對' : 'ယခုရာသီ စည်းကမ်းစစ်ပါ'}</small>` : `<span class="muted">${zh() ? '未核得確定優惠' : 'မအတည်ပြုနိုင်သေး'}</span>`],
     [t('review'), s => esc(s.aid.review || (zh() ? '尚未核得' : 'မသိရသေး'))],
     [t('renew'), s => esc(s.renew)],
     [t('bizShort'), s => { const b = bizTop(s); return b ? `${esc(b.dept)} <b>${b.count}</b> ${zh() ? '人' : 'ဦး'}<small>${esc(b.year)} ${b.term === 'spring' ? (zh() ? '春' : 'နွေဦး') : b.term === 'fall' ? (zh() ? '秋' : 'ဆောင်းဦး') : ''}</small>${sourceLink(b.src)}` : '—'; }],
@@ -596,13 +604,13 @@ function compareSection() {
   const resultCell = e => `<td class="num ${evClass(e)}">${e ? esc(evText(e)) : '—'}</td>`;
   return `<section class="wrap block" id="compare" tabindex="-1">${focusComparison()}<div class="block-head all-compare-head"><h2>${zh() ? '全部符合篩選的學校' : 'စစ်ထုတ်ထားသောကျောင်းများ'} <span class="count" id="compare-count">${rows.length}/${data.schools.length}</span></h2>
     <p>${zh() ? '跟隨上方搜尋與篩選。點表頭切換升冪／降冪；未知值排最後。放榜只比較尚未截止的梯次，已報名者請看「我的申請」。' : 'အပေါ်မှ စစ်ထုတ်မှုအတိုင်း။ ခေါင်းစဉ်နှိပ်၍ အစဉ်ပြောင်းပါ။ မသိသောတန်ဖိုး နောက်ဆုံးထားသည်။'}</p></div>
-    <p class="hint compare-legend">${zh() ? '學雜費：綠色已扣確定優惠；橘色尚未扣審查型獎學金。商管上榜人數保留原榜單口徑，不是錄取率。表格可左右滑動。' : 'ဇယားကို ဘယ်ညာ ရွှေ့ကြည့်နိုင်သည်။'}</p>
+    <p class="hint compare-legend">${zh() ? '金額旁列來源年度；優惠試算須再核本期資格，參考學費不含住宿與生活費。申請費可能按系收取，詳見來源條件。商管上榜人數不是錄取率。表格可左右滑動。' : 'ရင်းမြစ်နှစ်နှင့် လျှော့စည်းကမ်းကို စစ်ပါ။ အဆောင်နှင့် နေထိုင်စရိတ် မပါ။ ဇယားကို ဘယ်ညာ ရွှေ့ကြည့်နိုင်သည်။'}</p>
     ${rows.length ? `<div class="scroll" tabindex="0" role="region" aria-label="${esc(t('compare'))}"><table class="cmp"><thead><tr>
       ${th('tier', zh() ? '學校（分組）' : 'ကျောင်း')}${th('km', zh() ? '距離' : 'km')}${th(null, t('fNext'))}${th('fee', t('fFee'))}${th('cost', t('fCost'))}${intake !== 'fall' ? th('result', zh() ? '春季可報梯次放榜' : 'နွေဦး ရလဒ်') : ''}${intake !== 'spring' ? th('fall', zh() ? '秋季可報梯次放榜' : 'ဆောင်းဦး ရလဒ်') : ''}${th('biz', t('bizShort'))}${th(null, t('status'))}
     </tr></thead><tbody>${rows.map(s => {
-      const fee = feeView(s.fee), cost = costView(s), next = nextChance(s), biz = bizTop(s);
+      const fee = feeView(s), cost = costView(s), next = nextChance(s), biz = bizTop(s);
       return `<tr class="tier-${s.tier}"><th scope="row"><button class="linkish" data-jump="${s.id}">${esc(s.short)}</button> <span class="tier-dot">${s.tier === 'P' ? (zh() ? '名校' : '★') : s.tier}</span></th>
-        <td class="num">${s.km}</td><td class="${next.cls}">${esc(next.text)}</td><td class="${fee.cls}">${esc(fee.text)}</td><td class="${cost.cls} num">${esc(cost.text)}</td>
+        <td class="num">${s.km}</td><td class="${next.cls}">${esc(next.text)}</td><td class="${fee.cls}">${esc(fee.text)}<small class="fee-note">${esc(fee.note)}</small></td><td class="${cost.cls} num">${esc(cost.text)}<small class="cost-note">${esc(cost.note)}</small></td>
         ${intake !== 'fall' ? resultCell(resultFor(s, 'spring')) : ''}${intake !== 'spring' ? resultCell(resultFor(s, 'fall')) : ''}
         <td class="${biz ? '' : 'muted'}">${biz ? `${esc(deptShort(biz.dept))} <b class="num">${biz.count}</b>` : '—'}</td><td>${statusSelect(s, 'row')}</td></tr>`;
     }).join('')}</tbody></table></div>` : emptyView()}</section>`;
@@ -670,9 +678,9 @@ function comparisonText() {
   const lines = [zh() ? `偉銓選校比較（${ymd(TODAY)}）` : `偉銓 · နှိုင်းယှဉ်ချက် (${ymd(TODAY)})`, `${t('intake')}：${intakeName()}`,
     zh() ? '金額保留來源年度；學雜費不含申請費、住宿與生活費，語言及審查補助另看條件。' : 'ရင်းမြစ်နှစ်ကို စစ်ပါ။ လျှောက်လွှာကြေး၊ အဆောင်နှင့် နေထိုင်စရိတ် မပါ။'];
   for (const id of compareIds) {
-    const s = data.schools.find(s => s.id === id), fee = feeView(s.fee), cost = costView(s), next = nextChance(s);
+    const s = data.schools.find(s => s.id === id), fee = feeView(s), cost = costView(s), next = nextChance(s);
     lines.push('', `【${s.short} ${s.abbr}】`, `${t('fNext')}：${next.text}${next.small ? `（${next.small}）` : ''}`,
-      `${t('fFee')}：${fee.text}（${s.fee.year || t('unknownDate')}）`,
+      `${t('fFee')}：${fee.text} · ${fee.note}`,
       `${t('fCost')}：${cost.text}${cost.note ? ` · ${cost.note}` : ''}（${s.tuition?.year || t('unknownDate')}）`,
       `${t('fKm')}：${s.km} ${t('kmUnit')}`, `${t('lang')}：${s.lang}`);
     const decision = decisionFor(s, intake, TODAY, data.arcExpiry);

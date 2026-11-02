@@ -6,9 +6,24 @@ export const decisionTerm = term => term === 'spring' ? '2027 春季（115-2）'
 
 export function matchesSourceYear(year, term) {
   // A label such as "115參考；116待核" must not become current-year evidence.
+  if (!['spring', 'fall'].includes(term)) return false;
   const expected = term === 'spring' ? '115' : '116';
   const semester = term === 'spring' ? '2' : '1';
   return [expected, `${expected}-${semester}`, `${expected}學年度`].includes(String(year || '').trim());
+}
+
+export function feeEvidence(school, term) {
+  const fee = school.fee || {}, scoped = ['spring', 'fall'].includes(term);
+  const known = fee.kind === 'free' && fee.amount === 0
+    || fee.kind === 'paid' && Number.isFinite(fee.amount) && fee.amount > 0;
+  const sourced = /^https?:\/\//.test(fee.src || '');
+  return {known, current: known && sourced && scoped && school.terms[term]?.ug === 'has' && matchesSourceYear(fee.year, term),
+    scoped, sourced, year: fee.year || ''};
+}
+
+export function matchesFreeFee(school, term) {
+  const evidence = feeEvidence(school, term);
+  return school.fee?.kind === 'free' && evidence.known && evidence.sourced && (term === 'all' || evidence.current);
 }
 
 export function decisionFor(school, term, today, arcExpiry) {
@@ -34,7 +49,7 @@ export function decisionFor(school, term, today, arcExpiry) {
     ? Math.round((Date.parse(arcExpiry) - Date.parse(letter.date)) / 864e5) : null;
   if (gap !== null) letterKind = gap < 0 ? 'late' : gap < 30 ? 'tight' : 'official';
   return {kind: 'plan', term, ug, round: round || null, timing, letter, letterKind, gap,
-    feeCurrent: matchesSourceYear(school.fee?.year, term) && ['free', 'paid'].includes(school.fee?.kind),
+    feeCurrent: feeEvidence(school, term).current,
     tuitionCurrent: matchesSourceYear(school.tuition?.year, term) && !!school.semesterCost,
     source: round?.end?.src || round?.src || scope?.src || school.links.apply};
 }
